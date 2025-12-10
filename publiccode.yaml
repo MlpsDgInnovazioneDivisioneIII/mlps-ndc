@@ -1,0 +1,51 @@
+publiccodeYmlVersion: "0.2"
+
+name: NDC
+url: "https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc"
+softwareVersion: "1.0"
+releaseDate: "2025-12-09"
+platforms:
+  - web
+
+categories:
+  - data-analytics
+
+developmentStatus: stable
+
+softwareType: "configurationFiles"
+
+description:
+  it:
+    localisedName: ndc
+    genericName: Repository MLPS per NDC
+    shortDescription: >
+          Repository MLPS per l'alimentazione
+          del National Data Catalog
+
+    longDescription: >
+          Repository MLPS per l'alimentazione
+          del National Data Catalog contenente ontologie,
+          vocabolari controllati e schemi.
+
+    features:
+       - Interoperabilità semantica
+       - Interoperabilità tecnica
+       - API semantiche
+       - Modellazione dati
+       - Tassonomie
+
+legal:
+  license: CC BY 4.0
+maintenance:
+  type: internal
+  contacts:
+    email: dginnovazionediv3@lavoro.gov.it
+    name: Giorgia Salsa
+it:
+  riuso:
+    codiceIPA:  m_lps
+
+localisation:
+  localisationReady: yes
+  availableLanguages:
+    - it
