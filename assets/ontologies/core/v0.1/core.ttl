@@ -1,0 +1,825 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix countries: <http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix L0: <https://w3id.org/italia/onto/l0/> .
+@prefix mlps-core: <https://w3id.org/italia/labour-social-policies/onto/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provinces: <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix rpo: <https://w3id.org/italia/onto/RPO/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mlps-core: a owl:Ontology ;
+    owl:versionIRI mlps-core:0.4 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        L0:,
+        RO: ;
+    rdfs:label "Core Labour and Social Policies Ministry Ontology"@en,
+        "Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali"@it ;
+    rdfs:comment "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
+        "This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities.."@en ;
+    owl:versionInfo "0.4 - Modificata il 09 Dicembre 2025"@it,
+        "0.4 - Modified on 09 December 2025"@en ;
+    rdfs:isDefinedBy mlps-core: ;
+    adms:acronym "mlps" ;
+    adms:hasContributor <https://w3id.org/italia/data/organization/public-organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass mlps-core:FascicoloSocialeLavorativoDelCittadino,
+        mlps-core:PrestazioneDiSostegno ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-N-TRIPLES>,
+        <https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-RDF-TURTLE>,
+        <https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last mlps-core:0.4 ;
+    adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/core/"^^xsd:anyURI ;
+    adms:prefix "mlps-core" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    dcat:keyword "Citizen's social and employment file"@en,
+        "Fascicolo sociale e lavorativo del cittadino"@it,
+        "Prestazione Di Sostegno"@it,
+        "Support Performance"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:description "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
+        "This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities."@en ;
+    dct:identifier "https://w3id.org/italia/labour-social-policies/onto/core" ;
+    dct:issued "2025-12-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2025-12-09T00:00:00+00:00"^^xsd:dateTime ;
+    dct:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:title "Core Labour and Social Policies Ministry Ontology"@en,
+        "Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali"@it .
+
+### Object Properties
+
+CLV:hasHigherRank a owl:ObjectProperty .
+
+COV:hasSupportUnit a owl:ObjectProperty .
+
+COV:holdEmployment a owl:ObjectProperty .
+
+mlps-core:contieneCVCittadino a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "contiene CV cittadino"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:CurriculumVitaeCittadino ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un suo CV."@it .
+
+mlps-core:contieneInteresseCorsoDiFormazione a owl:ObjectProperty ;
+    rdfs:label "contiene interesse corso di formazione"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:CorsoDiFormazione ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un Corso di formazione verso cui ha manifestato interesse."@it .
+
+mlps-core:contieneInteresseOffertaDiLavoro a owl:ObjectProperty ;
+    rdfs:label "contiene interesse offerta di lavoro"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:OffertaDiLavoro ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad una Offerta di lavoro verso cui ha manifestato interesse."@it .
+
+mlps-core:contieneIscrizioneCorsoDiFormazione a owl:ObjectProperty ;
+    rdfs:label "contiene iscrizione corso di formazione"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:CorsoDiFormazione ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un Corso di formazione a cui si è iscritto."@it .
+
+mlps-core:contienePADIndividuale a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "contiene PAD individuale"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un suo PAD individuale."@it .
+
+mlps-core:contienePattoServizioPersonalizzato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "contiene patto servizio personalizzato"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:PattoServizioPersonalizzato ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un suo PSP."@it .
+
+mlps-core:contieneRispostaOffertaDiLavoro a owl:ObjectProperty ;
+    rdfs:label "contiene risposta offerta di lavoro"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:OffertaDiLavoro ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad una Offerta di lavoro verso cui a fatto domanda."@it .
+
+mlps-core:esegueAnalisiPreliminareNucleo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "esegue analisi preliminare nucleo"@it ;
+    rdfs:domain mlps-core:AmministrazioneServizioSociale ;
+    rdfs:range mlps-core:AnalisiPreliminareNucleoFamiliare ;
+    rdfs:comment "Lega un Gestore servizio sociale ad una Analisi preliminare di un nucleo familiare da lui eseguita."@it .
+
+mlps-core:esegueQuadroDiAnalisiNucleo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "esegue quadro di analisi nucleo"@it ;
+    rdfs:domain mlps-core:AmministrazioneServizioSociale ;
+    rdfs:range mlps-core:QuadroDiAnalisiNucleoFamiliare ;
+    rdfs:comment "Lega un Gestore servizio sociale ad un Quadro di analisi di un nucleo familiare da lui eseguito."@it .
+
+mlps-core:esprimeAtto a owl:ObjectProperty ;
+    rdfs:label "esprime atto"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    L0:Agent
+                    [ a owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+                        owl:someValuesFrom L0:Agent ] ) ] ;
+    rdfs:range mlps-core:Atto ;
+    rdfs:comment "Lega un atto all'agente (o ruolo di agente) che lo ha espresso."@it .
+
+mlps-core:gestisceCorsoDiFormazione a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "gestisce corso di formazione"@it ;
+    rdfs:domain mlps-core:EnteFormativo ;
+    rdfs:range mlps-core:CorsoDiFormazione ;
+    rdfs:comment "Lega un Ente formativo ad un Corso di formazione da lui gestito."@it .
+
+mlps-core:haAnalisiPreliminareNucleo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha analisi preliminare nucleo"@it ;
+    rdfs:domain mlps-core:PercorsoInclusioneNucleoFamiliare ;
+    rdfs:range mlps-core:AnalisiPreliminareNucleoFamiliare ;
+    rdfs:comment "Lega un Percorso d'inclusione di un nucleo familiare alla sua Analisi preliminare."@it .
+
+mlps-core:haAttivatoPUC a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha attivato PUC"@it ;
+    rdfs:domain COV:PublicOrganization ;
+    rdfs:range mlps-core:ProgettoUtileAllaCollettività .
+
+mlps-core:haBeneficiarioPrestazioneDiSostegno a owl:ObjectProperty ;
+    rdfs:label "ha beneficiario prestazione di sostegno"@it ;
+    rdfs:domain mlps-core:PrestazioneDiSostegno ;
+    rdfs:range mlps-core:BeneficiarioPrestazioneDiSostegno ;
+    rdfs:comment "Lega una prestazione di sostegno con un beneficiario della prestazione."@it .
+
+mlps-core:haComponenteDiATS a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha componente di ATS"@it ;
+    rdfs:domain mlps-core:AmbitoTerritorialeSociale ;
+    rdfs:range COV:PublicOrganization ;
+    rdfs:comment "Lega un ATS ad un ente pubblico che ne fa parte."@it .
+
+mlps-core:haDomandaPrestazioneDiSostegno a owl:ObjectProperty ;
+    rdfs:label "ha domanda prestazione di sostegno"@it ;
+    rdfs:domain mlps-core:PrestazioneDiSostegno ;
+    rdfs:range mlps-core:DomandaPrestazioneDiSostegno ;
+    rdfs:comment "Lega una prestazione di sostegno alla domanda presentata per l'ottenimento della prestazione stessa."@it .
+
+mlps-core:haEnteCapofila a owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha ente capofila"@it ;
+    rdfs:domain mlps-core:AmbitoTerritorialeSociale ;
+    rdfs:range COV:PublicOrganization ;
+    rdfs:comment "Lega un ATS all'ente pubblico che ne è capofila."@it .
+
+mlps-core:haFascicoloSocialeLavorativo a owl:FunctionalProperty,
+        owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha fascicolo sociale e lavorativo"@it ;
+    rdfs:domain rpo:RegisteredResidentPerson ;
+    rdfs:range mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:comment "Lega un Cittadino al suo Fascicolo sociale e lavorativo."@it .
+
+mlps-core:haPADIndividuale a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha PAD individuale"@it ;
+    rdfs:domain mlps-core:PrestazioneDiSostegnoIndividuale ;
+    rdfs:range mlps-core:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:comment "Lega una Prestazione di sostegno individuale al relativo PAD individuale."@it .
+
+mlps-core:haPADNucleoFamiliare a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha PAD nucleo familiare"@it ;
+    rdfs:domain mlps-core:PrestazioneDiSostegnoNucleoFamiliare ;
+    rdfs:range mlps-core:PattoAttivazioneDigitaleNucleo ;
+    rdfs:comment "Lega una Prestazione di sostegno nucleo familiare al relativo PAD nucleo."@it .
+
+mlps-core:haPattoInclusioneSocialeNucleo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha patto inclusione sociale nucleo"@it ;
+    rdfs:domain mlps-core:PercorsoInclusioneNucleoFamiliare ;
+    rdfs:range mlps-core:PattoInclusioneSocialeNucleoFamiliare ;
+    rdfs:comment "Lega un Percorso d'inclusione di un nucleo familiare al suo PaIS nucleo."@it .
+
+mlps-core:haPattoServizioPersonalizzato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha patto servizio personalizzato"@it ;
+    rdfs:domain mlps-core:PattoServizioPersonalizzato ;
+    rdfs:range mlps-core:PrestazioneDiSostegnoIndividuale ;
+    rdfs:comment "Lega una Prestazione di sostegno individuale al relativo Patto di servizio personalizzato."@it .
+
+mlps-core:haPrestazioneDiSostegno a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha prestazione di sostegno"@it ;
+    rdfs:domain mlps-core:PercorsoInclusioneNucleoFamiliare ;
+    rdfs:range mlps-core:PrestazioneDiSostegno ;
+    rdfs:comment "Lega un Percorso d'inclusione di un nucleo familiare alla prestazione di sostegno di cui è beneficiario."@it .
+
+mlps-core:haQuadroDiAnalisiNucleoFamiliare a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha quadro di analisi nucleo familiare"@it ;
+    rdfs:domain mlps-core:PercorsoInclusioneNucleoFamiliare ;
+    rdfs:range mlps-core:QuadroDiAnalisiNucleoFamiliare ;
+    rdfs:comment "Lega un Percorso d'inclusione di un nucleo familiare al suo Quadro di analisi."@it .
+
+mlps-core:haRichiedentePrestazioneDiSostegno a owl:ObjectProperty ;
+    rdfs:label "ha richiedente prestazione di sostegno"@it ;
+    rdfs:domain mlps-core:DomandaPrestazioneDiSostegno ;
+    rdfs:range mlps-core:RichiedentePrestazioneDiSostegno ;
+    rdfs:comment "Lega una domanda di prestazione di sostegno al suo richiedente."@it .
+
+mlps-core:haTipoPrestazioneDiSostegno a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha tipo prestazione di sostegno"@it ;
+    rdfs:domain mlps-core:PrestazioneDiSostegno ;
+    rdfs:range mlps-core:TipoPrestazioneDiSostegno ;
+    rdfs:comment "Lega una prestazione di sostegno al suo tipo."@it .
+
+mlps-core:indicaBeneficiarioPrestazioneDiSostegno a owl:ObjectProperty ;
+    rdfs:label "indica beneficiario prestazione di sostegno"@it ;
+    rdfs:domain mlps-core:DomandaPrestazioneDiSostegno ;
+    rdfs:range mlps-core:BeneficiarioPrestazioneDiSostegno ;
+    rdfs:comment "Lega una richiesta di prestazione di sostegno a un beneficiario della prestazione."@it .
+
+mlps-core:proponeOffertaDiLavoro a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "propone offerta di lavoro"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    mlps-core:AgenziaPerIlLavoro
+                    mlps-core:DatoreDiLavoro ) ] ;
+    rdfs:range mlps-core:OffertaDiLavoro ;
+    rdfs:comment "Lega un Datore di lavoro o una Agenzia per il lavoro ad una Offerta di lavoro da lui promossa."@it .
+
+mlps-core:riferisceAnalisiPreliminareNucleo a owl:ObjectProperty ;
+    rdfs:label "riferisce analisi preliminare nucleo"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:AnalisiPreliminareNucleoFamiliare ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un'Analisi preliminare relativa al nucleo familiare di cui è componente."@it .
+
+mlps-core:riferisceCurriculumVitaeCittadino a owl:ObjectProperty ;
+    rdfs:label "riferisce curriculum vitae cittadino"@it ;
+    rdfs:domain mlps-core:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:range mlps-core:CurriculumVitaeCittadino ;
+    rdfs:comment "Lega un PAD individuale di un Cittadino ad un CV del Cittadino stesso."@it .
+
+mlps-core:riferiscePADNucleo a owl:ObjectProperty ;
+    rdfs:label "riferisce PAD nucleo"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:PattoAttivazioneDigitaleNucleo ;
+    rdfs:comment "Lega il fascicolo di un Cittadino al PAD nucleo relativo al nucleo familiare di cui è componente."@it .
+
+mlps-core:riferiscePattoInclusioneSocialeNucleo a owl:ObjectProperty ;
+    rdfs:label "riferisce patto inclusione sociale nucleo"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:PattoInclusioneSocialeNucleoFamiliare ;
+    rdfs:comment "Lega il fascicolo di un Cittadino al PaIS relativo al nucleo familiare di cui è componente."@it .
+
+mlps-core:riferiscePattoServizioPersonalizzato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "riferisce patto servizio personalizzato"@it ;
+    rdfs:domain mlps-core:PercorsoInclusioneNucleoFamiliare ;
+    rdfs:range mlps-core:PattoServizioPersonalizzato ;
+    rdfs:comment "Lega un Percorso d'inclusione di un nucleo familiare al PSP di un suo componente attivabile al lavoro, obbligatorio o volontario."@it .
+
+mlps-core:riferiscePercorsoNucleoFamiliare a owl:ObjectProperty ;
+    rdfs:label "riferisce percorso nucleo familiare"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:PercorsoInclusioneNucleoFamiliare ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un Percorso d'inclusione sociale relativo al nucleo familiare di cui è componente."@it .
+
+mlps-core:riferiscePrestazioneDiSostegno a owl:ObjectProperty ;
+    rdfs:label "riferisce prestazione di sostegno"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:PrestazioneDiSostegno ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad una prestazione di sostegno. Il Cittadino può partecpare al legame in qualità di beneficiario di una prestazione individuel o come componente di un nucleo familiare beneficiario."@it .
+
+mlps-core:riferisceQuadroDiAnalisiNucleo a owl:ObjectProperty ;
+    rdfs:label "riferisce quadro di analisi nucleo"@it ;
+    rdfs:domain mlps-core:FascicoloSocialeLavorativoDelCittadino ;
+    rdfs:range mlps-core:QuadroDiAnalisiNucleoFamiliare ;
+    rdfs:comment "Lega il fascicolo di un Cittadino ad un Quadro di analisi relativo al nucleo familiare di cui è componente."@it .
+
+mlps-core:stipulaPattoInclusioneSocialeNucleo a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "stipula patto inclusione sociale nucleo"@it ;
+    rdfs:domain mlps-core:AmministrazioneServizioSociale ;
+    rdfs:range mlps-core:PattoInclusioneSocialeNucleoFamiliare ;
+    rdfs:comment "Lega un Gestore servizio sociale ad un PaIS di un nucleo familiare da lui formalizzato."@it .
+
+mlps-core:stipulaPattoServizioPersonalizzato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "stipula patto servizio personalizzato"@it ;
+    rdfs:domain mlps-core:CentroPerImpiego ;
+    rdfs:range mlps-core:PattoServizioPersonalizzato ;
+    rdfs:comment "Lega un CPI ad un PSP da lui formalizzato."@it .
+
+RO:holdsRoleInTime a owl:ObjectProperty .
+
+TI:atTime a owl:ObjectProperty .
+
+### Datatypes
+
+xsd:dateTime a rdfs:Datatype .
+
+xsd:string a rdfs:Datatype .
+
+### Data Properties
+
+L0:identifier a owl:DatatypeProperty .
+
+mlps-core:codiceAgenziaPerIlLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice agenzia per il lavoro"@it ;
+    rdfs:subPropertyOf L0:identifier ;
+    rdfs:domain mlps-core:AgenziaPerIlLavoro ;
+    rdfs:comment "Codice identificativo interno di una Agenzia per il lavoro."@it .
+
+mlps-core:dataAtto a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data atto"@it ;
+    rdfs:domain mlps-core:Atto ;
+    rdfs:range xsd:dateTime ;
+    rdfs:comment "È la data di emissione di un atto."@it .
+
+mlps-core:dataFinePUC a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data fine PUC"@it ;
+    rdfs:domain mlps-core:ProgettoUtileAllaCollettività ;
+    rdfs:range xsd:dateTime .
+
+mlps-core:dataInizioPUC a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data inizio PUC"@it ;
+    rdfs:domain mlps-core:ProgettoUtileAllaCollettività ;
+    rdfs:range xsd:dateTime .
+
+mlps-core:identificativoAtto a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "identificativo atto"@it ;
+    rdfs:subPropertyOf L0:identifier ;
+    rdfs:domain mlps-core:Atto ;
+    rdfs:comment "È l'identificatore univoco di un atto."@it .
+
+mlps-core:ProtocolloPrestazioneDiSostegno a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "protocollo prestazione di sostegno"@it ;
+    rdfs:subPropertyOf L0:identifier ;
+    rdfs:domain mlps-core:PrestazioneDiSostegno ;
+    rdfs:comment "È l'identificatore univoco di una prestazione di sostegno."@it .
+
+mlps-core:titoloPUC a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "titolo PUC"@it ;
+    rdfs:domain mlps-core:ProgettoUtileAllaCollettività ;
+    rdfs:range xsd:string .
+
+### Classes
+
+CLV:City a owl:Class .
+
+CLV:Region a owl:Class .
+
+COV:Organization a owl:Class .
+
+COV:PublicOrganization a owl:Class .
+
+CPV:Alive a owl:Class .
+
+CPV:Person a owl:Class .
+
+L0:Agent a owl:Class ;
+    owl:disjointWith [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom L0:Agent ] .
+
+mlps-core:AgenziaPerIlLavoro a owl:Class ;
+    rdfs:label "Agenzia per il lavoro"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty TI:atTime ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Ruolo di Organizzazione attribuito a chi offre servizi di intermediazione tra domanda e offerta di lavoro. L'iscrizione dell'agenzia allo specifico Albo gestito dal MLPS ne certifica l'autorizzazione a svolgere l'attività."@it .
+
+mlps-core:AmbitoTerritorialeSociale a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty mlps-core:haEnteCapofila ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Ambito territoriale sociale"@it ;
+    rdfs:subClassOf COV:Organization ;
+    rdfs:comment "L'Ambito Territoriale Sociale (ATS) è un'organizzazione deputata alla programmazione locale, progettazione, concertazione e coordinamento degli interventi e dei servizi sociali e di altre prestazioni integrate, attive a livello locale. Può esplicitarsi sia in una forma giuridica associativa tra diversi enti, principalmente i Comuni, a cui questi ultimi trasferiscono specifiche funzioni sul territorio, sia come articolazione strumentale di un ente con autonomia gestionale ma non giuridica e imprenditoriale."@it .
+
+mlps-core:AmministrazioneServizioSociale a owl:Class ;
+    rdfs:label "Amministrazione servizio sociale"@it ;
+    rdfs:comment "Ruolo di una organizzazione attribuito a chi partecipa al sistema di welfare locale per attivare nel territorio risorse e servizi, pubblici o privati dedicati alla rilevazione dei fabbisogni delle persone e/o dei nuclei familiari in condizione di disagio sociale e lavorativi e in grado di programmare, avviare e gestire un percorso personalizzato di accompagnamento all’inclusione sociale e all’inserimento lavorativo."@it .
+
+mlps-core:AnalisiPreliminareNucleoFamiliare a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:esegueAnalisiPreliminareNucleo ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:haAnalisiPreliminareNucleo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Analisi preliminare nucleo familiare"@it ;
+    rdfs:comment "Classifica l'esito dell'analisi preliminare riferita ad un nucleo familiare coinvolto in un percorso d'inclusione sociale e lavorativa. Costituisce il primo e obbligatorio strumento della valutazione multidimensionale finalizzata a identificare i bisogni del nucleo familiare e dei suoi singoli componenti, tenendo conto sia dei fattori di vulnerabilità che delle risorse e capacità presenti nel nucleo, consentendo anche di individuare tra i componenti tenuti agli obblighi di attivazione lavorativa, coloro che hanno le caratteristiche soggettive per essere attivabili al lavoro. L'analisi viene svolta dagli operatori sociali tramite dei colloqui con il nucleo familiare e la compilazione di questionari, divisi in sezioni, su specifiche tematiche o aree di osservazione. La sintesi di tale analisi determina la definizione del PaIS ovvero la necessità di un approfondimento tramite il Quadro di analisi."@it .
+
+mlps-core:AssegnoDiInclusione a owl:Class ;
+    rdfs:label "Assegno di inclusione"@it ;
+    rdfs:subClassOf mlps-core:PrestazioneDiSostegnoNucleoFamiliare ;
+    rdfs:comment "L’Assegno Di Inclusione (ADI) è una misura nazionale di contrasto alla povertà, alla fragilità e all’esclusione sociale delle fasce deboli attraverso percorsi di inserimento sociale, nonché di formazione, di lavoro e di politica attiva del lavoro. Nel dettaglio è un beneficio economico volto all'integrazione del reddito familiare che varia in base al numero dei componenti il nucleo familiare e alle risorse economiche già possedute dal nucleo medesimo, con una componente aggiuntiva per i nuclei familiari residenti in abitazione in locazione, subordinato alla partecipazione a un percorso personalizzato di attivazione e di inclusione sociale e lavorativa che costituisce condizione abilitante per l'ottenimento e il mantenimento del suddetto beneficio."@it .
+
+mlps-core:Atto a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty mlps-core:dataAtto ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:label "Atto"@it ;
+    rdfs:comment "Classifica in modo generalista un qualsiasi atto ovvero una volizione formale di un soggetto che la esprime in modo volontario e responsabile. Nell'ambito di un processo l'atto si concretizza in una asserzione e/o disposizione che viene espressa da un agente mediante le forme previste dal processo stesso che possono essere la forma scritta contenuta in un documento o una registrazione strutturata e formale nell'ambito di un sistema informativo."@it .
+
+mlps-core:BeneficiarioPrestazioneDiSostegno a owl:Class ;
+    rdfs:label "Beneficiario prestazione di sostegno"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom CPV:Person ] ;
+    rdfs:comment "Ruolo di persona beneficiaria di una prestazione di sostegno ovvero colui che ha il godimento della prestazione."@it .
+
+mlps-core:CentroPerImpiego a owl:Class ;
+    rdfs:label "Centro per l'impiego"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf COV:hasSupportUnit ] ;
+            owl:someValuesFrom COV:PublicOrganization ] ;
+    rdfs:comment "È un ufficio locale della Pubblica Amministrazione, di competenza regionale e/o provinciale, a cui è demandata la funzione di attuare politiche pubbliche in materia di lavoro ed erogare servizi per favorire la ricollocazione di lavoratori idisoccupati o inoccupati tramite la stipula di un Patto di Servizio Personalizzato (PSP) ovvero di un percorso specifico di accompagnamento all'inserimento lavorativo che prevede la redazione del bilancio delle competenze e attività finalizzate alla ricerca attiva di lavoro e alla formazione o riqualificazione professionale."@it .
+
+mlps-core:ComuneItaliano a owl:Class ;
+    rdfs:label "Comune italiano"@it ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf (
+                    CLV:City
+                    [ a owl:Restriction ;
+                        owl:onProperty CLV:hasHigherRank ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:oneOf (
+                                        countries:Italy ) ] ] ) ] ;
+    rdfs:comment "Un comune è, dal punto di vista del diritto pubblico, un ente territoriale, ovverosia un'entità geografica amministrativa composta dal territorio comunale e dall'ente pubblico, dotato di personalità giuridica, detto anch'esso comune, che amministra, per competenza territoriale, e che possiede, almeno in parte, il territorio comunale (fonte: Wikipedia). In questo dominio sono considerati solo i comuni italiani."@it .
+
+mlps-core:CoordinatoreServizioSociale a owl:Class ;
+    rdfs:label "Coordinatore servizio sociale"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom CPV:Alive ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf COV:holdEmployment ] ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf (
+                            mlps-core:AmbitoTerritorialeSociale
+                            mlps-core:ComuneItaliano
+                            mlps-core:ProvinciaAutonomaItaliana
+                            mlps-core:RegioneItaliana ) ] ] ;
+    rdfs:comment "Ruolo di persona attribuito a chi coordina dapprima le attività di accertamento e valutazione delle condizioni di necessità manifestate da chi si rivolge ad un servizio sociale erogato da una amministrazione allo scopo preposta, anche tramite la presentazione di domande di accesso a prestazioni di sostegno e, successivamente, le azioni concertate per il superamento di tali necessità."@it .
+
+mlps-core:CorsoDiFormazione a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:gestisceCorsoDiFormazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Corso di formazione"@it ;
+    rdfs:comment "È un percorso strutturato volto a fornire e sviluppare competenze, conoscenze e abilità in un determinato campo o professione. Nell'ambito di percorsi di inclusione lavorativa e sociale, l'attività ha lo scopo di favorire l'acquisizione o il miglioramento delle competenze lavorative e personali al fine di facilitare il (re-)impiego di persone in cerca di lavoro."@it .
+
+mlps-core:CurriculumVitaeCittadino a owl:Class ;
+    rdfs:label "Curriculum vitae cittadino"@it ;
+    rdfs:comment "Il Curriculum Vitae (CV) è una rappresentazione descrittiva dei percorsi formativi, delle competenze, delle esperienze e degli interessi professionali di una persona fisica. In particolare consente di valutare la compatibilità delle caratteristiche descritte rispetto a possibili impieghi ovvero prestazioni lavorative e/o professionali richieste da datori di lavoro."@it .
+
+mlps-core:DatoreDiLavoro a owl:Class ;
+    rdfs:label "Datore di lavoro"@it ;
+    rdfs:comment "Ruolo di una organizzazione attribuito a chi retribuisce, nell'ambito di un rapporto di lavoro, una prestazione lavorativa erogata da un lavoratore."@it .
+
+mlps-core:DomandaPrestazioneDiSostegno a owl:Class ;
+    rdfs:label "Domanda prestazione di sostegno"@it ;
+    rdfs:comment "Sottoclasse di Atto che classifica le domande di prestazioni di sostegno presentate a vario titolo da soggetti che possiedono i requisti per ottenere la prestazione richiesta."@it .
+
+mlps-core:EnteFormativo a owl:Class ;
+    rdfs:label "Ente formativo"@it ;
+    rdfs:comment "Ruolo di Organizzazione attribuito a chi gestisce ed eroga corsi e attività di formazione. Nell'ambito di percorsi di inclusione lavorativa e sociale, gli enti formativi risultano accreditati ovvero ottengono tramite opportuni criteri di selezione una certificazione da parte di un'autorità pubblica che ne attesta la qualità, l'affidabilità e la capacità di erogare corsi di formazione validi e conformi a specifici standard."@it .
+
+mlps-core:FascicoloSocialeLavorativoDelCittadino a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:haFascicoloSocialeLavorativo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Fascicolo sociale e lavorativo del cittadino"@it ;
+    rdfs:comment "Rappresenta la condizione sociale e lavorativa di un cittadino tramite i suoi legami con le diverse entità che esprimono tale condizione. In particolare, tramite il fascicolo è possibile esplorare la condizione sociale, lavorativa e formativa di un cittadino potendone osservare eventuali disagi, fragilità e criticità nonchè gli strumenti di sostegno e i percorsi di inclusione attivati nell'ambito delle politiche attive previste dalla normativa e pianificate dai diversi enti preposti."@it .
+
+mlps-core:GestoreServizioSociale a owl:Class ;
+    rdfs:label "Gestore servizio sociale"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom CPV:Alive ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf COV:holdEmployment ] ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf (
+                            mlps-core:AmbitoTerritorialeSociale
+                            mlps-core:ComuneItaliano
+                            mlps-core:ProvinciaAutonomaItaliana
+                            mlps-core:RegioneItaliana ) ] ] ;
+    rdfs:comment "Ruolo di persona attribuito a chi gestisce nell'ambito di uno specifico servizio sociale e sotto la supervisione di un coordinatore, le singole situazioni di necessità sociale e/o lavorativa manifestate da cittadini in stato di bisogno."@it .
+
+mlps-core:OffertaDiLavoro a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:proponeOffertaDiLavoro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Offerta di lavoro"@it ;
+    rdfs:comment "Rappresenta una proposta di impiego rivolta a persone in cerca di occupazione, completa dei dettagli, tra gli altri, relativi a: mansioni offerte, competenze e/o abilitazioni richieste, luogo di lavoro, contratto e inquadramento, retribuzione e orario di lavoro."@it .
+
+mlps-core:PattoAttivazioneDigitaleIndividuale a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty mlps-core:riferisceCurriculumVitaeCittadino ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:haPADIndividuale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Patto attivazione digitale individuale"@it ;
+    rdfs:comment "Il Patto di Attivazione Digitale (PAD) individuale è un atto ovvero un accordo formale e obbligatorio che viene compilato, unitamente al curriculum vitae, dai beneficiari del nucleo familiare che, in esito alla valutazione dei bisogni del nucleo familiare da parte dei servizi sociali, risultano attivabili al lavoro. Nel PAD individuale il sottoscrittore: fornisce e certifica i propri contatti da utilizzare per la convocazione da parte dei servizi attraverso messaggistica telefonica o posta elettronica, fermo restando che la convocazione avviene anche per il tramite della piattaforma e assume valore legale in assenza di contatti validi forniti dal beneficiario; comunica le informazioni essenziali per la presa in carico e indica, ai fini dell'attivazione al lavoro e della successiva sottoscrizione del patto di servizio personalizzato, almeno tre agenzie per il lavoro o enti autorizzati all’attività di intermediazione; si impegna a presentarsi alla convocazione del servizio per il lavoro competente per la stipula del patto di servizio personalizzato."@it .
+
+mlps-core:PattoAttivazioneDigitaleNucleo a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:haPADNucleoFamiliare ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Patto attivazione digitale nucleo"@it ;
+    rdfs:comment "Il Patto di Attivazione Digitale (PAD) del nucleo familiare è un atto ovvero un accordo formale e obbligatorio che i potenziali beneficiari dell'Assegno di Inclusione (ADI) devono stipulare con gli enti competenti per valutare la situazione del nucleo familiare e abilitare l'accesso ai benefici previsti dalla misura. Mediante la sottoscrizione del PAD il nucleo familiare fornisce le informazioni necessarie per avviare un percorso di accompagnamento al lavoro o di inclusione sociale, collaborando con gli enti e i servizi sociali locali preposti. In particolare la sottoscrizione del PAD prevede la conferma dei dati personali e familiari del beneficiario dell'Assegno di Inclusione, nonché la comunicazione dei dati relativi ai membri del nucleo familiare che potrebbero essere inseriti nel mondo del lavoro autorizzandone la trasmissione ai centri per l'impiego o alle agenzie per il lavoro, a seconda del caso specifico. Con la firma del PAD, i beneficiari sono quindi presi in carico dai centri per l'impiego o dai servizi sociali del comune, avviando così il percorso di inclusione sociale o lavorativa concordato."@it .
+
+mlps-core:PattoInclusioneSocialeNucleoFamiliare a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:haPattoInclusioneSocialeNucleo ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:stipulaPattoInclusioneSocialeNucleo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Patto inclusione sociale nucleo familiare"@it ;
+    rdfs:comment "Il Patto per l'inclusione sociale (PaIS) del nucleo familiare è un atto ovvero un accordo stipulato tra u nucleo familiare, rappresentato dal beneficiari ADI a cu fa capo, e un gestore locale dei servizi sociali. L'accordo viene stipulato sulla base dei risultati dell'analisi multidisciplinare svolta sul nucleo familiare e rappresenta il percorso di recupero sociale del nucleo progettato al fine di superare le criticità rilevate. Il progetto viene definito stabilendo un insieme di obiettivi generali e risultati specifici da conseguire attraverso una serie di Impegni, cioè la disponibilità a svolgere determinate attività e a seguire determinate regole di comportamento, e Sostegni, cioè servizi e interventi di cui il nucleo necessita e a cui sarà abilitato sul territorio di residenza. Il percorso tracciato è costatentemente monitorato attraverso incontri e verifiche tangibili del suo andamento e a cui è condizionata la concessione e il mantenimento del beneficio economico accordato."@it .
+
+mlps-core:PattoServizioPersonalizzato a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:stipulaPattoServizioPersonalizzato ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Patto servizio personalizzato"@it ;
+    rdfs:comment "Il Patto di Servizio Personalizzato (PSP) è un atto ovvero un accordo che un disoccupato ovvero una persona in cerca di lavoro sottoscrive con il Centro per l’impiego (CPI) e che regola gli impegni della persona e definisce l’erogazione dei servizi da parte del CPI, entrambi finalizzati all’obiettivo comune di ricollocazione nel mondo del lavoro. Nel PSP sono dettagliati i servizi di accompagnamento al lavoro concordati tra cui, ad esempio, la partecipazione a corsi di riqualificazione professionale o la ricerca attiva di offerte di lavoro. La stipula del patto è obbligatoria per i percettori di indennità o sostegni economici (NASpI, ADI, SFL) che in questo modo assicurano il rispetto degli impegni presi, la cui mancata osservanza, in assenza di giustificato motivo, porterebbe alla sospensione e/o perdita dei benefici economici e l’impossibilità di usufruire di ulteriori servizi presso il CPI. Nell'ambito dell'ADI e della conseguente analisi multidimensionale del nucleo familiare, il PSP è richiesto per tutti i componenti del nucleo familiare attivabili al lavoro."@it .
+
+mlps-core:PercorsoInclusioneNucleoFamiliare a owl:Class ;
+    rdfs:label "Percorso inclusione nucleo familiare"@it ;
+    rdfs:comment "Classifica globalmente l'insieme d'interventi di inclusione sociale e lavorativa destinati a nuclei familiari che fanno capo a richiedenti ADI che hanno sottoscritto un PAD per il nucleo stesso accettando così di intraprendere un percorso di reinserimento sociale e possibilmente lavorativo da parte degli enti pubblici preposti."@it .
+
+mlps-core:PrestazioneDiSostegno a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty mlps-core:haTipoPrestazioneDiSostegno ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Prestazione di sostegno"@it ;
+    rdfs:comment "Classifica in modo generalista le prestazioni, i sussidi e le indennità stabilite normativamente ed erogate dagli enti preposti a vantaggio di persone o nuclei familiari in stato di difficoltà lavorativa, economica, sociale e sanitaria."@it .
+
+mlps-core:PrestazioneDiSostegnoIndividuale a owl:Class ;
+    rdfs:label "Prestazione di sostegno individuale"@it ;
+    owl:disjointWith mlps-core:PrestazioneDiSostegnoNucleoFamiliare ;
+    rdfs:comment "Generalizzazione delle prestazioni di sostegno dedicate ai singoli individui."@it .
+
+mlps-core:PrestazioneDiSostegnoNucleoFamiliare a owl:Class ;
+    rdfs:label "Prestazione di sostegno nucleo familiare"@it ;
+    rdfs:comment "Generalizzazione delle prestazioni di sostegno dedicate ai nuclei familiari  e quindi ai relativi componenti."@it .
+
+mlps-core:ProgettoUtileAllaCollettività a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty mlps-core:dataFinePUC ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty mlps-core:dataInizioPUC ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty mlps-core:titoloPUC ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:haAttivatoPUC ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Progetto utile alla collettività"@it .
+
+mlps-core:ProvinciaAutonomaItaliana a owl:Class ;
+    rdfs:label "Provincia autonoma italiana"@it ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:oneOf (
+                    provinces:Bolzano
+                    provinces:Trento ) ] ;
+    rdfs:comment "Una provincia, in Italia, è un ente locale territoriale di area vasta, di livello inferiore alla regione e superiore a quello del comune. In particolare, ci sono due province autonome: quelle di Trento e di Bolzano. Sono autonome in virtù di uno statuto speciale che attribuisce loro particolari forme di autonomia, compresa quella legislativa. Quest'autonomia le rende assimilabili alle regioni e le differenzia dalle altre province, che hanno compiti molto più ridotti."@it .
+
+mlps-core:QuadroDiAnalisiNucleoFamiliare a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:esegueQuadroDiAnalisiNucleo ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf mlps-core:haQuadroDiAnalisiNucleoFamiliare ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:label "Quadro di analisi nucleo familiare"@it ;
+    rdfs:comment "Classifica l'esito di una analisi di approfondimento rispetto alle evidenze emerse con l'analisi preliminare di cui è la naturale conseguenza in presenza di bisogni complessi da parte dell'intero nucleo familiare o di suoi specifici componenti. La definizione del Quadro di analisi può richiedere il coninvolgimento di una equipes di esperti multidisciplinari con il compito di identificare e correlare i fabbisogni rilevati in un quadro più articolato e funzionale alla definizione del PaIS. L'analisi è supportata da una Guida all'Osservazione che prevede la redazione di un Descrittore sintetico riguardante le diverse dimensioni: sociali, economiche, di cura, etc., sia del nucleo sia di specifici componenti in particolare di quelli risultati non attivabili al lavoro in sede di analisi preliminare."@it .
+
+mlps-core:RegioneItaliana a owl:Class ;
+    rdfs:label "Regione italiana"@it ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf (
+                    CLV:Region
+                    [ a owl:Restriction ;
+                        owl:onProperty CLV:hasHigherRank ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:oneOf (
+                                        countries:Italy ) ] ] ) ] ;
+    rdfs:comment "Una regione italiana rappresenta il primo livello di suddivisione territoriale della Repubblica Italiana, nonché un ente pubblico dotato di autonomia politica e amministrativa sancita e limitata principalmente dalla Costituzione (fonte: Wikipedia)."@it .
+
+mlps-core:RichiedentePrestazioneDiSostegno a owl:Class ;
+    rdfs:label "Richiedente prestazione di sostegno"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom CPV:Alive ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom CPV:Person ] ;
+    rdfs:comment "Ruolo di persona viva che richiede una prestazione di sostegno per se stesso e/o per altri."@it .
+
+mlps-core:SupportoFormazioneLavoro a owl:Class ;
+    rdfs:label "Supporto formazione lavoro"@it ;
+    rdfs:subClassOf mlps-core:PrestazioneDiSostegnoIndividuale ;
+    rdfs:comment "Il Supporto per la Formazione e il Lavoro (SFL) è una misura finalizzata a favorire l’attivazione nel mondo del lavoro delle persone a rischio di esclusione sociale e lavorativa, mediante la partecipazione a progetti di formazione, di qualificazione e riqualificazione professionale, di orientamento, di accompagnamento al lavoro e di politiche attive del lavoro, nonché dei progetti utili alla collettività e del servizio civile universale e prevede la corresponsione di una indennità di partecipazione alle misure di attivazione lavorativa, condizionato all’effettiva partecipazione alle attività sopra indicate."@it .
+
+mlps-core:TipoPrestazioneDiSostegno a owl:Class ;
+    rdfs:label "Tipo prestazione di sostegno"@it ;
+    rdfs:comment "Classifica la tipologia di una prestazione di sostegno."@it .
+
+rpo:RegisteredResidentPerson a owl:Class .
+
+[] a owl:Class ;
+    rdfs:subClassOf COV:PublicOrganization ;
+    owl:unionOf (
+            mlps-core:ComuneItaliano
+            mlps-core:ProvinciaAutonomaItaliana
+            mlps-core:RegioneItaliana ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf mlps-core:Atto ;
+    owl:unionOf (
+            mlps-core:DomandaPrestazioneDiSostegno
+            mlps-core:PattoAttivazioneDigitaleIndividuale
+            mlps-core:PattoAttivazioneDigitaleNucleo
+            mlps-core:PattoInclusioneSocialeNucleoFamiliare
+            mlps-core:PattoServizioPersonalizzato ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf mlps-core:PrestazioneDiSostegno ;
+    owl:unionOf (
+            mlps-core:PrestazioneDiSostegnoIndividuale
+            mlps-core:PrestazioneDiSostegnoNucleoFamiliare ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty RO:holdsRoleInTime ;
+            owl:someValuesFrom mlps-core:AmministrazioneServizioSociale ] ;
+    owl:unionOf (
+            mlps-core:AmbitoTerritorialeSociale
+            mlps-core:ComuneItaliano
+            mlps-core:ProvinciaAutonomaItaliana
+            mlps-core:RegioneItaliana ) .
+
+[] a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom COV:Organization ] ;
+    owl:unionOf (
+            mlps-core:AgenziaPerIlLavoro
+            mlps-core:AmministrazioneServizioSociale
+            mlps-core:DatoreDiLavoro
+            mlps-core:EnteFormativo ) .
+
+### Individuals
+
+countries:Italy a owl:NamedIndividual .
+
+<https://w3id.org/italia/data/organization/public-organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/core/latest/core.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia del Ministero del Lavoro e delle Politche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
+        "This is the distribution in N-TRIPLES of the Labour and Social Policy Ministry Ontology about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES dell'ontologia del Ministero del Lavoro e delle Politiche Sociali - Core"@it,
+        "N-TRIPLES distribution of the Labour and Social Policies Ministry ontology - Core"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/core/latest/core.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia del Ministero del Lavoro e delle Politche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
+        "This is the distribution in RDF/Turtle of the Labour and Social Policy Ministry Ontology about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle dell'ontologia del Ministero del Lavoro e delle Politiche Sociali - Core"@it,
+        "RDF/Turtle distribution of the Labour and Social Policies Ministry ontology - Core"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/core/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/core/latest/core.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia del Ministero del Lavoro e delle Politche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
+        "This is the distribution in RDF/XML of the Labour and Social Policy Ministry Ontology about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML dell'ontologia del Ministero del Lavoro e delle Politiche Sociali - Core"@it,
+        "RDF/XML distribution of the Labour and Social Policies Ministry ontology - Core"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    dct:identifier "DGInnovazioneDiv3" ;
+    foaf:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    vcard:fn "MLPS DG Innovazione – Divisione III" ;
+    vcard:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a COV:PublicOrganization,
+        dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    dct:identifier "mlps" ;
+    foaf:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+provinces:Bolzano a owl:NamedIndividual .
+
+provinces:Trento a owl:NamedIndividual .
+
+### Axioms
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            mlps-core:AgenziaPerIlLavoro
+            mlps-core:AmministrazioneServizioSociale
+            mlps-core:DatoreDiLavoro
+            mlps-core:EnteFormativo ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            mlps-core:AmbitoTerritorialeSociale
+            mlps-core:ComuneItaliano
+            mlps-core:ProvinciaAutonomaItaliana
+            mlps-core:RegioneItaliana ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            mlps-core:ComuneItaliano
+            mlps-core:ProvinciaAutonomaItaliana
+            mlps-core:RegioneItaliana ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members (
+            mlps-core:DomandaPrestazioneDiSostegno
+            mlps-core:PattoAttivazioneDigitaleIndividuale
+            mlps-core:PattoAttivazioneDigitaleNucleo
+            mlps-core:PattoInclusioneSocialeNucleoFamiliare
+            mlps-core:PattoServizioPersonalizzato ) .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

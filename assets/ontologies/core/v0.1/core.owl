@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:adms="https://w3id.org/italia/onto/ADMS/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+
+  <owl:Ontology rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/">
+    <owl:versionIRI rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/0.4"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/l0/"/>
+    <owl:imports rdf:resource="https://w3id.org/italia/onto/RO/"/>
+    <rdfs:label xml:lang="it">Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali</rdfs:label>
+    <rdfs:label xml:lang="en">Core Labour and Social Policies Ministry Ontology</rdfs:label>
+    <rdfs:comment xml:lang="it">Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities..</rdfs:comment>
+    <owl:versionInfo xml:lang="it">0.4 - Modificata il 09 Dicembre 2025</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">0.4 - Modified on 09 December 2025</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/"/>
+    <adms:acronym>mlps</adms:acronym>
+    <adms:hasContributor>
+      <rdf:Description rdf:about="https://w3id.org/italia/data/organization/public-organization/td">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <dc:identifier>TD</dc:identifier>
+        <foaf:name xml:lang="en">Digital Transformation Team</foaf:name>
+        <foaf:name xml:lang="it">Team per la Trasformazione Digitale</foaf:name>
+      </rdf:Description>
+    </adms:hasContributor>
+
+    <adms:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+    <adms:hasKeyClass rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <adms:hasKeyClass rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+    <adms:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+    <adms:hasSemanticAssetDistribution>
+      <adms:SemanticAssetDistribution rdf:about="https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-N-TRIPLES">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <dcat:accessURL rdf:resource="https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/core/latest/core.n3"/>
+        <dc:description xml:lang="it">Questa è la distribuzione N-TRIPLES dell'ontologia del Ministero del Lavoro e delle Politche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</dc:description>
+        <dc:description xml:lang="en">This is the distribution in N-TRIPLES of the Labour and Social Policy Ministry Ontology about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities.</dc:description>
+        <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES"/>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dc:title xml:lang="it">Distribuzione N-TRIPLES dell'ontologia del Ministero del Lavoro e delle Politiche Sociali - Core</dc:title>
+        <dc:title xml:lang="en">N-TRIPLES distribution of the Labour and Social Policies Ministry ontology - Core</dc:title>
+      </adms:SemanticAssetDistribution>
+    </adms:hasSemanticAssetDistribution>
+
+    <adms:hasSemanticAssetDistribution>
+      <adms:SemanticAssetDistribution rdf:about="https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-RDF-TURTLE">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <dcat:accessURL rdf:resource="https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/core/latest/core.ttl"/>
+        <dc:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell'ontologia del Ministero del Lavoro e delle Politche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</dc:description>
+        <dc:description xml:lang="en">This is the distribution in RDF/Turtle of the Labour and Social Policy Ministry Ontology about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities.</dc:description>
+        <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dc:title xml:lang="it">Distribuzione RDF/Turtle dell'ontologia del Ministero del Lavoro e delle Politiche Sociali - Core</dc:title>
+        <dc:title xml:lang="en">RDF/Turtle distribution of the Labour and Social Policies Ministry ontology - Core</dc:title>
+      </adms:SemanticAssetDistribution>
+    </adms:hasSemanticAssetDistribution>
+
+    <adms:hasSemanticAssetDistribution>
+      <adms:SemanticAssetDistribution rdf:about="https://w3id.org/italia/labour-social-policies/data/core/distribution/MLPSCORE-RDF-XML">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <dcat:accessURL rdf:resource="https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/core/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/core/latest/core.owl"/>
+        <dc:description xml:lang="it">Questa è la distribuzione RDF/XML dell'ontologia del Ministero del Lavoro e delle Politche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</dc:description>
+        <dc:description xml:lang="en">This is the distribution in RDF/XML of the Labour and Social Policy Ministry Ontology about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities.</dc:description>
+        <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dc:title xml:lang="it">Distribuzione RDF/XML dell'ontologia del Ministero del Lavoro e delle Politiche Sociali - Core</dc:title>
+        <dc:title xml:lang="en">RDF/XML distribution of the Labour and Social Policies Ministry ontology - Core</dc:title>
+      </adms:SemanticAssetDistribution>
+    </adms:hasSemanticAssetDistribution>
+
+    <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+    <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+    <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
+    <adms:last rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/0.4"/>
+    <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/labour-social-policies/onto/core/</adms:officialURI>
+    <adms:prefix>mlps-core</adms:prefix>
+    <adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
+    <adms:status>draft</adms:status>
+    <adms:target xml:lang="it">Cittadini</adms:target>
+    <adms:target xml:lang="it">Imprese</adms:target>
+    <adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
+    <adms:type rdf:resource="https://w3id.org/italia/onto/ADMS/ServiceOnytology"/>
+    <dcat:contactPoint>
+      <rdf:Description rdf:about="https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <dc:identifier>DGInnovazioneDiv3</dc:identifier>
+        <foaf:name xml:lang="en">MLPS DG Innovation - Division III</foaf:name>
+        <foaf:name xml:lang="it">MLPS DG Innovazione – Divisione III</foaf:name>
+        <rdfs:label xml:lang="en">MLPS DG Innovation - Division III</rdfs:label>
+        <rdfs:label xml:lang="it">MLPS DG Innovazione – Divisione III</rdfs:label>
+        <vcard:fn>MLPS DG Innovazione – Divisione III</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:dginnovazionediv3@lavoro.gov.it"/>
+      </rdf:Description>
+    </dcat:contactPoint>
+
+    <dcat:keyword xml:lang="en">Citizen's social and employment file</dcat:keyword>
+    <dcat:keyword xml:lang="en">Support Performance</dcat:keyword>
+    <dcat:keyword xml:lang="it">Fascicolo sociale e lavorativo del cittadino</dcat:keyword>
+    <dcat:keyword xml:lang="it">Prestazione Di Sostegno</dcat:keyword>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
+    <dc:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+    <dc:creator rdf:resource="https://w3id.org/italia/labour-social-policies/data/organization/mlps"/>
+    <dc:description xml:lang="it">Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell’ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</dc:description>
+    <dc:description xml:lang="en">This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities.</dc:description>
+    <dc:identifier>https://w3id.org/italia/labour-social-policies/onto/core</dc:identifier>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-09T00:00:00+00:00</dc:issued>
+    <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+    <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-09T00:00:00+00:00</dc:modified>
+    <dc:publisher rdf:resource="https://w3id.org/italia/labour-social-policies/data/organization/mlps"/>
+    <dc:rightsHolder rdf:resource="https://w3id.org/italia/labour-social-policies/data/organization/mlps"/>
+    <dc:title xml:lang="it">Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali</dc:title>
+    <dc:title xml:lang="en">Core Labour and Social Policies Ministry Ontology</dc:title>
+  </owl:Ontology>
+
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string">
+  </rdfs:Datatype>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/contieneCVCittadino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/CurriculumVitaeCittadino"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un suo CV.</rdfs:comment>
+    <rdfs:label xml:lang="it">contiene CV cittadino</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/contieneInteresseCorsoDiFormazione">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/CorsoDiFormazione"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un Corso di formazione verso cui ha manifestato interesse.</rdfs:comment>
+    <rdfs:label xml:lang="it">contiene interesse corso di formazione</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/contieneInteresseOffertaDiLavoro">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/OffertaDiLavoro"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad una Offerta di lavoro verso cui ha manifestato interesse.</rdfs:comment>
+    <rdfs:label xml:lang="it">contiene interesse offerta di lavoro</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/contieneIscrizioneCorsoDiFormazione">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/CorsoDiFormazione"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un Corso di formazione a cui si è iscritto.</rdfs:comment>
+    <rdfs:label xml:lang="it">contiene iscrizione corso di formazione</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/contienePADIndividuale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleIndividuale"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un suo PAD individuale.</rdfs:comment>
+    <rdfs:label xml:lang="it">contiene PAD individuale</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/contienePattoServizioPersonalizzato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoServizioPersonalizzato"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un suo PSP.</rdfs:comment>
+    <rdfs:label xml:lang="it">contiene patto servizio personalizzato</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/contieneRispostaOffertaDiLavoro">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/OffertaDiLavoro"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad una Offerta di lavoro verso cui a fatto domanda.</rdfs:comment>
+    <rdfs:label xml:lang="it">contiene risposta offerta di lavoro</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/esegueAnalisiPreliminareNucleo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmministrazioneServizioSociale"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AnalisiPreliminareNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega un Gestore servizio sociale ad una Analisi preliminare di un nucleo familiare da lui eseguita.</rdfs:comment>
+    <rdfs:label xml:lang="it">esegue analisi preliminare nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/esegueQuadroDiAnalisiNucleo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmministrazioneServizioSociale"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/QuadroDiAnalisiNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega un Gestore servizio sociale ad un Quadro di analisi di un nucleo familiare da lui eseguito.</rdfs:comment>
+    <rdfs:label xml:lang="it">esegue quadro di analisi nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/esprimeAtto">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onProperty>
+                      <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+                      </rdf:Description>
+                    </owl:onProperty>
+
+                    <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+                  </owl:Restriction>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:unionOf>
+
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/Atto"/>
+    <rdfs:comment xml:lang="it">Lega un atto all'agente (o ruolo di agente) che lo ha espresso.</rdfs:comment>
+    <rdfs:label xml:lang="it">esprime atto</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/gestisceCorsoDiFormazione">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/EnteFormativo"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/CorsoDiFormazione"/>
+    <rdfs:comment xml:lang="it">Lega un Ente formativo ad un Corso di formazione da lui gestito.</rdfs:comment>
+    <rdfs:label xml:lang="it">gestisce corso di formazione</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haAnalisiPreliminareNucleo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PercorsoInclusioneNucleoFamiliare"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AnalisiPreliminareNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega un Percorso d'inclusione di un nucleo familiare alla sua Analisi preliminare.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha analisi preliminare nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haAttivatoPUC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività"/>
+    <rdfs:label xml:lang="it">ha attivato PUC</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haBeneficiarioPrestazioneDiSostegno">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/BeneficiarioPrestazioneDiSostegno"/>
+    <rdfs:comment xml:lang="it">Lega una prestazione di sostegno con un beneficiario della prestazione.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha beneficiario prestazione di sostegno</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haComponenteDiATS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
+    <rdfs:comment xml:lang="it">Lega un ATS ad un ente pubblico che ne fa parte.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha componente di ATS</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haDomandaPrestazioneDiSostegno">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DomandaPrestazioneDiSostegno"/>
+    <rdfs:comment xml:lang="it">Lega una prestazione di sostegno alla domanda presentata per l'ottenimento della prestazione stessa.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha domanda prestazione di sostegno</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haEnteCapofila">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
+    <rdfs:comment xml:lang="it">Lega un ATS all'ente pubblico che ne è capofila.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha ente capofila</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haFascicoloSocialeLavorativo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson">
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:comment xml:lang="it">Lega un Cittadino al suo Fascicolo sociale e lavorativo.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha fascicolo sociale e lavorativo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haPADIndividuale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoIndividuale"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleIndividuale"/>
+    <rdfs:comment xml:lang="it">Lega una Prestazione di sostegno individuale al relativo PAD individuale.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha PAD individuale</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haPADNucleoFamiliare">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoNucleoFamiliare"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleNucleo"/>
+    <rdfs:comment xml:lang="it">Lega una Prestazione di sostegno nucleo familiare al relativo PAD nucleo.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha PAD nucleo familiare</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haPattoInclusioneSocialeNucleo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PercorsoInclusioneNucleoFamiliare"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoInclusioneSocialeNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega un Percorso d'inclusione di un nucleo familiare al suo PaIS nucleo.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha patto inclusione sociale nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haPattoServizioPersonalizzato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoServizioPersonalizzato"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoIndividuale"/>
+    <rdfs:comment xml:lang="it">Lega una Prestazione di sostegno individuale al relativo Patto di servizio personalizzato.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha patto servizio personalizzato</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haPrestazioneDiSostegno">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PercorsoInclusioneNucleoFamiliare"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+    <rdfs:comment xml:lang="it">Lega un Percorso d'inclusione di un nucleo familiare alla prestazione di sostegno di cui è beneficiario.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha prestazione di sostegno</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haQuadroDiAnalisiNucleoFamiliare">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PercorsoInclusioneNucleoFamiliare"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/QuadroDiAnalisiNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega un Percorso d'inclusione di un nucleo familiare al suo Quadro di analisi.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha quadro di analisi nucleo familiare</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haRichiedentePrestazioneDiSostegno">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DomandaPrestazioneDiSostegno"/>
+    <rdfs:range>
+      <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/RichiedentePrestazioneDiSostegno">
+        <rdfs:subClassOf>
+          <owl:Restriction>
+            <owl:onProperty>
+              <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+              </rdf:Description>
+            </owl:onProperty>
+
+            <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CPV/Alive"/>
+          </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+          <owl:Restriction>
+            <owl:onProperty>
+              <rdf:Description>
+                <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+              </rdf:Description>
+            </owl:onProperty>
+
+            <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
+          </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:comment xml:lang="it">Ruolo di persona viva che richiede una prestazione di sostegno per se stesso e/o per altri.</rdfs:comment>
+        <rdfs:label xml:lang="it">Richiedente prestazione di sostegno</rdfs:label>
+      </owl:Class>
+    </rdfs:range>
+
+    <rdfs:comment xml:lang="it">Lega una domanda di prestazione di sostegno al suo richiedente.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha richiedente prestazione di sostegno</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/haTipoPrestazioneDiSostegno">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+    <rdfs:range>
+      <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/TipoPrestazioneDiSostegno">
+        <rdfs:comment xml:lang="it">Classifica la tipologia di una prestazione di sostegno.</rdfs:comment>
+        <rdfs:label xml:lang="it">Tipo prestazione di sostegno</rdfs:label>
+      </owl:Class>
+    </rdfs:range>
+
+    <rdfs:comment xml:lang="it">Lega una prestazione di sostegno al suo tipo.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha tipo prestazione di sostegno</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/indicaBeneficiarioPrestazioneDiSostegno">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DomandaPrestazioneDiSostegno"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/BeneficiarioPrestazioneDiSostegno"/>
+    <rdfs:comment xml:lang="it">Lega una richiesta di prestazione di sostegno a un beneficiario della prestazione.</rdfs:comment>
+    <rdfs:label xml:lang="it">indica beneficiario prestazione di sostegno</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/proponeOffertaDiLavoro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AgenziaPerIlLavoro"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DatoreDiLavoro"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:unionOf>
+
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/OffertaDiLavoro"/>
+    <rdfs:comment xml:lang="it">Lega un Datore di lavoro o una Agenzia per il lavoro ad una Offerta di lavoro da lui promossa.</rdfs:comment>
+    <rdfs:label xml:lang="it">propone offerta di lavoro</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferisceAnalisiPreliminareNucleo">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AnalisiPreliminareNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un'Analisi preliminare relativa al nucleo familiare di cui è componente.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce analisi preliminare nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferisceCurriculumVitaeCittadino">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleIndividuale"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/CurriculumVitaeCittadino"/>
+    <rdfs:comment xml:lang="it">Lega un PAD individuale di un Cittadino ad un CV del Cittadino stesso.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce curriculum vitae cittadino</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferiscePADNucleo">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleNucleo"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino al PAD nucleo relativo al nucleo familiare di cui è componente.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce PAD nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferiscePattoInclusioneSocialeNucleo">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoInclusioneSocialeNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino al PaIS relativo al nucleo familiare di cui è componente.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce patto inclusione sociale nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferiscePattoServizioPersonalizzato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PercorsoInclusioneNucleoFamiliare"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoServizioPersonalizzato"/>
+    <rdfs:comment xml:lang="it">Lega un Percorso d'inclusione di un nucleo familiare al PSP di un suo componente attivabile al lavoro, obbligatorio o volontario.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce patto servizio personalizzato</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferiscePercorsoNucleoFamiliare">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PercorsoInclusioneNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un Percorso d'inclusione sociale relativo al nucleo familiare di cui è componente.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce percorso nucleo familiare</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferiscePrestazioneDiSostegno">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad una prestazione di sostegno. Il Cittadino può partecpare al legame in qualità di beneficiario di una prestazione individuel o come componente di un nucleo familiare beneficiario.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce prestazione di sostegno</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/riferisceQuadroDiAnalisiNucleo">
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/QuadroDiAnalisiNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega il fascicolo di un Cittadino ad un Quadro di analisi relativo al nucleo familiare di cui è componente.</rdfs:comment>
+    <rdfs:label xml:lang="it">riferisce quadro di analisi nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/stipulaPattoInclusioneSocialeNucleo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmministrazioneServizioSociale"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoInclusioneSocialeNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Lega un Gestore servizio sociale ad un PaIS di un nucleo familiare da lui formalizzato.</rdfs:comment>
+    <rdfs:label xml:lang="it">stipula patto inclusione sociale nucleo</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/stipulaPattoServizioPersonalizzato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain>
+      <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/CentroPerImpiego">
+        <rdfs:subClassOf>
+          <owl:Restriction>
+            <owl:onProperty>
+              <rdf:Description>
+                <owl:inverseOf>
+                  <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/COV/hasSupportUnit">
+                  </owl:ObjectProperty>
+                </owl:inverseOf>
+
+              </rdf:Description>
+            </owl:onProperty>
+
+            <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
+          </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:comment xml:lang="it">È un ufficio locale della Pubblica Amministrazione, di competenza regionale e/o provinciale, a cui è demandata la funzione di attuare politiche pubbliche in materia di lavoro ed erogare servizi per favorire la ricollocazione di lavoratori idisoccupati o inoccupati tramite la stipula di un Patto di Servizio Personalizzato (PSP) ovvero di un percorso specifico di accompagnamento all'inserimento lavorativo che prevede la redazione del bilancio delle competenze e attività finalizzate alla ricerca attiva di lavoro e alla formazione o riqualificazione professionale.</rdfs:comment>
+        <rdfs:label xml:lang="it">Centro per l'impiego</rdfs:label>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoServizioPersonalizzato"/>
+    <rdfs:comment xml:lang="it">Lega un CPI ad un PSP da lui formalizzato.</rdfs:comment>
+    <rdfs:label xml:lang="it">stipula patto servizio personalizzato</rdfs:label>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasHigherRank">
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/COV/holdEmployment">
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/RO/holdsRoleInTime">
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime">
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/ProtocolloPrestazioneDiSostegno">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+    <rdfs:comment xml:lang="it">È l'identificatore univoco di una prestazione di sostegno.</rdfs:comment>
+    <rdfs:label xml:lang="it">protocollo prestazione di sostegno</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/codiceAgenziaPerIlLavoro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AgenziaPerIlLavoro"/>
+    <rdfs:comment xml:lang="it">Codice identificativo interno di una Agenzia per il lavoro.</rdfs:comment>
+    <rdfs:label xml:lang="it">codice agenzia per il lavoro</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/dataAtto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/Atto"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:comment xml:lang="it">È la data di emissione di un atto.</rdfs:comment>
+    <rdfs:label xml:lang="it">data atto</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/dataFinePUC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="it">data fine PUC</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/dataInizioPUC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="it">data inizio PUC</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/identificativoAtto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/Atto"/>
+    <rdfs:comment xml:lang="it">È l'identificatore univoco di un atto.</rdfs:comment>
+    <rdfs:label xml:lang="it">identificativo atto</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/titoloPUC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="it">titolo PUC</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/onto/l0/identifier">
+  </owl:DatatypeProperty>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/AgenziaPerIlLavoro">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="it">Ruolo di Organizzazione attribuito a chi offre servizi di intermediazione tra domanda e offerta di lavoro. L'iscrizione dell'agenzia allo specifico Albo gestito dal MLPS ne certifica l'autorizzazione a svolgere l'attività.</rdfs:comment>
+    <rdfs:label xml:lang="it">Agenzia per il lavoro</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haEnteCapofila"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+    <rdfs:comment xml:lang="it">L'Ambito Territoriale Sociale (ATS) è un'organizzazione deputata alla programmazione locale, progettazione, concertazione e coordinamento degli interventi e dei servizi sociali e di altre prestazioni integrate, attive a livello locale. Può esplicitarsi sia in una forma giuridica associativa tra diversi enti, principalmente i Comuni, a cui questi ultimi trasferiscono specifiche funzioni sul territorio, sia come articolazione strumentale di un ente con autonomia gestionale ma non giuridica e imprenditoriale.</rdfs:comment>
+    <rdfs:label xml:lang="it">Ambito territoriale sociale</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/AmministrazioneServizioSociale">
+    <rdfs:comment xml:lang="it">Ruolo di una organizzazione attribuito a chi partecipa al sistema di welfare locale per attivare nel territorio risorse e servizi, pubblici o privati dedicati alla rilevazione dei fabbisogni delle persone e/o dei nuclei familiari in condizione di disagio sociale e lavorativi e in grado di programmare, avviare e gestire un percorso personalizzato di accompagnamento all’inclusione sociale e all’inserimento lavorativo.</rdfs:comment>
+    <rdfs:label xml:lang="it">Amministrazione servizio sociale</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/AnalisiPreliminareNucleoFamiliare">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/esegueAnalisiPreliminareNucleo"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haAnalisiPreliminareNucleo"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Classifica l'esito dell'analisi preliminare riferita ad un nucleo familiare coinvolto in un percorso d'inclusione sociale e lavorativa. Costituisce il primo e obbligatorio strumento della valutazione multidimensionale finalizzata a identificare i bisogni del nucleo familiare e dei suoi singoli componenti, tenendo conto sia dei fattori di vulnerabilità che delle risorse e capacità presenti nel nucleo, consentendo anche di individuare tra i componenti tenuti agli obblighi di attivazione lavorativa, coloro che hanno le caratteristiche soggettive per essere attivabili al lavoro. L'analisi viene svolta dagli operatori sociali tramite dei colloqui con il nucleo familiare e la compilazione di questionari, divisi in sezioni, su specifiche tematiche o aree di osservazione. La sintesi di tale analisi determina la definizione del PaIS ovvero la necessità di un approfondimento tramite il Quadro di analisi.</rdfs:comment>
+    <rdfs:label xml:lang="it">Analisi preliminare nucleo familiare</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/AssegnoDiInclusione">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">L’Assegno Di Inclusione (ADI) è una misura nazionale di contrasto alla povertà, alla fragilità e all’esclusione sociale delle fasce deboli attraverso percorsi di inserimento sociale, nonché di formazione, di lavoro e di politica attiva del lavoro. Nel dettaglio è un beneficio economico volto all'integrazione del reddito familiare che varia in base al numero dei componenti il nucleo familiare e alle risorse economiche già possedute dal nucleo medesimo, con una componente aggiuntiva per i nuclei familiari residenti in abitazione in locazione, subordinato alla partecipazione a un percorso personalizzato di attivazione e di inclusione sociale e lavorativa che costituisce condizione abilitante per l'ottenimento e il mantenimento del suddetto beneficio.</rdfs:comment>
+    <rdfs:label xml:lang="it">Assegno di inclusione</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/Atto">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/dataAtto"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Classifica in modo generalista un qualsiasi atto ovvero una volizione formale di un soggetto che la esprime in modo volontario e responsabile. Nell'ambito di un processo l'atto si concretizza in una asserzione e/o disposizione che viene espressa da un agente mediante le forme previste dal processo stesso che possono essere la forma scritta contenuta in un documento o una registrazione strutturata e formale nell'ambito di un sistema informativo.</rdfs:comment>
+    <rdfs:label xml:lang="it">Atto</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/BeneficiarioPrestazioneDiSostegno">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CPV/Person"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="it">Ruolo di persona beneficiaria di una prestazione di sostegno ovvero colui che ha il godimento della prestazione.</rdfs:comment>
+    <rdfs:label xml:lang="it">Beneficiario prestazione di sostegno</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/ComuneItaliano">
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first>
+              <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/City">
+              </owl:Class>
+            </rdf:first>
+
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
+                    <owl:someValuesFrom>
+                      <owl:Class>
+                        <owl:oneOf>
+                          <rdf:Description>
+                            <rdf:first rdf:resource="http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/Italy"/>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          </rdf:Description>
+                        </owl:oneOf>
+
+                      </owl:Class>
+                    </owl:someValuesFrom>
+
+                  </owl:Restriction>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="it">Un comune è, dal punto di vista del diritto pubblico, un ente territoriale, ovverosia un'entità geografica amministrativa composta dal territorio comunale e dall'ente pubblico, dotato di personalità giuridica, detto anch'esso comune, che amministra, per competenza territoriale, e che possiede, almeno in parte, il territorio comunale (fonte: Wikipedia). In questo dominio sono considerati solo i comuni italiani.</rdfs:comment>
+    <rdfs:label xml:lang="it">Comune italiano</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/CoordinatoreServizioSociale">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/COV/holdEmployment"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ComuneItaliano"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProvinciaAutonomaItaliana"/>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/RegioneItaliana"/>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </owl:unionOf>
+
+          </owl:Class>
+        </owl:someValuesFrom>
+
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CPV/Alive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="it">Ruolo di persona attribuito a chi coordina dapprima le attività di accertamento e valutazione delle condizioni di necessità manifestate da chi si rivolge ad un servizio sociale erogato da una amministrazione allo scopo preposta, anche tramite la presentazione di domande di accesso a prestazioni di sostegno e, successivamente, le azioni concertate per il superamento di tali necessità.</rdfs:comment>
+    <rdfs:label xml:lang="it">Coordinatore servizio sociale</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/CorsoDiFormazione">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/gestisceCorsoDiFormazione"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">È un percorso strutturato volto a fornire e sviluppare competenze, conoscenze e abilità in un determinato campo o professione. Nell'ambito di percorsi di inclusione lavorativa e sociale, l'attività ha lo scopo di favorire l'acquisizione o il miglioramento delle competenze lavorative e personali al fine di facilitare il (re-)impiego di persone in cerca di lavoro.</rdfs:comment>
+    <rdfs:label xml:lang="it">Corso di formazione</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/CurriculumVitaeCittadino">
+    <rdfs:comment xml:lang="it">Il Curriculum Vitae (CV) è una rappresentazione descrittiva dei percorsi formativi, delle competenze, delle esperienze e degli interessi professionali di una persona fisica. In particolare consente di valutare la compatibilità delle caratteristiche descritte rispetto a possibili impieghi ovvero prestazioni lavorative e/o professionali richieste da datori di lavoro.</rdfs:comment>
+    <rdfs:label xml:lang="it">Curriculum vitae cittadino</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/DatoreDiLavoro">
+    <rdfs:comment xml:lang="it">Ruolo di una organizzazione attribuito a chi retribuisce, nell'ambito di un rapporto di lavoro, una prestazione lavorativa erogata da un lavoratore.</rdfs:comment>
+    <rdfs:label xml:lang="it">Datore di lavoro</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/DomandaPrestazioneDiSostegno">
+    <rdfs:comment xml:lang="it">Sottoclasse di Atto che classifica le domande di prestazioni di sostegno presentate a vario titolo da soggetti che possiedono i requisti per ottenere la prestazione richiesta.</rdfs:comment>
+    <rdfs:label xml:lang="it">Domanda prestazione di sostegno</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/EnteFormativo">
+    <rdfs:comment xml:lang="it">Ruolo di Organizzazione attribuito a chi gestisce ed eroga corsi e attività di formazione. Nell'ambito di percorsi di inclusione lavorativa e sociale, gli enti formativi risultano accreditati ovvero ottengono tramite opportuni criteri di selezione una certificazione da parte di un'autorità pubblica che ne attesta la qualità, l'affidabilità e la capacità di erogare corsi di formazione validi e conformi a specifici standard.</rdfs:comment>
+    <rdfs:label xml:lang="it">Ente formativo</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/FascicoloSocialeLavorativoDelCittadino">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haFascicoloSocialeLavorativo"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Rappresenta la condizione sociale e lavorativa di un cittadino tramite i suoi legami con le diverse entità che esprimono tale condizione. In particolare, tramite il fascicolo è possibile esplorare la condizione sociale, lavorativa e formativa di un cittadino potendone osservare eventuali disagi, fragilità e criticità nonchè gli strumenti di sostegno e i percorsi di inclusione attivati nell'ambito delle politiche attive previste dalla normativa e pianificate dai diversi enti preposti.</rdfs:comment>
+    <rdfs:label xml:lang="it">Fascicolo sociale e lavorativo del cittadino</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/GestoreServizioSociale">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/COV/holdEmployment"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ComuneItaliano"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProvinciaAutonomaItaliana"/>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/RegioneItaliana"/>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </owl:unionOf>
+
+          </owl:Class>
+        </owl:someValuesFrom>
+
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/CPV/Alive"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="it">Ruolo di persona attribuito a chi gestisce nell'ambito di uno specifico servizio sociale e sotto la supervisione di un coordinatore, le singole situazioni di necessità sociale e/o lavorativa manifestate da cittadini in stato di bisogno.</rdfs:comment>
+    <rdfs:label xml:lang="it">Gestore servizio sociale</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/OffertaDiLavoro">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/proponeOffertaDiLavoro"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Rappresenta una proposta di impiego rivolta a persone in cerca di occupazione, completa dei dettagli, tra gli altri, relativi a: mansioni offerte, competenze e/o abilitazioni richieste, luogo di lavoro, contratto e inquadramento, retribuzione e orario di lavoro.</rdfs:comment>
+    <rdfs:label xml:lang="it">Offerta di lavoro</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleIndividuale">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/riferisceCurriculumVitaeCittadino"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haPADIndividuale"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Il Patto di Attivazione Digitale (PAD) individuale è un atto ovvero un accordo formale e obbligatorio che viene compilato, unitamente al curriculum vitae, dai beneficiari del nucleo familiare che, in esito alla valutazione dei bisogni del nucleo familiare da parte dei servizi sociali, risultano attivabili al lavoro. Nel PAD individuale il sottoscrittore: fornisce e certifica i propri contatti da utilizzare per la convocazione da parte dei servizi attraverso messaggistica telefonica o posta elettronica, fermo restando che la convocazione avviene anche per il tramite della piattaforma e assume valore legale in assenza di contatti validi forniti dal beneficiario; comunica le informazioni essenziali per la presa in carico e indica, ai fini dell'attivazione al lavoro e della successiva sottoscrizione del patto di servizio personalizzato, almeno tre agenzie per il lavoro o enti autorizzati all’attività di intermediazione; si impegna a presentarsi alla convocazione del servizio per il lavoro competente per la stipula del patto di servizio personalizzato.</rdfs:comment>
+    <rdfs:label xml:lang="it">Patto attivazione digitale individuale</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleNucleo">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haPADNucleoFamiliare"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Il Patto di Attivazione Digitale (PAD) del nucleo familiare è un atto ovvero un accordo formale e obbligatorio che i potenziali beneficiari dell'Assegno di Inclusione (ADI) devono stipulare con gli enti competenti per valutare la situazione del nucleo familiare e abilitare l'accesso ai benefici previsti dalla misura. Mediante la sottoscrizione del PAD il nucleo familiare fornisce le informazioni necessarie per avviare un percorso di accompagnamento al lavoro o di inclusione sociale, collaborando con gli enti e i servizi sociali locali preposti. In particolare la sottoscrizione del PAD prevede la conferma dei dati personali e familiari del beneficiario dell'Assegno di Inclusione, nonché la comunicazione dei dati relativi ai membri del nucleo familiare che potrebbero essere inseriti nel mondo del lavoro autorizzandone la trasmissione ai centri per l'impiego o alle agenzie per il lavoro, a seconda del caso specifico. Con la firma del PAD, i beneficiari sono quindi presi in carico dai centri per l'impiego o dai servizi sociali del comune, avviando così il percorso di inclusione sociale o lavorativa concordato.</rdfs:comment>
+    <rdfs:label xml:lang="it">Patto attivazione digitale nucleo</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PattoInclusioneSocialeNucleoFamiliare">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haPattoInclusioneSocialeNucleo"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/stipulaPattoInclusioneSocialeNucleo"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Il Patto per l'inclusione sociale (PaIS) del nucleo familiare è un atto ovvero un accordo stipulato tra u nucleo familiare, rappresentato dal beneficiari ADI a cu fa capo, e un gestore locale dei servizi sociali. L'accordo viene stipulato sulla base dei risultati dell'analisi multidisciplinare svolta sul nucleo familiare e rappresenta il percorso di recupero sociale del nucleo progettato al fine di superare le criticità rilevate. Il progetto viene definito stabilendo un insieme di obiettivi generali e risultati specifici da conseguire attraverso una serie di Impegni, cioè la disponibilità a svolgere determinate attività e a seguire determinate regole di comportamento, e Sostegni, cioè servizi e interventi di cui il nucleo necessita e a cui sarà abilitato sul territorio di residenza. Il percorso tracciato è costatentemente monitorato attraverso incontri e verifiche tangibili del suo andamento e a cui è condizionata la concessione e il mantenimento del beneficio economico accordato.</rdfs:comment>
+    <rdfs:label xml:lang="it">Patto inclusione sociale nucleo familiare</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PattoServizioPersonalizzato">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/stipulaPattoServizioPersonalizzato"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Il Patto di Servizio Personalizzato (PSP) è un atto ovvero un accordo che un disoccupato ovvero una persona in cerca di lavoro sottoscrive con il Centro per l’impiego (CPI) e che regola gli impegni della persona e definisce l’erogazione dei servizi da parte del CPI, entrambi finalizzati all’obiettivo comune di ricollocazione nel mondo del lavoro. Nel PSP sono dettagliati i servizi di accompagnamento al lavoro concordati tra cui, ad esempio, la partecipazione a corsi di riqualificazione professionale o la ricerca attiva di offerte di lavoro. La stipula del patto è obbligatoria per i percettori di indennità o sostegni economici (NASpI, ADI, SFL) che in questo modo assicurano il rispetto degli impegni presi, la cui mancata osservanza, in assenza di giustificato motivo, porterebbe alla sospensione e/o perdita dei benefici economici e l’impossibilità di usufruire di ulteriori servizi presso il CPI. Nell'ambito dell'ADI e della conseguente analisi multidimensionale del nucleo familiare, il PSP è richiesto per tutti i componenti del nucleo familiare attivabili al lavoro.</rdfs:comment>
+    <rdfs:label xml:lang="it">Patto servizio personalizzato</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PercorsoInclusioneNucleoFamiliare">
+    <rdfs:comment xml:lang="it">Classifica globalmente l'insieme d'interventi di inclusione sociale e lavorativa destinati a nuclei familiari che fanno capo a richiedenti ADI che hanno sottoscritto un PAD per il nucleo stesso accettando così di intraprendere un percorso di reinserimento sociale e possibilmente lavorativo da parte degli enti pubblici preposti.</rdfs:comment>
+    <rdfs:label xml:lang="it">Percorso inclusione nucleo familiare</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haTipoPrestazioneDiSostegno"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Classifica in modo generalista le prestazioni, i sussidi e le indennità stabilite normativamente ed erogate dagli enti preposti a vantaggio di persone o nuclei familiari in stato di difficoltà lavorativa, economica, sociale e sanitaria.</rdfs:comment>
+    <rdfs:label xml:lang="it">Prestazione di sostegno</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoIndividuale">
+    <owl:disjointWith rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoNucleoFamiliare"/>
+    <rdfs:comment xml:lang="it">Generalizzazione delle prestazioni di sostegno dedicate ai singoli individui.</rdfs:comment>
+    <rdfs:label xml:lang="it">Prestazione di sostegno individuale</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoNucleoFamiliare">
+    <rdfs:comment xml:lang="it">Generalizzazione delle prestazioni di sostegno dedicate ai nuclei familiari  e quindi ai relativi componenti.</rdfs:comment>
+    <rdfs:label xml:lang="it">Prestazione di sostegno nucleo familiare</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haAttivatoPUC"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/dataFinePUC"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/dataInizioPUC"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/titoloPUC"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:label xml:lang="it">Progetto utile alla collettività</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/ProvinciaAutonomaItaliana">
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:oneOf>
+          <rdf:Description>
+            <rdf:first>
+              <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/Bolzano">
+              </owl:NamedIndividual>
+            </rdf:first>
+
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:NamedIndividual rdf:about="https://w3id.org/italia/controlled-vocabulary/territorial-classifications/provinces/Trento">
+                  </owl:NamedIndividual>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:oneOf>
+
+      </owl:Class>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="it">Una provincia, in Italia, è un ente locale territoriale di area vasta, di livello inferiore alla regione e superiore a quello del comune. In particolare, ci sono due province autonome: quelle di Trento e di Bolzano. Sono autonome in virtù di uno statuto speciale che attribuisce loro particolari forme di autonomia, compresa quella legislativa. Quest'autonomia le rende assimilabili alle regioni e le differenzia dalle altre province, che hanno compiti molto più ridotti.</rdfs:comment>
+    <rdfs:label xml:lang="it">Provincia autonoma italiana</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/QuadroDiAnalisiNucleoFamiliare">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/esegueQuadroDiAnalisiNucleo"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/haQuadroDiAnalisiNucleoFamiliare"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+
+    <rdfs:comment xml:lang="it">Classifica l'esito di una analisi di approfondimento rispetto alle evidenze emerse con l'analisi preliminare di cui è la naturale conseguenza in presenza di bisogni complessi da parte dell'intero nucleo familiare o di suoi specifici componenti. La definizione del Quadro di analisi può richiedere il coninvolgimento di una equipes di esperti multidisciplinari con il compito di identificare e correlare i fabbisogni rilevati in un quadro più articolato e funzionale alla definizione del PaIS. L'analisi è supportata da una Guida all'Osservazione che prevede la redazione di un Descrittore sintetico riguardante le diverse dimensioni: sociali, economiche, di cura, etc., sia del nucleo sia di specifici componenti in particolare di quelli risultati non attivabili al lavoro in sede di analisi preliminare.</rdfs:comment>
+    <rdfs:label xml:lang="it">Quadro di analisi nucleo familiare</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/RegioneItaliana">
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first>
+              <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Region">
+              </owl:Class>
+            </rdf:first>
+
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasHigherRank"/>
+                    <owl:someValuesFrom>
+                      <owl:Class>
+                        <owl:oneOf>
+                          <rdf:Description>
+                            <rdf:first rdf:resource="http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/Italy"/>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          </rdf:Description>
+                        </owl:oneOf>
+
+                      </owl:Class>
+                    </owl:someValuesFrom>
+
+                  </owl:Restriction>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </rdfs:subClassOf>
+
+    <rdfs:comment xml:lang="it">Una regione italiana rappresenta il primo livello di suddivisione territoriale della Repubblica Italiana, nonché un ente pubblico dotato di autonomia politica e amministrativa sancita e limitata principalmente dalla Costituzione (fonte: Wikipedia).</rdfs:comment>
+    <rdfs:label xml:lang="it">Regione italiana</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/SupportoFormazioneLavoro">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoIndividuale"/>
+    <rdfs:comment xml:lang="it">Il Supporto per la Formazione e il Lavoro (SFL) è una misura finalizzata a favorire l’attivazione nel mondo del lavoro delle persone a rischio di esclusione sociale e lavorativa, mediante la partecipazione a progetti di formazione, di qualificazione e riqualificazione professionale, di orientamento, di accompagnamento al lavoro e di politiche attive del lavoro, nonché dei progetti utili alla collettività e del servizio civile universale e prevede la corresponsione di una indennità di partecipazione alle misure di attivazione lavorativa, condizionato all’effettiva partecipazione alle attività sopra indicate.</rdfs:comment>
+    <rdfs:label xml:lang="it">Supporto formazione lavoro</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization">
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/onto/COV/PublicOrganization">
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/Alive">
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/Person">
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Agent">
+    <owl:disjointWith>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+      </owl:Restriction>
+    </owl:disjointWith>
+
+  </owl:Class>
+
+  <rdf:Description rdf:about="https://w3id.org/italia/labour-social-policies/data/organization/mlps">
+    <rdf:type rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dc:identifier>mlps</dc:identifier>
+    <foaf:name xml:lang="it">Ministero del Lavoro e delle politiche sociali</foaf:name>
+    <foaf:name xml:lang="en">Ministry of Labor and Social Policies</foaf:name>
+    <rdfs:label xml:lang="it">Ministero del Lavoro e delle politiche sociali</rdfs:label>
+    <rdfs:label xml:lang="en">Ministry of Labor and Social Policies</rdfs:label>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/Italy">
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:nodeID="genid86">
+    <owl:unionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AgenziaPerIlLavoro"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmministrazioneServizioSociale"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DatoreDiLavoro"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/EnteFormativo"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:unionOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <rdf:Description>
+            <owl:inverseOf rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+          </rdf:Description>
+        </owl:onProperty>
+
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+  </owl:Class>
+
+  <owl:Class rdf:nodeID="genid93">
+    <owl:unionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ComuneItaliano"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProvinciaAutonomaItaliana"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/RegioneItaliana"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:unionOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmministrazioneServizioSociale"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+  </owl:Class>
+
+  <owl:Class rdf:nodeID="genid99">
+    <owl:unionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ComuneItaliano"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProvinciaAutonomaItaliana"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/RegioneItaliana"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:unionOf>
+
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
+  </owl:Class>
+
+  <owl:Class rdf:nodeID="genid103">
+    <owl:unionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DomandaPrestazioneDiSostegno"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleIndividuale"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleNucleo"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoInclusioneSocialeNucleoFamiliare"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoServizioPersonalizzato"/>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:unionOf>
+
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/Atto"/>
+  </owl:Class>
+
+  <owl:Class rdf:nodeID="genid109">
+    <owl:unionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoIndividuale"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoNucleoFamiliare"/>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:unionOf>
+
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno"/>
+  </owl:Class>
+
+  <owl:AllDisjointClasses rdf:nodeID="genid112">
+    <owl:members>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AgenziaPerIlLavoro"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmministrazioneServizioSociale"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DatoreDiLavoro"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/EnteFormativo"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:members>
+
+  </owl:AllDisjointClasses>
+
+  <owl:AllDisjointClasses rdf:nodeID="genid117">
+    <owl:members>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ComuneItaliano"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProvinciaAutonomaItaliana"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/RegioneItaliana"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:members>
+
+  </owl:AllDisjointClasses>
+
+  <owl:AllDisjointClasses rdf:nodeID="genid122">
+    <owl:members>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ComuneItaliano"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProvinciaAutonomaItaliana"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/RegioneItaliana"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:members>
+
+  </owl:AllDisjointClasses>
+
+  <owl:AllDisjointClasses rdf:nodeID="genid126">
+    <owl:members>
+      <rdf:Description>
+        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/DomandaPrestazioneDiSostegno"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleIndividuale"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleNucleo"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoInclusioneSocialeNucleoFamiliare"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/PattoServizioPersonalizzato"/>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:members>
+
+  </owl:AllDisjointClasses>
+
+</rdf:RDF>
