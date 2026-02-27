@@ -16,8 +16,8 @@
     <owl:imports rdf:resource="https://w3id.org/italia/onto/l0/"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/RO/"/>
     <rdfs:label xml:lang="en">Core Labour and Social Policies Ministry Ontology</rdfs:label>
-    <rdfs:label xml:lang="it">Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali</rdfs:label>
-    <rdfs:comment xml:lang="it">Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</rdfs:comment>
+    <rdfs:label xml:lang="it">Ontologia Core del Ministero del Lavoro e delle Politiche Sociali</rdfs:label>
+    <rdfs:comment xml:lang="it">Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</rdfs:comment>
     <rdfs:comment xml:lang="en">This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities..</rdfs:comment>
     <owl:versionInfo xml:lang="it">0.2 - Modificata il 26 Febbraio 2026</owl:versionInfo>
     <owl:versionInfo xml:lang="en">0.2 - Modified on 26 February 2026</owl:versionInfo>
@@ -121,7 +121,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
     <dc:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
     <dc:creator rdf:resource="https://w3id.org/italia/labour-social-policies/data/organization/mlps"/>
-    <dc:description xml:lang="it">Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</dc:description>
+    <dc:description xml:lang="it">Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare.</dc:description>
     <dc:description xml:lang="en">This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities.</dc:description>
     <dc:identifier>https://w3id.org/italia/labour-social-policies/onto/core</dc:identifier>
     <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-09T00:00:00+00:00</dc:issued>
@@ -131,7 +131,7 @@
     <dc:publisher rdf:resource="https://w3id.org/italia/labour-social-policies/data/organization/mlps"/>
     <dc:rightsHolder rdf:resource="https://w3id.org/italia/labour-social-policies/data/organization/mlps"/>
     <dc:title xml:lang="en">Core Labour and Social Policies Ministry Ontology</dc:title>
-    <dc:title xml:lang="it">Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali</dc:title>
+    <dc:title xml:lang="it">Ontologia Core del Ministero del Lavoro e delle Politiche Sociali</dc:title>
   </owl:Ontology>
 
   <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasHigherRank">
@@ -599,7 +599,7 @@
     <rdfs:comment xml:lang="it">Protocolli domande ADI e RDC correlate al caso</rdfs:comment>
   </owl:DatatypeProperty>
 
-  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/ProtocolloPrestazioneDiSostegno">
+  <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/protocolloPrestazioneDiSostegno">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:label xml:lang="it">protocollo prestazione di sostegno</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/l0/identifier"/>

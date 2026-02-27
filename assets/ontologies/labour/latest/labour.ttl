@@ -26,9 +26,9 @@ lsp-labour: a owl:Ontology ;
         CPV:,
         L0:,
         RO: ;
-    rdfs:label "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero Del Lavoro e delle Politiche Sociali"@it,
+    rdfs:label "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero del Lavoro e delle Politiche Sociali"@it,
         "Ontology of Labor and Social Inclusion Services (SIISL) of the Ministry of Labor and Social Policies"@en ;
-    rdfs:comment "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+    rdfs:comment "Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
         "Ontology of the Ministry of Labour and Social Policies related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
     owl:versionInfo "0.1 - Modificata il 26 Febbraio 2026"@it,
         "0.1 - Modified on 26 February 2026"@en ;
@@ -64,7 +64,8 @@ lsp-labour: a owl:Ontology ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    dct:description "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero Del Lavoro e delle Politiche Sociali"@it ;
+    dct:description "Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+        "Ontology of the Ministry of Labour and Social Policies related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
     dct:identifier "https://w3id.org/italia/labour-social-policies/onto/labour" ;
     dct:issued "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
@@ -72,7 +73,7 @@ lsp-labour: a owl:Ontology ;
     dct:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
     dct:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
     dct:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    dct:title "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero Del Lavoro e delle Politiche Sociali"@it,
+    dct:title "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero del Lavoro e delle Politiche Sociali"@it,
         "Ontology of Labor and Social Inclusion Services (SIISL) of the Ministry of Labor and Social Policies"@en .
 
 ### Object Properties
@@ -1284,11 +1285,11 @@ TI:TimeInterval a owl:Class .
         owl:NamedIndividual ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/labour/latest> ;
     dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/labour/latest/labour.n3> ;
-    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
         "This is the distribution in N-TRIPLES of the Labour and Social Policies Ministry Ontology related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dct:title "Distribuzione N-TRIPLES dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero Del Lavoro e delle Politiche Sociali - SIISL"@it,
+    dct:title "Distribuzione N-TRIPLES dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero del Lavoro e delle Politiche Sociali - SIISL"@it,
         "N-TRIPLES distribution of the Labour and Social Policies Ministry ontology of labour and social inclusion services - SIISL"@en .
 
 <https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-RDF-TURTLE> a adms:SemanticAssetDistribution,
@@ -1297,11 +1298,11 @@ TI:TimeInterval a owl:Class .
         owl:NamedIndividual ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/labour/latest> ;
     dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/labour/latest/labour.ttl> ;
-    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
         "This is the distribution in RDF/Turtle of the Labour and Social Policy Ministry Ontology related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dct:title "Distribuzione RDF/Turtle dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero Del Lavoro e delle Politiche Sociali - SIISL"@it,
+    dct:title "Distribuzione RDF/Turtle dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero del Lavoro e delle Politiche Sociali - SIISL"@it,
         "RDF/Turtle distribution of the Labour and Social Policies Ministry ontology of labour and social inclusion services - SIISL"@en .
 
 <https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-RDF-XML> a adms:SemanticAssetDistribution,
@@ -1310,11 +1311,11 @@ TI:TimeInterval a owl:Class .
         owl:NamedIndividual ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/labour/latest> ;
     dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/labour/latest/labour.owl> ;
-    dct:description "Questa è la distribuzione RDF/XML dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
         "This is the distribution in RDF/XML of the Labour and Social Policy Ministry Ontology related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dct:title "Distribuzione RDF/XML dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero Del Lavoro e delle Politiche Sociali - SIISL"@it,
+    dct:title "Distribuzione RDF/XML dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero del Lavoro e delle Politiche Sociali - SIISL"@it,
         "RDF/XML distribution of the Labour and Social Policies Ministry ontology of labour and social inclusion services - SIISL"@en .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a dcatapit:Organization,

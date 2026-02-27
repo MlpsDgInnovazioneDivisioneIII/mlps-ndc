@@ -30,8 +30,8 @@ lsp-core: a owl:Ontology ;
         L0:,
         RO: ;
     rdfs:label "Core Labour and Social Policies Ministry Ontology"@en,
-        "Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali"@it ;
-    rdfs:comment "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
+        "Ontologia Core del Ministero del Lavoro e delle Politiche Sociali"@it ;
+    rdfs:comment "Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
         "This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities.."@en ;
     owl:versionInfo "0.2 - Modificata il 26 Febbraio 2026"@it,
         "0.2 - Modified on 26 February 2026"@en ;
@@ -65,7 +65,7 @@ lsp-core: a owl:Ontology ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     dct:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    dct:description "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
+    dct:description "Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al Fascicolo sociale e lavorativo del cittadino nell'ambito del sistema informativo pubblico e la sua funzione di hub di accesso alle informazioni sul cittadino in special modo quelle inerenti il suo coinvolgimento in iniziative di inclusione originate dalla necessità di sopperire alle fragilità sociali e lavorative sue proprie o del suo nucleo familiare."@it,
         "This is the ontology of the Labour and Social Policies Ministry about the citizen's social and employment record within the public information system and its function as a hub for accessing information on citizens, especially those relating to their involvement in inclusion initiatives arising from the need to address their own or their family's social and employment vulnerabilities."@en ;
     dct:identifier "https://w3id.org/italia/labour-social-policies/onto/core" ;
     dct:issued "2025-12-09T00:00:00+00:00"^^xsd:dateTime ;
@@ -75,7 +75,7 @@ lsp-core: a owl:Ontology ;
     dct:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
     dct:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
     dct:title "Core Labour and Social Policies Ministry Ontology"@en,
-        "Ontologia Core del Ministero Del Lavoro e delle Politiche Sociali"@it .
+        "Ontologia Core del Ministero del Lavoro e delle Politiche Sociali"@it .
 
 ### Object Properties
 
@@ -429,7 +429,7 @@ lsp-core:protocolloMisuraDomandaPrestazioneDiSostegno a owl:DatatypeProperty,
     rdfs:domain lsp-core:DomandaPrestazioneDiSostegno ;
     rdfs:comment "Protocolli domande ADI e RDC correlate al caso"@it .
 
-lsp-core:ProtocolloPrestazioneDiSostegno a owl:DatatypeProperty,
+lsp-core:protocolloPrestazioneDiSostegno a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "protocollo prestazione di sostegno"@it ;
     rdfs:subPropertyOf L0:identifier ;
