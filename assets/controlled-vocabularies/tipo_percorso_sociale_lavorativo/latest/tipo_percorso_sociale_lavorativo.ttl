@@ -1,0 +1,148 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns6: <http://www.w3.org/ns/adms#> .
+@prefix ns7: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns8: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
+        ns7:Kind,
+        ns7:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns1:identifier "DGInnovazioneDiv3" ;
+    ns4:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns7:fn "MLPS DG Innovazione – Divisione III" ;
+    ns7:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
+        <https://w3id.org/italia/onto/COV/PublicOrganization>,
+        ns4:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    ns1:identifier "mlps" ;
+    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
+        ns1:Standard ;
+    ns1:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns1:identifier "SKOS" ;
+    ns1:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> a <http://dati.gov.it/onto/dcatapit#Dataset>,
+        <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
+        ns5:ConceptScheme,
+        ns6:Asset ;
+    rdfs:label "Controlled vocabulary of the type of social work path"@en,
+        "Vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns5:prefLabel "Vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    rdfs:comment "Controlled vocabulary of the type of social work path"@en,
+        "Vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> ;
+    ns1:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns1:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns1:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:description "Controlled vocabulary of the type of social work path"@en,
+        "Vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns1:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo" ;
+    ns1:issued "2026-02-26"^^xsd:date ;
+    ns1:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns1:modified "2026-02-26"^^xsd:date ;
+    ns1:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:title "Controlled vocabulary of the type of social work path"@en,
+        "Vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns1:type <http://purl.org/adms/assettype/CodeList> ;
+    ns2:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns2:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_percorso_sociale_lavorativo/distribution/TPSL_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_percorso_sociale_lavorativo/distribution/TPSL_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_percorso_sociale_lavorativo/distribution/TPSL_RDF_TURTLE> ;
+    ns2:keyword "digital core activation agreement"@en,
+        "family unit"@en,
+        "nucleo familiare"@it,
+        "patto di attivazione digitale del nucleo"@it,
+        "patto di inclusione sociale del caso"@it,
+        "social inclusion pact of the case"@en ;
+    ns2:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns3:numberOfLevels "1" ;
+    ns5:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat1>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat2>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat3>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat4>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Minore>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/ND> ;
+    ns6:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns8:keyConcept "tipo_percorso_sociale_lavorativo" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat1> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> ;
+    rdfs:label "Obbligo di attivazione lavorativa e sociale" ;
+    ns5:notation "Cat1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat2> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> ;
+    rdfs:label "Facolt� di attivazione lavorativa e sociale" ;
+    ns5:notation "Cat2" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat3> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> ;
+    rdfs:label "Facolta� di attivazione del Supporto per la Formazione e il Lavoro (SFL)" ;
+    ns5:notation "Cat3" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat4> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> ;
+    rdfs:label "Obbligo di attivazione sociale e facolta� di attivazione lavorativa" ;
+    ns5:notation "Cat4" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Minore> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> ;
+    rdfs:label "Soggetto del nucleo minorenne e quindi esente da ogni obbligo" ;
+    ns5:notation "Minore" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/ND> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> ;
+    rdfs:label "Non disponibile" ;
+    ns5:notation "ND" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_percorso_sociale_lavorativo/distribution/TPSL_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns2:Distribution ;
+    ns1:description "Controlled vocabulary of the type of social work path CSV distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary of the type of social work path CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns2:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_percorso_sociale_lavorativo/latest> ;
+    ns2:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_percorso_sociale_lavorativo/latest/tipo_percorso_sociale_lavorativo.csv> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_percorso_sociale_lavorativo/distribution/TPSL_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns2:Distribution ;
+    ns1:description "Controlled vocabulary of the type of social work path JSON_LD distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary of the type of social work path JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns2:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_percorso_sociale_lavorativo/latest> ;
+    ns2:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_percorso_sociale_lavorativo/latest/tipo_percorso_sociale_lavorativo.json> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_percorso_sociale_lavorativo/distribution/TPSL_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns2:Distribution ;
+    ns1:description "Controlled vocabulary of the type of social work path RDF/turtle distribution"@en,
+        "Questa è la distribuzione RDF/Turtle del vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary of the type of social work path RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
+    ns2:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_percorso_sociale_lavorativo/latest> ;
+    ns2:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_percorso_sociale_lavorativo/latest/tipo_percorso_sociale_lavorativo.ttl> .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
