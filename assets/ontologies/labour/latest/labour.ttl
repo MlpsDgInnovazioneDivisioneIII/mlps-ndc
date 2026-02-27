@@ -1,0 +1,1353 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix L0: <https://w3id.org/italia/onto/l0/> .
+@prefix lsp-core: <https://w3id.org/italia/labour-social-policies/onto/core/> .
+@prefix lsp-labour: <https://w3id.org/italia/labour-social-policies/onto/labour/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix rpo: <https://w3id.org/italia/onto/RPO/> .
+@prefix smapit: <https://w3id.org/italia/onto/SM/> .
+@prefix TI: <https://w3id.org/italia/onto/TI/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lsp-labour: a owl:Ontology ;
+    owl:versionIRI lsp-labour:0.1 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        L0:,
+        RO: ;
+    rdfs:label "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero Del Lavoro e delle Politiche Sociali"@it,
+        "Ontology of Labor and Social Inclusion Services (SIISL) of the Ministry of Labor and Social Policies"@en ;
+    rdfs:comment "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+        "Ontology of the Ministry of Labour and Social Policies related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
+    owl:versionInfo "0.1 - Modificata il 26 Febbraio 2026"@it,
+        "0.1 - Modified on 26 February 2026"@en ;
+    rdfs:isDefinedBy lsp-labour: ;
+    adms:acronym "lsp" ;
+    adms:hasContributor <https://w3id.org/italia/data/organization/public-organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass lsp-labour:OffertaDiLavoro,
+        lsp-labour:OffertaFormativa ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-N-TRIPLES>,
+        <https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-RDF-TURTLE>,
+        <https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last lsp-labour:0.1 ;
+    adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/labour/"^^xsd:anyURI ;
+    adms:prefix "lsp-labour" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    dcat:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:description "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero Del Lavoro e delle Politiche Sociali"@it ;
+    dct:identifier "https://w3id.org/italia/labour-social-policies/onto/labour" ;
+    dct:issued "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dct:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:title "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero Del Lavoro e delle Politiche Sociali"@it,
+        "Ontology of Labor and Social Inclusion Services (SIISL) of the Ministry of Labor and Social Policies"@en .
+
+### Object Properties
+
+CLV:hasAddress a owl:ObjectProperty .
+
+lsp-core:haAccreditamentoPerFormazione a owl:ObjectProperty ;
+    rdfs:domain lsp-labour:EnteFormativoAccreditato .
+
+lsp-core:haBeneficiarioPrestazioneDiSostegno a owl:ObjectProperty .
+
+lsp-labour:aderisceAdOffertaDiLavoro a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "aderisce ad offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:AdesioneOffertaDiLavoro ;
+    rdfs:range lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Lega una candidatura a una offerta di lavoro avanzata da un cittadino alla relativa offerta di lavoro."@it .
+
+lsp-labour:haAdesioneOffertaDiLavoro a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha adesione offerta di lavoro"@it ;
+    rdfs:domain rpo:RegisteredResidentPerson ;
+    rdfs:range lsp-labour:AdesioneOffertaDiLavoro ;
+    rdfs:comment "Lega un cittadino a una sua risposta di disponibilità per una offerta di lavoro."@it .
+
+lsp-labour:haAgenziaPerIlLavoroDiPAD a owl:ObjectProperty ;
+    rdfs:label "ha agenzia per il lavoro di PAD"@it ;
+    rdfs:domain lsp-labour:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:range lsp-core:AgenziaPerIlLavoro ;
+    rdfs:comment "Lega un PAD individule a una o più Agenzie per il lavoro indicate nell'ambito del PAD stesso.Nel caso in cui il PAD individuale sia sottoscritto nell'ambito di una prestazione di sostegno dedicata al nucleo familiare di cui fa parte il cittadino sottoscrittore, risultando attivabile al lavoro, come nel caso di un ADI, allora l'indicazione da tre a dieci Agenzie per il lavoro è obbligatoria."@it .
+
+lsp-labour:haCanaleDiOrigineOffertaDiLavoro a owl:ObjectProperty ;
+    rdfs:label "ha canale di origine offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:range lsp-labour:TipodiCanaleDiOrigineOffertaDiLavoro ;
+    rdfs:comment "Lega una Offerta di lavoro ad un Canale di origine o pubblicazione."@it .
+
+lsp-labour:haConoscenzaInformatica a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha conoscenza informatica"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:ConoscenzaInformatica ;
+    rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza informatica."@it .
+
+lsp-labour:haConoscenzaLinguistica a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha conoscenza linguistica"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:ConoscenzaLinguistica ;
+    rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza linguistica."@it .
+
+lsp-labour:haConseguitoTitoloDiStudio a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha conseguito titolo di studio"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:TitoloDiStudioConseguito ;
+    rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante un Titolo di studio conseguito."@it .
+
+lsp-labour:haCorsoDiFormazione a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha corso di formazione"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:CorsoDiFormazione ;
+    rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante un Corso di formazione frequentato."@it .
+
+lsp-labour:haCPIReferente a owl:ObjectProperty ;
+    rdfs:label "ha CPI referente"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    lsp-labour:DichiarazioneImmediataDisponibilità
+                    lsp-labour:PattoServizioPersonalizzato ) ] ;
+    rdfs:range lsp-core:CentroPerImpiego ;
+    rdfs:comment "Lega un PSP o una DID al Centro per l'impiego con cui è stata sottoscritta."@it .
+
+lsp-labour:haCurriculumVitaeDelCittadiino a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha curriculum vitae del cittadiino"@it ;
+    rdfs:domain rpo:RegisteredResidentPerson ;
+    rdfs:range lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:comment "Lega un cittadino ad un suo Curriculum vitae."@it .
+
+lsp-labour:haDIDAbilitante a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha DID abilitante"@it ;
+    rdfs:domain lsp-labour:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:range lsp-labour:DichiarazioneImmediataDisponibilità ;
+    rdfs:comment "Lega un PAD alla Dichiarazione di immediata disponibilità che lo ha abilitato."@it .
+
+lsp-labour:haEdizioneOffertaFormativa a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha edizione offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Lega una Offerta formativa ad una sua edizione ovvero una erogazione del corso di formazione collocata nel tempo."@it .
+
+lsp-labour:haEdizioneOffertaFormativaDiIscrizione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha edizione offerta formativa di iscrizione"@it ;
+    rdfs:domain lsp-labour:IscrizioneEdizioneOffertaFormativa ;
+    rdfs:range lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Lega l'iscrizione di un cittadino ad una edizione di offerta formativa all'edizione stessa."@it .
+
+lsp-labour:haEnteErogatore a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha ente erogatore"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:EnteFormativoAccreditato ;
+    rdfs:comment "Lega una Offerta formativa con l'Ente formativo accreditato che l'ha pubblicata."@it .
+
+lsp-labour:haEsperienzaLavorativa a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha esperienza lavorativa"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:EsperienzaLavorativa ;
+    rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante una sua Esperienza lavorativa."@it .
+
+lsp-labour:haGradoDiConoscenzaLinguistica a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha grado di conoscenza linguistica"@it ;
+    rdfs:domain lsp-labour:ConoscenzaLinguistica ;
+    rdfs:range lsp-labour:GradoDiConoscenzaLinguistica ;
+    rdfs:comment "Lega una Conoscenza linguistica con il livello di padronanza (grado) posseduto."@it .
+
+lsp-labour:haGradoDiConoscenzaLinguisticaLetta a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha grado di conoscenza linguistica letta"@it ;
+    rdfs:subPropertyOf lsp-labour:haGradoDiConoscenzaLinguistica ;
+    rdfs:comment "Specializzazione del grado di conoscenza linguistica riguardante la lettura."@it .
+
+lsp-labour:haGradoDiConoscenzaLinguisticaParlata a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha grado di conoscenza linguistica parlata"@it ;
+    rdfs:subPropertyOf lsp-labour:haGradoDiConoscenzaLinguistica ;
+    rdfs:comment "Specializzazione del grado di conoscenza linguistica riguardante il parlato."@it .
+
+lsp-labour:haGradoDiConoscenzaLinguisticaScritta a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha grado di conoscenza linguistica scritta"@it ;
+    rdfs:subPropertyOf lsp-labour:haGradoDiConoscenzaLinguistica ;
+    rdfs:comment "Specializzazione del grado di conoscenza linguistica riguardante la scrittura."@it .
+
+lsp-labour:haIscrizioneAlboProfessionale a owl:ObjectProperty ;
+    rdfs:label "ha iscrizione albo professionale"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:AlboProfessionale ;
+    rdfs:comment "Lega il CV del cittadino a un Albo professionale a cui èiscritto."@it .
+
+lsp-labour:haIscrizioneEdizioneOffertaFormativa a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha iscrizione edizione offerta formativa"@it ;
+    rdfs:domain lsp-labour:CittadinoResidenteSottoscrittorePSP ;
+    rdfs:range lsp-labour:IscrizioneEdizioneOffertaFormativa ;
+    rdfs:comment "Lega un cittadino abilitato ad una sua iscrizione ad una edizione di un'offerta formativa."@it .
+
+lsp-labour:haLinguaConosciuta a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha lingua conosciuta"@it ;
+    rdfs:domain lsp-labour:ConoscenzaLinguistica ;
+    rdfs:range lsp-labour:LinguaConosciuta ;
+    rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante la sua cooscenza di una lingua."@it .
+
+lsp-labour:haLivelloCompetenzeDigitali a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha livello competenze digitali"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:LivelloCompetenzeDigitali ;
+    rdfs:comment "Lega un'Offerta formativa al Livello di competenze digitali che viene acquisito da i suoi discenti."@it .
+
+lsp-labour:haMacroCategoriaAttestatoCorso a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha macro categoria attestato corso"@it ;
+    rdfs:domain lsp-labour:AttestatoRilasciatoDaCorso ;
+    rdfs:range lsp-labour:MacroCategoriaAttestatoCorso ;
+    rdfs:comment "Lega un Attestato rilasciato da corso alla sua macro-categoria."@it .
+
+lsp-labour:haManifestatoInteresseOffertaFormativa a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha manifestato interesse offerta formativa"@it ;
+    rdfs:domain lsp-labour:CittadinoResidenteSottoscrittorePSP ;
+    rdfs:range lsp-labour:ManifestazioneInteresseOffertaFormativa ;
+    rdfs:comment "Lega un cittadino abilitato ad una sua manifestazione d'interesse per un'offerta formativa."@it .
+
+lsp-labour:haManifestazioneInteresseOffertaDiLavoro a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha manifestazione interesse offerta di lavoro"@it ;
+    rdfs:domain rpo:RegisteredResidentPerson ;
+    rdfs:range lsp-labour:ManifestazioneInteresseOffertaDiLavoro ;
+    rdfs:comment "Lega un cittadino ad una sua manifestazione d'interesse per un'offerta di lavoro."@it .
+
+lsp-labour:haMicroCategoriaAttestatoCorso a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha micro categoria attestato corso"@it ;
+    rdfs:domain lsp-labour:AttestatoRilasciatoDaCorso ;
+    rdfs:range lsp-labour:MicroCategoriaAttestatoCorso ;
+    rdfs:comment "Lega un Attestato rilasciato da corso alla sua micro-categoria."@it .
+
+lsp-labour:haModelloAttestatoDiCorso a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha modello attestato di corso"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:AttestatoRilasciatoDaCorso ;
+    rdfs:comment "Lega un'Offerta formativa al modello di attestato che verrà rilasciato al termine della sua frequentazione con successo. "@it .
+
+lsp-labour:haOffertaDiLavoroDiInteresse a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha offerta di lavoro di interesse"@it ;
+    rdfs:domain lsp-labour:ManifestazioneInteresseOffertaDiLavoro ;
+    rdfs:range lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Lega una manifestazione d'interesse a una offerta di lavoro espressa da un cittadino alla relativa offerta di lavoro."@it .
+
+lsp-labour:haOffertaFormativaDiInteresse a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha offerta formativa di interesse"@it ;
+    rdfs:domain lsp-labour:ManifestazioneInteresseOffertaFormativa ;
+    rdfs:range lsp-labour:OffertaFormativa ;
+    rdfs:comment "Lega una manifestazione d'interesse a una offerta formativa espressa da un cittadino alla relativa Offerta formativa."@it .
+
+lsp-labour:haPADAbilitante a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha PAD abilitante"@it ;
+    rdfs:domain lsp-labour:PattoServizioPersonalizzato ;
+    rdfs:range lsp-labour:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:comment "Lega un Patto di servizio personalizzato al PAD che lo ha abilitato."@it .
+
+lsp-labour:haPADIndividuale a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha PAD individuale"@it ;
+    rdfs:domain lsp-core:PrestazioneDiSostegno ;
+    rdfs:range lsp-labour:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:comment "Lega una Prestazione di sostegno al relativo PAD sottoscritto dal beneficiario della prestazione."@it .
+
+lsp-labour:haPatenteDiGuida a owl:ObjectProperty ;
+    rdfs:label "ha patente di guida"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:PatenteDiGuida ;
+    rdfs:comment "Lega il CV del cittadino ad una Patente di guida posseduta."@it .
+
+lsp-labour:haPattoServizioPersonalizzato a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha patto servizio personalizzato"@it ;
+    rdfs:domain lsp-core:PrestazioneDiSostegno ;
+    rdfs:range lsp-labour:PattoServizioPersonalizzato ;
+    rdfs:comment "Lega una Prestazione di sostegno ad un Patto di servizio personalizzato."@it .
+
+lsp-labour:haProfessioneDesiderata a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha professione desiderata"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:ProfessioneDesiderata ;
+    rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante una professione desiderata."@it .
+
+lsp-labour:haRegioneOrganizatriceCorso a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha regione organizatrice corso"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf (
+                    lsp-core:ProvinciaAutonomaItaliana
+                    lsp-core:RegioneItaliana ) ] ;
+    rdfs:comment "Lega una Offerta formativa a una Regione o Provincia autonoma che lo organizza."@it .
+
+lsp-labour:haSedeErogazione a owl:ObjectProperty ;
+    rdfs:label "ha sede erogazione"@it ;
+    rdfs:subPropertyOf CLV:hasAddress ;
+    rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Lega una Edizione offerta formativa al luogo fisico in cui viene erogata, nel caso in cui è prevista la modalitò di erogazione in presenza. È una specializzazione di CLV: hasAddress."@it .
+
+lsp-labour:haSettoreDiInteresse a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha settore di interesse"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:SettoreEconomicoProfessionale ;
+    rdfs:comment "Lega una Offerta formativa al relativo Settore economico professionale."@it .
+
+lsp-labour:haStatoDiCVDelCittadino a owl:ObjectProperty ;
+    rdfs:label "ha stato di CV del cittadino"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:StatoDiCVDelCittadino ;
+    rdfs:comment "Lega un CV del cittadino al suo stato di completamento e consultabilità."@it .
+
+lsp-labour:haStatoIscrizioneEdizioneOffertaFormativa a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha stato iscrizione edizione offerta formativa"@it ;
+    rdfs:domain lsp-labour:IscrizioneEdizioneOffertaFormativa ;
+    rdfs:range lsp-labour:StatoIscrizioneEdizioneOffertaFormativa ;
+    rdfs:comment "Lega l'iscrizione di un cittadino ad una edizione di offerta formativa con il suo stato o condizione."@it .
+
+lsp-labour:haStatoOffertaDiLavoro a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha stato offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:range lsp-labour:StatoOffertaDiLavoro ;
+    rdfs:comment "Lega una Offerta di lavoro al suo stato di completamento e disponibilità."@it .
+
+lsp-labour:haTipoDiAttestazioneCorsoDiFormazione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha tipo di attestazione corso di formazione"@it ;
+    rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:range lsp-labour:TipoDiAttestazione ;
+    rdfs:comment "Lega una sezione del CV del cittadino riguardante un Corso di formazione frequentato con il Tipo di attestazione rilasciata da tale corso."@it .
+
+lsp-labour:haTipoDiContrattoDiLavoro a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha tipo di contratto di lavoro"@it ;
+    rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:range lsp-labour:TipoDiContrattoDiLavoro ;
+    rdfs:comment "Lega una sezione del CV del cittadino riguardante una Esperianza lavorativa con il Tipo di contratto di lavoro con cui è stata svolta tale esperienza."@it .
+
+lsp-labour:haTipoDiContrattoPreferito a owl:ObjectProperty ;
+    rdfs:label "ha tipo di contratto preferito"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:range lsp-labour:TipoDiContrattoDiLavoro ;
+    rdfs:comment "Lega una sezione del CV del cittadino riguardante una Professione desiderata con il Tipo di contratto di lavoro con cui si vorrebbe svolgere tale professione."@it .
+
+lsp-labour:haTipoDiModalitàFormativa a owl:ObjectProperty ;
+    rdfs:label "ha tipo di modalità formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:TipoDiModalitàFormativa ;
+    rdfs:comment "Lega un'offerta formativa con un Tipo di modalità con cui può essere erogata tale formazione."@it .
+
+lsp-labour:haTipoDiProfessioneDesiderata a owl:ObjectProperty ;
+    rdfs:label "ha tipo di professione desiderata"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:range lsp-labour:TipoDiQualificaProfessionale ;
+    rdfs:comment "Lega una sezione del CV del cittadino riguardante una Professione desiderata con il Tipo di qualifica professionale con cui si vorrebbe svolgere tale professione."@it .
+
+lsp-labour:haTipoDiQualificaCorsoDiFormazione a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha tipo di qualifica corso di formazione"@it ;
+    rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:range lsp-labour:TipoDiQualificaProfessionale ;
+    rdfs:comment "Lega una sezione del CV del cittadino riguardante un Corso di formazione frequentato con il Tipo di qualifica professionale conseguita con tale corso."@it .
+
+lsp-labour:haTipoDiQualificaEsperienzaLavorativa a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha tipo di qualifica esperienza lavorativa"@it ;
+    rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:range lsp-labour:TipoDiQualificaProfessionale ;
+    rdfs:comment "Lega una sezione del CV del cittadino riguardante una Esperianza lavorativa con il Tipo di qualifica professionale con cui è stata svolta tale esperienza."@it .
+
+lsp-labour:haTipologiaOffertaFormativa a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha tipologia offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:TipologiaOffertaFormativa ;
+    rdfs:comment "Lega una Offerta formativa ad una tipologia o ambito formativo."@it .
+
+lsp-labour:haTipoPercorsoPSP a owl:ObjectProperty ;
+    rdfs:label "ha tipo percorso PSP"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:TipoPercorsoPSP ;
+    rdfs:comment "Lega una Offerta formativa ad un percorso personalizzato indicato nel PSP."@it .
+
+lsp-labour:haTipoProgrammaAttivazioneCorso a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha tipo programma attivazione corso"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:TipoProgrammaAttivazioneCorso ;
+    rdfs:comment "Lega una Offerta formativa ad un programma di attivazione o linea d'intervento."@it .
+
+lsp-labour:haTitoloDiStudio a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha titolo di studio"@it ;
+    rdfs:domain lsp-labour:TitoloDiStudioConseguito ;
+    rdfs:range lsp-labour:TitoloDiStudio ;
+    rdfs:comment "Lega una sezione del CV del cittadino riguardante un Titolo di studio conseguito con il Titolo di studio oggetto di conseguimento."@it .
+
+lsp-labour:haUnitàDiMisuraDurata a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha unità di misura durata"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range lsp-labour:UnitàDiMisuraDurata ;
+    rdfs:comment "Lega una Offerta formativa con l'Unità di misura della sua durata."@it .
+
+lsp-labour:proponeOffertaDiLavoro a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "propone offerta di lavoro"@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf (
+                    lsp-core:AgenziaPerIlLavoro
+                    lsp-core:DatoreDiLavoro ) ] ;
+    rdfs:range lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Lega un Datore di lavoro o una Agenzia per il lavoro ad una Offerta di lavoro da quello proposta."@it .
+
+lsp-labour:riferisceCurriculumVitaeCittadino a owl:ObjectProperty ;
+    rdfs:label "riferisce curriculum vitae cittadino"@it ;
+    rdfs:domain lsp-labour:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:range lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:comment "Lega un PAD individuale di un Cittadino ad un CV del Cittadino stesso."@it .
+
+lsp-labour:sottoscriveDID a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "sottoscrive DID"@it ;
+    rdfs:domain rpo:RegisteredResidentPerson ;
+    rdfs:range lsp-labour:DichiarazioneImmediataDisponibilità ;
+    rdfs:comment "Lega un Cittadino residente con una sua Dichiarazione di immediata disponibilità da lui sottoscritta."@it .
+
+lsp-labour:sottoscrivePADIndividuale a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "sottoscrive PAD individuale"@it ;
+    rdfs:domain rpo:RegisteredResidentPerson,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:sottoscriveDID ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty RO:holdsRoleInTime ;
+            owl:someValuesFrom [ a owl:Restriction ;
+                    owl:onProperty [ owl:inverseOf lsp-core:haBeneficiarioPrestazioneDiSostegno ] ;
+                    owl:someValuesFrom [ a owl:Restriction ;
+                            owl:onProperty lsp-labour:haPADIndividuale ;
+                            owl:someValuesFrom owl:Thing ] ] ] ;
+    rdfs:range lsp-labour:PattoAttivazioneDigitaleIndividuale ;
+    rdfs:comment "Lega un Cittadino residente con una sua Patto di attivazione digitale individuale da lui sottoscritto."@it .
+
+lsp-labour:sottoscrivePSP a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "sottoscrive PSP"@it ;
+    rdfs:domain lsp-labour:CittadinoResidenteSottoscrittorePSP,
+        rpo:RegisteredResidentPerson,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:sottoscrivePADIndividuale ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:range lsp-labour:PattoServizioPersonalizzato ;
+    rdfs:comment "Lega un Cittadino residente con un suo Patto di servizo personalizzato da lui sottoscritto."@it .
+
+RO:holdsRoleInTime a owl:ObjectProperty .
+
+smapit:hasOnlineContactPoint a owl:ObjectProperty .
+
+TI:atTime a owl:ObjectProperty .
+
+### Data Properties
+
+lsp-labour:avvisoAttivitaEnteErogatore a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso attività ente erogatore"@it ;
+    rdfs:comment "Booleano che indica l'attività dell'ente erogatore"@it .
+
+lsp-labour:avvisoCorsoRegionale a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso corso regionale"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Indicatore booleano che segnala un corso riconosciuto o finanziato a livello regionale. Associato a codice Regione."@it .
+
+lsp-labour:avvisoDisponibilitàMezzoProprio a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso disponibilità mezzo proprio"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:comment "Indicatore booleano che segnala se il cittadino può usare un mezzo proprio. Utile per mobilità e idoneità all'offerta."@it .
+
+lsp-labour:avvisoDisponibilitàTrasferte a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso disponibilità trasferte"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:comment "Indicatore booleano sulla disponibilità a trasferte. Impatta il matching con offerte che prevedono mobilità."@it .
+
+lsp-labour:avvisoEnteFormatoreCPIA a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso ente formatore CPIA"@it ;
+    rdfs:domain lsp-labour:EnteFormativoAccreditato ;
+    rdfs:comment "Indicatore booleano che segnala che l'ente formatore è un CPIA. Rilevante per percorsi di istruzione per adulti."@it .
+
+lsp-labour:avvisoEsperienzaNelSettore a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso esperienza nel settore"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:comment "Indicatore booleano che segnala se è richiesta esperienza pregressa"@it .
+
+lsp-labour:avvisoManifestazioneInteresseFormazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso manifestazione interesse formazione"@it ;
+    rdfs:domain lsp-labour:ManifestazioneInteresseOffertaFormativa ;
+    rdfs:comment "Indicatore booleano che segnala che il cittadino ha manifestato interesse per un corso di formazione"@it .
+
+lsp-labour:avvisoModalitaFormativaInSede a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso modalita formativa in sede"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Indicatore booleano che segnala che l'erogazione del corso avviene in sede"@it .
+
+lsp-labour:avvisoPercorsoLavoroInclusione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso percorso lavoro inclusione"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Booleano che indica se il corso fa parte di un percorso di inclusione lavorativa"@it .
+
+lsp-labour:avvisoPercorsoReinserimentoLavorativo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso percorso reinserimento lavorativo"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Booleano che indica se il corso fa parte di un reinserimento lavorativo"@it .
+
+lsp-labour:avvisoPercorsoReskilling a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso percorso reskilling"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Booleano che indica se il corso fa parte di un percorso di riqualificazione professionale"@it .
+
+lsp-labour:avvisoPercorsoUpskilling a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso percorso upskilling"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Booleano che indica se il corso fa parte di un percorso di aggiornamento"@it .
+
+lsp-labour:avvisoRequisitoCompenzeDigitali a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "avviso requisito compenze digitali"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l'accesso"@it .
+
+lsp-labour:codiceCorsoRegionale a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice corso regionale"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Identificativo del corso nel catalogo regionale. Garantisce tracciabilità e controlli."@it .
+
+lsp-labour:codiceIntermediario a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice intermediario"@it ;
+    rdfs:domain lsp-labour:EnteFormativoAccreditato ;
+    rdfs:comment "Codice di accreditamento di un Ente formativo accreditato."@it .
+
+lsp-labour:codiceOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "codice offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Identificativo dell'offerta di lavoro"@it .
+
+lsp-labour:comuneOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "comune offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Indica il comune in cui viene erogato il corso"@it .
+
+lsp-labour:conoscenzaInformatica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "conoscenza informatica"@it ;
+    rdfs:domain lsp-labour:ConoscenzaInformatica ;
+    rdfs:comment "Insieme delle competenze informatiche dichiarate dal cittadino nel CV"@it .
+
+lsp-labour:dataCompletamentoCV a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data completamento CV"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:comment "Data in cui il curriculum è stato pubblicato. Utile per verifiche di aggiornamento."@it .
+
+lsp-labour:dataFinePubblicazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data fine pubblicazione"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Indica la data oltre la quale l'annuncio dell'offerta formativa risulterà archiviato, quindi non sarà più possibile manifestare interesse"@it .
+
+lsp-labour:dataInizioPubblicazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data inizio pubblicazione"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Indiica la data di pubblicazione dell'offerta formativa"@it .
+
+lsp-labour:dataIscrizioneEdizioneOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data iscrizione edizione offerta formativa"@it ;
+    rdfs:domain lsp-labour:IscrizioneEdizioneOffertaFormativa ;
+    rdfs:comment "Data in cui è stata effettuata, dall'ente formatore, l'iscrizione del cittadino al corso di formazione pubblicato"@it .
+
+lsp-labour:dataIscrizioneElencoRegionale a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data iscrizione elenco regionale"@it ;
+    rdfs:domain lsp-labour:EnteFormativoAccreditato ;
+    rdfs:comment "Data di iscrizione dell'ente in elenco regionale"@it .
+
+lsp-labour:dataManifestazioneInteresseFormazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data manifestazione interesse formazione"@it ;
+    rdfs:domain lsp-labour:ManifestazioneInteresseOffertaFormativa ;
+    rdfs:comment "Data in cui il cittadino ha espresso interesse per un corso di formazione a catalogo. Collegata al relativo record di offerta formativa."@it .
+
+lsp-labour:dataManifestazioneInteresseOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data manifestazione interesse offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:ManifestazioneInteresseOffertaDiLavoro ;
+    rdfs:comment "Data in cui il cittadino ha espresso interesse per un'offerta di lavoro. Collegata al relativo record di offerta di lavoro."@it .
+
+lsp-labour:dataPubblicazioneOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data pubblicazione offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Data in cui l'offerta di lavoro è stata resa pubblica. Usata per calcolare visibilità e scadenza."@it .
+
+lsp-labour:dataScadenzaOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data scadenza offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Data di archiviazione dell'offerta di lavoro. Può avvenire manualmente a fronte di archiviazione da parte dell'azienda o APL, oppure automaticamente al sopraggiungere della data di fine pubblicazione. Oltre tale data non sono accettate manifestazioni di interesse da parte dei cittadini."@it .
+
+lsp-labour:dataUltimoAggiornamentoCV a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "data ultimo aggiornamento CV"@it ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:comment "Data dell'ultimo aggiornamento del CV da parte del cittadino"@it .
+
+lsp-labour:datoreDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "datore di lavoro"@it ;
+    rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:comment "Soggetto per cui è stata svolta l'esperienza lavorativa"@it .
+
+lsp-labour:decadenzaAbilitazioneErogazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "decadenza abilitazione erogazione"@it ;
+    rdfs:domain lsp-labour:EnteFormativoAccreditato ;
+    rdfs:comment "Rappresenta la data in cui l’ente di formazione è stato rimosso dalla lista regionale dei soggetti abilitati ad erogare attività di formazione"@it .
+
+lsp-labour:descrizioneAttestato a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione attestato"@it ;
+    rdfs:domain lsp-labour:AttestatoRilasciatoDaCorso ;
+    rdfs:comment "Campo descrittivo dell'attestato"@it .
+
+lsp-labour:descrizioneDurataEsperienzaNelSettore a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione durata esperienza nel settore"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:comment "Testo che dettaglia la durata dell'esperienza maturata nel settore richiesto. Utile per valutazione qualitativa."@it .
+
+lsp-labour:descrizioneEsperienzaNelSettore a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione esperienza nel settore"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:comment "Testo che dettaglia l'esperienza maturata nel settore richiesto. Utile per valutazione qualitativa."@it .
+
+lsp-labour:descrizioneOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Descrizione dell'offerta di lavoro"@it .
+
+lsp-labour:descrizioneQualifica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione qualifica"@it ;
+    rdfs:domain lsp-labour:TipoDiQualificaProfessionale ;
+    rdfs:comment "Descrizione della qualifica lavorativa"@it .
+
+lsp-labour:descrizioneQualificaDesiderata a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione qualifica desiderata"@it ;
+    rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:comment "Descrizione della qualifica professionale che si aspira di ricoprire. Aiuta l'orientamento e il matching."@it .
+
+lsp-labour:dettaglioConoscenzaInformatica a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "dettaglio conoscenza informatica"@it ;
+    rdfs:domain lsp-labour:ConoscenzaInformatica ;
+    rdfs:comment "Eventuali specifiche relative alle conoscenze informatiche del cittadino riportate nel CV"@it .
+
+lsp-labour:durataCorsoDiFormazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "durata corso di formazione"@it ;
+    rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:comment "Quantità di tempo espressa in ore prevista per l'erogazione del corso. Espressa con unità di misura normalizzate."@it .
+
+lsp-labour:durataOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "durata offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Durata complessiva dell'offerta formativa espressa in ore"@it .
+
+lsp-labour:durataUnitaMisura a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "durata unità misura"@it ;
+    rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:comment "Indica l'unità della misura della durata del corso (O ore, G giorni, M mesi, A anni)"@it .
+
+lsp-labour:finalitàOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "finalità offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Finalità del corso di formazione pubblicato in termini di obiettivi da raggiungere e competenze acquisite al suo termine"@it .
+
+lsp-labour:idOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id offerta formativa"@it ;
+    rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Identificativo dell'edizione dell'offerta formativa"@it .
+
+lsp-labour:indirizzoDatoreDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "indirizzo datore di lavoro"@it ;
+    rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:comment "Indirizzo della sede presso cui si è lavorato. Utilizzato per georeferenziazione."@it .
+
+lsp-labour:mansioneEsperienzaLavorativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "mansione esperienza lavorativa"@it ;
+    rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:comment "Mansioni e responsabilità svolte durante l'esperienza lavorativa. Supporta la ricostruzione del profilo professionale."@it .
+
+lsp-labour:nuovaDataFine a owl:DatatypeProperty ;
+    rdfs:label "nuova data fine"@it ;
+    rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Indica l'aggiornamento della data di fine dell'offerta formativa"@it .
+
+lsp-labour:nuovaDataFinePubblicazione a owl:DatatypeProperty ;
+    rdfs:label "nuova data fine pubblicazione"@it ;
+    rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Indica l'aggiornamento della data di fine pubblicazione dell'offerta formativa"@it .
+
+lsp-labour:nuovaDataInizio a owl:DatatypeProperty ;
+    rdfs:label "nuova data inizio"@it ;
+    rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Indica l'aggiornamento della data di inizio dell'offerta formativa"@it .
+
+lsp-labour:origineOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "origine offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Sistema di orgine del corso"@it .
+
+lsp-labour:postiDisponibiliEdizioneCorso a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "posti disponibili edizione corso"@it ;
+    rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Numero di posti disponibili nella classe per l'edizione del corso di formazione. Rilevante per iscrizioni e capienza."@it .
+
+lsp-labour:programmazioneAttivitàCorso a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "programmazione attività corso"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Pianificazione delle attività didattiche del corso (campo aperto). Include orari e moduli."@it .
+
+lsp-labour:requisitoAmmissioneOffertaFormativa a owl:DatatypeProperty ;
+    rdfs:label "requisito ammissione offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Condizioni necessarie e requisiti minimi per iscriversi al corso (campo aperto)"@it .
+
+lsp-labour:sedeCorsoDiFormazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "sede corso di formazione"@it ;
+    rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:comment "Luogo di erogazione del corso di formazione pubblicato (indirizzo fisico o piattaforma online)."@it .
+
+lsp-labour:statusAdesioneOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "status adesione offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:AdesioneOffertaDiLavoro ;
+    rdfs:comment "Stato dell'adesione (proposta, accettata, rifiutata). Tracciato nel tempo."@it .
+
+lsp-labour:statusCV a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "status CV"@it ;
+    rdfs:domain lsp-labour:StatoDiCVDelCittadino ;
+    rdfs:comment "Stato sintetico del CV (da completare, in bozza, pre-compilato, pubblicato)."@it .
+
+lsp-labour:statusEdizioneOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "status edizione offerta formativa"@it ;
+    rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Status di una Edizione offerta formativa. I possibili valori, in termini di (codice - descrizione), sono:  (ND - \"In bozza\"), (1 - \"Pubblicata\"), (99 - \"Archiviata\"),(ND - \"Importata\")."@it .
+
+lsp-labour:statusIscrizioneEdizioneOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "status iscrizione edizione offerta formativa"@it ;
+    rdfs:domain lsp-labour:StatoIscrizioneEdizioneOffertaFormativa ;
+    rdfs:comment "Stato dell'iscrizione del cittadino ad un corso di formazione (iscrizione, inizio, fine)"@it .
+
+lsp-labour:statusOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "status offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:StatoOffertaDiLavoro ;
+    rdfs:comment "Stato corrente dell'offerta di lavoro (in bozza, pubblicata, archiviata, importata)"@it .
+
+lsp-labour:titoloCorsoDiFormazione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "titolo corso di formazione"@it ;
+    rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:comment "Titolo ufficiale del corso di formazione. Usato per ricerca e comunicazione."@it .
+
+lsp-labour:titoloOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "titolo offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:comment "Titolo dell'annuncio di lavoro. Riassume ruolo e principali requisiti."@it .
+
+lsp-labour:titoloOffertaFormativa a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "titolo offerta formativa"@it ;
+    rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:comment "Titolo ufficiale del corso di formazione. Usato per ricerca e comunicazione."@it .
+
+lsp-labour:votazioneTitoloDiStudioConseguito a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "votazione titolo di studio conseguito"@it ;
+    rdfs:domain lsp-labour:TitoloDiStudioConseguito ;
+    rdfs:comment "Voto conseguito sul titolo di studio. Può essere su scala 100/110 o equivalente."@it .
+
+### Classes
+
+lsp-core:AgenziaPerIlLavoro a owl:Class .
+
+lsp-core:Atto a owl:Class .
+
+lsp-core:CentroPerImpiego a owl:Class .
+
+lsp-core:DatoreDiLavoro a owl:Class .
+
+lsp-core:PrestazioneDiSostegno a owl:Class .
+
+lsp-core:ProvinciaAutonomaItaliana a owl:Class .
+
+lsp-core:RegioneItaliana a owl:Class .
+
+lsp-labour:AdesioneOffertaDiLavoro a owl:Class ;
+    rdfs:label "Adesione offerta di lavoro"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:aderisceAdOffertaDiLavoro ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:statusAdesioneOffertaDiLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haAdesioneOffertaDiLavoro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Analisi del match tra CF assunto, offerta di lavoro e Comunicazione Obbligatoria (CO) a fronte del confronto tra le seguenti caratteristiche: CF datore di lavoro o agenzia somministrazione, qualifica professionale (CP2021 oppure CP2011 se assunzione prima del 02/04/2025) e Codice tipo contratto."@it .
+
+lsp-labour:AlboProfessionale a owl:Class ;
+    rdfs:label "Albo professionale"@it ;
+    rdfs:comment "Albo al quale sono iscritti i professionisti abilitati a esercitare una determinata attività referenziato nel curriculum vitae"@it .
+
+lsp-labour:AttestatoRilasciatoDaCorso a owl:Class ;
+    rdfs:label "Attestato rilasciato da corso"@it ;
+    rdfs:comment "Documento rilasciato al termine di un corso di formazione che certifica il superamento di un corso o la partecipazione con esito e riporta la tipologia di attestazione"@it .
+
+lsp-labour:CittadinoResidenteSottoscrittorePSP a owl:Class ;
+    rdfs:label "Cittadino residente sottoscrittore PSP"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:sottoscrivePSP ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Sottoclasse di RPO:RegisteredResidentPerson che raggruppa i cittadini residenti che hanno sottoscritto un Patto di servizio personalizzato ovvero partecipano al dominio della relazione lsp-labour:sottoscrivePSP."@it .
+
+lsp-labour:ConoscenzaInformatica a owl:Class ;
+    rdfs:label "Conoscenza informatica"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haConoscenzaInformatica ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Insieme delle competenze informatiche dichiarate dal cittadino nel CV"@it .
+
+lsp-labour:ConoscenzaLinguistica a owl:Class ;
+    rdfs:label "Conoscenza linguistica"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haGradoDiConoscenzaLinguistica ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haLinguaConosciuta ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haConoscenzaLinguistica ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Capacità del cittadino di comprendere e usare una lingua. È articolata per lettura, scrittura e conversazione con relativi gradi."@it .
+
+lsp-labour:CorsoDiFormazione a owl:Class ;
+    rdfs:label "Corso di formazione"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:titoloCorsoDiFormazione ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haCorsoDiFormazione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Percorso strutturato volto a sviluppare conoscenze e abilità in un ambito. Include titolo, sede, durata, programma, finalità etc. "@it .
+
+lsp-labour:CurriculumVitaeDelCittadiino a owl:Class ;
+    rdfs:label "Curriculum vitae del cittadiino"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haStatoDiCVDelCittadino ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haCurriculumVitaeDelCittadiino ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Documento che descrive il profilo curriculare del cittadino (es. esperienze, titoli di studio, competenze, conoscenze, lingue conosciute etc.). Ha uno stato (da completare, in bozza e pubblicato) e una data di aggiornamento."@it .
+
+lsp-labour:DichiarazioneImmediataDisponibilità a owl:Class ;
+    rdfs:label "Dichiarazione immediata disponibilità"@it ;
+    rdfs:subClassOf lsp-core:Atto,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haCPIReferente ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:sottoscriveDID ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    owl:disjointWith lsp-labour:PattoServizioPersonalizzato ;
+    rdfs:comment "Dichiarazione con cui un cittadino comunica ufficialmente ai servizi per l’impiego di essere immediatamente disponibile a lavorare e a partecipare alle misure di politica attiva."@it .
+
+lsp-labour:EdizioneArchiviataDiOffertaFormativa a owl:Class ;
+    rdfs:label "Edizione archiviata di offerta formativa"@it ;
+    rdfs:subClassOf lsp-labour:EdizioneOffertaFormativa ;
+    owl:disjointWith lsp-labour:EdizionePubblicataDiOffertaFormativa ;
+    rdfs:comment "Edizione di un’offerta formativa non più attiva e conservata per storico."@it .
+
+lsp-labour:EdizioneOffertaFormativa a owl:Class ;
+    rdfs:label "Edizione offerta formativa"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent,
+        [ a owl:Restriction ;
+            owl:onProperty TI:atTime ;
+            owl:someValuesFrom lsp-labour:PeriodoDiErogazione ],
+        [ a owl:Restriction ;
+            owl:onProperty TI:atTime ;
+            owl:someValuesFrom lsp-labour:PeriodoDiPubblicazione ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haEdizioneOffertaFormativaDiIscrizione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Versione specifica di un’offerta formativa con date inizio e fine, posti disponibili e caratteristiche definite"@it .
+
+lsp-labour:EdizionePubblicataDiOffertaFormativa a owl:Class ;
+    rdfs:label "Edizione pubblicata di offerta formativa"@it ;
+    rdfs:subClassOf lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:comment "Edizione di un'offerta formativa attualmente pubblicata a catalogo e consultabile dai cittadini. Avendo un periodo di pubblicazione attivo può accettare manifestazioni di interesse e consente all'ente formatore che ha pubblicato il corso di iscrivere cittadini."@it .
+
+lsp-labour:EnteFormativoAccreditato a owl:Class ;
+    rdfs:label "Ente formativo accreditato"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-core:haAccreditamentoPerFormazione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:avvisoEnteFormatoreCPIA ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:codiceIntermediario ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Soggetto accreditato nell'ambito di percorsi di inclusione lavorativa e sociale che organizza ed eroga corsi di formazione, certificato da autorità pubblica per qualità, affidabilità e capacità di svolgere corsi validi e conformi a specifici standard."@it .
+
+lsp-labour:EsperienzaLavorativa a owl:Class ;
+    rdfs:label "Esperienza lavorativa"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haTipoDiContrattoDiLavoro ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty TI:atTime ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haEsperienzaLavorativa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Attività professionale svolta dal cittadino nel corso della sua carriera presso uno specifico datore di lavoro referenziata nel CV. Include qualifica professionale, durata, luogo e mansioni e responsabilità."@it .
+
+lsp-labour:GradoDiConoscenzaLinguistica a owl:Class ;
+    rdfs:label "Grado di conoscenza linguistica"@it ;
+    rdfs:comment "Livello di padronanza di una lingua conosciuta (es. A1–C2). È distinto per lettura, scrittura e parlato."@it .
+
+lsp-labour:IscrizioneEdizioneOffertaFormativa a owl:Class ;
+    rdfs:label "Iscrizione edizione offerta formativa"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haEdizioneOffertaFormativaDiIscrizione ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haStatoIscrizioneEdizioneOffertaFormativa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haIscrizioneEdizioneOffertaFormativa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Azione con cui l'ente formatore iscrive un cittadino a un’edizione di un corso di formazone. Contiene lo stato dell'iscrizione e i riferimenti temporali. Le iscrizioni ai corsi effettuate per il tramite del SIISL sono inviate a SIU per la registrazione all'interno della SAP."@it .
+
+lsp-labour:LinguaConosciuta a owl:Class ;
+    rdfs:label "Lingua conosciuta"@it ;
+    rdfs:comment "Lingua per la quale il cittadino possiede competenze oppure lingua richiesta da un'offerta di lavoro pubblicata"@it .
+
+lsp-labour:LivelloCompetenzeDigitali a owl:Class ;
+    rdfs:label "Livello competenze digitali"@it ;
+    rdfs:comment "Livello DIGCOMP delle competenze digitali fornite da un corso di formazione (0, 1, 2, 3, 4, 5, 6, 7, 8). Per i corsi con tipologiaCorso ≠ Digitale il Livello competenze digitali è sempre valorizzato con 0."@it .
+
+lsp-labour:MacroCategoriaAttestatoCorso a owl:Class ;
+    rdfs:label "Macro categoria attestato corso"@it ;
+    rdfs:comment "Raggruppamento di alto livello degli attestati (es. qualificzione professionale, titolo, certificazione delle competenze...). Agevola classificazione e reporting."@it .
+
+lsp-labour:ManifestazioneInteresseOffertaDiLavoro a owl:Class ;
+    rdfs:label "Manifestazione interesse offerta di lavoro"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haOffertaDiLavoroDiInteresse ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haManifestazioneInteresseOffertaDiLavoro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Azione con cui un cittadino esprime interesse verso un'offerta di lavoro pubblicata da un'azienda o da un'agenzia per il lavoro. La manifestazione di interesse è quindi visibile all'azienda o all'agenzia per il lavoro che ha pubblicato l'annuncio."@it .
+
+lsp-labour:ManifestazioneInteresseOffertaFormativa a owl:Class ;
+    rdfs:label "Manifestazione interesse offerta formativa"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haOffertaFormativaDiInteresse ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haManifestatoInteresseOffertaFormativa ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Azione con cui un cittadino esprime interesse verso un corso di formazione pubblicato da un ente formatore. La manifestazione di interesse è quindi visibile all'ente formatore che ha pubblicato l'annuncio."@it .
+
+lsp-labour:MicroCategoriaAttestatoCorso a owl:Class ;
+    rdfs:label "Micro categoria attestato corso"@it ;
+    rdfs:comment "Sottoclasse più specifica della macro-categoria attestato. Serve a dettagliare il tipo di attestato."@it .
+
+lsp-labour:OffertaDiLavoro a owl:Class ;
+    rdfs:label "Offerta di lavoro"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haStatoOffertaDiLavoro ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:titoloOffertaDiLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:proponeOffertaDiLavoro ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Annuncio di lavoro pubblicato da un'azienda o da un'agenzia per il lavoro (APL) con titolo, descrizione, tipo contratto, sede, mansioni e esponsabilità, data di scadenza etc. E' sempre collegata ad uno stato (in bozza, pubblicata, archiviata, importata) e a un canale di origine (inserimento singolo, import massivo, API)."@it .
+
+lsp-labour:OffertaFormativa a owl:Class ;
+    rdfs:label "Offerta formativa"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:avvisoCorsoRegionale ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:avvisoModalitaFormativaInSede ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:durataOffertaFormativa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:finalitàOffertaFormativa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haEdizioneOffertaFormativa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haEnteErogatore ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haLivelloCompetenzeDigitali ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haModelloAttestatoDiCorso ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haSettoreDiInteresse ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haTipoDiModalitàFormativa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haTipologiaOffertaFormativa ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haTipoPercorsoPSP ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haTipoProgrammaAttivazioneCorso ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:programmazioneAttivitàCorso ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:requisitoAmmissioneOffertaFormativa ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:titoloOffertaFormativa ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Corso di formazione pubblicato da un ente formatore. È un percorso strutturato volto a fornire e sviluppare competenze, conoscenze e abilità in un determinato campo o professione. Nell'ambito di percorsi di inclusione lavorativa e sociale, l'attività ha lo scopo di favorire l'acquisizione o il miglioramento delle competenze lavorative e personali al fine di facilitare il (re-)impiego di persone in cerca di lavoro."@it .
+
+lsp-labour:PatenteDiGuida a owl:Class ;
+    rdfs:label "Patente di guida"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haPatenteDiGuida ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Titolo abilitante alla conduzione di veicoli che contiene la categoria di patente posseduta dal cittadino (es. B, C)"@it .
+
+lsp-labour:PattoAttivazioneDigitaleIndividuale a owl:Class ;
+    rdfs:label "Patto attivazione digitale individuale"@it ;
+    rdfs:subClassOf lsp-core:Atto,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:riferisceCurriculumVitaeCittadino ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haPADIndividuale ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:sottoscrivePADIndividuale ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Il Patto di Attivazione Digitale (PAD) individuale è un atto ovvero un accordo formale e obbligatorio che viene compilato dai beneficiari che risultano attivabili al lavoro (ADI, SFL, NASPI e DIS-COLL). Nel PAD individuale il sottoscrittore: fornisce e certifica tramite OTP i propri contatti e-mail e cellulare; comunica le informazioni essenziali per la presa in carico e indica, ai fini dell'attivazione al lavoro e della successiva sottoscrizione del patto di servizio personalizzato, le agenzie per il lavoro; si impegna a presentarsi alla convocazione del servizio per il lavoro competente per la stipula del patto di servizio personalizzato."@it .
+
+lsp-labour:PattoServizioPersonalizzato a owl:Class ;
+    rdfs:label "Patto servizio personalizzato"@it ;
+    rdfs:subClassOf lsp-core:Atto,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haCPIReferente ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haPattoServizioPersonalizzato ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:sottoscrivePSP ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Il Patto di Servizio Personalizzato (PSP) è un atto ovvero un accordo che un disoccupato ovvero un cittadino residente in cerca di lavoro sottoscrive con un Centro per l’impiego (CPI) e che regola gli impegni del disoccupato e definisce i servizi che il CPI è chiamato ad erogare, entrambi finalizzati all’obiettivo comune di ricollocazione del cittadino nel mondo del lavoro. Nel PSP sono dettagliati i servizi di accompagnamento al lavoro concordati tra cui, ad esempio, la partecipazione a corsi di riqualificazione professionale o la ricerca attiva di offerte di lavoro. La stipula del patto è obbligatoria per i percettori di indennità o sostegni economici (NASpI, ADI, SFL) che in questo modo assicurano il rispetto degli impegni presi, la cui mancata osservanza, in assenza di giustificato motivo, porterebbe alla sospensione e/o perdita dei benefici economici e l’impossibilità di usufruire di ulteriori servizi presso il CPI. Nell'ambito dell'ADI e della conseguente analisi multidimensionale del nucleo familiare, il PSP è richiesto per tutti i componenti del nucleo familiare attivabili al lavoro."@it .
+
+lsp-labour:PeriodoDiErogazione a owl:Class ;
+    rdfs:label "Periodo di erogazione"@it ;
+    rdfs:subClassOf TI:TimeInterval ;
+    rdfs:comment "Intervallo temporale durante il quale viene erogata un’offerta formativa"@it .
+
+lsp-labour:PeriodoDiPubblicazione a owl:Class ;
+    rdfs:label "Periodo di pubblicazione"@it ;
+    rdfs:subClassOf TI:TimeInterval ;
+    rdfs:comment "Periodo in cui un’offerta di lavoro o di formazione è visibile ai cittadini all'interno del catalogo e quindi disponibile a ricevere manifestazioni di interesse"@it .
+
+lsp-labour:ProfessioneDesiderata a owl:Class ;
+    rdfs:label "Professione desiderata"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haProfessioneDesiderata ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Qualifica professionale che il cittadino inserisce nel suo CV come aspirazione professionale"@it .
+
+lsp-labour:SettoreEconomicoProfessionale a owl:Class ;
+    rdfs:label "Settore economico professionale"@it ;
+    rdfs:comment "Settore associato al corso di formazione, scelto dalla lista SEP (1 livello)"@it .
+
+lsp-labour:StatoDiCVDelCittadino a owl:Class ;
+    rdfs:label "Stato di CV del cittadino"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:statusCV ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haStatoDiCVDelCittadino ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Stato in cui si trova il CV di un cittadino: Da completare, In compilazione (ovvero in bozza), Pubblicato (ovvero visibile ad aziende e APL). E' sempre integrato dalla data di aggiornamento."@it .
+
+lsp-labour:StatoIscrizioneEdizioneOffertaFormativa a owl:Class ;
+    rdfs:label "Stato iscrizione edizione offerta formativa"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-labour:statusIscrizioneEdizioneOffertaFormativa ;
+            owl:someValuesFrom rdfs:Literal ] ;
+    rdfs:comment "Stato dell'iscrizione di un cittadino a un corso di formazione (richiesta, accettata, rifiutata, abbandonato)"@it .
+
+lsp-labour:StatoOffertaDiLavoro a owl:Class ;
+    rdfs:label "Stato offerta di lavoro"@it ;
+    rdfs:subClassOf TI:TimeIndexedEvent ;
+    rdfs:comment "Stato dell'offerta di lavoro: In bozza (compilata ma non ancora pubblicata), Pubblicata (visibile all'interno del catalogo da parte dei cittadini), Archiviata (non più visibile all'interno del catalogo a fronte di archiviazione manuale oppure automatica al sopraggiungere della data di fine pubblicazione), Importata (importata tramite file excel ma non ancora pubblicata)"@it .
+
+lsp-labour:TipoDiAttestazione a owl:Class ;
+    rdfs:label "Tipo di attestazione"@it ;
+    rdfs:comment "Classificazione delle attestazioni conseguite in ambito formazione (qualifica professionale, certificazione competenze, specializzazione, frequenza...). Determina valore legale e spendibilità."@it .
+
+lsp-labour:TipodiCanaleDiOrigineOffertaDiLavoro a owl:Class ;
+    rdfs:label "Tipo di canale di origine offerta di lavoro"@it ;
+    rdfs:comment "Tipo di canale tramite cui l’offerta di lavoro è stata pubblicata sul SIISL (es. inserimento singolo, import massivo, API). Serve per tracciabilità e reporting dei canali di pubblicazione."@it .
+
+lsp-labour:TipoDiContrattoDiLavoro a owl:Class ;
+    rdfs:label "Tipo di contratto di lavoro"@it ;
+    rdfs:comment "Tipologia contrattuale prevista (rapporti di lavoro) che può essere indicata all'interno del CV per un'esperienza lavorativa oppure nell'offerta di lavoro pubblicata (es. tempo indeterminato, apprendistato…)"@it .
+
+lsp-labour:TipoDiModalitàFormativa a owl:Class ;
+    rdfs:label "Tipo di modalità formativa"@it ;
+    rdfs:comment "Tipologia di modalità di erogazione del corso di formazione (es. in presenza, a distanza, ibrida…)"@it .
+
+lsp-labour:TipoDiQualificaProfessionale a owl:Class ;
+    rdfs:label "Tipo di qualifica professionale"@it ;
+    rdfs:comment "Classificazione standard della qualifica professionale (CP2021). Usata per tassonomie e reporting."@it .
+
+lsp-labour:TipologiaOffertaFormativa a owl:Class ;
+    rdfs:label "Tipologia offerta formativa"@it ;
+    rdfs:comment "Macro tipologia del corso (Green, Digitale, Linguistico…). Rilevante per i requisiti e gli attestati."@it .
+
+lsp-labour:TipoPercorsoPSP a owl:Class ;
+    rdfs:label "Tipo percorso PSP"@it ;
+    rdfs:comment "Tipologia del percorso personalizzato previsto dal Patto di Servizio Personalizzato (PSP) come ad es: Lavoro e inclusione, Upskilling, Reskilling, Reinserimento lavorativo etc."@it .
+
+lsp-labour:TipoProgrammaAttivazioneCorso a owl:Class ;
+    rdfs:label "Tipo programma attivazione corso"@it ;
+    rdfs:comment "Categoria del programma di attivazione collegato al corso (es. GOL). Allinea il corso a misure o linee di intervento. "@it .
+
+lsp-labour:TitoloDiStudio a owl:Class ;
+    rdfs:label "Titolo di studio"@it ;
+    rdfs:comment "Categoria del titolo di studio posseduto (es. diploma superiore, laurea triennale, master etc.)"@it .
+
+lsp-labour:TitoloDiStudioConseguito a owl:Class ;
+    rdfs:label "Titolo di studio conseguito"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haTitoloDiStudio ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haConseguitoTitoloDiStudio ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Titolo di studio conseguito dal cittadino nel corso della sua carriera (es. diploma superiore, laurea triennale, master etc.). È collegato nel CV a votazione, data di conseguimento e istituto."@it .
+
+lsp-labour:UnitàDiMisuraDurata a owl:Class ;
+    rdfs:label "Unità di misura durata"@it ;
+    rdfs:comment "Unità per esprimere la durata (ore, giorni, settimane). Normalizza la rendicontazione. L'attributo risulta deprecato."@it .
+
+rpo:RegisteredResidentPerson a owl:Class .
+
+TI:TimeIndexedEvent a owl:Class .
+
+TI:TimeInterval a owl:Class .
+
+### Individuals
+
+<https://w3id.org/italia/data/organization/public-organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/labour/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/labour/latest/labour.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+        "This is the distribution in N-TRIPLES of the Labour and Social Policies Ministry Ontology related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero Del Lavoro e delle Politiche Sociali - SIISL"@it,
+        "N-TRIPLES distribution of the Labour and Social Policies Ministry ontology of labour and social inclusion services - SIISL"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/labour/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/labour/latest/labour.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+        "This is the distribution in RDF/Turtle of the Labour and Social Policy Ministry Ontology related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero Del Lavoro e delle Politiche Sociali - SIISL"@it,
+        "RDF/Turtle distribution of the Labour and Social Policies Ministry ontology of labour and social inclusion services - SIISL"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/labour/distribution/MLPSLABOUR-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/labour/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/labour/latest/labour.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
+        "This is the distribution in RDF/XML of the Labour and Social Policy Ministry Ontology related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML dell'ontologia dei servizi per il lavoro e l’inclusione sociale del Ministero Del Lavoro e delle Politiche Sociali - SIISL"@it,
+        "RDF/XML distribution of the Labour and Social Policies Ministry ontology of labour and social inclusion services - SIISL"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    dct:identifier "DGInnovazioneDiv3" ;
+    foaf:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    vcard:fn "MLPS DG Innovazione - Divisione III" ;
+    vcard:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a COV:PublicOrganization,
+        dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    dct:identifier "mlps" ;
+    foaf:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+### Axioms
+
+[] a owl:Restriction ;
+    owl:onProperty [ owl:inverseOf lsp-core:haBeneficiarioPrestazioneDiSostegno ] ;
+    owl:someValuesFrom [ a owl:Restriction ;
+            owl:onProperty lsp-labour:haPADIndividuale ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty smapit:hasOnlineContactPoint ;
+            owl:someValuesFrom owl:Thing ] .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
