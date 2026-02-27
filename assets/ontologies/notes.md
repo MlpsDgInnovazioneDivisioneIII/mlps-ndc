@@ -16,3 +16,10 @@ Diagrammi Ontologia SIISL:
 ![image info](labour/latest/labour_offerta_di_lavoro.png)
 ![image info](labour/latest/labour_offerta_formativa.png)
 ![image info](labour/latest/labour_PAD_individuale.png)
+
+Diagrammi Ontologia Social-GePI:
+
+![image info](social/latest/social_caso.png)
+![image info](social/latest/social_interfaccia.png)
+![image info](social/latest/social_nucleo.png)
+![image info](social/latest/social_pad.png)

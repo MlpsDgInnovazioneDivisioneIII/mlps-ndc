@@ -432,10 +432,6 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 <https://w3id.org/italia/onto/RO/holdsRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/onto/SM/hasOnlineContactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/onto/TI/atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/2000/01/rdf-schema#comment> "Booleano che indica l'attivit\u00E0 dell'ente erogatore"@it .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/2000/01/rdf-schema#label> "avviso attivit\u00E0 ente erogatore"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/avvisoCorsoRegionale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/avvisoCorsoRegionale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/avvisoCorsoRegionale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa> .
@@ -546,6 +542,11 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataIscrizioneElencoRegionale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/EnteFormativoAccreditato> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataIscrizioneElencoRegionale> <http://www.w3.org/2000/01/rdf-schema#comment> "Data di iscrizione dell'ente in elenco regionale"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataIscrizioneElencoRegionale> <http://www.w3.org/2000/01/rdf-schema#label> "data iscrizione elenco regionale"@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/EnteFormativoAccreditato> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/2000/01/rdf-schema#comment> "Booleano che indica se un ente erogatore è attivo"@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore> <http://www.w3.org/2000/01/rdf-schema#label> "avviso attivita ente erogatore"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataManifestazioneInteresseFormazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataManifestazioneInteresseFormazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataManifestazioneInteresseFormazione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/ManifestazioneInteresseOffertaFormativa> .

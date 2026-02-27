@@ -1092,16 +1092,6 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:comment xml:lang="it">Booleano che indica l&apos;attività dell&apos;ente erogatore</rdfs:comment>
-        <rdfs:label xml:lang="it">avviso attività ente erogatore</rdfs:label>
-    </owl:DatatypeProperty>
-
-
-
     <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoCorsoRegionale -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoCorsoRegionale">
@@ -1342,7 +1332,14 @@
         <rdfs:label xml:lang="it">data iscrizione elenco regionale</rdfs:label>
     </owl:DatatypeProperty>
 
+    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore -->
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EnteFormativoAccreditato"/>
+        <rdfs:comment xml:lang="it">Booleano che indica se un ente erogatore è attivo</rdfs:comment>
+        <rdfs:label xml:lang="it">avviso attivita ente erogatore</rdfs:label>
+    </owl:DatatypeProperty>
 
     <!-- https://w3id.org/italia/labour-social-policies/onto/labour/dataManifestazioneInteresseFormazione -->
 

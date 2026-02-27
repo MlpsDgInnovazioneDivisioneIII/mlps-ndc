@@ -509,8 +509,9 @@ TI:atTime a owl:ObjectProperty .
 
 lsp-labour:avvisoAttivitaEnteErogatore a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "avviso attività ente erogatore"@it ;
-    rdfs:comment "Booleano che indica l'attività dell'ente erogatore"@it .
+    rdfs:label "avviso attivita ente erogatore"@it ;
+    rdfs:domain lsp-labour:EnteFormativoAccreditato ;
+    rdfs:comment "Booleano che indica se un ente erogatore è attivo"@it .
 
 lsp-labour:avvisoCorsoRegionale a owl:DatatypeProperty,
         owl:FunctionalProperty ;
