@@ -3,4 +3,7 @@ L'ontologia core è l'ontologia MLPS sul fascicolo sociale e lavorativo del lavo
 Per l'ontologia si utilizzano directory versionate.
 Le ontologie sono pubblicate in formato RDF/Turtle (media type text/turtle) e l'estensione del file è .ttl.
 
-![image info](core/latest/MLPSCore_fascicolo.png)
+![image info](core/latest/core_atto.png)
+![image info](core/latest/core_fascicolo.png)
+![image info](core/latest/core_interfaccia.png)
+![image info](core/latest/core_prestazione.png)
