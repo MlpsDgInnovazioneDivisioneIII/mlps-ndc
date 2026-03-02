@@ -51,8 +51,13 @@ def to_json(url, src_file):
     frame = yaml.safe_load(Path(FRAME_PATH).read_text())
     frame.pop("_meta")
     json_data = jsonld.frame(data, frame)
-    context, graph = json_data["@context"], json_data["@graph"]
-    ## graph.drop(columns=["@type"], inplace=True)
+    if isinstance(json_data, list):
+        # Caso in cui rdflib produce direttamente una lista
+        context = {}
+        graph = json_data
+    else:
+        context = json_data.get("@context", {})
+        graph = json_data.get("@graph", [])
 
     dest_json = src_file.with_suffix(".json")
     dest_json.write_text(json.dumps(graph, indent=2))
