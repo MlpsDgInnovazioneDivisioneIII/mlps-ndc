@@ -1,11 +1,11 @@
-@prefix ns1: <https://w3id.org/italia/onto/CLV/> .
-@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns3: <http://purl.org/dc/terms/> .
-@prefix ns4: <http://www.w3.org/ns/dcat#> .
-@prefix ns5: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns5: <http://www.w3.org/ns/adms#> .
 @prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix ns8: <http://www.w3.org/ns/adms#> .
+@prefix ns7: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns8: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix ns9: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,16 +14,16 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns5:Kind,
-        ns5:Organization,
+        ns7:Kind,
+        ns7:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
         "MLPS DG Innovazione – Divisione III"@it ;
-    ns3:identifier "DGInnovazioneDiv3" ;
-    ns5:fn "MLPS DG Innovazione – Divisione III" ;
-    ns5:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
+    ns2:identifier "DGInnovazioneDiv3" ;
     ns6:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it .
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns7:fn "MLPS DG Innovazione – Divisione III" ;
+    ns7:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
@@ -31,30 +31,30 @@
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
-    ns3:identifier "mlps" ;
+    ns2:identifier "mlps" ;
     ns6:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
 
 <https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
-        ns3:Standard ;
-    ns3:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    ns3:identifier "SKOS" ;
-    ns3:title "Simple Knowledge Organization System - SKOS" .
+        ns2:Standard ;
+    ns2:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns2:identifier "SKOS" ;
+    ns2:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
-        ns2:ConceptScheme,
-        ns8:Asset ;
+        ns1:ConceptScheme,
+        ns5:Asset ;
     rdfs:label "Controlled vocabulary of the type of profession of the multidisciplinary team member"@en,
         "Vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns2:prefLabel "Vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
+    ns1:prefLabel "Vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
     rdfs:comment "Controlled vocabulary of the type of profession of the multidisciplinary team member"@en,
         "Vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AF>,
+    ns1:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AF>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AR>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ED>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MC>,
@@ -65,154 +65,165 @@
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OF>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/PS>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/SW> ;
-    ns3:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    ns3:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    ns3:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns3:description "Controlled vocabulary of the type of profession of the multidisciplinary team member"@en,
+    ns2:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns2:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns2:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:description "Controlled vocabulary of the type of profession of the multidisciplinary team member"@en,
         "Vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns3:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione" ;
-    ns3:issued "2026-02-26"^^xsd:date ;
-    ns3:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    ns3:modified "2026-02-26"^^xsd:date ;
-    ns3:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns3:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns3:title "Controlled vocabulary of the type of profession of the multidisciplinary team member"@en,
+    ns2:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione" ;
+    ns2:issued "2026-02-26"^^xsd:date ;
+    ns2:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns2:modified "2026-02-26"^^xsd:date ;
+    ns2:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:title "Controlled vocabulary of the type of profession of the multidisciplinary team member"@en,
         "Vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns3:type <http://purl.org/adms/assettype/CodeList> ;
-    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_professione/distribution/TP_CSV>,
+    ns2:type <http://purl.org/adms/assettype/CodeList> ;
+    ns3:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns3:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_professione/distribution/TP_CSV>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_professione/distribution/TP_JSON_LD>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_professione/distribution/TP_RDF_TURTLE> ;
-    ns4:keyword "digital core activation agreement"@en,
+    ns3:keyword "digital core activation agreement"@en,
         "family unit"@en,
         "nucleo familiare"@it,
         "patto di attivazione digitale del nucleo"@it,
         "patto di inclusione sociale del caso"@it,
         "social inclusion pact of the case"@en ;
-    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns7:numberOfLevels "1" ;
-    ns8:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns3:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns5:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns8:numberOfLevels "1" ;
     ns9:keyConcept "tipo_professione" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AF> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AF> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Assistente familiare / op.sociosanitario (OSS, ASA, OTA)"@it ;
-    ns2:prefLabel "Assistente familiare / op.sociosanitario (OSS, ASA, OTA)"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "AF" ;
-    ns3:identifier "AF" .
+    ns1:prefLabel "Assistente familiare / op.sociosanitario (OSS, ASA, OTA)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "AF" ;
+    ns2:identifier "AF" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AR> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AR> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Altro..."@it ;
-    ns2:prefLabel "Altro..."@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "AR" ;
-    ns3:identifier "AR" .
+    ns1:prefLabel "Altro..."@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "AR" ;
+    ns2:identifier "AR" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ED> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ED> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Educatore"@it ;
-    ns2:prefLabel "Educatore"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "ED" ;
-    ns3:identifier "ED" .
+    ns1:prefLabel "Educatore"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "ED" ;
+    ns2:identifier "ED" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MC> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MC> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Mediatore culturale/interculturale"@it ;
-    ns2:prefLabel "Mediatore culturale/interculturale"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "MC" ;
-    ns3:identifier "MC" .
+    ns1:prefLabel "Mediatore culturale/interculturale"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "MC" ;
+    ns2:identifier "MC" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ME> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ME> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Pediatra/MMG"@it ;
-    ns2:prefLabel "Pediatra/MMG"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "ME" ;
-    ns3:identifier "ME" .
+    ns1:prefLabel "Pediatra/MMG"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "ME" ;
+    ns2:identifier "ME" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MF> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MF> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Mediatore familiare"@it ;
-    ns2:prefLabel "Mediatore familiare"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "MF" ;
-    ns3:identifier "MF" .
+    ns1:prefLabel "Mediatore familiare"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "MF" ;
+    ns2:identifier "MF" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/NE> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/NE> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Neuropsichiatra infantile"@it ;
-    ns2:prefLabel "Neuropsichiatra infantile"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "NE" ;
-    ns3:identifier "NE" .
+    ns1:prefLabel "Neuropsichiatra infantile"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "NE" ;
+    ns2:identifier "NE" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OC> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OC> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Operatore Centro per l’Impiego "@it ;
-    ns2:prefLabel "Operatore Centro per l’Impiego "@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "OC" ;
-    ns3:identifier "OC" .
+    ns1:prefLabel "Operatore Centro per l’Impiego "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "OC" ;
+    ns2:identifier "OC" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OF> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OF> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Operatore formazione ed istruzione ( insegnante/figura strum. )"@it ;
-    ns2:prefLabel "Operatore formazione ed istruzione ( insegnante/figura strum. )"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "OF" ;
-    ns3:identifier "OF" .
+    ns1:prefLabel "Operatore formazione ed istruzione ( insegnante/figura strum. )"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "OF" ;
+    ns2:identifier "OF" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/PS> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/PS> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Psicologo"@it ;
-    ns2:prefLabel "Psicologo"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "PS" ;
-    ns3:identifier "PS" .
+    ns1:prefLabel "Psicologo"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "PS" ;
+    ns2:identifier "PS" ;
+    ns4:hasRankOrder "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/SW> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/SW> a <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe>,
+        ns1:Concept ;
     rdfs:label "Assistente Sociale"@it ;
-    ns2:prefLabel "Assistente Sociale"@it ;
-    ns1:hasRankOrder "1" ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
-    ns2:notation "SW" ;
-    ns3:identifier "SW" .
+    ns1:prefLabel "Assistente Sociale"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione> ;
+    ns1:notation "SW" ;
+    ns2:identifier "SW" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_professione/distribution/TP_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
-    ns3:description "Controlled vocabulary of the type of profession of the multidisciplinary team member CSV distribution"@en,
+        ns3:Distribution ;
+    ns2:description "Controlled vocabulary of the type of profession of the multidisciplinary team member CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns3:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns3:title "Controlled vocabulary of the type of profession of the multidisciplinary team member CSV distribution"@en,
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary of the type of profession of the multidisciplinary team member CSV distribution"@en,
         "Distribuzione CSV del vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest/tipo_professione.csv> .
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest/tipo_professione.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_professione/distribution/TP_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
-    ns3:description "Controlled vocabulary of the type of profession of the multidisciplinary team member JSON_LD distribution"@en,
+        ns3:Distribution ;
+    ns2:description "Controlled vocabulary of the type of profession of the multidisciplinary team member JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns3:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns3:title "Controlled vocabulary of the type of profession of the multidisciplinary team member JSON_LD distribution"@en,
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary of the type of profession of the multidisciplinary team member JSON_LD distribution"@en,
         "Distribuzione JSON_LD del vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest/tipo_professione.json> .
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest/tipo_professione.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_professione/distribution/TP_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
-    ns3:description "Controlled vocabulary of the type of profession of the multidisciplinary team member RDF/turtle distribution"@en,
+        ns3:Distribution ;
+    ns2:description "Controlled vocabulary of the type of profession of the multidisciplinary team member RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns3:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns3:title "Controlled vocabulary of the type of profession of the multidisciplinary team member RDF/turtle distribution"@en,
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary of the type of profession of the multidisciplinary team member RDF/turtle distribution"@en,
         "Distribuzione RDF/Turtle del vocabolario controllato del tipo di professione del membro dell'equip multidisciplinare"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest/tipo_professione.ttl> .
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_professione/latest/tipo_professione.ttl> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
