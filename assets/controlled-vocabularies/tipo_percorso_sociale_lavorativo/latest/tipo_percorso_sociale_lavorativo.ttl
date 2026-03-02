@@ -1,12 +1,12 @@
 @prefix ns1: <http://www.w3.org/ns/dcat#> .
 @prefix ns2: <http://purl.org/dc/terms/> .
 @prefix ns3: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns4: <https://w3id.org/italia/onto/NDC/> .
-@prefix ns5: <http://www.w3.org/ns/adms#> .
-@prefix ns6: <https://w3id.org/italia/onto/CLV/> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns4: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns8: <http://www.w3.org/ns/adms#> .
+@prefix ns9: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,25 +14,25 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns8:Kind,
-        ns8:Organization,
+        ns4:Kind,
+        ns4:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
         "MLPS DG Innovazione – Divisione III"@it ;
     ns2:identifier "DGInnovazioneDiv3" ;
-    ns7:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns8:fn "MLPS DG Innovazione – Divisione III" ;
-    ns8:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+    ns4:fn "MLPS DG Innovazione – Divisione III" ;
+    ns4:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
+    ns6:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns7:Agent,
+        ns6:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
     ns2:identifier "mlps" ;
-    ns7:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns6:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
@@ -46,7 +46,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
         ns3:ConceptScheme,
-        ns5:Asset ;
+        ns8:Asset ;
     rdfs:label "Controlled vocabulary of the type of social work path"@en,
         "Vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
     ns3:prefLabel "Vocabolario controllato del tipo di percorso sociale lavorativo"@it ;
@@ -85,9 +85,9 @@
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat4>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Minore>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/ND> ;
-    ns4:keyConcept "tipo_percorso_sociale_lavorativo" ;
-    ns5:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    ns9:numberOfLevels "1" .
+    ns7:numberOfLevels "1" ;
+    ns8:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns9:keyConcept "tipo_percorso_sociale_lavorativo" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat1> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
         ns3:Concept ;
@@ -96,7 +96,7 @@
     ns2:identifier "Cat1" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> ;
     ns3:notation "Cat1" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat2> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
         ns3:Concept ;
@@ -105,7 +105,7 @@
     ns2:identifier "Cat2" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> ;
     ns3:notation "Cat2" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat3> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
         ns3:Concept ;
@@ -114,7 +114,7 @@
     ns2:identifier "Cat3" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> ;
     ns3:notation "Cat3" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat4> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
         ns3:Concept ;
@@ -123,7 +123,7 @@
     ns2:identifier "Cat4" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> ;
     ns3:notation "Cat4" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Minore> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
         ns3:Concept ;
@@ -132,7 +132,7 @@
     ns2:identifier "Minore" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> ;
     ns3:notation "Minore" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/ND> a <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo>,
         ns3:Concept ;
@@ -141,7 +141,7 @@
     ns2:identifier "ND" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo> ;
     ns3:notation "ND" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_percorso_sociale_lavorativo/distribution/TPSL_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
         ns1:Distribution ;
