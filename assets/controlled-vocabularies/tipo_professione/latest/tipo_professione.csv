@@ -1,1 +1,12 @@
-
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AF,AF,"Assistente familiare / op.sociosanitario (OSS, ASA, OTA)",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AR,AR,Altro...,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ED,ED,Educatore,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MC,MC,Mediatore culturale/interculturale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ME,ME,Pediatra/MMG,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MF,MF,Mediatore familiare,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/NE,NE,Neuropsichiatra infantile,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OC,OC,Operatore Centro per l’Impiego ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OF,OF,Operatore formazione ed istruzione ( insegnante/figura strum. ),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/PS,PS,Psicologo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/SW,SW,Assistente Sociale,1

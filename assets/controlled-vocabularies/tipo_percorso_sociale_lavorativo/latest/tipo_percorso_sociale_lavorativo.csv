@@ -1,1 +1,7 @@
-
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat1,Cat1,Obbligo di attivazione lavorativa e sociale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat2,Cat2,Facoltà di attivazione lavorativa e sociale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat3,Cat3,Facolta’ di attivazione del Supporto per la Formazione e il Lavoro (SFL),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat4,Cat4,Obbligo di attivazione sociale e facolta’ di attivazione lavorativa,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Minore,Minore,Soggetto del nucleo minorenne e quindi esente da ogni obbligo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/ND,ND,Non disponibile,1

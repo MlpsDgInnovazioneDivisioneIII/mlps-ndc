@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo",
+      "skos:Concept"
+    ],
+    "id": "Cat1",
+    "label_it": "Obbligo di attivazione lavorativa e sociale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo",
+      "skos:Concept"
+    ],
+    "id": "Cat2",
+    "label_it": "Facolt\u00e0 di attivazione lavorativa e sociale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat3",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo",
+      "skos:Concept"
+    ],
+    "id": "Cat3",
+    "label_it": "Facolta\u2019 di attivazione del Supporto per la Formazione e il Lavoro (SFL)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Cat4",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo",
+      "skos:Concept"
+    ],
+    "id": "Cat4",
+    "label_it": "Obbligo di attivazione sociale e facolta\u2019 di attivazione lavorativa",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/Minore",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo",
+      "skos:Concept"
+    ],
+    "id": "Minore",
+    "label_it": "Soggetto del nucleo minorenne e quindi esente da ogni obbligo",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_sociale_lavorativo/ND",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo",
+      "skos:Concept"
+    ],
+    "id": "ND",
+    "label_it": "Non disponibile",
+    "level": "1"
+  }
+]
