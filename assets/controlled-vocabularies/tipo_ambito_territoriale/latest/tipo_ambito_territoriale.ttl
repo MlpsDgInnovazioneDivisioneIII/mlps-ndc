@@ -1,12 +1,12 @@
 @prefix ns1: <https://w3id.org/italia/labour-social-policies/onto/core/> .
 @prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ns3: <http://purl.org/dc/terms/> .
-@prefix ns4: <http://www.w3.org/ns/dcat#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns7: <http://www.w3.org/ns/adms#> .
-@prefix ns8: <https://w3id.org/italia/onto/NDC/> .
-@prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns6: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns7: <http://www.w3.org/ns/dcat#> .
+@prefix ns8: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns9: <http://www.w3.org/ns/adms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,25 +14,25 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns6:Kind,
-        ns6:Organization,
+        ns8:Kind,
+        ns8:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
         "MLPS DG Innovazione – Divisione III"@it ;
     ns3:identifier "DGInnovazioneDiv3" ;
-    ns5:name "MLPS DG Innovation - Division III"@en,
+    ns4:name "MLPS DG Innovation - Division III"@en,
         "MLPS DG Innovazione – Divisione III"@it ;
-    ns6:fn "MLPS DG Innovazione – Divisione III" ;
-    ns6:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+    ns8:fn "MLPS DG Innovazione – Divisione III" ;
+    ns8:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns5:Agent,
+        ns4:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
     ns3:identifier "mlps" ;
-    ns5:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
@@ -15846,7 +15846,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         ns1:AmbitoTerritorialeSociale,
         ns2:ConceptScheme,
-        ns7:Asset ;
+        ns9:Asset ;
     rdfs:label "Controlled vocabulary of the social territorial sphere"@en,
         "Vocabolario controllato dell'ambito territoriale sociale"@it ;
     ns2:prefLabel "Vocabolario controllato dell'ambito territoriale sociale"@it ;
@@ -16478,18 +16478,18 @@
     ns3:title "Controlled vocabulary of the social territorial sphere"@en,
         "Vocabolario controllato dell'ambito territoriale sociale"@it ;
     ns3:type <http://purl.org/adms/assettype/CodeList> ;
-    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_territoriale/distribution/TATS_CSV>,
+    ns5:numberOfLevels "1" ;
+    ns6:keyConcept "tipo_ambito_territoriale" ;
+    ns7:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns7:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_territoriale/distribution/TATS_CSV>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_territoriale/distribution/TATS_JSON_LD>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_territoriale/distribution/TATS_RDF_TURTLE> ;
-    ns4:keyword "Citizen's social and employment file"@en,
+    ns7:keyword "Citizen's social and employment file"@en,
         "Fascicolo sociale e lavorativo del cittadino"@it,
         "Prestazione Di Sostegno"@it,
         "Support Performance"@en ;
-    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns7:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    ns8:keyConcept "tipo_ambito_territoriale" ;
-    ns9:numberOfLevels "1" .
+    ns7:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns9:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142229371> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Area Metropolitana Sud"@it ;
@@ -16510,7 +16510,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142231037> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Bra"@it ;
     ns2:prefLabel "Bra"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Bra � Gestione associata dei servizi sociali dell�Ambito di Bra" ;
+    ns1:haEnteCapofilaDiATS "Comune di Bra – Gestione associata dei servizi sociali dell’Ambito di Bra" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "1-202004142231037" ;
     ns3:identifier "1-202004142231037" .
@@ -16556,8 +16556,8 @@
     ns3:identifier "1-202004142232970" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142233752> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Torino Citta�"@it ;
-    ns2:prefLabel "Torino Citta�"@it ;
+    rdfs:label "Torino Citta’"@it ;
+    ns2:prefLabel "Torino Citta’"@it ;
     ns1:haEnteCapofilaDiATS "Comune Di Torino" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "1-202004142233752" ;
@@ -16572,8 +16572,8 @@
     ns3:identifier "1-202004142240025" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240380> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Cuorgne�"@it ;
-    ns2:prefLabel "Cuorgne�"@it ;
+    rdfs:label "Cuorgne’"@it ;
+    ns2:prefLabel "Cuorgne’"@it ;
     ns1:haEnteCapofilaDiATS "Consorzio Intercomunale dei Servizi Socio - Ass.li C.I.S.S.38" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "1-202004142240380" ;
@@ -16654,7 +16654,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142241672> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Pinerolese"@it ;
     ns2:prefLabel "Pinerolese"@it ;
-    ns1:haEnteCapofilaDiATS "C.I.S.S.  Pinerolo � Consorzio Intercomunale Dei Servizi Sociali" ;
+    ns1:haEnteCapofilaDiATS "C.I.S.S.  Pinerolo – Consorzio Intercomunale Dei Servizi Sociali" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "1-202004142241672" ;
     ns3:identifier "1-202004142241672" .
@@ -16734,7 +16734,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142256642> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Cirie' - Lanzo"@it ;
     ns2:prefLabel "Cirie' - Lanzo"@it ;
-    ns1:haEnteCapofilaDiATS "Consorzio Intercomunale Dei Servizi Socio � Assistenziali � C.I.S. Cirie'" ;
+    ns1:haEnteCapofilaDiATS "Consorzio Intercomunale Dei Servizi Socio – Assistenziali – C.I.S. Cirie'" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "1-202004142256642" ;
     ns3:identifier "1-202004142256642" .
@@ -17038,7 +17038,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142256864> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Valli e Dolomiti friulane"@it ;
     ns2:prefLabel "Valli e Dolomiti friulane"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� di montagna delle Prealpi Friulane Orientali" ;
+    ns1:haEnteCapofilaDiATS "Comunità di montagna delle Prealpi Friulane Orientali" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "6-202004142256864" ;
     ns3:identifier "6-202004142256864" .
@@ -17228,8 +17228,8 @@
     ns3:identifier "8-202004142229261" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142230014> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Distr. Citt� Di Bologna"@it ;
-    ns2:prefLabel "Distr. Citt� Di Bologna"@it ;
+    rdfs:label "Distr. CittÀ Di Bologna"@it ;
+    ns2:prefLabel "Distr. CittÀ Di Bologna"@it ;
     ns1:haEnteCapofilaDiATS "Comune Di Bologna" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "8-202004142230014" ;
@@ -17292,8 +17292,8 @@
     ns3:identifier "8-202004142231850" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142231852> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Distr. Citt� Di Piacenza"@it ;
-    ns2:prefLabel "Distr. Citt� Di Piacenza"@it ;
+    rdfs:label "Distr. CittÀ Di Piacenza"@it ;
+    ns2:prefLabel "Distr. CittÀ Di Piacenza"@it ;
     ns1:haEnteCapofilaDiATS "Comune Di Piacenza" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "8-202004142231852" ;
@@ -17452,9 +17452,9 @@
     ns3:identifier "8-202004142241682" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142249166> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Distr. Forl�"@it ;
-    ns2:prefLabel "Distr. Forl�"@it ;
-    ns1:haEnteCapofilaDiATS "Comune Di Forl�" ;
+    rdfs:label "Distr. ForlÌ"@it ;
+    ns2:prefLabel "Distr. ForlÌ"@it ;
+    ns1:haEnteCapofilaDiATS "Comune Di Forlì" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "8-202004142249166" ;
     ns3:identifier "8-202004142249166" .
@@ -17526,7 +17526,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142229944> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Pistoiese"@it ;
     ns2:prefLabel "Pistoiese"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Pistoiese" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Pistoiese" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142229944" ;
     ns3:identifier "9-202004142229944" .
@@ -17534,15 +17534,15 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142230021> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Empolese-Valdarno Inferiore"@it ;
     ns2:prefLabel "Empolese-Valdarno Inferiore"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Empolese Valdarno Valdelsa" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Empolese Valdarno Valdelsa" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142230021" ;
     ns3:identifier "9-202004142230021" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142230118> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Amiata Senese E Val D�Orcia-Valdichiana Senese"@it ;
-    ns2:prefLabel "Amiata Senese E Val D�Orcia-Valdichiana Senese"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Amiata Senese e Val �Orcia-Val Di Chiana Senese" ;
+    rdfs:label "Amiata Senese E Val D’Orcia-Valdichiana Senese"@it ;
+    ns2:prefLabel "Amiata Senese E Val D’Orcia-Valdichiana Senese"@it ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Amiata Senese e Val ‘Orcia-Val Di Chiana Senese" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142230118" ;
     ns3:identifier "9-202004142230118" .
@@ -17558,7 +17558,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142230989> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Val Di Nievole"@it ;
     ns2:prefLabel "Val Di Nievole"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Val Di Nievole" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Val Di Nievole" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142230989" ;
     ns3:identifier "9-202004142230989" .
@@ -17574,7 +17574,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142231386> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Pratese"@it ;
     ns2:prefLabel "Pratese"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Pratese" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Pratese" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142231386" ;
     ns3:identifier "9-202004142231386" .
@@ -17598,15 +17598,15 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142232826> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Lunigiana"@it ;
     ns2:prefLabel "Lunigiana"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Della Lunigiana" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Della Lunigiana" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142232826" ;
     ns3:identifier "9-202004142232826" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142233276> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Alta Val D�Elsa"@it ;
-    ns2:prefLabel "Alta Val D�Elsa"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute della Zona Alta Val D�Elsa" ;
+    rdfs:label "Alta Val D’Elsa"@it ;
+    ns2:prefLabel "Alta Val D’Elsa"@it ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute della Zona Alta Val D’Elsa" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142233276" ;
     ns3:identifier "9-202004142233276" .
@@ -17614,7 +17614,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142233296> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Firenze"@it ;
     ns2:prefLabel "Firenze"@it ;
-    ns1:haEnteCapofilaDiATS "Societ� della Salute di Firenze" ;
+    ns1:haEnteCapofilaDiATS "Società della Salute di Firenze" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142233296" ;
     ns3:identifier "9-202004142233296" .
@@ -17630,7 +17630,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142240236> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Alta Val Di Cecina-Val Dera"@it ;
     ns2:prefLabel "Alta Val Di Cecina-Val Dera"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Alta Val Cecina-Valdera" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Alta Val Cecina-Valdera" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142240236" ;
     ns3:identifier "9-202004142240236" .
@@ -17638,7 +17638,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142241280> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Valle Del Serchio"@it ;
     ns2:prefLabel "Valle Del Serchio"@it ;
-    ns1:haEnteCapofilaDiATS "Azienda USL Toscana Nord Ovest � Zona Distretto Valle del Serchio" ;
+    ns1:haEnteCapofilaDiATS "Azienda USL Toscana Nord Ovest – Zona Distretto Valle del Serchio" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142241280" ;
     ns3:identifier "9-202004142241280" .
@@ -17646,7 +17646,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142241744> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Fiorentina Sud Est"@it ;
     ns2:prefLabel "Fiorentina Sud Est"@it ;
-    ns1:haEnteCapofilaDiATS "Societ� della Salute Fiorentina Sud-Est" ;
+    ns1:haEnteCapofilaDiATS "Società della Salute Fiorentina Sud-Est" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142241744" ;
     ns3:identifier "9-202004142241744" .
@@ -17654,7 +17654,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142249391> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Senese"@it ;
     ns2:prefLabel "Senese"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Senese" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Senese" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142249391" ;
     ns3:identifier "9-202004142249391" .
@@ -17662,7 +17662,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142249891> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Amiata Grossetana-Colline Metallifere-Grossetana"@it ;
     ns2:prefLabel "Amiata Grossetana-Colline Metallifere-Grossetana"@it ;
-    ns1:haEnteCapofilaDiATS "COeSO Societ� della salute delle zone Amiata Grossetana, Colline Metallifere e Grossetana" ;
+    ns1:haEnteCapofilaDiATS "COeSO Società della salute delle zone Amiata Grossetana, Colline Metallifere e Grossetana" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142249891" ;
     ns3:identifier "9-202004142249891" .
@@ -17678,14 +17678,14 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142251716> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Bassa Val Di Cecina-Val Di Cornia"@it ;
     ns2:prefLabel "Bassa Val Di Cecina-Val Di Cornia"@it ;
-    ns1:haEnteCapofilaDiATS "Societ� della Salute Valli Etrusche" ;
+    ns1:haEnteCapofilaDiATS "Società della Salute Valli Etrusche" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142251716" ;
     ns3:identifier "9-202004142251716" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142256262> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Colline Dell�Albegna"@it ;
-    ns2:prefLabel "Colline Dell�Albegna"@it ;
+    rdfs:label "Colline Dell’Albegna"@it ;
+    ns2:prefLabel "Colline Dell’Albegna"@it ;
     ns1:haEnteCapofilaDiATS "Azienda Usl Toscana Sud Est" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142256262" ;
@@ -17694,7 +17694,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142256367> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Pisana"@it ;
     ns2:prefLabel "Pisana"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Zona Pisana" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Zona Pisana" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142256367" ;
     ns3:identifier "9-202004142256367" .
@@ -17702,7 +17702,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142257033> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Mugello"@it ;
     ns2:prefLabel "Mugello"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Mugello" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Mugello" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142257033" ;
     ns3:identifier "9-202004142257033" .
@@ -17710,7 +17710,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142257971> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Fiorentina Nord Ovest"@it ;
     ns2:prefLabel "Fiorentina Nord Ovest"@it ;
-    ns1:haEnteCapofilaDiATS "Societa� Della Salute Zona Fiorentina Nord Ovest" ;
+    ns1:haEnteCapofilaDiATS "Societa’ Della Salute Zona Fiorentina Nord Ovest" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "9-202004142257971" ;
     ns3:identifier "9-202004142257971" .
@@ -17766,7 +17766,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142230873> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Zona Sociale 1"@it ;
     ns2:prefLabel "Zona Sociale 1"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Citt� Di Castello" ;
+    ns1:haEnteCapofilaDiATS "Comune di Città Di Castello" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "10-202004142230873" ;
     ns3:identifier "10-202004142230873" .
@@ -18374,7 +18374,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142232397> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Gran Sasso - Laga"@it ;
     ns2:prefLabel "Gran Sasso - Laga"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Montana Gran Sasso" ;
+    ns1:haEnteCapofilaDiATS "Comunità Montana Gran Sasso" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "13-202004142232397" ;
     ns3:identifier "13-202004142232397" .
@@ -18710,7 +18710,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142232153> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "A02"@it ;
     ns2:prefLabel "A02"@it ;
-    ns1:haEnteCapofilaDiATS "Consorzio per il Welfare integrato dell�Ambito 02" ;
+    ns1:haEnteCapofilaDiATS "Consorzio per il Welfare integrato dell’Ambito 02" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "15-202004142232153" ;
     ns3:identifier "15-202004142232153" .
@@ -18782,7 +18782,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233587> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "S03 (Ex S10)"@it ;
     ns2:prefLabel "S03 (Ex S10)"@it ;
-    ns1:haEnteCapofilaDiATS "Consorzio Sociale Agor�S10" ;
+    ns1:haEnteCapofilaDiATS "Consorzio Sociale Agorà S10" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "15-202004142233587" ;
     ns3:identifier "15-202004142233587" .
@@ -18838,7 +18838,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233997> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "S01_2"@it ;
     ns2:prefLabel "S01_2"@it ;
-    ns1:haEnteCapofilaDiATS "Azienda Speciale consortile \"Comunit� Sensibile\"" ;
+    ns1:haEnteCapofilaDiATS "Azienda Speciale consortile \"Comunità Sensibile\"" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "15-202004142233997" ;
     ns3:identifier "15-202004142233997" .
@@ -19246,7 +19246,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233474> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Brindisi"@it ;
     ns2:prefLabel "Brindisi"@it ;
-    ns1:haEnteCapofilaDiATS "CONSORZIO PER LA REALIZZAZIONE DEL SISTEMA INTEGRATO DI WELFARE DELL�AMBITO TERRITORIALE SOCIALE BR/1" ;
+    ns1:haEnteCapofilaDiATS "CONSORZIO PER LA REALIZZAZIONE DEL SISTEMA INTEGRATO DI WELFARE DELL’AMBITO TERRITORIALE SOCIALE BR/1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "16-202004142233474" ;
     ns3:identifier "16-202004142233474" .
@@ -19334,7 +19334,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142249856> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Mesagne"@it ;
     ns2:prefLabel "Mesagne"@it ;
-    ns1:haEnteCapofilaDiATS "Consorzio per la realizzazione del sistema integrato di welfare dell�Ambito Territoriale Sociale BR 4" ;
+    ns1:haEnteCapofilaDiATS "Consorzio per la realizzazione del sistema integrato di welfare dell’Ambito Territoriale Sociale BR 4" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "16-202004142249856" ;
     ns3:identifier "16-202004142249856" .
@@ -19412,16 +19412,16 @@
     ns3:identifier "17-202004142232287" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142233183> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Citt� Di Potenza"@it ;
-    ns2:prefLabel "Citt� Di Potenza"@it ;
+    rdfs:label "Città Di Potenza"@it ;
+    ns2:prefLabel "Città Di Potenza"@it ;
     ns1:haEnteCapofilaDiATS "Comune Di Potenza" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "17-202004142233183" ;
     ns3:identifier "17-202004142233183" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142233868> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Citt� Di Matera"@it ;
-    ns2:prefLabel "Citt� Di Matera"@it ;
+    rdfs:label "Città Di Matera"@it ;
+    ns2:prefLabel "Città Di Matera"@it ;
     ns1:haEnteCapofilaDiATS "Comune Di Matera" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "17-202004142233868" ;
@@ -19510,7 +19510,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091448793> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Orizzonti Nord Est - O.N.E. "@it ;
     ns2:prefLabel "Orizzonti Nord Est - O.N.E. "@it ;
-    ns1:haEnteCapofilaDiATS "Consorzio per l'Attivit� Socio Assistenziale - C.A.S.A. Gattinara" ;
+    ns1:haEnteCapofilaDiATS "Consorzio per l'Attività Socio Assistenziale - C.A.S.A. Gattinara" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "17-202301091448793" ;
     ns3:identifier "17-202301091448793" .
@@ -19556,9 +19556,9 @@
     ns3:identifier "18-202004142230153" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230256> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Cir� Marina"@it ;
-    ns2:prefLabel "Cir� Marina"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Cir� Marina" ;
+    rdfs:label "CirÒ Marina"@it ;
+    ns2:prefLabel "CirÒ Marina"@it ;
+    ns1:haEnteCapofilaDiATS "Comune di Cirò Marina" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "18-202004142230256" ;
     ns3:identifier "18-202004142230256" .
@@ -19838,7 +19838,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231011> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "D03"@it ;
     ns2:prefLabel "D03"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Canicatt�" ;
+    ns1:haEnteCapofilaDiATS "Comune di Canicattì" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "19-202004142231011" ;
     ns3:identifier "19-202004142231011" .
@@ -19902,7 +19902,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232362> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "D33"@it ;
     ns2:prefLabel "D33"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Cefal�" ;
+    ns1:haEnteCapofilaDiATS "Comune di Cefalù" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "19-202004142232362" ;
     ns3:identifier "19-202004142232362" .
@@ -19998,7 +19998,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233265> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "D18"@it ;
     ns2:prefLabel "D18"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Patern�" ;
+    ns1:haEnteCapofilaDiATS "Comune di Paternò" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "19-202004142233265" ;
     ns3:identifier "19-202004142233265" .
@@ -20238,7 +20238,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142230331> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Alghero"@it ;
     ns2:prefLabel "Alghero"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Bonorva�" ;
+    ns1:haEnteCapofilaDiATS "Comune di Bonorva " ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "20-202004142230331" ;
     ns3:identifier "20-202004142230331" .
@@ -20262,7 +20262,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232150> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Sarcidano Barbagia di Seulo"@it ;
     ns2:prefLabel "Sarcidano Barbagia di Seulo"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Isili�" ;
+    ns1:haEnteCapofilaDiATS "Comune di Isili " ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "20-202004142232150" ;
     ns3:identifier "20-202004142232150" .
@@ -20270,7 +20270,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232155> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Sorgono"@it ;
     ns2:prefLabel "Sorgono"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Montana Gennargentu�Mandrolisai" ;
+    ns1:haEnteCapofilaDiATS "Comunità Montana Gennargentu Mandrolisai" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "20-202004142232155" ;
     ns3:identifier "20-202004142232155" .
@@ -20366,7 +20366,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142249983> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Cagliari"@it ;
     ns2:prefLabel "Cagliari"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Cagliari�" ;
+    ns1:haEnteCapofilaDiATS "Comune di Cagliari " ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "20-202004142249983" ;
     ns3:identifier "20-202004142249983" .
@@ -20374,7 +20374,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142250008> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Ogliastra"@it ;
     ns2:prefLabel "Ogliastra"@it ;
-    ns1:haEnteCapofilaDiATS "Comune di Tortol�" ;
+    ns1:haEnteCapofilaDiATS "Comune di Tortolì" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "20-202004142250008" ;
     ns3:identifier "20-202004142250008" .
@@ -20588,64 +20588,64 @@
     ns3:identifier "22-202311101143333" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281210956> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale Alta Valle Isarco Wipptal "@it ;
-    ns2:prefLabel "Comunit� Comprensoriale Alta Valle Isarco Wipptal "@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Comprensoriale Alta Valle Isarco Wipptal " ;
+    rdfs:label "Comunità Comprensoriale Alta Valle Isarco Wipptal "@it ;
+    ns2:prefLabel "Comunità Comprensoriale Alta Valle Isarco Wipptal "@it ;
+    ns1:haEnteCapofilaDiATS "Comunità Comprensoriale Alta Valle Isarco Wipptal " ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281210956" ;
     ns3:identifier "31-202012281210956" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281222859> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale Valle Isarco "@it ;
-    ns2:prefLabel "Comunit� Comprensoriale Valle Isarco "@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Comprensoriale Valle Isarco " ;
+    rdfs:label "Comunità Comprensoriale Valle Isarco "@it ;
+    ns2:prefLabel "Comunità Comprensoriale Valle Isarco "@it ;
+    ns1:haEnteCapofilaDiATS "Comunità Comprensoriale Valle Isarco " ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281222859" ;
     ns3:identifier "31-202012281222859" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281225127> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale Oltradige-Bassa Atesina"@it ;
-    ns2:prefLabel "Comunit� Comprensoriale Oltradige-Bassa Atesina"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Comprensoriale Oltradige-Bassa Atesina" ;
+    rdfs:label "Comunità Comprensoriale Oltradige-Bassa Atesina"@it ;
+    ns2:prefLabel "Comunità Comprensoriale Oltradige-Bassa Atesina"@it ;
+    ns1:haEnteCapofilaDiATS "Comunità Comprensoriale Oltradige-Bassa Atesina" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281225127" ;
     ns3:identifier "31-202012281225127" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281232507> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale Burgraviato"@it ;
-    ns2:prefLabel "Comunit� Comprensoriale Burgraviato"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Comprensoriale Burgraviato" ;
+    rdfs:label "Comunità Comprensoriale Burgraviato"@it ;
+    ns2:prefLabel "Comunità Comprensoriale Burgraviato"@it ;
+    ns1:haEnteCapofilaDiATS "Comunità Comprensoriale Burgraviato" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281232507" ;
     ns3:identifier "31-202012281232507" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281248469> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale Salto Sciliar"@it ;
-    ns2:prefLabel "Comunit� Comprensoriale Salto Sciliar"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Comprensoriale Salto Sciliar" ;
+    rdfs:label "Comunità Comprensoriale Salto Sciliar"@it ;
+    ns2:prefLabel "Comunità Comprensoriale Salto Sciliar"@it ;
+    ns1:haEnteCapofilaDiATS "Comunità Comprensoriale Salto Sciliar" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281248469" ;
     ns3:identifier "31-202012281248469" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281252243> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale Val Venosta"@it ;
-    ns2:prefLabel "Comunit� Comprensoriale Val Venosta"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Comprensoriale Val Venosta" ;
+    rdfs:label "Comunità Comprensoriale Val Venosta"@it ;
+    ns2:prefLabel "Comunità Comprensoriale Val Venosta"@it ;
+    ns1:haEnteCapofilaDiATS "Comunità Comprensoriale Val Venosta" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281252243" ;
     ns3:identifier "31-202012281252243" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281255707> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale Valle Pusteria"@it ;
-    ns2:prefLabel "Comunit� Comprensoriale Valle Pusteria"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Comprensoriale Valle Pusteria" ;
+    rdfs:label "Comunità Comprensoriale Valle Pusteria"@it ;
+    ns2:prefLabel "Comunità Comprensoriale Valle Pusteria"@it ;
+    ns1:haEnteCapofilaDiATS "Comunità Comprensoriale Valle Pusteria" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281255707" ;
     ns3:identifier "31-202012281255707" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281258865> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Comunit� Comprensoriale del Comune di Bolzano"@it ;
-    ns2:prefLabel "Comunit� Comprensoriale del Comune di Bolzano"@it ;
+    rdfs:label "Comunità Comprensoriale del Comune di Bolzano"@it ;
+    ns2:prefLabel "Comunità Comprensoriale del Comune di Bolzano"@it ;
     ns1:haEnteCapofilaDiATS "ASSB - Azienda Servizi Sociali di Bolzano " ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "31-202012281258865" ;
@@ -20724,8 +20724,8 @@
     ns3:identifier "lom_9" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_10> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Valle Imagna e Villa d'Alm�"@it ;
-    ns2:prefLabel "Valle Imagna e Villa d'Alm�"@it ;
+    rdfs:label "Valle Imagna e Villa d'Almè"@it ;
+    ns2:prefLabel "Valle Imagna e Villa d'Almè"@it ;
     ns1:haEnteCapofilaDiATS "Azienda Speciale Consortile Valle Imagna-Villa D'Alme'" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "lom_10" ;
@@ -20820,8 +20820,8 @@
     ns3:identifier "lom_21" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_22> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Garda - Sal� - 11"@it ;
-    ns2:prefLabel "Garda - Sal� - 11"@it ;
+    rdfs:label "Garda - Salò - 11"@it ;
+    ns2:prefLabel "Garda - Salò - 11"@it ;
     ns1:haEnteCapofilaDiATS "AZIENDA SPECIALE CONSORTILE GARDA SOCIALE" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "lom_22" ;
@@ -20892,8 +20892,8 @@
     ns3:identifier "lom_31" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_32> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Cant�"@it ;
-    ns2:prefLabel "Cant�"@it ;
+    rdfs:label "Cantù"@it ;
+    ns2:prefLabel "Cantù"@it ;
     ns1:haEnteCapofilaDiATS "AZIENDA SPECIALE CONSORTILE GALLIANO" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "lom_32" ;
@@ -21006,7 +21006,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_47> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Suzzara"@it ;
     ns2:prefLabel "Suzzara"@it ;
-    ns1:haEnteCapofilaDiATS "Azienda Servizi alla Persona del territorio suzzarese � Socialis" ;
+    ns1:haEnteCapofilaDiATS "Azienda Servizi alla Persona del territorio suzzarese – Socialis" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "lom_47" ;
     ns3:identifier "lom_47" .
@@ -21020,8 +21020,8 @@
     ns3:identifier "lom_48" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_49> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Milano Citt�"@it ;
-    ns2:prefLabel "Milano Citt�"@it ;
+    rdfs:label "Milano Città"@it ;
+    ns2:prefLabel "Milano Città"@it ;
     ns1:haEnteCapofilaDiATS "Comune di Milano" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "lom_49" ;
@@ -21212,8 +21212,8 @@
     ns3:identifier "lom_75" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_78> a ns1:AmbitoTerritorialeSociale ;
-    rdfs:label "Voghera e Comunit� Montana Oltrep� Pavese"@it ;
-    ns2:prefLabel "Voghera e Comunit� Montana Oltrep� Pavese"@it ;
+    rdfs:label "Voghera e Comunità Montana Oltrepò Pavese"@it ;
+    ns2:prefLabel "Voghera e Comunità Montana Oltrepò Pavese"@it ;
     ns1:haEnteCapofilaDiATS "Comune di Voghera" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "lom_78" ;
@@ -21310,7 +21310,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_91> a ns1:AmbitoTerritorialeSociale ;
     rdfs:label "Cittiglio"@it ;
     ns2:prefLabel "Cittiglio"@it ;
-    ns1:haEnteCapofilaDiATS "Comunit� Montana Valli del Verbano" ;
+    ns1:haEnteCapofilaDiATS "Comunità Montana Valli del Verbano" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale> ;
     ns2:notation "lom_91" ;
     ns3:identifier "lom_91" .
@@ -21372,36 +21372,36 @@
     ns3:identifier "lom_98" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_territoriale/distribution/TATS_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns7:Distribution ;
     ns3:description "Controlled vocabulary of the social territorial sphere CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato dell'ambito territoriale sociale"@it ;
     ns3:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns3:title "Controlled vocabulary of the social territorial sphere CSV distribution"@en,
         "Distribuzione CSV del vocabolario controllato dell'ambito territoriale sociale"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest/tipo_ambito_territoriale.csv> .
+    ns7:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest> ;
+    ns7:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest/tipo_ambito_territoriale.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_territoriale/distribution/TATS_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns7:Distribution ;
     ns3:description "Controlled vocabulary of the social territorial sphere JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato dell'ambito territoriale sociale"@it ;
     ns3:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
     ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns3:title "Controlled vocabulary of the social territorial sphere JSON_LD distribution"@en,
         "Distribuzione JSON_LD del vocabolario controllato dell'ambito territoriale sociale"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest/tipo_ambito_territoriale.json> .
+    ns7:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest> ;
+    ns7:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest/tipo_ambito_territoriale.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_territoriale/distribution/TATS_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns7:Distribution ;
     ns3:description "Controlled vocabulary of the social territorial sphere RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato dell'ambito territoriale sociale"@it ;
     ns3:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns3:title "Controlled vocabulary of the social territorial sphere RDF/turtle distribution"@en,
         "Distribuzione RDF/Turtle del vocabolario controllato dell'ambito territoriale sociale"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest/tipo_ambito_territoriale.ttl> .
+    ns7:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest> ;
+    ns7:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ambito_territoriale/latest/tipo_ambito_territoriale.ttl> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
