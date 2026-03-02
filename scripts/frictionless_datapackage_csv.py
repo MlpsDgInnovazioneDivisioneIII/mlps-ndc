@@ -51,13 +51,8 @@ def to_json(url, src_file):
     frame = yaml.safe_load(Path(FRAME_PATH).read_text())
     frame.pop("_meta")
     json_data = jsonld.frame(data, frame)
-    if isinstance(json_data, list):
-        # Caso in cui rdflib produce direttamente una lista
-        context = {}
-        graph = json_data
-    else:
-        context = json_data.get("@context", {})
-        graph = json_data.get("@graph", [])
+    context, graph = json_data["@context"], json_data["@graph"]
+    ## graph.drop(columns=["@type"], inplace=True)
 
     dest_json = src_file.with_suffix(".json")
     dest_json.write_text(json.dumps(graph, indent=2))
@@ -110,7 +105,7 @@ def to_csv(url, src_file):
     dest_csv = src_file.with_suffix(".csv")
 
     df = pd.json_normalize(out, meta=[])
-    df.drop(columns=["@type"], inplace=True, errors="ignore")
+    df.drop(columns=["@type"], inplace=True)
     if "parent" in df:
         df["parent"] = df["parent"] \
             .transform(lambda x: get_father(x) if pd.isna(x) is False else x)
