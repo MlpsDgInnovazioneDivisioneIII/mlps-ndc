@@ -1,10 +1,10 @@
 @prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ns2: <https://w3id.org/italia/onto/CLV/> .
 @prefix ns3: <http://purl.org/dc/terms/> .
-@prefix ns4: <http://www.w3.org/ns/dcat#> .
-@prefix ns5: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns6: <http://www.w3.org/ns/adms#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/ns/adms#> .
+@prefix ns6: <http://www.w3.org/ns/dcat#> .
+@prefix ns7: <http://www.w3.org/2006/vcard/ns#> .
 @prefix ns8: <https://w3id.org/italia/onto/NDC/> .
 @prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -14,25 +14,25 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns5:Kind,
-        ns5:Organization,
+        ns7:Kind,
+        ns7:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
         "MLPS DG Innovazione – Divisione III"@it ;
     ns3:identifier "DGInnovazioneDiv3" ;
-    ns5:fn "MLPS DG Innovazione – Divisione III" ;
-    ns5:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
-    ns7:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it .
+    ns4:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns7:fn "MLPS DG Innovazione – Divisione III" ;
+    ns7:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns7:Agent,
+        ns4:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
     ns3:identifier "mlps" ;
-    ns7:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
@@ -46,7 +46,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
         ns1:ConceptScheme,
-        ns6:Asset ;
+        ns5:Asset ;
     rdfs:label "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered"@en,
         "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
     ns1:prefLabel "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
@@ -95,18 +95,18 @@
     ns3:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered"@en,
         "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
     ns3:type <http://purl.org/adms/assettype/CodeList> ;
-    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_CSV>,
+    ns5:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns6:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns6:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_CSV>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_JSON_LD>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_RDF_TURTLE> ;
-    ns4:keyword "citizen's curriculum vitae"@en,
+    ns6:keyword "citizen's curriculum vitae"@en,
         "curriculum vitae del cittadino"@it,
         "job offer"@en,
         "offerta di lavoro"@it,
         "offerta formativa"@it,
         "training offer"@en ;
-    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns6:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns6:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     ns8:keyConcept "tipo_albo" ;
     ns9:numberOfLevels "1" .
 
@@ -354,36 +354,36 @@
     ns3:identifier "0027" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns6:Distribution ;
     ns3:description "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
     ns3:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns3:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered CSV distribution"@en,
         "Distribuzione CSV del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.csv> .
+    ns6:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
+    ns6:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns6:Distribution ;
     ns3:description "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
     ns3:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
     ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns3:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered JSON_LD distribution"@en,
         "Distribuzione JSON_LD del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.json> .
+    ns6:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
+    ns6:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns6:Distribution ;
     ns3:description "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
     ns3:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns3:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered RDF/turtle distribution"@en,
         "Distribuzione RDF/Turtle del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.ttl> .
+    ns6:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
+    ns6:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.ttl> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
