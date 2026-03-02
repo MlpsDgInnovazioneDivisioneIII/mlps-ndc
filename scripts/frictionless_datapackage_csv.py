@@ -110,7 +110,7 @@ def to_csv(url, src_file):
     dest_csv = src_file.with_suffix(".csv")
 
     df = pd.json_normalize(out, meta=[])
-    df.drop(columns=["@type"], inplace=True)
+    df.drop(columns=["@type"], inplace=True, errors="ignore")
     if "parent" in df:
         df["parent"] = df["parent"] \
             .transform(lambda x: get_father(x) if pd.isna(x) is False else x)
