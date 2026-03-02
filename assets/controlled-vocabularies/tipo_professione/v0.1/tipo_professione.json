@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AF",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "AF",
+    "label_it": "Assistente familiare / op.sociosanitario (OSS, ASA, OTA)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/AR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "AR",
+    "label_it": "Altro...",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ED",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "ED",
+    "label_it": "Educatore",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MC",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "MC",
+    "label_it": "Mediatore culturale/interculturale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/ME",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "ME",
+    "label_it": "Pediatra/MMG",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/MF",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "MF",
+    "label_it": "Mediatore familiare",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/NE",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "NE",
+    "label_it": "Neuropsichiatra infantile",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OC",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "OC",
+    "label_it": "Operatore Centro per l\u2019Impiego ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/OF",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "OF",
+    "label_it": "Operatore formazione ed istruzione ( insegnante/figura strum. )",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/PS",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "PS",
+    "label_it": "Psicologo",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/SW",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe",
+      "skos:Concept"
+    ],
+    "id": "SW",
+    "label_it": "Assistente Sociale",
+    "level": "1"
+  }
+]

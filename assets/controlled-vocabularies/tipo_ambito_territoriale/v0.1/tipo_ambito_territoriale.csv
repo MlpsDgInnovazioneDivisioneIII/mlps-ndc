@@ -1,1 +1,611 @@
-
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142229371,1-202004142229371,Area Metropolitana Sud,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142230074,1-202004142230074,Area Metropolitana Nord,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142231037,1-202004142231037,Bra,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142232512,1-202004142232512,Moncalieri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142232615,1-202004142232615,Novara,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142232707,1-202004142232707,GASSINO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142232952,1-202004142232952,Nichelino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142232970,1-202004142232970,Area Metropolitana Centro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142233752,1-202004142233752,Torino Citta’,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240025,1-202004142240025,Vercelli,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240380,1-202004142240380,Cuorgne’,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240480,1-202004142240480,Casale Monferrato,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240510,1-202004142240510,Cuneo Nord Ovest E Nord Est,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240736,1-202004142240736,Asti Centro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240793,1-202004142240793,Cuneo Sud Ovest,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240828,1-202004142240828,Vco,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142240912,1-202004142240912,Alba,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142241256,1-202004142241256,Acqui Terme,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142241257,1-202004142241257,Ovada,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142241281,1-202004142241281,Alessandria - Valenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142241672,1-202004142241672,Pinerolese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142249014,1-202004142249014,Cuneo Sud Est,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142249103,1-202004142249103,Chieri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142249262,1-202004142249262,BIELLA IRIS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142249682,1-202004142249682,Area Nord Novarese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142250530,1-202004142250530,Carmagnola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142255214,1-202004142255214,Settimo Torinese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142255644,1-202004142255644,Valle Di Susa - Val Sangone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142256201,1-202004142256201,Novi ligure,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142256202,1-202004142256202,Tortona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142256642,1-202004142256642,Cirie' - Lanzo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/1-202004142256730,1-202004142256730,Area Sud Novarese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142230046,10-202004142230046,Zona Sociale 12,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142230061,10-202004142230061,Zona Sociale 8,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142230873,10-202004142230873,Zona Sociale 1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142231068,10-202004142231068,Zona Sociale 6,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142231266,10-202004142231266,Zona Sociale 4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142232809,10-202004142232809,Zona Sociale 5,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142233415,10-202004142233415,Zona Sociale 7,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142233747,10-202004142233747,Zona Sociale 10,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142242037,10-202004142242037,Zona Sociale 9,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142249515,10-202004142249515,Zona Sociale 2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142249850,10-202004142249850,Zona Sociale 11,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/10-202004142250841,10-202004142250841,Zona Sociale 3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142229097,11-202004142229097,Ats 04 - Urbino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142229533,11-202004142229533,Ats 23 - Unione Dei Comuni Vallata Del Tronto,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142230343,11-202004142230343,Ats 22 - Ascoli Piceno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142230550,11-202004142230550,Ats 15 - Macerata,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142231198,11-202004142231198,Ats 01 - Pesaro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142231257,11-202004142231257,Ats 10 - Unione Montana Esino-Frasassi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142232362,11-202004142232362,Ats 14 - Civitanova Marche,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142232392,11-202004142232392,Ats 03 - Unione Montana Catria E Nerone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142232517,11-202004142232517,Ats 20 - Porto Sant'Elpidio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142232704,11-202004142232704,Ats 21 - San Benedetto,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142233881,11-202004142233881,Ats 11 - Ancona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142240197,11-202004142240197,Ats 09 - Asp Ambito 9 Jesi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142240278,11-202004142240278,ATS 8 - Unione dei Comuni Le terre della Marca Senone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142240710,11-202004142240710,Ats 05 - Unione Montana Montefeltro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142241159,11-202004142241159,Ats 24 - Unione Montana Monti Sibillini,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142241855,11-202004142241855,Ats 07 - Fossombrone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142249307,11-202004142249307,Ats 18 - Unione Montana Marca Di Camerino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142250120,11-202004142250120,Ats 06 - Fano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142256221,11-202004142256221,Ats 17 - Unione Montana Alte Valli Potenza-Esino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142256710,11-202004142256710,Ats 16 - Unione Montana Monti Azzurri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142257077,11-202004142257077,Ats 19 - Fermo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142257370,11-202004142257370,Ats 13 - Osimo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/11-202004142257782,11-202004142257782,Ats 12 - Falconara Marittima,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142229395,12-202004142229395,Lt 4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142229581,12-202004142229581,Rm 4.3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142230095,12-202004142230095,Lt 3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142230265,12-202004142230265,Rm 6.4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142230309,12-202004142230309,Lt 1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142230494,12-202004142230494,Rm 5.4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142230973,12-202004142230973,Rm 6.2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142231178,12-202004142231178,Fr C,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142231498,12-202004142231498,Vt 5,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142231790,12-202004142231790,Rieti 5,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142232497,12-202004142232497,Rm 5.1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142232930,12-202004142232930,Rm 4.1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142233403,12-202004142233403,Rm 6.3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142233530,12-202004142233530,Rm 3.1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142233591,12-202004142233591,Rm 6.6,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142240979,12-202004142240979,Rieti 1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142241198,12-202004142241198,Vt 1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142241218,12-202004142241218,Rm 4.2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142241235,12-202004142241235,Rm 5.3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142241473,12-202004142241473,Rm 4.4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142241757,12-202004142241757,Fr D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142249300,12-202004142249300,Rieti 3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142249466,12-202004142249466,Vt 4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142249470,12-202004142249470,Rm 6.5,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142249841,12-202004142249841,Rm 5.6,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250015,12-202004142250015,Rieti 4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250045,12-202004142250045,Fr A,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250097,12-202004142250097,Rm 6.1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250169,12-202004142250169,Fr B,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250226,12-202004142250226,Rm 5.2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250479,12-202004142250479,Roma Capitale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250587,12-202004142250587,Lt 5,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142250658,12-202004142250658,Vt 3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142255766,12-202004142255766,Rieti 2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142256176,12-202004142256176,Rm 5.5,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142256731,12-202004142256731,Lt 2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/12-202004142256910,12-202004142256910,Vt 2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142230283,13-202004142230283,Val Di Foro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142230416,13-202004142230416,Avezzano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142230698,13-202004142230698,Tordino - Vomano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142230807,13-202004142230807,Peligno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142231512,13-202004142231512,Vestino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142231646,13-202004142231646,Marrucino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142232397,13-202004142232397,Gran Sasso - Laga,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142232739,13-202004142232739,Ortonese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142233130,13-202004142233130,Teramo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142233235,13-202004142233235,Montesilvano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142233377,13-202004142233377,Pescara,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142233648,13-202004142233648,Chieti,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142240125,13-202004142240125,Montagne Aquilane,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142241224,13-202004142241224,Marsica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142241272,13-202004142241272,L'Aquila,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142241406,13-202004142241406,Vastese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142241733,13-202004142241733,Sangro - Aventino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142241899,13-202004142241899,Montagna Pescarese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142249568,13-202004142249568,Metropolitano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142250221,13-202004142250221,Alto Vastese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142251124,13-202004142251124,Frentano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142256723,13-202004142256723,Sangrino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142257081,13-202004142257081,Fino - Cerrano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/13-202004142257970,13-202004142257970,Val Vibrata,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202004142230949,14-202004142230949,ATS LARINO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202004142231169,14-202004142231169,Campobasso,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202004142232327,14-202004142232327,Agnone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202004142250566,14-202004142250566,Venafro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202004142250843,14-202004142250843,Riccia - Bojano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202004142255552,14-202004142255552,ISERNIA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202004142256548,14-202004142256548,Termoli,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/14-202202031152260,14-202202031152260,Campione D'Italia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142229123,15-202004142229123,A06,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142229649,15-202004142229649,C08,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142229827,15-202004142229827,N23,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142230046,15-202004142230046,N22,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142230598,15-202004142230598,A04,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142230612,15-202004142230612,N29,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142230805,15-202004142230805,B01,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142230939,15-202004142230939,C03,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231008,15-202004142231008,N30,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231153,15-202004142231153,C02,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231478,15-202004142231478,S01_3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231532,15-202004142231532,S02,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231666,15-202004142231666,N17,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231764,15-202004142231764,S10,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231802,15-202004142231802,C07,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142231809,15-202004142231809,N12,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142232153,15-202004142232153,A02,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142232265,15-202004142232265,N01-10,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142232808,15-202004142232808,N18,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142232965,15-202004142232965,C09,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233075,15-202004142233075,N21,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233097,15-202004142233097,N31,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233285,15-202004142233285,N20,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233331,15-202004142233331,N11,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233491,15-202004142233491,N16,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233587,15-202004142233587,S03 (Ex S10),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233622,15-202004142233622,N27,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233685,15-202004142233685,N15,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233692,15-202004142233692,N26,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233726,15-202004142233726,N28,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233920,15-202004142233920,S05,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233951,15-202004142233951,N14,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142233997,15-202004142233997,S01_2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142240646,15-202004142240646,C01,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142240932,15-202004142240932,A05,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142241299,15-202004142241299,N25,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142241480,15-202004142241480,S08,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142241547,15-202004142241547,S09,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142241673,15-202004142241673,C04,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142241727,15-202004142241727,N33,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142242023,15-202004142242023,B02,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142242946,15-202004142242946,A03,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142249334,15-202004142249334,B03,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142249393,15-202004142249393,S01_1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142249440,15-202004142249440,S06,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142249470,15-202004142249470,A01,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142249517,15-202004142249517,S03 (Ex S05),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142249523,15-202004142249523,B04,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142250285,15-202004142250285,N34,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142251056,15-202004142251056,C10,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142255543,15-202004142255543,C05,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142255662,15-202004142255662,B05,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142256093,15-202004142256093,N32,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142256131,15-202004142256131,N13,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142257108,15-202004142257108,S07,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/15-202004142257458,15-202004142257458,C06,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142229054,16-202004142229054,Ambito Territoriale Di Casarano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142229193,16-202004142229193,Ambito Territoriale di Martina Franca,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142230059,16-202004142230059,Ambito Territoriale Di Foggia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142230331,16-202004142230331,Ambito Territoriale Del Tavoliere Meridionale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142230547,16-202004142230547,Ambito Territoriale Di Grumo Appula,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142230848,16-202004142230848,Ambito Territoriale di Manfredonia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142230925,16-202004142230925,Ambito Territoriale Di Gagliano Del Capo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142231046,16-202004142231046,Ambito Territoriale di Cerignola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142231259,16-202004142231259,Ambito Territoriale Di Triggiano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142231392,16-202004142231392,Maglie,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142231730,16-202004142231730,Ambito Territoriale Di Lucera,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142231900,16-202004142231900,Ambito Territoriale di Canosa Di Puglia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232206,16-202004142232206,Ambito Territoriale Di Lecce,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232349,16-202004142232349,Ambito Territoriale Di San Severo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232433,16-202004142232433,Ambito Territoriale Di Conversano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232486,16-202004142232486,Ambito Territoriale di Taranto,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232618,16-202004142232618,Ambito Territoriale Di San Marco In Lamis,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232714,16-202004142232714,Ambito Territoriale Di Gallipoli,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232858,16-202004142232858,Ambito Territoriale di Campi Salentina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232904,16-202004142232904,Ambito Territoriale Di Gioia Del Colle,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142232953,16-202004142232953,Ambito Territoriale di Modugno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233073,16-202004142233073,Ambito Territoriale Di Andria,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233247,16-202004142233247,Ambito Territoriale Di Mola Di Bari,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233325,16-202004142233325,Ambito Territoriale Di Barletta,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233366,16-202004142233366,Ambito Territoriale Di Massafra,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233397,16-202004142233397,Ambito Territoriale Di Fasano-Ostuni,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233406,16-202004142233406,Ambito Territoriale di Bari,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233474,16-202004142233474,Brindisi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233570,16-202004142233570,Francavilla Fontana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233745,16-202004142233745,Ambito Territoriale di Manduria,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233835,16-202004142233835,Ambito Territoriale Di Molfetta,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233864,16-202004142233864,Ambito Territoriale di Trani,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233874,16-202004142233874,Ambito Territoriale di Corato,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142233929,16-202004142233929,Ambito Territoriale Di Altamura,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142240869,16-202004142240869,Ambito Territoriale Di Nardo',1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142241526,16-202004142241526,Ambito Territoriale Di Galatina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142249536,16-202004142249536,Ambito Territoriale Di Vico Del Gargano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142249745,16-202004142249745,Ambito Territoriale Di Putignano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142249856,16-202004142249856,Mesagne,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142250205,16-202004142250205,Ambito Territoriale Di Bitonto,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142255090,16-202004142255090,Poggiardo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142255821,16-202004142255821,Ambito Territoriale Di Ginosa,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142256392,16-202004142256392,Ambito Territoriale Di Grottaglie,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142256739,16-202004142256739,Ambito Territoriale Di Martano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/16-202004142257846,16-202004142257846,Ambito Territoriale Di Troia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142229429,17-202004142229429,Bradanica Medio Basento,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142230627,17-202004142230627,Lagonegrese Pollino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142232287,17-202004142232287,Marmo Platano Melandro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142233183,17-202004142233183,Città Di Potenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142233868,17-202004142233868,Città Di Matera,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142241625,17-202004142241625,Metapontino Collina Materana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142249046,17-202004142249046,Vulture Alto Bradano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142255360,17-202004142255360,Alto Basento,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202004142255696,17-202004142255696,Val D'Agri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091039409,17-202301091039409,Nord Ticino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091111029,17-202301091111029,CALUSO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091120668,17-202301091120668,IVREA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091137832,17-202301091137832,CHIVASSO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091154367,17-202301091154367,COSSATO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091430830,17-202301091430830,Asti Nord,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091448793,17-202301091448793,Orizzonti Nord Est - O.N.E. ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/17-202301091456581,17-202301091456581,Asti Sud,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142229212,18-202004142229212,San Marco Argentano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142229591,18-202004142229591,Montalto Uffugo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142229883,18-202004142229883,Caulonia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230153,18-202004142230153,San Giovanni In Fiore,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230256,18-202004142230256,CirÒ Marina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230330,18-202004142230330,Reggio Calabria,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230355,18-202004142230355,Amantea,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230412,18-202004142230412,Rosarno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230457,18-202004142230457,Cosenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142230476,18-202004142230476,Rende,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142231327,18-202004142231327,Locri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142231708,18-202004142231708,Crotone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142231956,18-202004142231956,Lamezia Terme,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142232381,18-202004142232381,Cariati,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142232480,18-202004142232480,Paola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142233456,18-202004142233456,Mesoraca,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142233977,18-202004142233977,Acri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142241031,18-202004142241031,Vibo Valentia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142241786,18-202004142241786,Catanzaro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142242338,18-202004142242338,Corigliano-Rossano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142249588,18-202004142249588,Serra San Bruno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142250114,18-202004142250114,Melito Porto Salvo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142250659,18-202004142250659,Rogliano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142250774,18-202004142250774,Soverato,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142250882,18-202004142250882,Polistena,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142251903,18-202004142251903,Soveria Mannelli,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142256205,18-202004142256205,Taurianova,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142256544,18-202004142256544,Villa San Giovanni,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142256927,18-202004142256927,Praia a Mare/Scalea,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142257518,18-202004142257518,Castrovillari,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142257614,18-202004142257614,Spilinga,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/18-202004142257748,18-202004142257748,Trebisacce,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142229052,19-202004142229052,D31,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142230057,19-202004142230057,D38,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142230120,19-202004142230120,D52,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142230349,19-202004142230349,D54,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142230633,19-202004142230633,D37,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142230656,19-202004142230656,D08,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142230804,19-202004142230804,D29,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231011,19-202004142231011,D03,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231046,19-202004142231046,D35,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231247,19-202004142231247,D21,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231343,19-202004142231343,D17,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231382,19-202004142231382,D41,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231574,19-202004142231574,D50,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142231754,19-202004142231754,D39,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232360,19-202004142232360,D45,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232362,19-202004142232362,D33,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232463,19-202004142232463,D22,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232525,19-202004142232525,D53,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232613,19-202004142232613,D28,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232742,19-202004142232742,D16,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232771,19-202004142232771,D46,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232821,19-202004142232821,D49,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232882,19-202004142232882,D13,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142232942,19-202004142232942,D47,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233025,19-202004142233025,D09,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233152,19-202004142233152,D14,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233215,19-202004142233215,D44,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233265,19-202004142233265,D18,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233423,19-202004142233423,D05,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233456,19-202004142233456,D04,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233667,19-202004142233667,D15,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233720,19-202004142233720,D06,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233876,19-202004142233876,D34,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142233886,19-202004142233886,D55,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142240258,19-202004142240258,D12,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142240681,19-202004142240681,D32,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142241860,19-202004142241860,D27,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142242386,19-202004142242386,D02,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142242725,19-202004142242725,D43,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142249560,19-202004142249560,D51,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142249966,19-202004142249966,D11,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142250495,19-202004142250495,D40,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142250906,19-202004142250906,D10,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142250909,19-202004142250909,D30,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142251209,19-202004142251209,D19,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142255309,19-202004142255309,D48,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142255363,19-202004142255363,D24,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142255403,19-202004142255403,D26,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142255855,19-202004142255855,D23,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142256565,19-202004142256565,D36,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142257196,19-202004142257196,D25,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142257208,19-202004142257208,D07,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142257302,19-202004142257302,D42,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142257465,19-202004142257465,D20,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202004142257940,19-202004142257940,D01,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/19-202302241143258,19-202302241143258,Arcipelago del Sulcis,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/2-202004142242407,2-202004142242407,Valle D'Aosta,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142229944,20-202004142229944,Ozieri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142230331,20-202004142230331,Alghero,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142231266,20-202004142231266,Olbia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142231357,20-202004142231357,Carbonia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232150,20-202004142232150,Sarcidano Barbagia di Seulo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232155,20-202004142232155,Sorgono,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232428,20-202004142232428,Cagliari 21,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232470,20-202004142232470,Quartu Parteolla,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232506,20-202004142232506,Sarrabus Gerrei,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232711,20-202004142232711,Guspini,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142232912,20-202004142232912,Sassari,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142233727,20-202004142233727,Tempio Pausania,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142240338,20-202004142240338,Oristano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142241256,20-202004142241256,Macomer,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142241728,20-202004142241728,Ghilarza - Bosa,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142249209,20-202004142249209,Nuoro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142249897,20-202004142249897,Siniscola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142249983,20-202004142249983,Cagliari,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142250008,20-202004142250008,Ogliastra,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142250178,20-202004142250178,Ales Terralba,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142250715,20-202004142250715,Anglona Coros Figulinas,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142250764,20-202004142250764,Sanluri,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142256575,20-202004142256575,Area Ovest,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142256657,20-202004142256657,Iglesias,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/20-202004142257698,20-202004142257698,Trexenta,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/21-202202090935245,21-202202090935245,Aretina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/21-202202090949607,21-202202090949607,Casentino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/21-202202090956531,21-202202090956531,Valtiberina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311100933473,22-202311100933473,COMUN GENERAL DE FASCIA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101010675,22-202311101010675,COMUNITA' ALTA VALSUGANA E BERSNTOL,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101035319,22-202311101035319,COMUNITA' ALTO GARDA E LEDRO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101038007,22-202311101038007,COMUNITA' DELLA VAL DI NON,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101058087,22-202311101058087,COMUNITA' DELLA VALLAGARINA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101103014,22-202311101103014,COMUNITA' DELLA VALLE DEI LAGHI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101105480,22-202311101105480,COMUNITA' DELLA VALLE DI CEMBRA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101108814,22-202311101108814,COMUNITA' DELLA VALLE DI SOLE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101113298,22-202311101113298,COMUNITA' DELLE GIUDICARIE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101118148,22-202311101118148,COMUNITA' DI PRIMIERO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101121227,22-202311101121227,COMUNITA' ROTALIANA-KONIGSBERG,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101124018,22-202311101124018,COMUNITA' TERRITORIALE DELLA VALLE DI FIEMME,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101128865,22-202311101128865,COMUNITA' VALSUGANA E TESINO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101132169,22-202311101132169,MAGNIFICA COMUNITA' DEGLI ALTIPIANI CIMBRI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101134080,22-202311101134080,COMUNITA' DELLA PAGANELLA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101140627,22-202311101140627,Comune di Rovereto,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/22-202311101143333,22-202311101143333,TERRITORIO VAL D'ADIGE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281210956,31-202012281210956,Comunità Comprensoriale Alta Valle Isarco Wipptal ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281222859,31-202012281222859,Comunità Comprensoriale Valle Isarco ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281225127,31-202012281225127,Comunità Comprensoriale Oltradige-Bassa Atesina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281232507,31-202012281232507,Comunità Comprensoriale Burgraviato,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281248469,31-202012281248469,Comunità Comprensoriale Salto Sciliar,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281252243,31-202012281252243,Comunità Comprensoriale Val Venosta,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281255707,31-202012281255707,Comunità Comprensoriale Valle Pusteria,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/31-202012281258865,31-202012281258865,Comunità Comprensoriale del Comune di Bolzano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142229209,5-202004142229209,Ambito Sociale VEN_22 - Sona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142229374,5-202004142229374,Ambito Sociale VEN_03 Bassano del Grappa - Asiago,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142230467,5-202004142230467,Ambito Sociale VEN_06 - Vicenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142230941,5-202004142230941,Ambito Sociale VEN_21 - Legnago,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142231385,5-202004142231385,Ambito Sociale VEN_14 - Chioggia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142232256,5-202004142232256,Ambito Sociale VEN_12 - Venezia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142240267,5-202004142240267,Ambito Sociale VEN_09 - Treviso,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142240301,5-202004142240301,Ambito Sociale VEN_15 - Federazione dei Comuni del Camposampierese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142240605,5-202004142240605,Ambito Sociale VEN_07 - Conegliano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142240745,5-202004142240745,Ambito Sociale VEN_18 - Lendinara,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142240960,5-202004142240960,Ambito Sociale VEN_08 - Asolo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142241163,5-202004142241163,Ambito Sociale VEN_01 - Belluno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142249230,5-202004142249230,Ambito Sociale VEN_16 - Padova,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142250131,5-202004142250131,Ambito Sociale VEN_20 - Verona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142250461,5-202004142250461,Ambito Sociale VEN_17 - Este,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142250688,5-202004142250688,Ambito Sociale VEN_02 - Feltre,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142250746,5-202004142250746,Ambito Sociale VEN_05 - Arzignano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142256357,5-202004142256357,Ambito Sociale VEN_13 - Mira,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142256697,5-202004142256697,Ambito Sociale VEN_10 - Portogruaro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142257142,5-202004142257142,Ambito Sociale VEN_19 - Adria,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/5-202004142257418,5-202004142257418,Ambito Sociale VEN_04 - Thiene,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142230146,6-202004142230146,Riviera Bassa Friulana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142232133,6-202004142232133,Triestino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142232601,6-202004142232601,Tagliamento,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142240022,6-202004142240022,Friuli Centrale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142241386,6-202004142241386,Sile E Meduna,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142241625,6-202004142241625,Torre,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142249042,6-202004142249042,Carso Isonzo Adriatico,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142250025,6-202004142250025,Carnia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142250749,6-202004142250749,Livenza-Cansiglio-Cavallo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142250771,6-202004142250771,Collio-Alto Isonzo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142250781,6-202004142250781,Natisone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142255405,6-202004142255405,Noncello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142255410,6-202004142255410,Mediofriuli,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142256277,6-202004142256277,Gemonese/Canal del Ferro-Val Canale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142256864,6-202004142256864,Valli e Dolomiti friulane,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142257011,6-202004142257011,Collinare,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142257233,6-202004142257233,Agro Aquileiese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/6-202004142257802,6-202004142257802,Carso Giuliano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142229613,7-202004142229613,Distretto Sociosanitario 5 Finalese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142230234,7-202004142230234,Distretto Sociosanitario 4 Albenganese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142231358,7-202004142231358,Distretto Sociosanitario 12 Extra Genova -Valtrebbia E Valbisagno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142231367,7-202004142231367,Distretto Sociosanitario 13 Extra Genova -Levante,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142232261,7-202004142232261,Distretto Sociosanitario Dss 18 Spezzino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142232291,7-202004142232291,Distretto Sociosanitario 8 Extra Genova,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142233998,7-202004142233998,Distretti Sociosanitari 9 E 11,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142240264,7-202004142240264,Distretto Sociosanitario 14 Tigullio Occidentale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142240597,7-202004142240597,Distretto Sociosanitario 1 Ventimigliese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142240732,7-202004142240732,Distretto Sociosanitario 10 Extra -Genova --Valpolcevera E Vallescrivia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142240839,7-202004142240839,Distretto Sociosanitario Dss 19 Val Di Magra,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142241844,7-202004142241844,Distretto Sociosanitario 17 Riviera E Val Di Vara,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142249298,7-202004142249298,Distretto Sociosanitario 2 Sanremese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142249841,7-202004142249841,Distretto Sociosanitario 3 Imperiese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142257156,7-202004142257156,Distretto Sociosanitario 15 Chiavarese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142257326,7-202004142257326,Distretto Sociosanitario 6 Bormide,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142257559,7-202004142257559,Distretto Sociosanitario 7 Savonese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/7-202004142257783,7-202004142257783,Distretto Sociosanitario 16 Tigullio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142229034,8-202004142229034,Distr. Scandiano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142229261,8-202004142229261,Distr. Levante,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142230014,8-202004142230014,Distr. CittÀ Di Bologna,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142230275,8-202004142230275,Distr. Cesena-Valle Del Savio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142230619,8-202004142230619,Distr. Pianura Est,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142231274,8-202004142231274,Distr. Appennino Bolognese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142231482,8-202004142231482,Distr. Vignola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142231537,8-202004142231537,Distr. Guastalla,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142231689,8-202004142231689,Distr. Faenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142231850,8-202004142231850,Distr. Sud-Est (Fe),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142231852,8-202004142231852,Distr. CittÀ Di Piacenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232051,8-202004142232051,Distr. Ravenna,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232086,8-202004142232086,Distr. Val D'Enza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232186,8-202004142232186,Distr. Pianura Ovest,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232521,8-202004142232521,Distr. Correggio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232527,8-202004142232527,Distr. Reggio Emilia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232582,8-202004142232582,Distr. Carpi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232778,8-202004142232778,Distr. Castelfranco Emilia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232819,8-202004142232819,Distr. Parma,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142232982,8-202004142232982,Distr. Centro-Nord,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142233010,8-202004142233010,Distr. Sassuolo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142233056,8-202004142233056,Distr. Ovest,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142233195,8-202004142233195,Distr. Castelnuovo Ne' Monti,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142233296,8-202004142233296,Distr. Modena,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142233873,8-202004142233873,Distr. Rubicone,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142241307,8-202004142241307,Distr. Fidenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142241333,8-202004142241333,Distr. Riccione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142241467,8-202004142241467,Distr. Pavullo Nel Frignano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142241524,8-202004142241524,Distr. Valli Taro E Ceno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142241682,8-202004142241682,Distr. Imola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142249166,8-202004142249166,Distr. ForlÌ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142249311,8-202004142249311,"Distr. Reno, Lavino E Samoggia",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142249486,8-202004142249486,Distr. Mirandola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142250440,8-202004142250440,Distr. Ponente,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142251512,8-202004142251512,Distr. Lugo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142256691,8-202004142256691,Distr. Sud Est (Pr),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142257802,8-202004142257802,Distr. Rimini,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/8-202004142257965,8-202004142257965,Distr. Savena Idice,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142229688,9-202004142229688,Apuane,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142229944,9-202004142229944,Pistoiese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142230021,9-202004142230021,Empolese-Valdarno Inferiore,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142230118,9-202004142230118,Amiata Senese E Val D’Orcia-Valdichiana Senese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142230417,9-202004142230417,Val Di Chiana Aretina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142230989,9-202004142230989,Val Di Nievole,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142231383,9-202004142231383,Versilia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142231386,9-202004142231386,Pratese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142231787,9-202004142231787,Piana Di Lucca,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142232119,9-202004142232119,Elba,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142232826,9-202004142232826,Lunigiana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142233276,9-202004142233276,Alta Val D’Elsa,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142233296,9-202004142233296,Firenze,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142233452,9-202004142233452,Livornese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142240236,9-202004142240236,Alta Val Di Cecina-Val Dera,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142241280,9-202004142241280,Valle Del Serchio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142241744,9-202004142241744,Fiorentina Sud Est,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142249391,9-202004142249391,Senese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142249891,9-202004142249891,Amiata Grossetana-Colline Metallifere-Grossetana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142249937,9-202004142249937,Valdarno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142251716,9-202004142251716,Bassa Val Di Cecina-Val Di Cornia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142256262,9-202004142256262,Colline Dell’Albegna,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142256367,9-202004142256367,Pisana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142257033,9-202004142257033,Mugello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202004142257971,9-202004142257971,Fiorentina Nord Ovest,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202202240806781,9-202202240806781,N24,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202202281238395,9-202202281238395,S04_1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202202281329596,9-202202281329596,S04_2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/9-202204041255779,9-202204041255779,N19,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_1,lom_1,Bergamo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_10,lom_10,Valle Imagna e Villa d'Almè,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_11,lom_11,Isola Bergamasca e Bassa Val San Martino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_12,lom_12,Treviglio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_13,lom_13,Romano di Lombardia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_14,lom_14,Albino Valle Seriana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_15,lom_15,Brescia - 1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_16,lom_16,Brescia Ovest - 2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_17,lom_17,Valle Trompia - 4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_18,lom_18,Oglio Ovest - 7,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_19,lom_19,Bassa Bresciana Occidentale - 8,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_2,lom_2,Dalmine,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_20,lom_20,Bassa Bresciana Orientale - 10,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_21,lom_21,Bassa Bresciana Centrale - 9,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_22,lom_22,Garda - Salò - 11,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_23,lom_23,Valle Sabbia - 12,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_24,lom_24,Brescia Est - 3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_25,lom_25,Sebino - 5,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_26,lom_26,Monte Orfano - 6,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_27,lom_27,Olgiate Comasco,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_29,lom_29,Como,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_3,lom_3,Grumello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_30,lom_30,Menaggio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_31,lom_31,Dongo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_32,lom_32,Cantù,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_33,lom_33,Erba,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_34,lom_34,Mariano Comense,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_35,lom_35,Lomazzo - Fino Mornasco,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_36,lom_36,Cremona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_37,lom_37,Crema,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_39,lom_39,Lecco,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_4,lom_4,Seriate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_40,lom_40,Bellano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_41,lom_41,Merate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_42,lom_42,Lodi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_43,lom_43,Asola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_44,lom_44,Guidizzolo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_45,lom_45,Mantova,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_46,lom_46,Ostiglia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_47,lom_47,Suzzara,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_48,lom_48,Oglio Po,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_49,lom_49,Milano Città,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_5,lom_5,Valle Cavallina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_50,lom_50,Sesto San Giovanni,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_51,lom_51,Cinisello Balsamo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_52,lom_52,Rho,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_53,lom_53,Garbagnate Milanese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_54,lom_54,Corsico,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_55,lom_55,Alto Milanese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_57,lom_57,Magentino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_58,lom_58,Abbiategrasso,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_59,lom_59,Paullo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_6,lom_6,Monte Bronzone - Basso Sebino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_60,lom_60,San Giuliano Milanese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_61,lom_61,Cernusco sul Naviglio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_62,lom_62,Pioltello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_63,lom_63,Melzo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_64,lom_64,Visconteo Sud Milano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_66,lom_66,Trezzo sull'Adda,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_67,lom_67,Seregno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_68,lom_68,Carate Brianza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_69,lom_69,Desio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_7,lom_7,Alto Sebino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_70,lom_70,Vimercate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_71,lom_71,Monza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_72,lom_72,Pavia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_73,lom_73,Alto e Basso Pavese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_75,lom_75,Lomellina,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_78,lom_78,Voghera e Comunità Montana Oltrepò Pavese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_79,lom_79,Broni e Casteggio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_8,lom_8,Valle Seriana Superiore e Valle di Scalve,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_81,lom_81,Bormio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_82,lom_82,Tirano,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_83,lom_83,Morbegno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_84,lom_84,Sondrio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_85,lom_85,Chiavenna,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_86,lom_86,Arcisate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_87,lom_87,Azzate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_88,lom_88,Busto Arsizio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_89,lom_89,Castellanza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_9,lom_9,Valle Brembana,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_90,lom_90,Gallarate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_91,lom_91,Cittiglio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_92,lom_92,Luino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_93,lom_93,Saronno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_94,lom_94,Sesto Calende,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_95,lom_95,Somma Lombardo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_96,lom_96,Tradate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_97,lom_97,Varese,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/lom_98,lom_98,Vallecamonica,1
