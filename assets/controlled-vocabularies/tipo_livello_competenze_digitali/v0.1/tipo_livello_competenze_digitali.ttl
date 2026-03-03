@@ -1,12 +1,12 @@
-@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ns2: <http://purl.org/dc/terms/> .
-@prefix ns3: <https://w3id.org/italia/onto/CLV/> .
-@prefix ns4: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix ns5: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns6: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://www.w3.org/ns/adms#> .
-@prefix ns9: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns6: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns7: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns8: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns9: <http://www.w3.org/ns/adms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,25 +14,25 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns6:Kind,
-        ns6:Organization,
+        ns8:Kind,
+        ns8:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
+        "MLPS DG Innovazione - Divisione III"@it ;
     ns2:identifier "DGInnovazioneDiv3" ;
-    ns6:fn "MLPS DG Innovazione – Divisione III" ;
-    ns6:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
-    ns7:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it .
+    ns4:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns8:fn "MLPS DG Innovazione - Divisione III" ;
+    ns8:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns7:Agent,
+        ns4:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
     ns2:identifier "mlps" ;
-    ns7:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
@@ -45,26 +45,24 @@
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:ConceptScheme,
-        ns8:Asset ;
+        ns1:ConceptScheme,
+        ns9:Asset ;
     rdfs:label "Controlled vocabulary of the type of digital skills known"@en,
         "Vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
-    ns5:prefLabel "Vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
+    ns1:prefLabel "Vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
     rdfs:comment "Controlled vocabulary of the type of digital skills known"@en,
         "Vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns1:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns1:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_CSV>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_JSON_LD>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_RDF_TURTLE> ;
-    ns1:keyword "citizen's curriculum vitae"@en,
-        "curriculum vitae del cittadino"@it,
-        "job offer"@en,
-        "offerta di lavoro"@it,
-        "offerta formativa"@it,
-        "training offer"@en ;
-    ns1:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns1:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/0>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/1>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/2>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/3>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/4>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/5>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/6>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/7>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/8> ;
     ns2:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     ns2:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
     ns2:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
@@ -79,140 +77,142 @@
     ns2:title "Controlled vocabulary of the type of digital skills known"@en,
         "Vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
     ns2:type <http://purl.org/adms/assettype/CodeList> ;
-    ns4:numberOfLevels "1" ;
-    ns5:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/0>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/1>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/2>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/3>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/4>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/5>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/6>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/7>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/8> ;
-    ns8:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    ns9:keyConcept "tipo_livello_competenze_digitali" .
+    ns3:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns3:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_RDF_TURTLE> ;
+    ns3:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    ns3:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns6:numberOfLevels "1" ;
+    ns7:keyConcept "tipo_livello_competenze_digitali" ;
+    ns9:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/0> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Nessuno"@it ;
-    ns5:prefLabel "Nessuno"@it ;
+    ns1:prefLabel "Nessuno"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "0" ;
     ns2:description "Nessuna competenza" ;
     ns2:identifier "0" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "0" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/1> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 1"@it ;
-    ns5:prefLabel "Livello 1"@it ;
+    ns1:prefLabel "Livello 1"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "1" ;
     ns2:description "A livello base e con l’aiuto di qualcuno, si è in grado di: individuare come organizzare, archiviare e recuperare con facilità dati, informazioni e contenuti negli ambienti digitali; riconoscere dove organizzarli in modo semplice in un ambiente strutturato" ;
     ns2:identifier "1" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/2> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 2"@it ;
-    ns5:prefLabel "Livello 2"@it ;
+    ns1:prefLabel "Livello 2"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "2" ;
     ns2:description "A livello base, in autonomia e con un supporto adeguato, laddove necessario, si è in grado di: individuare come organizzare, archiviare e recuperare con facilità dati, informazioni e contenuti negli ambienti digitali; riconoscere dove organizzarli in modo semplice in un ambiente strutturato" ;
     ns2:identifier "2" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "2" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/3> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 3"@it ;
-    ns5:prefLabel "Livello 3"@it ;
+    ns1:prefLabel "Livello 3"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "3" ;
     ns2:description "Da soli e risolvendo problemi diretti, si è in grado di: selezionare dati, informazioni e contenuti allo scopo di organizzarli, archiviarli e recuperarli in maniera sistematica all’interno di ambienti digitali; organizzarli in modo sistematico in un ambiente strutturato" ;
     ns2:identifier "3" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "3" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/4> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 4"@it ;
-    ns5:prefLabel "Livello 4"@it ;
+    ns1:prefLabel "Livello 4"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "4" ;
     ns2:description "In modo indipendente, secondo i propri fabbisogni e risolvendo problemi ben definiti e non sistematici, si è in grado di: organizzare informazioni, dati e contenuti affinché possano essere facilmente archiviati e recuperati; organizzare informazioni, dati e contenuti in un ambiente strutturato" ;
     ns2:identifier "4" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "4" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/5> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 5"@it ;
-    ns5:prefLabel "Livello 5"@it ;
+    ns1:prefLabel "Livello 5"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "5" ;
     ns2:description "Oltre a fornire supporto agli altri, si è in grado di: manipolare informazioni, dati e contenuti per facilitarne l’organizzazione, l’archiviazione e il recupero; organizzarli ed elaborarli in un ambiente strutturato" ;
     ns2:identifier "5" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "5" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/6> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 6"@it ;
-    ns5:prefLabel "Livello 6"@it ;
+    ns1:prefLabel "Livello 6"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "6" ;
     ns2:description "A un livello avanzato, secondo i propri fabbisogni e quelli degli altri, all’interno di contesti complessi, si è in grado di: adeguare la gestione di informazioni, dati e contenuti affinché vengano recuperati e archiviati nel modo più facile e opportuno; adeguarli affinché vengano organizzati ed elaborati nell’ambiente strutturato più adatto" ;
     ns2:identifier "6" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "6" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/7> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 7"@it ;
-    ns5:prefLabel "Livello 7"@it ;
+    ns1:prefLabel "Livello 7"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "7" ;
     ns2:description "A un livello altamente specializzato, si è in grado di: creare soluzioni per problemi complessi con definizione limitata inerenti la gestione dei dati, delle informazioni e dei contenuti affinché vengano organizzati, archiviati e recuperati in un ambiente digitale strutturato; integrare le proprie conoscenze per fornire un contributo alle prassi e alle conoscenze professionali e fornire supporto ad altri per gestire dati, informazioni e contenuti digitali in un ambiente digitale strutturato" ;
     ns2:identifier "7" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "7" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/8> a <https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali>,
-        ns5:Concept ;
+        ns1:Concept ;
     rdfs:label "Livello 8"@it ;
-    ns5:prefLabel "Livello 8"@it ;
+    ns1:prefLabel "Livello 8"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
+    ns1:notation "8" ;
     ns2:description "A un livello avanzatissimo e super specializzato, si è in grado di: creare soluzioni per risolvere problemi complessi con molti fattori di interazione inerenti la gestione dei dati, delle informazioni e dei contenuti, affinché vengano organizzati, archiviati e recuperati in un ambiente digitale strutturato; proporre nuove idee e processi nell’ambito specifico" ;
     ns2:identifier "8" ;
-    ns3:hasRankOrder "1" ;
-    ns5:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali> ;
-    ns5:notation "8" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns1:Distribution ;
-    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest> ;
-    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest/tipo_livello_competenze_digitali.csv> ;
+        ns3:Distribution ;
     ns2:description "Controlled vocabulary of the type of digital skills known CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
     ns2:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns2:title "Controlled vocabulary of the type of digital skills known CSV distribution"@en,
-        "Distribuzione CSV del vocabolario controllato della tipologia di competenze digitali conosciute"@it .
+        "Distribuzione CSV del vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest/tipo_livello_competenze_digitali.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns1:Distribution ;
-    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest> ;
-    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest/tipo_livello_competenze_digitali.json> ;
+        ns3:Distribution ;
     ns2:description "Controlled vocabulary of the type of digital skills known JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
     ns2:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
     ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns2:title "Controlled vocabulary of the type of digital skills known JSON_LD distribution"@en,
-        "Distribuzione JSON_LD del vocabolario controllato della tipologia di competenze digitali conosciute"@it .
+        "Distribuzione JSON_LD del vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest/tipo_livello_competenze_digitali.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_competenze_digitali/distribution/TLCD_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns1:Distribution ;
-    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest> ;
-    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest/tipo_livello_competenze_digitali.ttl> ;
+        ns3:Distribution ;
     ns2:description "Controlled vocabulary of the type of digital skills known RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
     ns2:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns2:title "Controlled vocabulary of the type of digital skills known RDF/turtle distribution"@en,
-        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di competenze digitali conosciute"@it .
+        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di competenze digitali conosciute"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_competenze_digitali/latest/tipo_livello_competenze_digitali.ttl> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

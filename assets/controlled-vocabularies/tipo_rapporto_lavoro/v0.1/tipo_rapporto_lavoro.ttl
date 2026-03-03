@@ -1,12 +1,12 @@
-@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns2: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ns3: <http://www.w3.org/ns/dcat#> .
-@prefix ns4: <http://purl.org/dc/terms/> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <https://w3id.org/italia/onto/NDC/> .
-@prefix ns7: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns8: <http://www.w3.org/ns/adms#> .
-@prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns6: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns7: <http://www.w3.org/ns/adms#> .
+@prefix ns8: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns9: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,47 +14,61 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns7:Kind,
-        ns7:Organization,
+        ns8:Kind,
+        ns8:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns4:identifier "DGInnovazioneDiv3" ;
-    ns5:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns7:fn "MLPS DG Innovazione – Divisione III" ;
-    ns7:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns1:identifier "DGInnovazioneDiv3" ;
+    ns4:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns8:fn "MLPS DG Innovazione - Divisione III" ;
+    ns8:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns5:Agent,
+        ns4:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
-    ns4:identifier "mlps" ;
-    ns5:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns1:identifier "mlps" ;
+    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
 
 <https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
-        ns4:Standard ;
-    ns4:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    ns4:identifier "SKOS" ;
-    ns4:title "Simple Knowledge Organization System - SKOS" .
+        ns1:Standard ;
+    ns1:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns1:identifier "SKOS" ;
+    ns1:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:ConceptScheme,
-        ns8:Asset ;
+        ns2:ConceptScheme,
+        ns7:Asset ;
     rdfs:label "Controlled vocabulary of the type of employment contract"@en,
         "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
-    ns1:prefLabel "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
+    ns2:prefLabel "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
     rdfs:comment "Controlled vocabulary of the type of employment contract"@en,
         "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A00>,
+    ns1:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns1:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns1:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:description "Controlled vocabulary of the type of employment contract"@en,
+        "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
+    ns1:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro" ;
+    ns1:issued "2026-02-26"^^xsd:date ;
+    ns1:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns1:modified "2026-02-26"^^xsd:date ;
+    ns1:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:title "Controlled vocabulary of the type of employment contract"@en,
+        "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
+    ns1:type <http://purl.org/adms/assettype/CodeList> ;
+    ns2:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A00>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A01>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A02>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A03>,
@@ -72,118 +86,104 @@
         "offerta formativa"@it,
         "training offer"@en ;
     ns3:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns4:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    ns4:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    ns4:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns4:description "Controlled vocabulary of the type of employment contract"@en,
-        "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
-    ns4:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro" ;
-    ns4:issued "2026-02-26"^^xsd:date ;
-    ns4:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    ns4:modified "2026-02-26"^^xsd:date ;
-    ns4:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns4:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns4:title "Controlled vocabulary of the type of employment contract"@en,
-        "Vocabolario controllato della tipologia di contratto di lavoro"@it ;
-    ns4:type <http://purl.org/adms/assettype/CodeList> ;
-    ns6:keyConcept "tipo_rapporto_lavoro" ;
-    ns8:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    ns9:numberOfLevels "1" .
+    ns6:numberOfLevels "1" ;
+    ns7:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns9:keyConcept "tipo_rapporto_lavoro" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A00> a <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:Concept ;
+        ns2:Concept ;
     rdfs:label "LAVORO A TEMPO INDETERMINATO"@it ;
-    ns1:prefLabel "LAVORO A TEMPO INDETERMINATO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:notation "A00" ;
-    ns2:hasRankOrder "1" ;
-    ns4:identifier "A00" .
+    ns2:prefLabel "LAVORO A TEMPO INDETERMINATO"@it ;
+    ns1:identifier "A00" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
+    ns2:notation "A00" ;
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A01> a <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:Concept ;
+        ns2:Concept ;
     rdfs:label "LAVORO A TEMPO DETERMINATO"@it ;
-    ns1:prefLabel "LAVORO A TEMPO DETERMINATO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:notation "A01" ;
-    ns2:hasRankOrder "1" ;
-    ns4:identifier "A01" .
+    ns2:prefLabel "LAVORO A TEMPO DETERMINATO"@it ;
+    ns1:identifier "A01" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
+    ns2:notation "A01" ;
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A02> a <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:Concept ;
+        ns2:Concept ;
     rdfs:label "APPRENDISTATO"@it ;
-    ns1:prefLabel "APPRENDISTATO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:notation "A02" ;
-    ns2:hasRankOrder "1" ;
-    ns4:identifier "A02" .
+    ns2:prefLabel "APPRENDISTATO"@it ;
+    ns1:identifier "A02" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
+    ns2:notation "A02" ;
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A03> a <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:Concept ;
+        ns2:Concept ;
     rdfs:label "TIROCINIO"@it ;
-    ns1:prefLabel "TIROCINIO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:notation "A03" ;
-    ns2:hasRankOrder "1" ;
-    ns4:identifier "A03" .
+    ns2:prefLabel "TIROCINIO"@it ;
+    ns1:identifier "A03" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
+    ns2:notation "A03" ;
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A04> a <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:Concept ;
+        ns2:Concept ;
     rdfs:label "LAVORO ACCESSORIO"@it ;
-    ns1:prefLabel "LAVORO ACCESSORIO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:notation "A04" ;
-    ns2:hasRankOrder "1" ;
-    ns4:identifier "A04" .
+    ns2:prefLabel "LAVORO ACCESSORIO"@it ;
+    ns1:identifier "A04" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
+    ns2:notation "A04" ;
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A05> a <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:Concept ;
+        ns2:Concept ;
     rdfs:label "LAVORO AUTONOMO"@it ;
-    ns1:prefLabel "LAVORO AUTONOMO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:notation "A05" ;
-    ns2:hasRankOrder "1" ;
-    ns4:identifier "A05" .
+    ns2:prefLabel "LAVORO AUTONOMO"@it ;
+    ns1:identifier "A05" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
+    ns2:notation "A05" ;
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A06> a <https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro>,
-        ns1:Concept ;
+        ns2:Concept ;
     rdfs:label "CONTRATTO DI COLLABORAZIONE"@it ;
-    ns1:prefLabel "CONTRATTO DI COLLABORAZIONE"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
-    ns1:notation "A06" ;
-    ns2:hasRankOrder "1" ;
-    ns4:identifier "A06" .
+    ns2:prefLabel "CONTRATTO DI COLLABORAZIONE"@it ;
+    ns1:identifier "A06" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro> ;
+    ns2:notation "A06" ;
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_rapporto_lavoro/distribution/TRL_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
         ns3:Distribution ;
-    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest> ;
-    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest/tipo_rapporto_lavoro.csv> ;
-    ns4:description "Controlled vocabulary of the type of employment contract CSV distribution"@en,
+    ns1:description "Controlled vocabulary of the type of employment contract CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di contratto di lavoro"@it ;
-    ns4:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns4:title "Controlled vocabulary of the type of employment contract CSV distribution"@en,
-        "Distribuzione CSV del vocabolario controllato della tipologia di contratto di lavoro"@it .
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary of the type of employment contract CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato della tipologia di contratto di lavoro"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest/tipo_rapporto_lavoro.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_rapporto_lavoro/distribution/TRL_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
         ns3:Distribution ;
-    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest> ;
-    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest/tipo_rapporto_lavoro.json> ;
-    ns4:description "Controlled vocabulary of the type of employment contract JSON_LD distribution"@en,
+    ns1:description "Controlled vocabulary of the type of employment contract JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di contratto di lavoro"@it ;
-    ns4:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns4:title "Controlled vocabulary of the type of employment contract JSON_LD distribution"@en,
-        "Distribuzione JSON_LD del vocabolario controllato della tipologia di contratto di lavoro"@it .
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary of the type of employment contract JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato della tipologia di contratto di lavoro"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest/tipo_rapporto_lavoro.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_rapporto_lavoro/distribution/TRL_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
         ns3:Distribution ;
-    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest> ;
-    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest/tipo_rapporto_lavoro.ttl> ;
-    ns4:description "Controlled vocabulary of the type of employment contract RDF/turtle distribution"@en,
+    ns1:description "Controlled vocabulary of the type of employment contract RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato della tipologia di contratto di lavoro"@it ;
-    ns4:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns4:title "Controlled vocabulary of the type of employment contract RDF/turtle distribution"@en,
-        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di contratto di lavoro"@it .
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary of the type of employment contract RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di contratto di lavoro"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_rapporto_lavoro/latest/tipo_rapporto_lavoro.ttl> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

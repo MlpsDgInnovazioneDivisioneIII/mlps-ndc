@@ -1,9 +1,9 @@
 @prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ns2: <http://purl.org/dc/terms/> .
 @prefix ns3: <http://www.w3.org/ns/dcat#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns6: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns4: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
 @prefix ns7: <https://w3id.org/italia/onto/NDC/> .
 @prefix ns8: <http://www.w3.org/ns/adms#> .
 @prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
@@ -14,25 +14,25 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns5:Kind,
-        ns5:Organization,
+        ns4:Kind,
+        ns4:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
+        "MLPS DG Innovazione - Divisione III"@it ;
     ns2:identifier "DGInnovazioneDiv3" ;
-    ns4:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns5:fn "MLPS DG Innovazione – Divisione III" ;
-    ns5:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+    ns4:fn "MLPS DG Innovazione - Divisione III" ;
+    ns4:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
+    ns6:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns4:Agent,
+        ns6:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
     ns2:identifier "mlps" ;
-    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns6:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
@@ -94,7 +94,7 @@
     ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento> ;
     ns1:notation "1" ;
     ns2:identifier "1" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento/2> a <https://w3id.org/italia/labour-social-policies/onto/labour/AccreditamentoPerFormazione>,
         ns1:Concept ;
@@ -103,7 +103,7 @@
     ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento> ;
     ns1:notation "2" ;
     ns2:identifier "2" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento/3> a <https://w3id.org/italia/labour-social-policies/onto/labour/AccreditamentoPerFormazione>,
         ns1:Concept ;
@@ -112,7 +112,7 @@
     ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento> ;
     ns1:notation "3" ;
     ns2:identifier "3" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento/4> a <https://w3id.org/italia/labour-social-policies/onto/labour/AccreditamentoPerFormazione>,
         ns1:Concept ;
@@ -121,7 +121,7 @@
     ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento> ;
     ns1:notation "4" ;
     ns2:identifier "4" ;
-    ns6:hasRankOrder "1" .
+    ns5:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ambito_accreditamento/distribution/TAA_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
         ns3:Distribution ;

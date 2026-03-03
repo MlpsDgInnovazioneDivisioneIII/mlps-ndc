@@ -1,11 +1,11 @@
-@prefix ns1: <http://www.w3.org/ns/dcat#> .
-@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns3: <http://purl.org/dc/terms/> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
-@prefix ns6: <http://www.w3.org/ns/adms#> .
-@prefix ns7: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns8: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns1: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns2: <http://www.w3.org/ns/adms#> .
+@prefix ns3: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix ns5: <http://www.w3.org/ns/dcat#> .
+@prefix ns6: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://www.w3.org/2006/vcard/ns#> .
 @prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,58 +14,48 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns7:Kind,
-        ns7:Organization,
+        ns8:Kind,
+        ns8:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns3:identifier "DGInnovazioneDiv3" ;
-    ns4:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns7:fn "MLPS DG Innovazione – Divisione III" ;
-    ns7:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns4:identifier "DGInnovazioneDiv3" ;
+    ns7:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns8:fn "MLPS DG Innovazione - Divisione III" ;
+    ns8:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns4:Agent,
+        ns7:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
-    ns3:identifier "mlps" ;
-    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns4:identifier "mlps" ;
+    ns7:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
 
 <https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
-        ns3:Standard ;
-    ns3:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    ns3:identifier "SKOS" ;
-    ns3:title "Simple Knowledge Organization System - SKOS" .
+        ns4:Standard ;
+    ns4:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns4:identifier "SKOS" ;
+    ns4:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:ConceptScheme,
-        ns6:Asset ;
+        ns2:Asset,
+        ns3:ConceptScheme ;
     rdfs:label "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1)"@en,
         "Vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
-    ns2:prefLabel "Vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
+    ns3:prefLabel "Vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
     rdfs:comment "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1)"@en,
         "Vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns1:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns1:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_CSV>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_JSON_LD>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_RDF_TURTLE> ;
-    ns1:keyword "citizen's curriculum vitae"@en,
-        "curriculum vitae del cittadino"@it,
-        "job offer"@en,
-        "offerta di lavoro"@it,
-        "offerta formativa"@it,
-        "training offer"@en ;
-    ns1:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns2:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/01>,
+    ns2:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns3:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/01>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/02>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/03>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/04>,
@@ -89,271 +79,281 @@
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/22>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/23>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/24> ;
-    ns3:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    ns3:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    ns3:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns3:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1)"@en,
+    ns4:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns4:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns4:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns4:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1)"@en,
         "Vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
-    ns3:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1" ;
-    ns3:issued "2026-02-26"^^xsd:date ;
-    ns3:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    ns3:modified "2026-02-26"^^xsd:date ;
-    ns3:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns3:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns3:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1)"@en,
+    ns4:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1" ;
+    ns4:issued "2026-02-26"^^xsd:date ;
+    ns4:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns4:modified "2026-02-26"^^xsd:date ;
+    ns4:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns4:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns4:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1)"@en,
         "Vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
-    ns3:type <http://purl.org/adms/assettype/CodeList> ;
-    ns6:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    ns8:keyConcept "tipo_settore_livello_1" ;
+    ns4:type <http://purl.org/adms/assettype/CodeList> ;
+    ns5:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns5:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_RDF_TURTLE> ;
+    ns5:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    ns5:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns6:keyConcept "tipo_settore_livello_1" ;
     ns9:numberOfLevels "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/01> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Agricoltura, silvicoltura e pesca"@it ;
-    ns2:prefLabel "Agricoltura, silvicoltura e pesca"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "01" ;
-    ns3:identifier "01" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Agricoltura, silvicoltura e pesca"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "01" ;
+    ns4:identifier "01" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/02> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Produzioni alimentari"@it ;
-    ns2:prefLabel "Produzioni alimentari"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "02" ;
-    ns3:identifier "02" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Produzioni alimentari"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "02" ;
+    ns4:identifier "02" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/03> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Legno e arredo"@it ;
-    ns2:prefLabel "Legno e arredo"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "03" ;
-    ns3:identifier "03" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Legno e arredo"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "03" ;
+    ns4:identifier "03" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/04> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Carta e cartotecnica"@it ;
-    ns2:prefLabel "Carta e cartotecnica"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "04" ;
-    ns3:identifier "04" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Carta e cartotecnica"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "04" ;
+    ns4:identifier "04" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/05> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Tessile, abbigliamento, calzaturiero e sistema moda"@it ;
-    ns2:prefLabel "Tessile, abbigliamento, calzaturiero e sistema moda"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "05" ;
-    ns3:identifier "05" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Tessile, abbigliamento, calzaturiero e sistema moda"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "05" ;
+    ns4:identifier "05" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/06> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Chimica"@it ;
-    ns2:prefLabel "Chimica"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "06" ;
-    ns3:identifier "06" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Chimica"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "06" ;
+    ns4:identifier "06" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/07> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Estrazione gas, petrolio, carbone, minerali e lavorazione pietre"@it ;
-    ns2:prefLabel "Estrazione gas, petrolio, carbone, minerali e lavorazione pietre"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "07" ;
-    ns3:identifier "07" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Estrazione gas, petrolio, carbone, minerali e lavorazione pietre"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "07" ;
+    ns4:identifier "07" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/08> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Vetro, ceramica e materiali da costruzione"@it ;
-    ns2:prefLabel "Vetro, ceramica e materiali da costruzione"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "08" ;
-    ns3:identifier "08" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Vetro, ceramica e materiali da costruzione"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "08" ;
+    ns4:identifier "08" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/09> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Edilizia"@it ;
-    ns2:prefLabel "Edilizia"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "09" ;
-    ns3:identifier "09" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Edilizia"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "09" ;
+    ns4:identifier "09" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/10> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Meccanica, produzione e manutenzione di macchine, impiantistica"@it ;
-    ns2:prefLabel "Meccanica, produzione e manutenzione di macchine, impiantistica"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "10" ;
-    ns3:identifier "10" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Meccanica, produzione e manutenzione di macchine, impiantistica"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "10" ;
+    ns4:identifier "10" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/11> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Trasporti e logistica"@it ;
-    ns2:prefLabel "Trasporti e logistica"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "11" ;
-    ns3:identifier "11" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Trasporti e logistica"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "11" ;
+    ns4:identifier "11" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/12> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi di distribuzione commerciale"@it ;
-    ns2:prefLabel "Servizi di distribuzione commerciale"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "12" ;
-    ns3:identifier "12" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi di distribuzione commerciale"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "12" ;
+    ns4:identifier "12" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/13> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi finanziari e assicurativi"@it ;
-    ns2:prefLabel "Servizi finanziari e assicurativi"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "13" ;
-    ns3:identifier "13" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi finanziari e assicurativi"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "13" ;
+    ns4:identifier "13" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/14> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi digitali"@it ;
-    ns2:prefLabel "Servizi digitali"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "14" ;
-    ns3:identifier "14" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi digitali"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "14" ;
+    ns4:identifier "14" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/15> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi di telecomunicazione e poste"@it ;
-    ns2:prefLabel "Servizi di telecomunicazione e poste"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "15" ;
-    ns3:identifier "15" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi di telecomunicazione e poste"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "15" ;
+    ns4:identifier "15" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/16> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi di public utilities"@it ;
-    ns2:prefLabel "Servizi di public utilities"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "16" ;
-    ns3:identifier "16" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi di public utilities"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "16" ;
+    ns4:identifier "16" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/17> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Stampa ed editoria"@it ;
-    ns2:prefLabel "Stampa ed editoria"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "17" ;
-    ns3:identifier "17" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Stampa ed editoria"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "17" ;
+    ns4:identifier "17" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/18> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi di educazione, formazione e lavoro"@it ;
-    ns2:prefLabel "Servizi di educazione, formazione e lavoro"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "18" ;
-    ns3:identifier "18" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi di educazione, formazione e lavoro"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "18" ;
+    ns4:identifier "18" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/19> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi socio-sanitari"@it ;
-    ns2:prefLabel "Servizi socio-sanitari"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "19" ;
-    ns3:identifier "19" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi socio-sanitari"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "19" ;
+    ns4:identifier "19" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/20> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi alla persona"@it ;
-    ns2:prefLabel "Servizi alla persona"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "20" ;
-    ns3:identifier "20" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi alla persona"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "20" ;
+    ns4:identifier "20" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/21> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi di attività ricreative e sportive"@it ;
-    ns2:prefLabel "Servizi di attività ricreative e sportive"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "21" ;
-    ns3:identifier "21" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi di attività ricreative e sportive"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "21" ;
+    ns4:identifier "21" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/22> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi culturali e di spettacolo"@it ;
-    ns2:prefLabel "Servizi culturali e di spettacolo"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "22" ;
-    ns3:identifier "22" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi culturali e di spettacolo"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "22" ;
+    ns4:identifier "22" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/23> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Servizi turistici"@it ;
-    ns2:prefLabel "Servizi turistici"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "23" ;
-    ns3:identifier "23" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Servizi turistici"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "23" ;
+    ns4:identifier "23" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/24> a <https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale>,
-        ns2:Concept ;
+        ns3:Concept ;
     rdfs:label "Area comune"@it ;
-    ns2:prefLabel "Area comune"@it ;
-    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
-    ns2:notation "24" ;
-    ns3:identifier "24" ;
-    ns5:hasRankOrder "1" .
+    ns3:prefLabel "Area comune"@it ;
+    ns1:hasRankOrder "1" ;
+    ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1> ;
+    ns3:notation "24" ;
+    ns4:identifier "24" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns1:Distribution ;
-    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest> ;
-    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest/tipo_settore_livello_1.csv> ;
-    ns3:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) CSV distribution"@en,
+        ns5:Distribution ;
+    ns4:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
-    ns3:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns3:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) CSV distribution"@en,
-        "Distribuzione CSV del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it .
+    ns4:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns4:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
+    ns5:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest> ;
+    ns5:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest/tipo_settore_livello_1.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns1:Distribution ;
-    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest> ;
-    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest/tipo_settore_livello_1.json> ;
-    ns3:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) JSON_LD distribution"@en,
+        ns5:Distribution ;
+    ns4:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
-    ns3:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns3:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) JSON_LD distribution"@en,
-        "Distribuzione JSON_LD del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it .
+    ns4:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns4:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
+    ns5:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest> ;
+    ns5:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest/tipo_settore_livello_1.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_settore_livello_1/distribution/TSL_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns1:Distribution ;
-    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest> ;
-    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest/tipo_settore_livello_1.ttl> ;
-    ns3:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) RDF/turtle distribution"@en,
+        ns5:Distribution ;
+    ns4:description "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
-    ns3:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns3:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) RDF/turtle distribution"@en,
-        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it .
+    ns4:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns4:title "Controlled vocabulary of the type of professional economic sector chosen from the SEP list (level 1) RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di settore economico professionale scelto dalla lista SEP (livello 1)"@it ;
+    ns5:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest> ;
+    ns5:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_settore_livello_1/latest/tipo_settore_livello_1.ttl> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

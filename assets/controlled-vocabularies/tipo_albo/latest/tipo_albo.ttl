@@ -1,0 +1,389 @@
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/ns/dcat#> .
+@prefix ns6: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns7: <http://www.w3.org/ns/adms#> .
+@prefix ns8: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns9: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
+        ns6:Kind,
+        ns6:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns2:identifier "DGInnovazioneDiv3" ;
+    ns4:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns6:fn "MLPS DG Innovazione - Divisione III" ;
+    ns6:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
+        <https://w3id.org/italia/onto/COV/PublicOrganization>,
+        ns4:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    ns2:identifier "mlps" ;
+    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
+        ns2:Standard ;
+    ns2:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns2:identifier "SKOS" ;
+    ns2:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> a <http://dati.gov.it/onto/dcatapit#Dataset>,
+        <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:ConceptScheme,
+        ns7:Asset ;
+    rdfs:label "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered"@en,
+        "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns1:prefLabel "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    rdfs:comment "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered"@en,
+        "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0001>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0002>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0003>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0004>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0005>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0006>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0007>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0008>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0009>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0010>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0011>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0012>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0013>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0014>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0015>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0016>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0017>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0018>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0019>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0020>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0021>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0022>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0023>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0024>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0025>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0026>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0027> ;
+    ns2:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns2:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns2:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:description "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered"@en,
+        "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns2:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo" ;
+    ns2:issued "2026-02-26"^^xsd:date ;
+    ns2:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns2:modified "2026-02-26"^^xsd:date ;
+    ns2:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered"@en,
+        "Vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns2:type <http://purl.org/adms/assettype/CodeList> ;
+    ns5:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns5:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_RDF_TURTLE> ;
+    ns5:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    ns5:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns7:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns8:numberOfLevels "1" ;
+    ns9:keyConcept "tipo_albo" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0001> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "BIOLOGO"@it ;
+    ns1:prefLabel "BIOLOGO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0001" ;
+    ns2:identifier "0001" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0002> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "AGROTECNICO"@it ;
+    ns1:prefLabel "AGROTECNICO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0002" ;
+    ns2:identifier "0002" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0003> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "PERITO AGRARIO"@it ;
+    ns1:prefLabel "PERITO AGRARIO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0003" ;
+    ns2:identifier "0003" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0004> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "DOTTORE AGRONOMO E DOTTORE FORESTALE"@it ;
+    ns1:prefLabel "DOTTORE AGRONOMO E DOTTORE FORESTALE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0004" ;
+    ns2:identifier "0004" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0005> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "DOTT. AGRONOMO/FORESTALE(BIOTECN. AGRARIO)"@it ;
+    ns1:prefLabel "DOTT. AGRONOMO/FORESTALE(BIOTECN. AGRARIO)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0005" ;
+    ns2:identifier "0005" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0006> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "ARCHITETTO (SETTORE ARCHITETTURA)"@it ;
+    ns1:prefLabel "ARCHITETTO (SETTORE ARCHITETTURA)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0006" ;
+    ns2:identifier "0006" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0007> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "INGEGNERE (SETTORE CIVILE E AMBIENTALE)"@it ;
+    ns1:prefLabel "INGEGNERE (SETTORE CIVILE E AMBIENTALE)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0007" ;
+    ns2:identifier "0007" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0008> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "GEOMETRA"@it ;
+    ns1:prefLabel "GEOMETRA"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0008" ;
+    ns2:identifier "0008" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0009> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "PERITO INDUSTRIALE"@it ;
+    ns1:prefLabel "PERITO INDUSTRIALE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0009" ;
+    ns2:identifier "0009" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0010> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "ASSISTENTE SOCIALE"@it ;
+    ns1:prefLabel "ASSISTENTE SOCIALE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0010" ;
+    ns2:identifier "0010" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0011> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "ARCHITETTO (SETTORE PIANIFICAZIONE)"@it ;
+    ns1:prefLabel "ARCHITETTO (SETTORE PIANIFICAZIONE)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0011" ;
+    ns2:identifier "0011" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0012> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "DOTT. AGRONOMO/FORESTALE(AGRONOMO E FORESTALE)"@it ;
+    ns1:prefLabel "DOTT. AGRONOMO/FORESTALE(AGRONOMO E FORESTALE)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0012" ;
+    ns2:identifier "0012" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0013> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "INGEGNERE (SETTORE DELL' INFORMAZIONE)"@it ;
+    ns1:prefLabel "INGEGNERE (SETTORE DELL' INFORMAZIONE)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0013" ;
+    ns2:identifier "0013" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0014> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "INGEGNERE (SETTORE INDUSTRIALE)"@it ;
+    ns1:prefLabel "INGEGNERE (SETTORE INDUSTRIALE)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0014" ;
+    ns2:identifier "0014" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0015> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "GEOLOGO"@it ;
+    ns1:prefLabel "GEOLOGO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0015" ;
+    ns2:identifier "0015" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0016> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "DOTTORE COMMERCIALISTA (SEZ. REVISORI DEI CONTI)"@it ;
+    ns1:prefLabel "DOTTORE COMMERCIALISTA (SEZ. REVISORI DEI CONTI)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0016" ;
+    ns2:identifier "0016" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0017> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "CHIMICO"@it ;
+    ns1:prefLabel "CHIMICO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0017" ;
+    ns2:identifier "0017" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0018> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "PSICOLOGO"@it ;
+    ns1:prefLabel "PSICOLOGO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0018" ;
+    ns2:identifier "0018" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0019> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "ATTUARIO"@it ;
+    ns1:prefLabel "ATTUARIO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0019" ;
+    ns2:identifier "0019" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0020> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "DOTT. AGRONOMO/FORESTALE (SETTORE ZOONOMO)"@it ;
+    ns1:prefLabel "DOTT. AGRONOMO/FORESTALE (SETTORE ZOONOMO)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0020" ;
+    ns2:identifier "0020" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0021> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "GIORNALISTI"@it ;
+    ns1:prefLabel "GIORNALISTI"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0021" ;
+    ns2:identifier "0021" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0022> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "AGENTI E RAPPRESENTANTI DI COMMERCIO"@it ;
+    ns1:prefLabel "AGENTI E RAPPRESENTANTI DI COMMERCIO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0022" ;
+    ns2:identifier "0022" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0023> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "AVVOCATI"@it ;
+    ns1:prefLabel "AVVOCATI"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0023" ;
+    ns2:identifier "0023" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0024> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "MEDICI"@it ;
+    ns1:prefLabel "MEDICI"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0024" ;
+    ns2:identifier "0024" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0025> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "RAGIONIERI E PERITI COMMERCIALI"@it ;
+    ns1:prefLabel "RAGIONIERI E PERITI COMMERCIALI"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0025" ;
+    ns2:identifier "0025" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0026> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "FARMACISTI"@it ;
+    ns1:prefLabel "FARMACISTI"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0026" ;
+    ns2:identifier "0026" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/0027> a <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale>,
+        ns1:Concept ;
+    rdfs:label "CONSULENTI DEL LAVORO"@it ;
+    ns1:prefLabel "CONSULENTI DEL LAVORO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo> ;
+    ns1:notation "0027" ;
+    ns2:identifier "0027" ;
+    ns3:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns5:Distribution ;
+    ns2:description "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered CSV distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns5:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
+    ns5:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.csv> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns5:Distribution ;
+    ns2:description "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered JSON_LD distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns5:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
+    ns5:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.json> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_albo/distribution/TA_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns5:Distribution ;
+    ns2:description "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered RDF/turtle distribution"@en,
+        "Questa è la distribuzione RDF/Turtle del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary of the type of professional register in which professionals authorised to carry out a specific activity are registered RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato del tipo di albo professionale al quale sono iscritti i professionisti abilitati a esercitare una determinata attività"@it ;
+    ns5:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest> ;
+    ns5:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_albo/latest/tipo_albo.ttl> .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

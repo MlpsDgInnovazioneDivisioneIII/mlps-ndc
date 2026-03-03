@@ -1,12 +1,12 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
-@prefix ns2: <http://www.w3.org/ns/dcat#> .
-@prefix ns3: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix ns4: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns5: <https://w3id.org/italia/onto/NDC/> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <https://w3id.org/italia/onto/CLV/> .
-@prefix ns8: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns9: <http://www.w3.org/ns/adms#> .
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://www.w3.org/ns/adms#> .
+@prefix ns7: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns8: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns9: <https://w3id.org/italia/onto/NDC/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,136 +14,136 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns8:Kind,
-        ns8:Organization,
+        ns2:Kind,
+        ns2:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns1:identifier "DGInnovazioneDiv3" ;
-    ns6:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns8:fn "MLPS DG Innovazione – Divisione III" ;
-    ns8:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns2:fn "MLPS DG Innovazione - Divisione III" ;
+    ns2:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
+    ns3:identifier "DGInnovazioneDiv3" ;
+    ns5:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns6:Agent,
+        ns5:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
-    ns1:identifier "mlps" ;
-    ns6:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns3:identifier "mlps" ;
+    ns5:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
 
 <https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
-        ns1:Standard ;
-    ns1:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    ns1:identifier "SKOS" ;
-    ns1:title "Simple Knowledge Organization System - SKOS" .
+        ns3:Standard ;
+    ns3:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns3:identifier "SKOS" ;
+    ns3:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/onto/CPV/Alive>,
-        ns4:ConceptScheme,
-        ns9:Asset ;
+        ns6:Asset,
+        ns7:ConceptScheme ;
     rdfs:label "Controlled vocabulary of the type of role a person can perform in a support service"@en,
         "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns4:prefLabel "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
+    ns7:prefLabel "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
     rdfs:comment "Controlled vocabulary of the type of role a person can perform in a support service"@en,
         "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> ;
-    ns1:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    ns1:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    ns1:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns1:description "Controlled vocabulary of the type of role a person can perform in a support service"@en,
-        "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns1:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona" ;
-    ns1:issued "2026-02-26"^^xsd:date ;
-    ns1:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    ns1:modified "2026-02-26"^^xsd:date ;
-    ns1:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns1:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns1:title "Controlled vocabulary of the type of role a person can perform in a support service"@en,
-        "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns1:type <http://purl.org/adms/assettype/CodeList> ;
-    ns2:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns2:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ruolo_persona/distribution/TRP_CSV>,
+    ns1:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns1:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ruolo_persona/distribution/TRP_CSV>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ruolo_persona/distribution/TRP_JSON_LD>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ruolo_persona/distribution/TRP_RDF_TURTLE> ;
-    ns2:keyword "citizen's curriculum vitae"@en,
+    ns1:keyword "citizen's curriculum vitae"@en,
         "curriculum vitae del cittadino"@it,
         "job offer"@en,
         "offerta di lavoro"@it,
         "offerta formativa"@it,
         "training offer"@en ;
-    ns2:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns3:numberOfLevels "1" ;
-    ns4:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/1>,
+    ns1:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns3:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns3:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns3:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:description "Controlled vocabulary of the type of role a person can perform in a support service"@en,
+        "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
+    ns3:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona" ;
+    ns3:issued "2026-02-26"^^xsd:date ;
+    ns3:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns3:modified "2026-02-26"^^xsd:date ;
+    ns3:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:title "Controlled vocabulary of the type of role a person can perform in a support service"@en,
+        "Vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
+    ns3:type <http://purl.org/adms/assettype/CodeList> ;
+    ns4:numberOfLevels "1" ;
+    ns6:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns7:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/1>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/2>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/3> ;
-    ns5:keyConcept "tipo_ruolo_persona" ;
-    ns9:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> .
+    ns9:keyConcept "tipo_ruolo_persona" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/1> a <https://w3id.org/italia/onto/CPV/Alive>,
-        ns4:Concept ;
+        ns7:Concept ;
     rdfs:label "Componente"@it ;
-    ns4:prefLabel "Componente"@it ;
-    ns1:identifier "1" ;
-    ns4:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> ;
-    ns4:notation "1" ;
-    ns7:hasRankOrder "1" .
+    ns7:prefLabel "Componente"@it ;
+    ns3:identifier "1" ;
+    ns7:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> ;
+    ns7:notation "1" ;
+    ns8:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/2> a <https://w3id.org/italia/onto/CPV/Alive>,
-        ns4:Concept ;
+        ns7:Concept ;
     rdfs:label "Richiedente"@it ;
-    ns4:prefLabel "Richiedente"@it ;
-    ns1:identifier "2" ;
-    ns4:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> ;
-    ns4:notation "2" ;
-    ns7:hasRankOrder "1" .
+    ns7:prefLabel "Richiedente"@it ;
+    ns3:identifier "2" ;
+    ns7:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> ;
+    ns7:notation "2" ;
+    ns8:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/3> a <https://w3id.org/italia/onto/CPV/Alive>,
-        ns4:Concept ;
+        ns7:Concept ;
     rdfs:label "Tutore"@it ;
-    ns4:prefLabel "Tutore"@it ;
-    ns1:identifier "3" ;
-    ns4:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> ;
-    ns4:notation "3" ;
-    ns7:hasRankOrder "1" .
+    ns7:prefLabel "Tutore"@it ;
+    ns3:identifier "3" ;
+    ns7:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona> ;
+    ns7:notation "3" ;
+    ns8:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ruolo_persona/distribution/TRP_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns2:Distribution ;
-    ns1:description "Controlled vocabulary of the type of role a person can perform in a support service CSV distribution"@en,
+        ns1:Distribution ;
+    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest> ;
+    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest/tipo_ruolo_persona.csv> ;
+    ns3:description "Controlled vocabulary of the type of role a person can perform in a support service CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns1:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns1:title "Controlled vocabulary of the type of role a person can perform in a support service CSV distribution"@en,
-        "Distribuzione CSV del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns2:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest> ;
-    ns2:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest/tipo_ruolo_persona.csv> .
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of role a person can perform in a support service CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ruolo_persona/distribution/TRP_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns2:Distribution ;
-    ns1:description "Controlled vocabulary of the type of role a person can perform in a support service JSON_LD distribution"@en,
+        ns1:Distribution ;
+    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest> ;
+    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest/tipo_ruolo_persona.json> ;
+    ns3:description "Controlled vocabulary of the type of role a person can perform in a support service JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns1:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns1:title "Controlled vocabulary of the type of role a person can perform in a support service JSON_LD distribution"@en,
-        "Distribuzione JSON_LD del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns2:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest> ;
-    ns2:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest/tipo_ruolo_persona.json> .
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of role a person can perform in a support service JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_ruolo_persona/distribution/TRP_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns2:Distribution ;
-    ns1:description "Controlled vocabulary of the type of role a person can perform in a support service RDF/turtle distribution"@en,
+        ns1:Distribution ;
+    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest> ;
+    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest/tipo_ruolo_persona.ttl> ;
+    ns3:description "Controlled vocabulary of the type of role a person can perform in a support service RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns1:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns1:title "Controlled vocabulary of the type of role a person can perform in a support service RDF/turtle distribution"@en,
-        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it ;
-    ns2:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest> ;
-    ns2:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_ruolo_persona/latest/tipo_ruolo_persona.ttl> .
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of role a person can perform in a support service RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di ruolo della persona che può adempiere in una prestazione di sostegno"@it .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

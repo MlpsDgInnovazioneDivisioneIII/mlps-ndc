@@ -1,12 +1,12 @@
-@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns2: <http://purl.org/dc/terms/> .
-@prefix ns3: <https://w3id.org/italia/onto/CLV/> .
-@prefix ns4: <http://www.w3.org/ns/dcat#> .
-@prefix ns5: <https://w3id.org/italia/onto/NDC/> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns3: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://www.w3.org/ns/dcat#> .
 @prefix ns7: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns8: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix ns9: <http://www.w3.org/ns/adms#> .
+@prefix ns8: <http://www.w3.org/ns/adms#> .
+@prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -18,43 +18,43 @@
         ns7:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns2:identifier "DGInnovazioneDiv3" ;
-    ns6:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns7:fn "MLPS DG Innovazione – Divisione III" ;
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns4:identifier "DGInnovazioneDiv3" ;
+    ns5:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns7:fn "MLPS DG Innovazione - Divisione III" ;
     ns7:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns6:Agent,
+        ns5:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
-    ns2:identifier "mlps" ;
-    ns6:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns4:identifier "mlps" ;
+    ns5:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
 
 <https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
-        ns2:Standard ;
-    ns2:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    ns2:identifier "SKOS" ;
-    ns2:title "Simple Knowledge Organization System - SKOS" .
+        ns4:Standard ;
+    ns4:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns4:identifier "SKOS" ;
+    ns4:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> a <http://dati.gov.it/onto/dcatapit#Dataset>,
-        ns1:ConceptScheme,
-        ns3:Region,
-        ns9:Asset ;
+        ns1:Region,
+        ns2:ConceptScheme,
+        ns8:Asset ;
     rdfs:label "Controlled vocabulary of the classification of regions"@en,
         "Vocabolario controllato della classificazione delle regioni"@it ;
-    ns1:prefLabel "Vocabolario controllato della classificazione delle regioni"@it ;
+    ns2:prefLabel "Vocabolario controllato della classificazione delle regioni"@it ;
     rdfs:comment "Controlled vocabulary of the classification of regions"@en,
         "Vocabolario controllato della classificazione delle regioni"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/1>,
+    ns2:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/1>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/2>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/3>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/4>,
@@ -75,295 +75,295 @@
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/19>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/20>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/21> ;
-    ns2:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    ns2:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    ns2:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns2:description "Controlled vocabulary of the classification of regions"@en,
+    ns3:keyConcept "tipo_regione" ;
+    ns4:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns4:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns4:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns4:description "Controlled vocabulary of the classification of regions"@en,
         "Vocabolario controllato della classificazione delle regioni"@it ;
-    ns2:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione" ;
-    ns2:issued "2026-02-26"^^xsd:date ;
-    ns2:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    ns2:modified "2026-02-26"^^xsd:date ;
-    ns2:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns2:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns2:title "Controlled vocabulary of the classification of regions"@en,
+    ns4:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione" ;
+    ns4:issued "2026-02-26"^^xsd:date ;
+    ns4:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns4:modified "2026-02-26"^^xsd:date ;
+    ns4:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns4:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns4:title "Controlled vocabulary of the classification of regions"@en,
         "Vocabolario controllato della classificazione delle regioni"@it ;
-    ns2:type <http://purl.org/adms/assettype/CodeList> ;
-    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_regione/distribution/TR_CSV>,
+    ns4:type <http://purl.org/adms/assettype/CodeList> ;
+    ns6:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns6:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_regione/distribution/TR_CSV>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_regione/distribution/TR_JSON_LD>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_regione/distribution/TR_RDF_TURTLE> ;
-    ns4:keyword "Citizen's social and employment file"@en,
+    ns6:keyword "Citizen's social and employment file"@en,
         "Fascicolo sociale e lavorativo del cittadino"@it,
         "Prestazione Di Sostegno"@it,
         "Support Performance"@en ;
-    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns5:keyConcept "tipo_regione" ;
-    ns8:numberOfLevels "1" ;
-    ns9:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> .
+    ns6:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns8:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns9:numberOfLevels "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/1> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/1> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "ABRUZZO"@it ;
-    ns1:prefLabel "ABRUZZO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "1" ;
-    ns2:identifier "1" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "ABRUZZO"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "1" ;
+    ns4:identifier "1" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/2> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/2> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "BASILICATA"@it ;
-    ns1:prefLabel "BASILICATA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "2" ;
-    ns2:identifier "2" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "BASILICATA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "2" ;
+    ns4:identifier "2" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/3> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/3> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "BOLZANO"@it ;
-    ns1:prefLabel "BOLZANO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "3" ;
-    ns2:identifier "3" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "BOLZANO"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "3" ;
+    ns4:identifier "3" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/4> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/4> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "CALABRIA"@it ;
-    ns1:prefLabel "CALABRIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "4" ;
-    ns2:identifier "4" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "CALABRIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "4" ;
+    ns4:identifier "4" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/5> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/5> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "CAMPANIA"@it ;
-    ns1:prefLabel "CAMPANIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "5" ;
-    ns2:identifier "5" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "CAMPANIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "5" ;
+    ns4:identifier "5" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/6> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/6> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "EMILIA ROMAGNA"@it ;
-    ns1:prefLabel "EMILIA ROMAGNA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "6" ;
-    ns2:identifier "6" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "EMILIA ROMAGNA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "6" ;
+    ns4:identifier "6" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/7> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/7> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "FRIULI VENEZIA GIULIA"@it ;
-    ns1:prefLabel "FRIULI VENEZIA GIULIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "7" ;
-    ns2:identifier "7" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "FRIULI VENEZIA GIULIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "7" ;
+    ns4:identifier "7" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/8> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/8> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "LAZIO"@it ;
-    ns1:prefLabel "LAZIO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "8" ;
-    ns2:identifier "8" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "LAZIO"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "8" ;
+    ns4:identifier "8" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/9> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/9> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "LIGURIA"@it ;
-    ns1:prefLabel "LIGURIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "9" ;
-    ns2:identifier "9" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "LIGURIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "9" ;
+    ns4:identifier "9" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/10> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/10> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "LOMBARDIA"@it ;
-    ns1:prefLabel "LOMBARDIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "10" ;
-    ns2:identifier "10" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "LOMBARDIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "10" ;
+    ns4:identifier "10" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/11> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/11> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "MARCHE"@it ;
-    ns1:prefLabel "MARCHE"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "11" ;
-    ns2:identifier "11" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "MARCHE"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "11" ;
+    ns4:identifier "11" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/12> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/12> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "MOLISE"@it ;
-    ns1:prefLabel "MOLISE"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "12" ;
-    ns2:identifier "12" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "MOLISE"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "12" ;
+    ns4:identifier "12" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/13> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/13> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "PIEMONTE"@it ;
-    ns1:prefLabel "PIEMONTE"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "13" ;
-    ns2:identifier "13" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "PIEMONTE"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "13" ;
+    ns4:identifier "13" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/14> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/14> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "PUGLIA"@it ;
-    ns1:prefLabel "PUGLIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "14" ;
-    ns2:identifier "14" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "PUGLIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "14" ;
+    ns4:identifier "14" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/15> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/15> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "SARDEGNA"@it ;
-    ns1:prefLabel "SARDEGNA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "15" ;
-    ns2:identifier "15" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "SARDEGNA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "15" ;
+    ns4:identifier "15" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/16> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/16> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "SICILIA"@it ;
-    ns1:prefLabel "SICILIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "16" ;
-    ns2:identifier "16" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "SICILIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "16" ;
+    ns4:identifier "16" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/17> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/17> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "TOSCANA"@it ;
-    ns1:prefLabel "TOSCANA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "17" ;
-    ns2:identifier "17" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "TOSCANA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "17" ;
+    ns4:identifier "17" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/18> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/18> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "TRENTO"@it ;
-    ns1:prefLabel "TRENTO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "18" ;
-    ns2:identifier "18" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "TRENTO"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "18" ;
+    ns4:identifier "18" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/19> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/19> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "UMBRIA"@it ;
-    ns1:prefLabel "UMBRIA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "19" ;
-    ns2:identifier "19" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "UMBRIA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "19" ;
+    ns4:identifier "19" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/20> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/20> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "VALLE D'AOSTA"@it ;
-    ns1:prefLabel "VALLE D'AOSTA"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "20" ;
-    ns2:identifier "20" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "VALLE D'AOSTA"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "20" ;
+    ns4:identifier "20" .
 
-<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/21> a ns1:Concept,
-        ns3:Region ;
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/21> a ns1:Region,
+        ns2:Concept ;
     rdfs:label "VENETO"@it ;
-    ns1:prefLabel "VENETO"@it ;
-    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
-    ns1:notation "21" ;
-    ns2:identifier "21" ;
-    ns3:hasRankOrder "1" .
+    ns2:prefLabel "VENETO"@it ;
+    ns1:hasRankOrder "1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione> ;
+    ns2:notation "21" ;
+    ns4:identifier "21" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_regione/distribution/TR_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
-    ns2:description "Controlled vocabulary of the classification of regions CSV distribution"@en,
+        ns6:Distribution ;
+    ns4:description "Controlled vocabulary of the classification of regions CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della classificazione delle regioni"@it ;
-    ns2:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns2:title "Controlled vocabulary of the classification of regions CSV distribution"@en,
+    ns4:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns4:title "Controlled vocabulary of the classification of regions CSV distribution"@en,
         "Distribuzione CSV del vocabolario controllato della classificazione delle regioni"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest/tipo_regione.csv> .
+    ns6:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest> ;
+    ns6:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest/tipo_regione.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_regione/distribution/TR_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
-    ns2:description "Controlled vocabulary of the classification of regions JSON_LD distribution"@en,
+        ns6:Distribution ;
+    ns4:description "Controlled vocabulary of the classification of regions JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della classificazione delle regioni"@it ;
-    ns2:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns2:title "Controlled vocabulary of the classification of regions JSON_LD distribution"@en,
+    ns4:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns4:title "Controlled vocabulary of the classification of regions JSON_LD distribution"@en,
         "Distribuzione JSON_LD del vocabolario controllato della classificazione delle regioni"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest/tipo_regione.json> .
+    ns6:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest> ;
+    ns6:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest/tipo_regione.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_regione/distribution/TR_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
-    ns2:description "Controlled vocabulary of the classification of regions RDF/turtle distribution"@en,
+        ns6:Distribution ;
+    ns4:description "Controlled vocabulary of the classification of regions RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato della classificazione delle regioni"@it ;
-    ns2:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns2:title "Controlled vocabulary of the classification of regions RDF/turtle distribution"@en,
+    ns4:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns4:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns4:title "Controlled vocabulary of the classification of regions RDF/turtle distribution"@en,
         "Distribuzione RDF/Turtle del vocabolario controllato della classificazione delle regioni"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest/tipo_regione.ttl> .
+    ns6:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest> ;
+    ns6:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_regione/latest/tipo_regione.ttl> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/1> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/1> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/13> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/2> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/2> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/17> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/3> ns1:closeMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/3> ns2:closeMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/4> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/4> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/5> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/5> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/15> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/6> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/6> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/18> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/7> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/7> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/06> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/8> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/8> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/12> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/9> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/9> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/07> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/10> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/10> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/03> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/11> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/11> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/11> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/12> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/12> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/14> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/13> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/13> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/01> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/14> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/14> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/16> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/15> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/15> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/20> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/16> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/16> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/19> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/17> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/17> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/09> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/18> ns1:closeMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/18> ns2:closeMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/04> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/19> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/19> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/10> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/20> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/02> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/20> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/02> .
 
-<https://w3id.org/italia/labour-social-policies/data/tipo-regione/21> ns1:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
+<https://w3id.org/italia/labour-social-policies/data/tipo-regione/21> ns2:exactMatch <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/regions/05> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

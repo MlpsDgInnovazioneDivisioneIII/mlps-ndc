@@ -1,12 +1,12 @@
-@prefix ns1: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
 @prefix ns2: <http://purl.org/dc/terms/> .
 @prefix ns3: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <https://w3id.org/italia/onto/CLV/> .
 @prefix ns5: <https://w3id.org/italia/onto/NDC/> .
-@prefix ns6: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix ns7: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
-@prefix ns9: <http://www.w3.org/ns/adms#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://www.w3.org/ns/adms#> .
+@prefix ns8: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns9: <http://www.w3.org/2006/vcard/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,25 +14,25 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns7:Kind,
-        ns7:Organization,
+        ns9:Kind,
+        ns9:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
+        "MLPS DG Innovazione - Divisione III"@it ;
     ns2:identifier "DGInnovazioneDiv3" ;
-    ns7:fn "MLPS DG Innovazione – Divisione III" ;
-    ns7:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
-    ns8:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it .
+    ns6:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns9:fn "MLPS DG Innovazione - Divisione III" ;
+    ns9:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
-        ns8:Agent,
+        ns6:Agent,
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
     ns2:identifier "mlps" ;
-    ns8:name "Ministero del Lavoro e delle politiche sociali"@it,
+    ns6:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
@@ -46,7 +46,7 @@
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:ConceptScheme,
-        ns9:Asset ;
+        ns7:Asset ;
     rdfs:label "Controlled vocabulary of the type of qualification"@en,
         "Vocabolario controllato della tipologia di titolo di studio"@it ;
     ns3:prefLabel "Vocabolario controllato della tipologia di titolo di studio"@it ;
@@ -54,6 +54,17 @@
         "Vocabolario controllato della tipologia di titolo di studio"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
+    ns1:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns1:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_RDF_TURTLE> ;
+    ns1:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    ns1:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     ns2:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
     ns2:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
     ns2:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
@@ -86,205 +97,194 @@
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/15>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/16>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/17> ;
-    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_CSV>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_JSON_LD>,
-        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_RDF_TURTLE> ;
-    ns4:keyword "citizen's curriculum vitae"@en,
-        "curriculum vitae del cittadino"@it,
-        "job offer"@en,
-        "offerta di lavoro"@it,
-        "offerta formativa"@it,
-        "training offer"@en ;
-    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     ns5:keyConcept "tipo_livello_studio" ;
-    ns6:numberOfLevels "1" ;
-    ns9:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> .
+    ns7:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns8:numberOfLevels "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/0> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "NESSUN TITOLO DI STUDIO"@it ;
     ns3:prefLabel "NESSUN TITOLO DI STUDIO"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "0" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "0" .
+    ns3:notation "0" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/1> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "LICENZA ELEMENTARE"@it ;
     ns3:prefLabel "LICENZA ELEMENTARE"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "1" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "1" .
+    ns3:notation "1" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/2> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "LICENZA MEDIA"@it ;
     ns3:prefLabel "LICENZA MEDIA"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "2" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "2" .
+    ns3:notation "2" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/3> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "TITOLO DI ISTRUZIONE SECONDARIA SUPERIORE (SCOLASTICA ED EXTRA-SCOLASTICA) CHE NON PERMETTE L'ACCESSO ALL'UNIVERSITÀ ()"@it ;
     ns3:prefLabel "TITOLO DI ISTRUZIONE SECONDARIA SUPERIORE (SCOLASTICA ED EXTRA-SCOLASTICA) CHE NON PERMETTE L'ACCESSO ALL'UNIVERSITÀ ()"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "3" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "3" .
+    ns3:notation "3" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/4> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE  CHE PERMETTE L'ACCESSO ALL'UNIVERSITA'"@it ;
     ns3:prefLabel "DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE  CHE PERMETTE L'ACCESSO ALL'UNIVERSITA'"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "4" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "4" .
+    ns3:notation "4" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/5> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "DIPLOMA TERZIARIO EXTRA-UNIVERSITARIO"@it ;
     ns3:prefLabel "DIPLOMA TERZIARIO EXTRA-UNIVERSITARIO"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "5" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "5" .
+    ns3:notation "5" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/6> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "DIPLOMA UNIVERSITARIO"@it ;
     ns3:prefLabel "DIPLOMA UNIVERSITARIO"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "6" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "6" .
+    ns3:notation "6" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/7> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "LAUREA - Vecchio o nuovo ordinamento "@it ;
     ns3:prefLabel "LAUREA - Vecchio o nuovo ordinamento "@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "7" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "7" .
+    ns3:notation "7" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/8> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "TITOLO DI STUDIO POST-LAUREA"@it ;
     ns3:prefLabel "TITOLO DI STUDIO POST-LAUREA"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "8" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "8" .
+    ns3:notation "8" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/9> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "MASTER UNIVERSITARIO DI PRIMO LIVELLO"@it ;
     ns3:prefLabel "MASTER UNIVERSITARIO DI PRIMO LIVELLO"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "9" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "9" .
+    ns3:notation "9" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/11> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "DIPLOMA DI SPECIALIZZAZIONE"@it ;
     ns3:prefLabel "DIPLOMA DI SPECIALIZZAZIONE"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "11" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "11" .
+    ns3:notation "11" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/12> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "TITOLO DI DOTTORE DI RICERCA"@it ;
     ns3:prefLabel "TITOLO DI DOTTORE DI RICERCA"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "12" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "12" .
+    ns3:notation "12" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/13> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "LAUREA DI PRIMO LIVELLO"@it ;
     ns3:prefLabel "LAUREA DI PRIMO LIVELLO"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "13" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "13" .
+    ns3:notation "13" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/14> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "DIPLOMA DI LAUREA"@it ;
     ns3:prefLabel "DIPLOMA DI LAUREA"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "14" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "14" .
+    ns3:notation "14" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/15> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "LAUREA SPECIALISTICA A CICLO UNICO"@it ;
     ns3:prefLabel "LAUREA SPECIALISTICA A CICLO UNICO"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "15" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "15" .
+    ns3:notation "15" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/16> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "LAUREA SPECIALISTICA"@it ;
     ns3:prefLabel "LAUREA SPECIALISTICA"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "16" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "16" .
+    ns3:notation "16" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/17> a <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio>,
         ns3:Concept ;
     rdfs:label "MASTER UNIVERSITARIO DI SECONDO LIVELLO"@it ;
     ns3:prefLabel "MASTER UNIVERSITARIO DI SECONDO LIVELLO"@it ;
-    ns1:hasRankOrder "1" ;
     ns2:identifier "17" ;
     ns3:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio> ;
-    ns3:notation "17" .
+    ns3:notation "17" ;
+    ns4:hasRankOrder "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns1:Distribution ;
+    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest> ;
+    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest/tipo_livello_studio.csv> ;
     ns2:description "Controlled vocabulary of the type of qualification CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di titolo di studio"@it ;
     ns2:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
     ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns2:title "Controlled vocabulary of the type of qualification CSV distribution"@en,
-        "Distribuzione CSV del vocabolario controllato della tipologia di titolo di studio"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest/tipo_livello_studio.csv> .
+        "Distribuzione CSV del vocabolario controllato della tipologia di titolo di studio"@it .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns1:Distribution ;
+    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest> ;
+    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest/tipo_livello_studio.json> ;
     ns2:description "Controlled vocabulary of the type of qualification JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di titolo di studio"@it ;
     ns2:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
     ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns2:title "Controlled vocabulary of the type of qualification JSON_LD distribution"@en,
-        "Distribuzione JSON_LD del vocabolario controllato della tipologia di titolo di studio"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest/tipo_livello_studio.json> .
+        "Distribuzione JSON_LD del vocabolario controllato della tipologia di titolo di studio"@it .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_livello_studio/distribution/TLS_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns4:Distribution ;
+        ns1:Distribution ;
+    ns1:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest> ;
+    ns1:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest/tipo_livello_studio.ttl> ;
     ns2:description "Controlled vocabulary of the type of qualification RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato della tipologia di titolo di studio"@it ;
     ns2:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
     ns2:title "Controlled vocabulary of the type of qualification RDF/turtle distribution"@en,
-        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di titolo di studio"@it ;
-    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest> ;
-    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_livello_studio/latest/tipo_livello_studio.ttl> .
+        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di titolo di studio"@it .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0

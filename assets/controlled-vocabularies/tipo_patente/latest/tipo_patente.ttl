@@ -1,10 +1,10 @@
-@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/italia/onto/CLV/> .
 @prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns3: <http://www.w3.org/ns/dcat#> .
-@prefix ns4: <http://www.w3.org/2006/vcard/ns#> .
-@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
-@prefix ns6: <http://www.w3.org/ns/adms#> .
-@prefix ns7: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix ns5: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns6: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns7: <http://www.w3.org/ns/adms#> .
 @prefix ns8: <http://xmlns.com/foaf/0.1/> .
 @prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -14,16 +14,16 @@
 ### Individuals
 
 <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
-        ns4:Kind,
-        ns4:Organization,
+        ns5:Kind,
+        ns5:Organization,
         owl:NamedIndividual ;
     rdfs:label "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it ;
-    ns1:identifier "DGInnovazioneDiv3" ;
-    ns4:fn "MLPS DG Innovazione – Divisione III" ;
-    ns4:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
+        "MLPS DG Innovazione - Divisione III"@it ;
+    ns3:identifier "DGInnovazioneDiv3" ;
+    ns5:fn "MLPS DG Innovazione - Divisione III" ;
+    ns5:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
     ns8:name "MLPS DG Innovation - Division III"@en,
-        "MLPS DG Innovazione – Divisione III"@it .
+        "MLPS DG Innovazione - Divisione III"@it .
 
 <https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
         <https://w3id.org/italia/onto/COV/PublicOrganization>,
@@ -31,22 +31,22 @@
         owl:NamedIndividual ;
     rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en ;
-    ns1:identifier "mlps" ;
+    ns3:identifier "mlps" ;
     ns8:name "Ministero del Lavoro e delle politiche sociali"@it,
         "Ministry of Labor and Social Policies"@en .
 
 ### Annotations
 
 <https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
-        ns1:Standard ;
-    ns1:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
-    ns1:identifier "SKOS" ;
-    ns1:title "Simple Knowledge Organization System - SKOS" .
+        ns3:Standard ;
+    ns3:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns3:identifier "SKOS" ;
+    ns3:title "Simple Knowledge Organization System - SKOS" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> a <http://dati.gov.it/onto/dcatapit#Dataset>,
         <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:ConceptScheme,
-        ns6:Asset ;
+        ns7:Asset ;
     rdfs:label "Controlled vocabulary of the type of driving licence"@en,
         "Vocabolario controllato della tipologia di patente"@it ;
     ns2:prefLabel "Vocabolario controllato della tipologia di patente"@it ;
@@ -54,20 +54,6 @@
         "Vocabolario controllato della tipologia di patente"@it ;
     owl:versionInfo "0.1" ;
     rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
-    ns1:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
-    ns1:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
-    ns1:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns1:description "Controlled vocabulary of the type of driving licence"@en,
-        "Vocabolario controllato della tipologia di patente"@it ;
-    ns1:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente" ;
-    ns1:issued "2026-02-26"^^xsd:date ;
-    ns1:language <http://publications.europa.eu/resource/authority/language/ITA> ;
-    ns1:modified "2026-02-26"^^xsd:date ;
-    ns1:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns1:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
-    ns1:title "Controlled vocabulary of the type of driving licence"@en,
-        "Vocabolario controllato della tipologia di patente"@it ;
-    ns1:type <http://purl.org/adms/assettype/CodeList> ;
     ns2:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/01>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/02>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/03>,
@@ -92,268 +78,282 @@
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/22>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/23>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/24> ;
-    ns3:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    ns3:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_patente/distribution/TP_CSV>,
+    ns3:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns3:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns3:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:description "Controlled vocabulary of the type of driving licence"@en,
+        "Vocabolario controllato della tipologia di patente"@it ;
+    ns3:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente" ;
+    ns3:issued "2026-02-26"^^xsd:date ;
+    ns3:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns3:modified "2026-02-26"^^xsd:date ;
+    ns3:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:title "Controlled vocabulary of the type of driving licence"@en,
+        "Vocabolario controllato della tipologia di patente"@it ;
+    ns3:type <http://purl.org/adms/assettype/CodeList> ;
+    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_patente/distribution/TP_CSV>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_patente/distribution/TP_JSON_LD>,
         <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_patente/distribution/TP_RDF_TURTLE> ;
-    ns3:keyword "citizen's curriculum vitae"@en,
+    ns4:keyword "citizen's curriculum vitae"@en,
         "curriculum vitae del cittadino"@it,
         "job offer"@en,
         "offerta di lavoro"@it,
         "offerta formativa"@it,
         "training offer"@en ;
-    ns3:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
-    ns6:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
-    ns7:keyConcept "tipo_patente" ;
+    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns6:keyConcept "tipo_patente" ;
+    ns7:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
     ns9:numberOfLevels "1" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/01> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE A"@it ;
     ns2:prefLabel "PATENTE A"@it ;
-    ns1:identifier "01" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "01" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "01" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/02> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE B"@it ;
     ns2:prefLabel "PATENTE B"@it ;
-    ns1:identifier "02" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "02" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "02" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/03> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE C"@it ;
     ns2:prefLabel "PATENTE C"@it ;
-    ns1:identifier "03" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "03" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "03" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/04> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE D"@it ;
     ns2:prefLabel "PATENTE D"@it ;
-    ns1:identifier "04" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "04" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "04" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/05> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE E"@it ;
     ns2:prefLabel "PATENTE E"@it ;
-    ns1:identifier "05" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "05" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "05" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/06> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE F"@it ;
     ns2:prefLabel "PATENTE F"@it ;
-    ns1:identifier "06" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "06" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "06" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/07> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE BE"@it ;
     ns2:prefLabel "PATENTE BE"@it ;
-    ns1:identifier "07" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "07" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "07" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/08> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE CE"@it ;
     ns2:prefLabel "PATENTE CE"@it ;
-    ns1:identifier "08" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "08" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "08" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/09> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE DE"@it ;
     ns2:prefLabel "PATENTE DE"@it ;
-    ns1:identifier "09" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "09" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "09" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/10> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE AM"@it ;
     ns2:prefLabel "PATENTE AM"@it ;
-    ns1:identifier "10" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "10" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "10" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/11> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE A1"@it ;
     ns2:prefLabel "PATENTE A1"@it ;
-    ns1:identifier "11" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "11" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "11" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/12> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE UE"@it ;
     ns2:prefLabel "PATENTE UE"@it ;
-    ns1:identifier "12" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "12" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "12" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/13> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE EXTRA UE"@it ;
     ns2:prefLabel "PATENTE EXTRA UE"@it ;
-    ns1:identifier "13" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "13" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "13" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/14> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE A2"@it ;
     ns2:prefLabel "PATENTE A2"@it ;
-    ns1:identifier "14" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "14" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "14" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/15> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE B1"@it ;
     ns2:prefLabel "PATENTE B1"@it ;
-    ns1:identifier "15" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "15" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "15" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/16> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE C1"@it ;
     ns2:prefLabel "PATENTE C1"@it ;
-    ns1:identifier "16" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "16" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "16" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/17> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE C1E"@it ;
     ns2:prefLabel "PATENTE C1E"@it ;
-    ns1:identifier "17" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "17" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "17" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/18> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE D1"@it ;
     ns2:prefLabel "PATENTE D1"@it ;
-    ns1:identifier "18" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "18" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "18" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/19> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "PATENTE D1E"@it ;
     ns2:prefLabel "PATENTE D1E"@it ;
-    ns1:identifier "19" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "19" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "19" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/20> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "ABILITAZIONE KA"@it ;
     ns2:prefLabel "ABILITAZIONE KA"@it ;
-    ns1:identifier "20" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "20" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "20" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/21> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "ABILITAZIONE KB"@it ;
     ns2:prefLabel "ABILITAZIONE KB"@it ;
-    ns1:identifier "21" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "21" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "21" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/22> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "ABILITAZIONE CQC PERSONE"@it ;
     ns2:prefLabel "ABILITAZIONE CQC PERSONE"@it ;
-    ns1:identifier "22" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "22" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "22" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/23> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "ABILITAZIONE CQC MERCI"@it ;
     ns2:prefLabel "ABILITAZIONE CQC MERCI"@it ;
-    ns1:identifier "23" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "23" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "23" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/24> a <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida>,
         ns2:Concept ;
     rdfs:label "ABILITAZIONE CARTA TACHIGRAFICA"@it ;
     ns2:prefLabel "ABILITAZIONE CARTA TACHIGRAFICA"@it ;
-    ns1:identifier "24" ;
+    ns1:hasRankOrder "1" ;
     ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente> ;
     ns2:notation "24" ;
-    ns5:hasRankOrder "1" .
+    ns3:identifier "24" .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_patente/distribution/TP_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns3:Distribution ;
-    ns1:description "Controlled vocabulary of the type of driving licence CSV distribution"@en,
+        ns4:Distribution ;
+    ns3:description "Controlled vocabulary of the type of driving licence CSV distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di patente"@it ;
-    ns1:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
-    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns1:title "Controlled vocabulary of the type of driving licence CSV distribution"@en,
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of driving licence CSV distribution"@en,
         "Distribuzione CSV del vocabolario controllato della tipologia di patente"@it ;
-    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest> ;
-    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest/tipo_patente.csv> .
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest/tipo_patente.csv> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_patente/distribution/TP_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns3:Distribution ;
-    ns1:description "Controlled vocabulary of the type of driving licence JSON_LD distribution"@en,
+        ns4:Distribution ;
+    ns3:description "Controlled vocabulary of the type of driving licence JSON_LD distribution"@en,
         "Questa è la distribuzione CSV del vocabolario controllato della tipologia di patente"@it ;
-    ns1:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
-    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns1:title "Controlled vocabulary of the type of driving licence JSON_LD distribution"@en,
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of driving licence JSON_LD distribution"@en,
         "Distribuzione JSON_LD del vocabolario controllato della tipologia di patente"@it ;
-    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest> ;
-    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest/tipo_patente.json> .
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest/tipo_patente.json> .
 
 <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_patente/distribution/TP_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
-        ns3:Distribution ;
-    ns1:description "Controlled vocabulary of the type of driving licence RDF/turtle distribution"@en,
+        ns4:Distribution ;
+    ns3:description "Controlled vocabulary of the type of driving licence RDF/turtle distribution"@en,
         "Questa è la distribuzione RDF/Turtle del vocabolario controllato della tipologia di patente"@it ;
-    ns1:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
-    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-    ns1:title "Controlled vocabulary of the type of driving licence RDF/turtle distribution"@en,
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of driving licence RDF/turtle distribution"@en,
         "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di patente"@it ;
-    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest> ;
-    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest/tipo_patente.ttl> .
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_patente/latest/tipo_patente.ttl> .
 
 ### Serialized using the ttlser deterministic serializer v1.2.0
