@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/0",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "0",
+    "label_it": "Nessuno",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "Livello 1",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "Livello 2",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/3",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "Livello 3",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/4",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "4",
+    "label_it": "Livello 4",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/5",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "5",
+    "label_it": "Livello 5",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/6",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "6",
+    "label_it": "Livello 6",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/7",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "7",
+    "label_it": "Livello 7",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/8",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LivelloCompetenzeDigitali",
+      "skos:Concept"
+    ],
+    "id": "8",
+    "label_it": "Livello 8",
+    "level": "1"
+  }
+]

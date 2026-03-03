@@ -1,0 +1,7 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/A1,A1,LIVELLO ELEMENTARE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/A2,A2,LIVELLO PRE-INTERMEDIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/B1,B1,LIVELLO INTERMEDIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/B2,B2,LIVELLO POST-INTERMEDIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/C1,C1,LIVELLO AVANZATO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/C2,C2,LIVELLO DI PADRONANZA DELLA LINGUA IN SITUAZIONI COMPLESSE,1

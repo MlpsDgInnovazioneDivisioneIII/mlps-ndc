@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_prestazione_lavoro/1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/core/TipoPrestazioneDiSostegno",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "SFL",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_prestazione_lavoro/2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/core/TipoPrestazioneDiSostegno",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "ADI",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_prestazione_lavoro/3",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/core/TipoPrestazioneDiSostegno",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "NASPI",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_prestazione_lavoro/4",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/core/TipoPrestazioneDiSostegno",
+      "skos:Concept"
+    ],
+    "id": "4",
+    "label_it": "DISCOLL",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_prestazione_lavoro/5",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/core/TipoPrestazioneDiSostegno",
+      "skos:Concept"
+    ],
+    "id": "5",
+    "label_it": "ISCRO",
+    "level": "1"
+  }
+]

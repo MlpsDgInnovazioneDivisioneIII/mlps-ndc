@@ -1,0 +1,80 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/001,001,INGLESE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/002,002,TEDESCO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/003,003,ITALIANO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/004,004,GIAPPONESE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/005,005,FRANCESE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ALB,ALB,ALBANESE            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARA,ARA,ARABO               ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARM,ARM,ARMENO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/AZE,AZE,AZERO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEL,BEL,BIELORUSSO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEN,BEN,BENGALI             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIH,BIH,BIHARI (IND)        ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIR,BIR,BIRMANO             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BOS,BOS,BOSNIACO            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BUL,BUL,BULGARO             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAN,CAN,CANTONESE           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAT,CAT,CATALANO ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CEC,CEC,CECO                ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CIN,CIN,CINESE MANDARINO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/COR,COR,COREANO             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CRO,CRO,CROATO              ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/DAN,DAN,DANESE              ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EBR,EBR,EBRAICO             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EST,EST,ESTONE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIA,FIA,FIAMMINGO           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIL,FIL,FILIPPINO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIN,FIN,FINLANDESE          ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GEO,GEO,GEORGIANO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIU,GIU,GUJARATI            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIV,GIV,GIAVANESE           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GRE,GRE,GRECO               ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HAK,HAK,HAKKA (INDIA)       ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HID,HID,HINDUSTANI          ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HIN,HIN,HINGJ               ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/IND,IND,INDONESIANO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISL,ISL,ISLANDESE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISR,ISR,ISRAELIANO          ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KAN,KAN,KANARESE            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KUR,KUR,CURDO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LAV,LAV,LETTONE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LTU,LTU,LITUANO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAL,MAL,MALAYALAM           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAN,MAN,KUAN-HUA            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAR,MAR,MARATHI (IND)       ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAY,MAY,MALAY (INDON)       ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MIN,MIN,MIN (CINA)          ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MKD,MKD,MACEDONE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MLT,MLT,MALTESE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/NOR,NOR,NORVEGESE           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/OLA,OLA,OLANDESE            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ORI,ORI,ORIYA (IND)         ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PAS,PAS,PASHTO (AFG)        ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PER,PER,PERSIANO            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POL,POL,POLACCO             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POR,POR,PORTOGHESE          ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PUN,PUN,PUNJABI (IND)       ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RAI,RAI,RAJASTANI           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUM,RUM,RUMENO              ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUS,RUS,RUSSO               ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SEN,SEN,SENEGALESE          ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SER,SER,SERBO               ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SIN,SIN,SINGALESE           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLO,SLO,SLOVENO             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLV,SLV,SLOVACCO            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SOM,SOM,SOMALO              ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SPA,SPA,SPAGNOLO            ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SUN,SUN,SUNDANESE           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SVE,SVE,SVEDESE             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SWA,SWA,SWAILI              ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TAM,TAM,TAMIL (INDIA)       ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TEL,TEL,TELUGU (IND)        ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/THA,THA,THAI                ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TUR,TUR,TURCO               ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UCR,UCR,UCRAINO             ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UNG,UNG,UNGHERESE           ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/URD,URD,URDU (INDIA)        ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIE,VIE,VIETNAMITA          ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIS,VIS,VISAYAN (FIL)       ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/WU%20,WU ,WU (CINA)           ,1

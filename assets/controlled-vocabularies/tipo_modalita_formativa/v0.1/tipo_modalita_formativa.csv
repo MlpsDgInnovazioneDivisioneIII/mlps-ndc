@@ -1,0 +1,27 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/10,10,CORSI CONDOTTI ATTRAVERSO METODOLOGIE D'AULA (INCLUSE LEZIONI O CONFERENZE),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/20,20,FORMAZIONE DUALE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/21,21,Tirocinio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/22,22,PCTO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/23,23,Alternanza rafforzata,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/24,24,Apprendistato I livello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/25,25,Apprendistato III livello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/26,26,Alternanza simulata,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/30,30,CORSI CONDOTTI ATTRAVERSO LA FORMAZIONE A DISTANZA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/31,31,Sincrona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/32,32,Asincrona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/33,33,Ibrida,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/40,40,APPRENDIMENTO INDIVIDUALIZZATO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/41,41,"Apprendimento individualizzato, rivolto a singoli o gruppi ristretti",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/42,42,Affiancamento consulenziale mirato,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/43,43,Coaching/tutorato informale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/44,44,Auto-apprendimento,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/50,50,ALTRA FORMAZIONE TEORICO-PRATICA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/51,51,"Corsi misti teorico-pratici (inclusa partecipazione a convegni, workshop, presentazione prodotti)",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/52,52,Formazione sul lavoro guidata (inclusi work experience...),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/53,53,Attività pratica/esercitazioni,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/60,60,ALTRA MODALITÀ FORMATIVA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/61,61,Percorsi di scambio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/62,62,Visite guidate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/63,63,Visite non guidate,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/64,64,Altro,1

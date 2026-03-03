@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/01",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione",
+      "skos:Concept"
+    ],
+    "id": "01",
+    "label_it": "Green",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/02",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione",
+      "skos:Concept"
+    ],
+    "id": "02",
+    "label_it": "Digitale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/03",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione",
+      "skos:Concept"
+    ],
+    "id": "03",
+    "label_it": "Linguistico",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/99",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione",
+      "skos:Concept"
+    ],
+    "id": "99",
+    "label_it": "Altra formazione",
+    "level": "1"
+  }
+]

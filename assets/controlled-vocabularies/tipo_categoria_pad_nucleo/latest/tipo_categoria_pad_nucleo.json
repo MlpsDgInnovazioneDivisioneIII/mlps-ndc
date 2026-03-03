@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "Uno",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "Due",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/3",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "Tre",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/4",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo",
+      "skos:Concept"
+    ],
+    "id": "4",
+    "label_it": "Quattro",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/5",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo",
+      "skos:Concept"
+    ],
+    "id": "5",
+    "label_it": "Minore",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/6",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo",
+      "skos:Concept"
+    ],
+    "id": "6",
+    "label_it": "NonDisponibile",
+    "level": "1"
+  }
+]

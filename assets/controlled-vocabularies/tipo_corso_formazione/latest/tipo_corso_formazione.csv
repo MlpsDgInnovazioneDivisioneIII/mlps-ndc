@@ -1,0 +1,5 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/01,01,Green,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/02,02,Digitale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/03,03,Linguistico,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/99,99,Altra formazione,1

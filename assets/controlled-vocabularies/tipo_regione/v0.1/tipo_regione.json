@@ -1,0 +1,212 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/1",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "1",
+    "label_it": "ABRUZZO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/10",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "10",
+    "label_it": "LOMBARDIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/11",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "11",
+    "label_it": "MARCHE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/12",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "12",
+    "label_it": "MOLISE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/13",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "13",
+    "label_it": "PIEMONTE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/14",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "14",
+    "label_it": "PUGLIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/15",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "15",
+    "label_it": "SARDEGNA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/16",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "16",
+    "label_it": "SICILIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/17",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "17",
+    "label_it": "TOSCANA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/18",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "18",
+    "label_it": "TRENTO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/19",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "19",
+    "label_it": "UMBRIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/2",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "2",
+    "label_it": "BASILICATA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/20",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "20",
+    "label_it": "VALLE D'AOSTA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/21",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "21",
+    "label_it": "VENETO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/3",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "3",
+    "label_it": "BOLZANO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/4",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "4",
+    "label_it": "CALABRIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/5",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "5",
+    "label_it": "CAMPANIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/6",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "6",
+    "label_it": "EMILIA ROMAGNA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/7",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "7",
+    "label_it": "FRIULI VENEZIA GIULIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/8",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "8",
+    "label_it": "LAZIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/9",
+    "@type": [
+      "skos:Concept",
+      "clvapit:Region"
+    ],
+    "id": "9",
+    "label_it": "LIGURIA",
+    "level": "1"
+  }
+]

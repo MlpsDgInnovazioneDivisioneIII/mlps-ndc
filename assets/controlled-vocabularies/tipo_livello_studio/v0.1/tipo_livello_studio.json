@@ -1,0 +1,172 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/0",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "0",
+    "label_it": "NESSUN TITOLO DI STUDIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "LICENZA ELEMENTARE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/11",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "11",
+    "label_it": "DIPLOMA DI SPECIALIZZAZIONE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/12",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "12",
+    "label_it": "TITOLO DI DOTTORE DI RICERCA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/13",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "13",
+    "label_it": "LAUREA DI PRIMO LIVELLO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/14",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "14",
+    "label_it": "DIPLOMA DI LAUREA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/15",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "15",
+    "label_it": "LAUREA SPECIALISTICA A CICLO UNICO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/16",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "16",
+    "label_it": "LAUREA SPECIALISTICA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/17",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "17",
+    "label_it": "MASTER UNIVERSITARIO DI SECONDO LIVELLO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "LICENZA MEDIA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/3",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "TITOLO DI ISTRUZIONE SECONDARIA SUPERIORE (SCOLASTICA ED EXTRA-SCOLASTICA) CHE NON PERMETTE L'ACCESSO ALL'UNIVERSIT\u00c0 ()",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/4",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "4",
+    "label_it": "DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE  CHE PERMETTE L'ACCESSO ALL'UNIVERSITA'",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/5",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "5",
+    "label_it": "DIPLOMA TERZIARIO EXTRA-UNIVERSITARIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/6",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "6",
+    "label_it": "DIPLOMA UNIVERSITARIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/7",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "7",
+    "label_it": "LAUREA - Vecchio o nuovo ordinamento ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/8",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "8",
+    "label_it": "TITOLO DI STUDIO POST-LAUREA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/9",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudio",
+      "skos:Concept"
+    ],
+    "id": "9",
+    "label_it": "MASTER UNIVERSITARIO DI PRIMO LIVELLO",
+    "level": "1"
+  }
+]

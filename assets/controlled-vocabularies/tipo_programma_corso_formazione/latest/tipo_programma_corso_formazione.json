@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_programma_corso_formazione/1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoProgrammaAttivazioneCorso",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "GOL",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_programma_corso_formazione/99",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoProgrammaAttivazioneCorso",
+      "skos:Concept"
+    ],
+    "id": "99",
+    "label_it": "Altro",
+    "level": "1"
+  }
+]

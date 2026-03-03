@@ -1,0 +1,8 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A00,A00,LAVORO A TEMPO INDETERMINATO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A01,A01,LAVORO A TEMPO DETERMINATO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A02,A02,APPRENDISTATO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A03,A03,TIROCINIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A04,A04,LAVORO ACCESSORIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A05,A05,LAVORO AUTONOMO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A06,A06,CONTRATTO DI COLLABORAZIONE,1

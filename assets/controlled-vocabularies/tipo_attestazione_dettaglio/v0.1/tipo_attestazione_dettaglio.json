@@ -1,0 +1,342 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/11",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "11",
+    "label_it": "Attestato di frequenza con profitto",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/12",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "12",
+    "label_it": "Attestato di frequenza",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/13",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "13",
+    "label_it": "Ammissione all'anno successivo",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/14",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "14",
+    "label_it": "Altre attestazioni",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/21",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "21",
+    "label_it": "Patente di mestiere",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/22",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "22",
+    "label_it": "Abilitazione professionale ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/31",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "31",
+    "label_it": "Qualifica professionale di Istruzione e Formazione Professionale (IeFP)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/32",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "32",
+    "label_it": "Diploma professionale di Istruzione e Formazione Professionale (IeFP)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/33",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "33",
+    "label_it": "Diploma di specializzazione per le tecnologie applicate di durata biennale (ITS Academy)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/34",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "34",
+    "label_it": "Diploma di specializzazione superiore per le tecnologie applicate di durata triennale (ITS Academy)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/35",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "35",
+    "label_it": "Certificato di specializzazione tecnica superiore (IFTS)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/36",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "36",
+    "label_it": "Qualificazione di formazione professionale di area operativa",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/37",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "37",
+    "label_it": "Qualificazione di formazione professionale di area tecnica",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/38",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "38",
+    "label_it": "Qualificazione di alta formazione professionale regionale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/41",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "41",
+    "label_it": "Certificazione delle competenze dell\u2019obbligo di istruzione",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/42",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "42",
+    "label_it": "Diploma di Istruzione secondaria di secondo grado ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/43",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "43",
+    "label_it": "Laurea o Diploma accademico I liv",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/44",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "44",
+    "label_it": "Laurea magistrale, specialistica, o diploma accademico di II liv o Ciclo unico o  Diploma di laurea (vecchio ordinamento) ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/45",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "45",
+    "label_it": "Master universitario o accademico di I livello",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/46",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "46",
+    "label_it": "Master universitario o accademico di II livello",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/47",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "47",
+    "label_it": "Diploma di corso di perfezionamento ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/48",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "48",
+    "label_it": "Diploma di specializzazione universitario o accademico",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/49",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "49",
+    "label_it": "Dottorato di ricerca universitario o accademico",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/51",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "51",
+    "label_it": "Titolo attestante il raggiungimento di un livello di conoscenza della lingua italiana di livello A2 del QCER ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/52",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "52",
+    "label_it": "Titolo conclusivo del primo ciclo di istruzione",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/53",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "53",
+    "label_it": "Certificazione attestante l\u2019acquisizione delle competenze di base connesse all\u2019obbligo di istruzione",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/54",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "54",
+    "label_it": "Certificazione per l\u2019ammissione al secondo periodo didattico del secondo livello",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/55",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "55",
+    "label_it": "Certificazione per l\u2019ammissione al terzo periodo didattico del secondo livello",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/56",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "56",
+    "label_it": "Diploma di Istruzione secondaria di secondo grado degli istituti tecnici o professionali, o licei artistici",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/61",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "61",
+    "label_it": "Certificato di competenze",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/62",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "62",
+    "label_it": "Documento di trasparenza",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/63",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "63",
+    "label_it": "Documento di validazione",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/64",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "64",
+    "label_it": "Certificazione di singole unit\u00e0 di competenza di una qualificazione (micro qualificazioni)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/65",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "65",
+    "label_it": "Certificazione parziale in caso di mancata acquisizione di una qualificazione ",
+    "level": "1"
+  }
+]

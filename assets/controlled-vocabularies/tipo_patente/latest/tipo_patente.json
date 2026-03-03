@@ -1,0 +1,242 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/01",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "01",
+    "label_it": "PATENTE A",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/02",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "02",
+    "label_it": "PATENTE B",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/03",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "03",
+    "label_it": "PATENTE C",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/04",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "04",
+    "label_it": "PATENTE D",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/05",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "05",
+    "label_it": "PATENTE E",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/06",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "06",
+    "label_it": "PATENTE F",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/07",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "07",
+    "label_it": "PATENTE BE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/08",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "08",
+    "label_it": "PATENTE CE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/09",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "09",
+    "label_it": "PATENTE DE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/10",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "10",
+    "label_it": "PATENTE AM",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/11",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "11",
+    "label_it": "PATENTE A1",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/12",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "12",
+    "label_it": "PATENTE UE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/13",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "13",
+    "label_it": "PATENTE EXTRA UE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/14",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "14",
+    "label_it": "PATENTE A2",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/15",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "15",
+    "label_it": "PATENTE B1",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/16",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "16",
+    "label_it": "PATENTE C1",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/17",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "17",
+    "label_it": "PATENTE C1E",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/18",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "18",
+    "label_it": "PATENTE D1",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/19",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "19",
+    "label_it": "PATENTE D1E",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/20",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "20",
+    "label_it": "ABILITAZIONE KA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/21",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "21",
+    "label_it": "ABILITAZIONE KB",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/22",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "22",
+    "label_it": "ABILITAZIONE CQC PERSONE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/23",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "23",
+    "label_it": "ABILITAZIONE CQC MERCI",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/24",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida",
+      "skos:Concept"
+    ],
+    "id": "24",
+    "label_it": "ABILITAZIONE CARTA TACHIGRAFICA",
+    "level": "1"
+  }
+]

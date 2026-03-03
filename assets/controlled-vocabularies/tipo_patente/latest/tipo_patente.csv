@@ -1,0 +1,25 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/01,01,PATENTE A,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/02,02,PATENTE B,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/03,03,PATENTE C,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/04,04,PATENTE D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/05,05,PATENTE E,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/06,06,PATENTE F,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/07,07,PATENTE BE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/08,08,PATENTE CE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/09,09,PATENTE DE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/10,10,PATENTE AM,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/11,11,PATENTE A1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/12,12,PATENTE UE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/13,13,PATENTE EXTRA UE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/14,14,PATENTE A2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/15,15,PATENTE B1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/16,16,PATENTE C1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/17,17,PATENTE C1E,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/18,18,PATENTE D1,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/19,19,PATENTE D1E,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/20,20,ABILITAZIONE KA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/21,21,ABILITAZIONE KB,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/22,22,ABILITAZIONE CQC PERSONE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/23,23,ABILITAZIONE CQC MERCI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/24,24,ABILITAZIONE CARTA TACHIGRAFICA,1

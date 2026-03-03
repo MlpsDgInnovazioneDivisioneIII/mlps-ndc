@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento/1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/AccreditamentoPerFormazione",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "Percorsi di istruzione e formazione professionale per l\u2019assolvimento del diritto/dovere all\u2019istruzione e formazione",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento/2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/AccreditamentoPerFormazione",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "Formazione post diritto/dovere e formazione superiore",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento/3",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/AccreditamentoPerFormazione",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "Formazione continua",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_accreditamento/4",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/AccreditamentoPerFormazione",
+      "skos:Concept"
+    ],
+    "id": "4",
+    "label_it": "Altro",
+    "level": "1"
+  }
+]

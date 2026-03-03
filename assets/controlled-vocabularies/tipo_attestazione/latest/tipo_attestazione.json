@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/10",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "10",
+    "label_it": "ATTESTATO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/20",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "20",
+    "label_it": "QUALIFICAZIONE ABILITANTE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/30",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "30",
+    "label_it": "QUALIFICAZIONE PROFESSIONALE REGIONALE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/40",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "40",
+    "label_it": "TITOLO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/50",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "50",
+    "label_it": "ISTRUZIONE DEGLI ADULTI",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/60",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "60",
+    "label_it": "IDENTIFICAZIONE, VALIDAZIONE, CERTIFICAZIONE DELLE COMPETENZE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/70",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "70",
+    "label_it": "ALTRA QUALIFICA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/80",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso",
+      "skos:Concept"
+    ],
+    "id": "80",
+    "label_it": "NESSUN TITOLO O ATTESTATO",
+    "level": "1"
+  }
+]

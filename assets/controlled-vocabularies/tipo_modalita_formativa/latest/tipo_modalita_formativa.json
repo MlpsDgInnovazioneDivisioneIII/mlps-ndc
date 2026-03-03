@@ -1,0 +1,262 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/10",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "10",
+    "label_it": "CORSI CONDOTTI ATTRAVERSO METODOLOGIE D'AULA (INCLUSE LEZIONI O CONFERENZE)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/20",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "20",
+    "label_it": "FORMAZIONE DUALE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/21",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "21",
+    "label_it": "Tirocinio",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/22",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "22",
+    "label_it": "PCTO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/23",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "23",
+    "label_it": "Alternanza rafforzata",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/24",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "24",
+    "label_it": "Apprendistato I livello",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/25",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "25",
+    "label_it": "Apprendistato III livello",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/26",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "26",
+    "label_it": "Alternanza simulata",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/30",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "30",
+    "label_it": "CORSI CONDOTTI ATTRAVERSO LA FORMAZIONE A DISTANZA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/31",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "31",
+    "label_it": "Sincrona",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/32",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "32",
+    "label_it": "Asincrona",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/33",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "33",
+    "label_it": "Ibrida",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/40",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "40",
+    "label_it": "APPRENDIMENTO INDIVIDUALIZZATO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/41",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "41",
+    "label_it": "Apprendimento individualizzato, rivolto a singoli o gruppi ristretti",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/42",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "42",
+    "label_it": "Affiancamento consulenziale mirato",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/43",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "43",
+    "label_it": "Coaching/tutorato informale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/44",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "44",
+    "label_it": "Auto-apprendimento",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/50",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "50",
+    "label_it": "ALTRA FORMAZIONE TEORICO-PRATICA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/51",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "51",
+    "label_it": "Corsi misti teorico-pratici (inclusa partecipazione a convegni, workshop, presentazione prodotti)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/52",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "52",
+    "label_it": "Formazione sul lavoro guidata (inclusi work experience...)",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/53",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "53",
+    "label_it": "Attivit\u00e0 pratica/esercitazioni",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/60",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "60",
+    "label_it": "ALTRA MODALIT\u00c0 FORMATIVA",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/61",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "61",
+    "label_it": "Percorsi di scambio",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/62",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "62",
+    "label_it": "Visite guidate",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/63",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "63",
+    "label_it": "Visite non guidate",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/64",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiModalit\u00e0Formativa",
+      "skos:Concept"
+    ],
+    "id": "64",
+    "label_it": "Altro",
+    "level": "1"
+  }
+]

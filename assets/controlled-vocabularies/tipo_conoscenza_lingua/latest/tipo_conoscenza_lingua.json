@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/A1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/GradoDiConoscenzaLinguistica",
+      "skos:Concept"
+    ],
+    "id": "A1",
+    "label_it": "LIVELLO ELEMENTARE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/A2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/GradoDiConoscenzaLinguistica",
+      "skos:Concept"
+    ],
+    "id": "A2",
+    "label_it": "LIVELLO PRE-INTERMEDIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/B1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/GradoDiConoscenzaLinguistica",
+      "skos:Concept"
+    ],
+    "id": "B1",
+    "label_it": "LIVELLO INTERMEDIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/B2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/GradoDiConoscenzaLinguistica",
+      "skos:Concept"
+    ],
+    "id": "B2",
+    "label_it": "LIVELLO POST-INTERMEDIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/C1",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/GradoDiConoscenzaLinguistica",
+      "skos:Concept"
+    ],
+    "id": "C1",
+    "label_it": "LIVELLO AVANZATO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/C2",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/GradoDiConoscenzaLinguistica",
+      "skos:Concept"
+    ],
+    "id": "C2",
+    "label_it": "LIVELLO DI PADRONANZA DELLA LINGUA IN SITUAZIONI COMPLESSE",
+    "level": "1"
+  }
+]

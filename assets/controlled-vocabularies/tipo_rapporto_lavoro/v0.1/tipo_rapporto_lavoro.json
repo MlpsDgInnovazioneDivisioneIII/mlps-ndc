@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A00",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro",
+      "skos:Concept"
+    ],
+    "id": "A00",
+    "label_it": "LAVORO A TEMPO INDETERMINATO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A01",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro",
+      "skos:Concept"
+    ],
+    "id": "A01",
+    "label_it": "LAVORO A TEMPO DETERMINATO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A02",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro",
+      "skos:Concept"
+    ],
+    "id": "A02",
+    "label_it": "APPRENDISTATO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A03",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro",
+      "skos:Concept"
+    ],
+    "id": "A03",
+    "label_it": "TIROCINIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A04",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro",
+      "skos:Concept"
+    ],
+    "id": "A04",
+    "label_it": "LAVORO ACCESSORIO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A05",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro",
+      "skos:Concept"
+    ],
+    "id": "A05",
+    "label_it": "LAVORO AUTONOMO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/A06",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoDiContrattoDiLavoro",
+      "skos:Concept"
+    ],
+    "id": "A06",
+    "label_it": "CONTRATTO DI COLLABORAZIONE",
+    "level": "1"
+  }
+]

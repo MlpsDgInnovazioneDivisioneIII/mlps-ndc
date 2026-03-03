@@ -1,0 +1,792 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/001",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "001",
+    "label_it": "INGLESE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/002",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "002",
+    "label_it": "TEDESCO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/003",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "003",
+    "label_it": "ITALIANO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/004",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "004",
+    "label_it": "GIAPPONESE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/005",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "005",
+    "label_it": "FRANCESE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ALB",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "ALB",
+    "label_it": "ALBANESE            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARA",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "ARA",
+    "label_it": "ARABO               ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARM",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "ARM",
+    "label_it": "ARMENO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/AZE",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "AZE",
+    "label_it": "AZERO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEL",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "BEL",
+    "label_it": "BIELORUSSO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "BEN",
+    "label_it": "BENGALI             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIH",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "BIH",
+    "label_it": "BIHARI (IND)        ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "BIR",
+    "label_it": "BIRMANO             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BOS",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "BOS",
+    "label_it": "BOSNIACO            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BUL",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "BUL",
+    "label_it": "BULGARO             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "CAN",
+    "label_it": "CANTONESE           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAT",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "CAT",
+    "label_it": "CATALANO ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CEC",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "CEC",
+    "label_it": "CECO                ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CIN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "CIN",
+    "label_it": "CINESE MANDARINO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/COR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "COR",
+    "label_it": "COREANO             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CRO",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "CRO",
+    "label_it": "CROATO              ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/DAN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "DAN",
+    "label_it": "DANESE              ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EBR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "EBR",
+    "label_it": "EBRAICO             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EST",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "EST",
+    "label_it": "ESTONE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIA",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "FIA",
+    "label_it": "FIAMMINGO           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIL",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "FIL",
+    "label_it": "FILIPPINO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "FIN",
+    "label_it": "FINLANDESE          ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GEO",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "GEO",
+    "label_it": "GEORGIANO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIU",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "GIU",
+    "label_it": "GUJARATI            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIV",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "GIV",
+    "label_it": "GIAVANESE           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GRE",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "GRE",
+    "label_it": "GRECO               ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HAK",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "HAK",
+    "label_it": "HAKKA (INDIA)       ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HID",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "HID",
+    "label_it": "HINDUSTANI          ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HIN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "HIN",
+    "label_it": "HINGJ               ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/IND",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "IND",
+    "label_it": "INDONESIANO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISL",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "ISL",
+    "label_it": "ISLANDESE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "ISR",
+    "label_it": "ISRAELIANO          ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KAN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "KAN",
+    "label_it": "KANARESE            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KUR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "KUR",
+    "label_it": "CURDO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LAV",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "LAV",
+    "label_it": "LETTONE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LTU",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "LTU",
+    "label_it": "LITUANO",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAL",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "MAL",
+    "label_it": "MALAYALAM           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "MAN",
+    "label_it": "KUAN-HUA            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "MAR",
+    "label_it": "MARATHI (IND)       ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAY",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "MAY",
+    "label_it": "MALAY (INDON)       ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MIN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "MIN",
+    "label_it": "MIN (CINA)          ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MKD",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "MKD",
+    "label_it": "MACEDONE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MLT",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "MLT",
+    "label_it": "MALTESE",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/NOR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "NOR",
+    "label_it": "NORVEGESE           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/OLA",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "OLA",
+    "label_it": "OLANDESE            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ORI",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "ORI",
+    "label_it": "ORIYA (IND)         ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PAS",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "PAS",
+    "label_it": "PASHTO (AFG)        ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PER",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "PER",
+    "label_it": "PERSIANO            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POL",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "POL",
+    "label_it": "POLACCO             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "POR",
+    "label_it": "PORTOGHESE          ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PUN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "PUN",
+    "label_it": "PUNJABI (IND)       ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RAI",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "RAI",
+    "label_it": "RAJASTANI           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUM",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "RUM",
+    "label_it": "RUMENO              ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUS",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "RUS",
+    "label_it": "RUSSO               ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SEN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SEN",
+    "label_it": "SENEGALESE          ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SER",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SER",
+    "label_it": "SERBO               ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SIN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SIN",
+    "label_it": "SINGALESE           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLO",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SLO",
+    "label_it": "SLOVENO             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLV",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SLV",
+    "label_it": "SLOVACCO            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SOM",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SOM",
+    "label_it": "SOMALO              ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SPA",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SPA",
+    "label_it": "SPAGNOLO            ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SUN",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SUN",
+    "label_it": "SUNDANESE           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SVE",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SVE",
+    "label_it": "SVEDESE             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SWA",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "SWA",
+    "label_it": "SWAILI              ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TAM",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "TAM",
+    "label_it": "TAMIL (INDIA)       ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TEL",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "TEL",
+    "label_it": "TELUGU (IND)        ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/THA",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "THA",
+    "label_it": "THAI                ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TUR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "TUR",
+    "label_it": "TURCO               ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UCR",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "UCR",
+    "label_it": "UCRAINO             ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UNG",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "UNG",
+    "label_it": "UNGHERESE           ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/URD",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "URD",
+    "label_it": "URDU (INDIA)        ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIE",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "VIE",
+    "label_it": "VIETNAMITA          ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIS",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "VIS",
+    "label_it": "VISAYAN (FIL)       ",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/WU%20",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta",
+      "skos:Concept"
+    ],
+    "id": "WU ",
+    "label_it": "WU (CINA)           ",
+    "level": "1"
+  }
+]

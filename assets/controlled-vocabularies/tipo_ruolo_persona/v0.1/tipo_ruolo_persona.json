@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/1",
+    "@type": [
+      "https://w3id.org/italia/onto/CPV/Alive",
+      "skos:Concept"
+    ],
+    "id": "1",
+    "label_it": "Componente",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/2",
+    "@type": [
+      "https://w3id.org/italia/onto/CPV/Alive",
+      "skos:Concept"
+    ],
+    "id": "2",
+    "label_it": "Richiedente",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ruolo_persona/3",
+    "@type": [
+      "https://w3id.org/italia/onto/CPV/Alive",
+      "skos:Concept"
+    ],
+    "id": "3",
+    "label_it": "Tutore",
+    "level": "1"
+  }
+]

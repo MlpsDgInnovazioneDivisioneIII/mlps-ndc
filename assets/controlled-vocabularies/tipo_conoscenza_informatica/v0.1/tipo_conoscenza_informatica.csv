@@ -1,0 +1,590 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/001,001,TECNICHE DI USO DI SISTEMI CAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/002,002,EXCEL,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/003,003,CREAZIONE DI PRESENTAZIONI UTILIZZANDO POWER POINT,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/004,004,WORD O ALTRI PRODOTTI DI VIDEOSCRITTURA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/005,005,ACCESS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/006,006,COREL DRAW,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/007,007,FLASH,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/008,008,PHOTOSHOP,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/009,009,SOFTWARE PER ELABORAZIONE DI IMMAGINI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/010,010,TECNICHE USO SOFTWARE X ELAB.NE DIGITALE SUONO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/011,011,SOFTWARE PER ELABORAZIONE VIDEO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/012,012,CRITERI REDAZIONE TESTI PER EDITORIA ELETTRONICA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/013,013,SOFTWARE PER CONTABILITÀ AZIENDALE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/014,014,SOFTWARE PER GESTIONE PAGHE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/015,015,TECNICHE DI GESTIONE STREAMING VIDEO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/016,016,"TECNICHE NAVIGAZIONE INTERNET,DOWNLOAD,SALVATAGGIO",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/017,017,STRUMENTI PER CHAT E FORUM,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/018,018,TECNICHE DI REALIZZAZIONE PAGINE IN HTML,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/019,019,TECNICHE DI GESTIONE DELLA POSTA ELETTRONICA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/020,020,PROBLEMATICHE DELLE BANCHE DATI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/021,021,MODALITA' REGISTR.NE DATI ARCHIVI INFORMATIZZATI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/022,022,TECNICHE DI ORGANIZZAZIONE DELLE INFORMAZIONI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/023,023,TECNICHE DI REALIZZAZIONE DI OGGETTI JAVA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/024,024,TECNICHE REALIZZ.NE APPLICAZIONI DB ORACLE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/025,025,TECNICHE REALIZZ.NE APPLICAZIONI DB MICROSOFT SQL,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/026,026,WINDOWS NT - 2000,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/027,027,LINUX,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/028,028,UNIX,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/029,029,SICUREZZA SU ACCESSI A RETI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/030,030,TECNICHE DI PROGETTAZIONE RETI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/031,031,TECNICHE AMMIN.NE RISORSE CONDIVISE IN RETE LOCALE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/032,032,GESTIONE DI LAN,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/033,033,TECNICHE DI GESTIONE DEL ROUTER,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/034,034,COSTI PER LA REALIZZAZIONE DI SOFTWARE APPLICATIVI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/035,035,APPLICAZIONI TECNICHE DI AUTENTICAZIONE SOFTWARE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/036,036,TECNICHE DI CONFIGURAZIONE DI SOFTWARE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/037,037,SAS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/038,038,TECNICHE DI AUTENTICAZIONE HARDWARE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/039,039,ACCESSORI DI PC,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/040,040,REQUISITI LOGICI FORMALI PER SOFTWARE APPLICATIVI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/041,041,ABAP (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/042,042,Accessori per computer,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/043,043,ACT!,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/044,044,ActionScript,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/045,045,Active X,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/046,046,Actuate e.Report,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/047,047,Ada (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/048,048,ADABAS (basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/049,049,Adobe After Effects (programma di video editing),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/050,050,Adobe Audition,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/051,051,Adobe Authorware,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/052,052,Adobe Bridge,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/053,053,Adobe ColdFusion,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/054,054,Adobe Contribute,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/055,055,Adobe Flash Builder,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/056,056,Adobe FrameMaker,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/057,057,Adobe Freehand,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/058,058,Adobe ImageReady,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/059,059,Adobe PageMaker,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/060,060,Adobe PageMill,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/061,061,Adobe Photoshop,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/062,062,Adobe Premiere Pro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/063,063,Agilent VEE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/064,064,Alias PowerAnimator,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/065,065,"Amadeus, sistema di prenotazione viaggi",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/066,066,Amministrazione di rete,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/067,067,Amministrazione di sistemi (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/068,068,Analisi dati,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/069,069,Analisi dell'informazione (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/070,070,Analisi di sicurezza (sicurezza dei dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/071,071,Analisi di sistema,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/072,072,Analisi di vulnerabilità,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/073,073,Animazione (architettura),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/074,074,ANSYS (software CAE),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/075,075,Apache web server,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/076,076,APL (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/077,077,Apple-script (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/078,078,AppleTalk (protocollo di comunicazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/079,079,Applicazioni di trattamento testi (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/080,080,ARCAD (software di disegno tecnico CAD),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/081,081,ArchiCAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/082,082,Architettura di sistema (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/083,083,Archiviazione digitale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/084,084,Archiviazione in ordine alfabetico,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/085,085,Ariba,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/086,086,ARIS Platform,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/087,087,AS/400 Control Language,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/088,088,ASP (Active Server Pages),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/089,089,Assembler (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/090,090,ASW (sistema di gestione aziendale),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/091,091,AutoCAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/092,092,AutoCAD Architecture,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/093,093,AutoCAD Civil 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/094,094,AutoCAD ecscad,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/095,095,AutoCAD LT,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/096,096,AutoCAD Map 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/097,097,AutoCAD Mechanical,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/098,098,AutoCAD MEP,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/099,099,Autodesk 3ds Max (programma 3D),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/100,100,Autodesk Maya,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/101,101,Autodesk Mechanical Desktop,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/102,102,Autodesk Softimage,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/103,103,BASIC (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/104,104,Basi di dati relazionali (gestione basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/105,105,Basi di dati relazionali (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/106,106,BBS (Bulletin Board System),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/107,107,BGP (Border Gateway Protocol),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/108,108,Bocad-3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/109,109,Bryce 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/110,110,Btrieve (gestione basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/111,111,Btrieve (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/112,112,C (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/113,113,C#,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/114,114,C++ (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/115,115,C++ Builder (strumento di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/116,116,Caché,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/117,117,CADDS (Computer Aided Design and Drafting Software),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/118,118,CadPoint,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/119,119,CADRA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/120,120,Cadwork,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/121,121,Calibratura,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/122,122,CARD/2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/123,123,CASE tools (Computer Aided Software Engineering),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/124,124,CATIA (programma di disegno),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/125,125,CGI (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/126,126,CGI-script (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/127,127,CICS (Customer Information Control System),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/128,128,CINEMA 4D (applicazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/129,129,Client/server (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/130,130,CM (Configuration Management),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/131,131,Cobol (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/132,132,Cognos Controller,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/133,133,Cognos Enterprise,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/134,134,Cognos Express,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/135,135,Cognos Insight,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/136,136,Cognos TM2,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/137,137,Collaudo di hardware,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/138,138,Collaudo di software,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/139,139,Collaudo sistemi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/140,140,COM/DCOM (tecnologia degli oggetti distribuiti),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/141,141,Commercio elettronico (analisi di vulnerabilità),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/142,142,Commercio elettronico (sviluppo di sistemi),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/143,143,Commutatori (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/144,144,Computer-aided design (abbigliamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/145,145,Computer Aided Design and Manufacturing systems (CAD/CAM),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/146,146,Computer e periferiche,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/147,147,Computer Macintosh (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/148,148,Comunicazione dati,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/149,149,Comunicazioni informatiche (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/150,150,Concezione interfaccia (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/151,151,Concezione sistemi (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/152,152,Consulenza tecnica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/153,153,CORBA standard,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/154,154,CorelDRAW,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/155,155,Corel PaintShop Pro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/156,156,Corel Ventura,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/157,157,Costruzione di basi dati (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/158,158,Costruzione di basi dati (logica),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/159,159,Costruzione fisica di banche dati,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/160,160,Costruzione sistemi (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/161,161,CPLD (Complex programmable logic device),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/162,162,Criptazione (sicurezza dei dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/163,163,Crittografia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/164,164,Crystal Reports,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/165,165,CSS (Cascading Style Sheets),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/166,166,Data warehouse (magazzino di dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/167,167,DaVinci Resolve,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/168,168,DB2 (gestione basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/169,169,DB2 (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/170,170,DeBabelizer (image editor),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/171,171,Digital AMPS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/172,172,Digitalizzazione dei disegni tecnici,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/173,173,Directing (programma di sviluppo multimediale),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/174,174,Disegno CAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/175,175,Disegno digitale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/176,176,Disegno interattivo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/177,177,DL/1 (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/178,178,DL/I (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/179,179,DMS (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/180,180,DMS (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/181,181,Documentazione di servizio (informatica),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/182,182,DOXiS4 Workflow,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/183,183,Dreamweaver,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/184,184,Dynamic HTML,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/185,185,EAGLE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/186,186,EICAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/187,187,Eiffel (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/188,188,Elaborazione e analisi dati,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/189,189,Elaborazione immagini,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/190,190,Electric Image Animation System (EIAS),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/191,191,Electronic data interchange (EDI),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/192,192,EliteCAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/193,193,ELOenterprise,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/194,194,ELOoffice,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/195,195,ELOprofessional,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/196,196,Emacs (text editor),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/197,197,E-mail (analisi di vulnerabilità),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/198,198,Embarcadero Delphi (ambiente di sviluppo),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/199,199,Enea OSE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/200,200,Enhanced Interior Gateway Routing Protocol (EIGRP),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/201,201,Ethernet (amministrazione di rete),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/202,202,Ethernet (analisi di vulnerabilità,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/203,203,Excel spreadsheet,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/204,204,Extensible Markup Language (XML),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/205,205,Fabasoft eGov-Suite,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/206,206,Fabasoft Folio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/207,207,FileMaker (basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/208,208,FileMaker (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/209,209,FileMaker (programmazione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/210,210,Final Cut Pro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/211,211,Firefox,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/212,212,Firewall,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/213,213,Fireworks (programma di sviluppo web),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/214,214,Flame,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/215,215,Flash,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/216,216,Flint,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/217,217,FMEA (Failure Mode and Effects Analysis),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/218,218,Fortran,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/219,219,FPGA (circuito programmabile),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/220,220,GCL,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/221,221,Gestione di basi dati (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/222,222,Gestione di sistema,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/223,223,GifBuilder,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/224,224,GIS (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/225,225,GIS (sistema d'informazione geografica),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/226,226,GoLive,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/227,227,Grafica digitale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/228,228,Grafica di vettore,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/229,229,Haiku (sistema operativo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/230,230,Hash Animation Master,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/231,231,Haskell,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/232,232,HDML,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/233,233,HF (alta frequenza),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/234,234,HiCAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/235,235,HTML6,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/236,236,Hub (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/237,237,HyperMesh,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/238,238,IBM Websphere,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/239,239,IBM Cognos Impromptu,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/240,240,IBM Cognos ReportNet,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/241,241,IBM FileNet Content Manager,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/242,242,IBM OS/390,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/243,243,IBM Rational Rose,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/244,244,IBM RPG,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/245,245,IGrafx FlowCharter,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/246,246,IIS web server,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/247,247,Illustrator,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/248,248,Imagineer,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/249,249,IMB i,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/250,250,IMS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/251,251,Indagine di sistema,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/252,252,InDesign,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/253,253,Inferno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/254,254,Infomix,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/255,255,Infor EAM Enterprise,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/256,256,Infor Epiphany,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/257,257,Infor LX,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/258,258,Infor Orbis Marketing Resource Management (MRM),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/259,259,Infor XA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/260,260,Ingegneria,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/261,261,Ingegneria (brevetti),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/262,262,Ingegneria assistita da calcolatore (CAE),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/263,263,Ingres,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/264,264,Installazione e manutenzione di PC,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/265,265,Integrazione di sistemi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/266,266,Interfaccia utente grafica (sviluppo di sistemi),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/267,267,Internet/Intranet (amministrazione di rete),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/268,268,Internet/Intranet (analisi di vulnerabilità),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/269,269,Internet/Intranet (ricerca di informazioni),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/270,270,Internet Explorer,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/271,271,Internet protocol (IP) telephony technology,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/272,272,Inventor,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/273,273,IPX (protocollo di comunicazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/274,274,IRIX,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/275,275,ISDN (amministrazione di rete),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/276,276,ISDN (analisi di vulnerabilità),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/277,277,ITS (spedizioni internazionali),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/278,278,Java,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/279,279,Java Builder,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/280,280,Java-script,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/281,281,Jbuilder,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/282,282,JD Edwards,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/283,283,Job Control Language (JCL),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/284,284,JSP,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/285,285,LabVIEW,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/286,286,LAN (amministrazione di rete),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/287,287,LAN (analisi di vulnerabilità),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/288,288,LANtastic,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/289,289,Lavoro all'estero,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/290,290,Lectra,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/291,291,LibreOffice,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/292,292,Lightscape 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/293,293,Lightwave 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/294,294,Lingo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/295,295,Linguaggio di programmazione Perl,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/296,296,Linguistica informatica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/297,297,Linux,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/298,298,Lisp,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/299,299,Logic (modello di gestione e sviluppo),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/300,300,LogoMotion 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/301,301,Lotus 1-2-3,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/302,302,Lotus Domino,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/303,303,Lotus Notes,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/304,304,LotusScript,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/305,305,LS-Dyna,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/306,306,MacOS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/307,307,Mainframe (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/308,308,Mainframe (operazione e vigilanza),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/309,309,Manutenzione (attrezzature medico-tecniche),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/310,310,MATLAB,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/311,311,Media 100,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/312,312,Medusa,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/313,313,MegaCAD,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/314,314,Metodi di programmazione (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/315,315,Metodologia orientata all'oggetto,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/316,316,MFC program library,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/317,317,Microsoft Access (amministrazione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/318,318,Microsoft Access (operazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/319,319,Microsoft Access (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/320,320,Microsoft FrontPage,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/321,321,Microsoft PowerPoint,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/322,322,Microsoft Publisher,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/323,323,Microsoft Visual Studio,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/324,324,Microsoft Word,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/325,325,Microsoft Works,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/326,326,MicroStation (software CAD),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/327,327,MicroStrategy Business Intelligence,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/328,328,MicroStrategy Express,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/329,329,Minitab,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/330,330,ML (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/331,331,Modellazione 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/332,332,Modellizzazione dati,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/333,333,Modem (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/334,334,Monitor (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/335,335,Motif (strumento di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/336,336,Movie Magic Scheduling,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/337,337,MS-DOS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/338,338,MS Office,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/339,339,MS OneNote,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/340,340,MS Outlook,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/341,341,MS Outlook Express,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/342,342,MS Project,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/343,343,MultiGen 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/344,344,Multimedia (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/345,345,Multiple Virtual Storage (MVS),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/346,346,MySQL (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/347,347,MySQL (sviluppo di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/348,348,Natural language programming (NLP),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/349,349,NetBEUI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/350,350,NetBIOS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/351,351,NetObjects Fusion,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/352,352,Netscape Server,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/353,353,Network bridging (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/354,354,Non-linear editing (NLE),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/355,355,Novel NetWare,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/356,356,NX (Unigraphics),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/357,357,Object-oriented analysis and design (OOAD),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/358,358,Object-oriented programming (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/359,359,Open Database Connectivity (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/360,360,Open Database Connectivity (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/361,361,OpenEdge Advanced Business Language,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/362,362,Open Shortest Path First (OSPF),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/363,363,OpenText Business Process Management (BPM),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/364,364,OpenText Customer Experience Management (CEM),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/365,365,OpenText Enterprise Content Management (ECM),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/366,366,Open Virtual Memory System (OpenVMS),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/367,367,Opera,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/368,368,Operazione di basi dati (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/369,369,Oracle (gestione basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/370,370,Oracle (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/371,371,Oracle CRM On Demand Solutions,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/372,372,Oracle E-Business Suite,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/373,373,ORACLE Fusion,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/374,374,Oracle Fusion Applications,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/375,375,Oracle Solaris,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/376,376,Oracle WebLogic Server,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/377,377,OS/2 (sistema operativo),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/378,378,OS 2200,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/379,379,OWLNext (Object Windows Library),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/380,380,PageSpinner HTML editor,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/381,381,Paradox (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/382,382,Paradox (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/383,383,Pascal programming language,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/384,384,Pegasystems Build for Change,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/385,385,PeopleSoft business administration system,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/386,386,Perl script,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/387,387,PHP programming,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/388,388,Pianificazione operazioni (dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/389,389,PL/1 (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/390,390,PL/SQL (amministrazione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/391,391,PL/SQL (sviluppo di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/392,392,PostgreSQL,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/393,393,PostScript,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/394,394,Printer Command Language (PCL),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/395,395,Prodotti multimediali,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/396,396,Produzione assistita da calcolatore (CAM),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/397,397,Produzione di pagine web (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/398,398,Produzione multimediale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/399,399,Progettazione sistemi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/400,400,Progettazione software,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/401,401,Progettazione Web,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/402,402,Programmazione (computer Macintosh),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/403,403,Programmazione (computer mainframe),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/404,404,Programmazione (PC),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/405,405,Programmazione applicazioni,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/406,406,Programmazione di interfaccia utente grafica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/407,407,Programmazione di sistemi robotici,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/408,408,Programmazione hardware,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/409,409,Programmazione informatica (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/410,410,Programmazione in tempo reale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/411,411,Programmazione web,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/412,412,Programmi di design (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/413,413,Programmi di editing suono/video (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/414,414,Programmi di layout (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/415,415,Programmi di presentazione (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/416,416,Programmi grafici,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/417,417,Prolog (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/418,418,ProSteel,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/419,419,Protocolli di comunicazione (sorveglianza),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/420,420,Pro Tools sound editor,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/421,421,Prove di prestazioni e sicurezza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/422,422,PTC Creo Elements/Direct,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/423,423,PTC Creo Parametric,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/424,424,Python (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/425,425,QBasic,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/426,426,QuarkXPress,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/427,427,Quattro Pro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/428,428,QuickTime,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/429,429,Rational Unified Process (RUP),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/430,430,Ray Dream Studio 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/431,431,Redazione web,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/432,432,Responsabilità operativa (informatica),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/433,433,Reti (vigilanza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/434,434,REXX,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/435,435,Rhinoceros 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/436,436,Ricerca,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/437,437,RoadCad 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/438,438,Router (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/439,439,Routing Information Protocol (RIP),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/440,440,Ruby,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/441,441,SABRE (travel reservation system),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/442,442,Sage 300 ERP,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/443,443,Sage CRM,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/444,444,Sage CRM Cloud,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/445,445,Sage ERP b8,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/446,446,Sage ERP X4,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/447,447,Sage New Classic,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/448,448,Sage SalesLogix,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/449,449,SAP Business All-in-One,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/450,450,SAP Business ByDesign,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/451,451,SAP Business One,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/452,452,SAP CRM,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/453,453,SAP ERP,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/454,454,SAP Exchange Infrastructure,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/455,455,SAP for Banking,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/456,456,SAP for Healthcare,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/457,457,SAP for Retail,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/458,458,SAP for Utilities,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/459,459,SAP SCM,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/460,460,SAS (statistics software),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/461,461,SASD (modello di gestione e sviluppo),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/462,462,Scanner (installazione e riparazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/463,463,Scheme (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/464,464,Server (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/465,465,Servizio medico-tecnico,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/466,466,Siebel CRM Desktop,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/467,467,Siebel Enterprise Marketing,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/468,468,Simulation Program with Integrated Circuit Emphasis (SPICE),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/469,469,Singleview Convergent Billing,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/470,470,Sintesi della parola,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/471,471,Sistema di pagamento,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/472,472,Sistema di prenotazione viaggi Galileo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/473,473,Sistema di simulazione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/474,474,Sistema di telecomando,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/475,475,Sistema in tempo reale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/476,476,Sistema operativo pSOS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/477,477,Sistemi aziendali e contabili (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/478,478,Sistemi basati sulla conoscenza (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/479,479,Sistemi operativi (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/480,480,SketchBook Pro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/481,481,Smalltalk (linguaggio di programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/482,482,Software engineering (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/483,483,Solid Edge,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/484,484,SolidWorks,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/485,485,Soluzioni informatiche e di rete,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/486,486,Sony ACID Pro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/487,487,Sony Vegas Pro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/488,488,Speed Razor Video Editor,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/489,489,Spreadsheet (formazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/490,490,SPSS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/491,491,SQL,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/492,492,SQL-Base (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/493,493,SQL-Base (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/494,494,SQL Server (gestione basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/495,495,SQL Server (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/496,496,Stampanti (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/497,497,Standard Generalized Markup Language (SGML),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/498,498,Statistical process control (SPC),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/499,499,Steinberg Cubase (software per la musica),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/500,500,Strata 3D,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/501,501,Strumenti audiovisivi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/502,502,Supporto utenti (hardware),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/503,503,Supporto utenti (software),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/504,504,Sviluppo applicazioni web,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/505,505,Sviluppo di sistemi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/506,506,Sviluppo di sistemi (computer Macintosh),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/507,507,Sviluppo di sistemi (computer mainframe),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/508,508,Sviluppo di sistemi (PC),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/509,509,Sviluppo di software,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/510,510,Sviluppo sistemi (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/511,511,Sybase (gestione basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/512,512,Sybase (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/513,513,Sybase PowerBuilder,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/514,514,Symantec Visual Page,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/515,515,Symbian,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/516,516,Synon operating system,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/517,517,Systems Network Architecture (SNA),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/518,518,Tcl/Tk,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/519,519,TCP/IP,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/520,520,Techotel (sistema di prenotazione alberghiera),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/521,521,Tecnica dei media,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/522,522,Tecnica della simulazione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/523,523,Tecnica di disegno,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/524,524,Tecnica oggetti distribuiti,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/525,525,Tecnico dei media,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/526,526,Tecnologia dei sistemi (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/527,527,Tecnologia dell'informatica (vendita),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/528,528,Tecnologia dell'informazione (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/529,529,Tecnologia informatica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/530,530,Telelavoro,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/531,531,Teoria dei sistemi e comunicazioni informatiche (insegnamento),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/532,532,Terminal server (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/533,533,Terminal server (sorveglianza),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/534,534,Terminologia tecnica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/535,535,Test management (data systems),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/536,536,TIBCO BusinessConnect,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/537,537,TIBCO BusinessWorks ProcessMonitor,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/538,538,TIBCO Spotfire,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/539,539,Token ring network (analisi di vulnerabilità),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/540,540,Token ring network administration,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/541,541,TrackWise EQMS,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/542,542,Trattamento testi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/543,543,TrueSpace,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/544,544,Ulead PhotoImpact,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/545,545,Unified Modeling Language (UML),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/546,546,UNIX,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/547,547,Urbano Canalis,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/548,548,VBScript,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/549,549,Verifica tecnologie dell'informazione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/550,550,Verilog,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/551,551,Versioning,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/552,552,VHSIC hardware description language (VHDL),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/553,553,Vi (text editor),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/554,554,ViFlow,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/555,555,Virtual Reality Modeling Language (VRML),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/556,556,Virtual Storage Extended (VSE),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/557,557,Visibroker,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/558,558,Visual Basic,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/559,559,Visual Basic for Applications,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/560,560,Visual C++,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/561,561,Visual InterDev,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/562,562,Visual Java programming tool,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/563,563,VM (sistema operativo),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/564,564,VxWorks,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/565,565,Watcom-SQL (gestione di basi dati),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/566,566,Watcom-SQL (programmazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/567,567,WebEdit,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/568,568,Web page management,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/569,569,Web server (installazione e manutenzione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/570,570,WebSphere MQ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/571,571,Websphere Process Server,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/572,572,Wide area network (amministrazione di reti),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/573,573,Wide area network (analisi di vulnerabilità),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/574,574,Windows 2000,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/575,575,Windows 3.x,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/576,576,Windows 95/98,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/577,577,Windows CE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/578,578,Windows Me,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/579,579,Windows NT,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/580,580,Windows NT Advanced Server,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/581,581,Windows XP,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/582,582,Wireless Access Points (WAP),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/583,583,Wireless Markup Language (WML),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/584,584,WordPerfect,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/585,585,Worldspan travel reservation system,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/586,586,X.25 (protocollo di comunicazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/587,587,X.400 (protocollo di comunicazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/588,588,X.500 (protocollo di comunicazione),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/589,589,XSLT,1

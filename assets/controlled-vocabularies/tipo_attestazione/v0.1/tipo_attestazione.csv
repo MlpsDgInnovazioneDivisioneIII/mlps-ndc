@@ -1,0 +1,9 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/10,10,ATTESTATO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/20,20,QUALIFICAZIONE ABILITANTE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/30,30,QUALIFICAZIONE PROFESSIONALE REGIONALE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/40,40,TITOLO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/50,50,ISTRUZIONE DEGLI ADULTI,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/60,60,"IDENTIFICAZIONE, VALIDAZIONE, CERTIFICAZIONE DELLE COMPETENZE",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/70,70,ALTRA QUALIFICA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/80,80,NESSUN TITOLO O ATTESTATO,1

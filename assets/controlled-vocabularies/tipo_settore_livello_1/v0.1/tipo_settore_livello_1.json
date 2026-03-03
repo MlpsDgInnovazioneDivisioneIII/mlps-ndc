@@ -1,0 +1,242 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/01",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "01",
+    "label_it": "Agricoltura, silvicoltura e pesca",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/02",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "02",
+    "label_it": "Produzioni alimentari",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/03",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "03",
+    "label_it": "Legno e arredo",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/04",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "04",
+    "label_it": "Carta e cartotecnica",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/05",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "05",
+    "label_it": "Tessile, abbigliamento, calzaturiero e sistema moda",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/06",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "06",
+    "label_it": "Chimica",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/07",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "07",
+    "label_it": "Estrazione gas, petrolio, carbone, minerali e lavorazione pietre",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/08",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "08",
+    "label_it": "Vetro, ceramica e materiali da costruzione",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/09",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "09",
+    "label_it": "Edilizia",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/10",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "10",
+    "label_it": "Meccanica, produzione e manutenzione di macchine, impiantistica",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/11",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "11",
+    "label_it": "Trasporti e logistica",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/12",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "12",
+    "label_it": "Servizi di distribuzione commerciale",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/13",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "13",
+    "label_it": "Servizi finanziari e assicurativi",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/14",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "14",
+    "label_it": "Servizi digitali",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/15",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "15",
+    "label_it": "Servizi di telecomunicazione e poste",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/16",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "16",
+    "label_it": "Servizi di public utilities",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/17",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "17",
+    "label_it": "Stampa ed editoria",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/18",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "18",
+    "label_it": "Servizi di educazione, formazione e lavoro",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/19",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "19",
+    "label_it": "Servizi socio-sanitari",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/20",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "20",
+    "label_it": "Servizi alla persona",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/21",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "21",
+    "label_it": "Servizi di attivit\u00e0\u00a0ricreative e sportive",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/22",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "22",
+    "label_it": "Servizi culturali e di spettacolo",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/23",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "23",
+    "label_it": "Servizi turistici",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/24",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/SettoreEconomicoProfessionale",
+      "skos:Concept"
+    ],
+    "id": "24",
+    "label_it": "Area comune",
+    "level": "1"
+  }
+]

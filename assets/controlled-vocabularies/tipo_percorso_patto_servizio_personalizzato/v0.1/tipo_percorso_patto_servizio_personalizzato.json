@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_patto_servizio_personalizzato/101",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoPercorsoPSP",
+      "skos:Concept"
+    ],
+    "id": "101",
+    "label_it": "Reinserimento lavorativo",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_patto_servizio_personalizzato/102",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoPercorsoPSP",
+      "skos:Concept"
+    ],
+    "id": "102",
+    "label_it": "Upskilling",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_patto_servizio_personalizzato/103",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoPercorsoPSP",
+      "skos:Concept"
+    ],
+    "id": "103",
+    "label_it": "Reskilling",
+    "level": "1"
+  },
+  {
+    "url": "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_percorso_patto_servizio_personalizzato/104",
+    "@type": [
+      "https://w3id.org/italia/labour-social-policies/onto/labour/TipoPercorsoPSP",
+      "skos:Concept"
+    ],
+    "id": "104",
+    "label_it": "Lavoro e inclusione",
+    "level": "1"
+  }
+]

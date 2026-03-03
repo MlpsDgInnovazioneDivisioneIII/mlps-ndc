@@ -1,0 +1,35 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/11,11,Attestato di frequenza con profitto,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/12,12,Attestato di frequenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/13,13,Ammissione all'anno successivo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/14,14,Altre attestazioni,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/21,21,Patente di mestiere,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/22,22,Abilitazione professionale ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/31,31,Qualifica professionale di Istruzione e Formazione Professionale (IeFP),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/32,32,Diploma professionale di Istruzione e Formazione Professionale (IeFP),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/33,33,Diploma di specializzazione per le tecnologie applicate di durata biennale (ITS Academy),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/34,34,Diploma di specializzazione superiore per le tecnologie applicate di durata triennale (ITS Academy),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/35,35,Certificato di specializzazione tecnica superiore (IFTS),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/36,36,Qualificazione di formazione professionale di area operativa,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/37,37,Qualificazione di formazione professionale di area tecnica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/38,38,Qualificazione di alta formazione professionale regionale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/41,41,Certificazione delle competenze dell’obbligo di istruzione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/42,42,Diploma di Istruzione secondaria di secondo grado ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/43,43,Laurea o Diploma accademico I liv,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/44,44,"Laurea magistrale, specialistica, o diploma accademico di II liv o Ciclo unico o  Diploma di laurea (vecchio ordinamento) ",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/45,45,Master universitario o accademico di I livello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/46,46,Master universitario o accademico di II livello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/47,47,Diploma di corso di perfezionamento ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/48,48,Diploma di specializzazione universitario o accademico,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/49,49,Dottorato di ricerca universitario o accademico,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/51,51,Titolo attestante il raggiungimento di un livello di conoscenza della lingua italiana di livello A2 del QCER ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/52,52,Titolo conclusivo del primo ciclo di istruzione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/53,53,Certificazione attestante l’acquisizione delle competenze di base connesse all’obbligo di istruzione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/54,54,Certificazione per l’ammissione al secondo periodo didattico del secondo livello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/55,55,Certificazione per l’ammissione al terzo periodo didattico del secondo livello,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/56,56,"Diploma di Istruzione secondaria di secondo grado degli istituti tecnici o professionali, o licei artistici",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/61,61,Certificato di competenze,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/62,62,Documento di trasparenza,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/63,63,Documento di validazione,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/64,64,Certificazione di singole unità di competenza di una qualificazione (micro qualificazioni),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/65,65,Certificazione parziale in caso di mancata acquisizione di una qualificazione ,1

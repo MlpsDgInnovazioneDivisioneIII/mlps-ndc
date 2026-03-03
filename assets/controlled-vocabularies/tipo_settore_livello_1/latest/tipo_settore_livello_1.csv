@@ -1,0 +1,25 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/01,01,"Agricoltura, silvicoltura e pesca",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/02,02,Produzioni alimentari,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/03,03,Legno e arredo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/04,04,Carta e cartotecnica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/05,05,"Tessile, abbigliamento, calzaturiero e sistema moda",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/06,06,Chimica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/07,07,"Estrazione gas, petrolio, carbone, minerali e lavorazione pietre",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/08,08,"Vetro, ceramica e materiali da costruzione",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/09,09,Edilizia,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/10,10,"Meccanica, produzione e manutenzione di macchine, impiantistica",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/11,11,Trasporti e logistica,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/12,12,Servizi di distribuzione commerciale,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/13,13,Servizi finanziari e assicurativi,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/14,14,Servizi digitali,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/15,15,Servizi di telecomunicazione e poste,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/16,16,Servizi di public utilities,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/17,17,Stampa ed editoria,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/18,18,"Servizi di educazione, formazione e lavoro",1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/19,19,Servizi socio-sanitari,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/20,20,Servizi alla persona,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/21,21,Servizi di attività ricreative e sportive,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/22,22,Servizi culturali e di spettacolo,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/23,23,Servizi turistici,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/24,24,Area comune,1

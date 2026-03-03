@@ -1,0 +1,18 @@
+url,id,label_it,level
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/0,0,NESSUN TITOLO DI STUDIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/1,1,LICENZA ELEMENTARE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/11,11,DIPLOMA DI SPECIALIZZAZIONE,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/12,12,TITOLO DI DOTTORE DI RICERCA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/13,13,LAUREA DI PRIMO LIVELLO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/14,14,DIPLOMA DI LAUREA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/15,15,LAUREA SPECIALISTICA A CICLO UNICO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/16,16,LAUREA SPECIALISTICA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/17,17,MASTER UNIVERSITARIO DI SECONDO LIVELLO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/2,2,LICENZA MEDIA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/3,3,TITOLO DI ISTRUZIONE SECONDARIA SUPERIORE (SCOLASTICA ED EXTRA-SCOLASTICA) CHE NON PERMETTE L'ACCESSO ALL'UNIVERSITÀ (),1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/4,4,DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE  CHE PERMETTE L'ACCESSO ALL'UNIVERSITA',1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/5,5,DIPLOMA TERZIARIO EXTRA-UNIVERSITARIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/6,6,DIPLOMA UNIVERSITARIO,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/7,7,LAUREA - Vecchio o nuovo ordinamento ,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/8,8,TITOLO DI STUDIO POST-LAUREA,1
+https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/9,9,MASTER UNIVERSITARIO DI PRIMO LIVELLO,1
