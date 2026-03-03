@@ -1,0 +1,397 @@
+@prefix adms: <https://w3id.org/italia/onto/ADMS/> .
+@prefix CLV: <https://w3id.org/italia/onto/CLV/> .
+@prefix COV: <https://w3id.org/italia/onto/COV/> .
+@prefix CPV: <https://w3id.org/italia/onto/CPV/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix L0: <https://w3id.org/italia/onto/l0/> .
+@prefix lsp-srv: <https://w3id.org/italia/labour-social-policies/onto/survey/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix RO: <https://w3id.org/italia/onto/RO/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lsp-srv: a owl:Ontology ;
+    owl:versionIRI lsp-srv:0.1 ;
+    owl:imports CLV:,
+        COV:,
+        CPV:,
+        L0:,
+        RO: ;
+    rdfs:label "Ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali"@it,
+        "Ontology of surveys within the GePI of the Ministry of Labor and Social Policies"@en ;
+    rdfs:comment "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it,
+        "Ontology of the Ministry of Labor and Social Policies related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en ;
+    owl:versionInfo "0.1 - Modificata il 26 Febbraio 2026"@it,
+        "0.1 - Modified on 26 February 2026"@en ;
+    rdfs:isDefinedBy lsp-srv: ;
+    adms:acronym "lsp" ;
+    adms:hasContributor <https://w3id.org/italia/data/organization/public-organization/td> ;
+    adms:hasFormalityLevel adms:Formal ;
+    adms:hasKeyClass lsp-srv:Domanda,
+        lsp-srv:ModelloDiSezione,
+        lsp-srv:QuestionarioDelRedattore ;
+    adms:hasOntologyLanguage adms:OWL ;
+    adms:hasSemanticAssetDistribution <https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES>,
+        <https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE>,
+        <https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> ;
+    adms:hasTask adms:AnnotationTask,
+        adms:QueryFormulationTask,
+        adms:SearchTask ;
+    adms:last lsp-srv:0.1 ;
+    adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/survey/"^^xsd:anyURI ;
+    adms:prefix "lsp-srv" ;
+    adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
+    adms:status "draft" ;
+    adms:target "Cittadini"@it,
+        "Imprese"@it,
+        "Pubbliche Amministrazioni"@it ;
+    adms:type adms:ServiceOnytology ;
+    dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    dcat:keyword "Domanda"@it,
+        "editor's survey"@en,
+        "modello di sezione"@it,
+        "questionario del redattore"@it,
+        "request"@en,
+        "section model"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    dct:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:description "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it,
+        "Ontology of the Ministry of Labor and Social Policies related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey."@en ;
+    dct:identifier "https://w3id.org/italia/labour-social-policies/onto/survey" ;
+    dct:issued "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dct:modified "2026-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    dct:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    dct:title "Ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali"@it,
+        "Ontology of surveys within the GePI of the Ministry of Labor and Social Policies"@en .
+
+### Object Properties
+
+lsp-srv:contieneRispostaDelRedattore a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "contiene risposta del redattore"@it ;
+    rdfs:domain lsp-srv:SezioneDelQuestionarioDelRedattore ;
+    rdfs:range lsp-srv:RispostaDelRedattore ;
+    rdfs:comment "Lega una specifica risposta alla relativa sezione che contiene la domanda."@it .
+
+lsp-srv:haDomanda a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha domanda"@it ;
+    rdfs:domain lsp-srv:ModelloDiSezione ;
+    rdfs:range lsp-srv:Domanda ;
+    rdfs:comment "Lega una domanda alla sua sezione."@it .
+
+lsp-srv:haModelloDiQuestionario a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha modello di questionario"@it ;
+    rdfs:domain lsp-srv:QuestionarioDelRedattore ;
+    rdfs:range lsp-srv:ModelloDiQuestionario ;
+    rdfs:comment "Lega un questionario compilato da un redattore al modello del questionario."@it .
+
+lsp-srv:haModelloDiSezione a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha modello di sezione"@it ;
+    rdfs:domain lsp-srv:ModelloDiQuestionario ;
+    rdfs:range lsp-srv:ModelloDiSezione ;
+    rdfs:comment "Lega un modello di questionario ai suoi modelli di sezione."@it .
+
+lsp-srv:haOpzioneDiRisposta a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha opzione di risposta"@it ;
+    rdfs:domain lsp-srv:Domanda ;
+    rdfs:range lsp-srv:OpzioneDiRisposta ;
+    rdfs:comment "Lega una domanda alle sue opzioni di risposta."@it .
+
+lsp-srv:haQuestionarioDelRedattore a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha questionario del redattore"@it ;
+    rdfs:domain lsp-srv:Redattore ;
+    rdfs:range lsp-srv:QuestionarioDelRedattore ;
+    rdfs:comment "Lega un redattore ai suoi questionari compilati."@it .
+
+lsp-srv:haSezioneDelQuestionarioDelRedattore a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha sezione del questionario del redattore"@it ;
+    rdfs:domain lsp-srv:QuestionarioDelRedattore ;
+    rdfs:range lsp-srv:SezioneDelQuestionarioDelRedattore ;
+    rdfs:comment "Lega un questionario compilato alle sue sezioni di risposte."@it .
+
+lsp-srv:haSezioneDiModello a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha sezione di modello"@it ;
+    rdfs:domain lsp-srv:SezioneDelQuestionarioDelRedattore ;
+    rdfs:range lsp-srv:ModelloDiSezione ;
+    rdfs:comment "Lega una sezione del questionario del redattore, contenente le risposte, alla relativa sezione del modello di questionario, contenente le domande."@it .
+
+lsp-srv:haSoggettoDellaRisposta a owl:ObjectProperty ;
+    rdfs:label "ha soggetto della risposta"@it ;
+    rdfs:domain lsp-srv:RispostaDelRedattore ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf (
+                    L0:Agent
+                    [ a owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+                        owl:someValuesFrom L0:Agent ] ) ] ;
+    rdfs:comment "Lega una risposta al soggetto a cui si riferisce."@it .
+
+lsp-srv:haSoggettoDellaSezione a owl:ObjectProperty ;
+    rdfs:label "ha soggetto della sezione"@it ;
+    rdfs:domain lsp-srv:SezioneDelQuestionarioDelRedattore ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf (
+                    L0:Agent
+                    [ a owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+                        owl:someValuesFrom L0:Agent ] ) ] ;
+    rdfs:comment "Lega una sezione di risposte ad soggetto a cui si riferisce."@it .
+
+lsp-srv:haSottodomanda a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha sottodomanda"@it ;
+    rdfs:domain lsp-srv:OpzioneDiRisposta ;
+    rdfs:range lsp-srv:Domanda ;
+    rdfs:comment "Lega una domanda ad una sua ulteriore domanda necessaria per fornire la risposta."@it .
+
+lsp-srv:haSottosezione a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha sottosezione"@it ;
+    rdfs:domain lsp-srv:ModelloDiSezione ;
+    rdfs:range lsp-srv:ModelloDiSezione ;
+    rdfs:comment "Lega una sezione alle sue sottosezioni."@it .
+
+lsp-srv:haSubopzione a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "ha subopzione"@it ;
+    rdfs:domain lsp-srv:OpzioneDiRisposta ;
+    rdfs:range lsp-srv:OpzioneDiRisposta ;
+    rdfs:comment "Lega una opzione alle sue ulteriori opzioni."@it .
+
+lsp-srv:èOpzioneDiRisposta a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "è opzione di risposta"@it ;
+    rdfs:domain lsp-srv:RispostaDelRedattore ;
+    rdfs:range lsp-srv:OpzioneDiRisposta ;
+    rdfs:comment "Lega una risposta all'opzione prevista dalla domanda."@it .
+
+lsp-srv:èRispostaADomanda a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "è risposta a domanda"@it ;
+    rdfs:domain lsp-srv:RispostaDelRedattore ;
+    rdfs:range lsp-srv:Domanda ;
+    rdfs:comment "Lega una risposta alla relativa domanda."@it .
+
+RO:holdsRoleInTime a owl:ObjectProperty .
+
+### Datatypes
+
+xsd:string a rdfs:Datatype .
+
+### Data Properties
+
+lsp-srv:descrizioneDomanda a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione domanda"@it ;
+    rdfs:domain lsp-srv:Domanda ;
+    rdfs:comment "Descrizione della domanda"@it .
+
+lsp-srv:idDomanda a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id domanda"@it ;
+    rdfs:domain lsp-srv:Domanda ;
+    rdfs:comment "Identificativo della domanda"@it .
+
+lsp-srv:idSezione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "id sezione"@it ;
+    rdfs:domain lsp-srv:SezioneDelQuestionarioDelRedattore ;
+    rdfs:comment "Identificativo del modello di sezione"@it .
+
+lsp-srv:testoDellaRisposta a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "testo della risposta"@it ;
+    rdfs:domain lsp-srv:RispostaDelRedattore ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Contenuto della risposta espresso in formato testuale qualora la domanda lo preveda."@it .
+
+lsp-srv:testoSezione a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "testo sezione"@it ;
+    rdfs:domain lsp-srv:SezioneDelQuestionarioDelRedattore ;
+    rdfs:comment " Indica il testo della sezione"@it .
+
+lsp-srv:valoreDellaRisposta a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "valore della risposta"@it ;
+    rdfs:domain lsp-srv:RispostaDelRedattore ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Valore attribuito dal redattore alla domanda qualora questa preveda l'indicazione di un valore."@it .
+
+### Classes
+
+L0:Agent a owl:Class ;
+    owl:disjointWith [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+            owl:someValuesFrom L0:Agent ] .
+
+lsp-srv:Domanda a owl:Class ;
+    rdfs:label "Domanda"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:haDomanda ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:haSottodomanda ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:èRispostaADomanda ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Classifica le domande presenti nelle sezioni dei modelli di questionario."@it .
+
+lsp-srv:ModelloDiQuestionario a owl:Class ;
+    rdfs:label "Modello di questionario"@it ;
+    rdfs:comment "Classifica i modelli di questionario ciascuno dei quali è organizzato, secondo una propria logica e un proprio obiettivo, in sezioni e domande."@it .
+
+lsp-srv:ModelloDiSezione a owl:Class ;
+    rdfs:label "Modello di sezione"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:haModelloDiSezione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:haSottosezione ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Rappresenta una specifica sezione di un modello di questionario."@it .
+
+lsp-srv:OpzioneDiRisposta a owl:Class ;
+    rdfs:label "Opzione di risposta"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:haOpzioneDiRisposta ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:haSubopzione ] ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:èOpzioneDiRisposta ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Classifica le possibili opzioni di risposta accoppiate ad una domanda di una sezione di un modello di questionario. Una opzione di risposta potrebbe indicare una ulteriore domanda."@it .
+
+lsp-srv:QuestionarioDelRedattore a owl:Class ;
+    rdfs:label "Questionario del redattore"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-srv:haModelloDiQuestionario ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:haQuestionarioDelRedattore ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Classifica i questionari compilati da i redattori. Un questionario compilato è relativo ad un certo modello di questionario."@it .
+
+lsp-srv:Redattore a owl:Class ;
+    rdfs:label "Redattore"@it ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf (
+                    L0:Agent
+                    [ a owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf RO:holdsRoleInTime ] ;
+                        owl:someValuesFrom L0:Agent ] ) ] ;
+    rdfs:comment "È l'agente, o un suo ruolo, che compila il questionario."@it .
+
+lsp-srv:RispostaDelRedattore a owl:Class ;
+    rdfs:label "Risposta del redattore"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-srv:èOpzioneDiRisposta ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-srv:èRispostaADomanda ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-srv:contieneRispostaDelRedattore ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Classifica le risposte di ciascun redattore ad una specifica domanda. La risposta può essere riferita ad un sogetto diverso dal redattore stesso."@it .
+
+lsp-srv:SezioneDelQuestionarioDelRedattore a owl:Class ;
+    rdfs:label "Sezione del questionario del redattore"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-srv:contieneRispostaDelRedattore ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty lsp-srv:haSezioneDiModello ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Classifica le sezioni di un questionario compilate da un redattore, contiene quindi le sue risposte. Tale sezione è definita a partire dalla sezione del modello di questionario che il redattore sta compilando e che contiene le domande a cui il redattore deve rispondere. La sezione compilata potrebbe riferirsi ad un soggetto diverso dal redattore."@it .
+
+### Individuals
+
+<https://w3id.org/italia/data/organization/public-organization/td> a dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    dct:identifier "TD" ;
+    foaf:name "Digital Transformation Team"@en,
+        "Team per la Trasformazione Digitale"@it .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a dcatapit:Organization,
+        owl:NamedIndividual,
+        vcard:Kind,
+        vcard:Organization ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    dct:identifier "DGInnovazioneDiv3" ;
+    foaf:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione - Divisione III"@it ;
+    vcard:fn "MLPS DG Innovazione - Divisione III" ;
+    vcard:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a COV:PublicOrganization,
+        dcatapit:Agent,
+        foaf:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    dct:identifier "mlps" ;
+    foaf:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/survey/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/survey/latest/survey.n3> ;
+    dct:description "Questa è la distribuzione N-TRIPLES dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it,
+        "This is the distribution in N-TRIPLES of the Labour and Social Policies Ministry Ontology related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione N-TRIPLES dell'ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali - GePI"@it,
+        "N-TRIPLES distribution of the Labour and Social Policies Ministry ontology of surveys within the GePI - GePI"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/survey/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/survey/latest/survey.ttl> ;
+    dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it,
+        "This is the distribution in RDF/Turtle of the Labour and Social Policy Ministry Ontology related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/Turtle dell'ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali - GePI"@it,
+        "RDF/Turtle distribution of the Labour and Social Policies Ministry ontology of surveys within the GePI - GePI"@en .
+
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> a adms:SemanticAssetDistribution,
+        dcat:Distribution,
+        dcatapit:Distribution,
+        owl:NamedIndividual ;
+    dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/survey/latest> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/survey/latest/survey.owl> ;
+    dct:description "Questa è la distribuzione RDF/XML dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it,
+        "This is the distribution in RDF/XML of the Labour and Social Policy Ministry Ontology related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "Distribuzione RDF/XML dell'ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali - GePI"@it,
+        "RDF/XML distribution of the Labour and Social Policies Ministry ontology of surveys within the GePI - GePI"@en .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

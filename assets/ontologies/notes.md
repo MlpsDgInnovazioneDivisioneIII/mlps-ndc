@@ -23,3 +23,7 @@ Diagrammi Ontologia Social-GePI:
 ![image info](social/latest/social_interfaccia.png)
 ![image info](social/latest/social_nucleo.png)
 ![image info](social/latest/social_pad.png)
+
+Diagrammi Ontologia Survey-GePI:
+
+![image info](survey/latest/survey_questionario.png)

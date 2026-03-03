@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphol version="3">
+  <project version="0.2" name="MLPSSurvey">
+    <ontology iri="https://w3id.org/italia/labour-social-policies/onto/survey/" addLabelFromSimpleName="0" lang="it" prefix="lsp-srv" addLabelFromUserInput="1">
+      <imports/>
+      <prefixes>
+        <prefix>
+          <value>L0</value>
+          <namespace>https://w3id.org/italia/onto/l0/</namespace>
+        </prefix>
+        <prefix>
+          <value>RO</value>
+          <namespace>https://w3id.org/italia/onto/RO/</namespace>
+        </prefix>
+        <prefix>
+          <value>lsp-core</value>
+          <namespace>https://w3id.org/italia/labour-social-policies/onto/core/</namespace>
+        </prefix>
+        <prefix>
+          <value>lsp-social</value>
+          <namespace>https://w3id.org/italia/labour-social-policies/onto/social/</namespace>
+        </prefix>
+        <prefix>
+          <value>lsp-srv</value>
+          <namespace>https://w3id.org/italia/labour-social-policies/onto/survey/</namespace>
+        </prefix>
+        <prefix>
+          <value>owl</value>
+          <namespace>http://www.w3.org/2002/07/owl#</namespace>
+        </prefix>
+        <prefix>
+          <value>rdf</value>
+          <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+        </prefix>
+        <prefix>
+          <value>rdfs</value>
+          <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+        </prefix>
+        <prefix>
+          <value>xml</value>
+          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
+        </prefix>
+        <prefix>
+          <value>xsd</value>
+          <namespace>http://www.w3.org/2001/XMLSchema#</namespace>
+        </prefix>
+      </prefixes>
+      <datatypes>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</datatype>
+        <datatype>http://www.w3.org/2000/01/rdf-schema#Literal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NCName</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NMTOKEN</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#Name</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#base64Binary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#boolean</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#byte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTimeStamp</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#float</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#hexBinary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#int</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#integer</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#language</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#long</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#negativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonNegativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonPositiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#normalizedString</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#positiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#short</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#token</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedByte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedInt</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedLong</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedShort</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#rational</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#real</datatype>
+      </datatypes>
+      <languages>
+        <language>de</language>
+        <language>en</language>
+        <language>es</language>
+        <language>fr</language>
+        <language>it</language>
+      </languages>
+      <facets>
+        <facet>http://www.w3.org/2001/XMLSchema#langRange</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#length</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#pattern</facet>
+      </facets>
+      <annotationProperties>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#comment</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#label</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#deprecated</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#fetchedFrom</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#incompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#priorVersion</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#versionInfo</annotationProperty>
+      </annotationProperties>
+      <iris>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/</value>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/Domanda</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/Domanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Domanda</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/Domanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Classifica le domande presenti nelle sezioni dei modelli di questionario.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Modello di questionario</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Classifica i modelli di questionario ciascuno dei quali è organizzato, secondo una propria logica e un proprio obiettivo, in sezioni e domande.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Modello di sezione</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Rappresenta una specifica sezione di un modello di questionario.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Opzione di risposta</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Classifica le possibili opzioni di risposta accoppiate ad una domanda di una sezione di un modello di questionario. Una opzione di risposta potrebbe indicare una ulteriore domanda.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Questionario del redattore</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Classifica i questionari compilati da i redattori. Un questionario compilato è relativo ad un certo modello di questionario.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/Redattore</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/Redattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Redattore</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/Redattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>È l'agente, o un suo ruolo, che compila il questionario.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Risposta del redattore</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Classifica le risposte di ciascun redattore ad una specifica domanda. La risposta può essere riferita ad un sogetto diverso dal redattore stesso.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Sezione del questionario del redattore</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Classifica le sezioni di un questionario compilate da un redattore, contiene quindi le sue risposte. Tale sezione è definita a partire dalla sezione del modello di questionario che il redattore sta compilando e che contiene le domande a cui il redattore deve rispondere. La sezione compilata potrebbe riferirsi ad un soggetto diverso dal redattore.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>contiene risposta del redattore</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una specifica risposta alla relativa sezione che contiene la domanda.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>descrizione domanda</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Descrizione della domanda</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha domanda</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una domanda alla sua sezione.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha modello di questionario</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega un questionario compilato da un redattore al modello del questionario.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha modello di sezione</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega un modello di questionario ai suoi modelli di sezione.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha opzione di risposta</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una domanda alle sue opzioni di risposta.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha questionario del redattore</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega un redattore ai suoi questionari compilati.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha sezione del questionario del redattore</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega un questionario compilato alle sue sezioni di risposte.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha sezione di modello</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una sezione del questionario del redattore, contenente le risposte, alla relativa sezione del modello di questionario, contenente le domande.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha soggetto della risposta</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una risposta al soggetto a cui si riferisce.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha soggetto della sezione</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una sezione di risposte ad soggetto a cui si riferisce.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha sottodomanda</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una domanda ad una sua ulteriore domanda necessaria per fornire la risposta.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha sottosezione</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una sezione alle sue sottosezioni.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ha subopzione</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una opzione alle sue ulteriori opzioni.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>id domanda</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Identificativo della domanda</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/idSezione</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/idSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>id sezione</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/idSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Identificativo del modello di sezione</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>testo della risposta</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Contenuto della risposta espresso in formato testuale qualora la domanda lo preveda.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>testo sezione</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm> Indica il testo della sezione</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>valore della risposta</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Valore attribuito dal redattore alla domanda qualora questa preveda l'indicazione di un valore.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/èOpzioneDiRisposta</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/èOpzioneDiRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>è opzione di risposta</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/èOpzioneDiRisposta</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una risposta all'opzione prevista dalla domanda.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/èRispostaADomanda</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/èRispostaADomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>è risposta a domanda</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/survey/èRispostaADomanda</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Lega una risposta alla relativa domanda.</lexicalForm>
+                <datatype/>
+                <language>it</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/RO/holdsRoleInTime</value>
+        </iri>
+        <iri>
+          <value>https://w3id.org/italia/onto/l0/Agent</value>
+        </iri>
+      </iris>
+    </ontology>
+    <diagrams>
+      <diagram name="questionario" height="5000" width="5000">
+        <node id="n1" color="#fcfcfc" type="concept">
+          <geometry y="-70" height="50" width="110" x="130"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione</iri>
+          <label size="12" customSize="0" y="-70" height="22" width="110" x="130"/>
+        </node>
+        <node id="n10" color="#000000" type="range-restriction">
+          <geometry y="-70" height="20" width="20" x="-50"/>
+          <label size="12" customSize="0" y="-50" height="22" width="39" x="-50">exists</label>
+        </node>
+        <node id="n11" color="#fcfcfc" type="concept">
+          <geometry y="600" height="50" width="110" x="130"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/Domanda</iri>
+          <label size="12" customSize="0" y="600" height="22" width="110" x="130"/>
+        </node>
+        <node id="n12" color="#fcfcfc" type="role">
+          <geometry y="440" height="50" width="70" x="130"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda</iri>
+          <label size="12" customSize="0" y="440" height="22" width="78" x="55"/>
+        </node>
+        <node id="n13" color="#fcfcfc" type="domain-restriction">
+          <geometry y="370" height="20" width="20" x="130"/>
+          <label size="12" customSize="0" y="375" height="22" width="39" x="85">exists</label>
+        </node>
+        <node id="n14" color="#000000" type="range-restriction">
+          <geometry y="510" height="20" width="20" x="130"/>
+          <label size="12" customSize="0" y="510" height="22" width="39" x="95">exists</label>
+        </node>
+        <node id="n15" color="#fcfcfc" type="concept">
+          <geometry y="880" height="50" width="110" x="130"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta</iri>
+          <label size="12" customSize="0" y="880" height="36" width="110" x="130"/>
+        </node>
+        <node id="n17" color="#fcfcfc" type="role">
+          <geometry y="730" height="50" width="70" x="130"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta</iri>
+          <label size="12" customSize="0" y="705" height="22" width="128" x="205"/>
+        </node>
+        <node id="n18" color="#fcfcfc" type="domain-restriction">
+          <geometry y="670" height="20" width="20" x="130"/>
+          <label size="12" customSize="0" y="670" height="22" width="39" x="165">exists</label>
+        </node>
+        <node id="n19" color="#000000" type="range-restriction">
+          <geometry y="790" height="20" width="20" x="130"/>
+          <label size="12" customSize="0" y="790" height="22" width="39" x="160">exists</label>
+        </node>
+        <node id="n2" color="#fcfcfc" type="role">
+          <geometry y="-70" height="50" width="70" x="290"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione</iri>
+          <label size="12" customSize="0" y="-100" height="22" width="94" x="240"/>
+        </node>
+        <node id="n20" color="#fcfcfc" type="role">
+          <geometry y="730" height="50" width="70" x="290"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda</iri>
+          <label size="12" customSize="0" y="755" height="22" width="106" x="235"/>
+        </node>
+        <node id="n21" color="#fcfcfc" type="domain-restriction">
+          <geometry y="810" height="20" width="20" x="290"/>
+          <label size="12" customSize="0" y="810" height="22" width="39" x="320">exists</label>
+        </node>
+        <node id="n22" color="#000000" type="range-restriction">
+          <geometry y="660" height="20" width="20" x="290"/>
+          <label size="12" customSize="0" y="660" height="22" width="39" x="325">exists</label>
+        </node>
+        <node id="n23" color="#fcfcfc" type="role">
+          <geometry y="870" height="50" width="70" x="-10"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione</iri>
+          <label size="12" customSize="0" y="850" height="22" width="88" x="-70"/>
+        </node>
+        <node id="n24" color="#fcfcfc" type="domain-restriction">
+          <geometry y="950" height="20" width="20" x="-10"/>
+          <label size="12" customSize="0" y="950" height="22" width="39" x="-45">exists</label>
+        </node>
+        <node id="n25" color="#000000" type="range-restriction">
+          <geometry y="800" height="20" width="20" x="-10"/>
+          <label size="12" customSize="0" y="800" height="22" width="39" x="-45">exists</label>
+        </node>
+        <node id="n26" color="#fcfcfc" type="concept">
+          <geometry y="600" height="50" width="110" x="-610"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore</iri>
+          <label size="12" customSize="0" y="600" height="36" width="110" x="-610"/>
+        </node>
+        <node id="n27" color="#fcfcfc" type="role">
+          <geometry y="430" height="50" width="70" x="-610"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore</iri>
+          <label size="12" customSize="0" y="395" height="22" width="172" x="-620"/>
+        </node>
+        <node id="n30" color="#000000" type="range-restriction">
+          <geometry y="500" height="20" width="20" x="-610"/>
+          <label size="12" customSize="0" y="500" height="22" width="39" x="-640">exists</label>
+        </node>
+        <node id="n31" color="#fcfcfc" type="domain-restriction">
+          <geometry y="360" height="20" width="20" x="-610"/>
+          <label size="12" customSize="0" y="360" height="22" width="39" x="-640">exists</label>
+        </node>
+        <node id="n32" color="#fcfcfc" type="role">
+          <geometry y="1020" height="50" width="70" x="-310"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/èOpzioneDiRisposta</iri>
+          <label size="12" customSize="0" y="980" height="22" width="120" x="-305"/>
+        </node>
+        <node id="n33" color="#fcfcfc" type="domain-restriction">
+          <geometry y="1020" height="20" width="20" x="-400"/>
+          <label size="12" customSize="0" y="1000" height="22" width="39" x="-400">exists</label>
+        </node>
+        <node id="n34" color="#000000" type="range-restriction">
+          <geometry y="1020" height="20" width="20" x="-220"/>
+          <label size="12" customSize="0" y="995" height="22" width="39" x="-220">exists</label>
+        </node>
+        <node id="n35" color="#fcfcfc" type="concept">
+          <geometry y="200" height="50" width="110" x="-1090"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/Redattore</iri>
+          <label size="12" customSize="0" y="200" height="22" width="110" x="-1090"/>
+        </node>
+        <node id="n36" color="#fcfcfc" type="concept">
+          <geometry y="200" height="50" width="110" x="-610"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore</iri>
+          <label size="12" customSize="0" y="200" height="36" width="110" x="-610"/>
+        </node>
+        <node id="n37" color="#fcfcfc" type="role">
+          <geometry y="-70" height="50" width="70" x="-610"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario</iri>
+          <label size="12" customSize="0" y="-100" height="22" width="153" x="-610"/>
+        </node>
+        <node id="n38" color="#fcfcfc" type="domain-restriction">
+          <geometry y="0" height="20" width="20" x="-610"/>
+          <label size="12" customSize="0" y="5" height="22" width="39" x="-640">exists</label>
+        </node>
+        <node id="n39" color="#000000" type="range-restriction">
+          <geometry y="-70" height="20" width="20" x="-510"/>
+          <label size="12" customSize="0" y="-92" height="22" width="39" x="-510">exists</label>
+        </node>
+        <node id="n40" color="#fcfcfc" type="role">
+          <geometry y="200" height="50" width="70" x="-860"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore</iri>
+          <label size="12" customSize="0" y="170" height="22" width="164" x="-860"/>
+        </node>
+        <node id="n41" color="#fcfcfc" type="domain-restriction">
+          <geometry y="200" height="20" width="20" x="-960"/>
+          <label size="12" customSize="0" y="220" height="22" width="39" x="-960">exists</label>
+        </node>
+        <node id="n42" color="#000000" type="range-restriction">
+          <geometry y="200" height="20" width="20" x="-760"/>
+          <label size="12" customSize="0" y="220" height="22" width="39" x="-760">exists</label>
+        </node>
+        <node id="n43" color="#fcfcfc" type="role">
+          <geometry y="600" height="50" width="70" x="-230"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/èRispostaADomanda</iri>
+          <label size="12" customSize="0" y="570" height="22" width="127" x="-230"/>
+        </node>
+        <node id="n44" color="#fcfcfc" type="domain-restriction">
+          <geometry y="600" height="20" width="20" x="-330"/>
+          <label size="12" customSize="0" y="578" height="22" width="39" x="-330">exists</label>
+        </node>
+        <node id="n45" color="#000000" type="range-restriction">
+          <geometry y="600" height="20" width="20" x="-130"/>
+          <label size="12" customSize="0" y="578" height="22" width="39" x="-130">exists</label>
+        </node>
+        <node id="n46" color="#fcfcfc" type="concept">
+          <geometry y="200" height="50" width="110" x="-120"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore</iri>
+          <label size="12" customSize="0" y="200" height="50" width="110" x="-120"/>
+        </node>
+        <node id="n47" color="#fcfcfc" type="role">
+          <geometry y="200" height="50" width="70" x="-370"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore</iri>
+          <label size="12" customSize="0" y="170" height="22" width="227" x="-370"/>
+        </node>
+        <node id="n48" color="#fcfcfc" type="domain-restriction">
+          <geometry y="200" height="20" width="20" x="-470"/>
+          <label size="12" customSize="0" y="220" height="22" width="39" x="-470">exists</label>
+        </node>
+        <node id="n49" color="#000000" type="range-restriction">
+          <geometry y="200" height="20" width="20" x="-270"/>
+          <label size="12" customSize="0" y="220" height="22" width="39" x="-270">exists</label>
+        </node>
+        <node id="n5" color="#fcfcfc" type="domain-restriction">
+          <geometry y="20" height="20" width="20" x="290"/>
+          <label size="12" customSize="0" y="45" height="22" width="39" x="290">exists</label>
+        </node>
+        <node id="n50" color="#fcfcfc" type="role">
+          <geometry y="50" height="50" width="70" x="-120"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello</iri>
+          <label size="12" customSize="0" y="20" height="22" width="126" x="-120"/>
+        </node>
+        <node id="n51" color="#fcfcfc" type="domain-restriction">
+          <geometry y="110" height="20" width="20" x="-120"/>
+          <label size="12" customSize="0" y="110" height="22" width="39" x="-150">exists</label>
+        </node>
+        <node id="n52" color="#000000" type="range-restriction">
+          <geometry y="50" height="20" width="20" x="-20"/>
+          <label size="12" customSize="0" y="75" height="22" width="39" x="-20">exists</label>
+        </node>
+        <node id="n58" color="#fcfcfc" type="concept">
+          <geometry y="490" height="50" width="110" x="-260"/>
+          <iri>https://w3id.org/italia/onto/l0/Agent</iri>
+          <label size="12" customSize="0" y="490" height="22" width="110" x="-260"/>
+        </node>
+        <node id="n59" color="#fcfcfc" type="role">
+          <geometry y="490" height="50" width="70" x="-50"/>
+          <iri>https://w3id.org/italia/onto/RO/holdsRoleInTime</iri>
+          <label size="12" customSize="0" y="525" height="22" width="116" x="-45"/>
+        </node>
+        <node id="n6" color="#000000" type="range-restriction">
+          <geometry y="-160" height="20" width="20" x="290"/>
+          <label size="12" customSize="0" y="-182" height="22" width="39" x="290">exists</label>
+        </node>
+        <node id="n60" color="#000000" type="range-restriction">
+          <geometry y="490" height="20" width="20" x="-150"/>
+          <label size="12" customSize="0" y="515" height="22" width="39" x="-145">exists</label>
+        </node>
+        <node id="n61" color="#000000" type="disjoint-union">
+          <geometry y="410" height="30" width="50" x="-200"/>
+        </node>
+        <node id="n62" color="#fcfcfc" type="role">
+          <geometry y="290" height="50" width="70" x="-10"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione</iri>
+          <label size="12" customSize="0" y="260" height="22" width="146" x="-10"/>
+        </node>
+        <node id="n64" color="#fcfcfc" type="role">
+          <geometry y="350" height="50" width="70" x="-430"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta</iri>
+          <label size="12" customSize="0" y="320" height="22" width="149" x="-430"/>
+        </node>
+        <node id="n65" color="#fcfcfc" type="domain-restriction">
+          <geometry y="420" height="20" width="20" x="-430"/>
+          <label size="12" customSize="0" y="420" height="22" width="39" x="-400">exists</label>
+        </node>
+        <node id="n66" color="#000000" type="range-restriction">
+          <geometry y="350" height="20" width="20" x="-330"/>
+          <label size="12" customSize="0" y="328" height="22" width="39" x="-330">exists</label>
+        </node>
+        <node id="n67" color="#fcfcfc" type="domain-restriction">
+          <geometry y="220" height="20" width="20" x="-10"/>
+          <label size="12" customSize="0" y="220" height="22" width="39" x="25">exists</label>
+        </node>
+        <node id="n68" color="#000000" type="range-restriction">
+          <geometry y="350" height="20" width="20" x="-10"/>
+          <label size="12" customSize="0" y="350" height="22" width="39" x="20">exists</label>
+        </node>
+        <node id="n69" color="#fcfcfc" type="attribute">
+          <geometry y="580" height="20" width="20" x="-830"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta</iri>
+          <label size="12" customSize="0" y="558" height="22" width="117" x="-830"/>
+        </node>
+        <node id="n7" color="#fcfcfc" type="concept">
+          <geometry y="-70" height="50" width="110" x="-380"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario</iri>
+          <label size="12" customSize="0" y="-70" height="36" width="110" x="-380"/>
+        </node>
+        <node id="n70" color="#fcfcfc" type="attribute">
+          <geometry y="620" height="20" width="20" x="-830"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta</iri>
+          <label size="12" customSize="0" y="598" height="22" width="111" x="-830"/>
+        </node>
+        <node id="n71" color="#fcfcfc" type="domain-restriction">
+          <geometry y="580" height="20" width="20" x="-740"/>
+          <label size="12" customSize="0" y="558" height="22" width="39" x="-740">exists</label>
+        </node>
+        <node id="n72" color="#fcfcfc" type="domain-restriction">
+          <geometry y="620" height="20" width="20" x="-740"/>
+          <label size="12" customSize="0" y="598" height="22" width="39" x="-740">exists</label>
+        </node>
+        <node id="n73" color="#fcfcfc" type="attribute">
+          <geometry y="110" height="20" width="20" x="70"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/idSezione</iri>
+          <label size="12" customSize="0" y="88" height="22" width="62" x="70"/>
+        </node>
+        <node id="n75" color="#fcfcfc" type="domain-restriction">
+          <geometry y="110" height="20" width="20" x="-10"/>
+          <label size="12" customSize="0" y="130" height="22" width="39" x="-10">exists</label>
+        </node>
+        <node id="n76" color="#fcfcfc" type="attribute">
+          <geometry y="510" height="20" width="20" x="350"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda</iri>
+          <label size="12" customSize="0" y="488" height="22" width="74" x="350"/>
+        </node>
+        <node id="n77" color="#fcfcfc" type="domain-restriction">
+          <geometry y="510" height="20" width="20" x="250"/>
+          <label size="12" customSize="0" y="488" height="22" width="39" x="250">exists</label>
+        </node>
+        <node id="n78" color="#fcfcfc" type="attribute">
+          <geometry y="550" height="20" width="20" x="350"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda</iri>
+          <label size="12" customSize="0" y="528" height="22" width="125" x="350"/>
+        </node>
+        <node id="n79" color="#fcfcfc" type="domain-restriction">
+          <geometry y="550" height="20" width="20" x="250"/>
+          <label size="12" customSize="0" y="528" height="22" width="39" x="250">exists</label>
+        </node>
+        <node id="n8" color="#fcfcfc" type="role">
+          <geometry y="-70" height="50" width="70" x="-150"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione</iri>
+          <label size="12" customSize="0" y="-100" height="22" width="126" x="-150"/>
+        </node>
+        <node id="n81" color="#fcfcfc" type="attribute">
+          <geometry y="150" height="20" width="20" x="70"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione</iri>
+          <label size="12" customSize="0" y="128" height="22" width="79" x="70"/>
+        </node>
+        <node id="n82" color="#fcfcfc" type="domain-restriction">
+          <geometry y="150" height="20" width="20" x="-10"/>
+          <label size="12" customSize="0" y="170" height="22" width="39" x="-10">exists</label>
+        </node>
+        <node id="n9" color="#fcfcfc" type="domain-restriction">
+          <geometry y="-70" height="20" width="20" x="-250"/>
+          <label size="12" customSize="0" y="-50" height="22" width="39" x="-250">exists</label>
+        </node>
+        <edge source="n2" id="e0" type="input" target="n6">
+          <point y="-70" x="290"/>
+          <point y="-160" x="290"/>
+        </edge>
+        <edge source="n2" id="e1" type="input" target="n5">
+          <point y="-70" x="290"/>
+          <point y="20" x="290"/>
+        </edge>
+        <edge source="n13" id="e10" type="inclusion" target="n1">
+          <point y="370" x="130"/>
+          <point y="-70" x="130"/>
+        </edge>
+        <edge source="n14" id="e11" type="equivalence" target="n11">
+          <point y="510" x="130"/>
+          <point y="600" x="130"/>
+        </edge>
+        <edge source="n17" id="e12" type="input" target="n18">
+          <point y="730" x="130"/>
+          <point y="670" x="130"/>
+        </edge>
+        <edge source="n17" id="e13" type="input" target="n19">
+          <point y="730" x="130"/>
+          <point y="790" x="130"/>
+        </edge>
+        <edge source="n18" id="e14" type="inclusion" target="n11">
+          <point y="670" x="130"/>
+          <point y="600" x="130"/>
+        </edge>
+        <edge source="n19" id="e15" type="equivalence" target="n15">
+          <point y="790" x="130"/>
+          <point y="880" x="130"/>
+        </edge>
+        <edge source="n20" id="e16" type="input" target="n21">
+          <point y="730" x="290"/>
+          <point y="810" x="290"/>
+        </edge>
+        <edge source="n20" id="e17" type="input" target="n22">
+          <point y="730" x="290"/>
+          <point y="660" x="290"/>
+        </edge>
+        <edge source="n21" id="e18" type="inclusion" target="n15">
+          <point y="810" x="290"/>
+          <point y="880" x="290"/>
+          <point y="880" x="130"/>
+        </edge>
+        <edge source="n22" id="e19" type="equivalence" target="n11">
+          <point y="660" x="290"/>
+          <point y="600" x="290"/>
+          <point y="600" x="130"/>
+        </edge>
+        <edge source="n5" id="e2" type="inclusion" target="n1">
+          <point y="20" x="290"/>
+          <point y="20" x="160"/>
+          <point y="-46" x="159"/>
+        </edge>
+        <edge source="n23" id="e20" type="input" target="n24">
+          <point y="870" x="-10"/>
+          <point y="950" x="-10"/>
+        </edge>
+        <edge source="n23" id="e21" type="input" target="n25">
+          <point y="870" x="-10"/>
+          <point y="800" x="-10"/>
+        </edge>
+        <edge source="n24" id="e22" type="inclusion" target="n15">
+          <point y="950" x="-10"/>
+          <point y="950" x="90"/>
+          <point y="904" x="90"/>
+        </edge>
+        <edge source="n25" id="e24" type="equivalence" target="n15">
+          <point y="800" x="-10"/>
+          <point y="800" x="90"/>
+          <point y="855" x="90"/>
+        </edge>
+        <edge source="n27" id="e25" type="input" target="n30">
+          <point y="430" x="-610"/>
+          <point y="500" x="-610"/>
+        </edge>
+        <edge source="n27" id="e26" type="input" target="n31">
+          <point y="430" x="-610"/>
+          <point y="360" x="-610"/>
+        </edge>
+        <edge source="n30" id="e28" type="equivalence" target="n26">
+          <point y="500" x="-610"/>
+          <point y="600" x="-610"/>
+        </edge>
+        <edge source="n32" id="e29" type="input" target="n33">
+          <point y="1020" x="-310"/>
+          <point y="1020" x="-400"/>
+        </edge>
+        <edge source="n6" id="e3" type="equivalence" target="n1">
+          <point y="-160" x="290"/>
+          <point y="-160" x="160"/>
+          <point y="-95" x="159"/>
+        </edge>
+        <edge source="n32" id="e30" type="input" target="n34">
+          <point y="1020" x="-310"/>
+          <point y="1020" x="-220"/>
+        </edge>
+        <edge source="n26" id="e31" type="equivalence" target="n33">
+          <point y="600" x="-610"/>
+          <point y="1020" x="-610"/>
+          <point y="1020" x="-400"/>
+        </edge>
+        <edge source="n34" id="e32" type="equivalence" target="n15">
+          <point y="1020" x="-220"/>
+          <point y="1020" x="130"/>
+          <point y="880" x="130"/>
+        </edge>
+        <edge source="n37" id="e33" type="input" target="n38">
+          <point y="-70" x="-610"/>
+          <point y="0" x="-610"/>
+        </edge>
+        <edge source="n37" id="e34" type="input" target="n39">
+          <point y="-70" x="-610"/>
+          <point y="-70" x="-510"/>
+        </edge>
+        <edge source="n36" id="e35" type="equivalence" target="n38">
+          <point y="200" x="-610"/>
+          <point y="0" x="-610"/>
+        </edge>
+        <edge source="n39" id="e36" type="inclusion" target="n7">
+          <point y="-70" x="-510"/>
+          <point y="-70" x="-380"/>
+        </edge>
+        <edge source="n40" id="e37" type="input" target="n41">
+          <point y="200" x="-860"/>
+          <point y="200" x="-960"/>
+        </edge>
+        <edge source="n40" id="e38" type="input" target="n42">
+          <point y="200" x="-860"/>
+          <point y="200" x="-760"/>
+        </edge>
+        <edge source="n41" id="e39" type="inclusion" target="n35">
+          <point y="200" x="-960"/>
+          <point y="200" x="-1090"/>
+        </edge>
+        <edge source="n8" id="e4" type="input" target="n9">
+          <point y="-70" x="-150"/>
+          <point y="-70" x="-250"/>
+        </edge>
+        <edge source="n42" id="e40" type="equivalence" target="n36">
+          <point y="200" x="-760"/>
+          <point y="200" x="-610"/>
+        </edge>
+        <edge source="n43" id="e42" type="input" target="n44">
+          <point y="600" x="-230"/>
+          <point y="600" x="-330"/>
+        </edge>
+        <edge source="n43" id="e43" type="input" target="n45">
+          <point y="600" x="-230"/>
+          <point y="600" x="-130"/>
+        </edge>
+        <edge source="n45" id="e44" type="equivalence" target="n11">
+          <point y="600" x="-130"/>
+          <point y="600" x="130"/>
+        </edge>
+        <edge source="n26" id="e45" type="equivalence" target="n44">
+          <point y="600" x="-610"/>
+          <point y="600" x="-330"/>
+        </edge>
+        <edge source="n47" id="e46" type="input" target="n48">
+          <point y="200" x="-370"/>
+          <point y="200" x="-470"/>
+        </edge>
+        <edge source="n47" id="e47" type="input" target="n49">
+          <point y="200" x="-370"/>
+          <point y="200" x="-270"/>
+        </edge>
+        <edge source="n48" id="e48" type="inclusion" target="n36">
+          <point y="200" x="-470"/>
+          <point y="200" x="-610"/>
+        </edge>
+        <edge source="n49" id="e49" type="inclusion" target="n46">
+          <point y="200" x="-270"/>
+          <point y="200" x="-120"/>
+        </edge>
+        <edge source="n8" id="e5" type="input" target="n10">
+          <point y="-70" x="-150"/>
+          <point y="-70" x="-50"/>
+        </edge>
+        <edge source="n50" id="e50" type="input" target="n51">
+          <point y="50" x="-120"/>
+          <point y="110" x="-120"/>
+        </edge>
+        <edge source="n50" id="e51" type="input" target="n52">
+          <point y="50" x="-120"/>
+          <point y="50" x="-20"/>
+        </edge>
+        <edge source="n51" id="e52" type="equivalence" target="n46">
+          <point y="110" x="-120"/>
+          <point y="200" x="-120"/>
+        </edge>
+        <edge source="n52" id="e53" type="inclusion" target="n1">
+          <point y="50" x="-20"/>
+          <point y="50" x="90"/>
+          <point y="-46" x="90"/>
+        </edge>
+        <edge source="n31" id="e54" type="equivalence" target="n46">
+          <point y="360" x="-610"/>
+          <point y="260" x="-610"/>
+          <point y="260" x="-120"/>
+          <point y="224" x="-119"/>
+        </edge>
+        <edge source="n59" id="e59" type="input" target="n60">
+          <point y="490" x="-50"/>
+          <point y="490" x="-150"/>
+        </edge>
+        <edge source="n9" id="e6" type="inclusion" target="n7">
+          <point y="-70" x="-250"/>
+          <point y="-70" x="-380"/>
+        </edge>
+        <edge source="n58" id="e60" type="input" target="n60">
+          <point y="490" x="-260"/>
+          <point y="490" x="-150"/>
+        </edge>
+        <edge source="n58" id="e62" type="input" target="n61">
+          <point y="490" x="-260"/>
+          <point y="410" x="-260"/>
+          <point y="410" x="-200"/>
+        </edge>
+        <edge source="n60" id="e63" type="input" target="n61">
+          <point y="490" x="-150"/>
+          <point y="410" x="-150"/>
+          <point y="410" x="-200"/>
+        </edge>
+        <edge source="n64" id="e64" type="input" target="n65">
+          <point y="350" x="-430"/>
+          <point y="420" x="-430"/>
+        </edge>
+        <edge source="n64" id="e65" type="input" target="n66">
+          <point y="350" x="-430"/>
+          <point y="350" x="-330"/>
+        </edge>
+        <edge source="n65" id="e66" type="inclusion" target="n26">
+          <point y="420" x="-430"/>
+          <point y="580" x="-430"/>
+          <point y="580" x="-556"/>
+        </edge>
+        <edge source="n62" id="e67" type="input" target="n67">
+          <point y="290" x="-10"/>
+          <point y="220" x="-10"/>
+        </edge>
+        <edge source="n62" id="e68" type="input" target="n68">
+          <point y="290" x="-10"/>
+          <point y="350" x="-10"/>
+        </edge>
+        <edge source="n67" id="e69" type="inclusion" target="n46">
+          <point y="220" x="-10"/>
+          <point y="200" x="-10"/>
+          <point y="200" x="-120"/>
+        </edge>
+        <edge source="n10" id="e7" type="equivalence" target="n1">
+          <point y="-70" x="-50"/>
+          <point y="-70" x="130"/>
+        </edge>
+        <edge source="n68" id="e70" type="inclusion" target="n61">
+          <point y="350" x="-10"/>
+          <point y="350" x="-200"/>
+          <point y="410" x="-200"/>
+        </edge>
+        <edge source="n66" id="e71" type="inclusion" target="n61">
+          <point y="350" x="-330"/>
+          <point y="350" x="-200"/>
+          <point y="410" x="-200"/>
+        </edge>
+        <edge source="n69" id="e72" type="input" target="n71">
+          <point y="580" x="-830"/>
+          <point y="580" x="-740"/>
+        </edge>
+        <edge source="n70" id="e73" type="input" target="n72">
+          <point y="620" x="-830"/>
+          <point y="620" x="-740"/>
+        </edge>
+        <edge source="n71" id="e74" type="inclusion" target="n26">
+          <point y="580" x="-740"/>
+          <point y="580" x="-665"/>
+        </edge>
+        <edge source="n72" id="e75" type="inclusion" target="n26">
+          <point y="620" x="-740"/>
+          <point y="620" x="-665"/>
+        </edge>
+        <edge source="n35" id="e76" type="inclusion" target="n61">
+          <point y="200" x="-1090"/>
+          <point y="270" x="-1090"/>
+          <point y="270" x="-200"/>
+          <point y="410" x="-200"/>
+        </edge>
+        <edge source="n75" id="e78" type="inclusion" target="n46">
+          <point y="110" x="-10"/>
+          <point y="110" x="-80"/>
+          <point y="175" x="-80"/>
+        </edge>
+        <edge source="n73" id="e79" type="input" target="n75">
+          <point y="110" x="70"/>
+          <point y="110" x="-10"/>
+        </edge>
+        <edge source="n12" id="e8" type="input" target="n13">
+          <point y="440" x="130"/>
+          <point y="370" x="130"/>
+        </edge>
+        <edge source="n77" id="e80" type="inclusion" target="n11">
+          <point y="510" x="250"/>
+          <point y="510" x="170"/>
+          <point y="575" x="170"/>
+        </edge>
+        <edge source="n76" id="e81" type="input" target="n77">
+          <point y="510" x="350"/>
+          <point y="510" x="250"/>
+        </edge>
+        <edge source="n79" id="e82" type="inclusion" target="n11">
+          <point y="550" x="250"/>
+          <point y="550" x="170"/>
+          <point y="575" x="170"/>
+        </edge>
+        <edge source="n78" id="e83" type="input" target="n79">
+          <point y="550" x="350"/>
+          <point y="550" x="250"/>
+        </edge>
+        <edge source="n82" id="e84" type="inclusion" target="n46">
+          <point y="150" x="-10"/>
+          <point y="150" x="-80"/>
+          <point y="175" x="-80"/>
+        </edge>
+        <edge source="n81" id="e85" type="input" target="n82">
+          <point y="150" x="70"/>
+          <point y="150" x="-10"/>
+        </edge>
+        <edge source="n12" id="e9" type="input" target="n14">
+          <point y="440" x="130"/>
+          <point y="510" x="130"/>
+        </edge>
+      </diagram>
+      <diagram name="tipizzazione data property" height="5000" width="5000">
+        <node id="n3" color="#fcfcfc" type="attribute">
+          <geometry y="-20" height="20" width="20" x="190"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta</iri>
+          <label size="12" customSize="0" y="-42" height="22" width="117" x="190"/>
+        </node>
+        <node id="n4" color="#fcfcfc" type="attribute">
+          <geometry y="20" height="20" width="20" x="190"/>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta</iri>
+          <label size="12" customSize="0" y="-2" height="22" width="111" x="190"/>
+        </node>
+        <node id="n5" color="#fcfcfc" type="value-domain">
+          <geometry y="0" height="40" width="90" x="-160"/>
+          <iri>http://www.w3.org/2001/XMLSchema#string</iri>
+          <label size="12" customSize="0" y="0" height="22" width="90" x="-160"/>
+        </node>
+        <node id="n6" color="#000000" type="range-restriction">
+          <geometry y="-20" height="20" width="20" x="50"/>
+          <label size="12" customSize="0" y="-42" height="22" width="39" x="50">exists</label>
+        </node>
+        <node id="n7" color="#000000" type="range-restriction">
+          <geometry y="20" height="20" width="20" x="50"/>
+          <label size="12" customSize="0" y="-2" height="22" width="39" x="50">exists</label>
+        </node>
+        <edge source="n3" id="e2" type="input" target="n6">
+          <point y="-20" x="190"/>
+          <point y="-20" x="50"/>
+        </edge>
+        <edge source="n4" id="e3" type="input" target="n7">
+          <point y="20" x="190"/>
+          <point y="20" x="50"/>
+        </edge>
+        <edge source="n6" id="e4" type="inclusion" target="n5">
+          <point y="-20" x="50"/>
+          <point y="0" x="-160"/>
+        </edge>
+        <edge source="n7" id="e5" type="inclusion" target="n5">
+          <point y="20" x="50"/>
+          <point y="0" x="-160"/>
+        </edge>
+      </diagram>
+    </diagrams>
+  </project>
+</graphol>

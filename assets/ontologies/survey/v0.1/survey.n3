@@ -1,0 +1,372 @@
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/italia/labour-social-policies/onto/survey/0.1> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CLV/> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/COV/> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/CPV/> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/l0/> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/italia/onto/RO/> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology of surveys within the GePI of the Ministry of Labor and Social Policies"@en .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology of the Ministry of Labor and Social Policies related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1 - Modificata il 26 Febbraio 2026"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1 - Modified on 26 February 2026"@en .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/labour-social-policies/onto/survey/> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/acronym> "lsp" .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/italia/data/organization/public-organization/td> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/AnnotationTask> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/QueryFormulationTask> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/SearchTask> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/labour-social-policies/onto/survey/0.1> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/italia/labour-social-policies/onto/survey/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/prefix> "lsp-srv" .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/italia/data/project/NDC> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/status> "draft" .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/target> "Cittadini"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/target> "Imprese"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <https://w3id.org/italia/onto/ADMS/type> <https://w3id.org/italia/onto/ADMS/ServiceOnytology> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#keyword> "questionario del redattore"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#keyword> "editor's survey"@en .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#keyword> "modello di sezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#keyword> "section model"@en .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#keyword> "Domanda"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#keyword> "request"@en .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/SOCI> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/creator> <https://w3id.org/italia/labour-social-policies/data/organization/mlps> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/description> "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/description> "Ontology of the Ministry of Labor and Social Policies related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey."@en .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/identifier> "https://w3id.org/italia/labour-social-policies/onto/survey" .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/issued> "2026-02-26T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ITA> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/modified> "2026-02-26T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/publisher> <https://w3id.org/italia/labour-social-policies/data/organization/mlps> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/italia/labour-social-policies/data/organization/mlps> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/title> "Ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/> <http://purl.org/dc/terms/title> "Ontology of surveys within the GePI of the Ministry of Labor and Social Policies"@en .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una specifica risposta alla relativa sezione che contiene la domanda."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#label> "contiene risposta del redattore"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una domanda alla sua sezione."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda> <http://www.w3.org/2000/01/rdf-schema#label> "ha domanda"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un questionario compilato da un redattore al modello del questionario."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario> <http://www.w3.org/2000/01/rdf-schema#label> "ha modello di questionario"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un modello di questionario ai suoi modelli di sezione."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#label> "ha modello di sezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una domanda alle sue opzioni di risposta."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#label> "ha opzione di risposta"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/Redattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un redattore ai suoi questionari compilati."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#label> "ha questionario del redattore"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un questionario compilato alle sue sezioni di risposte."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#label> "ha sezione del questionario del redattore"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una sezione del questionario del redattore, contenente le risposte, alla relativa sezione del modello di questionario, contenente le domande."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello> <http://www.w3.org/2000/01/rdf-schema#label> "ha sezione di modello"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una risposta al soggetto a cui si riferisce."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#label> "ha soggetto della risposta"@it .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/onto/l0/Agent> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> _:genid5 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/onto/l0/Agent> .
+_:genid5 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/onto/RO/holdsRoleInTime> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una sezione di risposte ad soggetto a cui si riferisce."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSoggettoDellaSezione> <http://www.w3.org/2000/01/rdf-schema#label> "ha soggetto della sezione"@it .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/onto/l0/Agent> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> _:genid10 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/onto/l0/Agent> .
+_:genid10 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/onto/RO/holdsRoleInTime> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una domanda ad una sua ulteriore domanda necessaria per fornire la risposta."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda> <http://www.w3.org/2000/01/rdf-schema#label> "ha sottodomanda"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una sezione alle sue sottosezioni."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione> <http://www.w3.org/2000/01/rdf-schema#label> "ha sottosezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una opzione alle sue ulteriori opzioni."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione> <http://www.w3.org/2000/01/rdf-schema#label> "ha subopzione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una risposta all'opzione prevista dalla domanda."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 opzione di risposta"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una risposta alla relativa domanda."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 risposta a domanda"@it .
+<https://w3id.org/italia/onto/RO/holdsRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda> <http://www.w3.org/2000/01/rdf-schema#comment> "Descrizione della domanda"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/descrizioneDomanda> <http://www.w3.org/2000/01/rdf-schema#label> "descrizione domanda"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificativo della domanda"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idDomanda> <http://www.w3.org/2000/01/rdf-schema#label> "id domanda"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idSezione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idSezione> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificativo del modello di sezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/idSezione> <http://www.w3.org/2000/01/rdf-schema#label> "id sezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#comment> "Contenuto della risposta espresso in formato testuale qualora la domanda lo preveda."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#label> "testo della risposta"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione> <http://www.w3.org/2000/01/rdf-schema#comment> " Indica il testo della sezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/testoSezione> <http://www.w3.org/2000/01/rdf-schema#label> "testo sezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#comment> "Valore attribuito dal redattore alla domanda qualora questa preveda l'indicazione di un valore."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/valoreDellaRisposta> <http://www.w3.org/2000/01/rdf-schema#label> "valore della risposta"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifica le domande presenti nelle sezioni dei modelli di questionario."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Domanda> <http://www.w3.org/2000/01/rdf-schema#label> "Domanda"@it .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> _:genid12 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid12 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> _:genid14 .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid14 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/haSottodomanda> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> _:genid16 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid16 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifica i modelli di questionario ciascuno dei quali \u00E8 organizzato, secondo una propria logica e un proprio obiettivo, in sezioni e domande."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiQuestionario> <http://www.w3.org/2000/01/rdf-schema#label> "Modello di questionario"@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#comment> "Rappresenta una specifica sezione di un modello di questionario."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDiSezione> <http://www.w3.org/2000/01/rdf-schema#label> "Modello di sezione"@it .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> _:genid18 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid18 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiSezione> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> _:genid20 .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid20 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/haSottosezione> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifica le possibili opzioni di risposta accoppiate ad una domanda di una sezione di un modello di questionario. Una opzione di risposta potrebbe indicare una ulteriore domanda."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/OpzioneDiRisposta> <http://www.w3.org/2000/01/rdf-schema#label> "Opzione di risposta"@it .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> _:genid22 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid22 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/haOpzioneDiRisposta> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> _:genid24 .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid24 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/haSubopzione> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> _:genid26 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid26 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifica i questionari compilati da i redattori. Un questionario compilato \u00E8 relativo ad un certo modello di questionario."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#label> "Questionario del redattore"@it .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/survey/haModelloDiQuestionario> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> _:genid29 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid29 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/haQuestionarioDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Redattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Redattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Redattore> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00C8 l'agente, o un suo ruolo, che compila il questionario."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/Redattore> <http://www.w3.org/2000/01/rdf-schema#label> "Redattore"@it .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid30 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/onto/l0/Agent> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> _:genid34 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/onto/l0/Agent> .
+_:genid34 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/onto/RO/holdsRoleInTime> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifica le risposte di ciascun redattore ad una specifica domanda. La risposta pu\u00F2 essere riferita ad un sogetto diverso dal redattore stesso."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore> <http://www.w3.org/2000/01/rdf-schema#label> "Risposta del redattore"@it .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8OpzioneDiRisposta> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/survey/\u00E8RispostaADomanda> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> _:genid38 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid38 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+<https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#comment> "Classifica le sezioni di un questionario compilate da un redattore, contiene quindi le sue risposte. Tale sezione \u00E8 definita a partire dalla sezione del modello di questionario che il redattore sta compilando e che contiene le domande a cui il redattore deve rispondere. La sezione compilata potrebbe riferirsi ad un soggetto diverso dal redattore."@it .
+<https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore> <http://www.w3.org/2000/01/rdf-schema#label> "Sezione del questionario del redattore"@it .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/survey/contieneRispostaDelRedattore> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDiModello> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/italia/onto/l0/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/l0/Agent> <http://www.w3.org/2002/07/owl#disjointWith> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> _:genid42 .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/onto/l0/Agent> .
+_:genid42 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/onto/RO/holdsRoleInTime> .
+<https://w3id.org/italia/data/organization/public-organization/td> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Agent> .
+<https://w3id.org/italia/data/organization/public-organization/td> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/italia/data/organization/public-organization/td> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/data/organization/public-organization/td> <http://purl.org/dc/terms/identifier> "TD" .
+<https://w3id.org/italia/data/organization/public-organization/td> <http://xmlns.com/foaf/0.1/name> "Digital Transformation Team"@en .
+<https://w3id.org/italia/data/organization/public-organization/td> <http://xmlns.com/foaf/0.1/name> "Team per la Trasformazione Digitale"@it .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/survey/latest> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/survey/latest/survey.n3> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione N-TRIPLES dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://purl.org/dc/terms/description> "This is the distribution in N-TRIPLES of the Labour and Social Policies Ministry Ontology related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://purl.org/dc/terms/title> "Distribuzione N-TRIPLES dell'ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali - GePI"@it .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-N-TRIPLES> <http://purl.org/dc/terms/title> "N-TRIPLES distribution of the Labour and Social Policies Ministry ontology of surveys within the GePI - GePI"@en .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/survey/latest> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/survey/latest/survey.ttl> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/Turtle dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://purl.org/dc/terms/description> "This is the distribution in RDF/Turtle of the Labour and Social Policy Ministry Ontology related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle dell'ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali - GePI"@it .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-TURTLE> <http://purl.org/dc/terms/title> "RDF/Turtle distribution of the Labour and Social Policies Ministry ontology of surveys within the GePI - GePI"@en .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Distribution> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://www.w3.org/ns/dcat#accessURL> <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/ontologies/survey/latest> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/ontologies/survey/latest/survey.owl> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://purl.org/dc/terms/description> "Questa \u00E8 la distribuzione RDF/XML dell'ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi che definisce l'analisi preliminare e il quadro d'analisi sottoforma di questionario"@it .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://purl.org/dc/terms/description> "This is the distribution in RDF/XML of the Labour and Social Policy Ministry Ontology related to the GePi domain which defines the preliminary analysis and the analysis framework in the form of a survey"@en .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_XML> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://purl.org/dc/terms/title> "Distribuzione RDF/XML dell'ontologia dei questionari nell'ambito GePI del Ministero Del Lavoro e delle Politiche Sociali - GePI"@it .
+<https://w3id.org/italia/labour-social-policies/data/survey/distribution/MLPSSURVEY-RDF-XML> <http://purl.org/dc/terms/title> "RDF/XML distribution of the Labour and Social Policies Ministry ontology of surveys within the GePI - GePI"@en .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Organization> .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Kind> .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/2000/01/rdf-schema#label> "MLPS DG Innovation - Division III"@en .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/2000/01/rdf-schema#label> "MLPS DG Innovazione - Divisione III"@it .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://purl.org/dc/terms/identifier> "DGInnovazioneDiv3" .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://xmlns.com/foaf/0.1/name> "MLPS DG Innovation - Division III"@en .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://xmlns.com/foaf/0.1/name> "MLPS DG Innovazione - Divisione III"@it .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/2006/vcard/ns#fn> "MLPS DG Innovazione - Divisione III" .
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:dginnovazionediv3@lavoro.gov.it> .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/italia/onto/COV/PublicOrganization> .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dati.gov.it/onto/dcatapit#Agent> .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://www.w3.org/2000/01/rdf-schema#label> "Ministero del Lavoro e delle politiche sociali"@it .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://www.w3.org/2000/01/rdf-schema#label> "Ministry of Labor and Social Policies"@en .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://purl.org/dc/terms/identifier> "mlps" .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://xmlns.com/foaf/0.1/name> "Ministero del Lavoro e delle politiche sociali"@it .
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> <http://xmlns.com/foaf/0.1/name> "Ministry of Labor and Social Policies"@en .
