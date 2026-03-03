@@ -1,0 +1,159 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns5: <http://www.w3.org/ns/adms#> .
+@prefix ns6: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
+        ns6:Kind,
+        ns6:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns1:identifier "DGInnovazioneDiv3" ;
+    ns6:fn "MLPS DG Innovazione – Divisione III" ;
+    ns6:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
+    ns7:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
+        <https://w3id.org/italia/onto/COV/PublicOrganization>,
+        ns7:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    ns1:identifier "mlps" ;
+    ns7:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
+        ns1:Standard ;
+    ns1:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns1:identifier "SKOS" ;
+    ns1:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione> a <http://dati.gov.it/onto/dcatapit#Dataset>,
+        <https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione>,
+        ns2:ConceptScheme,
+        ns5:Asset ;
+    rdfs:label "Controlled vocabulary for the classification of training course typology"@en,
+        "Vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns2:prefLabel "Vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    rdfs:comment "Controlled vocabulary for the classification of training course typology"@en,
+        "Vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione> ;
+    ns1:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns1:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns1:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:description "Controlled vocabulary for the classification of training course typology"@en,
+        "Vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns1:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione" ;
+    ns1:issued "2026-02-26"^^xsd:date ;
+    ns1:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns1:modified "2026-02-26"^^xsd:date ;
+    ns1:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:title "Controlled vocabulary for the classification of training course typology"@en,
+        "Vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns1:type <http://purl.org/adms/assettype/CodeList> ;
+    ns2:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/01>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/02>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/03>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/99> ;
+    ns3:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns3:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_corso_formazione/distribution/TCF_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_corso_formazione/distribution/TCF_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_corso_formazione/distribution/TCF_RDF_TURTLE> ;
+    ns3:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    ns3:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns5:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns8:keyConcept "tipo_corso_formazione" ;
+    ns9:numberOfLevels "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/01> a <https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione>,
+        ns2:Concept ;
+    rdfs:label "Green"@it ;
+    ns2:prefLabel "Green"@it ;
+    ns1:identifier "01" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione> ;
+    ns2:notation "01" ;
+    ns4:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/02> a <https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione>,
+        ns2:Concept ;
+    rdfs:label "Digitale"@it ;
+    ns2:prefLabel "Digitale"@it ;
+    ns1:identifier "02" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione> ;
+    ns2:notation "02" ;
+    ns4:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/03> a <https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione>,
+        ns2:Concept ;
+    rdfs:label "Linguistico"@it ;
+    ns2:prefLabel "Linguistico"@it ;
+    ns1:identifier "03" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione> ;
+    ns2:notation "03" ;
+    ns4:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/99> a <https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione>,
+        ns2:Concept ;
+    rdfs:label "Altra formazione"@it ;
+    ns2:prefLabel "Altra formazione"@it ;
+    ns1:identifier "99" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione> ;
+    ns2:notation "99" ;
+    ns4:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_corso_formazione/distribution/TCF_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns3:Distribution ;
+    ns1:description "Controlled vocabulary for the classification of training course typology CSV distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary for the classification of training course typology CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_corso_formazione/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_corso_formazione/latest/tipo_corso_formazione.csv> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_corso_formazione/distribution/TCF_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns3:Distribution ;
+    ns1:description "Controlled vocabulary for the classification of training course typology JSON_LD distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary for the classification of training course typology JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_corso_formazione/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_corso_formazione/latest/tipo_corso_formazione.json> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_corso_formazione/distribution/TCF_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns3:Distribution ;
+    ns1:description "Controlled vocabulary for the classification of training course typology RDF/turtle distribution"@en,
+        "Questa è la distribuzione RDF/Turtle del vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary for the classification of training course typology RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato della classificazione della tipologia di corso di formazione"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_corso_formazione/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_corso_formazione/latest/tipo_corso_formazione.ttl> .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

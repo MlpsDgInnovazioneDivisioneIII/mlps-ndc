@@ -1,0 +1,433 @@
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns6: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns7: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns8: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns9: <http://www.w3.org/ns/adms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
+        ns8:Kind,
+        ns8:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns2:identifier "DGInnovazioneDiv3" ;
+    ns3:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns8:fn "MLPS DG Innovazione – Divisione III" ;
+    ns8:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
+        <https://w3id.org/italia/onto/COV/PublicOrganization>,
+        ns3:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    ns2:identifier "mlps" ;
+    ns3:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
+        ns2:Standard ;
+    ns2:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns2:identifier "SKOS" ;
+    ns2:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione> a <http://dati.gov.it/onto/dcatapit#Dataset>,
+        <https://w3id.org/italia/labour-social-policies/onto/labour/MacroCategoriaAttestatoCorso>,
+        ns1:ConceptScheme,
+        ns9:Asset ;
+    rdfs:label "Controlled vocabulary for the classification of qualifications obtained in the training field"@en,
+        "Vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns1:prefLabel "Vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    rdfs:comment "Controlled vocabulary for the classification of qualifications obtained in the training field"@en,
+        "Vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione> ;
+    ns1:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/10>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/20>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/30>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/40>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/50>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/60>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/70>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/80> ;
+    ns2:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns2:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns2:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:description "Controlled vocabulary for the classification of qualifications obtained in the training field"@en,
+        "Vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns2:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione" ;
+    ns2:issued "2026-02-26"^^xsd:date ;
+    ns2:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns2:modified "2026-02-26"^^xsd:date ;
+    ns2:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns2:title "Controlled vocabulary for the classification of qualifications obtained in the training field"@en,
+        "Vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns2:type <http://purl.org/adms/assettype/CodeList> ;
+    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_attestazione/distribution/TA_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_attestazione/distribution/TA_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_attestazione/distribution/TA_RDF_TURTLE> ;
+    ns4:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns6:keyConcept "tipo_attestazione" ;
+    ns7:numberOfLevels "1" ;
+    ns9:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/11> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Attestato di frequenza con profitto"@it ;
+    ns1:prefLabel "Attestato di frequenza con profitto"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "11" ;
+    ns2:identifier "11" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/12> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Attestato di frequenza"@it ;
+    ns1:prefLabel "Attestato di frequenza"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "12" ;
+    ns2:identifier "12" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/13> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Ammissione all'anno successivo"@it ;
+    ns1:prefLabel "Ammissione all'anno successivo"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "13" ;
+    ns2:identifier "13" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/14> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Altre attestazioni"@it ;
+    ns1:prefLabel "Altre attestazioni"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "14" ;
+    ns2:identifier "14" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/21> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Patente di mestiere"@it ;
+    ns1:prefLabel "Patente di mestiere"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "21" ;
+    ns2:identifier "21" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/22> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Abilitazione professionale "@it ;
+    ns1:prefLabel "Abilitazione professionale "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "22" ;
+    ns2:identifier "22" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/31> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Qualifica professionale di Istruzione e Formazione Professionale (IeFP)"@it ;
+    ns1:prefLabel "Qualifica professionale di Istruzione e Formazione Professionale (IeFP)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "31" ;
+    ns2:identifier "31" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/32> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Diploma professionale di Istruzione e Formazione Professionale (IeFP)"@it ;
+    ns1:prefLabel "Diploma professionale di Istruzione e Formazione Professionale (IeFP)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "32" ;
+    ns2:identifier "32" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/33> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Diploma di specializzazione per le tecnologie applicate di durata biennale (ITS Academy)"@it ;
+    ns1:prefLabel "Diploma di specializzazione per le tecnologie applicate di durata biennale (ITS Academy)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "33" ;
+    ns2:identifier "33" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/34> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Diploma di specializzazione superiore per le tecnologie applicate di durata triennale (ITS Academy)"@it ;
+    ns1:prefLabel "Diploma di specializzazione superiore per le tecnologie applicate di durata triennale (ITS Academy)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "34" ;
+    ns2:identifier "34" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/35> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificato di specializzazione tecnica superiore (IFTS)"@it ;
+    ns1:prefLabel "Certificato di specializzazione tecnica superiore (IFTS)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "35" ;
+    ns2:identifier "35" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/36> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Qualificazione di formazione professionale di area operativa"@it ;
+    ns1:prefLabel "Qualificazione di formazione professionale di area operativa"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "36" ;
+    ns2:identifier "36" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/37> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Qualificazione di formazione professionale di area tecnica"@it ;
+    ns1:prefLabel "Qualificazione di formazione professionale di area tecnica"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "37" ;
+    ns2:identifier "37" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/38> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Qualificazione di alta formazione professionale regionale"@it ;
+    ns1:prefLabel "Qualificazione di alta formazione professionale regionale"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "38" ;
+    ns2:identifier "38" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/41> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificazione delle competenze dell’obbligo di istruzione"@it ;
+    ns1:prefLabel "Certificazione delle competenze dell’obbligo di istruzione"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "41" ;
+    ns2:identifier "41" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/42> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Diploma di Istruzione secondaria di secondo grado "@it ;
+    ns1:prefLabel "Diploma di Istruzione secondaria di secondo grado "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "42" ;
+    ns2:identifier "42" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/43> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Laurea o Diploma accademico I liv"@it ;
+    ns1:prefLabel "Laurea o Diploma accademico I liv"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "43" ;
+    ns2:identifier "43" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/44> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Laurea magistrale, specialistica, o diploma accademico di II liv o Ciclo unico o  Diploma di laurea (vecchio ordinamento) "@it ;
+    ns1:prefLabel "Laurea magistrale, specialistica, o diploma accademico di II liv o Ciclo unico o  Diploma di laurea (vecchio ordinamento) "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "44" ;
+    ns2:identifier "44" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/45> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Master universitario o accademico di I livello"@it ;
+    ns1:prefLabel "Master universitario o accademico di I livello"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "45" ;
+    ns2:identifier "45" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/46> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Master universitario o accademico di II livello"@it ;
+    ns1:prefLabel "Master universitario o accademico di II livello"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "46" ;
+    ns2:identifier "46" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/47> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Diploma di corso di perfezionamento "@it ;
+    ns1:prefLabel "Diploma di corso di perfezionamento "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "47" ;
+    ns2:identifier "47" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/48> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Diploma di specializzazione universitario o accademico"@it ;
+    ns1:prefLabel "Diploma di specializzazione universitario o accademico"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "48" ;
+    ns2:identifier "48" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/49> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Dottorato di ricerca universitario o accademico"@it ;
+    ns1:prefLabel "Dottorato di ricerca universitario o accademico"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "49" ;
+    ns2:identifier "49" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/51> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Titolo attestante il raggiungimento di un livello di conoscenza della lingua italiana di livello A2 del QCER "@it ;
+    ns1:prefLabel "Titolo attestante il raggiungimento di un livello di conoscenza della lingua italiana di livello A2 del QCER "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "51" ;
+    ns2:identifier "51" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/52> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Titolo conclusivo del primo ciclo di istruzione"@it ;
+    ns1:prefLabel "Titolo conclusivo del primo ciclo di istruzione"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "52" ;
+    ns2:identifier "52" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/53> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificazione attestante l’acquisizione delle competenze di base connesse all’obbligo di istruzione"@it ;
+    ns1:prefLabel "Certificazione attestante l’acquisizione delle competenze di base connesse all’obbligo di istruzione"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "53" ;
+    ns2:identifier "53" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/54> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificazione per l’ammissione al secondo periodo didattico del secondo livello"@it ;
+    ns1:prefLabel "Certificazione per l’ammissione al secondo periodo didattico del secondo livello"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "54" ;
+    ns2:identifier "54" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/55> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificazione per l’ammissione al terzo periodo didattico del secondo livello"@it ;
+    ns1:prefLabel "Certificazione per l’ammissione al terzo periodo didattico del secondo livello"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "55" ;
+    ns2:identifier "55" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/56> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Diploma di Istruzione secondaria di secondo grado degli istituti tecnici o professionali, o licei artistici"@it ;
+    ns1:prefLabel "Diploma di Istruzione secondaria di secondo grado degli istituti tecnici o professionali, o licei artistici"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "56" ;
+    ns2:identifier "56" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/61> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificato di competenze"@it ;
+    ns1:prefLabel "Certificato di competenze"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "61" ;
+    ns2:identifier "61" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/62> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Documento di trasparenza"@it ;
+    ns1:prefLabel "Documento di trasparenza"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "62" ;
+    ns2:identifier "62" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/63> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Documento di validazione"@it ;
+    ns1:prefLabel "Documento di validazione"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "63" ;
+    ns2:identifier "63" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/64> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificazione di singole unità di competenza di una qualificazione (micro qualificazioni)"@it ;
+    ns1:prefLabel "Certificazione di singole unità di competenza di una qualificazione (micro qualificazioni)"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "64" ;
+    ns2:identifier "64" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/65> a <https://w3id.org/italia/labour-social-policies/onto/labour/MicroCategoriaAttestatoCorso>,
+        ns1:Concept ;
+    rdfs:label "Certificazione parziale in caso di mancata acquisizione di una qualificazione "@it ;
+    ns1:prefLabel "Certificazione parziale in caso di mancata acquisizione di una qualificazione "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio> ;
+    ns1:notation "65" ;
+    ns2:identifier "65" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_attestazione/distribution/TA_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns4:Distribution ;
+    ns2:description "Controlled vocabulary for the classification of qualifications obtained in the training field CSV distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary for the classification of qualifications obtained in the training field CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_attestazione/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_attestazione/latest/tipo_attestazione.csv> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_attestazione/distribution/TA_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns4:Distribution ;
+    ns2:description "Controlled vocabulary for the classification of qualifications obtained in the training field JSON_LD distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary for the classification of qualifications obtained in the training field JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_attestazione/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_attestazione/latest/tipo_attestazione.json> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_attestazione/distribution/TA_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns4:Distribution ;
+    ns2:description "Controlled vocabulary for the classification of qualifications obtained in the training field RDF/turtle distribution"@en,
+        "Questa è la distribuzione RDF/Turtle del vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns2:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns2:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns2:title "Controlled vocabulary for the classification of qualifications obtained in the training field RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato della classificazione delle attestazioni conseguite in ambito formazione"@it ;
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_attestazione/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_attestazione/latest/tipo_attestazione.ttl> .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

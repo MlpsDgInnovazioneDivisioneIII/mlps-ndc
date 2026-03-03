@@ -1,0 +1,191 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns6: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns7: <http://www.w3.org/ns/adms#> .
+@prefix ns8: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix ns9: <http://www.w3.org/2006/vcard/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
+        ns9:Kind,
+        ns9:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns1:identifier "DGInnovazioneDiv3" ;
+    ns4:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns9:fn "MLPS DG Innovazione – Divisione III" ;
+    ns9:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
+        <https://w3id.org/italia/onto/COV/PublicOrganization>,
+        ns4:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    ns1:identifier "mlps" ;
+    ns4:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
+        ns1:Standard ;
+    ns1:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns1:identifier "SKOS" ;
+    ns1:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> a <http://dati.gov.it/onto/dcatapit#Dataset>,
+        <https://w3id.org/italia/labour-social-policies/onto/inclusion/PattoAttivazioneDigitaleNucleo>,
+        ns2:ConceptScheme,
+        ns7:Asset ;
+    rdfs:label "Controlled vocabulary for the digital activation agreement category of the family unit"@en,
+        "Vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns2:prefLabel "Vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    rdfs:comment "Controlled vocabulary for the digital activation agreement category of the family unit"@en,
+        "Vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> ;
+    ns1:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns1:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns1:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:description "Controlled vocabulary for the digital activation agreement category of the family unit"@en,
+        "Vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns1:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo" ;
+    ns1:issued "2026-02-26"^^xsd:date ;
+    ns1:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns1:modified "2026-02-26"^^xsd:date ;
+    ns1:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns1:title "Controlled vocabulary for the digital activation agreement category of the family unit"@en,
+        "Vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns1:type <http://purl.org/adms/assettype/CodeList> ;
+    ns2:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/1>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/2>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/3>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/4>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/5>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/6> ;
+    ns3:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns3:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_categoria_pad_nucleo/distribution/TCPN_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_categoria_pad_nucleo/distribution/TCPN_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_categoria_pad_nucleo/distribution/TCPN_RDF_TURTLE> ;
+    ns3:keyword "digital core activation agreement"@en,
+        "family unit"@en,
+        "nucleo familiare"@it,
+        "patto di attivazione digitale del nucleo"@it,
+        "patto di inclusione sociale del caso"@it,
+        "social inclusion pact of the case"@en ;
+    ns3:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns6:keyConcept "tipo_categoria_pad_nucleo" ;
+    ns7:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns8:numberOfLevels "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/1> a <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo>,
+        ns2:Concept ;
+    rdfs:label "Uno"@it ;
+    ns2:prefLabel "Uno"@it ;
+    ns1:description "Obbligo di attivazione lavorativa e sociale: tutti i componenti del nucleo di eta’ compresa tra i 18 e i 59 anni, che esercitano la responsabilita’ genitoriale e non hanno cause di esclusione (quali occupazione, frequenza di un corso di studi, carichi di cura, disabilità, valutazione di non attivabilita’ da parte dei servizi sociali, malattia oncologica, titolarita’ di pensione diretta, ecc.) sono tenuti all’adesione e alla partecipazione a tutte le attivita’ formative, di lavoro e alle misure di politica attiva. Sono altresi’ tenuti a aderire ad un percorso di inclusione sociale. -> Devono sottoscrivere sia il Patto di Servizio Personalizzato (PSP) con i servizi per il lavoro sia il Patto di Inclusione Sociale (PaIS) con i servizi sociali." ;
+    ns1:identifier "1" ;
+    ns2:altlabel "Cat1" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> ;
+    ns2:notation "1" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/2> a <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo>,
+        ns2:Concept ;
+    rdfs:label "Due"@it ;
+    ns2:prefLabel "Due"@it ;
+    ns1:description "Facolta’ di attivazione lavorativa e sociale: i componenti del nucleo familiare con disabilita’ o di eta’ pari o superiore a 60 anni o inseriti nei percorsi di protezione relativi alla violenza di genere, possono richiedere l’adesione volontaria a un percorso personalizzato di accompagnamento all’inserimento lavorativo e sociale. -> Possono sottoscrivere volontariamente sia il Patto di Servizio Personalizzato (PSP) con i servizi per il lavoro sia il Patto di Inclusione Sociale (PaIS) con i servizi sociali." ;
+    ns1:identifier "2" ;
+    ns2:altlabel "Cat2" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> ;
+    ns2:notation "2" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/3> a <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo>,
+        ns2:Concept ;
+    rdfs:label "Tre"@it ;
+    ns2:prefLabel "Tre"@it ;
+    ns1:description "Facolta’ di attivazione del Supporto per la Formazione e il Lavoro (SFL): i componenti del nucleo familiare di eta’ compresa tra i 18 e i 59 anni senza responsabilita’ genitoriali ed esclusi dalla scala di equivalenza (che quindi non beneficiano dell’ADI) possono richiedere il Supporto per la Formazione e il Lavoro (SFL) -> Non sottoscrivono ne’ il Patto di Servizio Personalizzato (PSP) con i servizi per il lavoro ne’ il Patto di Inclusione Sociale (PaIS) con i servizi sociali." ;
+    ns1:identifier "3" ;
+    ns2:altlabel "Cat3" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> ;
+    ns2:notation "3" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/4> a <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo>,
+        ns2:Concept ;
+    rdfs:label "Quattro"@it ;
+    ns2:prefLabel "Quattro"@it ;
+    ns1:description "Obbligo di attivazione sociale e facolta’ di attivazione lavorativa: gli appartenenti al nucleo maggiorenni, a vario titolo esclusi dagli obblighi di attivazione lavorativa (senza responsabilità genitoriali, occupati, con carichi di cura, frequentanti corsi di studi, malati oncologici, titolari di pensione diretta, valutati non attivabili dai servizi sociali ecc.) non hanno obbligo di attivazione lavorativa, ma possono richiederne l'adesione volontaria, e hanno l’obbligo di aderire al percorso di inclusione sociale (ad esclusione di coloro che rientrano nelle altre categorie ). -> Possono sottoscrivere volontariamente il Patto di Servizio Personalizzato (PSP) con i servizi per il lavoro e devono sottoscrivere il Patto di Inclusione Sociale (PaIS) con i servizi sociali. " ;
+    ns1:identifier "4" ;
+    ns2:altlabel "Cat4" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> ;
+    ns2:notation "4" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/5> a <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo>,
+        ns2:Concept ;
+    rdfs:label "Minore"@it ;
+    ns2:prefLabel "Minore"@it ;
+    ns1:description "Soggetto del nucleo minorenne e quindi esente da ogni obbligo" ;
+    ns1:identifier "5" ;
+    ns2:altlabel "Minore" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> ;
+    ns2:notation "5" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo/6> a <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo>,
+        ns2:Concept ;
+    rdfs:label "NonDisponibile"@it ;
+    ns2:prefLabel "NonDisponibile"@it ;
+    ns1:description "Non disponibile" ;
+    ns1:identifier "6" ;
+    ns2:altlabel "ND" ;
+    ns2:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_categoria_pad_nucleo> ;
+    ns2:notation "6" ;
+    ns5:hasRankOrder "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_categoria_pad_nucleo/distribution/TCPN_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns3:Distribution ;
+    ns1:description "Controlled vocabulary for the digital activation agreement category of the family unit CSV distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary for the digital activation agreement category of the family unit CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_categoria_pad_nucleo/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_categoria_pad_nucleo/latest/tipo_categoria_pad_nucleo.csv> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_categoria_pad_nucleo/distribution/TCPN_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns3:Distribution ;
+    ns1:description "Controlled vocabulary for the digital activation agreement category of the family unit JSON_LD distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary for the digital activation agreement category of the family unit JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_categoria_pad_nucleo/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_categoria_pad_nucleo/latest/tipo_categoria_pad_nucleo.json> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_categoria_pad_nucleo/distribution/TCPN_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns3:Distribution ;
+    ns1:description "Controlled vocabulary for the digital activation agreement category of the family unit RDF/turtle distribution"@en,
+        "Questa è la distribuzione RDF/Turtle del vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns1:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns1:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns1:title "Controlled vocabulary for the digital activation agreement category of the family unit RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato della categoria del patto di attivazione digitale del nucleo familiare"@it ;
+    ns3:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_categoria_pad_nucleo/latest> ;
+    ns3:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_categoria_pad_nucleo/latest/tipo_categoria_pad_nucleo.ttl> .
+
+### Serialized using the ttlser deterministic serializer v1.2.0

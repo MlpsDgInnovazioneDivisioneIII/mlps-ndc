@@ -1,0 +1,909 @@
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <https://w3id.org/italia/onto/CLV/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix ns5: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns6: <http://www.w3.org/ns/adms#> .
+@prefix ns7: <https://w3id.org/italia/onto/NDC/> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns9: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Individuals
+
+<https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> a <http://dati.gov.it/onto/dcatapit#Organization>,
+        ns5:Kind,
+        ns5:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it ;
+    ns3:identifier "DGInnovazioneDiv3" ;
+    ns5:fn "MLPS DG Innovazione – Divisione III" ;
+    ns5:hasEmail <mailto:dginnovazionediv3@lavoro.gov.it> ;
+    ns8:name "MLPS DG Innovation - Division III"@en,
+        "MLPS DG Innovazione – Divisione III"@it .
+
+<https://w3id.org/italia/labour-social-policies/data/organization/mlps> a <http://dati.gov.it/onto/dcatapit#Agent>,
+        <https://w3id.org/italia/onto/COV/PublicOrganization>,
+        ns8:Agent,
+        owl:NamedIndividual ;
+    rdfs:label "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en ;
+    ns3:identifier "mlps" ;
+    ns8:name "Ministero del Lavoro e delle politiche sociali"@it,
+        "Ministry of Labor and Social Policies"@en .
+
+### Annotations
+
+<https://w3id.org/italia/data/standard/SKOS> a <http://dati.gov.it/onto/dcatapit#Standard>,
+        ns3:Standard ;
+    ns3:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" ;
+    ns3:identifier "SKOS" ;
+    ns3:title "Simple Knowledge Organization System - SKOS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> a <http://dati.gov.it/onto/dcatapit#Dataset>,
+        <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:ConceptScheme,
+        ns6:Asset ;
+    rdfs:label "Controlled vocabulary of the type of language known"@en,
+        "Vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns1:prefLabel "Vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    rdfs:comment "Controlled vocabulary of the type of language known"@en,
+        "Vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    owl:versionInfo "0.1" ;
+    rdfs:isDefinedBy <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:hasTopConcept <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/001>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/002>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/003>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/004>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/005>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ALB>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARA>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARM>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/AZE>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEL>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIH>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BOS>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BUL>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAT>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CEC>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CIN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/COR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CRO>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/DAN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EBR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EST>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIA>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIL>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GEO>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIU>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GRE>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HAK>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HID>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HIN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/IND>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISL>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KAN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KUR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LAV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LTU>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAL>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAY>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MIN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MKD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MLT>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/NOR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/OLA>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ORI>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PAS>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PER>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POL>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PUN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RAI>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUM>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUS>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SEN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SER>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SIN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLO>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SOM>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SPA>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SUN>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SVE>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SWA>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TAM>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TEL>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/THA>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TUR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UCR>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UNG>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/URD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIE>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIS>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/WU%20> ;
+    ns3:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+    ns3:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;
+    ns3:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:description "Controlled vocabulary of the type of language known"@en,
+        "Vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns3:identifier "https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua" ;
+    ns3:issued "2026-02-26"^^xsd:date ;
+    ns3:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    ns3:modified "2026-02-26"^^xsd:date ;
+    ns3:publisher <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:rightsHolder <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
+    ns3:title "Controlled vocabulary of the type of language known"@en,
+        "Vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns3:type <http://purl.org/adms/assettype/CodeList> ;
+    ns4:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
+    ns4:distribution <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_lingua/distribution/TL_CSV>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_lingua/distribution/TL_JSON_LD>,
+        <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_lingua/distribution/TL_RDF_TURTLE> ;
+    ns4:keyword "citizen's curriculum vitae"@en,
+        "curriculum vitae del cittadino"@it,
+        "job offer"@en,
+        "offerta di lavoro"@it,
+        "offerta formativa"@it,
+        "training offer"@en ;
+    ns4:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+    ns6:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;
+    ns7:keyConcept "tipo_lingua" ;
+    ns9:numberOfLevels "1" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/001> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "INGLESE"@it ;
+    ns1:prefLabel "INGLESE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "001" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "001" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/002> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "TEDESCO"@it ;
+    ns1:prefLabel "TEDESCO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "002" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "002" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/003> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ITALIANO"@it ;
+    ns1:prefLabel "ITALIANO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "003" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "003" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/004> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "GIAPPONESE"@it ;
+    ns1:prefLabel "GIAPPONESE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "004" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "004" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/005> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "FRANCESE"@it ;
+    ns1:prefLabel "FRANCESE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "005" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "005" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ALB> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ALBANESE            "@it ;
+    ns1:prefLabel "ALBANESE            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "ALB" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "ALB" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARA> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ARABO               "@it ;
+    ns1:prefLabel "ARABO               "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "ARA" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "ARA" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ARM> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ARMENO"@it ;
+    ns1:prefLabel "ARMENO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "ARM" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "ARM" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/AZE> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "AZERO"@it ;
+    ns1:prefLabel "AZERO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "AZE" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "AZE" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEL> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "BIELORUSSO"@it ;
+    ns1:prefLabel "BIELORUSSO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "BEL" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "BEL" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BEN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "BENGALI             "@it ;
+    ns1:prefLabel "BENGALI             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "BEN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "BEN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIH> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "BIHARI (IND)        "@it ;
+    ns1:prefLabel "BIHARI (IND)        "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "BIH" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "BIH" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BIR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "BIRMANO             "@it ;
+    ns1:prefLabel "BIRMANO             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "BIR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "BIR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BOS> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "BOSNIACO            "@it ;
+    ns1:prefLabel "BOSNIACO            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "BOS" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "BOS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/BUL> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "BULGARO             "@it ;
+    ns1:prefLabel "BULGARO             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "BUL" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "BUL" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "CANTONESE           "@it ;
+    ns1:prefLabel "CANTONESE           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "CAN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "CAN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CAT> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "CATALANO "@it ;
+    ns1:prefLabel "CATALANO "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "CAT" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "CAT" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CEC> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "CECO                "@it ;
+    ns1:prefLabel "CECO                "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "CEC" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "CEC" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CIN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "CINESE MANDARINO"@it ;
+    ns1:prefLabel "CINESE MANDARINO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "CIN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "CIN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/COR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "COREANO             "@it ;
+    ns1:prefLabel "COREANO             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "COR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "COR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/CRO> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "CROATO              "@it ;
+    ns1:prefLabel "CROATO              "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "CRO" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "CRO" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/DAN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "DANESE              "@it ;
+    ns1:prefLabel "DANESE              "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "DAN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "DAN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EBR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "EBRAICO             "@it ;
+    ns1:prefLabel "EBRAICO             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "EBR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "EBR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/EST> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ESTONE"@it ;
+    ns1:prefLabel "ESTONE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "EST" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "EST" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIA> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "FIAMMINGO           "@it ;
+    ns1:prefLabel "FIAMMINGO           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "FIA" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "FIA" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIL> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "FILIPPINO"@it ;
+    ns1:prefLabel "FILIPPINO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "FIL" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "FIL" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/FIN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "FINLANDESE          "@it ;
+    ns1:prefLabel "FINLANDESE          "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "FIN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "FIN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GEO> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "GEORGIANO"@it ;
+    ns1:prefLabel "GEORGIANO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "GEO" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "GEO" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIU> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "GUJARATI            "@it ;
+    ns1:prefLabel "GUJARATI            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "GIU" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "GIU" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GIV> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "GIAVANESE           "@it ;
+    ns1:prefLabel "GIAVANESE           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "GIV" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "GIV" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/GRE> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "GRECO               "@it ;
+    ns1:prefLabel "GRECO               "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "GRE" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "GRE" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HAK> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "HAKKA (INDIA)       "@it ;
+    ns1:prefLabel "HAKKA (INDIA)       "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "HAK" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "HAK" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HID> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "HINDUSTANI          "@it ;
+    ns1:prefLabel "HINDUSTANI          "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "HID" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "HID" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/HIN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "HINGJ               "@it ;
+    ns1:prefLabel "HINGJ               "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "HIN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "HIN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/IND> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "INDONESIANO"@it ;
+    ns1:prefLabel "INDONESIANO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "IND" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "IND" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISL> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ISLANDESE"@it ;
+    ns1:prefLabel "ISLANDESE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "ISL" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "ISL" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ISR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ISRAELIANO          "@it ;
+    ns1:prefLabel "ISRAELIANO          "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "ISR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "ISR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KAN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "KANARESE            "@it ;
+    ns1:prefLabel "KANARESE            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "KAN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "KAN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/KUR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "CURDO"@it ;
+    ns1:prefLabel "CURDO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "KUR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "KUR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LAV> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "LETTONE"@it ;
+    ns1:prefLabel "LETTONE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "LAV" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "LAV" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/LTU> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "LITUANO"@it ;
+    ns1:prefLabel "LITUANO"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "LTU" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "LTU" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAL> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "MALAYALAM           "@it ;
+    ns1:prefLabel "MALAYALAM           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "MAL" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "MAL" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "KUAN-HUA            "@it ;
+    ns1:prefLabel "KUAN-HUA            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "MAN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "MAN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "MARATHI (IND)       "@it ;
+    ns1:prefLabel "MARATHI (IND)       "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "MAR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "MAR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MAY> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "MALAY (INDON)       "@it ;
+    ns1:prefLabel "MALAY (INDON)       "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "MAY" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "MAY" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MIN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "MIN (CINA)          "@it ;
+    ns1:prefLabel "MIN (CINA)          "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "MIN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "MIN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MKD> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "MACEDONE"@it ;
+    ns1:prefLabel "MACEDONE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "MKD" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "MKD" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/MLT> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "MALTESE"@it ;
+    ns1:prefLabel "MALTESE"@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "MLT" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "MLT" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/NOR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "NORVEGESE           "@it ;
+    ns1:prefLabel "NORVEGESE           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "NOR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "NOR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/OLA> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "OLANDESE            "@it ;
+    ns1:prefLabel "OLANDESE            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "OLA" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "OLA" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/ORI> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "ORIYA (IND)         "@it ;
+    ns1:prefLabel "ORIYA (IND)         "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "ORI" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "ORI" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PAS> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "PASHTO (AFG)        "@it ;
+    ns1:prefLabel "PASHTO (AFG)        "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "PAS" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "PAS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PER> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "PERSIANO            "@it ;
+    ns1:prefLabel "PERSIANO            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "PER" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "PER" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POL> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "POLACCO             "@it ;
+    ns1:prefLabel "POLACCO             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "POL" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "POL" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/POR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "PORTOGHESE          "@it ;
+    ns1:prefLabel "PORTOGHESE          "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "POR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "POR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/PUN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "PUNJABI (IND)       "@it ;
+    ns1:prefLabel "PUNJABI (IND)       "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "PUN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "PUN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RAI> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "RAJASTANI           "@it ;
+    ns1:prefLabel "RAJASTANI           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "RAI" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "RAI" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUM> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "RUMENO              "@it ;
+    ns1:prefLabel "RUMENO              "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "RUM" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "RUM" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/RUS> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "RUSSO               "@it ;
+    ns1:prefLabel "RUSSO               "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "RUS" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "RUS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SEN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SENEGALESE          "@it ;
+    ns1:prefLabel "SENEGALESE          "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SEN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SEN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SER> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SERBO               "@it ;
+    ns1:prefLabel "SERBO               "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SER" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SER" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SIN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SINGALESE           "@it ;
+    ns1:prefLabel "SINGALESE           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SIN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SIN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLO> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SLOVENO             "@it ;
+    ns1:prefLabel "SLOVENO             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SLO" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SLO" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SLV> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SLOVACCO            "@it ;
+    ns1:prefLabel "SLOVACCO            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SLV" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SLV" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SOM> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SOMALO              "@it ;
+    ns1:prefLabel "SOMALO              "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SOM" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SOM" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SPA> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SPAGNOLO            "@it ;
+    ns1:prefLabel "SPAGNOLO            "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SPA" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SPA" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SUN> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SUNDANESE           "@it ;
+    ns1:prefLabel "SUNDANESE           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SUN" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SUN" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SVE> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SVEDESE             "@it ;
+    ns1:prefLabel "SVEDESE             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SVE" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SVE" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/SWA> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "SWAILI              "@it ;
+    ns1:prefLabel "SWAILI              "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "SWA" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "SWA" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TAM> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "TAMIL (INDIA)       "@it ;
+    ns1:prefLabel "TAMIL (INDIA)       "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "TAM" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "TAM" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TEL> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "TELUGU (IND)        "@it ;
+    ns1:prefLabel "TELUGU (IND)        "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "TEL" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "TEL" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/THA> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "THAI                "@it ;
+    ns1:prefLabel "THAI                "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "THA" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "THA" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/TUR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "TURCO               "@it ;
+    ns1:prefLabel "TURCO               "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "TUR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "TUR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UCR> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "UCRAINO             "@it ;
+    ns1:prefLabel "UCRAINO             "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "UCR" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "UCR" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/UNG> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "UNGHERESE           "@it ;
+    ns1:prefLabel "UNGHERESE           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "UNG" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "UNG" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/URD> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "URDU (INDIA)        "@it ;
+    ns1:prefLabel "URDU (INDIA)        "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "URD" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "URD" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIE> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "VIETNAMITA          "@it ;
+    ns1:prefLabel "VIETNAMITA          "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "VIE" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "VIE" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/VIS> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "VISAYAN (FIL)       "@it ;
+    ns1:prefLabel "VISAYAN (FIL)       "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "VIS" ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "VIS" .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/WU%20> a <https://w3id.org/italia/labour-social-policies/onto/labour/LinguaConosciuta>,
+        ns1:Concept ;
+    rdfs:label "WU (CINA)           "@it ;
+    ns1:prefLabel "WU (CINA)           "@it ;
+    ns1:inScheme <https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua> ;
+    ns1:notation "WU " ;
+    ns2:hasRankOrder "1" ;
+    ns3:identifier "WU " .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_lingua/distribution/TL_CSV> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns4:Distribution ;
+    ns3:description "Controlled vocabulary of the type of language known CSV distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of language known CSV distribution"@en,
+        "Distribuzione CSV del vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_lingua/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_lingua/latest/tipo_lingua.csv> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_lingua/distribution/TL_JSON_LD> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns4:Distribution ;
+    ns3:description "Controlled vocabulary of the type of language known JSON_LD distribution"@en,
+        "Questa è la distribuzione CSV del vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of language known JSON_LD distribution"@en,
+        "Distribuzione JSON_LD del vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_lingua/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_lingua/latest/tipo_lingua.json> .
+
+<https://w3id.org/italia/labour-social-policies/controlled-vocabulary/tipo_lingua/distribution/TL_RDF_TURTLE> a <http://dati.gov.it/onto/dcatapit#Distribution>,
+        ns4:Distribution ;
+    ns3:description "Controlled vocabulary of the type of language known RDF/turtle distribution"@en,
+        "Questa è la distribuzione RDF/Turtle del vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns3:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    ns3:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+    ns3:title "Controlled vocabulary of the type of language known RDF/turtle distribution"@en,
+        "Distribuzione RDF/Turtle del vocabolario controllato della tipologia di lingua conosciuta"@it ;
+    ns4:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_lingua/latest> ;
+    ns4:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/controlled-vocabularies/tipo_lingua/latest/tipo_lingua.ttl> .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
