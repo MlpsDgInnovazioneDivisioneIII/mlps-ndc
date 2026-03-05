@@ -21,7 +21,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 lsp-social: a owl:Ontology ;
-    owl:versionIRI lsp-social:0.1 ;
+    owl:versionIRI lsp-social:1.0 ;
     owl:imports CLV:,
         COV:,
         CPV:,
@@ -46,7 +46,7 @@ lsp-social: a owl:Ontology ;
     adms:hasTask adms:AnnotationTask,
         adms:QueryFormulationTask,
         adms:SearchTask ;
-    adms:last lsp-social:0.1 ;
+    adms:last lsp-social:1.0 ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/social/"^^xsd:anyURI ;
     adms:prefix "lsp-social" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
@@ -95,201 +95,172 @@ lsp-core:haDomandaPrestazioneDiSostegno a owl:FunctionalProperty,
 lsp-core:presentaDomandaPrestazioneDiSostegno a owl:InverseFunctionalProperty,
         owl:ObjectProperty .
 
-lsp-social:assegnatoCasoAGestoreda a owl:FunctionalProperty,
+lsp-social:assegnatoCasoAGestoreDa a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "assegnato caso a gestore da"@it ;
     rdfs:domain lsp-social:AssegnazioneCasoDiNucleo ;
-    rdfs:range lsp-social:CoordinatorePAIS ;
-    rdfs:comment "relazione che collega le entità Assegnazione caso di nucleo e Coordinatore PaIS"@it .
+    rdfs:range lsp-social:CoordinatorePAIS .
 
 lsp-social:generaContributoScalaEquivalenza a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "genera contributo scala equivalenza"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:range lsp-social:ContributoDiComponenteAScalaDiEquivalenza ;
-    rdfs:comment "relazione che collega le entità Componente nucleo familiare e Contributo componente a scala di equivalenza"@it .
+    rdfs:range lsp-social:ContributoDiComponenteAScalaDiEquivalenza .
 
 lsp-social:gestisceCondizioneDiSvantaggio a owl:ObjectProperty ;
     rdfs:label "gestisce condizione di svantaggio"@it ;
     rdfs:domain lsp-social:CertificatoCondizioneDiSvantaggio ;
-    rdfs:range COV:PublicOrganization ;
-    rdfs:comment "relazione che collega una Organizzazione con il certificato di condizione di svantaggio"@it .
+    rdfs:range COV:PublicOrganization .
 
 lsp-social:haAmministrazioneServizioSociale a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha amministrazione servizio sociale"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range lsp-core:AmministrazioneServizioSociale ;
-    rdfs:comment "relazione che collega il Caso di nucleo fragile o in povertà con l'amministrazione del servizio sociale"@it .
+    rdfs:range lsp-core:AmministrazioneServizioSociale .
 
 lsp-social:haAnalisiPreliminare a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha analisi preliminare"@it ;
     rdfs:domain lsp-social:StatoDiAnalisiPreliminare ;
-    rdfs:range lsp-social:AnalisiPreliminareDelCaso ;
-    rdfs:comment "relazione che collega lo Stato di analisi preliminare con l'Analisi preliminare del caso"@it .
+    rdfs:range lsp-social:AnalisiPreliminareDelCaso .
 
 lsp-social:haAssegnazioneCasoDiNucleo a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha assegnazione caso di nucleo"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range lsp-social:AssegnazioneCasoDiNucleo ;
-    rdfs:comment "relazione che collega il Caso di nucleo fragile o in povertà con l'assegnazione del caso di nucleo"@it .
+    rdfs:range lsp-social:AssegnazioneCasoDiNucleo .
 
 lsp-social:haAttoDiAttribuzioneCategoriaObbligo a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha atto di attribuzione categoria obbligo"@it ;
     rdfs:domain lsp-social:StatoDiIdentificazioneObbligoDiAttivazione ;
-    rdfs:range lsp-social:AttoDiAttribuzioneCategoriaObbligoAttivazione ;
-    rdfs:comment "relazione che collega lo Stato di identificazione obbligo di attivazione con l'Atto di attribuzione categoria obbligo di attivazione"@it .
+    rdfs:range lsp-social:AttoDiAttribuzioneCategoriaObbligoAttivazione .
 
 lsp-social:haAttoDiGiustificatoMotivoDiAssenza a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha atto di giustificato motivo di assenza"@it ;
     rdfs:domain lsp-social:PeriodoDiGiustificatoMotivoAssenza ;
-    rdfs:range lsp-social:AttoDiGiustificatoMotivoDiAssenza ;
-    rdfs:comment "relazione che collega il Periodo di giustificato motivo di assenza con l'Atto di giustificato motivo di assenza"@it .
+    rdfs:range lsp-social:AttoDiGiustificatoMotivoDiAssenza .
 
 lsp-social:haCategoriaDiObbligoDiAttivazione a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha categoria di obbligo di attivazione"@it ;
     rdfs:domain lsp-social:ObbligoComponenteNucleoDelCaso ;
-    rdfs:range lsp-social:CategoriaDiObbligo ;
-    rdfs:comment "relazione che collega l'obbligo componente nucleo del caso con la Categoria di obbligo"@it .
+    rdfs:range lsp-social:CategoriaDiObbligo .
 
 lsp-social:haComponenteAttivoNelCaso a owl:ObjectProperty ;
     rdfs:label "ha componente attivo nel caso"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collega il Caso di nucleo fragile o in povertà con il Componente nucleo attivo nel caso"@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 lsp-social:haComponenteNucleo a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha componente nucleo"@it ;
     rdfs:domain lsp-social:NucleoFamiliare ;
-    rdfs:range lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:comment "relazione che collega il Nucleo familiare socilamente fragile o in povertà con il Componente di nucleo fragile o in povertà"@it .
+    rdfs:range lsp-social:ComponenteNucleoFamiliare .
 
 lsp-social:haComponenteNucleoConCategoriaObbligoAttivazione a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha componente nucleo con categoria obbligo attivazione"@it ;
     rdfs:domain lsp-social:ObbligoComponenteNucleoDelCaso ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collega l'obbligo componente nucleo del caso con la Componente nucleo attivo nel caso"@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 lsp-social:haCondizioneDiDisabilità a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha condizione di disabilità"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:range lsp-social:CertificatoCondizioneDiDisabilità ;
-    rdfs:comment "relazione che collega il Componente nucleo familiare con il Certificato di condizione di disabilità"@it .
+    rdfs:range lsp-social:CertificatoCondizioneDiDisabilità .
 
 lsp-social:haCondizioneDiSvantaggio a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha condizione di svantaggio"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:range lsp-social:CertificatoCondizioneDiSvantaggio ;
-    rdfs:comment "relazione che collega il Componente nucleo familiare con il Certificato di condizione di svantaggio"@it .
+    rdfs:range lsp-social:CertificatoCondizioneDiSvantaggio .
 
 lsp-social:haContributoScalaDiEquivalenza a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha contributo scala di equivalenza"@it ;
     rdfs:domain lsp-social:ScalaDiEquivalenzaNucleo ;
-    rdfs:range lsp-social:ContributoDiComponenteAScalaDiEquivalenza ;
-    rdfs:comment "relazione che collega il Contributo di componente a scala di equivalenza con la Scala di equivalenza nucleo"@it .
+    rdfs:range lsp-social:ContributoDiComponenteAScalaDiEquivalenza .
 
 lsp-social:haDomandaDiPrestazioneDiSostegnoNucleo a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha domanda di prestazione di sostegno nucleo"@it ;
     rdfs:domain lsp-social:GestioneDiDomandaDiCasoDiNucleo ;
-    rdfs:range lsp-core:DomandaPrestazioneDiSostegnoNucleoFamiliare ;
-    rdfs:comment "relazione che collega la Gestione di domanda di caso con la Domanda di prestazione di sostegno di nucleo familiare"@it .
+    rdfs:range lsp-core:DomandaPrestazioneDiSostegnoNucleoFamiliare .
 
 lsp-social:haEnteAttuatoreDelSostegno a owl:ObjectProperty ;
-    rdfs:label "ha ente attuatore sostegno"@it ;
+    rdfs:label "ha ente attuatore del sostegno"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:range lsp-core:GestoreServizioSociale ;
-    rdfs:comment "relazione che collega il Sostegno PaIS con il Gestore Servizio Sociale"@it .
+    rdfs:range lsp-core:GestoreServizioSociale .
 
 lsp-social:haEquipeMultidisciplinareDelCaso a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha equipe multidisciplinare del caso"@it ;
     rdfs:domain lsp-social:StatoDiValutazioneMultidimensionale ;
-    rdfs:range lsp-social:EquipeMultidisciplinareDelCaso ;
-    rdfs:comment "relazione che collega lo Stato di valutazione multidimensionale con l'Equipe multidisciplinare del caso"@it .
+    rdfs:range lsp-social:EquipeMultidisciplinareDelCaso .
 
 lsp-social:haEsitoAnalisiPreliminareCaso a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha esito analisi preliminare caso"@it ;
     rdfs:domain lsp-social:AnalisiPreliminareDelCaso ;
-    rdfs:range lsp-social:EsitoAnalisiPreliminareCaso ;
-    rdfs:comment "relazione che collega l'Analisi preliminare del caso con l'Esito dell'analisi preliminare del caso"@it .
+    rdfs:range lsp-social:EsitoAnalisiPreliminareCaso .
 
 lsp-social:haEsitoAPComponenteNucleo a owl:ObjectProperty ;
     rdfs:label "ha esito AP componente nucleo"@it ;
     rdfs:domain lsp-social:EsitoAnalisiPreliminareCaso ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collega l'Esito analisi preliminare del caso con il Componente nucleo attivo nel caso"@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 lsp-social:haEsitoImpegnoPaIS a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha esito impegno PaIS"@it ;
     rdfs:domain lsp-social:ImpegnoPaIS ;
-    rdfs:range lsp-social:EsitoImpegnoPaIS ;
-    rdfs:comment "relazione che collega l'Impegno PaIS con l'Esito impegno PaIS"@it .
+    rdfs:range lsp-social:EsitoImpegnoPaIS .
 
 lsp-social:haEsitoQAComponenteNucleo a owl:ObjectProperty ;
     rdfs:label "ha esito QA componente nucleo"@it ;
     rdfs:domain lsp-social:EsitoQuadroAnalisiCaso ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collega Esito quadro di analisi caso con la Componente nucleo attivo nel caso"@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 lsp-social:haEsitoQuadroAnalisiCaso a owl:ObjectProperty ;
     rdfs:label "ha esito quadro analisi caso"@it ;
     rdfs:domain lsp-social:QuadroDiAnalisiDelCaso ;
-    rdfs:range lsp-social:EsitoQuadroAnalisiCaso ;
-    rdfs:comment "relazione che collega il Quadro di analisi del caso con l'Esito del quadro di analisi del caso"@it .
+    rdfs:range lsp-social:EsitoQuadroAnalisiCaso .
 
 lsp-social:haEsitoRisultatoAttesoObiettivoPaIS a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha esito risultato atteso obiettivo PaIS"@it ;
     rdfs:domain lsp-social:RisultatoAttesoDiObiettivo ;
-    rdfs:range lsp-social:EsitoRisultatoAttesoObiettivoPaIS ;
-    rdfs:comment "relazione che collega il Risultato atteso di obiettivo con Esito di risultato atteso obiettivo PaIS"@it .
+    rdfs:range lsp-social:EsitoRisultatoAttesoObiettivoPaIS .
 
 lsp-social:haGestioneDiDomandaDiCasoDiNucleo a owl:ObjectProperty ;
     rdfs:label "ha gestione di domanda di caso di nucleo"@it ;
     rdfs:subPropertyOf L0:hasMember ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range lsp-social:GestioneDiDomandaDiCasoDiNucleo ;
-    rdfs:comment "relazione che collega il Caso di nucleo fragile o in povertà con la Gestione di domanda di caso di nucleo"@it .
+    rdfs:range lsp-social:GestioneDiDomandaDiCasoDiNucleo .
 
 lsp-social:haGestoreCasoDiNucleo a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha gestore caso di nucleo"@it ;
     rdfs:domain lsp-social:AssegnazioneCasoDiNucleo ;
-    rdfs:range lsp-social:GestoreCasoInclusioneSociale ;
-    rdfs:comment "relazione che collega l'Assegnazione caso di nucleo con il Gestore caso inclusione sociale"@it .
+    rdfs:range lsp-social:GestoreCasoInclusioneSociale .
 
 lsp-social:haGiustificatoMotivoAssenzaComponente a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha giustificato motivo assenza componente"@it ;
     rdfs:domain lsp-social:PartecipazioneComponenteAIncontro ;
-    rdfs:range lsp-social:PeriodoDiGiustificatoMotivoAssenza ;
-    rdfs:comment "relazione che collega la Partecipazione componente a incontro con il Periodo di giustificato motivo di assenza"@it .
+    rdfs:range lsp-social:PeriodoDiGiustificatoMotivoAssenza .
 
 lsp-social:haGiustificatoMotivoAssenzaNucleo a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha giustificato motivo assenza nucleo"@it ;
     rdfs:domain lsp-social:StatoDiIncontroValutato ;
-    rdfs:range lsp-social:PeriodoDiGiustificatoMotivoAssenza ;
-    rdfs:comment "relazione che collega lo Stato di incontro valutato con il Periodo di giustificato motivo di assenza"@it .
+    rdfs:range lsp-social:PeriodoDiGiustificatoMotivoAssenza .
 
 lsp-social:haImpegnoPaIS a owl:ObjectProperty ;
     rdfs:label "ha impegno PaIS"@it ;
     rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:range lsp-social:ImpegnoPaIS ;
-    rdfs:comment "relazione che collega il Patto di inclusione soiale del caso con l'Impegno PaIS"@it .
+    rdfs:range lsp-social:ImpegnoPaIS .
 
 lsp-social:haIntestatarioCartaDiInclusione a owl:ObjectProperty ;
     rdfs:label "ha intestatario carta di inclusione"@it ;
@@ -297,29 +268,25 @@ lsp-social:haIntestatarioCartaDiInclusione a owl:ObjectProperty ;
     rdfs:range [ a owl:Class ;
             owl:unionOf (
                     lsp-social:BeneficiarioADI
-                    lsp-social:RichiedenteADI ) ] ;
-    rdfs:comment "relazione che collega la Carta di inclusione con il Beneficiario o il Richiedente ADI"@it .
+                    lsp-social:RichiedenteADI ) ] .
 
 lsp-social:haIntestatarioContrattoLocazioneNucleoFamiliare a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha intestatario contratto locazione nucleo familiare"@it ;
     rdfs:domain lsp-social:NucleoFamiliare ;
-    rdfs:range lsp-social:IntestatarioContrattoLocazioneNucleoFamiliare ;
-    rdfs:comment "relazione che collega il Nucleo familiare con l'Intestatario del contratto di locazione del nucleo familiare"@it .
+    rdfs:range lsp-social:IntestatarioContrattoLocazioneNucleoFamiliare .
 
 lsp-social:haMembroEquipeMultidisciplinare a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha membro equipe multidisciplinare"@it ;
     rdfs:domain lsp-social:EquipeMultidisciplinareDelCaso ;
-    rdfs:range lsp-social:MembroEquipeMultidisciplinareDelCaso ;
-    rdfs:comment "relazione che collega l'Equipe multidisciplinare del caso con il Membro equipe multidisciplinare del caso"@it .
+    rdfs:range lsp-social:MembroEquipeMultidisciplinareDelCaso .
 
 lsp-social:haNucleoFamiliareDiDomandaDiPrestazione a owl:FunctionalProperty,
         owl:ObjectProperty ;
-    rdfs:label "ha nucleo familiare di Domanda di prestazione"@it ;
+    rdfs:label "ha nucleo familiare di domanda di prestazione"@it ;
     rdfs:domain lsp-core:DomandaPrestazioneDiSostegnoNucleoFamiliare ;
-    rdfs:range lsp-social:NucleoFamiliare ;
-    rdfs:comment "relazione che collega la Domanda di prestazione di sostegno del nucleo familiare con il Nucleo familiare"@it .
+    rdfs:range lsp-social:NucleoFamiliare .
 
 lsp-social:haNucleoFamiliareDiPAD a owl:ObjectProperty ;
     rdfs:label "ha nucleo familiare di PAD"@it ;
@@ -327,209 +294,175 @@ lsp-social:haNucleoFamiliareDiPAD a owl:ObjectProperty ;
     rdfs:range lsp-social:NucleoFamiliare ;
     owl:propertyChainAxiom (
             lsp-social:riferisceDomandaDiPrestazione
-            lsp-social:haNucleoFamiliareDiDomandaDiPrestazione ) ;
-    rdfs:comment "relazione che collega il Patto di attivazione digitale nucleo con il Nucleo familiare"@it .
+            lsp-social:haNucleoFamiliareDiDomandaDiPrestazione ) .
 
 lsp-social:haNucleoFamiliareFragileOInPovertà a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha nucleo familiare fragile o in povertà"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range lsp-social:NucleoFamiliareSocialmenteFragileOInPovertà ;
-    rdfs:comment "relazione che collega il Caso di nucleo fragile o in povertà con la il Nucleo familiare socialmente fragile o in povertà"@it .
+    rdfs:range lsp-social:NucleoFamiliareSocialmenteFragileOInPovertà .
 
 lsp-social:haObbiettvoDiImpegno a owl:ObjectProperty ;
     rdfs:label "ha obbiettvo di impegno"@it ;
     rdfs:domain lsp-social:ImpegnoPaIS ;
-    rdfs:range lsp-social:ObiettivoPaIS ;
-    rdfs:comment "relazione che collega l'Impegno PaIS con l'Obiettivo"@it .
+    rdfs:range lsp-social:ObiettivoPaIS .
 
 lsp-social:haObiettivoPaIS a owl:ObjectProperty ;
     rdfs:label "ha obiettivo PaIS"@it ;
     rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:range lsp-social:ObiettivoPaIS ;
-    rdfs:comment "relazione che collega il Patto di inclusione sociale del caso con l'Obiettivo PaIS"@it .
+    rdfs:range lsp-social:ObiettivoPaIS .
 
 lsp-social:haPADNucleoFamiliare a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha PAD nucleo familiare"@it ;
     rdfs:domain lsp-core:PrestazioneDiSostegnoNucleoFamiliare ;
     rdfs:range lsp-social:PattoAttivazioneDigitaleNucleo ;
-    rdfs:comment "relazione che collega la Prestazione di sostegno con il Patto di attivazione digitale"@it .
+    rdfs:comment "Lega una Prestazione di sostegno nucleo familiare al relativo PAD nucleo."@it .
 
 lsp-social:haPartecipanteIncontro a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha partecipante incontro"@it ;
     rdfs:domain lsp-social:StatoDiIncontroValutato ;
-    rdfs:range lsp-social:PartecipazioneComponenteAIncontro ;
-    rdfs:comment "relazione che collega lo Stato di incontro valutato con la Partecipazione componente a incontro"@it .
+    rdfs:range lsp-social:PartecipazioneComponenteAIncontro .
 
 lsp-social:haPartecipantePUC a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha partecipante PUC"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collegala Partecipazione PUCa con la Componente nucleo attivo nel caso"@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 lsp-social:haPartecipazionePUC a owl:ObjectProperty ;
     rdfs:label "ha partecipazione PUC"@it ;
     rdfs:domain lsp-social:StatoDiPartecipazionePUC ;
-    rdfs:range lsp-social:PartecipazionePUC ;
-    rdfs:comment "relazione che collega lo Stato di partecipazione PUC con la Partecipazione PUC"@it .
+    rdfs:range lsp-social:PartecipazionePUC .
 
 lsp-social:haPattoInclusioneSocialeDelCaso a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha patto inclusione sociale del caso"@it ;
     rdfs:domain lsp-social:StatoDiSottoscrizionePaIS ;
-    rdfs:range lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:comment "relazione che collega lo Stato di sottoscrizione PaIS con il Patto di inclusione sociale del caso"@it .
+    rdfs:range lsp-social:PattoInclusioneSocialeDelCaso .
 
 lsp-social:haPrestazioneDiSostegno a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha prestazione di sostegno"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
     rdfs:range lsp-core:PrestazioneDiSostegnoNucleoFamiliare ;
-    rdfs:comment "relazione che collega il Caso di nucleo fragile o in povertà con la Prestazione di sostegno del nucleo familiare"@it .
+    rdfs:comment "Lega un Caso d'inclusione di un nucleo familiare alla prestazione di sostegno da cui ha avuto origine."@it .
 
 lsp-social:haProfessioneMembroEquipe a owl:ObjectProperty ;
     rdfs:label "ha professione membro equipe"@it ;
     rdfs:domain lsp-social:MembroEquipeMultidisciplinareDelCaso ;
-    rdfs:range lsp-social:ProfessioneMembroEquipe ;
-    rdfs:comment "relazione che collega la classe Membro equipe multidiciplinare del caso con la Professione membro equipe"@it .
+    rdfs:range lsp-social:ProfessioneMembroEquipe .
 
 lsp-social:haPUC a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha PUC"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range lsp-core:ProgettoUtileAllaCollettività ;
-    rdfs:comment "relazione che collega la Partecipazione PUC con il Progetto Utile alla Collettività"@it .
+    rdfs:range lsp-core:ProgettoUtileAllaCollettività .
 
 lsp-social:haQuadroDiAnalisi a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha quadro di analisi"@it ;
     rdfs:domain lsp-social:StatoDiQuadroDiAnalisi ;
-    rdfs:range lsp-social:QuadroDiAnalisiDelCaso ;
-    rdfs:comment "relazione che collega lo Stato di quadro di analisi con il Quadro di analisi"@it .
+    rdfs:range lsp-social:QuadroDiAnalisiDelCaso .
 
 lsp-social:haRisultatoAttesoDiObiettivo a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha risultato atteso di obiettivo"@it ;
     rdfs:domain lsp-social:ObiettivoPaIS ;
-    rdfs:range lsp-social:RisultatoAttesoDiObiettivo ;
-    rdfs:comment "relazione che collega l'Obiettivo PaIS con il Risultato atteso di obiettivo"@it .
+    rdfs:range lsp-social:RisultatoAttesoDiObiettivo .
 
 lsp-social:haScalaDiEquivalenzaNucleo a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
-    rdfs:label "ha scala di equivalenza Nucleo"@it ;
+    rdfs:label "ha scala di equivalenza nucleo"@it ;
     rdfs:domain lsp-social:NucleoFamiliare ;
-    rdfs:range lsp-social:ScalaDiEquivalenzaNucleo ;
-    rdfs:comment "relazione che collega il Nucleo familiare con la Scala di equivalenza nucleo"@it .
+    rdfs:range lsp-social:ScalaDiEquivalenzaNucleo .
 
 lsp-social:haSostegnoPaIS a owl:ObjectProperty ;
     rdfs:label "ha sostegno PaIS"@it ;
     rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:range lsp-social:SostegnoPaIS ;
-    rdfs:comment "relazione che collega il Patto di inclusione sociale del caso con il Sostegno PaIS"@it .
+    rdfs:range lsp-social:SostegnoPaIS .
 
 lsp-social:haSottoscrittorePAD a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha sottoscrittore PAD"@it ;
     rdfs:domain lsp-social:PattoAttivazioneDigitaleNucleo ;
-    rdfs:range lsp-core:RichiedentePrestazioneDiSostegnoNucleoFamiliare ;
-    rdfs:comment "relazione che collega il Patto di attivazione digitale nucleo con il Richiedente Prestazione di Sostegno del nucleo familiare"@it .
+    rdfs:range lsp-core:RichiedentePrestazioneDiSostegnoNucleoFamiliare .
 
 lsp-social:haStatoDiGestioneDiDomandaDiCaso a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha stato di gestione di domanda di caso"@it ;
     rdfs:subPropertyOf L0:hasMember ;
     rdfs:domain lsp-social:GestioneDiDomandaDiCasoDiNucleo ;
-    rdfs:range lsp-social:StatoDiGestioneDiDomandaDiCaso ;
-    rdfs:comment "relazione che collega la Gestione di domanda di caso con lo Stato di gestione di domanda di caso"@it .
-
-lsp-social:haTipoDiImpegno a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "ha tipo di impegno"@it ;
-    rdfs:domain lsp-social:ImpegnoPaIS ;
-    rdfs:range lsp-social:TipoDiImpegno ;
-    rdfs:comment "relazione che collega l'Impegno PaIS con il Tipo di impegno"@it .
+    rdfs:range lsp-social:StatoDiGestioneDiDomandaDiCaso .
 
 lsp-social:haTipoDiSostegno a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha tipo di sostegno"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:range lsp-social:TipoDiSostegno ;
-    rdfs:comment "relazione che collega il Sostegno PaIS con il Tipo di sostegno"@it .
+    rdfs:range lsp-social:TipoDiSostegno .
 
 lsp-social:indicaObbligoComponenteNucleoDelCaso a owl:FunctionalProperty,
         owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "indica obbligo componente nucleo del caso"@it ;
     rdfs:domain lsp-social:AttoDiAttribuzioneCategoriaObbligoAttivazione ;
-    rdfs:range lsp-social:ObbligoComponenteNucleoDelCaso ;
-    rdfs:comment "relazione che collega l'Atto di attribuzione categoria obbligo attivazione con l'Obbligo componente nucleo di caso"@it .
+    rdfs:range lsp-social:ObbligoComponenteNucleoDelCaso .
 
 lsp-social:partecipaAIncontro a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "partecipa a incontro"@it ;
     rdfs:domain lsp-social:ComponenteDiNucleoFragileOInPovertà ;
-    rdfs:range lsp-social:PartecipazioneComponenteAIncontro ;
-    rdfs:comment "relazione che collega la Partecipazione componente a incontro con la Componente di nucleo fragile o in povertà"@it .
+    rdfs:range lsp-social:PartecipazioneComponenteAIncontro .
 
 lsp-social:riferisceDomandaDiPrestazione a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
-    rdfs:label "relazione che collega il Nucleo familiare socialmente fragile o in povertà con la Domanda di prestazione di sostegno"@it ;
+    rdfs:label "riferisce domanda di prestazione"@it ;
     rdfs:domain lsp-social:PattoAttivazioneDigitaleNucleo ;
     rdfs:range lsp-core:DomandaPrestazioneDiSostegnoNucleoFamiliare .
 
 lsp-social:rilasciaCertificatoCondizioneDiDisabilità a owl:ObjectProperty ;
     rdfs:label "rilascia certificato condizione di disabilità"@it ;
     rdfs:domain lsp-social:CertificatoCondizioneDiDisabilità ;
-    rdfs:range COV:PublicOrganization ;
-    rdfs:comment "relazione che collega l'organizzazione con il Certificato di condizione di disabilità"@it .
+    rdfs:range COV:PublicOrganization .
 
 lsp-social:rilasciaCertificatoCondizioneDiSvantagio a owl:ObjectProperty ;
-    rdfs:label "rilascia certificato condizione di svantaggio"@it ;
+    rdfs:label "rilascia certificato condizione di svantagio"@it ;
     rdfs:domain lsp-social:CertificatoCondizioneDiSvantaggio ;
-    rdfs:range COV:PublicOrganization ;
-    rdfs:comment "relazione che collega l'organizzazione con il Certificato di condizione di svantaggio"@it .
+    rdfs:range COV:PublicOrganization .
 
 lsp-social:rilevaEsitoImpegnoPaIS a owl:ObjectProperty ;
     rdfs:label "rileva esito impegno PaIS"@it ;
     rdfs:domain lsp-social:StatoDiIncontroDiMonitoraggio ;
-    rdfs:range lsp-social:EsitoImpegnoPaIS ;
-    rdfs:comment "relazione che collega lo Stato di incontro di monitoraggio con l'Esito impegno PaIS"@it .
+    rdfs:range lsp-social:EsitoImpegnoPaIS .
 
 lsp-social:rilevaEsitoRisultatoAttesoPaIS a owl:ObjectProperty ;
     rdfs:label "rileva esito risultato atteso PaIS"@it ;
     rdfs:domain lsp-social:StatoDiIncontroDiMonitoraggio ;
-    rdfs:range lsp-social:EsitoRisultatoAttesoObiettivoPaIS ;
-    rdfs:comment "relazione che collega lo Stato di incontro di monitoraggio  con l'Esito risultato atteso obiettivo PaIS"@it .
+    rdfs:range lsp-social:EsitoRisultatoAttesoObiettivoPaIS .
 
 lsp-social:èComponenteNucleoAttivoDiCaso a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "è componente nucleo attivo di caso"@it ;
     rdfs:domain lsp-social:ComponenteDiNucleoFragileOInPovertà ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collega la Componente di nucleo fragile o in povertà con la Componente nucleo attivo nel caso "@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 lsp-social:èImpegnoPaIS a owl:FunctionalProperty,
         owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "è impegno PaIS"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range lsp-social:ImpegnoPaIS ;
-    rdfs:comment "relazione che collega  la Partecipazione PUC con l'Impegno PaIS"@it .
+    rdfs:range lsp-social:ImpegnoPaIS .
 
 lsp-social:èImpegnoPerComponenteNucleo a owl:ObjectProperty ;
     rdfs:label "è impegno per componente nucleo"@it ;
     rdfs:domain lsp-social:ImpegnoPaIS ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collega  l'Impegno PaIS con il Componente nucleo attivo nel caso"@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 lsp-social:èSostegnoPerComponenteNucleo a owl:ObjectProperty ;
     rdfs:label "è sostegno per componente nucleo"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:comment "relazione che collega  il Sostegno PaIS con la Componente nucleo attivo nel caso"@it .
+    rdfs:range lsp-social:ComponenteNucleoAttivoNelCaso .
 
 RO:holdsRoleInTime a owl:ObjectProperty .
 
@@ -561,8 +494,7 @@ lsp-social:avvisoCompletamentoObbligoDiIstruzione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso completamento obbligo di istruzione"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se l'obbligo di istruzione è completato o meno"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoComponenteAttivoNelCaso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -574,15 +506,13 @@ lsp-social:avvisoComponenteInScalaEquivalenza a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso componente in scala equivalenza"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se il componente del nucleo sia conteggiato nella scala di equivalenza"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoComponenteResidenteInStrutturaPubblica a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso componente residente in struttura pubblica"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se il componente del nucleo sia residente in una struttura pubblica"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoCondizioneDiAttivabile a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -608,22 +538,19 @@ lsp-social:avvisoDeclaratoriaFirmata a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso declaratoria firmata"@it ;
     rdfs:domain lsp-social:PattoAttivazioneDigitaleNucleo ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se la declaratoria sia stata firmata o meno"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoDiIncontroEffettuato a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso di incontro effettuato"@it ;
     rdfs:domain lsp-social:StatoDiIncontroValutato ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se l'incontro sia stato effettuato o meno"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoDiPresenteNelNucleoFamiliare a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso di presente nel nucleo familiare"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se sia presente nel nucleo familiare"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoEsclusioneObblighi a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -642,17 +569,15 @@ lsp-social:avvisoInserimentoPercorsoDiProtezione a owl:DatatypeProperty,
 
 lsp-social:avvisoIscrizionePersorsoDiIstruzione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "avviso iscrizione percorso di istruzione"@it ;
+    rdfs:label "avviso iscrizione persorso di istruzione"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se sia stata fatta l'iscrizione al percorso di istruzione"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoMembroRiferimentoEquipe a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso membro riferimento equipe"@it ;
     rdfs:domain lsp-social:MembroEquipeMultidisciplinareDelCaso ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se sia il membro di riferimento dell'equipe"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoObblighiPattoPAIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -673,8 +598,7 @@ lsp-social:avvisoPresentazioneSpontaneaBeneficiario a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso presentazione spontanea beneficiario"@it ;
     rdfs:domain lsp-social:StatoDiPianificatoPrimoIncontro ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se il beneficiario si sia presentato spontaneamente"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoPresenzaCaricoDiCura a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -685,8 +609,7 @@ lsp-social:avvisoPresenzaEquipeDiCaso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso presenza equipe di caso"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "booleano che indica se sia presente l'equipe del caso"@it .
+    rdfs:range xsd:boolean .
 
 lsp-social:avvisoResponsabilitàGenitoriale a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -720,111 +643,101 @@ lsp-social:dataAssegnazioneSostegno a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data assegnazione sostegno"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data assegnazione del sostegno"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataAvvioImpegno a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data avvio impegno"@it ;
     rdfs:domain lsp-social:ImpegnoPaIS ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di avvio dell'impegno"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataAvvioSostegno a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data avvio sostegno"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di avvio del sostegno"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataFinalizzazioneAnalisiPreliminare a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data finalizzazione analisi preliminare"@it ;
     rdfs:domain lsp-social:AnalisiPreliminareDelCaso ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di finalizzazione dell'analisi preliminare"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataFinalizzazionePaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data finalizzazione PaIS"@it ;
-    rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:comment "data di finalizzazione del PaIS"@it .
+    rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso .
 
 lsp-social:dataFinalizzazioneQuadroAnalisi a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data finalizzazione quadro analisi"@it ;
     rdfs:domain lsp-social:QuadroDiAnalisiDelCaso ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di finalizzazione del quadro di analisi"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataFineAttivitàPUC a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data fine attività PUC"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di fine attività del PUC"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataFineImpegno a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data fine impegno"@it ;
     rdfs:domain lsp-social:ImpegnoPaIS ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di fine dell'impegno"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataFinePolizzaAssicurativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data fine polizza assicurativa"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di fine polizza assicurativa"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataFineSostegno a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data fine sostegno"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di fine del sostegno"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataFirmaPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data firma PaIS"@it ;
-    rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:comment "data firma PaIS"@it .
+    rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso .
 
 lsp-social:dataInizioAttivitàPUC a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data inizio attività PUC"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di inizio attività del PUC"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataInizioGestioneCaso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data inizio gestione caso"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di inizio di gestione del caso"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataInizioPolizzaAssicurativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data inizio polizza assicurativa"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di inizio polizza assicurativa"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataPrevistaAvvioSostegno a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data prevista avvio sostegno"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data prevista per l'avvio del sostegno"@it .
+    rdfs:range xsd:dateTime .
 
 lsp-social:dataUltimoAggiornamentoCaso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data ultimo aggiornamento caso"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range xsd:dateTime ;
-    rdfs:comment "data di ultimo aggiornamento del caso"@it .
+    rdfs:range xsd:dateTime .
+
+lsp-social:descrizioneImpegnoPaIS a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione impegno PaIS"@it ;
+    rdfs:domain lsp-social:ImpegnoPaIS ;
+    rdfs:range xsd:string .
 
 lsp-social:descrizioneObiettivo a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -842,23 +755,23 @@ lsp-social:descrizioneRisultatoAttesoObiettivo a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "descrizione risultato atteso obiettivo"@it ;
     rdfs:domain lsp-social:RisultatoAttesoDiObiettivo ;
-    rdfs:comment "descrizione risultato atteso obiettivo"@it .
+    rdfs:comment "descrizione del risultato atteso obiettivo"@it .
 
 lsp-social:descrizioneTipologiaSostegnoPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "descrizione tipologia sostegno PaIS"@it ;
+    rdfs:label "descrizione tipologia sostegno pa IS"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:comment "descrizione tipologia sostegno PaIS"@it .
+    rdfs:comment "descrizione della tipologia di sostegno PaIS"@it .
 
 lsp-social:identificativoCasoNucleoFragile a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "identificativo caso nucleo familiare fragile o in povertà"@it ;
+    rdfs:label "identificativo caso nucleo fragile"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
     rdfs:comment "Identificativo del caso di nucleo fragile o in povertà"@it .
 
 lsp-social:identificativoPattoInclusioneSocialeCaso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "identificativo Patto inclusione sociale caso"@it ;
+    rdfs:label "identificativo patto inclusione sociale caso"@it ;
     rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
     rdfs:comment "Identificativo del caso di patto inclusione sociale"@it .
 
@@ -870,7 +783,7 @@ lsp-social:identificativoPUC a owl:DatatypeProperty,
 
 lsp-social:identificativoQuadroAnalisi a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "identificativo quadro di analisi"@it ;
+    rdfs:label "identificativo quadro analisi"@it ;
     rdfs:domain lsp-social:QuadroDiAnalisiDelCaso ;
     rdfs:comment "Identificativo del quadro analisi"@it .
 
@@ -888,119 +801,100 @@ lsp-social:idObiettivo a owl:DatatypeProperty,
 
 lsp-social:idRisultatoAttesoObiettivo a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "identificativo risultato atteso obiettivo"@it ;
+    rdfs:label "id risultato atteso obiettivo"@it ;
     rdfs:domain lsp-social:RisultatoAttesoDiObiettivo ;
-    rdfs:comment "Identificativo risultato"@it .
+    rdfs:comment "Identificativo del risultato atteso obiettivo"@it .
 
 lsp-social:idTipologiaSostegnoPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "identificativo tipologia sostegno PaIS"@it ;
+    rdfs:label "id tipologia sostegno pa IS"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
-    rdfs:comment "Identificativo del sostegno PaIS"@it .
+    rdfs:comment "Identificativo della tipologia di sostegno PaIS"@it .
 
 lsp-social:motivazioneEsitoImpegnoPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "motivazione esito impegno PaIS"@it ;
     rdfs:domain lsp-social:EsitoImpegnoPaIS ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica la motivazione di esito dell'impegno"@it .
+    rdfs:range xsd:string .
 
 lsp-social:motivazioneEsitoRisultatoObiettivoPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "motivazione esito risultato obiettivo PaIS"@it ;
     rdfs:domain lsp-social:EsitoRisultatoAttesoObiettivoPaIS ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica la motivazione di esito del risultato degli obiettivi raggiunti"@it .
+    rdfs:range xsd:string .
 
 lsp-social:motivoDisattivazioneDaNucleoFamiliare a owl:DatatypeProperty ;
     rdfs:label "motivo disattivazione da nucleo familiare"@it ;
     rdfs:domain lsp-social:ComponenteNucleoAttivoNelCaso ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica il motivo di disattivazione di un componente all'interno di un nucleo familiare"@it .
+    rdfs:range xsd:string .
 
 lsp-social:numeroComponentiConAttivitàDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "numero componenti con attività di lavoro"@it ;
     rdfs:domain lsp-social:NucleoFamiliare ;
-    rdfs:range xsd:integer ;
-    rdfs:comment "indica il numero di componenti con attività di lavoro"@it .
+    rdfs:range xsd:integer .
 
 lsp-social:numeroComponentiConSentenzaDiPena a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "numero componenti con sentenza di pena"@it ;
     rdfs:domain lsp-social:NucleoFamiliare ;
-    rdfs:range xsd:integer ;
-    rdfs:comment "indica il numero di componenti con sentenza di pena"@it .
+    rdfs:range xsd:integer .
 
 lsp-social:obbligoAttivazioneLavorativaComponente a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "obbligo attivazione lavorativa componente"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica l'obbligo di attivazione lavorativa per il comonente del nucleo familiare beneficiario"@it .
+    rdfs:range xsd:string .
 
 lsp-social:progressoImpegnoPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "progresso impegno PaIS"@it ;
     rdfs:domain lsp-social:EsitoImpegnoPaIS ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica il progresso relativo all'impegno del PaIS"@it .
+    rdfs:range xsd:string .
 
 lsp-social:progressoRisultatoObiettivoPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "progresso risultato obiettivo PaIS"@it ;
     rdfs:domain lsp-social:EsitoRisultatoAttesoObiettivoPaIS ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica il progresso relativo al risultato dell'obiettivo del PaIS"@it .
+    rdfs:range xsd:string .
 
-lsp-social:statoDiGestioneDiDomandaDiCaso a owl:DatatypeProperty,
-        owl:FunctionalProperty ;
-    rdfs:label "stato di gestione di domanda di caso"@it ;
-    rdfs:domain lsp-social:StatoDiGestioneDiDomandaDiCaso ;
-    rdfs:comment "Indica lo stato di gestione di domanda di caso"@it .
-
-lsp-social:statoDiPUC a owl:DatatypeProperty ;
-    rdfs:label "stato di PUC"@it ;
-    rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:comment "Indica lo stato della partecipazione a Progetti Utili alla Collettività"@it .
+lsp-social:StatoDiPUC a owl:DatatypeProperty ;
+    rdfs:label "Stato di PUC"@it ;
+    rdfs:domain lsp-social:PartecipazionePUC .
 
 lsp-social:statusAnalisiPreliminare a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status analisi preliminare"@it ;
     rdfs:domain lsp-social:AnalisiPreliminareDelCaso ;
-    rdfs:range xsd:string ;
-    rdfs:comment "Indica lo stato dell'analisi preliminare"@it .
+    rdfs:range xsd:string .
 
 lsp-social:statusDelCaso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status del caso"@it ;
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
-    rdfs:range xsd:string ;
-    rdfs:comment "status del caso"@it .
+    rdfs:range xsd:string .
 
 lsp-social:statusPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status PaIS"@it ;
     rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica lo stato del PaIS"@it .
+    rdfs:range xsd:string .
 
 lsp-social:statusQuadroAnalisi a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "stato quadro analisi"@it ;
+    rdfs:label "status quadro analisi"@it ;
     rdfs:domain lsp-social:QuadroDiAnalisiDelCaso ;
-    rdfs:range xsd:string ;
-    rdfs:comment "indica lo stato del quadro di analisi"@it .
+    rdfs:range xsd:string .
 
 lsp-social:tipologiaImpegnoPaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "tipologia impegno PaIS"@it ;
+    rdfs:label "tipologia impegno pa IS"@it ;
     rdfs:domain lsp-social:ImpegnoPaIS ;
     rdfs:comment "Descrizione tipologia dell'impegno PaIS"@it .
 
 lsp-social:tipologiaPercorso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "tipologia di percorso intrapreso dal componente del nucleo familiare"@it ;
+    rdfs:label "tipologia percorso"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:comment "tipologia di percorso sociale e lavorativo assegnato al cittadino"@it .
 
@@ -1014,21 +908,18 @@ lsp-social:versioneAnalisiPreliminare a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "versione analisi preliminare"@it ;
     rdfs:domain lsp-social:AnalisiPreliminareDelCaso ;
-    rdfs:range xsd:integer ;
-    rdfs:comment "indica la versione dell'analisi preliminare"@it .
+    rdfs:range xsd:integer .
 
 lsp-social:versionePaIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "versione PaIS"@it ;
-    rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso ;
-    rdfs:comment "indica la versione del PaIS"@it .
+    rdfs:domain lsp-social:PattoInclusioneSocialeDelCaso .
 
 lsp-social:versioneQuadroAnalisi a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "versione quadro analisi"@it ;
     rdfs:domain lsp-social:QuadroDiAnalisiDelCaso ;
-    rdfs:range xsd:integer ;
-    rdfs:comment "indica la versione del quadro di analisi"@it .
+    rdfs:range xsd:integer .
 
 lsp-social:versioneRDC a owl:DatatypeProperty,
         owl:FunctionalProperty ;
@@ -1086,7 +977,7 @@ lsp-social:AssegnazioneCasoDiNucleo a owl:Class ;
     rdfs:label "Assegnazione caso di nucleo"@it ;
     rdfs:subClassOf TI:TimeIndexedEvent,
         [ a owl:Restriction ;
-            owl:onProperty lsp-social:assegnatoCasoAGestoreda ;
+            owl:onProperty lsp-social:assegnatoCasoAGestoreDa ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
             owl:onProperty lsp-social:haGestoreCasoDiNucleo ;
@@ -1149,7 +1040,7 @@ lsp-social:CasoDiNucleoFragileOInPovertà a owl:Class ;
 
 lsp-social:CategoriaDiObbligo a owl:Class ;
     rdfs:label "Categoria di obbligo"@it ;
-    rdfs:comment "Descrive le diverse categorie di obbligo derivanti dalla condizione del singolo individuo o del nucleo e dalla definizione degli impegni nel PaIS"@it .
+    rdfs:comment "Descrive le diverse categorie di obbligo derivanti dalla condizione del singolo individuo o del nucleo e dalla definizione degli impegni nel PaIS (eventuale elenco)"@it .
 
 lsp-social:CertificatoCondizioneDiDisabilità a owl:Class ;
     rdfs:label "Certificato condizione di disabilità"@it ;
@@ -1171,7 +1062,8 @@ lsp-social:ComponenteDiNucleoFragileOInPovertà a owl:Class ;
     rdfs:label "Componente di nucleo fragile o in povertà"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haComponenteNucleo ] ;
-            owl:someValuesFrom lsp-social:NucleoFamiliareSocialmenteFragileOInPovertà ] .
+            owl:someValuesFrom lsp-social:NucleoFamiliareSocialmenteFragileOInPovertà ] ;
+    rdfs:comment "Si intendono i componenti di un nucleo che si trovano in condizione difragilità/povertà, cioè il nucleo che ha presentato la domanda ADI e segue il percorso di inclusione sociale. A livello semantico serve a differenziare un nucleo fragile. "@it .
 
 lsp-social:ComponenteNucleoAttivoNelCaso a owl:Class ;
     rdfs:label "Componente nucleo attivo nel caso"@it ;
@@ -1182,14 +1074,14 @@ lsp-social:ComponenteNucleoAttivoNelCaso a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:èComponenteNucleoAttivoDiCaso ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment " Componente del nucleo familiare soggetto a obblighi di attivazione "@it .
+    rdfs:comment "Componente del nucleo familiare soggetto a obblighi di attivazione "@it .
 
 lsp-social:ComponenteNucleoFamiliare a owl:Class ;
     rdfs:label "Componente nucleo familiare"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haComponenteNucleo ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Componente del nucleo familiare non  soggetto a obblighi di attivazione"@it .
+    rdfs:comment "Componente ad un  nucleo familiare"@it .
 
 lsp-social:ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni a owl:Class ;
     rdfs:label "Componente nucleo familiare maggiorenne con meno di 29 anni"@it ;
@@ -1202,7 +1094,7 @@ lsp-social:ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni a owl:Class ;
                             [ xsd:maxInclusive 29 ]
                             [ xsd:minInclusive 18 ] ) ] ] ;
     owl:disjointWith lsp-social:ComponenteNucleoFamiliareMinorenne ;
-    rdfs:comment "Beneficiario dell’Assegno di inclusione appartenenti alla fascia di età compresa tra 18 e 28 anni soggetto alla verifica dell'adempimento dell'obbligo di istruzione. In caso di mancato adempimento nel Patto per l'Inclusione Sociale (PaIS) sarà previsto l’impegno all’iscrizione e alla frequenza di percorsi di istruzione degli adulti di primo livello o comunque funzionali all’adempimento del predetto obbligo di istruzione, pena la decadenza dal beneficio."@it .
+    rdfs:comment "Componente del nucleo appartenente alla fascia di età compresa tra 18 e 28 anni"@it .
 
 lsp-social:ComponenteNucleoFamiliareMinorenne a owl:Class ;
     rdfs:label "Componente nucleo familiare minorenne"@it ;
@@ -1214,10 +1106,10 @@ lsp-social:ComponenteNucleoFamiliareMinorenne a owl:Class ;
                     owl:withRestrictions (
                             [ xsd:maxInclusive 18 ]
                             [ xsd:minExclusive 0 ] ) ] ] ;
-    rdfs:comment "componente del nucleo familiare di età inferiore a 18 anni"@it .
+    rdfs:comment "Componente del nucleo familiare di età inferiore a 18 anni"@it .
 
 lsp-social:ContributoDiComponenteAScalaDiEquivalenza a owl:Class ;
-    rdfs:label "Contributo scala di equivalenza ADI"@it ;
+    rdfs:label "Contributo di componente a scala di equivalenza"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lsp-social:causaleContributoScalaEquivalenza ;
             owl:someValuesFrom rdfs:Literal ],
@@ -1229,7 +1121,8 @@ lsp-social:ContributoDiComponenteAScalaDiEquivalenza a owl:Class ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haContributoScalaDiEquivalenza ] ;
-            owl:someValuesFrom owl:Thing ] .
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Indica il contributo alla scala di equivalenza del nucleo familiare portato da un suo singolo componente."@it .
 
 lsp-social:CoordinatorePAIS a owl:Class ;
     rdfs:label "Coordinatore PAIS"@it ;
@@ -1250,14 +1143,15 @@ lsp-social:EsitoAnalisiPreliminareCaso a owl:Class ;
     rdfs:label "Esito analisi preliminare caso"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haEsitoAnalisiPreliminareCaso ] ;
-            owl:someValuesFrom owl:Thing ] .
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Si intende il risultato della valutazione multidimensionale effettuata dai servizi sociali al singolo soggetto"@it .
 
 lsp-social:EsitoImpegnoPaIS a owl:Class ;
     rdfs:label "Esito impegno PaIS"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haEsitoImpegnoPaIS ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indica gli impegni assunti dal componente del nucleo familiare all'interno del PaIS "@it .
+    rdfs:comment "Indicala valutazione effettuata in fase di monitoraggio degli impegni assunti dal componente del nucleo familiare all'interno del PaIS "@it .
 
 lsp-social:EsitoQuadroAnalisiCaso a owl:Class ;
     rdfs:label "Esito quadro analisi caso"@it ;
@@ -1282,7 +1176,8 @@ lsp-social:GestioneDiDomandaDiCasoDiNucleo a owl:Class ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haGestioneDiDomandaDiCasoDiNucleo ] ;
-            owl:someValuesFrom owl:Thing ] .
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "collegamento tra la singola gestione della domanda di un caso"@it .
 
 lsp-social:GestoreCasoInclusioneSociale a owl:Class ;
     rdfs:label "Gestore caso inclusione sociale"@it ;
@@ -1292,15 +1187,15 @@ lsp-social:GestoreCasoInclusioneSociale a owl:Class ;
 lsp-social:ImpegnoPaIS a owl:Class ;
     rdfs:label "Impegno PaIS"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty lsp-social:haTipoDiImpegno ;
-            owl:someValuesFrom owl:Thing ],
+            owl:onProperty lsp-social:descrizioneImpegnoPaIS ;
+            owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
             owl:onProperty lsp-social:èImpegnoPerComponenteNucleo ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haImpegnoPaIS ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "La disponibilità a svolgere determinate attività e a seguire determinate regole di comportamento a cui il beneficio economico è condizionato"@it .
+    rdfs:comment "Impegno associato ad un componente del nucleo familiare all'interno del PAIS"@it .
 
 lsp-social:IntestatarioContrattoLocazioneNucleoFamiliare a owl:Class ;
     rdfs:label "Intestatario contratto locazione nucleo familiare"@it ;
@@ -1349,7 +1244,8 @@ lsp-social:ObbligoComponenteNucleoDelCaso a owl:Class ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:indicaObbligoComponenteNucleoDelCaso ] ;
-            owl:someValuesFrom owl:Thing ] .
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Gli obblighi a cui è tenuto un componente specifico del nucleo in relazione alla tipologia di percorso a cui è stato assegnato"@it .
 
 lsp-social:ObiettivoPaIS a owl:Class ;
     rdfs:label "Obiettivo PaIS"@it ;
@@ -1389,7 +1285,7 @@ lsp-social:PartecipazionePUC a owl:Class ;
             owl:onProperty lsp-social:identificativoPUC ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
-            owl:onProperty lsp-social:statoDiPUC ;
+            owl:onProperty lsp-social:StatoDiPUC ;
             owl:someValuesFrom rdfs:Literal ] ;
     rdfs:comment "Nell’ambito del percorso personalizzato può essere previsto l’impegno dei beneficiari alla partecipazione a Progetti Utili alla Collettività (PUC)."@it .
 
@@ -1409,6 +1305,9 @@ lsp-social:PattoAttivazioneDigitaleNucleo a owl:Class ;
 lsp-social:PattoInclusioneSocialeDelCaso a owl:Class ;
     rdfs:label "Patto inclusione sociale del caso"@it ;
     rdfs:subClassOf lsp-core:Atto,
+        [ a owl:Restriction ;
+            owl:onProperty lsp-social:identificativoPattoInclusioneSocialeCaso ;
+            owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
             owl:onProperty lsp-social:versionePaIS ;
             owl:someValuesFrom rdfs:Literal ],
@@ -1470,7 +1369,8 @@ lsp-social:ScalaDiEquivalenzaNucleo a owl:Class ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
             owl:onProperty TI:atTime ;
-            owl:someValuesFrom owl:Thing ] .
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Indica il parametro della scala di equivalenza, utilizzato anche per determinare l'importo dell'assegno di inclusione."@it .
 
 lsp-social:SostegnoPaIS a owl:Class ;
     rdfs:label "Sostegno PaIS"@it ;
@@ -1506,15 +1406,17 @@ lsp-social:StatoDiAttesaPrimoIncontro a owl:Class ;
     rdfs:comment "Indica che il primo incontro con il nucleo beneficiario dell'ADI, previsto entro 120 giorni dalla sottoscrizione del PAD, non è ancora avvenuto"@it .
 
 lsp-social:StatoDiGestioneDiDomandaDiCaso a owl:Class ;
-    rdfs:label "Stato di gestione di domanda di caso"@it ;
+    rdfs:label "Stato del caso? Stato della domanda ADI?"@it ;
     rdfs:subClassOf TI:TimeIndexedEvent,
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haStatoDiGestioneDiDomandaDiCaso ] ;
-            owl:someValuesFrom owl:Thing ] .
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Generalizzazione dello stato della gestione di una domanda relativa ad un caso"@it .
 
 lsp-social:StatoDiIdentificazioneObbligoDiAttivazione a owl:Class ;
     rdfs:label "Stato di identificazione obbligo di attivazione"@it ;
-    rdfs:subClassOf lsp-social:StatoDiGestioneDiDomandaDiCaso .
+    rdfs:subClassOf lsp-social:StatoDiGestioneDiDomandaDiCaso ;
+    rdfs:comment "Indica l'attribuzione dell'obbligo di attivazione ad un componente del nucleo"@it .
 
 lsp-social:StatoDiIncontroDiMonitoraggio a owl:Class ;
     rdfs:label "Stato di incontro di monitoraggio"@it ;
@@ -1571,11 +1473,9 @@ lsp-social:StatoDiValutazioneMultidimensionale a owl:Class ;
             owl:someValuesFrom lsp-social:StatoDiIdentificazioneObbligoDiAttivazione ] ;
     rdfs:comment "Indica se la valutazione multidimensionale è in corso o  chiusa"@it .
 
-lsp-social:TipoDiImpegno a owl:Class ;
-    rdfs:label "Tipo di impegno"@it .
-
 lsp-social:TipoDiSostegno a owl:Class ;
-    rdfs:label "Tipo di sostegno"@it .
+    rdfs:label "Tipo di sostegno"@it ;
+    rdfs:comment "Elenco delle tipologie di sostegno associabili ad uno o più componenti del nucleo come indicato nelle linee guida PaIS"@it .
 
 lsp-srv:ModelloDelQuestionario a owl:Class .
 

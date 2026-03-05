@@ -23,7 +23,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 lsp-core: a owl:Ontology ;
-    owl:versionIRI lsp-core:0.2 ;
+    owl:versionIRI lsp-core:1.1 ;
     owl:imports CLV:,
         COV:,
         CPV:,
@@ -48,7 +48,7 @@ lsp-core: a owl:Ontology ;
     adms:hasTask adms:AnnotationTask,
         adms:QueryFormulationTask,
         adms:SearchTask ;
-    adms:last lsp-core:0.2 ;
+    adms:last lsp-core:1.1 ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/core/"^^xsd:anyURI ;
     adms:prefix "lsp-core" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;

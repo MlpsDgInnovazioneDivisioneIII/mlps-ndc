@@ -9,7 +9,7 @@
          xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
 
   <owl:Ontology rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/">
-    <owl:versionIRI rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/0.4"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/1.0"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
@@ -89,7 +89,7 @@
     <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
     <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
     <adms:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/SearchTask"/>
-    <adms:last rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/0.4"/>
+    <adms:last rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/1.0"/>
     <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/labour-social-policies/onto/core/</adms:officialURI>
     <adms:prefix>mlps-core</adms:prefix>
     <adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>

@@ -16,7 +16,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 lsp-srv: a owl:Ontology ;
-    owl:versionIRI lsp-srv:0.1 ;
+    owl:versionIRI lsp-srv:1.0 ;
     owl:imports CLV:,
         COV:,
         CPV:,
@@ -42,7 +42,7 @@ lsp-srv: a owl:Ontology ;
     adms:hasTask adms:AnnotationTask,
         adms:QueryFormulationTask,
         adms:SearchTask ;
-    adms:last lsp-srv:0.1 ;
+    adms:last lsp-srv:1.0 ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/survey/"^^xsd:anyURI ;
     adms:prefix "lsp-srv" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
