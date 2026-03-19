@@ -87,8 +87,8 @@ COV:holdEmployment a owl:ObjectProperty .
 
 lsp-core:appartieneAdAmbitoTerritoriale a owl:ObjectProperty ;
     rdfs:label "appartiene ad ambito territoriale"@it ;
-    rdfs:domain lsp-core:AmbitoTerritorialeSociale ;
-    rdfs:range CLV:City ;
+    rdfs:domain CLV:City ;
+    rdfs:range lsp-core:AmbitoTerritorialeSociale ;
     rdfs:comment "Relazione che collega la classe Ambito Territoriale Sociale con la classe CLV:City"@it .
 
 lsp-core:contieneCVCittadino a owl:InverseFunctionalProperty,

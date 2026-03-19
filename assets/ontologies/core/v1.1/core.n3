@@ -57,8 +57,8 @@
 <https://w3id.org/italia/onto/COV/holdEmployment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale> <http://www.w3.org/2000/01/rdf-schema#label> "appartiene ad ambito territoriale"@it .
-<https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale> .
-<https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/onto/CLV/City> .
+<https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/onto/CLV/City> .
+<https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale> .
 <https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale> <http://www.w3.org/2000/01/rdf-schema#comment> "Relazione che collega la classe Ambito Territoriale Sociale con la classe CLV:City"@it .
 <https://w3id.org/italia/labour-social-policies/onto/core/contieneCVCittadino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/core/contieneCVCittadino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

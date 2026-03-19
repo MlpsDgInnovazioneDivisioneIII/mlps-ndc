@@ -145,8 +145,8 @@
 
   <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale">
     <rdfs:label xml:lang="it">appartiene ad ambito territoriale</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
-    <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
+    <rdfs:domain rdf:resource="https://w3id.org/italia/onto/CLV/City"/>
+    <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/AmbitoTerritorialeSociale"/>
     <rdfs:comment xml:lang="it">Relazione che collega la classe Ambito Territoriale Sociale con la classe CLV:City</rdfs:comment>
   </owl:ObjectProperty>
 
