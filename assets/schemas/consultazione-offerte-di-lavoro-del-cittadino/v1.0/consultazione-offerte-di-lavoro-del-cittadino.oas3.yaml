@@ -1,0 +1,239 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  x-semantic-score: 0.33
+  x-semantic-score-timestamp: 1774016530114
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/cittadino/offerte/adesioni:
+    post:
+      tags:
+        - Siisl
+      summary: Consultazione adesioni a offerte di lavoro
+      description: Dato il codice fiscale di un cittadino e il tipo offerta lavoro (più gli eventuali dati dell'entità chiamante), il servizio restituisce le relative adesioni a offerte di lavoro
+      operationId: ConsultazioneOfferteLavoro
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.InputConsultazione_OfferteLavoro'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioniOfferteLavoro_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioneOffertaLavoro:
+      type: object
+      properties:
+        dataEvento:
+          type: string
+          format: date-time
+        tipoAdesione:
+          type: string
+        offerta:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.OffertaLavoro'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/AdesioneOffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        dataEvento: https://w3id.org/italia/onto/TI/atTime
+        tipoAdesione: statusAdesioneOffertaDiLavoro
+        offerta:
+          '@id': aderisceAdOffertaDiLavoro
+      example:
+        dataEvento:  '2025-01-14T00:00:00Z'
+        tipoAdesione: 'Accettata'
+
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioniOfferteLavoro_Output:
+      type: object
+      properties:
+        adesioniOfferteLavoro:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioneOffertaLavoro'
+      additionalProperties: false
+
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.OffertaLavoro:
+      type: object
+      properties:
+        codice:
+          type: string
+        titolo:
+          type: string
+          nullable: true
+        descrizione:
+          type: string
+          nullable: true
+        stato:
+          type: string
+        origine:
+          type: string
+        dataPubblicazione:
+          type: string
+          format: date-time
+        dataScadenza:
+          type: string
+          format: date-time
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codice: codiceOffertaDiLavoro
+        titolo: titoloOffertaDiLavoro
+        descrizione: descrizioneOffertaDiLavoro
+        stato:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haStatoOffertaDiLavoro
+          '@context':
+              stato: https://w3id.org/italia/labour-social-policies/onto/labour/statusOffertaDiLavoro
+        origine:
+          '@id': haCanaleDiOrigineOffertaDiLavoro
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/origine_offerta_lavoro/'
+              id: '@id'
+        dataPubblicazione: dataPubblicazioneOffertaDiLavoro
+        dataScadenza: dataScadenzaOffertaDiLavoro
+      example:
+        codice: '0000F068351000015'
+        titolo: "Coordinatore della sicurezza per l'esecuzione dei lavori"
+        descrizione: "Coordinatore della sicurezza per l'esecuzione dei lavori"
+        stato: 'Pubblicata'
+        origine: '1'
+        dataPubblicazione: '2025-01-14T00:00:00Z'
+        dataScadenza: '2025-01-14T00:00:00Z'
+
+    FSL.Api.Domain.Models.Siisl.InputConsultazione_OfferteLavoro:
+      required:
+        - codiceFiscaleCittadino
+        - tipoOfferteLavoro
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        cfOperatore:
+          type: string
+          nullable: true
+        codiceFiscaleCittadino:
+          minLength: 1
+          type: string
+        tipoOfferteLavoro:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API

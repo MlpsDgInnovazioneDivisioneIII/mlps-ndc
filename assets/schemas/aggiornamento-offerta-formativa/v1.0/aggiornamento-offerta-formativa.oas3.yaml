@@ -1,0 +1,186 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  x-semantic-score: 0.25
+  x-semantic-score-timestamp: 1774015954626
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/offerteFormative/{idOfferta}:
+    put:
+      tags:
+        - Siisl
+      summary: Aggiornamento Offerta Formativa
+      description: Dati i dettagli di un'offerta formativa e il relativo id offerta, il servizio la aggiorna e restituisce l'esito dell'operazione
+      operationId: AggiornamentoOffertaFormativa
+      parameters:
+        - name: idOfferta
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.OfferteFormative.AggiornamentoOffertaFormativa'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.SezioneEsito'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.OfferteFormative.AggiornamentoOffertaFormativa:
+      required:
+        - idOfferta
+      type: object
+      properties:
+        idOfferta:
+          minLength: 1
+          type: string
+        nuovoStato:
+          type: integer
+          format: int32
+          nullable: true
+        nuovaDataFine:
+          type: string
+          nullable: true
+        nuovaDataInizio:
+          type: string
+          nullable: true
+        nuovaDataFinePubblicazione:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type:  https://w3id.org/italia/labour-social-policies/onto/labour/EdizioneOffertaFormativa
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        idOfferta: idOffertaFormativa
+        nuovoStato: statusEdizioneOffertaFormativa
+        nuovaDataFine: nuovaDataFine
+        nuovaDataInizio: nuovaDataInizio
+        nuovaDataFinePubblicazione: nuovaDataFinePubblicazione
+      example:
+        idOfferta: '02301900268-000022'
+        nuovoStato: 1
+        nuovaDataFine: '31/12/2024'
+        nuovaDataInizio: '01/01/2024'
+        nuovaDataFinePubblicazione: '01/05/2025'
+
+    FSL.Api.Domain.Models.SezioneEsito:
+      required:
+        - codice
+      type: object
+      properties:
+        codice:
+          minLength: 1
+          type: string
+        descrizione:
+          type: string
+          nullable: true
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API

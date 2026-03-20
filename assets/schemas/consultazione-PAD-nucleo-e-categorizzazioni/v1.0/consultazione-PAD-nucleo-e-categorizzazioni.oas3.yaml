@@ -1,0 +1,272 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  x-semantic-score: 0.41
+  x-semantic-score-timestamp: 1774016620510
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/cittadino/nucleo/pad-nucleo-e-categorizzazioni:
+    post:
+      tags:
+        - Siisl
+      summary: Consultazione PAD Nucleo e Categorizzazioni
+      description: Dato il codice fiscale di un cittadino (più gli eventuali dati dell'entità chiamante), il servizio restituisce il relativo PAD Nucleo e Categorizzazioni
+      operationId: ConsultazionePadNucleoECategorizzazioni
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.InputConsultazione'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadNucleoECategorizzazioni.PadNucleoECategorizzazioni'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCategorizzazioni.Categorizzazione:
+      type: object
+      properties:
+        dataCategorizzazione:
+          type: string
+          format: date-time
+        categoria:
+          type: string
+        protocollo:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        dataCategorizzazione: https://w3id.org/italia/labour-social-policies/onto/core/dataAtto
+        categoria: categoriaAtto
+        protocollo: https://w3id.org/italia/labour-social-policies/onto/core/protocolloPrestazioneDiSostegno
+      example:
+        dataCategorizzazione: '2024-04-30T00:00:00'
+        categoria: 'Tre'
+        protocollo: 'INPS-ADI-2024-000000'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadNucleo.DettaglioPadNucleo:
+      type: object
+      properties:
+        protocollo:
+          type: string
+        dataSottoscrizione:
+          type: string
+          format: date-time
+        declaratoriaFirmata:
+          type: boolean
+        ruolo:
+          type: string
+        id:
+          type: string
+        email:
+          type: string
+          nullable: true
+        cellulare:
+          type: string
+          nullable: true
+        persone:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadNucleo.Persona'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/core/PattoAttivazioneDigitaleNucleo
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/core/
+        protocollo: protocolloPrestazioneDiSostegno
+        dataSottoscrizione: dataAtto
+        declaratoriaFirmata: avvisoDeclaratoriaFirmata
+        ruolo:
+          '@id': https://w3id.org/italia/onto/RO/holdsRoleInTime
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        id: protocolloPrestazioneDiSostegno
+        email:
+          '@id': https://w3id.org/italia/onto/SM/hasEmail
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        cellulare:
+          '@id': https://w3id.org/italia/onto/SM/hasContactPoint
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        persone:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/social/haSottoscrittorePAD
+      example:
+        protocollo: 'INPS-ADI-2024-990001'
+        dataSottoscrizione: '2024-04-30T00:00:00'
+        declaratoriaFirmata: True
+        ruolo: 'Tutore'
+        id: 'INPS-ADI-2024-990001_PRCMRN41A41H572B'
+        email: 'prova@prova.it'
+        cellulare: '123456789'
+        persone:
+          - codiceFiscale: "AAAAAA00A00A000A"
+            ruolo: 'Tutore'
+
+
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadNucleo.Persona:
+      type: object
+      properties:
+        codiceFiscale:
+          type: string
+        ruolo:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/onto/CPV/Alive
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/onto/CPV/
+        codiceFiscale: taxCode
+        ruolo:
+          '@id': https://w3id.org/italia/onto/RO/holdsRoleInTime
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+      example:
+        codiceFiscale: "AAAAAA00A00A000A"
+        ruolo: 'Tutore'
+
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadNucleoECategorizzazioni.PadNucleoECategorizzazioni:
+      type: object
+      properties:
+        padNucleo:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadNucleo.DettaglioPadNucleo'
+        categorizzazioni:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCategorizzazioni.Categorizzazione'
+      additionalProperties: false
+
+
+    FSL.Api.Domain.Models.Siisl.InputConsultazione:
+      required:
+        - codiceFiscaleCittadino
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        cfOperatore:
+          type: string
+          nullable: true
+        codiceFiscaleCittadino:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API

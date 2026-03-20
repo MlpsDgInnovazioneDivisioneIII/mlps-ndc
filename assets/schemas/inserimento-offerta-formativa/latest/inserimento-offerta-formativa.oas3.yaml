@@ -1,0 +1,367 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  x-semantic-score: 0.24
+  x-semantic-score-timestamp: 1774016715278
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/offerteFormative:
+    post:
+      tags:
+        - Siisl
+      summary: Inserimento Offerta Formativa
+      description: Dati i dettagli di un'offerta formativa, il servizio la inserisce e restituisce l'esito dell'operazione
+      operationId: InserimentoOffertaFormativa
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.OfferteFormative.InserimentoOffertaFormativa'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.SezioneEsito'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+
+components:
+  schemas:
+    FSL.Api.Domain.Models.OfferteFormative.InserimentoOffertaFormativa:
+      required:
+        - attestato
+        - codiceCorsoRegionale
+        - codiceEnteErogatore
+        - codiceIntermediario
+        - dataFinePubblicazione
+        - durata
+        - finalita
+        - isCpia
+        - isRegionale
+        - livelloCompetenzeDigitali
+        - modalitaFormativa
+        - modalitaFormativaInSede
+        - percorsoPSP
+        - postiDisponibili
+        - programma
+        - requisitiAmmissione
+        - settoreLivello1
+        - tipologiaCorso
+        - tipoProgramma
+        - titolo
+      type: object
+      properties:
+        titolo:
+          minLength: 1
+          type: string
+        codiceEnteErogatore:
+          minLength: 1
+          type: string
+        codiceIntermediario:
+          minLength: 1
+          type: string
+        settoreLivello1:
+          minLength: 1
+          type: string
+        finalita:
+          minLength: 1
+          type: string
+        programma:
+          minLength: 1
+          type: string
+        requisitiAmmissione:
+          minLength: 1
+          type: string
+        postiDisponibili:
+          type: integer
+          format: int32
+        dataInizio:
+          type: string
+          nullable: true
+        dataFine:
+          type: string
+          nullable: true
+        durata:
+          type: integer
+          format: int32
+        modalitaFormativaInSede:
+          type: boolean
+        modalitaFormativa:
+          type: array
+          items:
+            type: string
+        sedeErogazione:
+          type: string
+          nullable: true
+        codiceComune:
+          type: string
+          nullable: true
+        tipologiaCorso:
+          minLength: 1
+          type: string
+        livelloCompetenzeDigitali:
+          minLength: 1
+          type: string
+        tipoProgramma:
+          minLength: 1
+          type: string
+        percorsoPSP:
+          type: array
+          items:
+            type: integer
+            format: int32
+        dataFinePubblicazione:
+          minLength: 1
+          type: string
+        attestato:
+          minLength: 1
+          type: string
+        attestatoDettaglio:
+          type: string
+          nullable: true
+        attestatoDescrizione:
+          type: string
+          nullable: true
+        isCpia:
+          type: boolean
+        isRegionale:
+          type: boolean
+        codiceRegione:
+          type: string
+          nullable: true
+        codiceCorsoRegionale:
+          minLength: 1
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        titolo: titoloOffertaFormativa
+        codiceEnteErogatore: https://w3id.org/italia/onto/COV/IPAcode
+        codiceIntermediario:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haEnteErogatore
+          '@context':
+              codiceIntermediario: https://w3id.org/italia/labour-social-policies/onto/labour/codiceIntermediario
+        settoreLivello1:
+          '@id': haSettoreDiInteresse
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/'
+              id: '@id'
+        finalita: finalitàOffertaFormativa
+        programma: programmazioneAttivitàCorso
+        requisitiAmmissione: requisitoAmmissioneOffertaFormativa
+        postiDisponibili: postiDisponibiliEdizioneCorso
+        dataInizio: https://w3id.org/italia/onto/TI/startTime
+        dataFine: https://w3id.org/italia/onto/TI/endTime
+        durata: durataOffertaFormativa
+        modalitaFormativaInSede: avvisoModalitaFormativaInSede
+        modalitaFormativa:
+          '@id': haTipoDiModalitàFormativa
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/'
+              id: '@id'
+        sedeErogazione: https://w3id.org/italia/onto/CLV/fullAddress
+        codiceComune:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        tipologiaCorso:
+          '@id': haTipologiaOffertaFormativa
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/'
+              id: '@id'
+        livelloCompetenzeDigitali:
+          '@id': haLivelloCompetenzeDigitali
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_competenze_digitali/'
+              id: '@id'
+        tipoProgramma:
+          '@id': haTipoProgrammaAttivazioneCorso
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_programma_corso_formazione/'
+              id: '@id'
+        percorsoPSP:
+          '@id': haTipoPercorsoPSP
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_programma_corso_formazione/'
+              id: '@id'
+        dataFinePubblicazione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haEdizioneOffertaFormativa
+          '@context':
+              dataFinePubblicazione: https://w3id.org/italia/labour-social-policies/onto/labour/dataFinePubblicazione
+        attestato:
+          '@id': haMacroCategoriaAttestatoCorso
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/'
+              id: '@id'
+        attestatoDettaglio:
+          '@id': haMicroCategoriaAttestatoCorso
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione_dettaglio/'
+              id: '@id'
+        attestatoDescrizione: descrizioneAttestato
+        isCpia:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haEnteErogatore
+          '@context':
+              isCpia: https://w3id.org/italia/labour-social-policies/onto/labour/isCpia
+        isRegionale: avvisoCorsoRegionale
+        codiceRegione:
+          '@id': https://w3id.org/italia/onto/CLV/hasRegion
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        codiceCorsoRegionale: codiceCorsoRegionale
+      example:
+        titolo: 'Titolo Test'
+        codiceEnteErogatore: '399'
+        codiceIntermediario: 'A111A12345'
+        settoreLivello1: '01'
+        finalita: 'Finalità Desc'
+        programma: 'Programma Test'
+        requisitiAmmissione: 'Requisiti Test'
+        postiDisponibili: 20
+        dataInizio: '2024-01-01'
+        dataFine: '2025-01-30'
+        durata: 160
+        modalitaFormativaInSede: True
+        modalitaFormativa:
+          - '10'
+        sedeErogazione: 'PIAZZA DELLE ISTITUZIONI 12 TREVISO'
+        codiceComune: 'H501'
+        tipologiaCorso: '01'
+        livelloCompetenzeDigitali: "0"
+        tipoProgramma: '99'
+        percorsoPSP:
+          - 101
+        dataFinePubblicazione: '2023-12-31'
+        attestato: '60'
+        attestatoDettaglio: '62'
+        attestatoDescrizione: 'Descrizione Attestato'
+        isCpia: True
+        isRegionale: True
+        codiceRegione: '21'
+        codiceCorsoRegionale: '524234'
+
+    FSL.Api.Domain.Models.SezioneEsito:
+      required:
+        - codice
+      type: object
+      properties:
+        codice:
+          minLength: 1
+          type: string
+        descrizione:
+          type: string
+          nullable: true
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API

@@ -1,0 +1,247 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  x-semantic-score: 0.43
+  x-semantic-score-timestamp: 1774016410583
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/cittadino/corsi/interessi/storico:
+    post:
+      tags:
+        - Siisl
+      summary: Consultazione iscrizione a corsi di formazione
+      description: Dato il codice fiscale di un cittadino ed opzionalmente un codice corso come filtro (più gli eventuali dati dell'entità chiamante), il servizio restituisce i corsi di formazione per i quali il CF ha manifestato interesse
+      operationId: ConsultazioneStoricoOfferteFormative
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.InputConsultazione_StoricoOfferteFormative'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.StoricoCorsiFormativi_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.CorsoFormativo:
+      type: object
+      properties:
+        idCorso:
+          type: string
+        idCorsoRegione:
+          type: string
+        codiceRegione:
+          type: string
+        origineCorso:
+          type: string
+        titolo:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFomativa
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        idCorso: idOffertaFormativa
+        idCorsoRegione: codiceCorsoRegionale
+        codiceRegione:
+          '@id': haRegioneOrganizatriceCorso
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/'
+              id: '@id'
+        origineCorso: origineOffertaFormativa
+        titolo: titoloOffertaFormativa
+      example:
+        idCorso: '00934260571-000004'
+        idCorsoRegione: '524234'
+        codiceRegione: '8'
+        origineCorso: 'Siisl'
+        titolo: 'Titolo Test'
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.Evento:
+      type: object
+      properties:
+        tipoEvento:
+          type: string
+        data:
+          type: string
+          format: date-time
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/IscrizioneEdizioneOffertaFormativa
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        tipoEvento: statusIscrizioneEdizioneOffertaFormativa
+        data: https://w3id.org/italia/onto/TI/atTime
+      example:
+        tipoEvento: 'Iscrizione'
+        data: '2025-01-14T00:00:00Z'
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.StoricoCorsiFormativi_Output:
+      type: object
+      properties:
+        storicoCorsiFormativi:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.StoricoCorsoFormativo'
+      additionalProperties: false
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.StoricoCorsoFormativo:
+      type: object
+      properties:
+        dataManifestazione:
+          type: string
+          format: date-time
+        corso:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.CorsoFormativo'
+        eventi:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.Evento'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/EdizioneOffertaFormativa
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        dataManifestazione: https://w3id.org/italia/onto/TI/atTime
+        corso:
+          '@id': haEdizioneOffertaFormativa
+        eventi:
+          '@id': haEdizioneOffertaFormativaDiIscrizione
+      example:
+        dataManifestazione: '2025-01-14T00:00:00Z'
+        eventi:
+          - tipoEvento: 'Iscrizione'
+            data: '2025-01-14T00:00:00Z'
+
+    FSL.Api.Domain.Models.Siisl.InputConsultazione_StoricoOfferteFormative:
+      required:
+        - codiceFiscaleCittadino
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        cfOperatore:
+          type: string
+          nullable: true
+        codiceFiscaleCittadino:
+          minLength: 1
+          type: string
+        codiciCorso:
+          type: string
+          nullable: true
+      additionalProperties: false
+
+
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API

@@ -1,0 +1,328 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  x-semantic-score: 0.49
+  x-semantic-score-timestamp: 1774016578882
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/cittadino/pad:
+    post:
+      tags:
+        - Siisl
+      summary: Consultazione del PAD Individuale
+      description: Dato il codice fiscale di un cittadino (più gli eventuali dati dell'entità chiamante), il servizio restituisce il relativo PAD individuale
+      operationId: ConsultazionePadIndividuale
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.InputConsultazione'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.PadIndividuale_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.AgenziaPerIlLavoro:
+      type: object
+      properties:
+        codiceIntermediario:
+          type: string
+        codiceFiscale:
+          type: string
+        piva:
+          type: string
+        denominazione:
+          type: string
+          nullable: true
+        denominazionePersonaGiuridica:
+          type: string
+          nullable: true
+        indirizzo:
+          type: string
+          nullable: true
+        cap:
+          type: string
+          nullable: true
+        codComune:
+          type: string
+          nullable: true
+        email:
+          type: string
+          nullable: true
+        telefono:
+          type: string
+          nullable: true
+        dataInizioValidita:
+          type: string
+          format: date-time
+        dataFineValidita:
+          type: string
+          format: date-time
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/core/AgenziaPerIlLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/core/
+        codiceIntermediario: codiceAgenziaPerIlLavoro
+        codiceFiscale:  https://w3id.org/italia/onto/CPV/taxCode
+        piva: https://w3id.org/italia/onto/COV/VATnumber
+        denominazione: https://w3id.org/italia/onto/COV/legalName
+        denominazionePersonaGiuridica: https://w3id.org/italia/onto/COV/legalName
+        indirizzo: https://w3id.org/italia/onto/CLV/fullAddress
+        cap: https://w3id.org/italia/onto/CLV/postCode
+        codComune:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        email: https://w3id.org/italia/onto/SM/emailAddress
+        telefono: https://w3id.org/italia/onto/SM/telephoneNumber
+        dataInizioValidita: https://w3id.org/italia/onto/COV/startingActivityDate
+        dataFineValidita: dataFineAttivita
+      example:
+        codiceIntermediario: 'A111A12345'
+        codiceFiscale: "AAAAAA00A00A000A"
+        piva: '04018461204'
+        denominazione: 'FILIALE OPERATIVA MONACO DEU'
+        denominazionePersonaGiuridica: 'GRUPPO EUROCONSULT'
+        indirizzo: 'PIAZZA DELLE ISTITUZIONI, 12'
+        cap:  '31100'
+        codComune: 'L407'
+        email: 'prova@prova.it'
+        telefono: '12362435'
+        dataInizioValidita: '2023-09-01T00:00:00'
+        dataFineValidita: '2023-12-31T00:00:00'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.CentroPerImpiego:
+      type: object
+      properties:
+        codice:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/core/CentroPerImpiego
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/core/
+        codice: http://purl.org/dc/terms/identifier
+      example:
+        codice: 'E041C000329'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.InformazioniDid:
+      type: object
+      properties:
+        dataPresentazione:
+          type: string
+          format: date-time
+        centroPerImpiego:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.CentroPerImpiego'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/DichiarazioneImmediataDisponibilità
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        dataPresentazione: https://w3id.org/italia/labour-social-policies/onto/core/dataAtto
+        centroPerImpiego: https://w3id.org/italia/labour-social-policies/onto/labour/haCPIReferente
+      example:
+        dataPresentazione: '2023-09-01T00:00:00'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.PadIndividuale:
+      type: object
+      properties:
+        protocollo:
+          type: string
+        tipo:
+          type: string
+        dataSottoscrizione:
+          type: string
+          format: date-time
+        informazioniDid:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.InformazioniDid'
+        agenziePerIlLavoro:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.AgenziaPerIlLavoro'
+        email:
+          type: string
+          nullable: true
+        cellulare:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/PattoAttivazioneDigitaleIndividuale
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        protocollo: https://w3id.org/italia/labour-social-policies/onto/core/protocolloPrestazioneDiSostegno
+        tipo:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/core/haTipoPrestazioneDiSostegno
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/origine_offerta_lavoro/'
+              id: '@id'
+        dataSottoscrizione: https://w3id.org/italia/labour-social-policies/onto/core/dataAtto
+        informazioniDid:
+          '@id': haDIDAbilitante
+        agenziePerIlLavoro:
+          '@id': haAgenziaPerIlLavoroDiPAD
+        email:
+          '@id': https://w3id.org/italia/onto/SM/hasEmail
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        cellulare:
+          '@id': https://w3id.org/italia/onto/SM/hasContactPoint
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+      example:
+        protocollo: 'INPS-ADI-2024-9XXXX43'
+        tipo: 'ADI'
+        dataSottoscrizione: '2003-10-30T00:00:00'
+        agenziePerIlLavoro:
+          - codiceIntermediario: 'A111A12345'
+            codiceFiscale: "AAAAAA00A00A000A"
+            piva: '04018461204'
+            denominazione: 'FILIALE OPERATIVA MONACO DEU'
+            denominazionePersonaGiuridica: 'GRUPPO EUROCONSULT'
+            indirizzo: 'PIAZZA DELLE ISTITUZIONI, 12'
+            cap:  '31100'
+            codComune: 'L407'
+            telefono: '12362435'
+            dataInizioValidita: '2023-09-01T00:00:00'
+            dataFineValidita: '2023-12-31T00:00:00'
+        email: 'prova@prova.it'
+        cellulare: '123456789'
+
+    FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.PadIndividuale_Output:
+      type: object
+      properties:
+        elencoPadIndividuale:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazionePadIndividuale.PadIndividuale'
+      additionalProperties: false
+
+    FSL.Api.Domain.Models.Siisl.InputConsultazione:
+      required:
+        - codiceFiscaleCittadino
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        cfOperatore:
+          type: string
+          nullable: true
+        codiceFiscaleCittadino:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API

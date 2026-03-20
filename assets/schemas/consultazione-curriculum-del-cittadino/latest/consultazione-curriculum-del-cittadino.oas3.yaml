@@ -1,0 +1,635 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  license:
+    name: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0/
+  termsOfService: https://creativecommons.org/licenses/by/4.0/
+  x-semantic-score: 0.75
+  x-semantic-score-timestamp: 1774016124827
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/cittadino/curriculum:
+    post:
+      tags:
+        - Siisl
+      summary: Consultazione Curriculum Vitae
+      description: Dato il codice fiscale di un cittadino (più gli eventuali dati dell'entità chiamante), il servizio restituisce il relativo Curriculum Vitae
+      operationId: ConsultazioneCurriculum
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.InputConsultazione'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.CurriculumVitae'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.ConoscenzaInformatica:
+      type: object
+      properties:
+        tipoConoscenza:
+          type: string
+        eventualiSpecifiche:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaInformatica
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        tipoConoscenza: conoscenzaInformatica
+        eventualiSpecifiche:
+          '@id': haConoscenzaInformatica
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_informatica/'
+              id: '@id'
+      example:
+        tipoConoscenza: 'Specialistica'
+        eventualiSpecifiche: '002'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.ConoscenzaLinguistica:
+      type: object
+      properties:
+        linguaConosciuta:
+          type: string
+        letto:
+          type: string
+          nullable: true
+        scritto:
+          type: string
+          nullable: true
+        parlato:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaLinguistica
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        linguaConosciuta:
+          '@id': haLinguaConosciuta
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/'
+              id: '@id'
+        letto:
+          '@id': haGradoDiConoscenzaLinguisticaLetta
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/'
+              id: '@id'
+        scritto:
+          '@id': haGradoDiConoscenzaLinguisticaScritta
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/'
+              id: '@id'
+        parlato:
+          '@id': haGradoDiConoscenzaLinguisticaParlata
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/'
+              id: '@id'
+      example:
+        linguaConosciuta: '001'
+        letto: 'A1'
+        scritto: 'A1'
+        parlato: 'A1'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.CurriculumVitae:
+      type: object
+      properties:
+        codiceFiscale:
+          type: string
+        comuneDomicilio:
+          type: string
+        capDomicilio:
+          type: string
+          nullable: true
+        indirizzoDomicilio:
+          type: string
+          nullable: true
+        telefonoFisso:
+          type: string
+          nullable: true
+        cellulare:
+          type: string
+          nullable: true
+        fax:
+          type: string
+          nullable: true
+        email:
+          type: string
+        ultimoAggiornamento:
+          type: string
+          format: date-time
+        stato:
+          type: string
+        dataCompletamento:
+          type: string
+          format: date-time
+          nullable: true
+        conoscenzeInformatiche:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.ConoscenzaInformatica'
+        conoscenzeLinguistiche:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.ConoscenzaLinguistica'
+        esperienzeLavorative:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.EsperienzaLavorativa'
+        formazione:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.DettaglioFormazione'
+        iscrizioniAlbo:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.IscrizioneAlbo'
+        istruzione:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.DettaglioIstruzione'
+        patenti:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.Patente'
+        professioniDesiderate:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.ProfessioneDesiderata'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codiceFiscale: https://w3id.org/italia/onto/CPV/taxCode
+        comuneDomicilio:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        capDomicilio: https://w3id.org/italia/onto/CLV/postCode
+        indirizzoDomicilio: https://w3id.org/italia/onto/CLV/fullAddress
+        telefonoFisso: https://w3id.org/italia/onto/SM/telephoneNumber
+        cellulare:
+          '@id': https://w3id.org/italia/onto/SM/hasContactPoint
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        fax:
+          '@id': https://w3id.org/italia/onto/SM/hasTelephone
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        email:
+          '@id': https://w3id.org/italia/onto/SM/hasEmail
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        ultimoAggiornamento: dataUltimoAggiornamentoCV
+        stato: statusCV
+        dataCompletamento: dataCompletamentoCV
+        conoscenzeInformatiche:
+          '@id': haConoscenzaInformatica
+        conoscenzeLinguistiche:
+          '@id': haConoscenzaLinguistica
+        esperienzeLavorative:
+          '@id': haEsperienzaLavorativa
+        formazione:
+          '@id': haCorsoDiFormazione
+        iscrizioniAlbo:
+          '@id': haIscrizioneAlboProfessionale
+        istruzione:
+          '@id': haConseguitoTitoloDiStudio
+        patenti:
+          '@id': haPatenteDiGuida
+        professioniDesiderate:
+          '@id': haProfessioneDesiderata
+      example:
+        codiceFiscale: "AAAAAA00A00A000A"
+        comuneDomicilio: 'H501'
+        capDomicilio: '00100'
+        indirizzoDomicilio: 'Via Roma 12'
+        telefonoFisso: '12362435'
+        cellulare: '3564323400'
+        fax: '0612345678'
+        email: 'prova@prova.it'
+        ultimoAggiornamento: '2025-01-14T00:00:00Z'
+        stato: "Confermato"
+        dataCompletamento: '2025-01-14T00:00:00Z'
+        conoscenzeInformatiche:
+          - tipoConoscenza: 'Specialistica'
+            eventualiSpecifiche: '002'
+        conoscenzeLinguistiche:
+          - linguaConosciuta: '001'
+            letto: 'A1'
+            scritto: 'A1'
+            parlato: 'A1'
+        esperienzeLavorative:
+          - tipoEsperienza: 'A00'
+            qualificaSvolta: '2.5.5.3.2.1'
+            descrittivoQualifica: 'ballerino'
+            mansioniResponsabilita: 'null'
+            datoreLavoro: 'Nome datore test'
+            dataInizio: '2025-01-14T00:00:00Z'
+            dataFine:  '2025-01-14T00:00:00Z'
+            indirizzoDatoreLavoro: 'Via Roma 12, 00100 Roma'
+        formazione:
+          - titoloCorsoFormazione: 'Corso formazione 1'
+            sede: 'Via Roma 12, 00100 Roma'
+            durata: 120
+            durataUnitaMisura: 'O'
+            certificazioniAttestazioni: '10'
+            qualificaAcquisita: '8.1.3.1.0.15'
+            descrittivoQualifica: 'facchino'
+        iscrizioniAlbo:
+          - albo: '0001'
+        istruzione:
+          - titoloStudio: '2'
+            descrizione: '2'
+            votazione: '108/110'
+        patenti:
+          - patente: '02'
+        professioniDesiderate:
+          - professione: '8.1.3.3.0.11'
+            descrizioneProfessione: 'corriere'
+            descrittivoQualifica: 'Qualifica test'
+            esperienzaSettore: True
+            descrizioneDurataEsperienza: 'descrizione test'
+            disponibilitaTrasferte: False
+            disponibilitaMezzoProprio: False
+            preferenzaTipologiaContratto: 'A00'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.DettaglioFormazione:
+      type: object
+      properties:
+        titoloCorsoFormazione:
+          type: string
+        sede:
+          type: string
+          nullable: true
+        durata:
+          type: integer
+          format: int32
+          nullable: true
+        durataUnitaMisura:
+          type: string
+          nullable: true
+        certificazioniAttestazioni:
+          type: string
+          nullable: true
+        qualificaAcquisita:
+          type: string
+          nullable: true
+        descrittivoQualifica:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        titoloCorsoFormazione: titoloCorsoDiFormazione
+        sede: https://w3id.org/italia/onto/CLV/fullAddress
+        durata: durataCorsoDiFormazione
+        durataUnitaMisura: durataUnitaMisura
+        certificazioniAttestazioni:
+          '@id': haTipoDiAttestazioneCorsoDiFormazione
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/'
+              id: '@id'
+        qualificaAcquisita:
+          '@id': haTipoDiQualificaCorsoDiFormazione
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_catalogo_professioni/'
+              id: '@id'
+        descrittivoQualifica: descrizioneQualifica
+      example:
+        titoloCorsoFormazione: 'Corso formazione 1'
+        sede: 'Via Roma 12, 00100 Roma'
+        durata: 120
+        durataUnitaMisura: 'O'
+        certificazioniAttestazioni: '10'
+        qualificaAcquisita: '8.1.3.1.0.15'
+        descrittivoQualifica: 'facchino'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.DettaglioIstruzione:
+      type: object
+      properties:
+        titoloStudio:
+          type: string
+        descrizione:
+          type: string
+          nullable: true
+        votazione:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudioConseguito
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        titoloStudio:
+          '@id': haConseguitoTitoloDiStudio
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/'
+              id: '@id'
+        descrizione:
+          '@id': haTitoloDiStudio
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/'
+              id: '@id'
+        votazione: votazioneTitoloDiStudioConseguito
+      example:
+        titoloStudio: '2'
+        descrizione: '2'
+        votazione: '108/110'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.EsperienzaLavorativa:
+      type: object
+      properties:
+        tipoEsperienza:
+          type: string
+        qualificaSvolta:
+          type: string
+          nullable: true
+        descrittivoQualifica:
+          type: string
+          nullable: true
+        mansioniResponsabilita:
+          type: string
+          nullable: true
+        datoreLavoro:
+          type: string
+          nullable: true
+        dataInizio:
+          type: string
+          format: date-time
+          nullable: true
+        dataFine:
+          type: string
+          format: date-time
+          nullable: true
+        indirizzoDatoreLavoro:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        tipoEsperienza:
+          '@id': haTipoDiContrattoDiLavoro
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/'
+              id: '@id'
+        qualificaSvolta:
+          '@id': haTipoDiQualificaEsperienzaLavorativa
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_catalogo_professioni/'
+              id: '@id'
+        descrittivoQualifica: descrizioneQualifica
+        mansioniResponsabilita: mansioneEsperienzaLavorativa
+        datoreLavoro: datoreDiLavoro
+        dataInizio: https://w3id.org/italia/onto/TI/startTime
+        dataFine: https://w3id.org/italia/onto/TI/endTime
+        indirizzoDatoreLavoro: https://w3id.org/italia/onto/CLV/fullAddress
+      example:
+        tipoEsperienza: 'A00'
+        qualificaSvolta: '2.5.5.3.2.1'
+        descrittivoQualifica: 'ballerino'
+        mansioniResponsabilita: 'null'
+        datoreLavoro: 'Nome datore test'
+        dataInizio: '2025-01-14T00:00:00Z'
+        dataFine:  '2025-01-14T00:00:00Z'
+        indirizzoDatoreLavoro: 'Via Roma 12, 00100 Roma'
+
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.IscrizioneAlbo:
+      type: object
+      properties:
+        albo:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        albo:
+          '@id': haIscrizioneAlboProfessionale
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/'
+              id: '@id'
+      example:
+        albo: '0001'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.Patente:
+      type: object
+      properties:
+        patente:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        patente:
+          '@id': haPatenteDiGuida
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/'
+              id: '@id'
+      example:
+        patente: '02'
+
+
+    FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.ProfessioneDesiderata:
+      type: object
+      properties:
+        professione:
+          type: string
+          nullable: true
+        descrizioneProfessione:
+          type: string
+        descrittivoQualifica:
+          type: string
+          nullable: true
+        esperienzaSettore:
+          type: boolean
+        descrizioneDurataEsperienza:
+          type: string
+        disponibilitaTrasferte:
+          type: boolean
+        disponibilitaMezzoProprio:
+          type: boolean
+        preferenzaTipologiaContratto:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        professione:
+          '@id': haProfessioneDesiderata
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_catalogo_professioni/'
+              id: '@id'
+        descrizioneProfessione: descrizioneQualificaDesiderata
+        descrittivoQualifica: descrizioneQualifica
+        esperienzaSettore: avvisoEsperienzaNelSettore
+        descrizioneDurataEsperienza: descrizioneDurataEsperienzaNelSettore
+        disponibilitaTrasferte: avvisoDisponibilitàTrasferte
+        disponibilitaMezzoProprio: avvisoDisponibilitàMezzoProprio
+        preferenzaTipologiaContratto:
+          '@id': haTipoDiContrattoPreferito
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/'
+              id: '@id'
+      example:
+        professione: '8.1.3.3.0.11'
+        descrizioneProfessione: 'corriere'
+        descrittivoQualifica: 'Qualifica test'
+        esperienzaSettore: True
+        descrizioneDurataEsperienza: 'descrizione test'
+        disponibilitaTrasferte: False
+        disponibilitaMezzoProprio: False
+        preferenzaTipologiaContratto: 'A00'
+
+
+
+
+    FSL.Api.Domain.Models.Siisl.InputConsultazione:
+      required:
+        - codiceFiscaleCittadino
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        cfOperatore:
+          type: string
+          nullable: true
+        codiceFiscaleCittadino:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API
