@@ -7,10 +7,6 @@ info:
     email: dginnovazionediv3@lavoro.gov.it
   version: 1.0.0
   x-summary: Fascicolo Sociale e Lavorativo del Cittadino
-  license:
-    name: CC BY 4.0
-    url: https://creativecommons.org/licenses/by/4.0/
-  termsOfService: https://creativecommons.org/licenses/by/4.0/
   x-semantic-score: 0.49
   x-semantic-score-timestamp: 1774016578882
 servers:
