@@ -7,12 +7,6 @@ info:
     email: dginnovazionediv3@lavoro.gov.it
   version: 1.0.0
   x-summary: Fascicolo Sociale e Lavorativo del Cittadino
-  license:
-    name: CC BY 4.0
-    url: https://creativecommons.org/licenses/by/4.0/
-  termsOfService: https://creativecommons.org/licenses/by/4.0/
-  x-semantic-score: 0.75
-  x-semantic-score-timestamp: 1774016124827
 servers:
   - url: https://apimlpstest.lavoro.gov.it/rest
     description: FSL Test Environment
@@ -98,7 +92,7 @@ components:
           type: string
           nullable: true
       additionalProperties: false
-      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaInformatica
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         tipoConoscenza: conoscenzaInformatica
@@ -397,17 +391,12 @@ components:
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         titoloStudio:
-          '@id': haConseguitoTitoloDiStudio
-          '@type': '@id'
-          '@context':
-              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/'
-              id: '@id'
-        descrizione:
           '@id': haTitoloDiStudio
           '@type': '@id'
           '@context':
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/'
               id: '@id'
+        descrizione: descrizioneTitoloDiStudio
         votazione: votazioneTitoloDiStudioConseguito
       example:
         titoloStudio: '2'
@@ -542,7 +531,7 @@ components:
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         professione:
-          '@id': haProfessioneDesiderata
+          '@id': haTipoDiProfessioneDesiderata
           '@type': '@id'
           '@context':
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_catalogo_professioni/'

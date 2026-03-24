@@ -30,8 +30,8 @@ lsp-labour: a owl:Ontology ;
         "Ontology of Labor and Social Inclusion Services (SIISL) of the Ministry of Labor and Social Policies"@en ;
     rdfs:comment "Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
         "Ontology of the Ministry of Labour and Social Policies related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
-    owl:versionInfo "0.1 - Modificata il 26 Febbraio 2026"@it,
-        "0.1 - Modified on 26 February 2026"@en ;
+    owl:versionInfo "1.0 - Modificata il 26 Febbraio 2026"@it,
+        "1.0 - Modified on 26 February 2026"@en ;
     rdfs:isDefinedBy lsp-labour: ;
     adms:acronym "lsp" ;
     adms:hasContributor <https://w3id.org/italia/data/organization/public-organization/td> ;
@@ -505,54 +505,71 @@ smapit:hasOnlineContactPoint a owl:ObjectProperty .
 
 TI:atTime a owl:ObjectProperty .
 
+### Datatypes
+
+xsd:boolean a rdfs:Datatype .
+
+xsd:dateTime a rdfs:Datatype .
+
+xsd:integer a rdfs:Datatype .
+
+xsd:string a rdfs:Datatype .
+
 ### Data Properties
 
 lsp-labour:avvisoAttivitaEnteErogatore a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "avviso attivita ente erogatore"@it ;
+    rdfs:label "avviso attività ente erogatore"@it ;
     rdfs:domain lsp-labour:EnteFormativoAccreditato ;
-    rdfs:comment "Booleano che indica se un ente erogatore è attivo"@it .
+    rdfs:comment "Booleano che indica l'attività dell'ente erogatore"@it .
 
 lsp-labour:avvisoCorsoRegionale a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso corso regionale"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala un corso riconosciuto o finanziato a livello regionale. Associato a codice Regione."@it .
 
 lsp-labour:avvisoDisponibilitàMezzoProprio a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso disponibilità mezzo proprio"@it ;
     rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala se il cittadino può usare un mezzo proprio. Utile per mobilità e idoneità all'offerta."@it .
 
 lsp-labour:avvisoDisponibilitàTrasferte a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso disponibilità trasferte"@it ;
     rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano sulla disponibilità a trasferte. Impatta il matching con offerte che prevedono mobilità."@it .
 
 lsp-labour:avvisoEnteFormatoreCPIA a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso ente formatore CPIA"@it ;
     rdfs:domain lsp-labour:EnteFormativoAccreditato ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala che l'ente formatore è un CPIA. Rilevante per percorsi di istruzione per adulti."@it .
 
 lsp-labour:avvisoEsperienzaNelSettore a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso esperienza nel settore"@it ;
     rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala se è richiesta esperienza pregressa"@it .
 
 lsp-labour:avvisoManifestazioneInteresseFormazione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso manifestazione interesse formazione"@it ;
     rdfs:domain lsp-labour:ManifestazioneInteresseOffertaFormativa ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala che il cittadino ha manifestato interesse per un corso di formazione"@it .
 
 lsp-labour:avvisoModalitaFormativaInSede a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso modalita formativa in sede"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala che l'erogazione del corso avviene in sede"@it .
 
 lsp-labour:avvisoPercorsoLavoroInclusione a owl:DatatypeProperty,
@@ -583,18 +600,26 @@ lsp-labour:avvisoRequisitoCompenzeDigitali a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "avviso requisito compenze digitali"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l'accesso"@it .
+
+lsp-labour:canaleDiOrigineOffertaDiLavoro a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "canale di origine offerta di lavoro"@it ;
+    rdfs:domain lsp-labour:OffertaDiLavoro .
 
 lsp-labour:codiceCorsoRegionale a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "codice corso regionale"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Identificativo del corso nel catalogo regionale. Garantisce tracciabilità e controlli."@it .
 
 lsp-labour:codiceIntermediario a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "codice intermediario"@it ;
     rdfs:domain lsp-labour:EnteFormativoAccreditato ;
+    rdfs:range xsd:string ;
     rdfs:comment "Codice di accreditamento di un Ente formativo accreditato."@it .
 
 lsp-labour:codiceOffertaDiLavoro a owl:DatatypeProperty,
@@ -613,12 +638,14 @@ lsp-labour:conoscenzaInformatica a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "conoscenza informatica"@it ;
     rdfs:domain lsp-labour:ConoscenzaInformatica ;
+    rdfs:range xsd:string ;
     rdfs:comment "Insieme delle competenze informatiche dichiarate dal cittadino nel CV"@it .
 
 lsp-labour:dataCompletamentoCV a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data completamento CV"@it ;
     rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range xsd:dateTime ;
     rdfs:comment "Data in cui il curriculum è stato pubblicato. Utile per verifiche di aggiornamento."@it .
 
 lsp-labour:dataFinePubblicazione a owl:DatatypeProperty,
@@ -637,6 +664,7 @@ lsp-labour:dataIscrizioneEdizioneOffertaFormativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data iscrizione edizione offerta formativa"@it ;
     rdfs:domain lsp-labour:IscrizioneEdizioneOffertaFormativa ;
+    rdfs:range xsd:dateTime ;
     rdfs:comment "Data in cui è stata effettuata, dall'ente formatore, l'iscrizione del cittadino al corso di formazione pubblicato"@it .
 
 lsp-labour:dataIscrizioneElencoRegionale a owl:DatatypeProperty,
@@ -649,36 +677,42 @@ lsp-labour:dataManifestazioneInteresseFormazione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data manifestazione interesse formazione"@it ;
     rdfs:domain lsp-labour:ManifestazioneInteresseOffertaFormativa ;
+    rdfs:range xsd:dateTime ;
     rdfs:comment "Data in cui il cittadino ha espresso interesse per un corso di formazione a catalogo. Collegata al relativo record di offerta formativa."@it .
 
 lsp-labour:dataManifestazioneInteresseOffertaDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data manifestazione interesse offerta di lavoro"@it ;
     rdfs:domain lsp-labour:ManifestazioneInteresseOffertaDiLavoro ;
+    rdfs:range xsd:dateTime ;
     rdfs:comment "Data in cui il cittadino ha espresso interesse per un'offerta di lavoro. Collegata al relativo record di offerta di lavoro."@it .
 
 lsp-labour:dataPubblicazioneOffertaDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data pubblicazione offerta di lavoro"@it ;
     rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:range xsd:dateTime ;
     rdfs:comment "Data in cui l'offerta di lavoro è stata resa pubblica. Usata per calcolare visibilità e scadenza."@it .
 
 lsp-labour:dataScadenzaOffertaDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data scadenza offerta di lavoro"@it ;
     rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:range xsd:dateTime ;
     rdfs:comment "Data di archiviazione dell'offerta di lavoro. Può avvenire manualmente a fronte di archiviazione da parte dell'azienda o APL, oppure automaticamente al sopraggiungere della data di fine pubblicazione. Oltre tale data non sono accettate manifestazioni di interesse da parte dei cittadini."@it .
 
 lsp-labour:dataUltimoAggiornamentoCV a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data ultimo aggiornamento CV"@it ;
     rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range xsd:dateTime ;
     rdfs:comment "Data dell'ultimo aggiornamento del CV da parte del cittadino"@it .
 
 lsp-labour:datoreDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "datore di lavoro"@it ;
     rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Soggetto per cui è stata svolta l'esperienza lavorativa"@it .
 
 lsp-labour:decadenzaAbilitazioneErogazione a owl:DatatypeProperty,
@@ -703,6 +737,7 @@ lsp-labour:descrizioneEsperienzaNelSettore a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "descrizione esperienza nel settore"@it ;
     rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:range xsd:string ;
     rdfs:comment "Testo che dettaglia l'esperienza maturata nel settore richiesto. Utile per valutazione qualitativa."@it .
 
 lsp-labour:descrizioneOffertaDiLavoro a owl:DatatypeProperty,
@@ -721,24 +756,34 @@ lsp-labour:descrizioneQualificaDesiderata a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "descrizione qualifica desiderata"@it ;
     rdfs:domain lsp-labour:ProfessioneDesiderata ;
+    rdfs:range xsd:string ;
     rdfs:comment "Descrizione della qualifica professionale che si aspira di ricoprire. Aiuta l'orientamento e il matching."@it .
+
+lsp-labour:descrizioneTitoloDiStudioConseguito a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "descrizione titolo di studio conseguito"@it ;
+    rdfs:domain lsp-labour:TitoloDiStudioConseguito ;
+    rdfs:comment "descrizione del titolo di studio conseguito"@it .
 
 lsp-labour:dettaglioConoscenzaInformatica a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "dettaglio conoscenza informatica"@it ;
     rdfs:domain lsp-labour:ConoscenzaInformatica ;
+    rdfs:range xsd:string ;
     rdfs:comment "Eventuali specifiche relative alle conoscenze informatiche del cittadino riportate nel CV"@it .
 
 lsp-labour:durataCorsoDiFormazione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "durata corso di formazione"@it ;
     rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:range xsd:integer ;
     rdfs:comment "Quantità di tempo espressa in ore prevista per l'erogazione del corso. Espressa con unità di misura normalizzate."@it .
 
 lsp-labour:durataOffertaFormativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "durata offerta formativa"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:integer ;
     rdfs:comment "Durata complessiva dell'offerta formativa espressa in ore"@it .
 
 lsp-labour:durataUnitaMisura a owl:DatatypeProperty,
@@ -751,6 +796,7 @@ lsp-labour:finalitàOffertaFormativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "finalità offerta formativa"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Finalità del corso di formazione pubblicato in termini di obiettivi da raggiungere e competenze acquisite al suo termine"@it .
 
 lsp-labour:idOffertaFormativa a owl:DatatypeProperty,
@@ -763,12 +809,14 @@ lsp-labour:indirizzoDatoreDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "indirizzo datore di lavoro"@it ;
     rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Indirizzo della sede presso cui si è lavorato. Utilizzato per georeferenziazione."@it .
 
 lsp-labour:mansioneEsperienzaLavorativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "mansione esperienza lavorativa"@it ;
     rdfs:domain lsp-labour:EsperienzaLavorativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Mansioni e responsabilità svolte durante l'esperienza lavorativa. Supporta la ricostruzione del profilo professionale."@it .
 
 lsp-labour:nuovaDataFine a owl:DatatypeProperty ;
@@ -796,77 +844,90 @@ lsp-labour:postiDisponibiliEdizioneCorso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "posti disponibili edizione corso"@it ;
     rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:range xsd:integer ;
     rdfs:comment "Numero di posti disponibili nella classe per l'edizione del corso di formazione. Rilevante per iscrizioni e capienza."@it .
 
 lsp-labour:programmazioneAttivitàCorso a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "programmazione attività corso"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Pianificazione delle attività didattiche del corso (campo aperto). Include orari e moduli."@it .
 
 lsp-labour:requisitoAmmissioneOffertaFormativa a owl:DatatypeProperty ;
     rdfs:label "requisito ammissione offerta formativa"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Condizioni necessarie e requisiti minimi per iscriversi al corso (campo aperto)"@it .
 
 lsp-labour:sedeCorsoDiFormazione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "sede corso di formazione"@it ;
     rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:range xsd:string ;
     rdfs:comment "Luogo di erogazione del corso di formazione pubblicato (indirizzo fisico o piattaforma online)."@it .
 
 lsp-labour:statusAdesioneOffertaDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status adesione offerta di lavoro"@it ;
     rdfs:domain lsp-labour:AdesioneOffertaDiLavoro ;
+    rdfs:range xsd:string ;
     rdfs:comment "Stato dell'adesione (proposta, accettata, rifiutata). Tracciato nel tempo."@it .
 
 lsp-labour:statusCV a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status CV"@it ;
     rdfs:domain lsp-labour:StatoDiCVDelCittadino ;
+    rdfs:range xsd:string ;
     rdfs:comment "Stato sintetico del CV (da completare, in bozza, pre-compilato, pubblicato)."@it .
 
 lsp-labour:statusEdizioneOffertaFormativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status edizione offerta formativa"@it ;
     rdfs:domain lsp-labour:EdizioneOffertaFormativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Status di una Edizione offerta formativa. I possibili valori, in termini di (codice - descrizione), sono:  (ND - \"In bozza\"), (1 - \"Pubblicata\"), (99 - \"Archiviata\"),(ND - \"Importata\")."@it .
 
 lsp-labour:statusIscrizioneEdizioneOffertaFormativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status iscrizione edizione offerta formativa"@it ;
     rdfs:domain lsp-labour:StatoIscrizioneEdizioneOffertaFormativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Stato dell'iscrizione del cittadino ad un corso di formazione (iscrizione, inizio, fine)"@it .
 
 lsp-labour:statusOffertaDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "status offerta di lavoro"@it ;
     rdfs:domain lsp-labour:StatoOffertaDiLavoro ;
+    rdfs:range xsd:string ;
     rdfs:comment "Stato corrente dell'offerta di lavoro (in bozza, pubblicata, archiviata, importata)"@it .
 
 lsp-labour:titoloCorsoDiFormazione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "titolo corso di formazione"@it ;
     rdfs:domain lsp-labour:CorsoDiFormazione ;
+    rdfs:range xsd:string ;
     rdfs:comment "Titolo ufficiale del corso di formazione. Usato per ricerca e comunicazione."@it .
 
 lsp-labour:titoloOffertaDiLavoro a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "titolo offerta di lavoro"@it ;
     rdfs:domain lsp-labour:OffertaDiLavoro ;
+    rdfs:range xsd:string ;
     rdfs:comment "Titolo dell'annuncio di lavoro. Riassume ruolo e principali requisiti."@it .
 
 lsp-labour:titoloOffertaFormativa a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "titolo offerta formativa"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
+    rdfs:range xsd:string ;
     rdfs:comment "Titolo ufficiale del corso di formazione. Usato per ricerca e comunicazione."@it .
 
 lsp-labour:votazioneTitoloDiStudioConseguito a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "votazione titolo di studio conseguito"@it ;
     rdfs:domain lsp-labour:TitoloDiStudioConseguito ;
+    rdfs:range xsd:string ;
     rdfs:comment "Voto conseguito sul titolo di studio. Può essere su scala 100/110 o equivalente."@it .
 
 ### Classes
@@ -1073,6 +1134,9 @@ lsp-labour:MicroCategoriaAttestatoCorso a owl:Class ;
 lsp-labour:OffertaDiLavoro a owl:Class ;
     rdfs:label "Offerta di lavoro"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:canaleDiOrigineOffertaDiLavoro ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
             owl:onProperty lsp-labour:haStatoOffertaDiLavoro ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
@@ -1254,6 +1318,9 @@ lsp-labour:TitoloDiStudio a owl:Class ;
 lsp-labour:TitoloDiStudioConseguito a owl:Class ;
     rdfs:label "Titolo di studio conseguito"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-labour:descrizioneTitoloDiStudioConseguito ;
+            owl:someValuesFrom rdfs:Literal ],
+        [ a owl:Restriction ;
             owl:onProperty lsp-labour:haTitoloDiStudio ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;

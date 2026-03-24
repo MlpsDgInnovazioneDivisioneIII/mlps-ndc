@@ -47,8 +47,8 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/"/>
         <rdfs:label xml:lang="it">Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero del Lavoro e delle Politiche Sociali</rdfs:label>
         <rdfs:label xml:lang="en">Ontology of Labor and Social Inclusion Services (SIISL) of the Ministry of Labor and Social Policies</rdfs:label>
-        <owl:versionInfo xml:lang="it">0.1 - Modificata il 26 Febbraio 2026</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">0.1 - Modified on 26 February 2026</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">1.0 - Modificata il 26 Febbraio 2026</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">1.0 - Modified on 26 February 2026</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3"/>
         <dcat:keyword xml:lang="en">citizen&apos;s curriculum vitae</dcat:keyword>
         <dcat:keyword xml:lang="it">curriculum vitae del cittadino</dcat:keyword>
@@ -85,7 +85,7 @@
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
+    // Datatypes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -93,207 +93,27 @@
 
 
 
-    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
 
 
 
-    <!-- http://purl.org/dc/terms/creator -->
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
 
 
 
-    <!-- http://purl.org/dc/terms/description -->
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
 
 
 
-    <!-- http://purl.org/dc/terms/format -->
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
-
-
-
-    <!-- http://purl.org/dc/terms/identifier -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
-
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-
-
-
-    <!-- http://purl.org/dc/terms/language -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-
-
-
-    <!-- http://purl.org/dc/terms/modified -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-
-
-
-    <!-- http://purl.org/dc/terms/publisher -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-
-
-
-    <!-- http://purl.org/dc/terms/rightsHolder -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
-
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#fn -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
-
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
-
-
-
-    <!-- http://www.w3.org/ns/dcat#accessURL -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
-
-
-
-    <!-- http://www.w3.org/ns/dcat#contactPoint -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
-
-
-
-    <!-- http://www.w3.org/ns/dcat#downloadURL -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
-
-
-
-    <!-- http://www.w3.org/ns/dcat#keyword -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
-
-
-
-    <!-- http://www.w3.org/ns/dcat#theme -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/name -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/last -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/last"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/status -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/target -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/type -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
 
 
 
@@ -1092,11 +912,23 @@
 
 
 
+    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EnteFormativoAccreditato"/>
+        <rdfs:comment xml:lang="it">Booleano che indica l&apos;attività dell&apos;ente erogatore</rdfs:comment>
+        <rdfs:label xml:lang="it">avviso attività ente erogatore</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
     <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoCorsoRegionale -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoCorsoRegionale">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala un corso riconosciuto o finanziato a livello regionale. Associato a codice Regione.</rdfs:comment>
         <rdfs:label xml:lang="it">avviso corso regionale</rdfs:label>
     </owl:DatatypeProperty>
@@ -1108,6 +940,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoDisponibilitàMezzoProprio">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala se il cittadino può usare un mezzo proprio. Utile per mobilità e idoneità all&apos;offerta.</rdfs:comment>
         <rdfs:label xml:lang="it">avviso disponibilità mezzo proprio</rdfs:label>
     </owl:DatatypeProperty>
@@ -1119,6 +952,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoDisponibilitàTrasferte">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano sulla disponibilità a trasferte. Impatta il matching con offerte che prevedono mobilità.</rdfs:comment>
         <rdfs:label xml:lang="it">avviso disponibilità trasferte</rdfs:label>
     </owl:DatatypeProperty>
@@ -1130,6 +964,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoEnteFormatoreCPIA">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EnteFormativoAccreditato"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala che l&apos;ente formatore è un CPIA. Rilevante per percorsi di istruzione per adulti.</rdfs:comment>
         <rdfs:label xml:lang="it">avviso ente formatore CPIA</rdfs:label>
     </owl:DatatypeProperty>
@@ -1141,6 +976,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoEsperienzaNelSettore">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala se è richiesta esperienza pregressa</rdfs:comment>
         <rdfs:label xml:lang="it">avviso esperienza nel settore</rdfs:label>
     </owl:DatatypeProperty>
@@ -1152,6 +988,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoManifestazioneInteresseFormazione">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ManifestazioneInteresseOffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala che il cittadino ha manifestato interesse per un corso di formazione</rdfs:comment>
         <rdfs:label xml:lang="it">avviso manifestazione interesse formazione</rdfs:label>
     </owl:DatatypeProperty>
@@ -1163,6 +1000,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoModalitaFormativaInSede">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala che l&apos;erogazione del corso avviene in sede</rdfs:comment>
         <rdfs:label xml:lang="it">avviso modalita formativa in sede</rdfs:label>
     </owl:DatatypeProperty>
@@ -1218,8 +1056,19 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l&apos;accesso</rdfs:comment>
         <rdfs:label xml:lang="it">avviso requisito compenze digitali</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/canaleDiOrigineOffertaDiLavoro -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/canaleDiOrigineOffertaDiLavoro">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro"/>
+        <rdfs:label xml:lang="it">canale di origine offerta di lavoro</rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1229,6 +1078,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/codiceCorsoRegionale">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Identificativo del corso nel catalogo regionale. Garantisce tracciabilità e controlli.</rdfs:comment>
         <rdfs:label xml:lang="it">codice corso regionale</rdfs:label>
     </owl:DatatypeProperty>
@@ -1240,6 +1090,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/codiceIntermediario">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EnteFormativoAccreditato"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Codice di accreditamento di un Ente formativo accreditato.</rdfs:comment>
         <rdfs:label xml:lang="it">codice intermediario</rdfs:label>
     </owl:DatatypeProperty>
@@ -1273,6 +1124,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/conoscenzaInformatica">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaInformatica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Insieme delle competenze informatiche dichiarate dal cittadino nel CV</rdfs:comment>
         <rdfs:label xml:lang="it">conoscenza informatica</rdfs:label>
     </owl:DatatypeProperty>
@@ -1284,6 +1136,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data in cui il curriculum è stato pubblicato. Utile per verifiche di aggiornamento.</rdfs:comment>
         <rdfs:label xml:lang="it">data completamento CV</rdfs:label>
     </owl:DatatypeProperty>
@@ -1317,6 +1170,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataIscrizioneEdizioneOffertaFormativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/IscrizioneEdizioneOffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data in cui è stata effettuata, dall&apos;ente formatore, l&apos;iscrizione del cittadino al corso di formazione pubblicato</rdfs:comment>
         <rdfs:label xml:lang="it">data iscrizione edizione offerta formativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1332,20 +1186,14 @@
         <rdfs:label xml:lang="it">data iscrizione elenco regionale</rdfs:label>
     </owl:DatatypeProperty>
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoAttivitaEnteErogatore">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EnteFormativoAccreditato"/>
-        <rdfs:comment xml:lang="it">Booleano che indica se un ente erogatore è attivo</rdfs:comment>
-        <rdfs:label xml:lang="it">avviso attivita ente erogatore</rdfs:label>
-    </owl:DatatypeProperty>
 
     <!-- https://w3id.org/italia/labour-social-policies/onto/labour/dataManifestazioneInteresseFormazione -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataManifestazioneInteresseFormazione">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ManifestazioneInteresseOffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data in cui il cittadino ha espresso interesse per un corso di formazione a catalogo. Collegata al relativo record di offerta formativa.</rdfs:comment>
         <rdfs:label xml:lang="it">data manifestazione interesse formazione</rdfs:label>
     </owl:DatatypeProperty>
@@ -1357,6 +1205,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataManifestazioneInteresseOffertaDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ManifestazioneInteresseOffertaDiLavoro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data in cui il cittadino ha espresso interesse per un&apos;offerta di lavoro. Collegata al relativo record di offerta di lavoro.</rdfs:comment>
         <rdfs:label xml:lang="it">data manifestazione interesse offerta di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1368,6 +1217,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataPubblicazioneOffertaDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data in cui l&apos;offerta di lavoro è stata resa pubblica. Usata per calcolare visibilità e scadenza.</rdfs:comment>
         <rdfs:label xml:lang="it">data pubblicazione offerta di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1379,6 +1229,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataScadenzaOffertaDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data di archiviazione dell&apos;offerta di lavoro. Può avvenire manualmente a fronte di archiviazione da parte dell&apos;azienda o APL, oppure automaticamente al sopraggiungere della data di fine pubblicazione. Oltre tale data non sono accettate manifestazioni di interesse da parte dei cittadini.</rdfs:comment>
         <rdfs:label xml:lang="it">data scadenza offerta di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1390,6 +1241,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data dell&apos;ultimo aggiornamento del CV da parte del cittadino</rdfs:comment>
         <rdfs:label xml:lang="it">data ultimo aggiornamento CV</rdfs:label>
     </owl:DatatypeProperty>
@@ -1401,6 +1253,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/datoreDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Soggetto per cui è stata svolta l&apos;esperienza lavorativa</rdfs:comment>
         <rdfs:label xml:lang="it">datore di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1445,6 +1298,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneEsperienzaNelSettore">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Testo che dettaglia l&apos;esperienza maturata nel settore richiesto. Utile per valutazione qualitativa.</rdfs:comment>
         <rdfs:label xml:lang="it">descrizione esperienza nel settore</rdfs:label>
     </owl:DatatypeProperty>
@@ -1478,8 +1332,20 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneQualificaDesiderata">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Descrizione della qualifica professionale che si aspira di ricoprire. Aiuta l&apos;orientamento e il matching.</rdfs:comment>
         <rdfs:label xml:lang="it">descrizione qualifica desiderata</rdfs:label>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneTitoloDiStudioConseguito -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneTitoloDiStudioConseguito">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudioConseguito"/>
+        <rdfs:comment xml:lang="it">descrizione del titolo di studio conseguito</rdfs:comment>
+        <rdfs:label xml:lang="it">descrizione titolo di studio conseguito</rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1489,6 +1355,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dettaglioConoscenzaInformatica">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaInformatica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Eventuali specifiche relative alle conoscenze informatiche del cittadino riportate nel CV</rdfs:comment>
         <rdfs:label xml:lang="it">dettaglio conoscenza informatica</rdfs:label>
     </owl:DatatypeProperty>
@@ -1500,6 +1367,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/durataCorsoDiFormazione">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="it">Quantità di tempo espressa in ore prevista per l&apos;erogazione del corso. Espressa con unità di misura normalizzate.</rdfs:comment>
         <rdfs:label xml:lang="it">durata corso di formazione</rdfs:label>
     </owl:DatatypeProperty>
@@ -1511,6 +1379,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/durataOffertaFormativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="it">Durata complessiva dell&apos;offerta formativa espressa in ore</rdfs:comment>
         <rdfs:label xml:lang="it">durata offerta formativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1533,6 +1402,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/finalitàOffertaFormativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Finalità del corso di formazione pubblicato in termini di obiettivi da raggiungere e competenze acquisite al suo termine</rdfs:comment>
         <rdfs:label xml:lang="it">finalità offerta formativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1555,6 +1425,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/indirizzoDatoreDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Indirizzo della sede presso cui si è lavorato. Utilizzato per georeferenziazione.</rdfs:comment>
         <rdfs:label xml:lang="it">indirizzo datore di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1566,6 +1437,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/mansioneEsperienzaLavorativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Mansioni e responsabilità svolte durante l&apos;esperienza lavorativa. Supporta la ricostruzione del profilo professionale.</rdfs:comment>
         <rdfs:label xml:lang="it">mansione esperienza lavorativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1618,6 +1490,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/postiDisponibiliEdizioneCorso">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EdizioneOffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="it">Numero di posti disponibili nella classe per l&apos;edizione del corso di formazione. Rilevante per iscrizioni e capienza.</rdfs:comment>
         <rdfs:label xml:lang="it">posti disponibili edizione corso</rdfs:label>
     </owl:DatatypeProperty>
@@ -1629,6 +1502,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/programmazioneAttivitàCorso">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Pianificazione delle attività didattiche del corso (campo aperto). Include orari e moduli.</rdfs:comment>
         <rdfs:label xml:lang="it">programmazione attività corso</rdfs:label>
     </owl:DatatypeProperty>
@@ -1639,6 +1513,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/requisitoAmmissioneOffertaFormativa">
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Condizioni necessarie e requisiti minimi per iscriversi al corso (campo aperto)</rdfs:comment>
         <rdfs:label xml:lang="it">requisito ammissione offerta formativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1650,6 +1525,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/sedeCorsoDiFormazione">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Luogo di erogazione del corso di formazione pubblicato (indirizzo fisico o piattaforma online).</rdfs:comment>
         <rdfs:label xml:lang="it">sede corso di formazione</rdfs:label>
     </owl:DatatypeProperty>
@@ -1661,6 +1537,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/statusAdesioneOffertaDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/AdesioneOffertaDiLavoro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Stato dell&apos;adesione (proposta, accettata, rifiutata). Tracciato nel tempo.</rdfs:comment>
         <rdfs:label xml:lang="it">status adesione offerta di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1672,6 +1549,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/statusCV">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/StatoDiCVDelCittadino"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Stato sintetico del CV (da completare, in bozza, pre-compilato, pubblicato).</rdfs:comment>
         <rdfs:label xml:lang="it">status CV</rdfs:label>
     </owl:DatatypeProperty>
@@ -1683,6 +1561,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/statusEdizioneOffertaFormativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EdizioneOffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Status di una Edizione offerta formativa. I possibili valori, in termini di (codice - descrizione), sono:  (ND - &quot;In bozza&quot;), (1 - &quot;Pubblicata&quot;), (99 - &quot;Archiviata&quot;),(ND - &quot;Importata&quot;).</rdfs:comment>
         <rdfs:label xml:lang="it">status edizione offerta formativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1694,6 +1573,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/statusIscrizioneEdizioneOffertaFormativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/StatoIscrizioneEdizioneOffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Stato dell&apos;iscrizione del cittadino ad un corso di formazione (iscrizione, inizio, fine)</rdfs:comment>
         <rdfs:label xml:lang="it">status iscrizione edizione offerta formativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1705,6 +1585,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/statusOffertaDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/StatoOffertaDiLavoro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Stato corrente dell&apos;offerta di lavoro (in bozza, pubblicata, archiviata, importata)</rdfs:comment>
         <rdfs:label xml:lang="it">status offerta di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1716,6 +1597,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/titoloCorsoDiFormazione">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Titolo ufficiale del corso di formazione. Usato per ricerca e comunicazione.</rdfs:comment>
         <rdfs:label xml:lang="it">titolo corso di formazione</rdfs:label>
     </owl:DatatypeProperty>
@@ -1727,6 +1609,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/titoloOffertaDiLavoro">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Titolo dell&apos;annuncio di lavoro. Riassume ruolo e principali requisiti.</rdfs:comment>
         <rdfs:label xml:lang="it">titolo offerta di lavoro</rdfs:label>
     </owl:DatatypeProperty>
@@ -1738,6 +1621,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/titoloOffertaFormativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Titolo ufficiale del corso di formazione. Usato per ricerca e comunicazione.</rdfs:comment>
         <rdfs:label xml:lang="it">titolo offerta formativa</rdfs:label>
     </owl:DatatypeProperty>
@@ -1749,6 +1633,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/votazioneTitoloDiStudioConseguito">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudioConseguito"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Voto conseguito sul titolo di studio. Può essere su scala 100/110 o equivalente.</rdfs:comment>
         <rdfs:label xml:lang="it">votazione titolo di studio conseguito</rdfs:label>
     </owl:DatatypeProperty>
@@ -1763,48 +1648,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
-
-
-    <!-- http://dati.gov.it/onto/dcatapit#Agent -->
-
-    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
-
-
-
-    <!-- http://dati.gov.it/onto/dcatapit#Distribution -->
-
-    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Distribution"/>
-
-
-
-    <!-- http://dati.gov.it/onto/dcatapit#Organization -->
-
-    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
-
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#Kind -->
-
-    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
-
-
-
-    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
-
-    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
-
-
-
-    <!-- http://www.w3.org/ns/dcat#Distribution -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/Agent -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
 
 
 
@@ -2300,6 +2143,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/canaleDiOrigineOffertaDiLavoro"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/titoloOffertaDiLavoro"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
@@ -2706,6 +2555,12 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneTitoloDiStudioConseguito"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Titolo di studio conseguito dal cittadino nel corso della sua carriera (es. diploma superiore, laurea triennale, master etc.). È collegato nel CV a votazione, data di conseguimento e istituto.</rdfs:comment>
         <rdfs:label xml:lang="it">Titolo di studio conseguito</rdfs:label>
     </owl:Class>
@@ -2718,18 +2573,6 @@
         <rdfs:comment xml:lang="it">Unità per esprimere la durata (ore, giorni, settimane). Normalizza la rendicontazione. L&apos;attributo risulta deprecato.</rdfs:comment>
         <rdfs:label xml:lang="it">Unità di misura durata</rdfs:label>
     </owl:Class>
-
-
-
-    <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-
-
-
-    <!-- https://w3id.org/italia/onto/COV/PublicOrganization -->
-
-    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/PublicOrganization"/>
 
 
 

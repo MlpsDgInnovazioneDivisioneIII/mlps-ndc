@@ -7,12 +7,6 @@ info:
     email: dginnovazionediv3@lavoro.gov.it
   version: 1.0.0
   x-summary: Fascicolo Sociale e Lavorativo del Cittadino
-  license:
-    name: CC BY 4.0
-    url: https://creativecommons.org/licenses/by/4.0/
-  termsOfService: https://creativecommons.org/licenses/by/4.0/
-  x-semantic-score: 0.33
-  x-semantic-score-timestamp: 1774016530114
 servers:
   - url: https://apimlpstest.lavoro.gov.it/rest
     description: FSL Test Environment
@@ -156,12 +150,7 @@ components:
           '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haStatoOffertaDiLavoro
           '@context':
               stato: https://w3id.org/italia/labour-social-policies/onto/labour/statusOffertaDiLavoro
-        origine:
-          '@id': haCanaleDiOrigineOffertaDiLavoro
-          '@type': '@id'
-          '@context':
-              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/origine_offerta_lavoro/'
-              id: '@id'
+        origine: canaleDiOrigineOffertaDiLavoro
         dataPubblicazione: dataPubblicazioneOffertaDiLavoro
         dataScadenza: dataScadenzaOffertaDiLavoro
       example:

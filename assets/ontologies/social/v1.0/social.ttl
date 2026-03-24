@@ -31,8 +31,8 @@ lsp-social: a owl:Ontology ;
         "Ontology for the management of Social Inclusion Pacts (GePI) of the Ministry of Labor and Social Policies"@en ;
     rdfs:comment "Ontologia del Ministero Del Lavoro e delle Politiche Sociali relativa al dominio GePi definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi alla gestione dei Patti per l’Inclusione Sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma che è parte integrante del Sistema informativo per l'inclusione sociale e lavorativa (SIISL)"@it,
         "Ontology of the Ministry of Labour and Social Policies related to the GePi domain defines in a structured and interoperable way the data, relationships, and concepts concerning the management of Social Inclusion Pacts, ensuring semantic uniformity, information integration, and support for the digital processes of the platform, which is an integral part of the Social and Labour Inclusion Information System (SIISL)."@en ;
-    owl:versionInfo "0.1 - Modificata il 26 Febbraio 2026"@it,
-        "0.1 - Modified on 26 February 2026"@en ;
+    owl:versionInfo "1.0 - Modificata il 26 Febbraio 2026"@it,
+        "1.0 - Modified on 26 February 2026"@en ;
     rdfs:isDefinedBy lsp-social: ;
     adms:acronym "lsp" ;
     adms:hasContributor <https://w3id.org/italia/data/organization/public-organization/td> ;
@@ -401,6 +401,12 @@ lsp-social:haTipoDiSostegno a owl:FunctionalProperty,
     rdfs:label "ha tipo di sostegno"@it ;
     rdfs:domain lsp-social:SostegnoPaIS ;
     rdfs:range lsp-social:TipoDiSostegno .
+
+lsp-social:haTipoPercorsoSocialeLavorativo a owl:ObjectProperty ;
+    rdfs:label "ha tipo percorso sociale lavorativo"@it ;
+    rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
+    rdfs:range lsp-social:TipoPercorsoSocialeLavorativo ;
+    rdfs:comment "Relazione che lega la classe ComponenteNucleoFamiliare con la classe TipoPercorsoSocialeLavorativo"@it .
 
 lsp-social:indicaObbligoComponenteNucleoDelCaso a owl:FunctionalProperty,
         owl:InverseFunctionalProperty,
@@ -892,12 +898,6 @@ lsp-social:tipologiaImpegnoPaIS a owl:DatatypeProperty,
     rdfs:domain lsp-social:ImpegnoPaIS ;
     rdfs:comment "Descrizione tipologia dell'impegno PaIS"@it .
 
-lsp-social:tipologiaPercorso a owl:DatatypeProperty,
-        owl:FunctionalProperty ;
-    rdfs:label "tipologia percorso"@it ;
-    rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
-    rdfs:comment "tipologia di percorso sociale e lavorativo assegnato al cittadino"@it .
-
 lsp-social:valoreTotaleScalaDiEquivalenza a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "valore totale scala di equivalenza"@it ;
@@ -1079,6 +1079,9 @@ lsp-social:ComponenteNucleoAttivoNelCaso a owl:Class ;
 lsp-social:ComponenteNucleoFamiliare a owl:Class ;
     rdfs:label "Componente nucleo familiare"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lsp-social:haTipoPercorsoSocialeLavorativo ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haComponenteNucleo ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Componente ad un  nucleo familiare"@it .
@@ -1476,6 +1479,13 @@ lsp-social:StatoDiValutazioneMultidimensionale a owl:Class ;
 lsp-social:TipoDiSostegno a owl:Class ;
     rdfs:label "Tipo di sostegno"@it ;
     rdfs:comment "Elenco delle tipologie di sostegno associabili ad uno o più componenti del nucleo come indicato nelle linee guida PaIS"@it .
+
+lsp-social:TipoPercorsoSocialeLavorativo a owl:Class ;
+    rdfs:label "Tipo percorso sociale lavorativo"@it ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf lsp-social:haTipoPercorsoSocialeLavorativo ] ;
+            owl:someValuesFrom owl:Thing ] ;
+    rdfs:comment "Indica il tipo di percorso sociale e lavorativo che può essere assegnato al cittadino"@it .
 
 lsp-srv:ModelloDelQuestionario a owl:Class .
 
