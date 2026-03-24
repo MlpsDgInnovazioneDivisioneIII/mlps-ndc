@@ -49,7 +49,7 @@
         "Pubbliche Amministrazioni"@it ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/schemas/dettaglio-offerta-formativa/latest> ;
     dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    dcat:distribution <https://w3id.org/italia/labour-social-policies/schemas/dettaglio-offerta-formativa/latest/dettaglio-offerta-formativa.oas3.yaml> ;
+    dcat:distribution <https://w3id.org/italia/schemas/dettaglio-offerta-formativa/latest/dettaglio-offerta-formativa.oas3.yaml> ;
     dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/schemas/dettaglio-offerta-formativa/latest/dettaglio-offerta-formativa.oas3.yaml> ;
     dcat:keyword "Offerta Formativa"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
