@@ -275,9 +275,9 @@ components:
         cellulare: '3564323400'
         fax: '0612345678'
         email: 'prova@prova.it'
-        ultimoAggiornamento: '2025-01-14T00:00:00Z'
+        ultimoAggiornamento: '2025-01-14T00:00:00'
         stato: "Confermato"
-        dataCompletamento: '2025-01-14T00:00:00Z'
+        dataCompletamento: '2025-01-14T00:00:00'
         conoscenzeInformatiche:
           - tipoConoscenza: 'Specialistica'
             eventualiSpecifiche: '002'
@@ -292,8 +292,8 @@ components:
             descrittivoQualifica: 'ballerino'
             mansioniResponsabilita: 'null'
             datoreLavoro: 'Nome datore test'
-            dataInizio: '2025-01-14T00:00:00Z'
-            dataFine:  '2025-01-14T00:00:00Z'
+            dataInizio: '2025-01-14T00:00:00'
+            dataFine:  '2025-01-14T00:00:00'
             indirizzoDatoreLavoro: 'Via Roma 12, 00100 Roma'
         formazione:
           - titoloCorsoFormazione: 'Corso formazione 1'
@@ -462,8 +462,8 @@ components:
         descrittivoQualifica: 'ballerino'
         mansioniResponsabilita: 'null'
         datoreLavoro: 'Nome datore test'
-        dataInizio: '2025-01-14T00:00:00Z'
-        dataFine:  '2025-01-14T00:00:00Z'
+        dataInizio: '2025-01-14T00:00:00'
+        dataFine:  '2025-01-14T00:00:00'
         indirizzoDatoreLavoro: 'Via Roma 12, 00100 Roma'
 
 

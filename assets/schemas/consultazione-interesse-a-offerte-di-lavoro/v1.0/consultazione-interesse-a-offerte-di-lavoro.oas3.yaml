@@ -110,7 +110,16 @@ components:
         offertaDiLavoro:
           '@id': haOffertaDiLavoroDiInteresse
       example:
-        dataManifestazione: '2025-01-14T00:00:00Z'
+        dataManifestazione: '2025-01-14T00:00:00'
+        offertaDiLavoro:
+          codice: '0000F068351000015'
+          titolo: 'Titolo Test'
+          descrizione: 'Descrzione offerta lavoro'
+          stato: 'Pubblicata'
+          origine: '1'
+          dataPubblicazione: '2025-01-14T00:00:00'
+          dataScadenza: '2025-01-14T00:00:00'
+
     FSL.Api.Domain.Models.Siisl.ConsultazioneInteressiOfferteLavoro.OffertaLavoro:
       type: object
       properties:
@@ -149,8 +158,8 @@ components:
         descrizione: 'Descrzione offerta lavoro'
         stato: 'Pubblicata'
         origine: '1'
-        dataPubblicazione: '2025-01-14T00:00:00Z'
-        dataScadenza: '2025-01-14T00:00:00Z'
+        dataPubblicazione: '2025-01-14T00:00:00'
+        dataScadenza: '2025-01-14T00:00:00'
 
     FSL.Api.Domain.Models.Siisl.InputConsultazione:
       required:

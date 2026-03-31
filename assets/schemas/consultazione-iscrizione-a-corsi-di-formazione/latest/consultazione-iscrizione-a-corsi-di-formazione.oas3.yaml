@@ -133,10 +133,10 @@ components:
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         tipoEvento: statusIscrizioneEdizioneOffertaFormativa
-        data: https://w3id.org/italia/onto/TI/atTime
+        data: https://schema.gov.it/lodview/onto/TI/atTime
       example:
         tipoEvento: 'Iscrizione'
-        data: '2025-01-14T00:00:00Z'
+        data: '2025-01-14T00:00:00'
 
     FSL.Api.Domain.Models.Siisl.ConsultazioneStoricoOfferteFormative.StoricoCorsiFormativi_Output:
       type: object
@@ -164,16 +164,22 @@ components:
       x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/EdizioneOffertaFormativa
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
-        dataManifestazione: https://w3id.org/italia/onto/TI/atTime
+        dataManifestazione: https://schema.gov.it/lodview/onto/TI/atTime
         corso:
           '@id': haEdizioneOffertaFormativa
         eventi:
           '@id': haEdizioneOffertaFormativaDiIscrizione
       example:
-        dataManifestazione: '2025-01-14T00:00:00Z'
+        dataManifestazione: '2025-01-14T00:00:00'
+        corso:
+          idCorso: '00934260571-000004'
+          idCorsoRegione: '524234'
+          codiceRegione: '8'
+          origineCorso: 'Siisl'
+          titolo: 'Titolo Test'
         eventi:
           - tipoEvento: 'Iscrizione'
-            data: '2025-01-14T00:00:00Z'
+            data: '2025-01-14T00:00:00'
 
     FSL.Api.Domain.Models.Siisl.InputConsultazione_StoricoOfferteFormative:
       required:

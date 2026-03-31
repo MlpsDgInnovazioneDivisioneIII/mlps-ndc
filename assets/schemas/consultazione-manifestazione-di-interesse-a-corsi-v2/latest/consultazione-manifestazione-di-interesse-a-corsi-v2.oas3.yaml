@@ -138,7 +138,14 @@ components:
         corso:
           '@id': haOffertaFormativaDiInteresse
       example:
-        dataManifestazione: '2025-01-14T00:00:00Z'
+        dataManifestazione: '2025-01-14T00:00:00'
+        corso:
+          idCorso: '00934260571-000004'
+          idCorsoRegione: '524234'
+          codiceRegione: '8'
+          origineCorso: 'Siisl'
+          titolo: 'Digital Marketing e Social media Management'
+
 
     FSL.Api.Domain.Models.Siisl.InputConsultazione:
       required:

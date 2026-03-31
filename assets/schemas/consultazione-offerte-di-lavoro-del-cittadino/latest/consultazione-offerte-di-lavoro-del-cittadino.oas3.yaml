@@ -104,8 +104,17 @@ components:
         offerta:
           '@id': aderisceAdOffertaDiLavoro
       example:
-        dataEvento:  '2025-01-14T00:00:00Z'
+        dataEvento:  '2025-01-14T00:00:00'
         tipoAdesione: 'Accettata'
+        offerta:
+          codice: '0000F068351000015'
+          titolo: "Coordinatore della sicurezza per l'esecuzione dei lavori"
+          descrizione: "Coordinatore della sicurezza per l'esecuzione dei lavori"
+          stato: 'Pubblicata'
+          origine: '1'
+          dataPubblicazione: '2025-01-14T00:00:00'
+          dataScadenza: '2025-01-14T00:00:00'
+
 
 
 
@@ -161,8 +170,8 @@ components:
         descrizione: "Coordinatore della sicurezza per l'esecuzione dei lavori"
         stato: 'Pubblicata'
         origine: '1'
-        dataPubblicazione: '2025-01-14T00:00:00Z'
-        dataScadenza: '2025-01-14T00:00:00Z'
+        dataPubblicazione: '2025-01-14T00:00:00'
+        dataScadenza: '2025-01-14T00:00:00'
 
     FSL.Api.Domain.Models.Siisl.InputConsultazione_OfferteLavoro:
       required:

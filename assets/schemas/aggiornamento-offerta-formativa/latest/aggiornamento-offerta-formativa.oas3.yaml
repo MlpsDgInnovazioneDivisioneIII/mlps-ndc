@@ -124,9 +124,9 @@ components:
       example:
         idOfferta: '02301900268-000022'
         nuovoStato: 1
-        nuovaDataFine: '31/12/2024'
-        nuovaDataInizio: '01/01/2024'
-        nuovaDataFinePubblicazione: '01/05/2025'
+        nuovaDataFine: '2024-12-31'
+        nuovaDataInizio: '2024-01-01'
+        nuovaDataFinePubblicazione: '2025-05-01'
 
     FSL.Api.Domain.Models.SezioneEsito:
       required:
