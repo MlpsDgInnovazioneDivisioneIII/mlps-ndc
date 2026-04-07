@@ -1,0 +1,244 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.12
+  x-semantic-score-timestamp: 1775576566746
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/areasociale/v1/misure-per-cittadino:
+    post:
+      tags:
+        - Gepi
+      summary: Elenco misure di inclusione richieste dal cittadino
+      description: Dato il codice fiscale di un cittadino (richiedente o membro di un nucleo familiare che ha presentato domanda per una misura di inclusione), il servizio restituisce le misure di inclusione sociale e lavorativa presentate
+      operationId: ElencoMisureCittadino
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.ElencoMisureCittadino_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.ElencoMisureCittadino_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.Data:
+      type: object
+      properties:
+        misure:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.Misura'
+      additionalProperties: false
+
+
+    FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.ElencoMisureCittadino_Input:
+      required:
+        - cFOperatore
+        - codiceFiscale
+        - modalitaAccesso
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        modalitaAccesso:
+          type: integer
+          format: int32
+        cFOperatore:
+          minLength: 1
+          type: string
+        codiceFiscale:
+          minLength: 1
+          type: string
+        dataInizio:
+          type: string
+          nullable: true
+        dataFine:
+          type: string
+          nullable: true
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.ElencoMisureCittadino_Output:
+      required:
+        - data
+        - esito
+      type: object
+      properties:
+        esito:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.Esito'
+        data:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.Data'
+      additionalProperties: false
+
+    FSL.Api.Domain.Models.Gepi.ElencoMisureCittadino.Misura:
+      type: object
+      properties:
+        protocollo:
+          type: string
+        codiceFiscaleRichiedente:
+          type: string
+        identificativoCaso:
+          type: string
+          nullable: true
+        statoBeneficio:
+          type: string
+        nucleo:
+          type: array
+          items:
+            type: string
+        istatComune:
+          type: string
+        codiceATS:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegno
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/core/
+        protocollo: protocolloPrestazioneDiSostegno
+        codiceFiscaleRichiedente: https://w3id.org/italia/onto/CPV/taxCode
+        identificativoCaso: https://w3id.org/italia/labour-social-policies/onto/social/identificatoreGestioneDomandaCaso
+        statoBeneficio: statoBeneficioPrestazioneDiSostegno
+        nucleo:
+          '@id': https://w3id.org/italia/onto/CPV/taxCode
+        istatComune:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+            label: http://www.w3.org/2000/01/rdf-schema#label
+        codiceATS:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/'
+              id: '@id'
+      example:
+        protocollo: 'INPS-ADI-2024-9XXXX43'
+        codiceFiscaleRichiedente: 'AAAAAA00A00A000A'
+        identificativoCaso: 'GEPI-20250101-1'
+        statoBeneficio: 'Accolto'
+        nucleo:
+          - 'AAAAAA00A00A000A'
+        istatComune: 'H501'
+        codiceATS: '5-202004142240267'
+
+    FSL.Api.Domain.Models.Gepi.Esito:
+      required:
+        - codiceEsito
+        - descrizioneEsito
+      type: object
+      properties:
+        codiceEsito:
+          minLength: 1
+          type: string
+        descrizioneEsito:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+
+tags:
+  - name: Gepi
+    description: Gepi
+  - name: Health Check API
+    description: Health Check API

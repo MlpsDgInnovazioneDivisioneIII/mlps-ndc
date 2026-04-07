@@ -1,0 +1,335 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.27
+  x-semantic-score-timestamp: 1775577109915
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/areasociale/v1/dettaglio-nucleo-per-id-caso:
+    post:
+      tags:
+        - Gepi
+      summary: Consultazione dati del nucleo gestito dal caso
+      description: Dato l'identificativo del Caso in gestione agli assistenti sociali per la definizione del Patto per l’Inclusione Sociale (PaIS), il servizio restituisce le informazioni del nucleo familiare gestito nello stesso
+      operationId: ConsultazioneNucleo
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.ConsultazioneNucleo_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.ConsultazioneNucleo_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.ConsultazioneNucleo_Input:
+      required:
+        - cFOperatore
+        - identificativo
+        - modalitaAccesso
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        modalitaAccesso:
+          type: integer
+          format: int32
+        cFOperatore:
+          minLength: 1
+          type: string
+        identificativo:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.ConsultazioneNucleo_Output:
+      required:
+        - data
+        - esito
+      type: object
+      properties:
+        esito:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.Esito'
+        data:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.Data'
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.Data:
+      type: object
+      properties:
+        nucleo:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.Nucleo'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        nucleo:
+          '@id': haComponenteNucleo
+      example:
+        nucleo:
+          - codiceFiscale: 'AAAAAA00A00A000A'
+            nomeCognome: 'Mario Rossi'
+            dataNascita: '1990/01/15'
+            comuneResidenza: 'H501'
+            email: 'prova@prova.it'
+            cellulare: '123456789'
+            tenutoObblighiLav: 'S'
+            attivabile: 'S'
+            disabile: 'N'
+            carichiCura: 'S'
+            respGenitoriale: 'N'
+            pensioneDiretta: 'N'
+            condSvantaggio: 'N'
+            percorsiProtezione: 'N'
+            occupato: 'N'
+            freqCorsi: 'N'
+            malatoOncologico: 'N'
+            escluso: 'N'
+            tenutoObblighiPais: 'S'
+            tenutoObbligoPresentazione90gg: 'S'
+            tipologiaPercorso: 'Cat1'
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneNucleo.Nucleo:
+      type: object
+      properties:
+        codiceFiscale:
+          type: string
+        nomeCognome:
+          type: string
+          nullable: true
+        dataNascita:
+          type: string
+        comuneResidenza:
+          type: string
+        email:
+          type: string
+          nullable: true
+        cellulare:
+          type: string
+          nullable: true
+        tenutoObblighiLav:
+          type: string
+          nullable: true
+        attivabile:
+          type: string
+          nullable: true
+        disabile:
+          type: string
+          nullable: true
+        carichiCura:
+          type: string
+          nullable: true
+        respGenitoriale:
+          type: string
+          nullable: true
+        pensioneDiretta:
+          type: string
+          nullable: true
+        condSvantaggio:
+          type: string
+          nullable: true
+        percorsiProtezione:
+          type: string
+          nullable: true
+        occupato:
+          type: string
+          nullable: true
+        freqCorsi:
+          type: string
+          nullable: true
+        malatoOncologico:
+          type: string
+          nullable: true
+        escluso:
+          type: string
+          nullable: true
+        tenutoObblighiPais:
+          type: string
+          nullable: true
+        tenutoObbligoPresentazione90gg:
+          type: string
+          nullable: true
+        tipologiaPercorso:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        codiceFiscale: https://w3id.org/italia/onto/CPV/taxCode
+        nomeCognome: https://w3id.org/italia/onto/CPV/dateOfBirth
+        dataNascita: https://w3id.org/italia/onto/CPV/dateOfBirth
+        comuneResidenza:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        email:
+          '@id': https://w3id.org/italia/onto/SM/hasEmail
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        cellulare: https://w3id.org/italia/onto/SM/telephoneNumber
+        tenutoObblighiLav: obbligoAttivazioneLavorativaComponente
+        attivabile: avvisoCondizioneDiAttivabile
+        disabile: avvisoCondizioneDisabilitàGraveNonAutosufficienza
+        carichiCura: avvisoPresenzaCaricoDiCura
+        respGenitoriale: avvisoResponsabilitàGenitoriale
+        pensioneDiretta: avvisoPensioneDiretta
+        condSvantaggio: avvisoCondizioneSvantaggio
+        percorsiProtezione: avvisoInserimentoPercorsoDiProtezione
+        occupato: avvisoStatoDiOccupazione
+        freqCorsi: avvisoFrequenzaCorsoDiStudio
+        malatoOncologico: avvisoCondizioneMalatoOncologico
+        escluso: avvisoEsclusioneObblighi
+        tenutoObblighiPais: avvisoObblighiPattoPAIS
+        tenutoObbligoPresentazione90gg: avvisoObbligoPresentazione90GG
+        tipologiaPercorso:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/social/haPercorsoSocialeLavorativo
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/onto/tipo_percorso_sociale_lavorativo/'
+              id: '@id'
+      example:
+        codiceFiscale: 'AAAAAA00A00A000A'
+        nomeCognome: 'Mario Rossi'
+        dataNascita: '1990/01/15'
+        comuneResidenza: 'H501'
+        email: 'prova@prova.it'
+        cellulare: '123456789'
+        tenutoObblighiLav: 'S'
+        attivabile: 'S'
+        disabile: 'N'
+        carichiCura: 'S'
+        respGenitoriale: 'N'
+        pensioneDiretta: 'N'
+        condSvantaggio: 'N'
+        percorsiProtezione: 'N'
+        occupato: 'N'
+        freqCorsi: 'N'
+        malatoOncologico: 'N'
+        escluso: 'N'
+        tenutoObblighiPais: 'S'
+        tenutoObbligoPresentazione90gg: 'S'
+        tipologiaPercorso: 'Cat1'
+
+    FSL.Api.Domain.Models.Gepi.Esito:
+      required:
+        - codiceEsito
+        - descrizioneEsito
+      type: object
+      properties:
+        codiceEsito:
+          minLength: 1
+          type: string
+        descrizioneEsito:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Gepi
+    description: Gepi
+  - name: Health Check API
+    description: Health Check API

@@ -1,0 +1,309 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.42
+  x-semantic-score-timestamp: 1775576539138
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/areasociale/v1/salva-analisi-preliminare:
+    post:
+      tags:
+        - Gepi
+      summary: Registrazione analisi preliminare
+      description: Il servizio permetta l'inserimento dell'analisi preliminare effettuata per un nucleo il cui Caso è in gestione ai servizi sociali per la definizione del Patto per l’Inclusione Sociale (PaIS)
+      operationId: RegistrazioneAP
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.RegistrazioneAP_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.RegistrazioneAP_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Gepi.Esito:
+      required:
+        - codiceEsito
+        - descrizioneEsito
+      type: object
+      properties:
+        codiceEsito:
+          minLength: 1
+          type: string
+        descrizioneEsito:
+          minLength: 1
+          type: string
+      additionalProperties: false
+
+
+    FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Data:
+      type: object
+      properties:
+        nVersione:
+          type: integer
+          format: int32
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/AnalisiPreliminareDelCaso
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        nVersione: versioneAnalisiPreliminare
+      example:
+        nVersione: 1
+
+
+    FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Domanda:
+      type: object
+      properties:
+        idDomanda:
+          type: string
+        descrizioneDomanda:
+          type: string
+        cFComponenteFamiliare:
+          type: string
+          nullable: true
+        risposte:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Risposta'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/survey/Domanda
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/survey/
+        idDomanda: idDomanda
+        descrizioneDomanda: descrizioneDomanda
+        cFComponenteFamiliare: https://w3id.org/italia/onto/CPV/taxCode
+        risposte:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/survey/èOpzioneDiRisposta
+      example:
+        idDomanda: "a73fc9f7-858c-40d6-99f9-705d415ea224"
+        descrizioneDomanda: "É presente in famiglia almeno un componente maggiorenne con (Risposta multipla non obbligatoria)"
+        cFComponenteFamiliare: "AAAAAA00A00A000A"
+        risposte:
+          - valore: "1"
+            testo: "SI"
+
+
+
+
+    FSL.Api.Domain.Models.Gepi.RegistrazioneAP.RegistrazioneAP_Input:
+      required:
+        - cFOperatore
+        - identificativo
+        - modalitaAccesso
+        - sezioni
+        - stato
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        modalitaAccesso:
+          type: integer
+          format: int32
+        cFOperatore:
+          minLength: 1
+          type: string
+        identificativo:
+          minLength: 1
+          type: string
+        stato:
+          minLength: 1
+          type: string
+        dataFinalizzazione:
+          type: string
+          nullable: true
+        sezioni:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Sezione'
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.RegistrazioneAP.RegistrazioneAP_Output:
+      required:
+        - data
+        - esito
+      type: object
+      properties:
+        esito:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.Esito'
+        data:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Data'
+      additionalProperties: false
+
+
+    FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Risposta:
+      type: object
+      properties:
+        valore:
+          type: string
+        testo:
+          type: string
+        domandeSecondarie:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Domanda'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/survey/RisostaDelRedattore
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/survey/
+        valore: valoreDellaRisposta
+        testo: testoDellaRisposta
+        domandeSecondarie:
+          '@id': haSottodomanda
+      example:
+        valore: "1"
+        testo: "SI"
+        domandeSecondarie:
+         - idDomanda: "a73fc9f7-858c-40d6-99f9-705d415ea224"
+           descrzioneDomanda: "É presente in famiglia almeno un componente maggiorenne con (Risposta multipla non obbligatoria)"
+           cFComponenteFamiliare: "AAAAAA00A00A000A"
+
+
+
+
+
+    FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Sezione:
+      type: object
+      properties:
+        idSezione:
+          type: string
+        testoSezione:
+          type: string
+        cFComponenteFamiliare:
+          type: string
+          nullable: true
+        sottoSezioni:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Sezione'
+        domande:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Domanda'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/survey/
+        idSezione: idSezione
+        testoSezione: testoSezione
+        cFComponenteFamiliare: https://w3id.org/italia/onto/CPV/taxCode
+        domande:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/survey/haDomanda
+      example:
+        idSezione: "acbae12cd-0a80-4192-8640-dab9a89b43ab"
+        testoSezione: "Cura e salute"
+        cFComponenteFamiliare:  "AAAAAA00A00A000A"
+        domande:
+           - idDomanda: "a73fc9f7-858c-40d6-99f9-705d415ea224"
+             descrizioneDomanda: "É presente in famiglia almeno un componente maggiorenne con (Risposta multipla non obbligatoria)"
+             cFComponenteFamiliare: "AAAAAA00A00A000A"
+
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Gepi
+    description: Gepi
+  - name: Health Check API
+    description: Health Check API

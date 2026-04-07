@@ -1,0 +1,229 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.29
+  x-semantic-score-timestamp: 1775577066868
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/areasociale/v1/equipe-multidisciplinare-per-id-caso:
+    post:
+      tags:
+        - Gepi
+      summary: Consultazione equipe multidisciplinare di un caso
+      description: Dato l'identificativo del Caso in gestione agli assistenti sociali per la definizione del Patto per l’Inclusione Sociale (PaIS), il servizio restituisce informazioni sui componenti del team multidisciplinare ad esso associato
+      operationId: ConsultazioneEquipe
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.ConsultazioneEquipe_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.ConsultazioneEquipe_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.ConsultazioneEquipe_Input:
+      required:
+        - cFOperatore
+        - identificativo
+        - modalitaAccesso
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        modalitaAccesso:
+          type: integer
+          format: int32
+        cFOperatore:
+          minLength: 1
+          type: string
+        identificativo:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.ConsultazioneEquipe_Output:
+      required:
+        - data
+        - esito
+      type: object
+      properties:
+        esito:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.Esito'
+        data:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.Data'
+      additionalProperties: false
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.Data:
+      type: object
+      properties:
+        teamMultidisciplinare:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.DettaglioTeamMultidisciplinare'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        teamMultidisciplinare:
+          '@id': haEquipeMultidisciplinareDelCaso
+      example:
+        teamMultidisciplinare:
+          - codiceFiscale: 'AAAAAA00A00A000A'
+            nominativo: 'Mario Rossi'
+            professione: 'PS'
+            figuraRiferimento: True
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneEquipe.DettaglioTeamMultidisciplinare:
+      type: object
+      properties:
+        codiceFiscale:
+          type: string
+          nullable: true
+        nominativo:
+          type: string
+        professione:
+          type: string
+          nullable: true
+        figuraRiferimento:
+          type: boolean
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        codiceFiscale: https://w3id.org/italia/onto/CPV/taxCode
+        nominativo: https://w3id.org/italia/onto/CPV/dateOfBirth
+        professione:
+          '@id': haProfessioneMembroEquipe
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_professione/'
+              id: '@id'
+        figuraRiferimento: avvisoMembroRiferimentoEquipe
+      example:
+        codiceFiscale: 'AAAAAA00A00A000A'
+        nominativo: 'Mario Rossi'
+        professione: 'PS'
+        figuraRiferimento: True
+
+    FSL.Api.Domain.Models.Gepi.Esito:
+      required:
+        - codiceEsito
+        - descrizioneEsito
+      type: object
+      properties:
+        codiceEsito:
+          minLength: 1
+          type: string
+        descrizioneEsito:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Gepi
+    description: Gepi
+  - name: Health Check API
+    description: Health Check API

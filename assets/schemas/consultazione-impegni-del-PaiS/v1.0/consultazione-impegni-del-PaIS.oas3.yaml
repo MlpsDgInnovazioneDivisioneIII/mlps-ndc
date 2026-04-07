@@ -1,0 +1,276 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.44
+  x-semantic-score-timestamp: 1775577085824
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/areasociale/v1/impegni-per-cittadino:
+    post:
+      tags:
+        - Gepi
+      summary: Consultazione impegni associati al PaiS
+      description: Dato il codice fiscale di un cittadino, il servizio restituisce gli impegni assegnati
+      operationId: ConsultazioneImpegni
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ConsultazioneImpegni_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ConsultazioneImpegni_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ConsultazioneImpegni_Input:
+      required:
+        - cFOperatore
+        - codiceFiscale
+        - modalitaAccesso
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        modalitaAccesso:
+          type: integer
+          format: int32
+        cFOperatore:
+          minLength: 1
+          type: string
+        codiceFiscale:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ConsultazioneImpegni_Output:
+      required:
+        - data
+        - esito
+      type: object
+      properties:
+        esito:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.Esito'
+        data:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.Data'
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.Data:
+      type: object
+      properties:
+        impegni:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.Impegno'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        impegni:
+          '@id': haImpegnoPaIS
+      example:
+        impegni:
+          - tipologia: 'Tipologia Test'
+            dataAvvio: '2025/01/01'
+            datafine: '2025/12/31'
+            nucleo:
+             - 'AAAAAA00A00A000A'
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.Impegno:
+      type: object
+      properties:
+        tipologia:
+          type: string
+        dataAvvio:
+          type: string
+          nullable: true
+        datafine:
+          type: string
+          nullable: true
+        nucleo:
+          type: array
+          items:
+            type: string
+        obiettivoRisultati:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ObiettivoRisultato'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        tipologia: tipologiaImpegnoPaIS
+        dataAvvio: dataAvvioImpegno
+        datafine: dataFineImpegno
+        nucleo: https://w3id.org/italia/onto/CPV/taxCode
+        obiettivoRisultati:
+          '@id': haObbiettvoDiImpegno
+      example:
+        tipologia: 'Tipologia Test'
+        dataAvvio: '2025/01/01'
+        datafine: '2025/12/31'
+        nucleo:
+          - 'AAAAAA00A00A000A'
+
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ObiettivoRisultato:
+      type: object
+      properties:
+        descrizioneObiettivo:
+          type: string
+        idObiettivo:
+          type: string
+        risultatiAttesi:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.RisultatoAtteso'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        descrizioneObiettivo: descrizioneObiettivo
+        idObiettivo: idObiettivo
+        risultatiAttesi:
+          '@id': haRisultatoAttesoDiObiettivo
+      example:
+        descrizioneObiettivo: 'Sostenere l’educazione e la formazione degli adulti'
+        idObiettivo: 'ba16de1c-f5a0-4144-90d5-15c354e9eff3'
+        risultatiAttesi:
+          - descrizioneRisultato: 'Conseguire l’obbligo scolastico'
+            idRisultato: '2265d470-4ebd-414b-a77c-59c7cd4fa1da'
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.RisultatoAtteso:
+      type: object
+      properties:
+        descrizioneRisultato:
+          type: string
+        idRisultato:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        descrizioneRisultato: descrizioneRisultatoAttesoObiettivo
+        idRisultato: idRisultatoAttesoObiettivo
+      example:
+        descrizioneRisultato: 'Conseguire l’obbligo scolastico'
+        idRisultato: '2265d470-4ebd-414b-a77c-59c7cd4fa1da'
+
+    FSL.Api.Domain.Models.Gepi.Esito:
+      required:
+        - codiceEsito
+        - descrizioneEsito
+      type: object
+      properties:
+        codiceEsito:
+          minLength: 1
+          type: string
+        descrizioneEsito:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+
+tags:
+  - name: Gepi
+    description: Gepi
+  - name: Health Check API
+    description: Health Check API

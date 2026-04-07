@@ -1,0 +1,351 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.39
+  x-semantic-score-timestamp: 1775576922997
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/areasociale/v1/quadro:
+    post:
+      tags:
+        - Gepi
+      summary: Consultazione dettaglio versione QA
+      description: Dato l'identificativo del Caso in gestione agli assistenti sociali per la definizione del Patto per l’Inclusione Sociale (PaIS) e la versione del quadro di analisi di interesse, il servizio restituisce le relative informazioni di dettaglio
+      operationId: ConsultazioneDettaglioQA
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.ConsultazioneDettaglioQA_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.ConsultazioneDettaglioQA_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.ConfigurazioneSezione:
+      type: object
+      properties:
+        idSezione:
+          type: string
+        active:
+          type: boolean
+        cFCompenenteFamiliare:
+          type: string
+          nullable: true
+      additionalProperties: false
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.ConsultazioneDettaglioQA_Input:
+      required:
+        - cFOperatore
+        - identificativo
+        - modalitaAccesso
+        - nVersione
+      type: object
+      properties:
+        codiceATS:
+          type: string
+          nullable: true
+        comuni:
+          type: array
+          items:
+            type: string
+          nullable: true
+        modalitaAccesso:
+          type: integer
+          format: int32
+        cFOperatore:
+          minLength: 1
+          type: string
+        identificativo:
+          minLength: 1
+          type: string
+        nVersione:
+          type: integer
+          format: int32
+      additionalProperties: false
+    FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.ConsultazioneDettaglioQA_Output:
+      required:
+        - data
+        - esito
+      type: object
+      properties:
+        esito:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.Esito'
+        data:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Data'
+      additionalProperties: false
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Data:
+      type: object
+      properties:
+        identificativo:
+          type: string
+        versioneRDC:
+          type: boolean
+        nVersione:
+          type: integer
+          format: int32
+        stato:
+          type: string
+        istatComune:
+          type: string
+        codiceATS:
+          type: string
+        caseManager:
+          type: string
+          nullable: true
+        dataFinalizzazione:
+          type: string
+          nullable: true
+        sezioni:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Sezione'
+        configurazioneSezioni:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.ConfigurazioneSezione'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
+        identificativo: identificativoQuadroAnalisi
+        versioneRDC: versioneRDC
+        nVersione: versioneQuadroAnalisi
+        stato: statusQuadroAnalisi
+        istatComune:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        codiceATS:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_ambito_territoriale/'
+              id: '@id'
+        caseManager: https://w3id.org/italia/onto/CPV/taxCode
+        dataFinalizzazione: dataFinalizzazioneQuadroAnalisi
+        sezioni:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/survey/haSezioneDelQuestionarioDelRedattore
+      example:
+        identificativo: "GEPI-20250101-1"
+        versioneRDC: False
+        nVersione: 1
+        stato: "Finalizzato"
+        istatComune: '058091'
+        codiceATS: '5-202004142240267'
+        caseManager: 'AAAAAA00A00A000A'
+        dataFinalizzazione: '2025/07/12'
+        sezioni:
+          - idSezione: 'fe956c0c-+B18+C18:K19'
+            testoSezione: 'AREA AMBIENTE E FAMIGLIA'
+            cFComponenteFamiliare: 'AAAAAA00A00A000A'
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Domanda:
+      type: object
+      properties:
+        idDomanda:
+          type: string
+        descrizioneDomanda:
+          type: string
+        cFComponenteFamiliare:
+          type: string
+          nullable: true
+        risposte:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Risposta'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/survey/Domanda
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/survey/
+        idDomanda: idDomanda
+        descrizioneDomanda: descrizioneDomanda
+        cFComponenteFamiliare: https://w3id.org/italia/onto/CPV/taxCode
+        risposte:
+          '@id': èOpzioneDiRisposta
+      example:
+        idDomanda: '512dfa0a-bd18-4296-9126-bd867ce19a25'
+        descrizioneDomanda: 'Bisogno-Forza'
+        cFComponenteFamiliare: 'AAAAAA00A00A000A'
+        risposte:
+          - valore: '1'
+            testo: 'Bisogno evidente'
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Risposta:
+      type: object
+      properties:
+        valore:
+          type: string
+        testo:
+          type: string
+        domandeSecondarie:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Domanda'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/survey/RispostaDelRedattore
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/survey/
+        valore: valoreDellaRisposta
+        testo: testoDellaRisposta
+        domandeSecondarie:
+          '@id': haSottodomanda
+      example:
+        valore: '1'
+        testo: 'Bisogno evidente'
+
+
+    FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Sezione:
+      type: object
+      properties:
+        idSezione:
+          type: string
+        testoSezione:
+          type: string
+        domande:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Domanda'
+        cFComponenteFamiliare:
+          type: string
+          nullable: true
+        sottoSezioni:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Sezione'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/survey/SezioneDelQuestionarioDelRedattore
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/survey/
+        idSezione: idSezione
+        testoSezione: testoSezione
+        domande:
+          '@id': haDomanda
+        cFComponenteFamiliare: https://w3id.org/italia/onto/CPV/taxCode
+        sottoSezioni:
+          '@id': haSottosezione
+      example:
+        idSezione: 'fe956c0c-+B18+C18:K19'
+        testoSezione: 'AREA AMBIENTE E FAMIGLIA'
+        domande:
+          - idDomanda: '512dfa0a-bd18-4296-9126-bd867ce19a25'
+            descrizioneDomanda: 'Bisogno-Forza'
+        cFComponenteFamiliare: 'AAAAAA00A00A000A'
+
+    FSL.Api.Domain.Models.Gepi.Esito:
+      required:
+        - codiceEsito
+        - descrizioneEsito
+      type: object
+      properties:
+        codiceEsito:
+          minLength: 1
+          type: string
+        descrizioneEsito:
+          minLength: 1
+          type: string
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Gepi
+    description: Gepi
+  - name: Health Check API
+    description: Health Check API
