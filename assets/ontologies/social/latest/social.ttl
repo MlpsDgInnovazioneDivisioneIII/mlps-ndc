@@ -971,7 +971,7 @@ lsp-social:AnalisiPreliminareDelCaso a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haAnalisiPreliminare ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "L'AP consiste in uno o più colloqui, effettuati dagli operatori sociali, con il nucleo familiare. Nel corso dell'AP vengono raccolte le informazioni sul nucleo nel suo complesso e sui  suoi singoli componenti necessarie alla eventuale erogazione di servizi, alla definizione del Patto per l’inclusione sociale e all' identificazione dei componenti tenuti a presentarsi ai CPI per l’attivazione lavorativa."@it .
+    rdfs:comment "L'Analisi preliminare (AP) consiste in uno o più colloqui, effettuati dagli operatori sociali con il nucleo familiare. Nel corso dell'AP vengono raccolte le informazioni sul nucleo nel suo complesso e sui  suoi singoli componenti necessarie alla eventuale erogazione di servizi, alla definizione del Patto per l’inclusione sociale e all' identificazione dei componenti tenuti a presentarsi ai CPI per l’attivazione lavorativa."@it .
 
 lsp-social:AssegnazioneCasoDiNucleo a owl:Class ;
     rdfs:label "Assegnazione caso di nucleo"@it ;
@@ -993,12 +993,12 @@ lsp-social:AttoDiAttribuzioneCategoriaObbligoAttivazione a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haAttoDiAttribuzioneCategoriaObbligo ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Azione attraverso la quale  si confermano sulla piattaforma GePI le informazioni fornite da INPS che danno luogo agli obblighi di attivazione"@it .
+    rdfs:comment "Azione attraverso la quale  si definisce per ciascun componente il nucleo familiare la sussistenza o meno di obblighi di attivazione sulla base dei dati anagrafici e socio-sanitari, ove necessario integrati con le valutazioni dei servizi sociali sulla condizione di attivabile al lavoro."@it .
 
 lsp-social:AttoDiGiustificatoMotivoDiAssenza a owl:Class ;
     rdfs:label "Atto di giustificato motivo di assenza"@it ;
     rdfs:subClassOf lsp-core:Atto ;
-    rdfs:comment "Documentazione attestante un giustificato motivo per mancata presentazione o incontro"@it .
+    rdfs:comment "Documentazione attestante un giustificato motivo per mancata presentazione ai servizi nei tempi previsti dalla norma o mancata presentazione alle convocazioni."@it .
 
 lsp-social:BeneficiarioADI a owl:Class ;
     rdfs:label "Beneficiario ADI"@it ;
@@ -1006,17 +1006,17 @@ lsp-social:BeneficiarioADI a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-core:haBeneficiarioPrestazioneDiSostegno ] ;
             owl:someValuesFrom lsp-core:AssegnoDiInclusione ] ;
-    rdfs:comment "Destinatario di una misura di sostegno economico e di inclusione sociale e professionale introdotta dal decreto-legge 48/2023"@it .
+    rdfs:comment "Destinatario della misura di sostegno economico e di inclusione sociale e professionale introdotta dal decreto-legge 48/2023"@it .
 
 lsp-social:CartaDiInclusione a owl:Class ;
     rdfs:label "Carta di inclusione"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lsp-social:haIntestatarioCartaDiInclusione ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "La Carta di Inclusione è una carta di pagamento elettronica prepagata, emessa da PostePay in esecuzione del servizio affidato ai sensi dell’art. 81, comma 35, lettera b, del Decreto Legge n. 112/2008, convertito con modificazioni dalla Legge n. 133/2008, conformemente a quanto disposto dall’articolo 4, comma 8, del decreto-legge n. 48/2023, convertito, con modificazioni, dalla Legge n. 85 del 3 luglio 2023. Attraverso la Carta di Inclusione viene erogato, alle condizioni, nei limiti e con le modalità previste dal Decreto, il beneficio economico dell’Assegno di inclusione. Secondo quanto stabilito dall’articolo 5, comma 1, del D.M n. 154/2023, l’Adi può essere erogato suddividendo l’importo spettante tra i componenti maggiorenni del nucleo familiare che esercitano le responsabilità genitoriali o sono considerati nella scala di equivalenza, riconoscendo a ciascuno la quota pro-capite. La Carta,  oltre all’acquisto di beni e servizi presso gli esercizi commerciali in Italia convenzionati con il circuito Mastercard che rientrano nelle categorie di spesa previste dalla normativa di riferimento, consente di effettuare prelievi di contante nei limiti previsti dal Decreto ed effettuare un bonifico SEPA/Postagiro mensile in Ufficio Postale per pagare la rata prevista dal contratto di locazione in favore del locatore indicato nel contratto di locazione (fonte: Poste Italiane)."@it .
+    rdfs:comment "La Carta di Inclusione è una carta di pagamento elettronica prepagata, emessa dal gestore conformemente a quanto disposto dall’articolo 4, comma 8, del decreto-legge n. 48/2023, attraverso la quale è erogato il beneficio economico dell’Assegno di inclusione."@it .
 
 lsp-social:CasoDiNucleoFragileOInPovertà a owl:Class ;
-    rdfs:label "Caso di nucleo fragile o in povertà"@it ;
+    rdfs:label "Caso associato ad un nucleo familiare richiedente l'ADI"@it ;
     rdfs:subClassOf L0:Sequence,
         [ a owl:Restriction ;
             owl:onProperty lsp-social:dataInizioGestioneCaso ;
@@ -1036,11 +1036,11 @@ lsp-social:CasoDiNucleoFragileOInPovertà a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty lsp-social:statusDelCaso ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:comment "Famiglia che versa in condizione di povertà, intesa come deprivazione economica, ed esclusione sociale"@it .
+    rdfs:comment "Si intende il caso gestito dal servizio sociale attraverso un case manager relativo ad un nucleo in condizione di povertà richiedente l'ADI"@it .
 
 lsp-social:CategoriaDiObbligo a owl:Class ;
     rdfs:label "Categoria di obbligo"@it ;
-    rdfs:comment "Descrive le diverse categorie di obbligo derivanti dalla condizione del singolo individuo o del nucleo e dalla definizione degli impegni nel PaIS (eventuale elenco)"@it .
+    rdfs:comment "Descrive le diverse categorie di obbligo cui sono tenuti i beneficiai ADI, che determinano  la definizione con i servizi sociali di impegni nel Patto per l'Inclusione sociale (PaIS) e la definizione con centri per l'impiego o i servizi per il lavoro di impegni nel Patto di servizio personalizzato (PSP)."@it .
 
 lsp-social:CertificatoCondizioneDiDisabilità a owl:Class ;
     rdfs:label "Certificato condizione di disabilità"@it ;
@@ -1056,14 +1056,14 @@ lsp-social:CertificatoCondizioneDiSvantaggio a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty TI:atTime ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Certificato che attesta la condizione di svantaggio e la partecipazione in un programma di cura e/o assistenza rilasciato dalle pubbliche amministrazioni competenti, come i Comuni, i Servizi Sanitari o Socio-Sanitari e le strutture giudiziarie."@it .
+    rdfs:comment "Dati del certificato che attesta la condizione di svantaggio e la partecipazione ad un programma di cura e/o assistenza rilasciato dalle pubbliche amministrazioni competenti, come i Comuni, i Servizi Sanitari o Socio-Sanitari e le strutture giudiziarie."@it .
 
 lsp-social:ComponenteDiNucleoFragileOInPovertà a owl:Class ;
-    rdfs:label "Componente di nucleo fragile o in povertà"@it ;
+    rdfs:label "Componente di Nucleo familiare in condizioni di povertà richiedente l'ADI"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haComponenteNucleo ] ;
             owl:someValuesFrom lsp-social:NucleoFamiliareSocialmenteFragileOInPovertà ] ;
-    rdfs:comment "Si intendono i componenti di un nucleo che si trovano in condizione difragilità/povertà, cioè il nucleo che ha presentato la domanda ADI e segue il percorso di inclusione sociale. A livello semantico serve a differenziare un nucleo fragile. "@it .
+    rdfs:comment "Si intendono i componenti di un nucleo familiare in condizione di fragilità/povertà richiedente l'ADI."@it .
 
 lsp-social:ComponenteNucleoAttivoNelCaso a owl:Class ;
     rdfs:label "Componente nucleo attivo nel caso"@it ;
@@ -1074,7 +1074,7 @@ lsp-social:ComponenteNucleoAttivoNelCaso a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:èComponenteNucleoAttivoDiCaso ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Componente del nucleo familiare soggetto a obblighi di attivazione "@it .
+    rdfs:comment "Componente del nucleo familiare soggetto a obblighi di attivazione lavorativa e/o sociale"@it .
 
 lsp-social:ComponenteNucleoFamiliare a owl:Class ;
     rdfs:label "Componente nucleo familiare"@it ;
@@ -1084,7 +1084,7 @@ lsp-social:ComponenteNucleoFamiliare a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haComponenteNucleo ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Componente ad un  nucleo familiare"@it .
+    rdfs:comment "Generico componente di un  nucleo familiare generico"@it .
 
 lsp-social:ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni a owl:Class ;
     rdfs:label "Componente nucleo familiare maggiorenne con meno di 29 anni"@it ;
@@ -1140,21 +1140,21 @@ lsp-social:EquipeMultidisciplinareDelCaso a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haEquipeMultidisciplinareDelCaso ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Gruppo di professionisti composti da un’assistente sociale e da altri operatori afferenti alla rete dei servizi, individuati, ove necessario, dal  case manager sulla base dei bisogni del nucleo emersi nell’Analisi Preliminare ai fini della  definizione del PaIS e dell'attazione degl interventi di sostegno/accompagnamento del nucleo. "@it .
+    rdfs:comment "Gruppo di professionisti composti da un’assistente sociale e da operatori di altri settori disciplinari afferenti alla rete dei servizi, individuati, ove necessario, dal  case manager sulla base delle caratteristiche, della situazione e dei bisogni del nucleo familiare emersi nell’Analisi Preliminare ai fini della  definizione del PaIS e dell'attazione degli interventi di sostegno/accompagnamento del nucleo."@it .
 
 lsp-social:EsitoAnalisiPreliminareCaso a owl:Class ;
     rdfs:label "Esito analisi preliminare caso"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haEsitoAnalisiPreliminareCaso ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Si intende il risultato della valutazione multidimensionale effettuata dai servizi sociali al singolo soggetto"@it .
+    rdfs:comment "Si intende il risultato della valutazione multidimensionale effettuata dai servizi sociali al singolo soggetto. Una specifica sezione della AP contiene la sintesi delle indicazioni utili ad orientare il percorso per la successiva definizione del progetto, con particolare riferimento alla presenza di componenti da indirizzare anche ai servizi per il lavoro, alla eventuale presenza di bisogni complessi e alla opportunità di coinvolgere una equipe multidisciplinare o attivare servizi specialistici."@it .
 
 lsp-social:EsitoImpegnoPaIS a owl:Class ;
     rdfs:label "Esito impegno PaIS"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haEsitoImpegnoPaIS ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indicala valutazione effettuata in fase di monitoraggio degli impegni assunti dal componente del nucleo familiare all'interno del PaIS "@it .
+    rdfs:comment "Indica l'esito della valutazione degli impegni assunti dal componente del nucleo familiare all'interno del progetto personalizzato (Patto per l'Inclusione Sociale - PaIS) effettuata negli incontri di monitoraggio"@it .
 
 lsp-social:EsitoQuadroAnalisiCaso a owl:Class ;
     rdfs:label "Esito quadro analisi caso"@it ;
@@ -1164,14 +1164,14 @@ lsp-social:EsitoQuadroAnalisiCaso a owl:Class ;
     rdfs:comment "Indica eventuali esiti emersi dal quadro di analisi ulteriori rispetto agli esiti della AP"@it .
 
 lsp-social:EsitoRisultatoAttesoObiettivoPaIS a owl:Class ;
-    rdfs:label "Esito risultato atteso obiettivo PaIS"@it ;
+    rdfs:label "Risultato atteso rispetto ad un obiettivo"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haEsitoRisultatoAttesoObiettivoPaIS ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Indica il risultato atteso rispetto all'obiettivo indicato nel PaIS "@it .
 
 lsp-social:GestioneDiDomandaDiCasoDiNucleo a owl:Class ;
-    rdfs:label "Gestione di domanda di caso di nucleo"@it ;
+    rdfs:label "Relazione tra la domada e il caso"@it ;
     rdfs:subClassOf L0:Sequence,
         TI:TimeIndexedEvent,
         [ a owl:Restriction ;
@@ -1180,7 +1180,7 @@ lsp-social:GestioneDiDomandaDiCasoDiNucleo a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haGestioneDiDomandaDiCasoDiNucleo ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "collegamento tra la singola gestione della domanda di un caso"@it .
+    rdfs:comment "Collegamento gestionale di una singola  domanda al relativo caso (nel tempo possono susseguirsi più domande afferenti al medesimo caso)"@it .
 
 lsp-social:GestoreCasoInclusioneSociale a owl:Class ;
     rdfs:label "Gestore caso inclusione sociale"@it ;
@@ -1198,7 +1198,7 @@ lsp-social:ImpegnoPaIS a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haImpegnoPaIS ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Impegno associato ad un componente del nucleo familiare all'interno del PAIS"@it .
+    rdfs:comment "Impegno associato ad un componente del nucleo familiare all'interno del progetto personalizzato (Patto per l'Inclusione Sociale - PaIS)"@it .
 
 lsp-social:IntestatarioContrattoLocazioneNucleoFamiliare a owl:Class ;
     rdfs:label "Intestatario contratto locazione nucleo familiare"@it ;
@@ -1221,21 +1221,21 @@ lsp-social:MembroEquipeMultidisciplinareDelCaso a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haMembroEquipeMultidisciplinare ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "La composizione dell’equipe multidisciplinare (EM) varia in funzione delle caratteristiche, della situazione e dei bisogni del nucleo familiare. A titolo esemplificativo può comprendere le seguenti figure: operatori dei centri per l’impiego, operatori dei servizi sanitari e specialistici, operatori dei servizi socio-educativi e della prima infanzia, insegnanti, pediatri, mediatori culturali, ecc. Vista la differenziazione delle forme organizzative degli ATS, è plausibile ipotizzare l’EM come gruppo a geometria variabile composto da uno «zoccolo duro» di operatori (EM base) e operatori che si possono aggregare a seconda della situazione (EM allargata), in esito all’Analisi Preliminare"@it .
+    rdfs:comment "Indica il professionista componente della equipe multidisciplinare che ha incarico il nucleo o un suo componente."@it .
 
 lsp-social:NucleoFamiliare a owl:Class ;
-    rdfs:label "Nucleo familiare"@it ;
+    rdfs:label "Nucleo familiare generico"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lsp-social:haComponenteNucleo ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Componenti la famiglia anagrafica all'atto di presentazione della domanda ADI"@it .
+    rdfs:comment "Il nucleo familiare generico è l'insieme di persone coabitanti aventi dimora abituale nello stesso comune, legate da vincoli di matrimonio, unione civile, parentela, affinità, adozione o da legami affettivi. Coincide generalmente con la famiglia anagrafica, ma può differire ai fini ISEE o fiscali, includendo anche persone non conviventi."@it .
 
 lsp-social:NucleoFamiliareSocialmenteFragileOInPovertà a owl:Class ;
-    rdfs:label "Nucleo familiare in condizione di povertà "@it ;
+    rdfs:label "Nucleo familiare in condizione di povertà richiedente l'ADI"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haNucleoFamiliareDiPAD ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Nucleo familiare in condizione di povertà ed esclusione sociale "@it .
+    rdfs:comment "Nucleo familiare in condizione di povertà ed esclusione sociale richiedente l'ADI come definito ai fini ISEE"@it .
 
 lsp-social:ObbligoComponenteNucleoDelCaso a owl:Class ;
     rdfs:label "Obbligo componente nucleo del caso"@it ;
@@ -1261,7 +1261,7 @@ lsp-social:ObiettivoPaIS a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty lsp-social:idObiettivo ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:comment "cambiamento/miglioramento auspicato er il nucleo familiare e quindi  finalità da perseguire (obiettivi generali) e tappe da raggiungere (risultati attesi)."@it .
+    rdfs:comment "Cambiamento/miglioramento auspicato per il nucleo familiare formalizzato nel Patto di Inclusione sociale attraverso l'indicazione della  finalità da perseguire (obiettivo generale), cui vengono collegati risultati attesi"@it .
 
 lsp-social:PartecipazioneComponenteAIncontro a owl:Class ;
     rdfs:label "Partecipazione componente a incontro"@it ;
@@ -1271,7 +1271,7 @@ lsp-social:PartecipazioneComponenteAIncontro a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:partecipaAIncontro ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indica l'avvenuta partecipazione ad un incontro del componente il nucleo familiare"@it .
+    rdfs:comment "Indica l'avvenuta partecipazione del componente del nucleo familiare ad un incontro presso i servizi sociali"@it .
 
 lsp-social:PartecipazionePUC a owl:Class ;
     rdfs:label "Partecipazione PUC"@it ;
@@ -1290,7 +1290,7 @@ lsp-social:PartecipazionePUC a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty lsp-social:StatoDiPUC ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:comment "Nell’ambito del percorso personalizzato può essere previsto l’impegno dei beneficiari alla partecipazione a Progetti Utili alla Collettività (PUC)."@it .
+    rdfs:comment "Indica le informazioni sulla partecipazione di un componente del nucleo a Progetti Utili alla Collettività (PUC)."@it .
 
 lsp-social:PattoAttivazioneDigitaleNucleo a owl:Class ;
     rdfs:label "Patto attivazione digitale nucleo"@it ;
@@ -1303,7 +1303,7 @@ lsp-social:PattoAttivazioneDigitaleNucleo a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haPADNucleoFamiliare ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indica l'avventua sottoscrizione del PAD nucleo (la data ????) "@it .
+    rdfs:comment "Indica l'avventua sottoscrizione del PAD nucleo"@it .
 
 lsp-social:PattoInclusioneSocialeDelCaso a owl:Class ;
     rdfs:label "Patto inclusione sociale del caso"@it ;
@@ -1317,16 +1317,16 @@ lsp-social:PattoInclusioneSocialeDelCaso a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haPattoInclusioneSocialeDelCaso ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Patto definito dai servizi sociali e dal nucleo sulla base di una valutazione multidimensionale dei bisogni del nucleo familiare"@it .
+    rdfs:comment "Il Patto per l'Inclusione Sociale (PaIS) è progetto personalizzato definito dai servizi sociali e dal nucleo beneficiario delle misura di contrasto alla povertà sulla base di una valutazione multidimensionale dei bisogni del nucleo familiare realizzata attraverso l'analisi preliminare ed eventalmente il quadro di analisi"@it .
 
 lsp-social:PeriodoDiGiustificatoMotivoAssenza a owl:Class ;
     rdfs:label "Periodo di giustificato motivo assenza"@it ;
     rdfs:subClassOf TI:TimeIndexedEvent ;
-    rdfs:comment "Indica il periodo in cui è possibile giustificare il mancato adempimento della presentazione come prodotto nel giustificato motivo"@it .
+    rdfs:comment "Indica il periodo al quale si applica la giustificazione del mancato adempimento della presentazione, come attestato nel giustificato motivo"@it .
 
 lsp-social:ProfessioneMembroEquipe a owl:Class ;
     rdfs:label "Professione membro equipe"@it ;
-    rdfs:comment "Indica la professione del componente dell'equipe multidisciplinare. La composizione dell’equipe multidisciplinare (EM) varia in funzione delle caratteristiche, della situazione e dei bisogni del nucleo familiare. A titolo esemplificativo può comprendere le seguenti figure: operatori dei centri per l’impiego, operatori dei servizi sanitari e specialistici, operatori dei servizi socio-educativi e della prima infanzia, insegnanti, pediatri, mediatori culturali, ecc. Vista la differenziazione delle forme organizzative degli ATS, è plausibile ipotizzare l’EM come gruppo a geometria variabile composto da uno «zoccolo duro» di operatori (EM base) e operatori che si possono aggregare a seconda della situazione (EM allargata), in esito all’Analisi Preliminare"@it .
+    rdfs:comment "Indica la professione del componente dell'equipe multidisciplinare."@it .
 
 lsp-social:QuadroDiAnalisiDelCaso a owl:Class ;
     rdfs:label "Quadro di analisi del caso"@it ;
@@ -1341,7 +1341,7 @@ lsp-social:QuadroDiAnalisiDelCaso a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haQuadroDiAnalisi ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indica che è necessario procedere con il quadro di analisi"@it .
+    rdfs:comment "Indica che a seguito dell'analisi preliminare, in considerazione delle problematiche emerse, è stato necessario realizzare un quadro di analisi approfondito per completare la valutazione multidimensionale"@it .
 
 lsp-social:RichiedenteADI a owl:Class ;
     rdfs:label "Richiedente ADI"@it ;
@@ -1353,17 +1353,17 @@ lsp-social:RichiedenteADI a owl:Class ;
     rdfs:comment "Richiedente la misura di  sostegno economico e di inclusione sociale e professionale introdotta dal decreto-legge 48.2023"@it .
 
 lsp-social:RisultatoAttesoDiObiettivo a owl:Class ;
-    rdfs:label "Risultato atteso di obiettivo"@it ;
+    rdfs:label "Risultato atteso di obiettivo PaIS"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lsp-social:descrizioneRisultatoAttesoObiettivo ;
             owl:someValuesFrom rdfs:Literal ],
         [ a owl:Restriction ;
             owl:onProperty lsp-social:idRisultatoAttesoObiettivo ;
             owl:someValuesFrom rdfs:Literal ] ;
-    rdfs:comment "tappe e risultati da raggiungere nel percorso di reinserimento sociale e lavorativo progettato"@it .
+    rdfs:comment "Tappe e risultati da raggiungere tramite il patto di inclusione sociale"@it .
 
 lsp-social:ScalaDiEquivalenzaNucleo a owl:Class ;
-    rdfs:label "Scala di equivalenza nucleo"@it ;
+    rdfs:label "Scala di equivalenza nucleo ADI"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lsp-social:haContributoScalaDiEquivalenza ;
             owl:someValuesFrom owl:Thing ],
@@ -1373,7 +1373,7 @@ lsp-social:ScalaDiEquivalenzaNucleo a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty TI:atTime ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indica il parametro della scala di equivalenza, utilizzato anche per determinare l'importo dell'assegno di inclusione."@it .
+    rdfs:comment "Indica il parametro complessivo della scala di equivalenza, utilizzato anche per determinare l'importo dell'assegno di inclusione."@it .
 
 lsp-social:SostegnoPaIS a owl:Class ;
     rdfs:label "Sostegno PaIS"@it ;
@@ -1389,7 +1389,7 @@ lsp-social:SostegnoPaIS a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty lsp-social:èSostegnoPerComponenteNucleo ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indica la tipologia di sostegno/intervento di supporto ai favore del nucleo familiare o di un suo componente"@it .
+    rdfs:comment "Indica la tipologia di sostegno/intervento di supporto attivato dai servizi sociali in favore del nucleo familiare beneficiario ADI o di un suo componente"@it .
 
 lsp-social:StatoDiAnalisiPreliminare a owl:Class ;
     rdfs:label "Stato di analisi preliminare"@it ;
@@ -1406,15 +1406,15 @@ lsp-social:StatoDiAttesaPrimoIncontro a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf L0:hasFirstMember ] ;
             owl:someValuesFrom lsp-social:GestioneDiDomandaDiCasoDiNucleo ] ;
-    rdfs:comment "Indica che il primo incontro con il nucleo beneficiario dell'ADI, previsto entro 120 giorni dalla sottoscrizione del PAD, non è ancora avvenuto"@it .
+    rdfs:comment "Indica che il primo incontro con il nucleo beneficiario dell'ADI, previsto entro 120 giorni dalla sottoscrizione del PAD nucleo, non è ancora avvenuto"@it .
 
 lsp-social:StatoDiGestioneDiDomandaDiCaso a owl:Class ;
-    rdfs:label "Stato del caso? Stato della domanda ADI?"@it ;
+    rdfs:label "Stato della domanda ADI"@it ;
     rdfs:subClassOf TI:TimeIndexedEvent,
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-social:haStatoDiGestioneDiDomandaDiCaso ] ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Generalizzazione dello stato della gestione di una domanda relativa ad un caso"@it .
+    rdfs:comment "Si intende lo stato in cui può trovarsi la domanda associata al caso"@it .
 
 lsp-social:StatoDiIdentificazioneObbligoDiAttivazione a owl:Class ;
     rdfs:label "Stato di identificazione obbligo di attivazione"@it ;
@@ -1424,7 +1424,7 @@ lsp-social:StatoDiIdentificazioneObbligoDiAttivazione a owl:Class ;
 lsp-social:StatoDiIncontroDiMonitoraggio a owl:Class ;
     rdfs:label "Stato di incontro di monitoraggio"@it ;
     rdfs:subClassOf lsp-social:StatoDiGestioneDiDomandaDiCaso ;
-    rdfs:comment "Indica se l'incontro di monitoraggio è stato effettuato, nei tempi previsti, o se ancora non è stato effettuato"@it .
+    rdfs:comment "Indica se l'incontro di monitoraggio è stato effettuato o meno"@it .
 
 lsp-social:StatoDiIncontroValutato a owl:Class ;
     rdfs:label "Stato di incontro valutato"@it ;
@@ -1435,25 +1435,25 @@ lsp-social:StatoDiIncontroValutato a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty lsp-social:haPartecipanteIncontro ;
             owl:someValuesFrom owl:Thing ] ;
-    rdfs:comment "Indica che l'incontro ha portato ad una valutazione/registrazione"@it .
+    rdfs:comment "Indica se l'incontro ha avuto luogo o meno"@it .
 
 lsp-social:StatoDiPartecipazionePUC a owl:Class ;
     rdfs:label "Stato di partecipazione PUC"@it ;
     rdfs:subClassOf lsp-social:StatoDiGestioneDiDomandaDiCaso ;
-    rdfs:comment "Indica se il componente sta partecipando ad un PUC"@it .
+    rdfs:comment "Indica lo stato della partecipazione di un componente ad un PUC"@it .
 
 lsp-social:StatoDiPianificatoIncontroDiMonitoraggio a owl:Class ;
-    rdfs:label "Stato di pianificato incontro di monitoraggio"@it ;
+    rdfs:label "Stato della pianificazione dell'incontro di monitoraggio"@it ;
     rdfs:subClassOf lsp-social:StatoDiGestioneDiDomandaDiCaso,
         [ a owl:Restriction ;
             owl:onProperty L0:precedes ;
             owl:someValuesFrom lsp-social:StatoDiIncontroDiMonitoraggio ] ;
-    rdfs:comment "Indica che l'incontro di monitoraggio prevede una data"@it .
+    rdfs:comment "Indica se l'incontro di monitoraggio è stato pianificato o meno"@it .
 
 lsp-social:StatoDiPianificatoPrimoIncontro a owl:Class ;
-    rdfs:label "Stato di pianificato primo incontro"@it ;
+    rdfs:label "Stato di pianificazione del primo incontro"@it ;
     rdfs:subClassOf lsp-social:StatoDiGestioneDiDomandaDiCaso ;
-    rdfs:comment "Indica che il primo incontro prevede una data"@it .
+    rdfs:comment "Indica se il primo incontro è stato pianificato o meno"@it .
 
 lsp-social:StatoDiQuadroDiAnalisi a owl:Class ;
     rdfs:label "Stato di quadro di analisi"@it ;
@@ -1474,11 +1474,11 @@ lsp-social:StatoDiValutazioneMultidimensionale a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty L0:precedes ;
             owl:someValuesFrom lsp-social:StatoDiIdentificazioneObbligoDiAttivazione ] ;
-    rdfs:comment "Indica se la valutazione multidimensionale è in corso o  chiusa"@it .
+    rdfs:comment "Indica se la valutazione multidimensionale è in corso o chiusa"@it .
 
 lsp-social:TipoDiSostegno a owl:Class ;
     rdfs:label "Tipo di sostegno"@it ;
-    rdfs:comment "Elenco delle tipologie di sostegno associabili ad uno o più componenti del nucleo come indicato nelle linee guida PaIS"@it .
+    rdfs:comment "Indica il sostegno erogato al beneficiario sulla base di un  elenco delle tipologie di sostegno associabili ad uno o più componenti del nucleo come indicato nelle linee guida PaIS"@it .
 
 lsp-social:TipoPercorsoSocialeLavorativo a owl:Class ;
     rdfs:label "Tipo percorso sociale lavorativo"@it ;

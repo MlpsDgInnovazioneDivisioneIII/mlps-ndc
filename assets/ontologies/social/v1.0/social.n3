@@ -772,7 +772,7 @@ _:genid9 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/onto
 <https://w3id.org/italia/labour-social-policies/onto/social/AnalisiPreliminareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> .
 <https://w3id.org/italia/labour-social-policies/onto/social/AnalisiPreliminareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 <https://w3id.org/italia/labour-social-policies/onto/social/AnalisiPreliminareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-<https://w3id.org/italia/labour-social-policies/onto/social/AnalisiPreliminareDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "L'AP consiste in uno o pi\u00F9 colloqui, effettuati dagli operatori sociali, con il nucleo familiare. Nel corso dell'AP vengono raccolte le informazioni sul nucleo nel suo complesso e sui  suoi singoli componenti necessarie alla eventuale erogazione di servizi, alla definizione del Patto per l\u2019inclusione sociale e all' identificazione dei componenti tenuti a presentarsi ai CPI per l\u2019attivazione lavorativa."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/AnalisiPreliminareDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "L'Analisi preliminare (AP) consiste in uno o pi\u00F9 colloqui, effettuati dagli operatori sociali con il nucleo familiare. Nel corso dell'AP vengono raccolte le informazioni sul nucleo nel suo complesso e sui  suoi singoli componenti necessarie alla eventuale erogazione di servizi, alla definizione del Patto per l\u2019inclusione sociale e all' identificazione dei componenti tenuti a presentarsi ai CPI per l\u2019attivazione lavorativa."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/AnalisiPreliminareDelCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Analisi preliminare del caso"@it .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid10 <http://www.w3.org/2002/07/owl#onProperty> _:genid11 .
@@ -801,7 +801,7 @@ _:genid16 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/core/Atto> .
 <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-<https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione> <http://www.w3.org/2000/01/rdf-schema#comment> "Azione attraverso la quale  si confermano sulla piattaforma GePI le informazioni fornite da INPS che danno luogo agli obblighi di attivazione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione> <http://www.w3.org/2000/01/rdf-schema#comment> "Azione attraverso la quale  si definisce per ciascun componente il nucleo familiare la sussistenza o meno di obblighi di attivazione sulla base dei dati anagrafici e socio-sanitari, ove necessario integrati con le valutazioni dei servizi sociali sulla condizione di attivabile al lavoro."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione> <http://www.w3.org/2000/01/rdf-schema#label> "Atto di attribuzione categoria obbligo attivazione"@it .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid17 <http://www.w3.org/2002/07/owl#onProperty> _:genid18 .
@@ -809,12 +809,12 @@ _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 _:genid18 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/social/haAttoDiAttribuzioneCategoriaObbligo> .
 <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiGiustificatoMotivoDiAssenza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiGiustificatoMotivoDiAssenza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/core/Atto> .
-<https://w3id.org/italia/labour-social-policies/onto/social/AttoDiGiustificatoMotivoDiAssenza> <http://www.w3.org/2000/01/rdf-schema#comment> "Documentazione attestante un giustificato motivo per mancata presentazione o incontro"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/AttoDiGiustificatoMotivoDiAssenza> <http://www.w3.org/2000/01/rdf-schema#comment> "Documentazione attestante un giustificato motivo per mancata presentazione ai servizi nei tempi previsti dalla norma o mancata presentazione alle convocazioni."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiGiustificatoMotivoDiAssenza> <http://www.w3.org/2000/01/rdf-schema#label> "Atto di giustificato motivo di assenza"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/BeneficiarioADI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/BeneficiarioADI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteDiNucleoFragileOInPovert\u00E0> .
 <https://w3id.org/italia/labour-social-policies/onto/social/BeneficiarioADI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-<https://w3id.org/italia/labour-social-policies/onto/social/BeneficiarioADI> <http://www.w3.org/2000/01/rdf-schema#comment> "Destinatario di una misura di sostegno economico e di inclusione sociale e professionale introdotta dal decreto-legge 48/2023"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/BeneficiarioADI> <http://www.w3.org/2000/01/rdf-schema#comment> "Destinatario della misura di sostegno economico e di inclusione sociale e professionale introdotta dal decreto-legge 48/2023"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/BeneficiarioADI> <http://www.w3.org/2000/01/rdf-schema#label> "Beneficiario ADI"@it .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid19 <http://www.w3.org/2002/07/owl#onProperty> _:genid20 .
@@ -822,7 +822,7 @@ _:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/itali
 _:genid20 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/core/haBeneficiarioPrestazioneDiSostegno> .
 <https://w3id.org/italia/labour-social-policies/onto/social/CartaDiInclusione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/CartaDiInclusione> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-<https://w3id.org/italia/labour-social-policies/onto/social/CartaDiInclusione> <http://www.w3.org/2000/01/rdf-schema#comment> "La Carta di Inclusione \u00E8 una carta di pagamento elettronica prepagata, emessa da PostePay in esecuzione del servizio affidato ai sensi dell\u2019art. 81, comma 35, lettera b, del Decreto Legge n. 112/2008, convertito con modificazioni dalla Legge n. 133/2008, conformemente a quanto disposto dall\u2019articolo 4, comma 8, del decreto-legge n. 48/2023, convertito, con modificazioni, dalla Legge n. 85 del 3 luglio 2023. Attraverso la Carta di Inclusione viene erogato, alle condizioni, nei limiti e con le modalit\u00E0 previste dal Decreto, il beneficio economico dell\u2019Assegno di inclusione. Secondo quanto stabilito dall\u2019articolo 5, comma 1, del D.M n. 154/2023, l\u2019Adi pu\u00F2 essere erogato suddividendo l\u2019importo spettante tra i componenti maggiorenni del nucleo familiare che esercitano le responsabilit\u00E0 genitoriali o sono considerati nella scala di equivalenza, riconoscendo a ciascuno la quota pro-capite. La Carta,  oltre all\u2019acquisto di beni e servizi presso gli esercizi commerciali in Italia convenzionati con il circuito Mastercard che rientrano nelle categorie di spesa previste dalla normativa di riferimento, consente di effettuare prelievi di contante nei limiti previsti dal Decreto ed effettuare un bonifico SEPA/Postagiro mensile in Ufficio Postale per pagare la rata prevista dal contratto di locazione in favore del locatore indicato nel contratto di locazione (fonte: Poste Italiane)."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/CartaDiInclusione> <http://www.w3.org/2000/01/rdf-schema#comment> "La Carta di Inclusione \u00E8 una carta di pagamento elettronica prepagata, emessa dal gestore conformemente a quanto disposto dall\u2019articolo 4, comma 8, del decreto-legge n. 48/2023, attraverso la quale \u00E8 erogato il beneficio economico dell\u2019Assegno di inclusione."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/CartaDiInclusione> <http://www.w3.org/2000/01/rdf-schema#label> "Carta di inclusione"@it .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haIntestatarioCartaDiInclusione> .
@@ -835,8 +835,8 @@ _:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 <https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
 <https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
 <https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-<https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#comment> "Famiglia che versa in condizione di povert\u00E0, intesa come deprivazione economica, ed esclusione sociale"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "Caso di nucleo fragile o in povert\u00E0"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#comment> "Si intende il caso gestito dal servizio sociale attraverso un case manager relativo ad un nucleo in condizione di povert\u00E0 richiedente l'ADI"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "Caso associato ad un nucleo familiare richiedente l'ADI"@it .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haComponenteAttivoNelCaso> .
 _:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -856,7 +856,7 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/statusDelCaso> .
 _:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/labour-social-policies/onto/social/CategoriaDiObbligo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/labour-social-policies/onto/social/CategoriaDiObbligo> <http://www.w3.org/2000/01/rdf-schema#comment> "Descrive le diverse categorie di obbligo derivanti dalla condizione del singolo individuo o del nucleo e dalla definizione degli impegni nel PaIS (eventuale elenco)"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/CategoriaDiObbligo> <http://www.w3.org/2000/01/rdf-schema#comment> "Descrive le diverse categorie di obbligo cui sono tenuti i beneficiai ADI, che determinano  la definizione con i servizi sociali di impegni nel Patto per l'Inclusione sociale (PaIS) e la definizione con centri per l'impiego o i servizi per il lavoro di impegni nel Patto di servizio personalizzato (PSP)."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/CategoriaDiObbligo> <http://www.w3.org/2000/01/rdf-schema#label> "Categoria di obbligo"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiDisabilit\u00E0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiDisabilit\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/core/Atto> .
@@ -869,15 +869,15 @@ _:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/core/Atto> .
 <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-<https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> <http://www.w3.org/2000/01/rdf-schema#comment> "Certificato che attesta la condizione di svantaggio e la partecipazione in un programma di cura e/o assistenza rilasciato dalle pubbliche amministrazioni competenti, come i Comuni, i Servizi Sanitari o Socio-Sanitari e le strutture giudiziarie."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> <http://www.w3.org/2000/01/rdf-schema#comment> "Dati del certificato che attesta la condizione di svantaggio e la partecipazione ad un programma di cura e/o assistenza rilasciato dalle pubbliche amministrazioni competenti, come i Comuni, i Servizi Sanitari o Socio-Sanitari e le strutture giudiziarie."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> <http://www.w3.org/2000/01/rdf-schema#label> "Certificato condizione di svantaggio"@it .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/onto/TI/atTime> .
 _:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#comment> "Si intendono i componenti di un nucleo che si trovano in condizione difragilit\u00E0/povert\u00E0, cio\u00E8 il nucleo che ha presentato la domanda ADI e segue il percorso di inclusione sociale. A livello semantico serve a differenziare un nucleo fragile. "@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "Componente di nucleo fragile o in povert\u00E0"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#comment> "Si intendono i componenti di un nucleo familiare in condizione di fragilit\u00E0/povert\u00E0 richiedente l'ADI."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteDiNucleoFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "Componente di Nucleo familiare in condizioni di povert\u00E0 richiedente l'ADI"@it .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid30 <http://www.w3.org/2002/07/owl#onProperty> _:genid31 .
 _:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> .
@@ -886,7 +886,7 @@ _:genid31 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoAttivoNelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/TI/TimeIndexedEvent> .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoAttivoNelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoAttivoNelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoAttivoNelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Componente del nucleo familiare soggetto a obblighi di attivazione "@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoAttivoNelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Componente del nucleo familiare soggetto a obblighi di attivazione lavorativa e/o sociale"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoAttivoNelCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Componente nucleo attivo nel caso"@it .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid32 <http://www.w3.org/2002/07/owl#onProperty> _:genid33 .
@@ -899,7 +899,7 @@ _:genid35 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#comment> "Componente ad un  nucleo familiare"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#comment> "Generico componente di un  nucleo familiare generico"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#label> "Componente nucleo familiare"@it .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haTipoPercorsoSocialeLavorativo> .
@@ -970,7 +970,7 @@ _:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000
 <https://w3id.org/italia/labour-social-policies/onto/social/EquipeMultidisciplinareDelCaso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/EquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
 <https://w3id.org/italia/labour-social-policies/onto/social/EquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-<https://w3id.org/italia/labour-social-policies/onto/social/EquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Gruppo di professionisti composti da un\u2019assistente sociale e da altri operatori afferenti alla rete dei servizi, individuati, ove necessario, dal  case manager sulla base dei bisogni del nucleo emersi nell\u2019Analisi Preliminare ai fini della  definizione del PaIS e dell'attazione degl interventi di sostegno/accompagnamento del nucleo. "@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/EquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Gruppo di professionisti composti da un\u2019assistente sociale e da operatori di altri settori disciplinari afferenti alla rete dei servizi, individuati, ove necessario, dal  case manager sulla base delle caratteristiche, della situazione e dei bisogni del nucleo familiare emersi nell\u2019Analisi Preliminare ai fini della  definizione del PaIS e dell'attazione degli interventi di sostegno/accompagnamento del nucleo."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/EquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Equipe multidisciplinare del caso"@it .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haMembroEquipeMultidisciplinare> .
@@ -981,7 +981,7 @@ _:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 _:genid58 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/social/haEquipeMultidisciplinareDelCaso> .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoAnalisiPreliminareCaso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoAnalisiPreliminareCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
-<https://w3id.org/italia/labour-social-policies/onto/social/EsitoAnalisiPreliminareCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Si intende il risultato della valutazione multidimensionale effettuata dai servizi sociali al singolo soggetto"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/EsitoAnalisiPreliminareCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Si intende il risultato della valutazione multidimensionale effettuata dai servizi sociali al singolo soggetto. Una specifica sezione della AP contiene la sintesi delle indicazioni utili ad orientare il percorso per la successiva definizione del progetto, con particolare riferimento alla presenza di componenti da indirizzare anche ai servizi per il lavoro, alla eventuale presenza di bisogni complessi e alla opportunit\u00E0 di coinvolgere una equipe multidisciplinare o attivare servizi specialistici."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoAnalisiPreliminareCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Esito analisi preliminare caso"@it .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid59 <http://www.w3.org/2002/07/owl#onProperty> _:genid60 .
@@ -989,7 +989,7 @@ _:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 _:genid60 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/social/haEsitoAnalisiPreliminareCaso> .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoImpegnoPaIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
-<https://w3id.org/italia/labour-social-policies/onto/social/EsitoImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicala valutazione effettuata in fase di monitoraggio degli impegni assunti dal componente del nucleo familiare all'interno del PaIS "@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/EsitoImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'esito della valutazione degli impegni assunti dal componente del nucleo familiare all'interno del progetto personalizzato (Patto per l'Inclusione Sociale - PaIS) effettuata negli incontri di monitoraggio"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#label> "Esito impegno PaIS"@it .
 _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid61 <http://www.w3.org/2002/07/owl#onProperty> _:genid62 .
@@ -1006,7 +1006,7 @@ _:genid64 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoRisultatoAttesoObiettivoPaIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoRisultatoAttesoObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
 <https://w3id.org/italia/labour-social-policies/onto/social/EsitoRisultatoAttesoObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il risultato atteso rispetto all'obiettivo indicato nel PaIS "@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/EsitoRisultatoAttesoObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#label> "Esito risultato atteso obiettivo PaIS"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/EsitoRisultatoAttesoObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#label> "Risultato atteso rispetto ad un obiettivo"@it .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid65 <http://www.w3.org/2002/07/owl#onProperty> _:genid66 .
 _:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -1016,8 +1016,8 @@ _:genid66 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/GestioneDiDomandaDiCasoDiNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/Sequence> .
 <https://w3id.org/italia/labour-social-policies/onto/social/GestioneDiDomandaDiCasoDiNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
 <https://w3id.org/italia/labour-social-policies/onto/social/GestioneDiDomandaDiCasoDiNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
-<https://w3id.org/italia/labour-social-policies/onto/social/GestioneDiDomandaDiCasoDiNucleo> <http://www.w3.org/2000/01/rdf-schema#comment> "collegamento tra la singola gestione della domanda di un caso"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/GestioneDiDomandaDiCasoDiNucleo> <http://www.w3.org/2000/01/rdf-schema#label> "Gestione di domanda di caso di nucleo"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/GestioneDiDomandaDiCasoDiNucleo> <http://www.w3.org/2000/01/rdf-schema#comment> "Collegamento gestionale di una singola  domanda al relativo caso (nel tempo possono susseguirsi pi\u00F9 domande afferenti al medesimo caso)"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/GestioneDiDomandaDiCasoDiNucleo> <http://www.w3.org/2000/01/rdf-schema#label> "Relazione tra la domada e il caso"@it .
 _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid67 <http://www.w3.org/2002/07/owl#onProperty> _:genid68 .
 _:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -1033,7 +1033,7 @@ _:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000
 <https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
-<https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Impegno associato ad un componente del nucleo familiare all'interno del PAIS"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Impegno associato ad un componente del nucleo familiare all'interno del progetto personalizzato (Patto per l'Inclusione Sociale - PaIS)"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#label> "Impegno PaIS"@it .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/\u00E8ImpegnoPerComponenteNucleo> .
@@ -1058,7 +1058,7 @@ _:genid75 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
 <https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
 <https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
-<https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "La composizione dell\u2019equipe multidisciplinare (EM) varia in funzione delle caratteristiche, della situazione e dei bisogni del nucleo familiare. A titolo esemplificativo pu\u00F2 comprendere le seguenti figure: operatori dei centri per l\u2019impiego, operatori dei servizi sanitari e specialistici, operatori dei servizi socio-educativi e della prima infanzia, insegnanti, pediatri, mediatori culturali, ecc. Vista la differenziazione delle forme organizzative degli ATS, \u00E8 plausibile ipotizzare l\u2019EM come gruppo a geometria variabile composto da uno \u00ABzoccolo duro\u00BB di operatori (EM base) e operatori che si possono aggregare a seconda della situazione (EM allargata), in esito all\u2019Analisi Preliminare"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il professionista componente della equipe multidisciplinare che ha incarico il nucleo o un suo componente."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Membro equipe multidisciplinare del caso"@it .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haProfessioneMembroEquipe> .
@@ -1076,15 +1076,15 @@ _:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/la
 _:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
-<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#comment> "Componenti la famiglia anagrafica all'atto di presentazione della domanda ADI"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#label> "Nucleo familiare"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#comment> "Il nucleo familiare generico \u00E8 l'insieme di persone coabitanti aventi dimora abituale nello stesso comune, legate da vincoli di matrimonio, unione civile, parentela, affinit\u00E0, adozione o da legami affettivi. Coincide generalmente con la famiglia anagrafica, ma pu\u00F2 differire ai fini ISEE o fiscali, includendo anche persone non conviventi."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliare> <http://www.w3.org/2000/01/rdf-schema#label> "Nucleo familiare generico"@it .
 _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haComponenteNucleo> .
 _:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
-<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#comment> "Nucleo familiare in condizione di povert\u00E0 ed esclusione sociale "@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "Nucleo familiare in condizione di povert\u00E0 "@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#comment> "Nucleo familiare in condizione di povert\u00E0 ed esclusione sociale richiedente l'ADI come definito ai fini ISEE"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "Nucleo familiare in condizione di povert\u00E0 richiedente l'ADI"@it .
 _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid83 <http://www.w3.org/2002/07/owl#onProperty> _:genid84 .
 _:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -1109,7 +1109,7 @@ _:genid88 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
-<https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "cambiamento/miglioramento auspicato er il nucleo familiare e quindi  finalit\u00E0 da perseguire (obiettivi generali) e tappe da raggiungere (risultati attesi)."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Cambiamento/miglioramento auspicato per il nucleo familiare formalizzato nel Patto di Inclusione sociale attraverso l'indicazione della  finalit\u00E0 da perseguire (obiettivo generale), cui vengono collegati risultati attesi"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#label> "Obiettivo PaIS"@it .
 _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haRisultatoAttesoDiObiettivo> .
@@ -1123,7 +1123,7 @@ _:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazioneComponenteAIncontro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazioneComponenteAIncontro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazioneComponenteAIncontro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
-<https://w3id.org/italia/labour-social-policies/onto/social/PartecipazioneComponenteAIncontro> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'avvenuta partecipazione ad un incontro del componente il nucleo familiare"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/PartecipazioneComponenteAIncontro> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'avvenuta partecipazione del componente del nucleo familiare ad un incontro presso i servizi sociali"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazioneComponenteAIncontro> <http://www.w3.org/2000/01/rdf-schema#label> "Partecipazione componente a incontro"@it .
 _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid92 <http://www.w3.org/2002/07/owl#onProperty> _:genid93 .
@@ -1139,7 +1139,7 @@ _:genid95 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
-<https://w3id.org/italia/labour-social-policies/onto/social/PartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#comment> "Nell\u2019ambito del percorso personalizzato pu\u00F2 essere previsto l\u2019impegno dei beneficiari alla partecipazione a Progetti Utili alla Collettivit\u00E0 (PUC)."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/PartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica le informazioni sulla partecipazione di un componente del nucleo a Progetti Utili alla Collettivit\u00E0 (PUC)."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/PartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#label> "Partecipazione PUC"@it .
 _:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haPUC> .
@@ -1160,7 +1160,7 @@ _:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
-<https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'avventua sottoscrizione del PAD nucleo (la data ????) "@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'avventua sottoscrizione del PAD nucleo"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo> <http://www.w3.org/2000/01/rdf-schema#label> "Patto attivazione digitale nucleo"@it .
 _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haNucleoFamiliareDiPAD> .
@@ -1177,7 +1177,7 @@ _:genid104 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/la
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoInclusioneSocialeDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoInclusioneSocialeDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoInclusioneSocialeDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
-<https://w3id.org/italia/labour-social-policies/onto/social/PattoInclusioneSocialeDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Patto definito dai servizi sociali e dal nucleo sulla base di una valutazione multidimensionale dei bisogni del nucleo familiare"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/PattoInclusioneSocialeDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Il Patto per l'Inclusione Sociale (PaIS) \u00E8 progetto personalizzato definito dai servizi sociali e dal nucleo beneficiario delle misura di contrasto alla povert\u00E0 sulla base di una valutazione multidimensionale dei bisogni del nucleo familiare realizzata attraverso l'analisi preliminare ed eventalmente il quadro di analisi"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/PattoInclusioneSocialeDelCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Patto inclusione sociale del caso"@it .
 _:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid105 <http://www.w3.org/2002/07/owl#onProperty> _:genid106 .
@@ -1191,10 +1191,10 @@ _:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/l
 _:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/labour-social-policies/onto/social/PeriodoDiGiustificatoMotivoAssenza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/PeriodoDiGiustificatoMotivoAssenza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/TI/TimeIndexedEvent> .
-<https://w3id.org/italia/labour-social-policies/onto/social/PeriodoDiGiustificatoMotivoAssenza> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il periodo in cui \u00E8 possibile giustificare il mancato adempimento della presentazione come prodotto nel giustificato motivo"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/PeriodoDiGiustificatoMotivoAssenza> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il periodo al quale si applica la giustificazione del mancato adempimento della presentazione, come attestato nel giustificato motivo"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/PeriodoDiGiustificatoMotivoAssenza> <http://www.w3.org/2000/01/rdf-schema#label> "Periodo di giustificato motivo assenza"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la professione del componente dell'equipe multidisciplinare. La composizione dell\u2019equipe multidisciplinare (EM) varia in funzione delle caratteristiche, della situazione e dei bisogni del nucleo familiare. A titolo esemplificativo pu\u00F2 comprendere le seguenti figure: operatori dei centri per l\u2019impiego, operatori dei servizi sanitari e specialistici, operatori dei servizi socio-educativi e della prima infanzia, insegnanti, pediatri, mediatori culturali, ecc. Vista la differenziazione delle forme organizzative degli ATS, \u00E8 plausibile ipotizzare l\u2019EM come gruppo a geometria variabile composto da uno \u00ABzoccolo duro\u00BB di operatori (EM base) e operatori che si possono aggregare a seconda della situazione (EM allargata), in esito all\u2019Analisi Preliminare"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la professione del componente dell'equipe multidisciplinare."@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/ProfessioneMembroEquipe> <http://www.w3.org/2000/01/rdf-schema#label> "Professione membro equipe"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/core/Atto> .
@@ -1202,7 +1202,7 @@ _:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 <https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
 <https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
 <https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
-<https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che \u00E8 necessario procedere con il quadro di analisi"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che a seguito dell'analisi preliminare, in considerazione delle problematiche emerse, \u00E8 stato necessario realizzare un quadro di analisi approfondito per completare la valutazione multidimensionale"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/QuadroDiAnalisiDelCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Quadro di analisi del caso"@it .
 _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid109 <http://www.w3.org/2002/07/owl#onProperty> _:genid110 .
@@ -1228,8 +1228,8 @@ _:genid115 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/la
 <https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
 <https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
-<https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo> <http://www.w3.org/2000/01/rdf-schema#comment> "tappe e risultati da raggiungere nel percorso di reinserimento sociale e lavorativo progettato"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo> <http://www.w3.org/2000/01/rdf-schema#label> "Risultato atteso di obiettivo"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Tappe e risultati da raggiungere tramite il patto di inclusione sociale"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/RisultatoAttesoDiObiettivo> <http://www.w3.org/2000/01/rdf-schema#label> "Risultato atteso di obiettivo PaIS"@it .
 _:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/descrizioneRisultatoAttesoObiettivo> .
 _:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
@@ -1240,8 +1240,8 @@ _:genid117 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 <https://w3id.org/italia/labour-social-policies/onto/social/ScalaDiEquivalenzaNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ScalaDiEquivalenzaNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
 <https://w3id.org/italia/labour-social-policies/onto/social/ScalaDiEquivalenzaNucleo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
-<https://w3id.org/italia/labour-social-policies/onto/social/ScalaDiEquivalenzaNucleo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il parametro della scala di equivalenza, utilizzato anche per determinare l'importo dell'assegno di inclusione."@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/ScalaDiEquivalenzaNucleo> <http://www.w3.org/2000/01/rdf-schema#label> "Scala di equivalenza nucleo"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ScalaDiEquivalenzaNucleo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il parametro complessivo della scala di equivalenza, utilizzato anche per determinare l'importo dell'assegno di inclusione."@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/ScalaDiEquivalenzaNucleo> <http://www.w3.org/2000/01/rdf-schema#label> "Scala di equivalenza nucleo ADI"@it .
 _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haContributoScalaDiEquivalenza> .
 _:genid118 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -1256,7 +1256,7 @@ _:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/200
 <https://w3id.org/italia/labour-social-policies/onto/social/SostegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
 <https://w3id.org/italia/labour-social-policies/onto/social/SostegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
 <https://w3id.org/italia/labour-social-policies/onto/social/SostegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
-<https://w3id.org/italia/labour-social-policies/onto/social/SostegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la tipologia di sostegno/intervento di supporto ai favore del nucleo familiare o di un suo componente"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/SostegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la tipologia di sostegno/intervento di supporto attivato dai servizi sociali in favore del nucleo familiare beneficiario ADI o di un suo componente"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/SostegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#label> "Sostegno PaIS"@it .
 _:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haTipoDiSostegno> .
@@ -1282,7 +1282,7 @@ _:genid125 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ital
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiAttesaPrimoIncontro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiAttesaPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiAttesaPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid126 .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiAttesaPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che il primo incontro con il nucleo beneficiario dell'ADI, previsto entro 120 giorni dalla sottoscrizione del PAD, non \u00E8 ancora avvenuto"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiAttesaPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che il primo incontro con il nucleo beneficiario dell'ADI, previsto entro 120 giorni dalla sottoscrizione del PAD nucleo, non \u00E8 ancora avvenuto"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiAttesaPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di attesa primo incontro"@it .
 _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid126 <http://www.w3.org/2002/07/owl#onProperty> _:genid127 .
@@ -1291,8 +1291,8 @@ _:genid127 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/on
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/TI/TimeIndexedEvent> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid128 .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Generalizzazione dello stato della gestione di una domanda relativa ad un caso"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Stato del caso? Stato della domanda ADI?"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> <http://www.w3.org/2000/01/rdf-schema#comment> "Si intende lo stato in cui pu\u00F2 trovarsi la domanda associata al caso"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> <http://www.w3.org/2000/01/rdf-schema#label> "Stato della domanda ADI"@it .
 _:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid128 <http://www.w3.org/2002/07/owl#onProperty> _:genid129 .
 _:genid128 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
@@ -1303,13 +1303,13 @@ _:genid129 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/la
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIdentificazioneObbligoDiAttivazione> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di identificazione obbligo di attivazione"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroDiMonitoraggio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se l'incontro di monitoraggio \u00E8 stato effettuato, nei tempi previsti, o se ancora non \u00E8 stato effettuato"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se l'incontro di monitoraggio \u00E8 stato effettuato o meno"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di incontro di monitoraggio"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroValutato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroValutato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroValutato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid130 .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroValutato> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid131 .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroValutato> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che l'incontro ha portato ad una valutazione/registrazione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroValutato> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se l'incontro ha avuto luogo o meno"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroValutato> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di incontro valutato"@it .
 _:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/social/haPartecipanteIncontro> .
@@ -1319,20 +1319,20 @@ _:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/l
 _:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPartecipazionePUC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se il componente sta partecipando ad un PUC"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica lo stato della partecipazione di un componente ad un PUC"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPartecipazionePUC> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di partecipazione PUC"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoIncontroDiMonitoraggio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid132 .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che l'incontro di monitoraggio prevede una data"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di pianificato incontro di monitoraggio"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se l'incontro di monitoraggio \u00E8 stato pianificato o meno"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoIncontroDiMonitoraggio> <http://www.w3.org/2000/01/rdf-schema#label> "Stato della pianificazione dell'incontro di monitoraggio"@it .
 _:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid132 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/onto/l0/precedes> .
 _:genid132 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroDiMonitoraggio> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoPrimoIncontro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che il primo incontro prevede una data"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di pianificato primo incontro"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se il primo incontro \u00E8 stato pianificato o meno"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoPrimoIncontro> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di pianificazione del primo incontro"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiQuadroDiAnalisi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiQuadroDiAnalisi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiValutazioneMultidimensionale> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiQuadroDiAnalisi> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se il quadro di analisi \u00E8 completato o in corso"@it .
@@ -1348,13 +1348,13 @@ _:genid133 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ital
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiValutazioneMultidimensionale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiValutazioneMultidimensionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiGestioneDiDomandaDiCaso> .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiValutazioneMultidimensionale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid134 .
-<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiValutazioneMultidimensionale> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se la valutazione multidimensionale \u00E8 in corso o  chiusa"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/StatoDiValutazioneMultidimensionale> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se la valutazione multidimensionale \u00E8 in corso o chiusa"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiValutazioneMultidimensionale> <http://www.w3.org/2000/01/rdf-schema#label> "Stato di valutazione multidimensionale"@it .
 _:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid134 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/onto/l0/precedes> .
 _:genid134 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIdentificazioneObbligoDiAttivazione> .
 <https://w3id.org/italia/labour-social-policies/onto/social/TipoDiSostegno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/labour-social-policies/onto/social/TipoDiSostegno> <http://www.w3.org/2000/01/rdf-schema#comment> "Elenco delle tipologie di sostegno associabili ad uno o pi\u00F9 componenti del nucleo come indicato nelle linee guida PaIS"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/TipoDiSostegno> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il sostegno erogato al beneficiario sulla base di un  elenco delle tipologie di sostegno associabili ad uno o pi\u00F9 componenti del nucleo come indicato nelle linee guida PaIS"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/TipoDiSostegno> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo di sostegno"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/social/TipoPercorsoSocialeLavorativo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid135 .
