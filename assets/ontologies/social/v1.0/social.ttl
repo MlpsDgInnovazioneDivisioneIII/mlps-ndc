@@ -50,7 +50,8 @@ lsp-social: a owl:Ontology ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/social/"^^xsd:anyURI ;
     adms:prefix "lsp-social" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
-    adms:status "draft" ;
+    adms:status "catalogued",
+        "published" ;
     adms:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;

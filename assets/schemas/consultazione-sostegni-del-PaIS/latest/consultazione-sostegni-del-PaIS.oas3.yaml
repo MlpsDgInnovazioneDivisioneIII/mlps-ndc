@@ -140,10 +140,10 @@ components:
           - tipologia: 'Formazione per il conseguimento di Qualifiche professionali'
             idTipologia: 'bcc888fd-00c7-43ef-8edb-e2bc9b147d17'
             codiceFiscale: 'AAAAAA00A00A000A'
-            dataAvvio: '2025/02/01'
-            dataAvvioPrevista: '2025/02/15'
-            dataFine: '2025/12/31'
-            dataAssegnazione: '2025/02/07'
+            dataAvvio: '2025-02-01'
+            dataAvvioPrevista: '2025-02-15'
+            dataFine: '2025-12-31'
+            dataAssegnazione: '2025-02-07'
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneSostegni.Sostegno:
       type: object
@@ -181,10 +181,10 @@ components:
         tipologia: 'Formazione per il conseguimento di Qualifiche professionali'
         idTipologia: 'bcc888fd-00c7-43ef-8edb-e2bc9b147d17'
         codiceFiscale: 'AAAAAA00A00A000A'
-        dataAvvio: '2025/02/01'
-        dataAvvioPrevista: '2025/02/15'
-        dataFine: '2025/12/31'
-        dataAssegnazione: '2025/02/07'
+        dataAvvio: '2025-02-01'
+        dataAvvioPrevista: '2025-02-15'
+        dataFine: '2025-12-31'
+        dataAssegnazione: '2025-02-07'
 
     FSL.Api.Domain.Models.Gepi.Esito:
       required:

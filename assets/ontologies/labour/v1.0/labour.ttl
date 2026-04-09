@@ -49,7 +49,8 @@ lsp-labour: a owl:Ontology ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/labour/"^^xsd:anyURI ;
     adms:prefix "lsp-labour" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
-    adms:status "draft" ;
+    adms:status "catalogued",
+        "published" ;
     adms:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;

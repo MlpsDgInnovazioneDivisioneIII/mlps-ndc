@@ -137,8 +137,8 @@ components:
       example:
         impegni:
           - tipologia: 'Tipologia Test'
-            dataAvvio: '2025/01/01'
-            datafine: '2025/12/31'
+            dataAvvio: '2025-01-01'
+            datafine: '2025-12-31'
             nucleo:
              - 'AAAAAA00A00A000A'
 
@@ -171,10 +171,16 @@ components:
           '@id': haObbiettvoDiImpegno
       example:
         tipologia: 'Tipologia Test'
-        dataAvvio: '2025/01/01'
-        datafine: '2025/12/31'
+        dataAvvio: '2025-01-01'
+        datafine: '2025-12-31'
         nucleo:
           - 'AAAAAA00A00A000A'
+        obiettivoRisultati:
+          descrizioneObiettivo: 'Sostenere l’educazione e la formazione degli adulti'
+          idObiettivo: 'ba16de1c-f5a0-4144-90d5-15c354e9eff3'
+          risultatiAttesi:
+            - descrizioneRisultato: 'Conseguire l’obbligo scolastico'
+              idRisultato: '2265d470-4ebd-414b-a77c-59c7cd4fa1da'
 
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ObiettivoRisultato:

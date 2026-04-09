@@ -198,24 +198,24 @@ components:
         istatComune: '058091'
         codiceATS: '5-202004142240267'
         caseManager: "AAAAAA00A00A000A"
-        dataFinalizzazione: '2025/07/12'
-        dataFirma: '2025/05/14'
+        dataFinalizzazione: '2025-07-12'
+        dataFirma: '2025-05-14'
         obiettiviRisultati:
           - descrizioneObiettivo: 'Sostenere l’educazione e la formazione degli adulti'
             idObiettivo: 'ba16de1c-f5a0-4144-90d5-15c354e9eff3'
         impegni:
           - tipologia: 'Tipologia Test'
-            dataAvvio: '2025/01/01'
-            datafine: '2025/06/30'
+            dataAvvio: '2025-01-01'
+            datafine: '2025-06-30'
             nucleo:
               - 'AAAAAA00A00A000A'
         sostegni:
           - tipologia: 'Formazione per il conseguimento di Qualifiche professionali'
             idTipologia: 'bcc888fd-00c7-43ef-8edb-e2bc9b147d17'
             codiceFiscale: 'AAAAAA00A00A000A'
-            dataAvvioPrevista: '2025/02/01'
-            dataFine: '2025/06/30'
-            dataAssegnazione: '2025/03/01'
+            dataAvvioPrevista: '2025-02-01'
+            dataFine: '2025-06-30'
+            dataAssegnazione: '2025-03-01'
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioPaiS.Impegno:
       type: object
@@ -247,8 +247,8 @@ components:
           '@id': haObiettivoPaIS
       example:
         tipologia: 'Tipologia Test'
-        dataAvvio: '2025/01/01'
-        datafine: '2025/06/30'
+        dataAvvio: '2025-01-01'
+        datafine: '2025-06-30'
         nucleo:
           - 'AAAAAA00A00A000A'
 
@@ -332,10 +332,10 @@ components:
         tipologia: 'Formazione per il conseguimento di Qualifiche professionali'
         idTipologia: 'bcc888fd-00c7-43ef-8edb-e2bc9b147d17'
         codiceFiscale: 'AAAAAA00A00A000A'
-        dataAvvio: '2025/01/01'
-        dataAvvioPrevista: '2025/02/01'
-        dataFine: '2025/06/30'
-        dataAssegnazione: '2025/03/01'
+        dataAvvio: '2025-01-01'
+        dataAvvioPrevista: '2025-02-01'
+        dataFine: '2025-06-30'
+        dataAssegnazione: '2025-03-01'
 
     FSL.Api.Domain.Models.Gepi.Esito:
       required:

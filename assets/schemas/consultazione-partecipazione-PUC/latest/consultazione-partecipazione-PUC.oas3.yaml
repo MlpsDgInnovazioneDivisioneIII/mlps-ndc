@@ -140,10 +140,10 @@ components:
           - identificativoPUC: '123456789123456789'
             titoloPUC: 'Titolo test PUC'
             descrizionePUC: 'Descrizione test PUC'
-            dataInizioAttivita: '07/01/2025'
-            dataFineAttivita: '31/12/2025'
-            dataInizioPolizza: '01/01/2025'
-            dataFinePolizza: '31/12/2025'
+            dataInizioAttivita: '07-01-2025'
+            dataFineAttivita: '31-12-2025'
+            dataInizioPolizza: '01-01-2025'
+            dataFinePolizza: '31-12-2025'
             stato: 1
             comune: '058091'
 
@@ -195,10 +195,10 @@ components:
         identificativoPUC: '123456789123456789'
         titoloPUC: 'Titolo test PUC'
         descrizionePUC: 'Descrizione test PUC'
-        dataInizioAttivita: '07/01/2025'
-        dataFineAttivita: '31/12/2025'
-        dataInizioPolizza: '01/01/2025'
-        dataFinePolizza: '31/12/2025'
+        dataInizioAttivita: '07-01-2025'
+        dataFineAttivita: '31-12-2025'
+        dataInizioPolizza: '01-01-2025'
+        dataFinePolizza: '31-12-2025'
         stato: 1
         comune: '058091'
 
