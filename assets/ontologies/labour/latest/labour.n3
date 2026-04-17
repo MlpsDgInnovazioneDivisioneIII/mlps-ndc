@@ -28,8 +28,7 @@
 <https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/italia/labour-social-policies/onto/labour/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/prefix> "lsp-labour" .
 <https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/italia/data/project/NDC> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/status> "catalogued" .
-<https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/status> "published" .
+<https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/status> "draft" .
 <https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/target> "Cittadini"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/target> "Imprese"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/> <https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it .
@@ -97,34 +96,34 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/labour/haCanaleDiOrigineOffertaDiLavoro> <http://www.w3.org/2000/01/rdf-schema#label> "ha canale di origine offerta di lavoro"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaInformatica> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza informatica."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica> <http://www.w3.org/2000/01/rdf-schema#label> "ha conoscenza informatica"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaLinguistica> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza linguistica."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica> <http://www.w3.org/2000/01/rdf-schema#label> "ha conoscenza linguistica"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudioConseguito> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino ad una sua sezione riguardante un Titolo di studio conseguito."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio> <http://www.w3.org/2000/01/rdf-schema#label> "ha conseguito titolo di studio"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino ad una sua sezione riguardante un Corso di formazione frequentato."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione> <http://www.w3.org/2000/01/rdf-schema#label> "ha corso di formazione"@it .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/onto/RPO/RegisteredResidentPerson> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un cittadino ad un suo Curriculum vitae."@it .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#label> "ha curriculum vitae del cittadiino"@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/onto/RPO/RegisteredResidentPerson> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un cittadino ad un suo Curriculum vitae."@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#label> "ha curriculum vitae del cittadino"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haDIDAbilitante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haDIDAbilitante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haDIDAbilitante> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/PattoAttivazioneDigitaleIndividuale> .
@@ -151,7 +150,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/labour/haEnteErogatore> <http://www.w3.org/2000/01/rdf-schema#label> "ha ente erogatore"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino ad una sua sezione riguardante una sua Esperienza lavorativa."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa> <http://www.w3.org/2000/01/rdf-schema#label> "ha esperienza lavorativa"@it .
@@ -177,7 +176,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/labour/haGradoDiConoscenzaLinguisticaScritta> <http://www.w3.org/2000/01/rdf-schema#comment> "Specializzazione del grado di conoscenza linguistica riguardante la scrittura."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haGradoDiConoscenzaLinguisticaScritta> <http://www.w3.org/2000/01/rdf-schema#label> "ha grado di conoscenza linguistica scritta"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino a un Albo professionale a cui \u00E8iscritto."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale> <http://www.w3.org/2000/01/rdf-schema#label> "ha iscrizione albo professionale"@it .
@@ -254,7 +253,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/labour/haPADIndividuale> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una Prestazione di sostegno al relativo PAD sottoscritto dal beneficiario della prestazione."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haPADIndividuale> <http://www.w3.org/2000/01/rdf-schema#label> "ha PAD individuale"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino ad una Patente di guida posseduta."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida> <http://www.w3.org/2000/01/rdf-schema#label> "ha patente di guida"@it .
@@ -266,7 +265,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/labour/haPattoServizioPersonalizzato> <http://www.w3.org/2000/01/rdf-schema#label> "ha patto servizio personalizzato"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega il CV del cittadino ad una sua sezione riguardante una professione desiderata."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata> <http://www.w3.org/2000/01/rdf-schema#label> "ha professione desiderata"@it .
@@ -294,7 +293,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/labour/haSettoreDiInteresse> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega una Offerta formativa al relativo Settore economico professionale."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haSettoreDiInteresse> <http://www.w3.org/2000/01/rdf-schema#label> "ha settore di interesse"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/StatoDiCVDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un CV del cittadino al suo stato di completamento e consultabilit\u00E0."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino> <http://www.w3.org/2000/01/rdf-schema#label> "ha stato di CV del cittadino"@it .
@@ -392,7 +391,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/it
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/riferisceCurriculumVitaeCittadino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/riferisceCurriculumVitaeCittadino> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/PattoAttivazioneDigitaleIndividuale> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/riferisceCurriculumVitaeCittadino> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/riferisceCurriculumVitaeCittadino> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/riferisceCurriculumVitaeCittadino> <http://www.w3.org/2000/01/rdf-schema#comment> "Lega un PAD individuale di un Cittadino ad un CV del Cittadino stesso."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/riferisceCurriculumVitaeCittadino> <http://www.w3.org/2000/01/rdf-schema#label> "riferisce curriculum vitae cittadino"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/sottoscriveDID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -504,12 +503,12 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 <https://w3id.org/italia/labour-social-policies/onto/labour/avvisoPercorsoUpskilling> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/avvisoPercorsoUpskilling> <http://www.w3.org/2000/01/rdf-schema#comment> "Booleano che indica se il corso fa parte di un percorso di aggiornamento"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/avvisoPercorsoUpskilling> <http://www.w3.org/2000/01/rdf-schema#label> "avviso percorso upskilling"@it .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l'accesso"@it .
-<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#label> "avviso requisito compenze digitali"@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l'accesso"@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali> <http://www.w3.org/2000/01/rdf-schema#label> "avviso requisito Competenze digitali"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/canaleDiOrigineOffertaDiLavoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/canaleDiOrigineOffertaDiLavoro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/canaleDiOrigineOffertaDiLavoro> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro> .
@@ -544,7 +543,7 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 <https://w3id.org/italia/labour-social-policies/onto/labour/conoscenzaInformatica> <http://www.w3.org/2000/01/rdf-schema#label> "conoscenza informatica"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV> <http://www.w3.org/2000/01/rdf-schema#comment> "Data in cui il curriculum \u00E8 stato pubblicato. Utile per verifiche di aggiornamento."@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV> <http://www.w3.org/2000/01/rdf-schema#label> "data completamento CV"@it .
@@ -595,7 +594,7 @@ _:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataScadenzaOffertaDiLavoro> <http://www.w3.org/2000/01/rdf-schema#label> "data scadenza offerta di lavoro"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV> <http://www.w3.org/2000/01/rdf-schema#comment> "Data dell'ultimo aggiornamento del CV da parte del cittadino"@it .
 <https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV> <http://www.w3.org/2000/01/rdf-schema#label> "data ultimo aggiornamento CV"@it .
@@ -860,18 +859,18 @@ _:genid28 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/lab
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/labour/titoloCorsoDiFormazione> .
 _:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#comment> "Documento che descrive il profilo curriculare del cittadino (es. esperienze, titoli di studio, competenze, conoscenze, lingue conosciute etc.). Ha uno stato (da completare, in bozza e pubblicato) e una data di aggiornamento."@it .
-<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculum vitae del cittadiino"@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#comment> "Documento che descrive il profilo curriculare del cittadino (es. esperienze, titoli di studio, competenze, conoscenze, lingue conosciute etc.). Ha uno stato (da completare, in bozza e pubblicato) e una data di aggiornamento."@it .
+<https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculum vitae del cittadino"@it .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino> .
 _:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid31 <http://www.w3.org/2002/07/owl#onProperty> _:genid32 .
 _:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid32 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino> .
+_:genid32 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/DichiarazioneImmediataDisponibilit\u00E0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/DichiarazioneImmediataDisponibilit\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/core/Atto> .
 <https://w3id.org/italia/labour-social-policies/onto/labour/DichiarazioneImmediataDisponibilit\u00E0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .

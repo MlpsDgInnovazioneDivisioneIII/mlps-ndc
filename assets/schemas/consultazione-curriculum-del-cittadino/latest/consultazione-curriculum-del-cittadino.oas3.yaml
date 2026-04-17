@@ -7,8 +7,6 @@ info:
     email: dginnovazionediv3@lavoro.gov.it
   version: 1.0.0
   x-summary: Fascicolo Sociale e Lavorativo del Cittadino
-  x-semantic-score: 0.75
-  x-semantic-score-timestamp: 1774016124827
 servers:
   - url: https://apimlpstest.lavoro.gov.it/rest
     description: FSL Test Environment
@@ -224,11 +222,11 @@ components:
           items:
             $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.ProfessioneDesiderata'
       additionalProperties: false
-      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         codiceFiscale: https://w3id.org/italia/onto/CPV/taxCode
-        comuneDomicilio:
+        comuneDomicilio: 
           '@id': https://w3id.org/italia/onto/CLV/hasCity
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
@@ -239,7 +237,7 @@ components:
           '@id': https://w3id.org/italia/onto/SM/hasContactPoint
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
-        fax:
+        fax: 
           '@id': https://w3id.org/italia/onto/SM/hasTelephone
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
@@ -250,21 +248,21 @@ components:
         ultimoAggiornamento: dataUltimoAggiornamentoCV
         stato: statusCV
         dataCompletamento: dataCompletamentoCV
-        conoscenzeInformatiche:
+        conoscenzeInformatiche: 
           '@id': haConoscenzaInformatica
-        conoscenzeLinguistiche:
+        conoscenzeLinguistiche: 
           '@id': haConoscenzaLinguistica
-        esperienzeLavorative:
+        esperienzeLavorative: 
           '@id': haEsperienzaLavorativa
-        formazione:
+        formazione: 
           '@id': haCorsoDiFormazione
-        iscrizioniAlbo:
+        iscrizioniAlbo: 
           '@id': haIscrizioneAlboProfessionale
-        istruzione:
+        istruzione: 
           '@id': haConseguitoTitoloDiStudio
-        patenti:
+        patenti: 
           '@id': haPatenteDiGuida
-        professioniDesiderate:
+        professioniDesiderate: 
           '@id': haProfessioneDesiderata
       example:
         codiceFiscale: "AAAAAA00A00A000A"
@@ -275,9 +273,9 @@ components:
         cellulare: '3564323400'
         fax: '0612345678'
         email: 'prova@prova.it'
-        ultimoAggiornamento: '2025-01-14T00:00:00'
+        ultimoAggiornamento: '2025-01-14T00:00:00Z'
         stato: "Confermato"
-        dataCompletamento: '2025-01-14T00:00:00'
+        dataCompletamento: '2025-01-14T00:00:00Z'
         conoscenzeInformatiche:
           - tipoConoscenza: 'Specialistica'
             eventualiSpecifiche: '002'
@@ -292,8 +290,8 @@ components:
             descrittivoQualifica: 'ballerino'
             mansioniResponsabilita: 'null'
             datoreLavoro: 'Nome datore test'
-            dataInizio: '2025-01-14T00:00:00'
-            dataFine:  '2025-01-14T00:00:00'
+            dataInizio: '2025-01-14T00:00:00Z'
+            dataFine:  '2025-01-14T00:00:00Z'
             indirizzoDatoreLavoro: 'Via Roma 12, 00100 Roma'
         formazione:
           - titoloCorsoFormazione: 'Corso formazione 1'
@@ -301,7 +299,7 @@ components:
             durata: 120
             durataUnitaMisura: 'O'
             certificazioniAttestazioni: '10'
-            qualificaAcquisita: '8.1.3.1.0.15'
+            qualificaAcquisita: '8.1.3.1.0.15' 
             descrittivoQualifica: 'facchino'
         iscrizioniAlbo:
           - albo: '0001'
@@ -312,7 +310,7 @@ components:
         patenti:
           - patente: '02'
         professioniDesiderate:
-          - professione: '8.1.3.3.0.11'
+          - professione: '8.1.3.3.0.11' 
             descrizioneProfessione: 'corriere'
             descrittivoQualifica: 'Qualifica test'
             esperienzaSettore: True
@@ -320,7 +318,7 @@ components:
             disponibilitaTrasferte: False
             disponibilitaMezzoProprio: False
             preferenzaTipologiaContratto: 'A00'
-
+        
 
     FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.DettaglioFormazione:
       type: object
@@ -373,7 +371,7 @@ components:
         durata: 120
         durataUnitaMisura: 'O'
         certificazioniAttestazioni: '10'
-        qualificaAcquisita: '8.1.3.1.0.15'
+        qualificaAcquisita: '8.1.3.1.0.15' 
         descrittivoQualifica: 'facchino'
 
 
@@ -404,7 +402,7 @@ components:
         titoloStudio: '2'
         descrizione: '2'
         votazione: '108/110'
-
+        
 
     FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.EsperienzaLavorativa:
       type: object
@@ -438,7 +436,7 @@ components:
       x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
-        tipoEsperienza:
+        tipoEsperienza: 
           '@id': haTipoDiContrattoDiLavoro
           '@type': '@id'
           '@context':
@@ -462,8 +460,8 @@ components:
         descrittivoQualifica: 'ballerino'
         mansioniResponsabilita: 'null'
         datoreLavoro: 'Nome datore test'
-        dataInizio: '2025-01-14T00:00:00'
-        dataFine:  '2025-01-14T00:00:00'
+        dataInizio: '2025-01-14T00:00:00Z'
+        dataFine:  '2025-01-14T00:00:00Z'
         indirizzoDatoreLavoro: 'Via Roma 12, 00100 Roma'
 
 
@@ -532,7 +530,7 @@ components:
       x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
-        professione:
+        professione: 
           '@id': haTipoDiProfessioneDesiderata
           '@type': '@id'
           '@context':
@@ -551,7 +549,7 @@ components:
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/'
               id: '@id'
       example:
-        professione: '8.1.3.3.0.11'
+        professione: '8.1.3.3.0.11' 
         descrizioneProfessione: 'corriere'
         descrittivoQualifica: 'Qualifica test'
         esperienzaSettore: True
@@ -560,8 +558,8 @@ components:
         disponibilitaMezzoProprio: False
         preferenzaTipologiaContratto: 'A00'
 
-
-
+        
+        
 
     FSL.Api.Domain.Models.Siisl.InputConsultazione:
       required:

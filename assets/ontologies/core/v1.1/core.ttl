@@ -52,8 +52,7 @@ lsp-core: a owl:Ontology ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/core/"^^xsd:anyURI ;
     adms:prefix "lsp-core" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
-    adms:status "catalogued",
-        "published" ;
+    adms:status "draft" ;
     adms:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -536,6 +535,7 @@ lsp-core:AmministrazioneServizioSociale a owl:Class ;
     rdfs:comment "Ruolo di una organizzazione attribuito a chi partecipa al sistema di welfare locale per attivare nel territorio risorse e servizi, pubblici o privati dedicati alla rilevazione dei fabbisogni delle persone e/o dei nuclei familiari in condizione di disagio sociale e lavorativi e in grado di programmare, avviare e gestire un percorso personalizzato di accompagnamento all’inclusione sociale e all’inserimento lavorativo."@it .
 
 lsp-core:AnalisiPreliminareNucleoFamiliare a owl:Class ;
+    rdfs:label "Analisi preliminare del nucleo familiare"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-core:esegueAnalisiPreliminareNucleo ] ;
             owl:someValuesFrom owl:Thing ],
@@ -708,6 +708,7 @@ lsp-core:ProvinciaAutonomaItaliana a owl:Class ;
     rdfs:comment "Una provincia, in Italia, è un ente locale territoriale di area vasta, di livello inferiore alla regione e superiore a quello del comune. In particolare, ci sono due province autonome: quelle di Trento e di Bolzano. Sono autonome in virtù di uno statuto speciale che attribuisce loro particolari forme di autonomia, compresa quella legislativa. Quest'autonomia le rende assimilabili alle regioni e le differenzia dalle altre province, che hanno compiti molto più ridotti."@it .
 
 lsp-core:QuadroDiAnalisiNucleoFamiliare a owl:Class ;
+    rdfs:label "Quadro di analisi nucleo familiare"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf lsp-core:esegueQuadroDiAnalisiNucleo ] ;
             owl:someValuesFrom owl:Thing ],

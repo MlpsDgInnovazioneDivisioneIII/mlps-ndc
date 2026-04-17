@@ -28,8 +28,7 @@
 <https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/italia/labour-social-policies/onto/social/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/prefix> "lsp-social" .
 <https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/italia/data/project/NDC> .
-<https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/status> "catalogued" .
-<https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/status> "published" .
+<https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/status> "draft" .
 <https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/target> "Cittadini"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/target> "Imprese"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/> <https://w3id.org/italia/onto/ADMS/target> "Pubbliche Amministrazioni"@it .
@@ -244,10 +243,10 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/social/haNucleoFamiliareFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> .
 <https://w3id.org/italia/labour-social-policies/onto/social/haNucleoFamiliareFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/social/NucleoFamiliareSocialmenteFragileOInPovert\u00E0> .
 <https://w3id.org/italia/labour-social-policies/onto/social/haNucleoFamiliareFragileOInPovert\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "ha nucleo familiare fragile o in povert\u00E0"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/haObbiettvoDiImpegno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/social/haObbiettvoDiImpegno> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> .
-<https://w3id.org/italia/labour-social-policies/onto/social/haObbiettvoDiImpegno> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> .
-<https://w3id.org/italia/labour-social-policies/onto/social/haObbiettvoDiImpegno> <http://www.w3.org/2000/01/rdf-schema#label> "ha obbiettvo di impegno"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/haobbiettivoDiImpegno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/social/haobbiettivoDiImpegno> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS> .
+<https://w3id.org/italia/labour-social-policies/onto/social/haobbiettivoDiImpegno> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> .
+<https://w3id.org/italia/labour-social-policies/onto/social/haobbiettivoDiImpegno> <http://www.w3.org/2000/01/rdf-schema#label> "ha obbiettivo di impegno"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/haObiettivoPaIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/haObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/PattoInclusioneSocialeDelCaso> .
 <https://w3id.org/italia/labour-social-policies/onto/social/haObiettivoPaIS> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS> .
@@ -352,10 +351,10 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiDisabilit\u00E0> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiDisabilit\u00E0> .
 <https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiDisabilit\u00E0> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/onto/COV/PublicOrganization> .
 <https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiDisabilit\u00E0> <http://www.w3.org/2000/01/rdf-schema#label> "rilascia certificato condizione di disabilit\u00E0"@it .
-<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiSvantagio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiSvantagio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> .
-<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiSvantagio> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/onto/COV/PublicOrganization> .
-<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiSvantagio> <http://www.w3.org/2000/01/rdf-schema#label> "rilascia certificato condizione di svantagio"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDisvantaggio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDisvantaggio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio> .
+<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDisvantaggio> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/onto/COV/PublicOrganization> .
+<https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDisvantaggio> <http://www.w3.org/2000/01/rdf-schema#label> "rilascia certificato condizione di svantaggio"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/rilevaEsitoImpegnoPaIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/rilevaEsitoImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiIncontroDiMonitoraggio> .
 <https://w3id.org/italia/labour-social-policies/onto/social/rilevaEsitoImpegnoPaIS> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/labour-social-policies/onto/social/EsitoImpegnoPaIS> .
@@ -419,18 +418,22 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDiAttivabile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDiAttivabile> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDiAttivabile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDiAttivabile> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso condizione di attivabile"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDisabilit\u00E0GraveNonAutosufficienza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDisabilit\u00E0GraveNonAutosufficienza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDisabilit\u00E0GraveNonAutosufficienza> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDisabilit\u00E0GraveNonAutosufficienza> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneDisabilit\u00E0GraveNonAutosufficienza> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso condizione disabilità grave non autosufficienza"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneMalatoOncologico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneMalatoOncologico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneMalatoOncologico> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneMalatoOncologico> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneMalatoOncologico> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso condizione malato oncologico"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneSvantaggio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneSvantaggio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneSvantaggio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneSvantaggio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoCondizioneSvantaggio> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso condizione di svantaggio"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoDeclaratoriaFirmata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoDeclaratoriaFirmata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoDeclaratoriaFirmata> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/PattoAttivazioneDigitaleNucleo> .
@@ -450,19 +453,22 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoEsclusioneObblighi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoEsclusioneObblighi> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoEsclusioneObblighi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoEsclusioneObblighi> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso esclusione obblighi"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoFrequenzaCorsoDiStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoFrequenzaCorsoDiStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoFrequenzaCorsoDiStudio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoFrequenzaCorsoDiStudio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoFrequenzaCorsoDiStudio> <http://www.w3.org/2000/01/rdf-schema#range> "Avviso frequenza corso di studio"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoInserimentoPercorsoDiProtezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoInserimentoPercorsoDiProtezione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoInserimentoPercorsoDiProtezione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoInserimentoPercorsoDiProtezione> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionePersorsoDiIstruzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionePersorsoDiIstruzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionePersorsoDiIstruzione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni> .
-<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionePersorsoDiIstruzione> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionePersorsoDiIstruzione> <http://www.w3.org/2000/01/rdf-schema#label> "avviso iscrizione persorso di istruzione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoInserimentoPercorsoDiProtezione> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso inserimento percorso di protezione"@it .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionepercorsoDiIstruzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionepercorsoDiIstruzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionepercorsoDiIstruzione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionepercorsoDiIstruzione> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionepercorsoDiIstruzione> <http://www.w3.org/2000/01/rdf-schema#label> "avviso iscrizione percorso di istruzione"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoMembroRiferimentoEquipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoMembroRiferimentoEquipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoMembroRiferimentoEquipe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/MembroEquipeMultidisciplinareDelCaso> .
@@ -472,14 +478,17 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoObblighiPattoPAIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoObblighiPattoPAIS> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoObblighiPattoPAIS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoObblighiPattoPAIS> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso obblighi patto PAIS"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoObbligoPresentazione90GG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoObbligoPresentazione90GG> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoObbligoPresentazione90GG> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoObbligoPresentazione90GG> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoObbligoPresentazione90GG> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso obbligo presentazione 90GG"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPensioneDiretta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPensioneDiretta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPensioneDiretta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPensioneDiretta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoPensioneDiretta> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso pensione diretta"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresentazioneSpontaneaBeneficiario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresentazioneSpontaneaBeneficiario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresentazioneSpontaneaBeneficiario> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/StatoDiPianificatoPrimoIncontro> .
@@ -489,6 +498,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresenzaCaricoDiCura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresenzaCaricoDiCura> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresenzaCaricoDiCura> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresenzaCaricoDiCura> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso presenza carico di cura"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresenzaEquipeDiCaso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresenzaEquipeDiCaso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoPresenzaEquipeDiCaso> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/CasoDiNucleoFragileOInPovert\u00E0> .
@@ -498,10 +508,12 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoResponsabilit\u00E0Genitoriale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoResponsabilit\u00E0Genitoriale> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoResponsabilit\u00E0Genitoriale> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoResponsabilit\u00E0Genitoriale> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso responsabilità genitoriale"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoStatoDiOccupazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoStatoDiOccupazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoStatoDiOccupazione> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare> .
 <https://w3id.org/italia/labour-social-policies/onto/social/avvisoStatoDiOccupazione> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/italia/labour-social-policies/onto/social/avvisoStatoDiOccupazione> <http://www.w3.org/2000/01/rdf-schema#label> "Avviso stato di occupazione"@it .
 <https://w3id.org/italia/labour-social-policies/onto/social/categoriaAtto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/categoriaAtto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://w3id.org/italia/labour-social-policies/onto/social/categoriaAtto> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/labour-social-policies/onto/social/AttoDiAttribuzioneCategoriaObbligoAttivazione> .

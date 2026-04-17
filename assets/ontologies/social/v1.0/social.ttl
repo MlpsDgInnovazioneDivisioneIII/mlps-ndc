@@ -50,8 +50,7 @@ lsp-social: a owl:Ontology ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/social/"^^xsd:anyURI ;
     adms:prefix "lsp-social" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
-    adms:status "catalogued",
-        "published" ;
+    adms:status "draft" ;
     adms:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -303,8 +302,8 @@ lsp-social:haNucleoFamiliareFragileOInPovertà a owl:FunctionalProperty,
     rdfs:domain lsp-social:CasoDiNucleoFragileOInPovertà ;
     rdfs:range lsp-social:NucleoFamiliareSocialmenteFragileOInPovertà .
 
-lsp-social:haObbiettvoDiImpegno a owl:ObjectProperty ;
-    rdfs:label "ha obbiettvo di impegno"@it ;
+lsp-social:haobbiettivoDiImpegno a owl:ObjectProperty ;
+    rdfs:label "ha obbiettivo di impegno"@it ;
     rdfs:domain lsp-social:ImpegnoPaIS ;
     rdfs:range lsp-social:ObiettivoPaIS .
 
@@ -433,8 +432,8 @@ lsp-social:rilasciaCertificatoCondizioneDiDisabilità a owl:ObjectProperty ;
     rdfs:domain lsp-social:CertificatoCondizioneDiDisabilità ;
     rdfs:range COV:PublicOrganization .
 
-lsp-social:rilasciaCertificatoCondizioneDiSvantagio a owl:ObjectProperty ;
-    rdfs:label "rilascia certificato condizione di svantagio"@it ;
+lsp-social:rilasciaCertificatoCondizioneDisvantaggio a owl:ObjectProperty ;
+    rdfs:label "rilascia certificato condizione di svantaggio"@it ;
     rdfs:domain lsp-social:CertificatoCondizioneDiSvantaggio ;
     rdfs:range COV:PublicOrganization .
 
@@ -523,21 +522,25 @@ lsp-social:avvisoComponenteResidenteInStrutturaPubblica a owl:DatatypeProperty,
 
 lsp-social:avvisoCondizioneDiAttivabile a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso condizione di attivabile"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoCondizioneDisabilitàGraveNonAutosufficienza a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso condizione disabilità grave non autosufficienza"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoCondizioneMalatoOncologico a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso condizione malato oncologico"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoCondizioneSvantaggio a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso condizione di svantaggio"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
@@ -561,22 +564,25 @@ lsp-social:avvisoDiPresenteNelNucleoFamiliare a owl:DatatypeProperty,
 
 lsp-social:avvisoEsclusioneObblighi a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso esclusione obblighi"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoFrequenzaCorsoDiStudio a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso frequenza corso di studio"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoInserimentoPercorsoDiProtezione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso inserimento percorso di protezione"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
-lsp-social:avvisoIscrizionePersorsoDiIstruzione a owl:DatatypeProperty,
+lsp-social:avvisoIscrizionepercorsoDiIstruzione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "avviso iscrizione persorso di istruzione"@it ;
+    rdfs:label "avviso iscrizione percorso di istruzione"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni ;
     rdfs:range xsd:boolean .
 
@@ -588,16 +594,19 @@ lsp-social:avvisoMembroRiferimentoEquipe a owl:DatatypeProperty,
 
 lsp-social:avvisoObblighiPattoPAIS a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso obblighi patto PAIS"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoObbligoPresentazione90GG a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso obbligo presentazione 90GG"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoPensioneDiretta a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso pensione diretta"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
@@ -609,6 +618,7 @@ lsp-social:avvisoPresentazioneSpontaneaBeneficiario a owl:DatatypeProperty,
 
 lsp-social:avvisoPresenzaCaricoDiCura a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso presenza carico di cura"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
@@ -620,11 +630,13 @@ lsp-social:avvisoPresenzaEquipeDiCaso a owl:DatatypeProperty,
 
 lsp-social:avvisoResponsabilitàGenitoriale a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso responsabilità genitoriale"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 
 lsp-social:avvisoStatoDiOccupazione a owl:DatatypeProperty,
         owl:FunctionalProperty ;
+    rdfs:label "Avviso stato di occupazione"@it ;
     rdfs:domain lsp-social:ComponenteNucleoFamiliare ;
     rdfs:range xsd:boolean .
 

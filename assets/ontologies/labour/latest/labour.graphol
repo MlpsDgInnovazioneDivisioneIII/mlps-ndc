@@ -356,19 +356,19 @@
           </annotations>
         </iri>
         <iri>
-          <value>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino</value>
+          <value>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino</value>
           <annotations>
             <annotation>
-              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino</subject>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#label</property>
               <object>
-                <lexicalForm>Curriculum vitae del cittadiino</lexicalForm>
+                <lexicalForm>Curriculum vitae del cittadino</lexicalForm>
                 <datatype/>
                 <language>it</language>
               </object>
             </annotation>
             <annotation>
-              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino</subject>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
               <object>
                 <lexicalForm>Documento che descrive il profilo curriculare del cittadino (es. esperienze, titoli di studio, competenze, conoscenze, lingue conosciute etc.). Ha uno stato (da completare, in bozza e pubblicato) e una data di aggiornamento.</lexicalForm>
@@ -1542,20 +1542,20 @@
           </annotations>
         </iri>
         <iri>
-          <value>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali</value>
+          <value>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali</value>
           <functional/>
           <annotations>
             <annotation>
-              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali</subject>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#label</property>
               <object>
-                <lexicalForm>avviso requisito compenze digitali</lexicalForm>
+                <lexicalForm>avviso requisito Competenze digitali</lexicalForm>
                 <datatype/>
                 <language>it</language>
               </object>
             </annotation>
             <annotation>
-              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali</subject>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
               <object>
                 <lexicalForm>Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l'accesso</lexicalForm>
@@ -2467,20 +2467,20 @@ Nel caso in cui il PAD individuale sia sottoscritto nell'ambito di una prestazio
           </annotations>
         </iri>
         <iri>
-          <value>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino</value>
+          <value>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino</value>
           <inverseFunctional/>
           <annotations>
             <annotation>
-              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino</subject>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#label</property>
               <object>
-                <lexicalForm>ha curriculum vitae del cittadiino</lexicalForm>
+                <lexicalForm>ha curriculum vitae del cittadino</lexicalForm>
                 <datatype/>
                 <language>it</language>
               </object>
             </annotation>
             <annotation>
-              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino</subject>
+              <subject>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
               <object>
                 <lexicalForm>Lega un cittadino ad un suo Curriculum vitae.</lexicalForm>
@@ -4763,7 +4763,7 @@ Nel caso in cui il PAD individuale sia sottoscritto nell'ambito di una prestazio
         </node>
         <node color="#fcfcfc" id="n2" type="concept">
           <geometry width="110" x="300" height="50" y="520"/>
-          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino</iri>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino</iri>
           <label width="110" size="12" x="300" height="36" customSize="0" y="520"/>
         </node>
         <node color="#fcfcfc" id="n20" type="concept">
@@ -4853,7 +4853,7 @@ Nel caso in cui il PAD individuale sia sottoscritto nell'ambito di una prestazio
         </node>
         <node color="#fcfcfc" id="n4" type="role">
           <geometry width="70" x="300" height="50" y="270"/>
-          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino</iri>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino</iri>
           <label width="185" size="12" x="300" height="22" customSize="0" y="240"/>
         </node>
         <node color="#000000" id="n40" type="range-restriction">
@@ -6172,7 +6172,7 @@ Nel caso in cui il PAD individuale sia sottoscritto nell'ambito di una prestazio
         </node>
         <node color="#fcfcfc" id="n119" type="attribute">
           <geometry width="20" x="720" height="20" y="-600"/>
-          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali</iri>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali</iri>
           <label width="192" size="12" x="720" height="22" customSize="0" y="-622"/>
         </node>
         <node color="#fcfcfc" id="n12" type="attribute">
@@ -7590,7 +7590,7 @@ Nel caso in cui il PAD individuale sia sottoscritto nell'ambito di una prestazio
         </node>
         <node color="#fcfcfc" id="n23" type="attribute">
           <geometry width="20" x="160" height="20" y="750"/>
-          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali</iri>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali</iri>
           <label width="192" size="12" x="160" height="22" customSize="0" y="728"/>
         </node>
         <node color="#000000" id="n24" type="range-restriction">

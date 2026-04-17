@@ -7,8 +7,6 @@ info:
     email: dginnovazionediv3@lavoro.gov.it
   version: 1.0.0
   x-summary: Fascicolo Sociale e Lavorativo del Cittadino
-  x-semantic-score: 0.4
-  x-semantic-score-timestamp: 1774016662191
 servers:
   - url: https://apimlpstest.lavoro.gov.it/rest
     description: FSL Test Environment
@@ -228,7 +226,7 @@ components:
         id: idOffertaFormativa
         titolo: titoloOffertaFormativa
         settoreLivello1:
-          '@id': haSettoreDiInteresse
+          '@id': haSettoreDiInteresse 
           '@type': '@id'
           '@context':
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/'
@@ -236,7 +234,7 @@ components:
         finalita: finalitàOffertaFormativa
         programma: programmazioneAttivitàCorso
         requisitiAmmissione: requisitoAmmissioneOffertaFormativa
-        postiDisponibili:
+        postiDisponibili: 
           '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haEdizioneOffertaFormativa
           '@context':
               postiDisponibili: https://w3id.org/italia/labour-social-policies/onto/labour/postiDisponibiliEdizioneCorso
@@ -258,13 +256,13 @@ components:
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_modalita_formativa/'
               id: '@id'
         sedeErogazione: https://w3id.org/italia/onto/CLV/fullAddress
-        codiceComune:
+        codiceComune: 
           '@id': https://w3id.org/italia/onto/CLV/hasCity
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
         descrizioneComune: comuneOffertaFormativa
-        competenzeDigitali: avvisoRequisitoCompenzeDigitali
-        livelloCompetenzeDigitali:
+        competenzeDigitali: avvisoRequisitocompetenzeDigitali
+        livelloCompetenzeDigitali: 
           '@id': haLivelloCompetenzeDigitali
           '@type': '@id'
           '@context':
@@ -272,13 +270,13 @@ components:
               id: '@id'
         dataInizioPubblicazione: dataInizioPubblicazione
         dataFinePubblicazione: dataFinePubblicazione
-        attestato:
+        attestato: 
           '@id': haMacroCategoriaAttestatoCorso
           '@type': '@id'
           '@context':
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_attestazione/'
               id: '@id'
-        attestatoDettaglio:
+        attestatoDettaglio: 
           '@id': haMicroCategoriaAttestatoCorso
           '@type': '@id'
           '@context':
@@ -288,7 +286,7 @@ components:
         isCpia: avvisoEnteFormatoreCPIA
         stato: statusEdizioneOffertaFormativa
         isRegionale: avvisoCorsoRegionale
-        codiceRegione:
+        codiceRegione: 
           '@id': https://w3id.org/italia/onto/CLV/hasRegion
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
@@ -299,13 +297,13 @@ components:
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_regione/'
               id: '@id'
         idRegionale: http://www.w3.org/2004/02/skos/core#notation
-        tipologiaCorso:
+        tipologiaCorso: 
           '@id': haTipologiaOffertaFormativa
           '@type': '@id'
           '@context':
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_corso_formazione/'
               id: '@id'
-        tipoProgramma:
+        tipoProgramma: 
           '@id': haTipoProgrammaAttivazioneCorso
           '@type': '@id'
           '@context':
@@ -315,7 +313,7 @@ components:
         isPercorsoUpskilling: avvisoPercorsoUpskilling
         isPercorsoReskilling: avvisoPercorsoReskilling
         isPercorsoLavoroInclusione: avvisoPercorsoLavoroInclusione
-        percorsoPsp:
+        percorsoPsp: 
           '@id': haTipoPercorsoPSP
           '@type': '@id'
           '@context':
@@ -353,7 +351,7 @@ components:
         tipologiaCorso: '01'
         tipoProgramma: '99'
         isPercorsoReinserimentoLavorativo: False
-        isPercorsoUpskilling: False
+        isPercorsoUpskilling: False 
         isPercorsoReskilling: True
         isPercorsoLavoroInclusione: False
 
@@ -420,7 +418,7 @@ components:
         denominazione: https://w3id.org/italia/onto/COV/legalName
         indirizzo: https://w3id.org/italia/onto/CLV/fullAddress
         cap: https://w3id.org/italia/onto/CLV/postCode
-        codiceComune:
+        codiceComune: 
           '@id': https://w3id.org/italia/onto/CLV/hasCity
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
@@ -430,11 +428,11 @@ components:
         pec: https://w3id.org/italia/onto/SM/emailAddress
         iscrizioneElencoRegionale: dataIscrizioneElencoRegionale
         decadenza: decadenzaAbilitazioneErogazione
-        website:
+        website: 
           '@id': https://w3id.org/italia/onto/SM/hasWebSite
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
-        ambitoAccreditamento:
+        ambitoAccreditamento: 
           '@id': haAccreditamentoPerFormazione
           '@type': '@id'
           '@context':
@@ -459,7 +457,7 @@ components:
         ambitoAccreditamento: '2'
         ambitoAccreditamentoAltro: 'null'
         isActive: true
-
+        
 
     FSL.Common.Support.Models.Api.HealthCheckSuccess:
       type: object

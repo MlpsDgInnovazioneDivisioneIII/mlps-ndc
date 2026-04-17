@@ -73,8 +73,7 @@
         <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/labour-social-policies/onto/labour/</adms:officialURI>
         <adms:prefix>lsp-labour</adms:prefix>
         <adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
-        <adms:status>catalogued</adms:status>
-        <adms:status>published</adms:status>
+        <adms:status>draft</adms:status>
         <adms:target xml:lang="it">Cittadini</adms:target>
         <adms:target xml:lang="it">Imprese</adms:target>
         <adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
@@ -211,7 +210,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaInformatica">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaInformatica"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza informatica.</rdfs:comment>
         <rdfs:label xml:lang="it">ha conoscenza informatica</rdfs:label>
@@ -223,7 +222,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haConoscenzaLinguistica">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaLinguistica"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza linguistica.</rdfs:comment>
         <rdfs:label xml:lang="it">ha conoscenza linguistica</rdfs:label>
@@ -235,7 +234,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haConseguitoTitoloDiStudio">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/TitoloDiStudioConseguito"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino ad una sua sezione riguardante un Titolo di studio conseguito.</rdfs:comment>
         <rdfs:label xml:lang="it">ha conseguito titolo di studio</rdfs:label>
@@ -247,7 +246,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haCorsoDiFormazione">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CorsoDiFormazione"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino ad una sua sezione riguardante un Corso di formazione frequentato.</rdfs:comment>
         <rdfs:label xml:lang="it">ha corso di formazione</rdfs:label>
@@ -255,14 +254,14 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino">
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/RPO/RegisteredResidentPerson"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:comment xml:lang="it">Lega un cittadino ad un suo Curriculum vitae.</rdfs:comment>
-        <rdfs:label xml:lang="it">ha curriculum vitae del cittadiino</rdfs:label>
+        <rdfs:label xml:lang="it">ha curriculum vitae del cittadino</rdfs:label>
     </owl:ObjectProperty>
 
 
@@ -319,7 +318,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haEsperienzaLavorativa">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino ad una sua sezione riguardante una sua Esperienza lavorativa.</rdfs:comment>
         <rdfs:label xml:lang="it">ha esperienza lavorativa</rdfs:label>
@@ -375,7 +374,7 @@
     <!-- https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/AlboProfessionale"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino a un Albo professionale a cui èiscritto.</rdfs:comment>
         <rdfs:label xml:lang="it">ha iscrizione albo professionale</rdfs:label>
@@ -530,7 +529,7 @@
     <!-- https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/PatenteDiGuida"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino ad una Patente di guida posseduta.</rdfs:comment>
         <rdfs:label xml:lang="it">ha patente di guida</rdfs:label>
@@ -554,7 +553,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haProfessioneDesiderata">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata"/>
         <rdfs:comment xml:lang="it">Lega il CV del cittadino ad una sua sezione riguardante una professione desiderata.</rdfs:comment>
         <rdfs:label xml:lang="it">ha professione desiderata</rdfs:label>
@@ -607,7 +606,7 @@
     <!-- https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/StatoDiCVDelCittadino"/>
         <rdfs:comment xml:lang="it">Lega un CV del cittadino al suo stato di completamento e consultabilità.</rdfs:comment>
         <rdfs:label xml:lang="it">ha stato di CV del cittadino</rdfs:label>
@@ -802,7 +801,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/riferisceCurriculumVitaeCittadino">
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/PattoAttivazioneDigitaleIndividuale"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:comment xml:lang="it">Lega un PAD individuale di un Cittadino ad un CV del Cittadino stesso.</rdfs:comment>
         <rdfs:label xml:lang="it">riferisce curriculum vitae cittadino</rdfs:label>
     </owl:ObjectProperty>
@@ -1052,14 +1051,14 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompenzeDigitali">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/avvisoRequisitoCompetenzeDigitali">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/OffertaFormativa"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="it">Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l&apos;accesso</rdfs:comment>
-        <rdfs:label xml:lang="it">avviso requisito compenze digitali</rdfs:label>
+        <rdfs:label xml:lang="it">avviso requisito Competenze digitali</rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1136,7 +1135,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataCompletamentoCV">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data in cui il curriculum è stato pubblicato. Utile per verifiche di aggiornamento.</rdfs:comment>
         <rdfs:label xml:lang="it">data completamento CV</rdfs:label>
@@ -1241,7 +1240,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/dataUltimoAggiornamentoCV">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino"/>
+        <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="it">Data dell&apos;ultimo aggiornamento del CV da parte del cittadino</rdfs:comment>
         <rdfs:label xml:lang="it">data ultimo aggiornamento CV</rdfs:label>
@@ -1834,9 +1833,9 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadiino">
+    <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/labour/CurriculumVitaeDelCittadino">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/haStatoDiCVDelCittadino"/>
@@ -1847,14 +1846,14 @@
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadiino"/>
+                        <owl:inverseOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/labour/haCurriculumVitaeDelCittadino"/>
                     </rdf:Description>
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Documento che descrive il profilo curriculare del cittadino (es. esperienze, titoli di studio, competenze, conoscenze, lingue conosciute etc.). Ha uno stato (da completare, in bozza e pubblicato) e una data di aggiornamento.</rdfs:comment>
-        <rdfs:label xml:lang="it">Curriculum vitae del cittadiino</rdfs:label>
+        <rdfs:label xml:lang="it">Curriculum vitae del cittadino</rdfs:label>
     </owl:Class>
 
 

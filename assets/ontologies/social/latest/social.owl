@@ -74,8 +74,7 @@
         <adms:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/labour-social-policies/onto/social/</adms:officialURI>
         <adms:prefix>lsp-social</adms:prefix>
         <adms:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
-        <adms:status>catalogued</adms:status>
-        <adms:status>published</adms:status>
+        <adms:status>draft</adms:status>
         <adms:target xml:lang="it">Cittadini</adms:target>
         <adms:target xml:lang="it">Imprese</adms:target>
         <adms:target xml:lang="it">Pubbliche Amministrazioni</adms:target>
@@ -764,12 +763,12 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/social/haObbiettvoDiImpegno -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/social/haobbiettivoDiImpegno -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/haObbiettvoDiImpegno">
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/haobbiettivoDiImpegno">
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ObiettivoPaIS"/>
-        <rdfs:label xml:lang="it">ha obbiettvo di impegno</rdfs:label>
+        <rdfs:label xml:lang="it">ha obbiettivo di impegno</rdfs:label>
     </owl:ObjectProperty>
 
 
@@ -1004,12 +1003,12 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiSvantagio -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDisvantaggio -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDiSvantagio">
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/rilasciaCertificatoCondizioneDisvantaggio">
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/CertificatoCondizioneDiSvantaggio"/>
         <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/PublicOrganization"/>
-        <rdfs:label xml:lang="it">rilascia certificato condizione di svantagio</rdfs:label>
+        <rdfs:label xml:lang="it">rilascia certificato condizione di svantaggio</rdfs:label>
     </owl:ObjectProperty>
 
 
@@ -1201,6 +1200,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso condizione di attivabile</rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1211,6 +1211,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso condizione disabilità grave non autosufficienza" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1221,6 +1222,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso condizione malato oncologico" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1231,6 +1233,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso condizione svantaggio" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1274,6 +1277,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso esclusione obblighi" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1284,6 +1288,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso frequenza corso di studio" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1294,17 +1299,18 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso inserimento percorso di protezione" </rdfs:label>
     </owl:DatatypeProperty>
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionePersorsoDiIstruzione -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionepercorsoDiIstruzione -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionePersorsoDiIstruzione">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/avvisoIscrizionepercorsoDiIstruzione">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliareMaggiorenneConMenoDi29Anni"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="it">avviso iscrizione persorso di istruzione</rdfs:label>
+        <rdfs:label xml:lang="it">avviso iscrizione percorso di istruzione</rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1326,6 +1332,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso obblighi patto PAIS" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1336,6 +1343,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso obbligo presentazione 90GG" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1346,6 +1354,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso pensione diretta" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1367,6 +1376,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso presenza carico di cura" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1388,6 +1398,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso responsabilità genitoriale" </rdfs:label>
     </owl:DatatypeProperty>
 
 
@@ -1398,6 +1409,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/ComponenteNucleoFamiliare"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">Avviso stato di occupazione" </rdfs:label>
     </owl:DatatypeProperty>
 
 

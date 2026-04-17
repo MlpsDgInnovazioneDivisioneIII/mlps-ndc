@@ -49,8 +49,7 @@ lsp-labour: a owl:Ontology ;
     adms:officialURI "https://w3id.org/italia/labour-social-policies/onto/labour/"^^xsd:anyURI ;
     adms:prefix "lsp-labour" ;
     adms:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ;
-    adms:status "catalogued",
-        "published" ;
+    adms:status "draft" ;
     adms:target "Cittadini"@it,
         "Imprese"@it,
         "Pubbliche Amministrazioni"@it ;
@@ -115,28 +114,28 @@ lsp-labour:haCanaleDiOrigineOffertaDiLavoro a owl:ObjectProperty ;
 lsp-labour:haConoscenzaInformatica a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha conoscenza informatica"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:ConoscenzaInformatica ;
     rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza informatica."@it .
 
 lsp-labour:haConoscenzaLinguistica a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha conoscenza linguistica"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:ConoscenzaLinguistica ;
     rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante la Conoscenza linguistica."@it .
 
 lsp-labour:haConseguitoTitoloDiStudio a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha conseguito titolo di studio"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:TitoloDiStudioConseguito ;
     rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante un Titolo di studio conseguito."@it .
 
 lsp-labour:haCorsoDiFormazione a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha corso di formazione"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:CorsoDiFormazione ;
     rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante un Corso di formazione frequentato."@it .
 
@@ -149,11 +148,11 @@ lsp-labour:haCPIReferente a owl:ObjectProperty ;
     rdfs:range lsp-core:CentroPerImpiego ;
     rdfs:comment "Lega un PSP o una DID al Centro per l'impiego con cui è stata sottoscritta."@it .
 
-lsp-labour:haCurriculumVitaeDelCittadiino a owl:InverseFunctionalProperty,
+lsp-labour:haCurriculumVitaeDelCittadino a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
-    rdfs:label "ha curriculum vitae del cittadiino"@it ;
+    rdfs:label "ha curriculum vitae del cittadino"@it ;
     rdfs:domain rpo:RegisteredResidentPerson ;
-    rdfs:range lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:comment "Lega un cittadino ad un suo Curriculum vitae."@it .
 
 lsp-labour:haDIDAbilitante a owl:FunctionalProperty,
@@ -187,7 +186,7 @@ lsp-labour:haEnteErogatore a owl:FunctionalProperty,
 lsp-labour:haEsperienzaLavorativa a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha esperienza lavorativa"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:EsperienzaLavorativa ;
     rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante una sua Esperienza lavorativa."@it .
 
@@ -218,7 +217,7 @@ lsp-labour:haGradoDiConoscenzaLinguisticaScritta a owl:FunctionalProperty,
 
 lsp-labour:haIscrizioneAlboProfessionale a owl:ObjectProperty ;
     rdfs:label "ha iscrizione albo professionale"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:AlboProfessionale ;
     rdfs:comment "Lega il CV del cittadino a un Albo professionale a cui èiscritto."@it .
 
@@ -308,7 +307,7 @@ lsp-labour:haPADIndividuale a owl:InverseFunctionalProperty,
 
 lsp-labour:haPatenteDiGuida a owl:ObjectProperty ;
     rdfs:label "ha patente di guida"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:PatenteDiGuida ;
     rdfs:comment "Lega il CV del cittadino ad una Patente di guida posseduta."@it .
 
@@ -322,7 +321,7 @@ lsp-labour:haPattoServizioPersonalizzato a owl:InverseFunctionalProperty,
 lsp-labour:haProfessioneDesiderata a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha professione desiderata"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:ProfessioneDesiderata ;
     rdfs:comment "Lega il CV del cittadino ad una sua sezione riguardante una professione desiderata."@it .
 
@@ -351,7 +350,7 @@ lsp-labour:haSettoreDiInteresse a owl:FunctionalProperty,
 
 lsp-labour:haStatoDiCVDelCittadino a owl:ObjectProperty ;
     rdfs:label "ha stato di CV del cittadino"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range lsp-labour:StatoDiCVDelCittadino ;
     rdfs:comment "Lega un CV del cittadino al suo stato di completamento e consultabilità."@it .
 
@@ -462,7 +461,7 @@ lsp-labour:proponeOffertaDiLavoro a owl:InverseFunctionalProperty,
 lsp-labour:riferisceCurriculumVitaeCittadino a owl:ObjectProperty ;
     rdfs:label "riferisce curriculum vitae cittadino"@it ;
     rdfs:domain lsp-labour:PattoAttivazioneDigitaleIndividuale ;
-    rdfs:range lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:range lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:comment "Lega un PAD individuale di un Cittadino ad un CV del Cittadino stesso."@it .
 
 lsp-labour:sottoscriveDID a owl:InverseFunctionalProperty,
@@ -597,9 +596,9 @@ lsp-labour:avvisoPercorsoUpskilling a owl:DatatypeProperty,
     rdfs:domain lsp-labour:OffertaFormativa ;
     rdfs:comment "Booleano che indica se il corso fa parte di un percorso di aggiornamento"@it .
 
-lsp-labour:avvisoRequisitoCompenzeDigitali a owl:DatatypeProperty,
+lsp-labour:avvisoRequisitoCompetenzeDigitali a owl:DatatypeProperty,
         owl:FunctionalProperty ;
-    rdfs:label "avviso requisito compenze digitali"@it ;
+    rdfs:label "avviso requisito Competenze digitali"@it ;
     rdfs:domain lsp-labour:OffertaFormativa ;
     rdfs:range xsd:boolean ;
     rdfs:comment "Indicatore booleano che segnala se il corso di formazione prevede competenze digitali per l'accesso"@it .
@@ -645,7 +644,7 @@ lsp-labour:conoscenzaInformatica a owl:DatatypeProperty,
 lsp-labour:dataCompletamentoCV a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data completamento CV"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range xsd:dateTime ;
     rdfs:comment "Data in cui il curriculum è stato pubblicato. Utile per verifiche di aggiornamento."@it .
 
@@ -705,7 +704,7 @@ lsp-labour:dataScadenzaOffertaDiLavoro a owl:DatatypeProperty,
 lsp-labour:dataUltimoAggiornamentoCV a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "data ultimo aggiornamento CV"@it ;
-    rdfs:domain lsp-labour:CurriculumVitaeDelCittadiino ;
+    rdfs:domain lsp-labour:CurriculumVitaeDelCittadino ;
     rdfs:range xsd:dateTime ;
     rdfs:comment "Data dell'ultimo aggiornamento del CV da parte del cittadino"@it .
 
@@ -1006,13 +1005,13 @@ lsp-labour:CorsoDiFormazione a owl:Class ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Percorso strutturato volto a sviluppare conoscenze e abilità in un ambito. Include titolo, sede, durata, programma, finalità etc. "@it .
 
-lsp-labour:CurriculumVitaeDelCittadiino a owl:Class ;
-    rdfs:label "Curriculum vitae del cittadiino"@it ;
+lsp-labour:CurriculumVitaeDelCittadino a owl:Class ;
+    rdfs:label "Curriculum vitae del cittadino"@it ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lsp-labour:haStatoDiCVDelCittadino ;
             owl:someValuesFrom owl:Thing ],
         [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf lsp-labour:haCurriculumVitaeDelCittadiino ] ;
+            owl:onProperty [ owl:inverseOf lsp-labour:haCurriculumVitaeDelCittadino ] ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Documento che descrive il profilo curriculare del cittadino (es. esperienze, titoli di studio, competenze, conoscenze, lingue conosciute etc.). Ha uno stato (da completare, in bozza e pubblicato) e una data di aggiornamento."@it .
 

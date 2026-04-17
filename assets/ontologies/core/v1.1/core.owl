@@ -93,8 +93,7 @@
     <ns0:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/labour-social-policies/onto/core/</ns0:officialURI>
     <ns0:prefix>lsp-core</ns0:prefix>
     <ns0:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
-    <ns0:status>catalogued</ns0:status>
-    <ns0:status>published</ns0:status>
+    <ns0:status>draft</ns0:status>
     <ns0:target xml:lang="it">Cittadini</ns0:target>
     <ns0:target xml:lang="it">Imprese</ns0:target>
     <ns0:target xml:lang="it">Pubbliche Amministrazioni</ns0:target>
@@ -796,6 +795,7 @@
   </owl:Class>
 
   <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/AnalisiPreliminareNucleoFamiliare">
+    <rdfs:label xml:lang="it">Analisi preliminare del nucleo familiare</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -1227,6 +1227,7 @@
   </owl:Class>
 
   <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/QuadroDiAnalisiNucleoFamiliare">
+    <rdfs:label xml:lang="it">Quadro di analisi nucleo familiare</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
