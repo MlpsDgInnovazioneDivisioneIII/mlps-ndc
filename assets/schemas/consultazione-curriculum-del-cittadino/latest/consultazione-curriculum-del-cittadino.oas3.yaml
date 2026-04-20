@@ -226,7 +226,7 @@ components:
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         codiceFiscale: https://w3id.org/italia/onto/CPV/taxCode
-        comuneDomicilio: 
+        comuneDomicilio:
           '@id': https://w3id.org/italia/onto/CLV/hasCity
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
@@ -237,7 +237,7 @@ components:
           '@id': https://w3id.org/italia/onto/SM/hasContactPoint
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
-        fax: 
+        fax:
           '@id': https://w3id.org/italia/onto/SM/hasTelephone
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
@@ -248,21 +248,21 @@ components:
         ultimoAggiornamento: dataUltimoAggiornamentoCV
         stato: statusCV
         dataCompletamento: dataCompletamentoCV
-        conoscenzeInformatiche: 
+        conoscenzeInformatiche:
           '@id': haConoscenzaInformatica
-        conoscenzeLinguistiche: 
+        conoscenzeLinguistiche:
           '@id': haConoscenzaLinguistica
-        esperienzeLavorative: 
+        esperienzeLavorative:
           '@id': haEsperienzaLavorativa
-        formazione: 
+        formazione:
           '@id': haCorsoDiFormazione
-        iscrizioniAlbo: 
+        iscrizioniAlbo:
           '@id': haIscrizioneAlboProfessionale
-        istruzione: 
+        istruzione:
           '@id': haConseguitoTitoloDiStudio
-        patenti: 
+        patenti:
           '@id': haPatenteDiGuida
-        professioniDesiderate: 
+        professioniDesiderate:
           '@id': haProfessioneDesiderata
       example:
         codiceFiscale: "AAAAAA00A00A000A"
@@ -299,7 +299,7 @@ components:
             durata: 120
             durataUnitaMisura: 'O'
             certificazioniAttestazioni: '10'
-            qualificaAcquisita: '8.1.3.1.0.15' 
+            qualificaAcquisita: '8.1.3.1.0.15'
             descrittivoQualifica: 'facchino'
         iscrizioniAlbo:
           - albo: '0001'
@@ -310,7 +310,7 @@ components:
         patenti:
           - patente: '02'
         professioniDesiderate:
-          - professione: '8.1.3.3.0.11' 
+          - professione: '8.1.3.3.0.11'
             descrizioneProfessione: 'corriere'
             descrittivoQualifica: 'Qualifica test'
             esperienzaSettore: True
@@ -318,7 +318,7 @@ components:
             disponibilitaTrasferte: False
             disponibilitaMezzoProprio: False
             preferenzaTipologiaContratto: 'A00'
-        
+
 
     FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.DettaglioFormazione:
       type: object
@@ -371,7 +371,7 @@ components:
         durata: 120
         durataUnitaMisura: 'O'
         certificazioniAttestazioni: '10'
-        qualificaAcquisita: '8.1.3.1.0.15' 
+        qualificaAcquisita: '8.1.3.1.0.15'
         descrittivoQualifica: 'facchino'
 
 
@@ -402,7 +402,7 @@ components:
         titoloStudio: '2'
         descrizione: '2'
         votazione: '108/110'
-        
+
 
     FSL.Api.Domain.Models.Siisl.ConsultazioneCurriculum.EsperienzaLavorativa:
       type: object
@@ -436,7 +436,7 @@ components:
       x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/EsperienzaLavorativa
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
-        tipoEsperienza: 
+        tipoEsperienza:
           '@id': haTipoDiContrattoDiLavoro
           '@type': '@id'
           '@context':
@@ -530,7 +530,7 @@ components:
       x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/ProfessioneDesiderata
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
-        professione: 
+        professione:
           '@id': haTipoDiProfessioneDesiderata
           '@type': '@id'
           '@context':
@@ -549,7 +549,7 @@ components:
               "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/'
               id: '@id'
       example:
-        professione: '8.1.3.3.0.11' 
+        professione: '8.1.3.3.0.11'
         descrizioneProfessione: 'corriere'
         descrittivoQualifica: 'Qualifica test'
         esperienzaSettore: True
@@ -558,8 +558,8 @@ components:
         disponibilitaMezzoProprio: False
         preferenzaTipologiaContratto: 'A00'
 
-        
-        
+
+
 
     FSL.Api.Domain.Models.Siisl.InputConsultazione:
       required:

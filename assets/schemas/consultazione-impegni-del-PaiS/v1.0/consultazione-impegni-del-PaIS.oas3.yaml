@@ -132,16 +132,16 @@ components:
       x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/social/ImpegnoPaIS
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/social/
-        impegni: 
+        impegni:
           '@id': haImpegnoPaIS
-      example: 
+      example:
         impegni:
           - tipologia: 'Tipologia Test'
             dataAvvio: '2025-01-01'
             datafine: '2025-12-31'
-            nucleo: 
+            nucleo:
              - 'AAAAAA00A00A000A'
-                   
+
     FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.Impegno:
       type: object
       properties:
@@ -169,11 +169,11 @@ components:
         nucleo: https://w3id.org/italia/onto/CPV/taxCode
         obiettivoRisultati:
           '@id': haObiettivoDiImpegno
-      example: 
+      example:
         tipologia: 'Tipologia Test'
         dataAvvio: '2025-01-01'
         datafine: '2025-12-31'
-        nucleo: 
+        nucleo:
           - 'AAAAAA00A00A000A'
         obiettivoRisultati:
           descrizioneObiettivo: 'Sostenere l’educazione e la formazione degli adulti'
@@ -182,7 +182,7 @@ components:
             - descrizioneRisultato: 'Conseguire l’obbligo scolastico'
               idRisultato: '2265d470-4ebd-414b-a77c-59c7cd4fa1da'
 
-      
+
     FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.ObiettivoRisultato:
       type: object
       properties:
@@ -208,7 +208,7 @@ components:
         risultatiAttesi:
           - descrizioneRisultato: 'Conseguire l’obbligo scolastico'
             idRisultato: '2265d470-4ebd-414b-a77c-59c7cd4fa1da'
-      
+
     FSL.Api.Domain.Models.Gepi.ConsultazioneImpegni.RisultatoAtteso:
       type: object
       properties:
@@ -225,7 +225,7 @@ components:
       example:
         descrizioneRisultato: 'Conseguire l’obbligo scolastico'
         idRisultato: '2265d470-4ebd-414b-a77c-59c7cd4fa1da'
-      
+
     FSL.Api.Domain.Models.Gepi.Esito:
       required:
         - codiceEsito
