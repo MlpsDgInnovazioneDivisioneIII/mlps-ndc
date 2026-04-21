@@ -800,7 +800,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/haPUC">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/italia/labour-social-policies/onto/social/PartecipazionePUC"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoDiUtilitàCollettiva"/>
         <rdfs:label xml:lang="it">ha PUC</rdfs:label>
     </owl:ObjectProperty>
 
@@ -2068,9 +2068,9 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/core/ProgettoDiUtilitàCollettiva -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività"/>
+    <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/core/ProgettoDiUtilitàCollettiva"/>
 
 
 
@@ -3300,9 +3300,9 @@
 
 
 
-    <!-- https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDelQuestionario -->
+    <!-- https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDilQuestionario -->
 
-    <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDelQuestionario"/>
+    <owl:Class rdf:about="https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDilQuestionario"/>
 
 
 
@@ -3486,7 +3486,7 @@
             <rdf:Description rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/QuestionarioDiAnalisiPreliminare"/>
             <rdf:Description rdf:about="https://w3id.org/italia/labour-social-policies/onto/social/QuestionarioDiQuadroDiAnalisi"/>
         </owl:oneOf>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDelQuestionario"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDilQuestionario"/>
     </owl:Class>
     <owl:Restriction>
         <owl:onProperty rdf:resource="https://w3id.org/italia/onto/RO/holdsRoleInTime"/>

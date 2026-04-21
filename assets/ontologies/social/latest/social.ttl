@@ -358,7 +358,7 @@ lsp-social:haPUC a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "ha PUC"@it ;
     rdfs:domain lsp-social:PartecipazionePUC ;
-    rdfs:range lsp-core:ProgettoUtileAllaCollettività .
+    rdfs:range lsp-core:ProgettoDiUtilitàCollettiva .
 
 lsp-social:haQuadroDiAnalisi a owl:InverseFunctionalProperty,
         owl:ObjectProperty ;
@@ -965,7 +965,7 @@ lsp-core:GestoreServizioSociale a owl:Class .
 
 lsp-core:PrestazioneDiSostegnoNucleoFamiliare a owl:Class .
 
-lsp-core:ProgettoUtileAllaCollettività a owl:Class .
+lsp-core:ProgettoDiUtilitàCollettiva a owl:Class .
 
 lsp-core:RichiedentePrestazioneDiSostegnoNucleoFamiliare a owl:Class .
 
@@ -1500,14 +1500,14 @@ lsp-social:TipoPercorsoSocialeLavorativo a owl:Class ;
             owl:someValuesFrom owl:Thing ] ;
     rdfs:comment "Indica il tipo di percorso sociale e lavorativo che può essere assegnato al cittadino"@it .
 
-lsp-srv:ModelloDelQuestionario a owl:Class .
+lsp-srv:ModelloDilQuestionario a owl:Class .
 
 lsp-srv:QuestionarioDelRedattore a owl:Class .
 
 TI:TimeIndexedEvent a owl:Class .
 
 [] a owl:Class ;
-    rdfs:subClassOf lsp-srv:ModelloDelQuestionario ;
+    rdfs:subClassOf lsp-srv:ModelloDilQuestionario ;
     owl:oneOf (
             lsp-social:QuestionarioDiAnalisiPreliminare
             lsp-social:QuestionarioDiQuadroDiAnalisi ) .

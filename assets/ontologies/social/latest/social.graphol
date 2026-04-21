@@ -370,7 +370,7 @@
           <value>https://w3id.org/italia/labour-social-policies/onto/core/PrestazioneDiSostegnoNucleoFamiliare</value>
         </iri>
         <iri>
-          <value>https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività</value>
+          <value>https://w3id.org/italia/labour-social-policies/onto/core/ProgettoDiUtilitàCollettiva</value>
         </iri>
         <iri>
           <value>https://w3id.org/italia/labour-social-policies/onto/core/RichiedentePrestazioneDiSostegnoNucleoFamiliare</value>
@@ -3943,7 +3943,7 @@
           </annotations>
         </iri>
         <iri>
-          <value>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDelQuestionario</value>
+          <value>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDilQuestionario</value>
         </iri>
         <iri>
           <value>https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore</value>
@@ -4438,7 +4438,7 @@
         </node>
         <node id="n206" color="#fcfcfc" type="concept">
           <geometry height="50" x="2630" y="540" width="110"/>
-          <iri>https://w3id.org/italia/labour-social-policies/onto/core/ProgettoUtileAllaCollettività</iri>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/core/ProgettoDiUtilitàCollettiva</iri>
           <label height="50" x="2630" customSize="0" size="12" y="540" width="110"/>
         </node>
         <node id="n207" color="#fcfcfc" type="role">
@@ -6566,7 +6566,7 @@
         </node>
         <node id="n58" color="#fcfcfc" type="concept">
           <geometry height="50" x="-960" y="-80" width="110"/>
-          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDelQuestionario</iri>
+          <iri>https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDilQuestionario</iri>
           <label height="50" x="-960" customSize="0" size="12" y="-80" width="110"/>
         </node>
         <node id="n59" color="#fcfcfc" type="individual">

@@ -1377,7 +1377,7 @@ _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid135 <http://www.w3.org/2002/07/owl#onProperty> _:genid136 .
 _:genid135 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid136 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/labour-social-policies/onto/social/haTipoPercorsoSocialeLavorativo> .
-<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDelQuestionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDilQuestionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/labour-social-policies/onto/survey/QuestionarioDelRedattore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/onto/COV/PublicOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/italia/onto/CPV/Alive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1452,7 +1452,7 @@ _:genid136 <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/italia/la
 <https://w3id.org/italia/labour-social-policies/onto/social/QuestionarioDiQuadroDiAnalisi> <http://www.w3.org/2000/01/rdf-schema#label> "Questionario di quadro di analisi"@it .
 _:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid137 <http://www.w3.org/2002/07/owl#oneOf> _:genid138 .
-_:genid137 <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDelQuestionario> .
+_:genid137 <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/labour-social-policies/onto/survey/ModelloDilQuestionario> .
 _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/labour-social-policies/onto/social/QuestionarioDiAnalisiPreliminare> .
 _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
 _:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/italia/labour-social-policies/onto/social/QuestionarioDiQuadroDiAnalisi> .
