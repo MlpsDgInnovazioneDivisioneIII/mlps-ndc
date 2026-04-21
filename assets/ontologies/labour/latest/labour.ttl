@@ -29,7 +29,7 @@ lsp-labour: a owl:Ontology ;
     rdfs:label "Ontologia dei servizi per il lavoro e l’inclusione sociale (SIISL) del Ministero del Lavoro e delle Politiche Sociali"@it,
         "Ontology of Labor and Social Inclusion Services (SIISL) of the Ministry of Labor and Social Policies"@en ;
     rdfs:comment "Ontologia del Ministero del Lavoro e delle Politiche Sociali relativa al dominio SIISL  che definisce in modo strutturato e interoperabile dati, relazioni e concetti relativi ai servizi per il lavoro e all’inclusione sociale, garantendo uniformità semantica, integrazione informativa e supporto ai processi digitali della piattaforma."@it,
-        "Ontology of the Ministry of Labour and Social Policies related to the SIISL domain, which defines in a structured and interoperable way the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
+        "Ontology of the Ministry of Labour and Social Policies related to the SIISL domain, which defines, in a structured and interoperable way, the data, relationships, and concepts concerning employment and social inclusion services, ensuring semantic consistency, informational integration, and support for the digital processes of the platform."@en ;
     owl:versionInfo "1.0 - Modificata il 26 Febbraio 2026"@it,
         "1.0 - Modified on 26 February 2026"@en ;
     rdfs:isDefinedBy lsp-labour: ;
