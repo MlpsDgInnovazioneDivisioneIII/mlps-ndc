@@ -106,7 +106,7 @@ components:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         dataEvento: https://w3id.org/italia/onto/TI/atTime
         tipoAdesione: statusAdesioneOffertaDiLavoro
-        offerta: 
+        offerta:
           '@id': aderisceAdOffertaDiLavoro
       example:
         dataEvento:  '2025-01-14T00:00:00'
@@ -120,9 +120,9 @@ components:
           dataPubblicazione: '2025-01-14T00:00:00'
           dataScadenza: '2025-01-14T00:00:00'
 
-        
-        
-        
+
+
+
     FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioniOfferteLavoro_Output:
       type: object
       properties:
@@ -131,9 +131,9 @@ components:
           items:
             $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioneOffertaLavoro'
       additionalProperties: false
-      
-      
-      
+
+
+
     FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.OffertaLavoro:
       type: object
       properties:

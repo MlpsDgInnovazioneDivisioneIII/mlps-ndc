@@ -111,7 +111,7 @@ components:
       x-jsonld-context:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         dataManifestazione: dataManifestazioneInteresseOffertaDiLavoro
-        offertaDiLavoro: 
+        offertaDiLavoro:
           '@id': haOffertaDiLavoroDiInteresse
       example:
         dataManifestazione: '2025-01-14T00:00:00'
@@ -123,7 +123,7 @@ components:
           origine: '1'
           dataPubblicazione: '2025-01-14T00:00:00'
           dataScadenza: '2025-01-14T00:00:00'
-        
+
     FSL.Api.Domain.Models.Siisl.ConsultazioneInteressiOfferteLavoro.OffertaLavoro:
       type: object
       properties:
@@ -164,7 +164,7 @@ components:
         origine: '1'
         dataPubblicazione: '2025-01-14T00:00:00'
         dataScadenza: '2025-01-14T00:00:00'
-        
+
     FSL.Api.Domain.Models.Siisl.InputConsultazione:
       required:
         - codiceFiscaleCittadino
