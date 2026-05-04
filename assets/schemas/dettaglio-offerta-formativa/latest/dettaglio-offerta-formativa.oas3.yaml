@@ -7,10 +7,12 @@ info:
     email: dginnovazionediv3@lavoro.gov.it
   version: 1.0.0
   x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.4
+  x-semantic-score-timestamp: 1774016662191
 servers:
-  - url: https://apimlpstest.lavoro.gov.it/rest
+  - url: 'https://apimlpstest.lavoro.gov.it/rest'
     description: FSL Test Environment
-  - url: https://apimlps.lavoro.gov.it/rest
+  - url: 'https://apimlps.lavoro.gov.it/rest'
     description: FSL Production Environment
 paths:
   /fsl/v1/offerteFormative/{idOfferta}:
@@ -69,7 +71,7 @@ paths:
         '200':
           description: API service is healthy
           content:
-            application/problem+json:
+            application/json:
               schema:
                 $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
         '403':
@@ -82,6 +84,11 @@ paths:
           description: Internal Server Error
         '503':
           description: API service is not healthy
+    servers:
+      - url: 'https://apimlpstest.lavoro.gov.it/rest/fsl'
+        description: FSL Test Environment
+      - url: 'https://apimlps.lavoro.gov.it/rest/fsl'
+        description: FSL Production Environment
 components:
   schemas:
     FSL.Api.Domain.Models.OfferteFormative.DettaglioOffertaFormativa:
@@ -261,7 +268,7 @@ components:
           '@context':
               label: http://www.w3.org/2000/01/rdf-schema#label
         descrizioneComune: comuneOffertaFormativa
-        competenzeDigitali: avvisoRequisitocompetenzeDigitali
+        competenzeDigitali: avvisoRequisitoCompenzeDigitali
         livelloCompetenzeDigitali:
           '@id': haLivelloCompetenzeDigitali
           '@type': '@id'
@@ -464,14 +471,21 @@ components:
       properties:
         status:
           type: string
+          description: 'Stato complessivo: Healthy, Degraded, o Unhealthy.'
         totalDuration:
           type: string
-        entries: {}
+          description: >-
+            Tempo totale impiegato per eseguire tutti i controlli
+            (millisecondi).
+        entries:
+          description: Mappa con l'esito dei singoli check eseguiti.
         title:
           type: string
+          description: Titolo descrittivo.
           nullable: true
         detail:
           type: string
+          description: Informazioni aggiuntive sullo stato generale.
           nullable: true
       additionalProperties: false
     Microsoft.AspNetCore.Mvc.ProblemDetails:

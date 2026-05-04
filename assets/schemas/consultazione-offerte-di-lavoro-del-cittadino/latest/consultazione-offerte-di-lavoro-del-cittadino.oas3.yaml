@@ -10,9 +10,9 @@ info:
   x-semantic-score: 0.33
   x-semantic-score-timestamp: 1774016530114
 servers:
-  - url: https://apimlpstest.lavoro.gov.it/rest
+  - url: 'https://apimlpstest.lavoro.gov.it/rest'
     description: FSL Test Environment
-  - url: https://apimlps.lavoro.gov.it/rest
+  - url: 'https://apimlps.lavoro.gov.it/rest'
     description: FSL Production Environment
 paths:
   /fsl/v1/cittadino/offerte/adesioni:
@@ -70,7 +70,7 @@ paths:
         '200':
           description: API service is healthy
           content:
-            application/problem+json:
+            application/json:
               schema:
                 $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
         '403':
@@ -83,6 +83,11 @@ paths:
           description: Internal Server Error
         '503':
           description: API service is not healthy
+    servers:
+      - url: 'https://apimlpstest.lavoro.gov.it/rest/fsl'
+        description: FSL Test Environment
+      - url: 'https://apimlps.lavoro.gov.it/rest/fsl'
+        description: FSL Production Environment
 components:
   schemas:
     FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioneOffertaLavoro:
@@ -101,7 +106,7 @@ components:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         dataEvento: https://w3id.org/italia/onto/TI/atTime
         tipoAdesione: statusAdesioneOffertaDiLavoro
-        offerta:
+        offerta: 
           '@id': aderisceAdOffertaDiLavoro
       example:
         dataEvento:  '2025-01-14T00:00:00'
@@ -115,9 +120,9 @@ components:
           dataPubblicazione: '2025-01-14T00:00:00'
           dataScadenza: '2025-01-14T00:00:00'
 
-
-
-
+        
+        
+        
     FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioniOfferteLavoro_Output:
       type: object
       properties:
@@ -126,9 +131,9 @@ components:
           items:
             $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.AdesioneOffertaLavoro'
       additionalProperties: false
-
-
-
+      
+      
+      
     FSL.Api.Domain.Models.Siisl.ConsultazioneOfferteLavoro.OffertaLavoro:
       type: object
       properties:
@@ -202,14 +207,21 @@ components:
       properties:
         status:
           type: string
+          description: 'Stato complessivo: Healthy, Degraded, o Unhealthy.'
         totalDuration:
           type: string
-        entries: {}
+          description: >-
+            Tempo totale impiegato per eseguire tutti i controlli
+            (millisecondi).
+        entries:
+          description: Mappa con l'esito dei singoli check eseguiti.
         title:
           type: string
+          description: Titolo descrittivo.
           nullable: true
         detail:
           type: string
+          description: Informazioni aggiuntive sullo stato generale.
           nullable: true
       additionalProperties: false
     Microsoft.AspNetCore.Mvc.ProblemDetails:

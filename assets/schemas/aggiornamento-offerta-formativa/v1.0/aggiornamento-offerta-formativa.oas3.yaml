@@ -10,9 +10,9 @@ info:
   x-semantic-score: 0.25
   x-semantic-score-timestamp: 1774015954626
 servers:
-  - url: https://apimlpstest.lavoro.gov.it/rest
+  - url: 'https://apimlpstest.lavoro.gov.it/rest'
     description: FSL Test Environment
-  - url: https://apimlps.lavoro.gov.it/rest
+  - url: 'https://apimlps.lavoro.gov.it/rest'
     description: FSL Production Environment
 paths:
   /fsl/v1/offerteFormative/{idOfferta}:
@@ -76,7 +76,7 @@ paths:
         '200':
           description: API service is healthy
           content:
-            application/problem+json:
+            application/json:
               schema:
                 $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
         '403':
@@ -89,6 +89,11 @@ paths:
           description: Internal Server Error
         '503':
           description: API service is not healthy
+    servers:
+      - url: 'https://apimlpstest.lavoro.gov.it/rest/fsl'
+        description: FSL Test Environment
+      - url: 'https://apimlps.lavoro.gov.it/rest/fsl'
+        description: FSL Production Environment
 components:
   schemas:
     FSL.Api.Domain.Models.OfferteFormative.AggiornamentoOffertaFormativa:
@@ -100,7 +105,7 @@ components:
           minLength: 1
           type: string
         nuovoStato:
-          type: integer
+          type: integer          
           format: int32
           nullable: true
         nuovaDataFine:
@@ -114,7 +119,7 @@ components:
           nullable: true
       additionalProperties: false
       x-jsonld-type:  https://w3id.org/italia/labour-social-policies/onto/labour/EdizioneOffertaFormativa
-      x-jsonld-context:
+      x-jsonld-context: 
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
         idOfferta: idOffertaFormativa
         nuovoStato: statusEdizioneOffertaFormativa
@@ -127,7 +132,7 @@ components:
         nuovaDataFine: '2024-12-31'
         nuovaDataInizio: '2024-01-01'
         nuovaDataFinePubblicazione: '2025-05-01'
-
+      
     FSL.Api.Domain.Models.SezioneEsito:
       required:
         - codice
@@ -145,14 +150,21 @@ components:
       properties:
         status:
           type: string
+          description: 'Stato complessivo: Healthy, Degraded, o Unhealthy.'
         totalDuration:
           type: string
-        entries: {}
+          description: >-
+            Tempo totale impiegato per eseguire tutti i controlli
+            (millisecondi).
+        entries:
+          description: Mappa con l'esito dei singoli check eseguiti.
         title:
           type: string
+          description: Titolo descrittivo.
           nullable: true
         detail:
           type: string
+          description: Informazioni aggiuntive sullo stato generale.
           nullable: true
       additionalProperties: false
     Microsoft.AspNetCore.Mvc.ProblemDetails:
