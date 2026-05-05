@@ -50,7 +50,7 @@ lsp-srv: a owl:Ontology ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/schemas/invio-analisi-preliminare/latest> ;
     dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
     dcat:distribution <https://w3id.org/italia/schemas/invio-analisi-preliminare/latest/invio-analisi-preliminare.oas3.yaml> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/schemas/invio-analisi-preliminare/latest/invio-analisi-preliminare.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/schemas/invio-analisi-preliminare/latest/invio-analisi-preliminare.oas3.yaml> ;
     dcat:keyword "Modello Di Sezione"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;

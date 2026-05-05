@@ -50,7 +50,7 @@ mlps-core: a owl:Ontology ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/schemas/ricerca-misure-di-inclusione-nei-PaIS/latest> ;
     dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
     dcat:distribution <https://w3id.org/italia/schemas/ricerca-misure-di-inclusione-nei-PaIS/latest/ricerca-misure-di-inclusione-nei-PaIS.oas3.yaml> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/schemas/ricerca-misure-di-inclusione-nei-PaIS/latest/ricerca-misure-di-inclusione-nei-PaIS.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/schemas/ricerca-misure-di-inclusione-nei-PaIS/latest/ricerca-misure-di-inclusione-nei-PaIS.oas3.yaml> ;
     dcat:keyword "Beneficiario Prestazione Di Sostegno"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
