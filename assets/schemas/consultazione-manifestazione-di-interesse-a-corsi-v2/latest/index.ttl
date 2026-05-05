@@ -58,7 +58,7 @@
     dct:creator <https://w3id.org/italia/labour-social-policies/data/organization/mlps> ;
     dct:description "Il servizio viene invocato per ottenere informazioni sulla consultazione manifestazione di interesse a corsi-v2" ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
-    dct:identifier <https://w3id.org/italia/labour-social-policies/schemas/consultazione-manifestazione-di-interesse-a-corsi-v2> ;
+    dct:identifier <https://w3id.org/italia/schemas/consultazione-manifestazione-di-interesse-a-corsi-v2> ;
     dct:issued "2026-02-25"^^xsd:date ;
     dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
     dct:modified "2026-02-25"^^xsd:date ;
