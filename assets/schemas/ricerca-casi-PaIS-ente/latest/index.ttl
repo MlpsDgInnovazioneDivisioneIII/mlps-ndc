@@ -36,7 +36,7 @@
 
 ### Annotations
 
-<https://w3id.org/italia/schemas/ricerca-casi-PaIS-ente/latest/ricerca-casi-PaIS-ente.oas3.yaml> a dcatapit:Dataset,
+<https://w3id.org/italia/schemas/ricerca-casi-PaIS-ente/latest/ricerca-casi-PaIS-dell-ente.oas3.yaml> a dcatapit:Dataset,
         dcatapit:Distribution ;
     rdfs:label "Ricerca casi PaIS dell'ente API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
@@ -49,8 +49,8 @@
         "Pubbliche Amministrazioni"@it ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/schemas/ricerca-casi-PaIS-ente/latest> ;
     dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    dcat:distribution <https://w3id.org/italia/schemas/ricerca-casi-PaIS-ente/latest/ricerca-casi-PaIS-ente.oas3.yaml> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/schemas/ricerca-casi-PaIS-ente/latest/ricerca-casi-PaIS-ente.oas3.yaml> ;
+    dcat:distribution <https://w3id.org/italia/schemas/ricerca-casi-PaIS-ente/latest/ricerca-casi-PaIS-dell-ente.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/schemas/ricerca-casi-PaIS-ente/latest/ricerca-casi-PaIS-dell-ente.oas3.yaml> ;
     dcat:keyword "Componente Nucleo Attivo Nel Caso"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;

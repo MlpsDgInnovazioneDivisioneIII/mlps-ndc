@@ -36,7 +36,7 @@
 
 ### Annotations
 
-<https://w3id.org/italia/schemas/consultazione-impegni-del-PaiS/latest/consultazione-impegni-del-PaiS.oas3.yaml> a dcatapit:Dataset,
+<https://w3id.org/italia/schemas/consultazione-impegni-del-PaiS/latest/consultazione-impegni-del-PaIS.oas3.yaml> a dcatapit:Dataset,
         dcatapit:Distribution ;
     rdfs:label "Consultazione Impegni del PaiS API"@it ;
     rdfs:comment "Servizio di notifica"@it ;
@@ -49,8 +49,8 @@
         "Pubbliche Amministrazioni"@it ;
     dcat:accessURL <https://github.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/tree/main/assets/schemas/consultazione-impegni-del-PaiS/latest> ;
     dcat:contactPoint <https://w3id.org/italia/labour-social-policies/data/organization/DGInnovazioneDiv3> ;
-    dcat:distribution <https://w3id.org/italia/schemas/consultazione-impegni-del-PaiS/latest/consultazione-impegni-del-PaiS.oas3.yaml> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/schemas/consultazione-impegni-del-PaiS/latest/consultazione-impegni-del-PaiS.oas3.yaml> ;
+    dcat:distribution <https://w3id.org/italia/schemas/consultazione-impegni-del-PaiS/latest/consultazione-impegni-del-PaIS.oas3.yaml> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/MlpsDgInnovazioneDivisioneIII/mlps-ndc/main/assets/schemas/consultazione-impegni-del-PaiS/latest/consultazione-impegni-del-PaIS.oas3.yaml> ;
     dcat:keyword "Impegno PaIS"@it ;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
     dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
