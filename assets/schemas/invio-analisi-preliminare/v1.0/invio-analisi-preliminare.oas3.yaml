@@ -146,8 +146,7 @@ components:
         risposte:
           - valore: "1"
             testo: "SI"
-
-
+            domandeSecondarie: []
 
 
     FSL.Api.Domain.Models.Gepi.RegistrazioneAP.RegistrazioneAP_Input:
@@ -187,6 +186,8 @@ components:
           items:
             $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Sezione'
       additionalProperties: false
+
+
     FSL.Api.Domain.Models.Gepi.RegistrazioneAP.RegistrazioneAP_Output:
       required:
         - data
@@ -198,7 +199,6 @@ components:
         data:
           $ref: '#/components/schemas/FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Data'
       additionalProperties: false
-
 
     FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Risposta:
       type: object
@@ -224,11 +224,12 @@ components:
         testo: "SI"
         domandeSecondarie:
          - idDomanda: "a73fc9f7-858c-40d6-99f9-705d415ea224"
-           descrzioneDomanda: "É presente in famiglia almeno un componente maggiorenne con (Risposta multipla non obbligatoria)"
+           descrizioneDomanda: "É presente in famiglia almeno un componente maggiorenne con (Risposta multipla non obbligatoria)"
            cFComponenteFamiliare: "AAAAAA00A00A000A"
-
-
-
+           risposte:
+             - valore: "1"
+               testo: "SI"
+               domandeSecondarie: []
 
 
     FSL.Api.Domain.Models.Gepi.RegistrazioneAP.Sezione:
@@ -266,6 +267,12 @@ components:
            - idDomanda: "a73fc9f7-858c-40d6-99f9-705d415ea224"
              descrizioneDomanda: "É presente in famiglia almeno un componente maggiorenne con (Risposta multipla non obbligatoria)"
              cFComponenteFamiliare: "AAAAAA00A00A000A"
+             risposte:
+               - valore: "1"
+                 testo: "SI"
+                 domandeSecondarie: []
+        sottoSezioni: []
+
 
     FSL.Common.Support.Models.Api.HealthCheckSuccess:
       type: object

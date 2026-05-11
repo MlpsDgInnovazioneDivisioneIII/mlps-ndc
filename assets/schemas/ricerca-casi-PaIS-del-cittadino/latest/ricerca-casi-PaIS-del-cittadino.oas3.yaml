@@ -140,8 +140,10 @@ components:
           '@id': haNucleoFamiliareFragileOInPovertà
         istatComune:
           '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@type': '@id'
           '@context':
-              label: http://www.w3.org/2000/01/rdf-schema#label
+              "@base": "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/"
+              id: '@id'
         codiceATS:
           '@id': https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale
           '@type': '@id'

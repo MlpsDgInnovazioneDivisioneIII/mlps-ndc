@@ -161,8 +161,10 @@ components:
         stato: statusAnalisiPreliminare
         istatComune:
           '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@type': '@id'
           '@context':
-              label: http://www.w3.org/2000/01/rdf-schema#label
+              "@base": "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/"
+              id: '@id'
         codiceATS:
           '@id': https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale
           '@type': '@id'
@@ -186,6 +188,27 @@ components:
           - idSezione: 'cd64314d-a856-40a4-9183-c611ef673175'
             testoSezione: 'Cura e salute'
             cFComponenteFamiliare: 'AAAAAA00A00A000A'
+            domande: []
+            sottoSezioni:
+              - idSezione: 'cd64314d-a856-40a4-9183-c611ef673175'
+                testoSezione: 'Cura e salute'
+                cFComponenteFamiliare: 'AAAAAA00A00A000A'
+                domande:
+                  - idDomanda: 'a73fc9f7-858c-40d6-99f9-705d415ea224'
+                    descrizioneDomanda: 'É presente in famiglia almeno un componente maggiorenne con'
+                    cFComponenteFamiliare: 'AAAAAA00A00A000A'
+                    risposte:
+                     - valore: '1'
+                       testo: 'SI'
+                       domandeSecondarie:
+                         - idDomanda: 'a73fc9f7-858c-40d6-99f9-705d415ea224'
+                           descrizioneDomanda: 'É presente in famiglia almeno un componente maggiorenne con'
+                           cFComponenteFamiliare: 'AAAAAA00A00A000A'
+                           risposte:
+                            - valore: '1'
+                              testo: 'SI'
+                              domandeSecondarie: []
+                sottoSezioni: []
 
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioAP.Domanda:
@@ -216,8 +239,16 @@ components:
         descrizioneDomanda: 'É presente in famiglia almeno un componente maggiorenne con'
         cFComponenteFamiliare: 'AAAAAA00A00A000A'
         risposte:
-          - valore: '1'
-          - testo: 'SI'
+         - valore: '1'
+           testo: 'SI'
+           domandeSecondarie:
+             - idDomanda: 'a73fc9f7-858c-40d6-99f9-705d415ea224'
+               descrizioneDomanda: 'É presente in famiglia almeno un componente maggiorenne con'
+               cFComponenteFamiliare: 'AAAAAA00A00A000A'
+               risposte:
+                - valore: '1'
+                  testo: 'SI'
+                  domandeSecondarie: []
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioAP.Risposta:
       type: object
@@ -248,6 +279,7 @@ components:
             risposte:
              - valore: '1'
                testo: 'SI'
+               domandeSecondarie: []
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioAP.Sezione:
       type: object
@@ -282,9 +314,27 @@ components:
         idSezione: 'cd64314d-a856-40a4-9183-c611ef673175'
         testoSezione: 'Cura e salute'
         cFComponenteFamiliare: 'AAAAAA00A00A000A'
-        domande:
-          - idDomanda: 'a73fc9f7-858c-40d6-99f9-705d415ea224'
-            descrizioneDomanda: 'É presente in famiglia almeno un componente maggiorenne con'
+        domande: []
+        sottoSezioni:
+          - idSezione: 'cd64314d-a856-40a4-9183-c611ef673175'
+            testoSezione: 'Cura e salute'
+            cFComponenteFamiliare: 'AAAAAA00A00A000A'
+            domande:
+              - idDomanda: 'a73fc9f7-858c-40d6-99f9-705d415ea224'
+                descrizioneDomanda: 'É presente in famiglia almeno un componente maggiorenne con'
+                cFComponenteFamiliare: 'AAAAAA00A00A000A'
+                risposte:
+                 - valore: '1'
+                   testo: 'SI'
+                   domandeSecondarie:
+                     - idDomanda: 'a73fc9f7-858c-40d6-99f9-705d415ea224'
+                       descrizioneDomanda: 'É presente in famiglia almeno un componente maggiorenne con'
+                       cFComponenteFamiliare: 'AAAAAA00A00A000A'
+                       risposte:
+                        - valore: '1'
+                          testo: 'SI'
+                          domandeSecondarie: []
+            sottoSezioni: []
 
     FSL.Api.Domain.Models.Gepi.Esito:
       required:

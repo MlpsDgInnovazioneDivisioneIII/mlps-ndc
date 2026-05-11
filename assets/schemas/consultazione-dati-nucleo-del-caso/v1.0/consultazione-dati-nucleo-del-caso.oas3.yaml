@@ -139,7 +139,7 @@ components:
           - codiceFiscale: 'AAAAAA00A00A000A'
             nomeCognome: 'Mario Rossi'
             dataNascita: '1990-01-15'
-            comuneResidenza: 'H501'
+            comuneResidenza: '058091'
             email: 'prova@prova.it'
             cellulare: '123456789'
             tenutoObblighiLav: 'S'
@@ -230,8 +230,10 @@ components:
         dataNascita: https://w3id.org/italia/onto/CPV/dateOfBirth
         comuneResidenza:
           '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@type': '@id'
           '@context':
-              label: http://www.w3.org/2000/01/rdf-schema#label
+              "@base": "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/"
+              id: '@id'
         email:
           '@id': https://w3id.org/italia/onto/SM/hasEmail
           '@context':
@@ -261,7 +263,7 @@ components:
         codiceFiscale: 'AAAAAA00A00A000A'
         nomeCognome: 'Mario Rossi'
         dataNascita: '1990-01-15'
-        comuneResidenza: 'H501'
+        comuneResidenza: '058091'
         email: 'prova@prova.it'
         cellulare: '123456789'
         tenutoObblighiLav: 'S'

@@ -189,8 +189,10 @@ components:
         stato: statusDiPUC
         comune:
           '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@type': '@id'
           '@context':
-              label: http://www.w3.org/2000/01/rdf-schema#label
+              "@base": "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/"
+              id: '@id'
       example:
         identificativoPUC: '123456789123456789'
         titoloPUC: 'Titolo test PUC'

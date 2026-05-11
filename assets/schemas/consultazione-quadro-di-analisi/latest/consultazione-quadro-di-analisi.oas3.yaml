@@ -178,8 +178,10 @@ components:
         stato: statusQuadroAnalisi
         istatComune:
           '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@type': '@id'
           '@context':
-              label: http://www.w3.org/2000/01/rdf-schema#label
+              "@base": "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/"
+              id: '@id'
         codiceATS:
           '@id': https://w3id.org/italia/labour-social-policies/onto/core/appartieneAdAmbitoTerritoriale
           '@type': '@id'
@@ -200,9 +202,18 @@ components:
         caseManager: 'AAAAAA00A00A000A'
         dataFinalizzazione: '2025-07-12'
         sezioni:
-          - idSezione: 'fe956c0c-+B18+C18:K19'
-            testoSezione: 'AREA AMBIENTE E FAMIGLIA'
-            cFComponenteFamiliare: 'AAAAAA00A00A000A'
+         - idSezione: 'fe956c0c-+B18+C18:K19'
+           testoSezione: 'AREA AMBIENTE E FAMIGLIA'
+           domande:
+             - idDomanda: '512dfa0a-bd18-4296-9126-bd867ce19a25'
+               descrizioneDomanda: 'Bisogno-Forza'
+               cFComponenteFamiliare: 'AAAAAA00A00A000A'
+               risposte:
+                 - valore: '1'
+                   testo: 'Bisogno evidente'
+                   domandeSecondarie: []
+           cFComponenteFamiliare: 'AAAAAA00A00A000A'
+           sottoSezioni: []
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Domanda:
       type: object
@@ -234,6 +245,7 @@ components:
         risposte:
           - valore: '1'
             testo: 'Bisogno evidente'
+            domandeSecondarie: []
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Risposta:
       type: object
@@ -252,9 +264,19 @@ components:
         "@vocab": https://w3id.org/italia/labour-social-policies/onto/survey/
         valore: valoreDellaRisposta
         testo: testoDellaRisposta
+        domandeSecondarie:
+          '@id': haSottodomanda
       example:
         valore: '1'
         testo: 'Bisogno evidente'
+        domandeSecondarie:
+          - idDomanda: '512dfa0a-bd18-4296-9126-bd867ce19a25'
+            descrizioneDomanda: 'Bisogno-Forza'
+            cFComponenteFamiliare: 'AAAAAA00A00A000A'
+            risposte:
+              - valore: '1'
+                testo: 'Bisogno evidente'
+                domandeSecondarie: []
 
 
     FSL.Api.Domain.Models.Gepi.ConsultazioneDettaglioQA.Sezione:
@@ -292,7 +314,13 @@ components:
         domande:
           - idDomanda: '512dfa0a-bd18-4296-9126-bd867ce19a25'
             descrizioneDomanda: 'Bisogno-Forza'
+            cFComponenteFamiliare: 'AAAAAA00A00A000A'
+            risposte:
+              - valore: '1'
+                testo: 'Bisogno evidente'
+                domandeSecondarie: []
         cFComponenteFamiliare: 'AAAAAA00A00A000A'
+        sottoSezioni: []
 
     FSL.Api.Domain.Models.Gepi.Esito:
       required:
