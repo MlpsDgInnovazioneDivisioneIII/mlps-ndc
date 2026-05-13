@@ -10,9 +10,9 @@ info:
   x-semantic-score: 0.17
   x-semantic-score-timestamp: 1775576822452
 servers:
-  - url: https://apimlpstest.lavoro.gov.it/rest
+  - url: 'https://apimlpstest.lavoro.gov.it/rest'
     description: FSL Test Environment
-  - url: https://apimlps.lavoro.gov.it/rest
+  - url: 'https://apimlps.lavoro.gov.it/rest'
     description: FSL Production Environment
 paths:
   /fsl/areasociale/v1/salva-sostegni:
@@ -70,7 +70,7 @@ paths:
         '200':
           description: API service is healthy
           content:
-            application/problem+json:
+            application/json:
               schema:
                 $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
         '403':
@@ -83,6 +83,11 @@ paths:
           description: Internal Server Error
         '503':
           description: API service is not healthy
+    servers:
+      - url: 'https://apimlpstest.lavoro.gov.it/rest/fsl/areasociale'
+        description: FSL Test Environment
+      - url: 'https://apimlps.lavoro.gov.it/rest/fsl/areasociale'
+        description: FSL Production Environment
 components:
   schemas:
     FSL.Api.Domain.Models.Gepi.Esito:
@@ -189,14 +194,21 @@ components:
       properties:
         status:
           type: string
+          description: 'Stato complessivo: Healthy, Degraded, o Unhealthy.'
         totalDuration:
           type: string
-        entries: {}
+          description: >-
+            Tempo totale impiegato per eseguire tutti i controlli
+            (millisecondi).
+        entries:
+          description: Mappa con l'esito dei singoli check eseguiti.
         title:
           type: string
+          description: Titolo descrittivo.
           nullable: true
         detail:
           type: string
+          description: Informazioni aggiuntive sullo stato generale.
           nullable: true
       additionalProperties: false
     Microsoft.AspNetCore.Mvc.ProblemDetails:
