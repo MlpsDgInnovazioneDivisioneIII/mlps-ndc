@@ -1,0 +1,836 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/sdg/dettaglio-offerta-lavoro:
+    post:
+      tags:
+        - Siisl
+      summary: Dettaglio Offerta Lavoro SDG
+      description: Dati i codici identificativi delle offerte di lavoro, il servizio restituisce i relativi dettagli delle offerte pubblicate sul Sistema Informativo per l'inclusione Sociale e Lavorativa (SIISL)
+      operationId: DettaglioOffertaLavoroSDG
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DettaglioOffertaLavoro_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DettaglioOffertaLavoro_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.Condizioni:
+      type: object
+      properties:
+        codiceRegione:
+          type: string
+          nullable: true
+        descrizioneRegione:
+          type: string
+          nullable: true
+        codiceProvincia:
+          type: string
+          nullable: true
+        descrizioneProvincia:
+          type: string
+          nullable: true
+        codiceComune:
+          type: string
+          nullable: true
+        descrizioneComune:
+          type: string
+          nullable: true
+        cap:
+          type: string
+          nullable: true
+        indirizzo:
+          type: string
+          nullable: true
+        codiceTipoContratto:
+          type: string
+          nullable: true
+        descrizioneTipoContratto:
+          type: string
+          nullable: true
+        codiceModalitaLavoro:
+          type: string
+          nullable: true
+        descrizioneModalitaLavoro:
+          type: string
+          nullable: true
+        durataContratto:
+          type: string
+          nullable: true
+        codiceCcnl:
+          type: string
+          nullable: true
+        descrizioneCcnl:
+          type: string
+          nullable: true
+        codiceGradoContrattuale:
+          type: string
+          nullable: true
+        descrizioneGradoContrattuale:
+          type: string
+          nullable: true
+        retribuzioneAnnuaLorda:
+          type: number
+          format: double
+          nullable: true
+        dataInizioContratto:
+          type: string
+          format: date-time
+          nullable: true
+        ulterioriOfferte:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codiceRegione:
+          '@id': https://w3id.org/italia/onto/CLV/hasRegion
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        descrizioneRegione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSede
+          '@context':
+              descrizioneRegione: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneRegione
+        codiceProvincia:
+          '@id': https://w3id.org/italia/onto/CLV/hasProvince
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        descrizioneProvincia:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSede
+          '@context':
+              descrizioneProvincia: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneProvincia
+        codiceComune:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        descrizioneComune:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSede
+          '@context':
+              descrizioneComune: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneComune
+        cap: https://w3id.org/italia/onto/CLV/postCode
+        indirizzo: https://w3id.org/italia/onto/CLV/fullAddress
+        codiceTipoContratto:
+          '@id': haTipoDiContrattoDiLavoro
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/'
+              id: '@id'
+        descrizioneTipoContratto: descrizioneTipoDiContrattoDiLavoro
+        durataContratto:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haContrattoDiLavoro
+          '@context':
+              durataContratto: https://w3id.org/italia/labour-social-policies/onto/labour/durataContratto
+        retribuzioneAnnuaLorda:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haContrattoDiLavoro
+          '@context':
+              retribuzioneAnnuaLorda: https://w3id.org/italia/labour-social-policies/onto/labour/retribuzioneAnnuaLorda
+        dataInizioContratto:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haContrattoDiLavoro
+          '@context':
+              dataInizioContratto: https://w3id.org/italia/labour-social-policies/onto/labour/dataInizioContratto
+        ulterioriOfferte:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haContrattoDiLavoro
+          '@context':
+              ulterioriOfferte: https://w3id.org/italia/labour-social-policies/onto/labour/ulterioriOfferte
+      example:
+        codiceRegione: "08"
+        descrizioneRegione: "Emilia-Romagna"
+        codiceProvincia: "058"
+        descrizioneProvincia: "Roma"
+        codiceComune: "H501"
+        descrizioneComune: "Roma"
+        cap: "00000"
+        indirizzo: "Via XX Settembre"
+        codiceTipoContratto: "A00"
+        descrizioneTipoContratto: "LAVORO A TEMPO INDETERMINATO"
+        durataContratto: "3 anni"
+        retribuzioneAnnuaLorda: 40000.75
+        dataInizioContratto: '2025-01-14T00:00:00'
+        ulterioriOfferte: "Nessuna"
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DatiOfferta:
+      type: object
+      properties:
+        settore:
+          type: string
+          nullable: true
+        settoreDescrizione:
+          type: string
+          nullable: true
+        titolo:
+          type: string
+          nullable: true
+        descrizione:
+          type: string
+          nullable: true
+        dataScadenza:
+          type: string
+          format: date-time
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        settore:
+          '@id': offertaDiLavoroHaSettoreDiInteresse
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_settore_livello_1/'
+              id: '@id'
+        settoreDescrizione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSettoreDiInteresse
+          '@context':
+              dataInizioContratto: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneSettoreEconomicoProfessionale
+        titolo: titoloOffertaDiLavoro
+        descrizione: descrizioneOffertaDiLavoro
+        dataScadenza: dataScadenzaOffertaDiLavoro
+      example:
+        settore: "62.01.00"
+        settoreDescrizione: "Produzione di software non connesso all'edizione"
+        titolo: "Titolo Test"
+        descrizione: "Descrizione offerta lavoro"
+        dataScadenza:  '2025-01-14T00:00:00'
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DatoreLavoro:
+      type: object
+      properties:
+        codiceFiscale:
+          type: string
+          nullable: true
+        denominazione:
+          type: string
+          nullable: true
+        ampiezzaCodice:
+          type: string
+          nullable: true
+        ampiezzaDescrizione:
+          type: string
+          nullable: true
+        sitoWeb:
+          type: string
+          nullable: true
+        contattoIndirizzo:
+          type: string
+          nullable: true
+        contattoComuneCodice:
+          type: string
+          nullable: true
+        contattoProvinciaCodice:
+          type: string
+          nullable: true
+        contattoRegioneCodice:
+          type: string
+          nullable: true
+        contattoComuneDescrizione:
+          type: string
+          nullable: true
+        contattoProvinciaDescrizione:
+          type: string
+          nullable: true
+        contattoRegioneDescrizione:
+          type: string
+          nullable: true
+        contattoCap:
+          type: string
+          nullable: true
+        contattoTelefono:
+          type: string
+          nullable: true
+        contattoFax:
+          type: string
+          nullable: true
+        contattoEmail:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/DatoreDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codiceFiscale: https://w3id.org/italia/onto/COV/taxCode
+        denominazione: https://w3id.org/italia/onto/COV/legalName
+        sitoWeb:
+          '@id': https://w3id.org/italia/onto/SM/hasOnlineContactPoint
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        contattoIndirizzo: https://w3id.org/italia/onto/CLV/fullAddress
+        contattoComuneCodice:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        contattoProvinciaCodice:
+          '@id': https://w3id.org/italia/onto/CLV/hasProvince
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        contattoRegioneCodice:
+          '@id': https://w3id.org/italia/onto/CLV/hasRegion
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        contattoComuneDescrizione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/datoreDiLavoroHaSede
+          '@context':
+              contattoComuneDescrizione: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneComune
+        contattoProvinciaDescrizione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/datoreDiLavoroHaSede
+          '@context':
+              contattoProvinciaDescrizione: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneProvincia
+        contattoRegioneDescrizione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/datoreDiLavoroHaSede
+          '@context':
+              contattoRegioneDescrizione: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneRegione
+        contattoCap: https://w3id.org/italia/onto/CLV/postCode
+        contattoTelefono: https://w3id.org/italia/onto/SM/telephoneNumber
+        contattoFax: https://w3id.org/italia/labour-social-policies/onto/core/fax
+        contattoEmail:
+          '@id': https://w3id.org/italia/onto/SM/hasEmail
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+      example:
+        codiceFiscale: "AAAAAA00A00A000A"
+        denominazione: "Innovatech Solutions S.r.l."
+        sitoWeb: "example.org"
+        contattoIndirizzo: "Via Esempio 123"
+        contattoComuneCodice: "H501"
+        contattoProvinciaCodice: "058"
+        contattoRegioneCodice: "08"
+        contattoComuneDescrizione: "Roma"
+        contattoProvinciaDescrizione: "Roma"
+        contattoRegioneDescrizione: "Emilia-Romagna"
+        contattoCap: "00000"
+        contattoTelefono: "02 12345678"
+        contattoFax: "01 12345678"
+        contattoEmail: "info@example.com"
+
+
+
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DettaglioOffertaLavoro:
+      type: object
+      properties:
+        codice:
+          type: string
+          nullable: true
+        stato:
+          type: integer
+          format: int32
+          nullable: true
+        origine:
+          type: integer
+          format: int32
+          nullable: true
+        dataCreazione:
+          type: string
+          format: date-time
+          nullable: true
+        dataInvio:
+          type: string
+          format: date-time
+          nullable: true
+        dataScadenza:
+          type: string
+          format: date-time
+          nullable: true
+        dati:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DatiOfferta'
+        datoreDiLavoro:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DatoreLavoro'
+        profilo:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.ProfiloRicercato'
+        requisiti:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.RequisitiRichiesti'
+        condizioni:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.Condizioni'
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codice: codiceOffertaDiLavoro
+        stato:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haStatoOffertaDiLavoro
+          '@context':
+              stato: https://w3id.org/italia/labour-social-policies/onto/labour/statusOffertaDiLavoro
+        dataCreazione: dataCreazioneOffertaDiLavoro
+        dataInvio: dataPubblicazioneOffertaDiLavoro
+        dataScadenza: dataScadenzaOffertaDiLavoro
+        datoreDiLavoro:
+          '@id': proponeOffertaDiLavoro
+        requisiti:
+          '@id': haRequisiti
+      example:
+        codice: "0000F068351000015"
+        stato: 1
+        dataCreazione:  '2025-01-14T00:00:00'
+        dataInvio:  '2025-01-14T00:00:00'
+        dataScadenza:  '2025-01-14T00:00:00'
+        datoreDiLavoro:
+          codiceFiscale: "AAAAAA00A00A000A"
+          denominazione: "Innovatech Solutions S.r.l."
+          sitoWeb: "example.org"
+          contattoIndirizzo: "Via Esempio 123"
+          contattoComuneCodice: "H501"
+          contattoProvinciaCodice: "058"
+          contattoRegioneCodice: "08"
+          contattoComuneDescrizione: "Roma"
+          contattoProvinciaDescrizione: "Roma"
+          contattoRegioneDescrizione: "Emilia-Romagna"
+          contattoCap: "00000"
+          contattoTelefono: "02 12345678"
+          contattoFax: "01 12345678"
+          contattoEmail: "info@example.com"
+        requisiti:
+          titoliDiStudio:
+            - codiceLivelloStudio: "1"
+            - descrizioneLivelloStudio: "LICENZA ELEMENTARE"
+            - descrizione: "descrizione test"
+          lingueStraniere:
+            - codiceLingua: "001"
+            - descrizione: "LIVELLO ELEMENTARE"
+            - letto: "A1"
+            - parlato: "A1"
+            - scritto: "A1"
+          iscrizioniAlbi:
+            - codiceAlbo: "0001"
+            - descrizioneAlbo: "BIOLOGO"
+          conoscenzaInformatica: "Conoscenza informatica test"
+          altreConoscenze: "Altre conoscenze test"
+          patentiDiGuida:
+            - codicePatente: "01"
+            - descrizionePatente: "PATENTE A"
+          disponibilitaTrasferte: True
+          mezzoDiTrasporto: False
+          requisitiNonEssenziali: "Requisiti non essenziali test"
+
+
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DettaglioOffertaLavoro_Input:
+      required:
+        - codici
+      type: object
+      properties:
+        codici:
+          type: array
+          items:
+            type: string
+      additionalProperties: false
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DettaglioOffertaLavoro_Output:
+      type: object
+      properties:
+        listaDettaglioOffertaLavoro:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.DettaglioOffertaLavoro'
+      additionalProperties: false
+
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.IscrizioneAlbo:
+      type: object
+      properties:
+        codiceAlbo:
+          type: string
+          nullable: true
+        descrizioneAlbo:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/RequisitiOffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codiceAlbo:
+          '@id': haIscrizioneAlboProfessionale
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_albo/'
+              id: '@id'
+        descrizioneAlbo:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haIscrizioneAlboProfessionale
+          '@context':
+              descrizioneAlbo: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneAlboProfessionale
+      example:
+       codiceAlbo: "0001"
+       descrizioneAlbo: "BIOLOGO"
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.LinguaStraniera:
+      type: object
+      properties:
+        codiceLingua:
+          type: string
+          nullable: true
+        descrizione:
+          type: string
+          nullable: true
+        letto:
+          type: string
+          nullable: true
+        parlato:
+          type: string
+          nullable: true
+        scritto:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/ConoscenzaLinguistica
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codiceLingua:
+          '@id': haConoscenzaLinguistica
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_lingua/'
+              id: '@id'
+        descrizione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haLinguaConosciuta
+          '@context':
+              descrizione: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneLingua
+        letto:
+          '@id': haGradoDiConoscenzaLinguisticaLetta
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/'
+              id: '@id'
+        parlato:
+          '@id': haGradoDiConoscenzaLinguisticaParlata
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/'
+              id: '@id'
+        scritto:
+          '@id': haGradoDiConoscenzaLinguisticaScritta
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_conoscenza_lingua/'
+              id: '@id'
+      example:
+        codiceLingua: "001"
+        descrizione: "LIVELLO ELEMENTARE"
+        letto: "A1"
+        parlato: "A1"
+        scritto: "A1"
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.PatenteGuida:
+      type: object
+      properties:
+        codicePatente:
+          type: string
+          nullable: true
+        descrizionePatente:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/RequisitiOffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codicePatente:
+          '@id': haPatenteDiGuida
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_patente/'
+              id: '@id'
+        descrizionePatente:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haPatenteDiGuida
+          '@context':
+              descrizionePatente: https://w3id.org/italia/labour-social-policies/onto/labour/descrizionePatente
+      example:
+        codicePatente: "01"
+        descrizionePatente: "PATENTE A"
+
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.Patentino:
+      type: object
+      properties:
+        codiceAbilitazione:
+          type: string
+          nullable: true
+        descrizioneAbilitazione:
+          type: string
+          nullable: true
+      additionalProperties: false
+
+
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.ProfiloRicercato:
+      type: object
+      properties:
+        numeroLavoratori:
+          type: integer
+          format: int32
+        qualificaProfessionaleCodice:
+          type: string
+          nullable: true
+        qualificaProfessionaleDescrizione:
+          type: string
+          nullable: true
+        descrizioneEsperienza:
+          type: string
+          nullable: true
+        descrizioneProfilo:
+          type: string
+          nullable: true
+        esperienzaRichiesta:
+          type: boolean
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        numeroLavoratori: numeroLavoratori
+        qualificaProfessionaleCodice:
+          '@id': offertaDiLavoroHaTipoDiQualifica
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_catalogo_professioni/'
+              id: '@id'
+        qualificaProfessionaleDescrizione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaTipoDiQualifica
+          '@context':
+              qualificaProfessionaleDescrizione: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneQualifica
+        descrizioneEsperienza: descrizioneEsperienza
+        descrizioneProfilo: descrizioneProfilo
+        esperienzaRichiesta: avvisoEsperienzaNelSettore
+      example:
+        numeroLavoratori: 10
+        qualificaProfessionaleCodice: "1.1.1.1.0.0"
+        qualificaProfessionaleDescrizione: "Membri di organismi di governo e di assemblee nazionali con potest\u00e0 legislativa e regolamentare"
+        descrizioneEsperienza:   "Descrizione esperienza test"
+        descrizioneProfilo: "Descrizione profilo test"
+        esperienzaRichiesta: True
+
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.RequisitiRichiesti:
+      type: object
+      properties:
+        titoliDiStudio:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.TitoloDiStudio'
+          nullable: true
+        lingueStraniere:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.LinguaStraniera'
+          nullable: true
+        iscrizioniAlbi:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.IscrizioneAlbo'
+          nullable: true
+        conoscenzaInformatica:
+          type: string
+          nullable: true
+        altreConoscenze:
+          type: string
+          nullable: true
+        patentiDiGuida:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.PatenteGuida'
+          nullable: true
+        patentini:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.Patentino'
+          nullable: true
+        disponibilitaTrasferte:
+          type: boolean
+          nullable: true
+        mezzoDiTrasporto:
+          type: boolean
+          nullable: true
+        requisitiNonEssenziali:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/RequisitiOffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        titoliDiStudio:
+          '@id': haTitoloDiStudio
+        lingueStraniere:
+          '@id': haConoscenzaLinguistica
+        iscrizioniAlbi:
+          '@id': haIscrizioneAlboProfessionale
+        conoscenzaInformatica: conoscenzaInformatica
+        altreConoscenze: altreConoscenze
+        patentiDiGuida:
+          '@id': haPatenteDiGuida
+        disponibilitaTrasferte: avvisoDisponibilitàTrasferte
+        mezzoDiTrasporto: avvisoDisponibilitàMezzoProprio
+        requisitiNonEssenziali:
+      example:
+        titoliDiStudio:
+          - codiceLivelloStudio: "1"
+          - descrizioneLivelloStudio: "LICENZA ELEMENTARE"
+          - descrizione: "descrizione test"
+        lingueStraniere:
+          - codiceLingua: "001"
+          - descrizione: "LIVELLO ELEMENTARE"
+          - letto: "A1"
+          - parlato: "A1"
+          - scritto: "A1"
+        iscrizioniAlbi:
+          - codiceAlbo: "0001"
+          - descrizioneAlbo: "BIOLOGO"
+        conoscenzaInformatica: "Conoscenza informatica test"
+        altreConoscenze: "Altre conoscenze test"
+        patentiDiGuida:
+          - codicePatente: "01"
+          - descrizionePatente: "PATENTE A"
+        disponibilitaTrasferte: True
+        mezzoDiTrasporto: False
+        requisitiNonEssenziali: "Requisiti non essenziali test"
+
+
+
+
+
+    FSL.Api.Domain.Models.Siisl.DettaglioOffertaLavoroSDG.TitoloDiStudio:
+      type: object
+      properties:
+        codiceLivelloStudio:
+          type: string
+          nullable: true
+        descrizioneLivelloStudio:
+          type: string
+          nullable: true
+        descrizione:
+          type: string
+          nullable: true
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/RequisitiOffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codiceLivelloStudio:
+          '@id': haTitoloDiStudio
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_livello_studio/'
+              id: '@id'
+        descrizioneLivelloStudio:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/haTitoloDiStudio
+          '@context':
+              descrizioneLivelloStudio: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneLivelloStudio
+        descrizione: http://purl.org/dc/terms/description
+      example:
+        codiceLivelloStudio: "1"
+        descrizioneLivelloStudio: "LICENZA ELEMENTARE"
+        descrizione: "descrizione test"
+
+
+
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API

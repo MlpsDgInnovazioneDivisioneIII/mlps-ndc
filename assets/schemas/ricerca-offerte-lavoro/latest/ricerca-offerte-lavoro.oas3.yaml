@@ -1,0 +1,321 @@
+openapi: 3.0.1
+info:
+  title: FSL
+  description: Fascicolo Sociale e Lavorativo del Cittadino
+  contact:
+    name: DG Innovazione
+    email: dginnovazionediv3@lavoro.gov.it
+  version: 1.0.0
+  x-summary: Fascicolo Sociale e Lavorativo del Cittadino
+  x-semantic-score: 0.09
+  x-semantic-score-timestamp: 1776940368076
+servers:
+  - url: https://apimlpstest.lavoro.gov.it/rest
+    description: FSL Test Environment
+  - url: https://apimlps.lavoro.gov.it/rest
+    description: FSL Production Environment
+paths:
+  /fsl/v1/sdg/ricerca-offerte-lavoro:
+    post:
+      tags:
+        - Siisl
+      summary: Ricerca Offerte Lavoro SDG
+      description: Dati dei criteri di ricerca, il servizio restituisce le offerte di lavoro pubblicate sul Sistema Informativo per l'inclusione Sociale e Lavorativa (SIISL) che rispondono ai parametri inseriti
+      operationId: RicercaOfferteLavoroSDG
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.RicercaOfferteLavoroSDG.RicercaOfferteLavoro_Input'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.RicercaOfferteLavoroSDG.RicercaOfferteLavoro_Output'
+        '400':
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '404':
+          description: Not Found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+  /status:
+    get:
+      tags:
+        - Health Check API
+      description: Returns the health status of this service
+      operationId: HealthCheckStatus
+      responses:
+        '200':
+          description: API service is healthy
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/FSL.Common.Support.Models.Api.HealthCheckSuccess'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails'
+        '500':
+          description: Internal Server Error
+        '503':
+          description: API service is not healthy
+components:
+  schemas:
+    FSL.Api.Domain.Models.MetaData:
+      type: object
+      properties:
+        currentPage:
+          type: integer
+          format: int32
+        totalPages:
+          type: integer
+          format: int32
+        pageSize:
+          type: integer
+          format: int32
+        totalCount:
+          type: integer
+          format: int32
+        hasPreviousPage:
+          type: boolean
+        hasNextPage:
+          type: boolean
+      additionalProperties: false
+    FSL.Api.Domain.Models.Siisl.RicercaOfferteLavoroSDG.OffertaLavoro:
+      type: object
+      properties:
+        codice:
+          type: string
+        dataCreazione:
+          type: string
+          format: date-time
+        dataInvio:
+          type: string
+          format: date-time
+          nullable: true
+        dataScadenza:
+          type: string
+          format: date-time
+          nullable: true
+        titolo:
+          type: string
+        descrizione:
+          type: string
+        settoreCodice:
+          type: string
+        settoreDescrizione:
+          type: string
+        codiceRegione:
+          type: string
+        descrizioneRegione:
+          type: string
+        codiceProvincia:
+          type: string
+        descrizioneProvincia:
+          type: string
+        codiceComune:
+          type: string
+        descrizioneComune:
+          type: string
+        tipoRapportoLavoroCodice:
+          type: string
+        tipoRapportoLavoroDescrizione:
+          type: string
+        qualificaProfessionaleCodice:
+          type: string
+        qualificaProfessionaleDescrizione:
+          type: string
+      additionalProperties: false
+      x-jsonld-type: https://w3id.org/italia/labour-social-policies/onto/labour/OffertaDiLavoro
+      x-jsonld-context:
+        "@vocab": https://w3id.org/italia/labour-social-policies/onto/labour/
+        codice: codiceOffertaDiLavoro
+        dataCreazione: dataCreazioneOffertaDiLavoro
+        dataInvio: dataPubblicazioneOffertaDiLavoro
+        dataScadenza: dataScadenzaOffertaDiLavoro
+        titolo: titoloOffertaDiLavoro
+        descrizione: descrizioneOffertaDiLavoro
+        settoreCodice: offertaDiLavoroHaSettoreDiInteresse
+        settoreDescrizione: descrizioneSettore
+        codiceRegione:
+          '@id': https://w3id.org/italia/onto/CLV/hasRegion
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        descrizioneRegione:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSede
+          '@context':
+              descrizioneRegione: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneRegione
+        codiceProvincia:
+          '@id': https://w3id.org/italia/onto/CLV/hasProvince
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        descrizioneProvincia:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSede
+          '@context':
+              descrizioneProvincia: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneProvincia
+        codiceComune:
+          '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@context':
+              label: http://www.w3.org/2000/01/rdf-schema#label
+        descrizioneComune:
+          '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSede
+          '@context':
+              descrizioneComune: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneComune
+        tipoRapportoLavoroCodice:
+          '@id': haTipoDiContrattoDiLavoro
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_rapporto_lavoro/'
+              id: '@id'
+        tipoRapportoLavoroDescrizione: descrizioneTipoDiContrattoDiLavoro
+        qualificaProfessionaleCodice:
+          '@id': offertaDiLavorohaTipoDiQualifica
+          '@type': '@id'
+          '@context':
+              "@base": 'https://w3id.org/italia/labour-social-policies/controlled-vocabulary/data/tipo_catalogo_professioni/'
+              id: '@id'
+        qualificaProfessionaleDescrizione: descrizioneQualifica
+      example:
+        codice: "0000F068351000015"
+        dataCreazione: '2024-01-01T00:00:00'
+        dataInvio: '2025-01-14T00:00:00'
+        dataScadenza: '2025-01-14T00:00:00'
+        titolo: "Titolo Test"
+        descrizione: "Descrizione offerta lavoro"
+        settoreCodice: "62.01.00"
+        settoreDescrizione: "Produzione di software non connesso all'edizione"
+        codiceRegione: "08"
+        descrizioneRegione: "Emilia-Romagna"
+        codiceProvincia: "058"
+        descrizioneProvincia: "Roma"
+        codiceComune: "H501"
+        descrizioneComune: "Roma"
+        tipoRapportoLavoroCodice: "A00"
+        tipoRapportoLavoroDescrizione: "LAVORO A TEMPO INDETERMINATO"
+        qualificaProfessionaleCodice: "8.1.3.1.0.15"
+        qualificaProfessionaleDescrizione: "Facchino"
+
+
+    FSL.Api.Domain.Models.Siisl.RicercaOfferteLavoroSDG.RicercaOfferteLavoro_Input:
+      type: object
+      properties:
+        testo:
+          type: string
+          nullable: true
+        codiceRegione:
+          type: string
+          nullable: true
+        codiceProvincia:
+          type: string
+          nullable: true
+        codiceComune:
+          type: string
+          nullable: true
+        qualifica:
+          type: array
+          items:
+            type: string
+          nullable: true
+        settore:
+          type: array
+          items:
+            type: string
+          nullable: true
+        dataPubblicazioneDa:
+          type: string
+          format: date-time
+          nullable: true
+        dataPubblicazioneA:
+          type: string
+          format: date-time
+          nullable: true
+        tipoContratto:
+          type: string
+          nullable: true
+        ordinamento:
+          type: integer
+          format: int32
+          nullable: true
+        pageNumber:
+          type: integer
+          format: int32
+          nullable: true
+        pageSize:
+          type: integer
+          format: int32
+          nullable: true
+      additionalProperties: false
+    FSL.Api.Domain.Models.Siisl.RicercaOfferteLavoroSDG.RicercaOfferteLavoro_Output:
+      type: object
+      properties:
+        metaData:
+          $ref: '#/components/schemas/FSL.Api.Domain.Models.MetaData'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/FSL.Api.Domain.Models.Siisl.RicercaOfferteLavoroSDG.OffertaLavoro'
+      additionalProperties: false
+    FSL.Common.Support.Models.Api.HealthCheckSuccess:
+      type: object
+      properties:
+        status:
+          type: string
+        totalDuration:
+          type: string
+        entries: {}
+        title:
+          type: string
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+      additionalProperties: false
+    Microsoft.AspNetCore.Mvc.ProblemDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          nullable: true
+        title:
+          type: string
+          nullable: true
+        status:
+          type: integer
+          format: int32
+          nullable: true
+        detail:
+          type: string
+          nullable: true
+        instance:
+          type: string
+          nullable: true
+      additionalProperties: {}
+tags:
+  - name: Siisl
+    description: Siisl
+  - name: Health Check API
+    description: Health Check API
