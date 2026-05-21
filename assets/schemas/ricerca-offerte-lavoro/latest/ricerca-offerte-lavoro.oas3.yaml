@@ -179,8 +179,10 @@ components:
               descrizioneProvincia: https://w3id.org/italia/labour-social-policies/onto/labour/descrizioneProvincia
         codiceComune:
           '@id': https://w3id.org/italia/onto/CLV/hasCity
+          '@type': '@id'
           '@context':
-              label: http://www.w3.org/2000/01/rdf-schema#label
+              "@base": "https://w3id.org/italia/controlled-vocabulary/territorial-classifications/cities/"
+              id: '@id'
         descrizioneComune:
           '@id': https://w3id.org/italia/labour-social-policies/onto/labour/offertaDiLavoroHaSede
           '@context':
@@ -212,7 +214,7 @@ components:
         descrizioneRegione: "Emilia-Romagna"
         codiceProvincia: "058"
         descrizioneProvincia: "Roma"
-        codiceComune: "H501"
+        codiceComune: "058091"
         descrizioneComune: "Roma"
         tipoRapportoLavoroCodice: "A00"
         tipoRapportoLavoroDescrizione: "LAVORO A TEMPO INDETERMINATO"
